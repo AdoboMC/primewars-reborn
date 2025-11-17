@@ -15,9 +15,9 @@ eula.txt
 *.log.gz
 
 # World data (optional — include only if you want a fresh world each time)
-world/
-world_nether/
-world_the_end/
+#world/
+#world_nether/
+#world_the_end/
 
 # Plugin data (optional — keep only configs you want to version)
 plugins/*/data/
