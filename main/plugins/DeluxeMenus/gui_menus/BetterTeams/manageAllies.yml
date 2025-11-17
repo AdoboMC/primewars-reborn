@@ -1,0 +1,193 @@
+menu_title: "›› Manage Allies %changeoutput_equals_input:{betterTeamsExtra_allyCount}_matcher:0_ifmatch:_else:({betterTeamsExtra_allyCount})%"
+size: 27
+open_command: []
+items:
+  "Misc | Close":
+    material: BARRIER
+    slot: 22
+    display_name: " "
+    lore:
+    - "      &c&lCLOSE  "
+    - ""
+    - "  &7Click to close  "
+    - ""
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[close]"
+  "Misc | Go Back":
+    material: ARROW
+    slot: 21
+    display_name: " "
+    lore:
+    - "      &e&lGO BACK  "
+    - ""
+    - "  &7Click to go back  "
+    - ""
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] BetterTeamsMain"
+  "Misc | Filler 1":
+     material: BLACK_STAINED_GLASS_PANE
+     slots:
+     - 0
+     - 8
+     - 9
+     - 17
+     - 18
+     - 26
+     display_name: "&r"
+  "Misc | Filler 2":
+     material: GRAY_STAINED_GLASS_PANE
+     slots:
+     - 1-7
+     - 19-20
+     - 23-25
+     display_name: "&r"
+     
+  "OWNER | No Allies | Requests":
+    material: EMERALD
+    slot: 13
+    display_name: " "
+    lore:
+    - "   &a&lREQUEST AN ALLIANCE  "
+    - ""
+    - "    &a[!] &7You have %betterTeamsExtra_allyRequestCount% %changeoutput_equals_input:{betterTeamsExtra_allyRequestCount}_matcher:1_ifmatch:request_else:requests%! "
+    - ""
+    - "%betterTeamsExtra_allyRequestList%"
+    - ""
+    - "    &7Click to &aaccept &7alliance  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        hasNoAllies:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllies%'
+          output: 'no'
+        hasRequests:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllyRequests%'
+          output: 'yes'
+    click_requirement:
+      requirements:
+        hasOneRequest:
+          type: string equals
+          input: '%betterTeamsExtra_allyRequestCount%'
+          output: '1'
+          success_commands:
+          - "[sound] ENTITY_PLAYER_LEVELUP"
+          - "[player] team ally %betterTeamsExtra_allyRequestName_0%"
+          deny_commands:
+          - "[sound] UI_BUTTON_CLICK"
+          - "[player] team ally <-a Enter name...>"
+    click_commands:
+    - "[close]"
+
+  "OWNER | No Allies | No Requests":
+    material: EMERALD
+    slot: 13
+    display_name: " "
+    lore:
+    - "   &a&lREQUEST AN ALLIANCE  "
+    - ""
+    - "  &7Click to &arequest &7an alliance  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        hasAllies:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllies%'
+          output: 'no'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team ally <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the teamname. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+
+  
+  "OWNER | Allies | Requests":
+    material: EMERALD
+    slot: 12
+    display_name: " "
+    lore:
+    - "   &a&lREQUEST AN ALLIANCE  "
+    - ""
+    - "    &a[!] &7You have %betterTeamsExtra_allyRequestCount% %changeoutput_equals_input:{betterTeamsExtra_allyRequestCount}_matcher:1_ifmatch:request_else:requests%! "
+    - ""
+    - "%betterTeamsExtra_allyRequestList%"
+    - ""
+    - "  &7Click to &arequest &7an alliance  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        hasAllies:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllies%'
+          output: 'yes'
+        hasRequests:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllyRequests%'
+          output: 'yes'
+    click_requirement:
+      requirements:
+        hasOneRequest:
+          type: string equals
+          input: '%betterTeamsExtra_allyRequestCount%'
+          output: '1'
+          success_commands:
+          - "[sound] ENTITY_PLAYER_LEVELUP"
+          - "[player] team ally %betterTeamsExtra_allyRequestName_0%"
+          - "[close]"
+          deny_commands:
+          - "[sound] UI_BUTTON_CLICK"
+          - "[player] team ally <-a Enter name...>"
+          - "[message] &b&lTEAMS &8•&7 Type the teamname. Type &c'Cancel'&7 to cancel."
+          - "[close]"
+
+
+  "OWNER | Allies | No Requests":
+    material: EMERALD
+    slot: 12
+    display_name: " "
+    lore:
+    - "   &a&lREQUEST AN ALLIANCE  "
+    - ""
+    - "  &7Click to &arequest &7an alliance  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        hasAllies:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllies%'
+          output: 'yes'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team ally <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the teamname. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+ 
+  "OWNER | End Alliance":
+    material: ANVIL
+    slot: 14
+    display_name: " "
+    lore:
+    - "      &c&lEND ALLIANCE  "
+    - ""
+    - "%betterTeamsExtra_allyList%"
+    - ""
+    - "  &7Click to &cend &7an alliance  "
+    - ""
+    view_requirement:
+      requirements:
+        hasRequests:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllies%'
+          output: 'yes'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[meta] set BetterTeamsConfirmAction STRING alliance termination"
+    - "[meta] set BetterTeamsConfirmActionBack STRING BetterTeamsManageAllies"
+    - "[openguimenu] BetterTeamsConfirmAction"

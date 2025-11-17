@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "sueena",
+      "uniqueId": "6c3bfd47-ebad-35be-8fd4-b14a3870b478"
+    },
+    "time": 1752645322603,
+    "type": "Heap dump",
+    "data": {
+      "type": "file",
+      "value": "plugins/spark/heap-2025-07-16_05.54.54.hprof"
+    }
+  }
+]

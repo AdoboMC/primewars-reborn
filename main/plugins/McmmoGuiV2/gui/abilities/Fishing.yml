@@ -1,0 +1,145 @@
+## Credits to @Aternos_
+Gui:
+  Rows: 6
+  SkillDetailSlots:
+    - 35
+  PlayerTopSlots:
+    - 26
+  PlayerInfoSlots:
+    - 17
+  FeatureButtons:
+    TREASURE_HUNTER:
+      Slots:
+        - 20
+      Material: GOLD_INGOT
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    MASTER_ANGLER:
+      Slots:
+        - 21
+      Material: CARROT_ON_A_STICK
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    ICE_FISHING:
+      Slots:
+        - 22
+      Material: SNOWBALL
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    SHAKE:
+      Slots:
+        - 23
+      Material: SHEARS
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    FISHERMANS_DIET:
+      Slots:
+        - 30
+      Material: COOKED_SALMON
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    MAGIC_HUNTER:
+      Slots:
+        - 31
+      Material: ENCHANTED_BOOK
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+
+  DecorationButtons:
+    Back:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    Close:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    BorderLine:
+      Slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 18
+        - 27
+        - 36
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 16
+        - 25
+        - 34
+        - 43
+      Material: BLACK_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    InnerBorder:
+      Slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 19
+        - 24
+        - 28
+        - 33
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+      Material: ORANGE_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    Filler:
+      Slots:
+        - 29
+        - 32
+      Material: GRAY_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+# License Number: 61c9375c-b786-4793-9c1c-02c59345a0c0

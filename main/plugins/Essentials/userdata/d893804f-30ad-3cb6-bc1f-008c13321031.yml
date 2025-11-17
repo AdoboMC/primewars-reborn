@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.37.180
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755274186016
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755274579745
+  login: 1755272952374
+money: '313.4879712408785023'
+last-account-name: noticw
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 205.94550079226065
+  y: 67.0
+  z: 121.12170096549268
+  yaw: -142.45440673828125
+  pitch: 19.88526725769043
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 578.2834967952167
+  y: 95.0
+  z: 724.6821651540492
+  yaw: 14.356201171875
+  pitch: 31.229040145874023

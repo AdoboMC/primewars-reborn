@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 216.247.28.175
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752315647541
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752316995365
+  login: 1752316481965
+money: '13429.4321996558260018'
+last-account-name: coookies
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -470.5409335947012
+  y: 62.0
+  z: 264.6632614288967
+  yaw: -3.92645263671875
+  pitch: 27.117881774902344
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 911.5569145540388
+  y: 71.0
+  z: 1132.037205483863
+  yaw: 176.35328674316406
+  pitch: 27.3756103515625
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -469.9086213794428
+    y: 62.0
+    z: 264.2781050434517
+    yaw: -3.92645263671875
+    pitch: 27.117881774902344

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 128.14.34.210
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754487495810
+  login: 1754487471388
+money: '0'
+last-account-name: xXayeceeXx
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 20.123903403987793
+  y: 67.0
+  z: 5.206192906515256
+  yaw: -76.50006103515625
+  pitch: 3.600010871887207
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -377.57858991590507
+  y: 92.0625
+  z: -311.2103884190759
+  yaw: -30.150081634521484
+  pitch: 9.600020408630371

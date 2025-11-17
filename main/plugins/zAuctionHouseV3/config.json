@@ -1,0 +1,7 @@
+{
+  "enableNumberFormatSell": true,
+  "blacklistPlayers": [],
+  "enableShulkerPacks": false,
+  "enableSQLScript": true,
+  "cacheDurationCategory": 120000
+}

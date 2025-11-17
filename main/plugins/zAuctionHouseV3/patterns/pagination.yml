@@ -1,0 +1,34 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_pagination" # Name of the pattern
+size: 54
+items:
+  previous:
+    isPermanent: true
+    type: PREVIOUS
+    slot: 18
+    item:
+      material: nexo:auction_previous_page
+      name: "#92bed8← ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ"
+      # lore:
+      #   - "                  #92bed8ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ"
+      #   - "                        #8c8c8c&m     "
+      #   - ""
+      #   - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴀᴄᴄᴇss ᴛᴏ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ #8c8c8c• "
+
+  next:
+    isPermanent: true
+    type: NEXT
+    slot: 26
+    item:
+      material: nexo:auction_next_page 
+      name: "#92bed8ɴᴇxᴛ ᴘᴀɢᴇ →"
+      # lore:
+      #   - "                   #92bed8ɴᴇxᴛ ᴘᴀɢᴇ"
+      #   - "                       #8c8c8c&m     "
+      #   - ""
+      #   - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴀᴄᴄᴇss ᴛᴏ ᴛʜᴇ ɴᴇxᴛ ᴘᴀɢᴇ #8c8c8c• "

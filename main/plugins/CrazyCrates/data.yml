@@ -1,0 +1,289 @@
+Players:
+  68bff207-a349-3d1f-885f-787efca63769:
+    tracking:
+      total-crates: 244
+      bosscrate: 129
+      dailyr: 14
+      vote: 1
+      demonic: 6
+      spawner: 2
+      randomcrate: 36
+      megalotto: 56
+  1fdcb6b6-32c0-3ad0-816d-25312bcdd2bb:
+    tracking:
+      total-crates: 211
+      vote: 27
+      megalotto: 9
+      bosscrate: 32
+      visayas: 19
+      luzon: 29
+      dailyr: 10
+      demonic: 2
+      examplecrate: 81
+      mystic: 2
+  3e2b229d-7125-33c0-9230-0317ef9c34b7:
+    tracking:
+      total-crates: 463
+      mystic: 13
+      luzon: 4
+      spawner: 3
+      demonic: 1
+      examplecrate: 15
+      bosscrate: 184
+      vote: 2
+      visayas: 1
+      AdvancedExample: 1
+      megalotto: 19
+      randomcrate: 220
+    Name: Seigo
+    bosscrate: 86
+    randomcrate: 4
+  bf2a38fb-402f-3453-8d3a-cdda932d27a0:
+    tracking:
+      total-crates: 155
+      demonic: 18
+      dailyr: 7
+      visayas: 30
+      spawner: 2
+      examplecrate: 64
+      bosscrate: 34
+  f4e4b17f-dd9c-3b27-8459-ce4d94aa8ca4:
+    tracking:
+      total-crates: 2503
+      dailyr: 38
+      bosscrate: 1328
+      examplecrate: 55
+      demonic: 31
+      visayas: 105
+      megalotto: 634
+      spawner: 10
+      randomcrate: 143
+      mystic: 4
+      luzon: 124
+      afk: 31
+  5f36c99a-9f4a-3b11-93e3-3291ebf43600:
+    tracking:
+      total-crates: 7
+      dailyr: 5
+      mystic: 2
+  e3ab647f-6b6b-39d9-88ee-3626d995b3da:
+    tracking:
+      total-crates: 146
+      vote: 4
+      luzon: 13
+      dailyr: 6
+      bosscrate: 46
+      demonic: 6
+      megalotto: 3
+      examplecrate: 3
+      randomcrate: 64
+      afk: 1
+  3c878696-439e-36e7-b80b-98b9ff63c0b4:
+    tracking:
+      total-crates: 681
+      dailyr: 14
+      vote: 28
+      examplecrate: 49
+      luzon: 188
+      bosscrate: 242
+      demonic: 7
+      spawner: 3
+      visayas: 35
+      megalotto: 73
+      randomcrate: 33
+      afk: 9
+  23581dbf-8ac1-36cc-8e2c-06bf4eb92d7b:
+    tracking:
+      total-crates: 60
+      dailyr: 5
+      visayas: 8
+      mystic: 2
+      demonic: 1
+      megalotto: 16
+      bosscrate: 28
+  c559a391-d3c0-38b9-abbb-d86833229871:
+    tracking:
+      total-crates: 106
+      demonic: 1
+      examplecrate: 40
+      luzon: 16
+      visayas: 8
+      megalotto: 18
+      bosscrate: 16
+      mystic: 2
+      dailyr: 5
+  ae247029-0946-37ec-964b-7a11d9d043ef:
+    tracking:
+      total-crates: 84
+      bosscrate: 23
+      mystic: 4
+      dailyr: 7
+      demonic: 2
+      visayas: 8
+      luzon: 1
+      examplecrate: 38
+      randomcrate: 1
+  16ffd2ea-f348-32a8-a343-b7ab9044c9a4:
+    tracking:
+      total-crates: 267
+      mystic: 5
+      dailyr: 17
+      bosscrate: 49
+      luzon: 1
+      demonic: 1
+      visayas: 18
+      vote: 49
+      examplecrate: 33
+      megalotto: 39
+      randomcrate: 5
+      afk: 47
+      spawner: 3
+  1c96d59b-9df9-35dc-8a02-d418e0b14e79:
+    tracking:
+      total-crates: 79
+      bosscrate: 6
+      vote: 28
+      dailyr: 3
+      luzon: 13
+      mystic: 2
+      megalotto: 25
+      examplecrate: 1
+      visayas: 1
+  95966705-861b-3c8d-9a54-d232595605ea:
+    tracking:
+      total-crates: 313
+      vote: 12
+      examplecrate: 62
+      luzon: 60
+      visayas: 46
+      demonic: 26
+      megalotto: 55
+      dailyr: 15
+      spawner: 4
+      mystic: 5
+      bosscrate: 25
+      randomcrate: 3
+  8191ae1f-902f-3910-8739-8196a7348991:
+    tracking:
+      total-crates: 63
+      demonic: 30
+      bosscrate: 1
+      randomcrate: 32
+  50f2d0c1-1263-3cb8-b7f5-caf1c126dd6a:
+    tracking:
+      total-crates: 72
+      randomcrate: 23
+      luzon: 11
+      dailyr: 3
+      bosscrate: 24
+      visayas: 4
+      mystic: 4
+      examplecrate: 3
+  c1dbb81b-9fae-3fa4-92a3-d6ac4437a5e7:
+    tracking:
+      total-crates: 14
+      randomcrate: 5
+      dailyr: 6
+      afk: 1
+      bosscrate: 1
+      visayas: 1
+  14d96549-2d68-332f-a0e3-59f9bb07a92c:
+    tracking:
+      total-crates: 269
+      dailyr: 15
+      luzon: 26
+      demonic: 209
+      visayas: 11
+      spawner: 1
+      vote: 1
+      mystic: 6
+  3cac2e41-0f4e-30b9-b05d-ea4c32948da4:
+    tracking:
+      total-crates: 427
+      bosscrate: 353
+      afk: 10
+      demonic: 64
+  bc871d81-47d6-31b1-86b7-4430444a2dca:
+    tracking:
+      total-crates: 1182
+      bosscrate: 20
+      demonic: 254
+      spawner: 107
+      visayas: 216
+      examplecrate: 178
+      luzon: 199
+      megalotto: 101
+      afk: 47
+      dailyr: 13
+      randomcrate: 8
+      vote: 39
+  d7708403-690d-3398-8084-ebdf4db53ec2:
+    tracking:
+      total-crates: 6
+      megalotto: 3
+      examplecrate: 3
+  d5581faf-7308-394d-9a30-8b9fa560dadb:
+    tracking:
+      total-crates: 1
+      bosscrate: 1
+  4dc9d70f-b6d3-3a13-a10b-dc71ff7f3b41:
+    tracking:
+      total-crates: 10
+      dailyr: 2
+      vote: 4
+      examplecrate: 3
+      afk: 1
+  8aaebaad-6f55-3a28-a14c-4abc178f7ada:
+    tracking:
+      total-crates: 99
+      bosscrate: 24
+      vote: 4
+      megalotto: 24
+      dailyr: 1
+      luzon: 12
+      randomcrate: 20
+      examplecrate: 6
+      visayas: 8
+  5fbb6cd3-e05b-316b-9f62-baf0358a4374:
+    tracking:
+      total-crates: 10
+      bosscrate: 10
+  eb4203b9-9cf2-3037-b889-7bc5a3085d25:
+    tracking:
+      total-crates: 1
+      demonic: 1
+  1b1926e9-cef7-32a0-9225-67b91071c2c9:
+    tracking:
+      total-crates: 6
+      bosscrate: 6
+  ab43a189-3b24-3c7e-b970-56cbefa05929:
+    tracking:
+      total-crates: 3
+      vote: 2
+      luzon: 1
+  f47b7ce3-7428-379d-a505-8ed15cc53955:
+    tracking:
+      total-crates: 76
+      examplecrate: 7
+      dailyr: 4
+      afk: 2
+      bosscrate: 60
+      demonic: 1
+      vote: 2
+  ff185652-0765-3f29-84ac-a0731bf2df13:
+    tracking:
+      total-crates: 26
+      dailyr: 5
+      bosscrate: 17
+      luzon: 4
+  bec2c86d-c953-3f41-8618-dad95ff9351c:
+    tracking:
+      total-crates: 64
+      vote: 5
+      bosscrate: 33
+      luzon: 1
+      afk: 2
+      dailyr: 2
+      randomcrate: 17
+      visayas: 1
+      megalotto: 3

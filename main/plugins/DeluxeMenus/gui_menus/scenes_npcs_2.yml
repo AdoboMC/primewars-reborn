@@ -1,0 +1,772 @@
+menu_title: "<shift:-44>&f<glyph:scenes_menu>"
+open_command:
+  - snpc2
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  #guards
+  guard_stand:
+    material: PAPER
+    model_data: 3390601
+    slot: 0
+    priority: 1
+    update: true
+    display_name: 'Standing Guard'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_stand'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_sleep:
+    material: PAPER
+    model_data: 3390605
+    slot: 1
+    priority: 1
+    update: true
+    display_name: 'Sleeping Guard'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_sleep_stand'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_interactive:
+    material: PAPER
+    model_data: 3390602
+    slot: 2
+    priority: 1
+    update: true
+    display_name: 'Interactive Guard'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_interactive'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_salute:
+    material: PAPER
+    model_data: 3390603
+    slot: 3
+    priority: 1
+    update: true
+    display_name: 'Standing Guard with salute'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_salute'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_salute2:
+    material: PAPER
+    model_data: 3390604
+    slot: 4
+    priority: 1
+    update: true
+    display_name: 'Standing Guard with spear salute'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_salute_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guards_duo:
+    material: PAPER
+    model_data: 3390608
+    slot: 5
+    priority: 1
+    update: true
+    display_name: 'Two guards closed entrance'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guards_duo'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_walk1:
+    material: PAPER
+    model_data: 3390606
+    slot: 6
+    priority: 1
+    update: true
+    display_name: 'guard walk from pin guard1 to guard2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_walk_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_walk2:
+    material: PAPER
+    model_data: 3390606
+    slot: 7
+    priority: 1
+    update: true
+    display_name: 'guard walk from pin guard3 to guard4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_walk_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_walk3:
+    material: PAPER
+    model_data: 3390606
+    slot: 8
+    priority: 1
+    update: true
+    display_name: 'guard walk from pin guard5 to guard6'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_walk_3'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_march_1:
+    material: PAPER
+    model_data: 3390607
+    slot: 9
+    priority: 1
+    update: true
+    display_name: 'guard marches from pin guard1 to guard2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_march_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_march_2:
+    material: PAPER
+    model_data: 3390607
+    slot: 10
+    priority: 1
+    update: true
+    display_name: 'guard marches from pin guard3 to guard4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_march_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  guard_march_3:
+    material: PAPER
+    model_data: 3390607
+    slot: 11
+    priority: 1
+    update: true
+    display_name: 'guard marches from pin guard5 to guard6'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_guard_march_3'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  wanderer_default:
+    material: PAPER
+    model_data: 3390611
+    slot: 12
+    priority: 1
+    update: true
+    display_name: 'Wanderer Default'
+    lore:
+      - '&7Follow the guide video on how to set up Paths'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_wanderer_default'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  wanderer_stick:
+    material: PAPER
+    model_data: 3390610
+    slot: 13
+    priority: 1
+    update: true
+    display_name: 'Wanderer Stick'
+    lore:
+      - '&7Follow the guide video on how to set up Paths'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_wanderer_stick'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  wanderer_backpack:
+    material: PAPER
+    model_data: 3390609
+    slot: 14
+    priority: 1
+    update: true
+    display_name: 'Wanderer Backpack'
+    lore:
+      - '&7Follow the guide video on how to set up Paths'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_wanderer_backpack'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  wanderer_horse_walk:
+    material: PAPER
+    model_data: 3390612
+    slot: 15
+    priority: 1
+    update: true
+    display_name: 'Wanderer Horse walk'
+    lore:
+      - '&7Follow the guide video on how to set up Paths'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_wanderer_horse_walk'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  wanderer_horse_trot:
+    material: PAPER
+    model_data: 3390613
+    slot: 16
+    priority: 1
+    update: true
+    display_name: 'Wanderer horse trot'
+    lore:
+      - '&7Follow the guide video on how to set up Paths'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_wanderer_horse_trot'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_chair_1:
+    material: PAPER
+    model_data: 3390614
+    slot: 17
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit Chair 1'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_chair_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_chair_2:
+    material: PAPER
+    model_data: 3390615
+    slot: 18
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit Chair 2'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_chair_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_chair_3:
+    material: PAPER
+    model_data: 3390618
+    slot: 19
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit Chair 3'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_chair_3'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_chair_4:
+    material: PAPER
+    model_data: 3390619
+    slot: 20
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit Chair 4'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_chair_4'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_couch_1:
+    material: PAPER
+    model_data: 3390616
+    slot: 21
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit Couch 1'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_couch_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_cross_1:
+    material: PAPER
+    model_data: 3390617
+    slot: 22
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit crossed legs 1'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_cross_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_bar_1:
+    material: PAPER
+    model_data: 3390620
+    slot: 23
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit Bar 1'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_bar_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_sit_bar_2:
+    material: PAPER
+    model_data: 3390621
+    slot: 24
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Sit Bar 2'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_bar_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_lay_back_1:
+    material: PAPER
+    model_data: 3390626
+    slot: 25
+    priority: 1
+    update: true
+    display_name: 'Townsfolks lay back 1'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lay_back_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_lay_back_2:
+    material: PAPER
+    model_data: 3390626
+    slot: 26
+    priority: 1
+    update: true
+    display_name: 'Townsfolks lay back 2'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lay_back_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_lay_front_1:
+    material: PAPER
+    model_data: 3390627
+    slot: 27
+    priority: 1
+    update: true
+    display_name: 'Townsfolks lay front 1'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lay_front_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_lay_front_2:
+    material: PAPER
+    model_data: 3390627
+    slot: 28
+    priority: 1
+    update: true
+    display_name: 'Townsfolks lay front 2'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lay_front_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_swing:
+    material: PAPER
+    model_data: 3390629
+    slot: 29
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Swing'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_swing'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_swing_ride:
+    material: PAPER
+    model_data: 3390630
+    slot: 30
+    priority: 1
+    update: true
+    display_name: 'Townsfolks Swing Ride'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_swing_ride'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_writer:
+    material: PAPER
+    model_data: 3390625
+    slot: 31
+    priority: 1
+    update: true
+    display_name: 'Townsfolks writer'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_writer'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_readers_book_1:
+    material: PAPER
+    model_data: 3390622
+    slot: 32
+    priority: 1
+    update: true
+    display_name: 'Townsfolks readers book 1'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_readers_book_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_readers_book_2:
+    material: PAPER
+    model_data: 3390623
+    slot: 33
+    priority: 1
+    update: true
+    display_name: 'Townsfolks readers book 2'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_readers_book_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_readers_newspaper:
+    material: PAPER
+    model_data: 3390624
+    slot: 34
+    priority: 1
+    update: true
+    display_name: 'Townsfolks readers newspaper'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_readers_newspaper'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_beggar:
+    material: PAPER
+    model_data: 3390628
+    slot: 35
+    priority: 1
+    update: true
+    display_name: 'Townsfolks readers beggar'
+    lore:
+      - '&7Click to summon this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_beggar'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  scene_townsfolk_lute_stand:
+    material: PAPER
+    model_data: 3390631
+    slot: 36
+    priority: 1
+    update: true
+    display_name: 'Townsfolk with Lute (Standing)'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lute_stand'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_lute_chair:
+    material: PAPER
+    model_data: 3390632
+    slot: 37
+    priority: 1
+    update: true
+    display_name: 'Townsfolk with Lute (Chair)'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lute_sit_chair'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_lute_ground:
+    material: PAPER
+    model_data: 3390633
+    slot: 38
+    priority: 1
+    update: true
+    display_name: 'Townsfolk with Lute (Ground)'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lute_sit_ground'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_clipboard:
+    material: PAPER
+    model_data: 3390634
+    slot: 39
+    priority: 1
+    update: true
+    display_name: 'Townsfolk with Clipboard'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_clipboard'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_laundry:
+    material: PAPER
+    model_data: 3390635
+    slot: 40
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Laundry'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_laundry'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_hammer_ground:
+    material: PAPER
+    model_data: 3390636
+    slot: 41
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Hammering (Ground)'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_hammer_ground'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_hammer_table:
+    material: PAPER
+    model_data: 3390637
+    slot: 42
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Hammering (Table)'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_hammer_table'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_hammer_wall:
+    material: PAPER
+    model_data: 3390638
+    slot: 43
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Hammering (Wall)'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_hammer_wall'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_cleaner_table:
+    material: PAPER
+    model_data: 3390639
+    slot: 44
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Cleaning Table'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_cleaner_table'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_cleaner_wall:
+    material: PAPER
+    model_data: 3390640
+    slot: 45
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Cleaning Wall'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_cleaner_wall'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_cleaner_ground:
+    material: PAPER
+    model_data: 3390641
+    slot: 46
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Cleaning Ground'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_cleaner_ground'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_sellsman:
+    material: PAPER
+    model_data: 3390642
+    slot: 47
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Salesman'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sellsman'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_fall:
+    material: PAPER
+    model_data: 3390643
+    slot: 48
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Falling'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_fall'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_window_shopping:
+    material: PAPER
+    model_data: 3390644
+    slot: 49
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Window Shopping'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_window_shopping'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_sit_ground_4:
+    material: PAPER
+    model_data: 3390645
+    slot: 50
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Sitting Ground 4'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_ground_4'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  # ---
+  page2:
+    material: PAPER
+    model_data: 3390554
+    slot: 53
+    priority: 1
+    update: true
+    display_name: 'Next Page'
+    lore:
+      - '&7Next page'
+    left_click_commands:
+      - '[openguimenu] scenes_npcs_3'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  goback:
+    material: PAPER
+    model_data: 3390553
+    slot: 52
+    priority: 1
+    update: true
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] scenes_npcs'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+#35dd8da810fde8cd410472122f289581
+#Y0ZZd3UmJnR1ZHbPp3TKNmN3VVWsJESNtkQUN1MjpnTsJ1aWBDOZBDTHhEMJV2NwFkSZdFN

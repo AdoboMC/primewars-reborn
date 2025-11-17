@@ -1,0 +1,59 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&f<shift:-12> %nexo_sell_inventory%'
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+  - "zauctionhouse_sell_inv_decoration"
+
+items:
+  items:
+    type: ZAUCTIONHOUSE_SELL_INVENTORY_SLOT
+    slots:
+    - 10-16 
+    - 19-25  
+    - 28-34  
+  cancel:
+    slots:
+    - 50-51
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "          #c42323ᴄᴀɴᴄᴇʟ"
+        - "            #8c8c8c&m        "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ɢᴏ ᴄᴀɴᴄᴇʟ #8c8c8c• "
+  accept:
+    type: ZAUCTIONHOUSE_SELL_INVENTORY_ACCEPT
+    slots:
+    - 47-48
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "   #2bba43✔ ѕᴇʟʟ ɪɴᴠᴇɴᴛᴏʀʏ   " 
+        - "           #8c8c8c&m      " 
+        - ""
+        - "    #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ѕᴇʟʟ #8c8c8c•  " 
+  decorations:
+    isPermanent: true
+    item:
+      material: nexo:auction_empty_slot
+      name: "&e"
+    slots:
+    - 0-8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36-46
+    - 49
+    - 52-53

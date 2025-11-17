@@ -1,0 +1,88 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.195.196.38
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755267536815
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755268276845
+  login: 1755267655980
+money: '4151604.2403259437888903789'
+last-account-name: Cosmic
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2014.8193657149054
+  y: 73.0
+  z: 511.65357053535075
+  yaw: 134.64813232421875
+  pitch: 30.150169372558594
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2067.554900456858
+  y: 104.5
+  z: 530.9124153645479
+  yaw: 161.1986083984375
+  pitch: 34.800048828125
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -423.9430137365598
+    y: 3.0
+    z: 867.7502891433013
+    yaw: -120.32240295410156
+    pitch: 31.77647590637207
+  exp:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2000.6265960393316
+    y: 86.0
+    z: 483.69999998807907
+    yaw: -156.45628356933594
+    pitch: 21.299863815307617
+  chamber2:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -799.4123099237001
+    y: -32.0
+    z: 775.7918841618512
+    yaw: -104.10296630859375
+    pitch: 4.349820137023926
+  keng:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -25.35371071537307
+    y: 84.0
+    z: -804.3000000119209
+    yaw: -131.94708251953125
+    pitch: 19.350322723388672
+  castle:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1972.9336758364284
+    y: 111.0
+    z: 796.127020040207
+    yaw: 21.967803955078125
+    pitch: 31.64994239807129
+  ce:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1936.8823655269048
+    y: 139.0
+    z: 770.6759321983942
+    yaw: -84.22216796875
+    pitch: 13.350021362304688
+nickname: Eurynome

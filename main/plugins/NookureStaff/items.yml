@@ -1,0 +1,231 @@
+# ▐ ▄             ▄ •▄ ▄• ▄▌▄▄▄  ▄▄▄ .    .▄▄ · ▄▄▄▄▄ ▄▄▄· ·▄▄▄·▄▄▄
+# •█▌▐█▪     ▪     █▌▄▌▪█▪██▌▀▄ █·▀▄.▀·    ▐█ ▀. •██  ▐█ ▀█ ▐▄▄·▐▄▄·
+# ▐█▐▐▌ ▄█▀▄  ▄█▀▄ ▐▀▀▄·█▌▐█▌▐▀▀▄ ▐▀▀▪▄    ▄▀▀▀█▄ ▐█.▪▄█▀▀█ ██▪ ██▪
+# ██▐█▌▐█▌.▐▌▐█▌.▐▌▐█.█▌▐█▄█▌▐█•█▌▐█▄▄▌    ▐█▄▪▐█ ▐█▌·▐█ ▪▐▌██▌.██▌.
+# ▀▀ █▪ ▀█▄▀▪ ▀█▄▀▪·▀  ▀ ▀▀▀ .▀  ▀ ▀▀▀      ▀▀▀▀  ▀▀▀  ▀  ▀ ▀▀▀ ▀▀▀
+# 
+# Remember to join my Discord server if you need help:
+# https://discord.nookure.com/
+
+staff-items:
+  items:
+    random_player_teleport:
+      # Whether the item is enabled or not.
+      # If the item is disabled, it won't be shown to anyone.
+      enabled: true
+
+      # The permission required to use the item.
+      # If the player doesn't have the permission, the item won't be shown.
+      permission: nookurestaff.item.randomteleport
+
+      # The name of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the name.
+      # See hhttps://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      name: <blue>Random Teleport
+
+      # The material of the item.
+      # See https://jd.papermc.io/paper/1.20/org/bukkit/Material.html for more info.
+      material: ENDER_PEARL
+
+      # The slot of the item.
+      # The slots are numbered from 0 to 8, from left to right.
+      slot: 0
+
+      # The lore of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the lore.
+      # See https://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      lore:
+        - <gray>Right click to teleport to a random player
+    invsee:
+      # Whether the item is enabled or not.
+      # If the item is disabled, it won't be shown to anyone.
+      enabled: true
+
+      # The permission required to use the item.
+      # If the player doesn't have the permission, the item won't be shown.
+      permission: nookurestaff.item.invsee
+
+      # The name of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the name.
+      # See hhttps://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      name: <blue>Invsee
+
+      # The material of the item.
+      # See https://jd.papermc.io/paper/1.20/org/bukkit/Material.html for more info.
+      material: CHEST
+
+      # The slot of the item.
+      # The slots are numbered from 0 to 8, from left to right.
+      slot: 5
+
+      # The lore of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the lore.
+      # See https://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      lore:
+        - <gray>Click to open the inventory
+        - <gray>Of the player you are looking at
+    thru:
+      # Whether the item is enabled or not.
+      # If the item is disabled, it won't be shown to anyone.
+      enabled: true
+
+      # The permission required to use the item.
+      # If the player doesn't have the permission, the item won't be shown.
+      permission: nookurestaff.item.thru
+
+      # The name of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the name.
+      # See hhttps://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      name: <blue>Thru
+
+      # The material of the item.
+      # See https://jd.papermc.io/paper/1.20/org/bukkit/Material.html for more info.
+      material: COMPASS
+
+      # The slot of the item.
+      # The slots are numbered from 0 to 8, from left to right.
+      slot: 8
+
+      # The lore of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the lore.
+      # See https://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      lore:
+        - <gray>Click to teleport through
+        - <gray>The block you are looking at
+    night_vision:
+      # Whether the item is enabled or not.
+      # If the item is disabled, it won't be shown to anyone.
+      enabled: true
+
+      # The permission required to use the item.
+      # If the player doesn't have the permission, the item won't be shown.
+      permission: nookurestaff.item.nightvision
+
+      # The name of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the name.
+      # See hhttps://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      name: <blue>Night Vision
+
+      # The material of the item.
+      # See https://jd.papermc.io/paper/1.20/org/bukkit/Material.html for more info.
+      material: POTION
+
+      # The slot of the item.
+      # The slots are numbered from 0 to 8, from left to right.
+      slot: 7
+
+      # The lore of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the lore.
+      # See https://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      lore:
+        - <gray>Click to toggle night vision
+    freeze:
+      # Whether the item is enabled or not.
+      # If the item is disabled, it won't be shown to anyone.
+      enabled: true
+
+      # The permission required to use the item.
+      # If the player doesn't have the permission, the item won't be shown.
+      permission: nookurestaff.item.freeze
+
+      # The name of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the name.
+      # See hhttps://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      name: <blue>Freeze
+
+      # The material of the item.
+      # See https://jd.papermc.io/paper/1.20/org/bukkit/Material.html for more info.
+      material: BLAZE_ROD
+
+      # The slot of the item.
+      # The slots are numbered from 0 to 8, from left to right.
+      slot: 1
+
+      # The lore of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the lore.
+      # See https://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      lore:
+        - <gray>Click to freeze
+        - <gray>The player you are looking at
+    ender_chest:
+      # Whether the item is enabled or not.
+      # If the item is disabled, it won't be shown to anyone.
+      enabled: true
+
+      # The permission required to use the item.
+      # If the player doesn't have the permission, the item won't be shown.
+      permission: nookurestaff.item.enderchest
+
+      # The name of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the name.
+      # See hhttps://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      name: <blue>Enderchest
+
+      # The material of the item.
+      # See https://jd.papermc.io/paper/1.20/org/bukkit/Material.html for more info.
+      material: ENDER_CHEST
+
+      # The slot of the item.
+      # The slots are numbered from 0 to 8, from left to right.
+      slot: 3
+
+      # The lore of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the lore.
+      # See https://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      lore:
+        - <gray>Click to open the target's enderchest
+    vanish:
+      # Whether the item is enabled or not.
+      # If the item is disabled, it won't be shown to anyone.
+      enabled: true
+
+      # The permission required to use the item.
+      # If the player doesn't have the permission, the item won't be shown.
+      permission: nookurestaff.item.vanish
+
+      # The name of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the name.
+      # See hhttps://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      name: <blue>Vanish
+
+      # The material of the item.
+      # See https://jd.papermc.io/paper/1.20/org/bukkit/Material.html for more info.
+      material: ENDER_EYE
+
+      # The slot of the item.
+      # The slots are numbered from 0 to 8, from left to right.
+      slot: 4
+
+      # The lore of the item.
+      # The default format is mini message.
+      # but you can also use & or § to colorize the lore.
+      # See https://docs.advntr.dev/minimessage/format.html for more info.
+      # To put a hex color, use <#hexcode> or <gradient:[color1]:[color...]:[phase]> for gradients.
+      lore:
+        - <gray>Click to toggle vanish

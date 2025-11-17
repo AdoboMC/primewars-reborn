@@ -1,0 +1,105 @@
+Shop:
+  Size: 36
+  Title: '&a&lPremium Keys &cShop'
+  Items:
+    Pages:
+      '1':
+        Key1:
+          Material: BLUE_DYE
+          CustomModelData: 0
+          Glow: true
+          Amount: 3
+          DisplayName: '&4Demonic Crate Key &n3x'
+          Lore:
+          - '&f• &a⛊ Unearth weapons born from cursed flames'
+          - '&f• &a✨ Enchantments whispered by ancient evils'
+          - '&f• &a☄ Cosmetics drenched in infernal style'
+          - '&f• &a⁂ Secrets lurking in the abyss await you'
+          - ''
+          Slot: 12
+          Buy:
+            Price: 248.0
+            Commands:
+              - '[COMMAND] crates give p demonic 3 %player%'
+              - '[MESSAGE] &aThanks for buying %player%! You have received &c&n3x Demonic Keys&a!'
+          DisplayLore:
+          - ''
+        Key2:
+          Material: PAPER
+          CustomModelData: 1237
+          Glow: true
+          Amount: 1
+          DisplayName: '&dMystic Crate Key &n1x'
+          Lore:
+          - '&f• &6✨ Mystical Designs that wrap your current sword or armors'
+          - '&f• &6✨ Unique visual styles for supported weapons'
+          - '&f• &6✨ No enchantments or stat boosts – purely cosmetic'
+          - '&f• &6✨ 1 Key = 1 Reward – guaranteed!'
+          - ''
+          Slot: 13
+          Buy:
+            Price: 388.0
+            Commands:
+              - '[COMMAND] crates give p mystic 3 %player%'
+              - '[MESSAGE] &aThanks for buying %player%! You have received &c&n3x Demonic Keys&a!'
+          DisplayLore:
+          - ''
+        Key3:
+          Material: RED_DYE
+          CustomModelData: 0
+          Glow: true
+          Amount: 3
+          DisplayName: '&aVisayas Crate Key &n3x'
+          Lore:
+            - '&f• &2⚡ A rare crate filled with powerful surprises'
+            - '&f• &2🎫 Fly vouchers, skill points, and more await'
+            - '&f• &2⚔ Useful gear and exclusive items for all players'
+            - '&f• &2🎲 Includes chances at Mega Lotto Keys & Dragon Heads'
+            - '&f• &2✓ 3 Key = 3 Reward – no empty pulls!'
+            - ''
+          Slot: 14
+          Buy:
+            Price: 95.0
+            Commands:
+              - '[COMMAND] crates give p visayas 3 %player%'
+              - '[MESSAGE] &aThanks for buying %player%! You have received &a&n3x Visayas Keys&a!'
+          DisplayLore:
+          - ''
+        Key4:
+          Material: TRIAL_KEY
+          CustomModelData: 0
+          Glow: true
+          Amount: 1
+          DisplayName: '&3Spawner Crate Key &n1x'
+          Lore:
+            - '&f• &e⛏ Contains rare and powerful mob spawners'
+            - '&f• &e🪙 Boost your economy with strategic farming tools'
+            - '&f• &e🧬 Includes chances at exclusive spawner types'
+            - '&f• &e📦 Utility items to enhance your survival setup'
+            - '&f• &e✔ 1 Key = 1 Reward – guaranteed value!'
+            - ''
+          Slot: 15
+          Buy:
+            Price: 235.0
+            Commands:
+              - '[COMMAND] crates give p spawner 1 %player%'
+              - '[MESSAGE] &aThanks for buying %player%! You have received &3&n1x Spawner Key&a!'
+          DisplayLore:
+          - ''
+    
+  EmptySlot:
+    Enabled: true
+    Items:
+      Dummy_1:
+        Material: BLUE_STAINED_GLASS_PANE
+        DisplayName: ''
+        DisplayLore:
+        - '&e====='
+        Glow: true
+      Dummy_2:
+        Material: GRAY_STAINED_GLASS_PANE
+        DisplayName: ''
+        DisplayLore:
+        - '&e====='
+        Glow: true
+ConfigVersion: 2.3

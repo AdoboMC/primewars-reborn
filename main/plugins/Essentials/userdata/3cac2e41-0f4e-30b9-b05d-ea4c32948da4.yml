@@ -1,0 +1,50 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.151.9.73
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758015358863
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758018195109
+  login: 1758015307614
+  kits:
+    color: 1756221138552
+money: '4422570.8189520143067620'
+last-account-name: Seigooooo
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -480.51739347889355
+  y: 87.0
+  z: -276.6874993436666
+  yaw: 41.32279968261719
+  pitch: 0.8391876816749573
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 1485.8370860360546
+  y: 135.01837195784407
+  z: -543.8817646551496
+  yaw: -27.28607177734375
+  pitch: 34.667179107666016
+nickname: §bSeigooooo
+homes:
+  home:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -3058.5
+    y: 63.0
+    z: -3172.5
+    yaw: -89.71627807617188
+    pitch: 2.5945699214935303

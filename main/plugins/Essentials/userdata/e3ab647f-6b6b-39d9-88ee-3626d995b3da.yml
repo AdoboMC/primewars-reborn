@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.144.234.28
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1756569297627
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757093682096
+  login: 1757089270536
+money: '2479730.729179565967959409'
+last-account-name: TheLightHunter
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2001.6378156728456
+  y: 111.0
+  z: 484.4981739291477
+  yaw: -3.1340579986572266
+  pitch: 19.429969787597656
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 626.6999999880791
+  y: 95.0
+  z: 659.3000000119209
+  yaw: 46.111053466796875
+  pitch: 10.282801628112793

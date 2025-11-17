@@ -1,0 +1,12 @@
+location: Philippines:-3053.358:65.000:-3172.394
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&bRandom &7spawns in &f%mythic_spawner_randomspawn_cooldownleft%'
+    height: 0.3
+  actions: {}

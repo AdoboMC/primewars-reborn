@@ -1,0 +1,45 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&f<shift:-12> %nexo_zauction_remove%'
+size: 36
+items:
+  remove:
+    type: ZAUCTIONHOUSE_REMOVE_CONFIRM
+    item:
+      material: nexo:auction_empty_slot
+      name: ''
+      lore:
+        - "         #2bba43ʀᴇᴍᴏᴠᴇ"
+        - "          #8c8c8c&m      "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴍᴏᴠᴇ #8c8c8c• "
+    slots:
+    - 29-30
+  deny:
+    type: BACK
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "          #c42323ʙᴀᴄᴋ"
+        - "          #8c8c8c&m      "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ɢᴏ ʙᴀᴄᴋ #8c8c8c• "
+    slots:
+    - 32-33
+  # slot:
+  #   item:
+  #     material: GRAY_STAINED_GLASS_PANE
+  #     name: '&e'
+  #   slots:
+  #   - 3-5
+  #   - 12
+  #   - 14
+  #   - 21-23
+  show:
+    type: ZAUCTIONHOUSE_SHOW_REMOVE
+    slot: 13

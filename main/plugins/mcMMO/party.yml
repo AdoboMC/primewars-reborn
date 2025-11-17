@@ -1,0 +1,6 @@
+# # Credits to @Aternos_
+# Settings for mcMMO Party System
+Party:
+    # Enable or disable the mcMMO party system
+    Enabled: true
+# License Number: e7d728b5-0ea3-4a13-8cff-0bd1c0571a82

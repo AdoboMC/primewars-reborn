@@ -1,0 +1,149 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ʙᴜɪʟᴅᴇʀ
+size: 54
+items:
+  place:
+    material: BRICKS
+    slot: 3
+    display_name: '%imc_primary-color_c%ᴘʟᴀᴄᴇ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴘʟᴀᴄᴇ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ʙʟᴏᴄᴋs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_builder_place'
+      - '[sound] UI_BUTTON_CLICK'
+  break:
+    material: GRASS_BLOCK
+    slot: 5
+    display_name: '%imc_primary-color_c%ʙʀᴇᴀᴋ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ʙʀᴇᴀᴋ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ʙʟᴏᴄᴋs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_builder_break'
+      - '[sound] UI_BUTTON_CLICK'
+  break_dirt:
+    material: dirt
+    slot: 10
+    display_name: '%imc_primary-color_c%ᴅɪʀᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅɪʀᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴀʀsᴇ ᴅɪʀᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴏᴏᴛᴇᴅ ᴅɪʀᴛ'
+  break_grass_block:
+    material: grass_block
+    slot: 11
+    display_name: '%imc_primary-color_c%ɢʀᴀss ʙʟᴏᴄᴋ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀᴀss ʙʟᴏᴄᴋ'
+  break_gravel:
+    material: gravel
+    slot: 12
+    display_name: '%imc_primary-color_c%ɢʀᴀᴠᴇʟ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀᴀᴠᴇʟ'
+  break_sand:
+    material: sand
+    slot: 13
+    display_name: '%imc_primary-color_c%sᴀɴᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴀɴᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴇᴅ sᴀɴᴅ'
+  break_clay:
+    material: clay
+    slot: 14
+    display_name: '%imc_primary-color_c%ᴄʟᴀʏ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʟᴀʏ'
+  break_mud:
+    material: mud
+    slot: 14
+    display_name: '%imc_primary-color_c%ᴍᴜᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴜᴅ'
+  break_soul_sand:
+    material: soul_sand
+    slot: 15
+    display_name: '%imc_primary-color_c%sᴏᴜʟ sᴀɴᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴏᴜʟ sᴀɴᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴏᴜʟ sᴏɪʟ'
+  break_podzol:
+    material: podzol
+    slot: 16
+    display_name: '%imc_primary-color_c%ᴘᴏᴅᴢᴏʟ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴏᴅᴢᴏʟ'
+  break_mycelium:
+    material: mycelium
+    slot: 17
+    display_name: '%imc_primary-color_c%ᴍʏᴄᴇʟɪᴜᴍ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍʏᴄᴇʟɪᴜᴍ'
+  break_moss_block:
+    material: moss_block
+    slot: 19
+    display_name: '%imc_primary-color_c%ᴍᴏss ʙʟᴏᴄᴋ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴏss ʙʟᴏᴄᴋ'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: GREEN_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

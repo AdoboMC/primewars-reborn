@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 119.111.252.11
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753431006879
+  login: 1753430914017
+money: '0'
+last-account-name: sayxi
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -364.21137657429716
+  y: 92.0
+  z: -309.1102648143899
+  yaw: -99.605224609375
+  pitch: 9.258146286010742
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 170.69999998807907
+  y: 66.0
+  z: 173.69999998807907
+  yaw: -43.421836853027344
+  pitch: 10.801653861999512

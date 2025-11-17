@@ -1,0 +1,22 @@
+location: world:460.500:70.000:-329.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&f&lMagic Dust'
+    height: 0.3
+  - content: '&eYou can obtain &fMagic Dust &7by trading'
+    height: 0.3
+  - content: '&7your less % book type command &c/tinker &7or &c/tinkerer &7to trade'
+    height: 0.3
+  - content: '&7put your book in the &emenu&7, on the left upper part click'
+    height: 0.3
+  - content: '&7to accept. it will give you secret dust &aRight-click to'
+    height: 0.3
+  - content: '&7win a chance of &7magic dust'
+    height: 0.3
+  actions: {}

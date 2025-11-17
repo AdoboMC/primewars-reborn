@@ -1,0 +1,59 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&f<shift:-12> %nexo_expired_auctions%'
+
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+  - "zauctionhouse_pagination"
+
+items:
+
+  back:
+    type: BACK
+    slot: 0
+    item:
+      material: nexo:auction_empty_slot
+      name: "#cf3932← ᴀᴜᴄᴛɪᴏɴ ᴍᴇɴᴜ"
+
+  removeall:
+    type: ZAUCTIONHOUSE_REMOVE_ALL_EXPIRE
+    isPermanent: true
+    slot: 49
+    item:
+      material: nexo:auction_empty_slot
+      lore:
+        - "         #92bed8ʀᴇᴍᴏᴠᴇ ᴇᴠᴇʀʏᴛʜɪɴɢ"
+        - "                  #8c8c8c&m     "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴇᴠᴇʀʏᴛʜɪɴɢ #8c8c8c• "
+
+  playerItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: items
+    slot: 8
+    isPermanent: true
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "        #92bed8ʏᴏᴜʀ ɪᴛᴇᴍs"
+        - "            #8c8c8c&m     "
+        - ""
+        - " #e6fff3ʏᴏᴜ ʜᴀᴠᴇ #ffacd5%zauctionhouse_currents_item% #e6fff3ʏᴏᴜʀ ɪᴛᴇᴍs "
+        - ""
+        - "     #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+
+  items:
+    type: ZAUCTIONHOUSE_EXPIRE
+    isPermanent: true
+    slots:
+    - 19-25
+    - 28-34
+    #- 37-43

@@ -1,0 +1,3 @@
+🌟 Acknowledgments: Credits to @Aternos_ for this resource! 🚀
+- Fixed: Default sounds in config files
+# License Number: 5c2b96d9-12c2-4cfc-a224-ae5b54cb36b0

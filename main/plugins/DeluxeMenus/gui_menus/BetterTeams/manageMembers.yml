@@ -1,0 +1,162 @@
+menu_title: "›› Manage Members"
+size: 27
+open_command: []
+items:
+  "Misc | Close":
+    material: BARRIER
+    slot: 22
+    display_name: " "
+    lore:
+    - "      &c&lCLOSE  "
+    - ""
+    - "  &7Click to close  "
+    - ""
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[close]"
+  "Misc | Go Back":
+    material: ARROW
+    slot: 21
+    display_name: " "
+    lore:
+    - "      &e&lGO BACK  "
+    - ""
+    - "  &7Click to go back  "
+    - ""
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] BetterTeamsMain"
+  "Misc | Filler 1":
+     material: BLACK_STAINED_GLASS_PANE
+     slots:
+     - 0
+     - 8
+     - 9
+     - 17
+     - 18
+     - 26
+     display_name: "&r"
+  "Misc | Filler 2":
+     material: GRAY_STAINED_GLASS_PANE
+     slots:
+     - 1-7
+     - 19-20
+     - 23-25
+     display_name: "&r"
+
+  "ADMIN | Member List":
+    material: PAPER
+    slot: 4
+    display_name: " "
+    lore:
+    - "   &a&lMEMBER LIST  "
+    - ""
+    - "%betterTeamsExtra_memberList%"
+    - ""
+
+  "OWNER | Promote Member":
+    material: EMERALD
+    slot: 11
+    display_name: " "
+    lore:
+    - "    &a&lPROMOTE A MEMBER  "
+    - ""
+    - "  &7Click to &apromote &7a member  "
+    - ""
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[player] team promote <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the member name. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+
+  "ADMIN | Ban Member":
+    material: ANVIL
+    slot: 12
+    display_name: " "
+    lore:
+    - "     &c&lBAN A MEMBER  "
+    - ""
+    - "  &7Click to &cban &7a member  "
+    - ""
+    click_commands:
+    - "[player] team ban <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the member name. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+
+  "ADMIN | Kick Member":
+    material: LEATHER_BOOTS
+    hide_attributes: true
+    slot: 13
+    display_name: " "
+    lore:
+    - "     &e&lKICK A MEMBER  "
+    - ""
+    - "  &7Click to &ekick &7a member  "
+    - ""
+    click_commands:
+    - "[player] team kick <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the member name. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+
+  "ADMIN | Unban Member":
+    material: ENCHANTED_GOLDEN_APPLE
+    slot: 14
+    display_name: " "
+    lore:
+    - "     &6&lUNBAN A MEMBER  "
+    - ""
+    - "          &f&lBAN LIST  "
+    - ""
+    - "%betterTeamsExtra_banList%"
+    - ""
+    - "  &7Click to &6unban &7a member  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        hasBannedPlayers:
+          type: string equals
+          input: '%betterTeamsExtra_hasBannedPlayers%'
+          output: 'yes'
+    click_commands:
+    - "[player] team unban <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the member name. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  
+  "ADMIN | No banned players | Unban Member":
+    material: ENCHANTED_GOLDEN_APPLE
+    slot: 14
+    display_name: " "
+    lore:
+    - "     &6&lUNBAN A MEMBER  "
+    - ""
+    - "  &e[!] &7There are no players  "
+    - "    &7banned from this team  "
+    - ""
+    priority: 2
+
+  "OWNER | Demote Member":
+    material: REDSTONE
+    slot: 15
+    display_name: " "
+    lore:
+    - "     &c&lDEMOTE A MEMBER  "
+    - ""
+    - "  &7Click to &cdemote &7a member  "
+    - ""
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[player] team demote <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the member name. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.148.152.23
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752788839588
+  login: 1752788443874
+money: '80.0'
+last-account-name: xNova
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -386.79716765321933
+  y: 92.0625
+  z: -327.4802518022695
+  yaw: -72.56497192382812
+  pitch: 8.342140197753906
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -3433.777028864777
+  y: 68.0
+  z: -3596.3816023144677
+  yaw: -118.70892333984375
+  pitch: 1.3607174158096313

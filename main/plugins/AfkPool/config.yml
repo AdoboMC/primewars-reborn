@@ -1,0 +1,32 @@
+subtitle: '&bYou are in the AFK Pool!'
+entering-title: '&aWelcome to the AFK Pool!'
+exiting-title: '&cLeaving the AFK Pool!'
+
+commands:
+  command1:
+    region-name: 'afkpool-region1'
+    interval: 6000
+    command: 'give %p diamond %m'
+    title: '&eYou received %m diamonds!'
+    enabled: true
+    min: 1
+    max: 5
+    multiplier: 2.0
+  command2:
+    region-name: 'afkpool-region2'
+    interval: 12000
+    command: 'give %p gold_ingot %m'
+    title: '&6You received %m gold ingots!'
+    enabled: true
+    min: 5
+    max: 10
+    multiplier: 1.5
+  command3:
+    region-name: 'afk'
+    interval: 36000
+    command: 'crates give p afk 1 %p'
+    title: '&6You received &9&lAFK Crate Key&r6!'
+    enabled: true
+  # Add more commands as needed
+
+# love from @kmaba, contact me on discord if you need any help

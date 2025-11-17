@@ -1,0 +1,24 @@
+# This is the server motd.
+Server-MOTD:
+  Line-1: '                 &6&lᴘʀɪᴍᴇᴡᴀʀꜱ &a&lʀᴇʙᴏʀɴ           '
+  Line-2: '     &bLeveling &fx &cBoss Raid &fx &aEconomy &fx &5Events     '
+
+# The motd of the player when they join in.
+JoinGame-MOTD:
+  Enabled: true
+  # Check forum for placeholders.
+  # Supported for PlaceholderAPI placeholders.
+  Messages:
+  - '&eWelcome to the server.'
+
+# Server icon.
+Custom-Server-Icon:
+  # Set to true will load image from motd folder.
+  Enabled: true
+  # Make sure it's 64 x 64 pixels with png format.
+  Image: primewars.png
+
+# The maximum players of the server.
+Server-Maximum-Players:
+  Modify: false
+  Maximum-Players: 200

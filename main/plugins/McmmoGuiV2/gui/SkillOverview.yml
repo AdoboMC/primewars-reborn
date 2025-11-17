@@ -1,0 +1,188 @@
+## Credits to @Aternos_
+Gui:
+  Rows: 6
+  Sound: UI_LOOM_SELECT_PATTERN
+  FeatureButtons:
+#    LanguageSelector:
+#      Slots: [35]
+#      Material: head-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOThhNzNjY2Y4ZGMxNWExNTlhMDZlZDdhNmMwNDI1ZTkzODliNDJhOWMyZmE2ZTMyZTk1ZDQ2MzU3YmIxNWFmOSJ9fX0=
+#      ModelData: 1
+#      Flags: [ "*" ]
+#      Glow: false
+    PlayerTop:
+      Slots: [26]
+      Hided: true
+      Material: head-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQzMDhhZTI3YjU4YjY5NjQ1NDk3ZjlkYTg2NTk3ZWRhOTQ3ZWFjZDEwYzI5ZTNkNGJiZjNiYzc2Y2ViMWVhYiJ9fX0=
+      ModelData: 1
+      Flags: ["*"]
+      Glow: false
+    HasParty:
+      Slots: [35]
+      Material: head-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjg0ODAzYmVlMjBhN2Q1NDg2NWY3YzQ2MzA5ZGVkYjY0NDBkMjliNmE0ZWIxM2FlYzY1NzBmZjRlNmVhMmQ0OSJ9fX0=
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    NoParty:
+      Slots: [35]
+      Material: head-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjg0ODAzYmVlMjBhN2Q1NDg2NWY3YzQ2MzA5ZGVkYjY0NDBkMjliNmE0ZWIxM2FlYzY1NzBmZjRlNmVhMmQ0OSJ9fX0=
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Swords:
+      ModelData: 1
+      Glow: false
+      Material: IRON_SWORD
+      Slots: [10]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Axes:
+      ModelData: 1
+      Glow: false
+      Material: IRON_AXE
+      Slots: [11]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Archery:
+      ModelData: 1
+      Glow: false
+      Material: BOW
+      Slots: [12]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Acrobatics:
+      ModelData: 1
+      Glow: false
+      Material: LEATHER_BOOTS
+      Slots: [13]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Unarmed:
+      ModelData: 1
+      Glow: false
+      Material: POPPED_CHORUS_FRUIT
+      Slots: [14]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Taming:
+      ModelData: 1
+      Glow: false
+      Material: BONE
+      Slots: [15]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+
+    Mining:
+      ModelData: 1
+      Glow: false
+      Material: IRON_PICKAXE
+      Slots: [19]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Woodcutting:
+      ModelData: 1
+      Glow: false
+      Material: WOODEN_AXE
+      Slots: [20]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Excavation:
+      ModelData: 1
+      Glow: false
+      Material: IRON_SHOVEL
+      Slots: [21]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Herbalism:
+      ModelData: 1
+      Glow: false
+      Material: IRON_HOE
+      Slots: [22]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Fishing:
+      ModelData: 1
+      Glow: false
+      Material: FISHING_ROD
+      Slots: [23]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Alchemy:
+      ModelData: 1
+      Glow: false
+      Material: BREWING_STAND
+      Slots: [24]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Repair:
+      ModelData: 1
+      Glow: false
+      Material: ANVIL
+      Slots: [37]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Salvage:
+      ModelData: 1
+      Glow: false
+      Material: GRINDSTONE
+      Slots: [38]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Smelting:
+      ModelData: 1
+      Glow: false
+      Material: BLAST_FURNACE
+      Slots: [39]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Maces:
+      ModelData: 1
+      Glow: false
+      Material: MACE
+      Slots: [40]
+      Flags: ["*"]
+      Sound: ITEM_MACE_SMASH_GROUND
+    Tridents:
+      ModelData: 1
+      Glow: false
+      Material: TRIDENT
+      Slots: [41]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Crossbows:
+      ModelData: 1
+      Glow: false
+      Material: CROSSBOW
+      Slots: [42]
+      Flags: ["*"]
+      Sound: BLOCK_LEVER_CLICK
+    Player:
+      Slots: [17]
+      Sound: UI_LOOM_SELECT_PATTERN
+      Material: head-%player%
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+  # Add your own button here, lore name and in the language
+  # file with the same button key.
+  DecorationButtons:
+    BorderLine:
+      Slots: [0,1,2,3,4,5,6,7,8,9,18,27,36,45,46,47,48,49,50,51,52,53,16,25,34,43]
+      Material: BLACK_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags: ["*"]
+      Glow: false
+      Commands: []
+    DeviderLine:
+      Slots: [28,29,30,31,32,33]
+      Material: GRAY_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags: ["*"]
+      Glow: false
+      Commands: []
+    Close:
+      Slots: [44]
+      Material: ARROW
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+# License Number: 051443db-2bb2-4098-ba79-95c292decbda

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 175.176.30.5
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757593124614
+  login: 1757591083005
+money: '98.7119338777498451'
+last-account-name: Rakenrol
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -364.69178653721536
+  y: 92.0
+  z: -307.27548224735506
+  yaw: -142.94998168945312
+  pitch: 8.700005531311035
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -423.30000001192093
+  y: 47.0
+  z: -332.68096635771553
+  yaw: -88.3499984741211
+  pitch: 16.499988555908203

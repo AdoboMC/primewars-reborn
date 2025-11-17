@@ -1,0 +1,163 @@
+# ▐ ▄             ▄ •▄ ▄• ▄▌▄▄▄  ▄▄▄ .    .▄▄ · ▄▄▄▄▄ ▄▄▄· ·▄▄▄·▄▄▄
+# •█▌▐█▪     ▪     █▌▄▌▪█▪██▌▀▄ █·▀▄.▀·    ▐█ ▀. •██  ▐█ ▀█ ▐▄▄·▐▄▄·
+# ▐█▐▐▌ ▄█▀▄  ▄█▀▄ ▐▀▀▄·█▌▐█▌▐▀▀▄ ▐▀▀▪▄    ▄▀▀▀█▄ ▐█.▪▄█▀▀█ ██▪ ██▪
+# ██▐█▌▐█▌.▐▌▐█▌.▐▌▐█.█▌▐█▄█▌▐█•█▌▐█▄▄▌    ▐█▄▪▐█ ▐█▌·▐█ ▪▐▌██▌.██▌.
+# ▀▀ █▪ ▀█▄▀▪ ▀█▄▀▪·▀  ▀ ▀▀▀ .▀  ▀ ▀▀▀      ▀▀▀▀  ▀▀▀  ▀  ▀ ▀▀▀ ▀▀▀
+# 
+# Remember to join my Discord server if you need help:
+# https://discord.nookure.com/
+
+staff-mode:
+  # Message sent to the player when the staff mode is toggled on.
+  toggled-on: '{prefix} <gray>Staff mode has been toggled <green>on</green>.'
+
+  # Message sent to the player when the staff mode is toggled off.
+  toggled-off: '{prefix} <gray>Staff mode has been toggled <red>off</red>.'
+
+  # Message sent to others when a player toggles staff mode on.
+  toggled-on-others: '{prefix} <red>{player}</red> <gray>has toggled staff mode <green>on</green>.'
+
+  # Message sent to others when a player toggles staff mode off.
+  toggled-off-others: '{prefix} <red>{player}</red> <gray>has toggled staff mode <red>off</red>.'
+
+  # Message sent to the player when there are no players online.
+  no-players-online: '{prefix} <red>There are no players online.'
+
+  # Message sent to the player when teleporting to another player.
+  teleporting-to: '{prefix} <gray>Teleporting to <red>{player}</red>.'
+
+  # Action bar format for the staff mode.
+  action-bar: '<red>Vanished <gray>(</gray> {vanished} <gray>)</gray> <red>StaffChat <gray>(</gray> {staffChat} <gray>)</gray> <red>TPS: <red>{tps}'
+
+  # Message sent to the player when the invsee command is used incorrectly.
+  invsee-command-usage: '{prefix} <gray>Usage: <red>/staff invsee <player>'
+
+  # Message sent to the player when the invsee enderchest command is used incorrectly.
+  invsee-enderchest-command-usage: '{prefix} <gray>Usage: <red>/staff enderchest <player>'
+vanish:
+  # Message sent to the player when the vanish is toggled on.
+  vanish-enabled: '{prefix} <gray>Vanish has been toggled <green>on</green>.'
+
+  # Message to broadcast to online players when a staff member enable vanish.
+  # Change it to "" to disable the broadcast.
+  vanish-enabled-broadcast: <yellow>{player} has left the game.
+
+  # Message sent to the player when the vanish is toggled off.
+  vanish-disabled: '{prefix} <gray>Vanish has been toggled <red>off</red>.'
+
+  # Message to broadcast to online players when a staff member disable vanish.
+  # Change it to "" to disable the broadcast.
+  vanish-disabled-broadcast: <yellow>{player} has joined the game.
+
+  # Message sent to the player when he/she joins the server and is still in vanish mode.
+  you-are-still-in-vanish: <green>You are still in vanish mode.
+freeze:
+  # The message to send to the player when he or she is frozen.
+  frozen-message: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>You have been <green>frozen</green>.</gray>
+
+  # The message to send to the player when he or she is unfrozen.
+  unfrozen-message: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>You have been <green>unfrozen</green>.</gray>
+
+  # The message to send to the staff member when the player is frozen.
+  staff-frozen-message: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>{player} has been <green>frozen</green> by <green>{staff}</green>.</gray>
+
+  # The message to send to the staff member when the player is unfrozen.
+  staff-unfrozen-message: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>{player} has been <green>unfrozen</green> by <green>{staff}</green>.</gray>
+
+  # The message to repeat in the chat when the player is frozen.
+  chat-frozen-message: |2
+        &7████&c█&7████
+        &7███&c█&6█&c█&7███
+        &7██&c█&6█&0█&6█&c█&7██
+        &7██&c█&6█&0█&6█&c█&7██   You have been frozen!
+        &7█&c█&6██&0█&6██&c█&7█  Join our discord server:
+        &7█&c█&6█████&c█&7█  http:/discord.example.com
+        &c█&6███&0█&6███&c█  You have {time} to join.
+        &c█████████
+
+  # This message will be sent to the staff when the player who he froze leaves the server.
+  confirm-punish-message: |
+    <gray>The <green>player</green> <red>{player}</red> has left the server while he was freezed
+    Do you want to execute the commands specified when a player leaves ? <hover:show_text:'Forgive the player'><red><click:run_command:'/freeze /remove {uuid}'>[x]</click></red></hover> <click:run_command:/freeze /exec {uuid}><green><hover:show_text:'Punish that player'>[✔]</hover></green> </click>
+
+  # Message sent when a staff tries to freeze a player with nookure.staff.freeze.bypass permission.
+  freeze-bypass-message: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>You can't freeze that player.</gray>
+
+  # The usage message for the /freeze command.
+  freeze-command-usage: <bold><dark_aqua>Freeze <dark_gray>»</bold> <red>You must use /freeze {player} to freeze a player.</red>
+
+  # The format of the chat message when the player is frozen.
+  freeze-chat-format: '{player} <dark_gray>(frozen)</dark_gray> » <gray>{message}</gray>'
+
+  # Chat format for staff members that are talking to frozen players.
+  freeze-staff-chat-format: '{player} <dark_gray>(staff)</dark_gray> -> {target} <dark_gray>(frozen)</dark_gray> » <gray>{message}</gray>'
+
+  # FreezeChat command usage message.
+  freeze-chat-usage: <bold><dark_aqua>Freeze <dark_gray>»</bold> <red>You must use /freezechat {player} <message> to chat with a frozen player.</red>
+
+  # Freeze Chat when a player isn't frozen and you try to use it.
+  not-frozen-chat: <bold><dark_aqua>Freeze <dark_gray>»</bold> <red>You can't use the freeze chat if the player isn't frozen.</red>
+
+  # Freeze Chat when a player isn't online and you try to use it.
+  player-not-online: <bold><dark_aqua>Freeze <dark_gray>»</bold> <red>That player is not online.</red>
+
+  # Message sent when a player is forgiven
+  forgive-message: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>You have forgiven {player}.</gray>
+
+  # Message sent when a player is punished
+  punish-message: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>You have punished {player}.</gray>
+
+  # Message sent when the timer has been paused for a player
+  the-timer-has-been-paused-for: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>The timer has been paused for {player}.</gray>
+
+  # Message sent when the staff has paused the timer for a player
+  the-staff-has-paused-the-timer: <bold><dark_aqua>Freeze <dark_gray>»</bold> <gray>The staff has paused the timer for you</gray>
+
+  # Message sent when a player is not frozen.
+  player-not-frozen: <bold><dark_aqua>Freeze <dark_gray>»</bold> <red>That player is not frozen.</red>
+staff-chat:
+  # The format for sent messages on Staff Chat.
+  format: <b><dark_aqua>SC</dark_aqua></b> <green>{player} <dark_gray>({server}) <dark_gray><bold>»</bold> <gray>{message}
+
+  # Enable the staff chat as main chat.
+  enable: '{prefix} <green>You have enabled the staff chat as main chat!'
+
+  # Disable the staff chat as main chat.
+  disable: '{prefix} <red>You have disabled the staff chat as main chat!'
+placeholder:
+  # The result to display when a placeholder displays an affirmative value.
+  placeholder-true: <green>✔
+
+  # The result to display when a placeholder displays a negative value.
+  placeholder-false: <red>✘
+pin:
+  the-pin-is-incorrect: <red>The PIN is incorrect.
+  correct-pin: <green>The PIN is correct.
+  pin-set: <green>Your PIN has been set to {pin}.
+  already-logged-in: <red>You are already logged in.
+  doesnt-allowed-to-do-that-until-logged-in: <red>You don't have permission to do that until you enter your PIN.
+  change-pin-command-usage: '<red>Usage: /changepin <new pin> <-- Must be 4 digits.'
+  pin-delete-command-usage: '<red>Usage: /deletepin <uuid|name>'
+  pin-deleted: <green>The PIN has been successfully deleted for {player}.
+  pin-changed: <green>Your PIN has been changed to {pin}.
+  pin-not-set: <red>You don't have a PIN set.
+  you-must-have-to-set-a-pin: |
+    {center}<bold>◆ <red>Nookure <white>Network</white> ◆</bold>
+
+    {center}<gray>You <red>must</red> have to set a <red>PIN</red> before you can play on this server.
+    {center}<gray>Use <red><u><click:run_command:'/setpin'>/setpin</click></u></red> to set a PIN.
+    {center}<gray>You have {time} to set a PIN.
+  pin-time-expired: <red>Your time to set a PIN has expired.
+
+# The prefix for all staff messages.
+# If you want to use the prefix in a message, use {prefix}.
+prefix: <b><red>Staff</red> <gray>»</gray></b>
+
+# Reload message
+reload: '{prefix} <gray>Configuration reloaded, mayor changes may not take effect until the server is restarted.'
+
+# Player not found message
+player-not-found: '{prefix} <red>Could not find the player {player}.'
+
+# The message when you don't have a permission
+no-permission: '{prefix} <red>You don''t have permission to do that.'

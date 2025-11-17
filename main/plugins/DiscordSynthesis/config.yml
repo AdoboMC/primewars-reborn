@@ -1,0 +1,497 @@
+# # +----------------------------------------------------+ #
+# # <                 Discord Synthesis                  > #
+# # <               Full integration with                > #
+# # <                your Discord Server!                > #
+# # <        Remember to remove the [] from IDs          > #
+# # +----------------------------------------------------+ #
+
+# Prefix for the plugin
+PREFIX: '&cDiscord&7Synthesis &7> '
+# SPIGOT ONLY
+# Whether to run in Proxy mode where everything gets forwarded to the proxy directly
+IS-PROXY-MODE: false
+# SPIGOT ONLY
+# For proxy mode, the server name to be used
+SERVER-NAME: primewars
+# Enabled DiscordSynthesis Modules
+ENABLED-MODULES:
+  # Sync minecraft and discord chats
+  CHAT-SYNC: true
+  # Log user commands in minecraft
+  COMMAND-LOG: true
+  # Update server status in channel (on and off)
+  SERVER-STATUS: true
+  # Control your MC console from Discord
+  CONSOLE: true
+  # Log player leaves and joins in a discord channel
+  PLAYER-LEAVE-AND-JOIN: true
+  # Log all deaths in the MC server
+  DEATH-LOG: true
+  # Sync MC ranks (groups) with Discord roles
+  SYNC-RANK: false
+  # Server stat voice channels
+  STATS: true
+  # Reporting players
+  REPORTING: false
+  # Broadcasting
+  BROADCASTING: false
+  # Bug report
+  BUG-REPORT: true
+  # Require linking Discord & MC to play
+  LINK-REQUIRED: false
+  # Server switch notifications (BUNGEECORD ONLY) 
+  SERVER-SWITCH: false
+  # Require authorization to play
+  AUTHORIZATION: false
+  # Whether /discord command is enabled
+  DISCORD-COMMAND: true
+  # Enable the rewards system
+  REWARDS: false
+  # Send advancements to a channel (Spigot only)
+  ADVANCEMENTS: true
+# Token of your discord bot to connect
+BOT-TOKEN: MTM4NzgzNzU2MTkxMjY4ODY5MA.G1DiW1.AamSeN08BK92-7YXp34CLbf3e6BnbDgH40HwB8
+# Discord Channel IDs
+CHANNELS:
+  # ID of the Chat Sync discord channel
+  CHAT-SYNC: '1387833935957983424'
+  # ID of the command logging discord channel
+  COMMAND-LOG: '1387328179584237658'
+  # ID of the server status discord channel (ON and OFF)
+  SERVER-STATUS: '1387842702938214471'
+  # ID of the console control discord channel
+  CONSOLE: '1387833801727803482'
+  # ID of the channel to log player leaves and joins
+  PLAYER-LEAVE-AND-JOIN: '1387842859918430268'
+  # ID of the death log channel
+  DEATH-LOG: '1387833935957983424'
+  # ID of the reports channel
+  REPORTS: '[ID]'
+  # ID of the broadcast channel
+  BROADCAST: '[ID]'
+  # ID of the bug reports channel
+  BUG-REPORTS: '[ID]'
+  # ID of the server switch channel (BUNGEECORD ONLY) 
+  SERVER-SWITCH: '[ID]'
+  # ID of the advancements channel (SPIGOT ONLY)
+  ADVANCEMENTS: '[ID]'
+# Server-specific Discord Channel IDs
+# Configure Discord channels for each individual server
+SERVER-CHANNELS:
+- SERVER-NAME: primewars
+  CHAT-SYNC: '1387833935957983424'
+  COMMAND-LOG: '1387328179584237658'
+  PLAYER-LEAVE-AND-JOIN: '1387842859918430268'
+  DEATH-LOG: '1387833935957983424'
+  ADVANCEMENTS: '1387833935957983424'
+# Custom commands that your Discord Synthesis bot can execute
+# #
+# Name: Name of the command
+# #
+# Description: Description of your command to be shown in Discord
+# #
+# Response: Response text to the user executing the command in Discord (when using TEXT type)
+# #
+# Command: Minecraft command to be executed as console when this command is used
+# #
+# Parameters: Parameters of your command to be referenced in Command or in Response
+# #
+# Response Type: Type of response (EMBED or TEXT)
+# #
+# Embed: Embed to send instead of TEXT
+# #
+# # All settings below are about sending a response message to a channel in your server, NOT to be confused with a response to the player like above.
+# #
+# Send to channel: whether to send a response message to a specified channel in your server
+# #
+# Channel ID: The id of the channel to send message to
+# #
+# Message Type: Type of response (EMBED or TEXT)
+# #
+# Text Message: Text of the message to send in the Channel specified above (when using TEXT type)
+# #
+# Message Embed: Embed to send instead of TEXT
+CUSTOM-COMMANDS:
+- NAME: test
+  DESCRIPTION: Sample command description
+  RESPONSE: 'Test command is working! Entered parameter is: %param1%'
+  COMMAND: say Hello, this is a test!
+  PARAMETERS:
+  - NAME: param1
+    DESCRIPTION: Test parameter 1
+    IS-REQUIRED: true
+  RESPONSE-TYPE: TEXT
+  EMBED:
+    TITLE: Test Title
+    THUMBNAIL-URL: ''
+    DESCRIPTION: Test Description
+    FOOTER: ''
+    FOOTER-IMAGE-URL: ''
+    FIELDS:
+      First Field: '%param1%'
+    -R: 255
+    -G: 0
+    -B: 0
+  SEND-TO-CHANNEL: false
+  CHANNEL-I-D: '[ID]'
+  MESSAGE-TYPE: TEXT
+  TEXT-MESSAGE: Message here
+  MESSAGE-EMBED:
+    TITLE: Test Title
+    THUMBNAIL-URL: ''
+    DESCRIPTION: Test Description
+    FOOTER: ''
+    FOOTER-IMAGE-URL: ''
+    FIELDS:
+      First Field: '%param1%'
+    -R: 255
+    -G: 0
+    -B: 0
+ITEM-PLACEHOLDER-SETTINGS:
+  # The prefix that is replaced with the item name
+  PREFIX: '[item]'
+  # The format of the item name, use %item% for name
+  FORMAT: '%item%'
+# Whether to change the bots playing status or not
+CHANGE-BOT-STATUS: true
+# OPTIONS: ONLINE, IDLE, DND, INVISIBLE
+ACTIVITY-STATUS: ONLINE
+# The status to set to the bot
+BOT-STATUS: '%players% players are currently online!'
+# 0 (PLAYING) = Represents a normal activity, represented as Playing Half-Life 3 for example.
+# 1 (STREAMING) = Represents streaming an activity, represented as Streaming Half-Life 3 for example.
+# 2 (LISTENING) = Represents listening to an application, represented as Listening to Half-Life 3 for example.
+# 3 (WATCHING) = Represents watching an application, represented as Watching Half-Life 3, for example.
+# 4 (CUSTOM) = Represents a custom status, represented as just the status text.
+# 5 (COMPETING) = Represents competing in something, represented as Competing in Half-Life 3, for example.
+STATUS-TYPE-ID: 0
+# Commands not to log in Discord
+COMMAND-LOG-BLACKLIST:
+- changepass
+- login
+- register
+# Chat sync settings
+CHAT-SYNC-SETTINGS:
+  # Chat Sync type
+  # TEXT = write messages as text
+  # WEBHOOK = use webhooks to send messages
+  # EMBED = use an embed
+  TYPE: WEBHOOK
+  # WebHook URL
+  # Create a webhook in the Integrations tab of your server
+  # name it anything it doesnt matter and set it to the chat sync channel
+  # and copy the url and paste it here
+  WEBHOOK-URL: https://discord.com/api/webhooks/1387841916250620126/YkR6pBVhED6ewOoRgC_D-tPMSoj_ReEGTVewgUPRwr_7a-SxBDrKqY9Yu_RviXhcBTg-
+  # Which value to use as rank for chat sync
+  # Possible values:
+  # GROUP_NAME
+  # PREFIX
+  CHAT-SYNC-RANK-VALUE: PREFIX
+  # Messages not to sync in Discord
+  CHAT-SYNC-BLACKLIST:
+  - '@everyone'
+  - '@here'
+  # Max amount of characters a user can sync across chats
+  MAX-CHAT-SYNC-CHARACTERS: 2000
+  # The profile picture URL to be used for webhooks, %UID% for UUID and %name% for player name (incase of cracked servers)
+  # If youre running a cracked server use this: https://mc-heads.net/avatar/%name%
+  WEBHOOK-PROFILE-PICTURE: https://mc-heads.net/avatar/%name%
+  # Whether to check for a prefix in the message before sending to Discord
+  # for usage with various chat plugins
+  # for example using ! to check if message is global or not
+  USE-PREFIX: false
+  # The prefix to check for, ! by default
+  PREFIX: '!'
+  # Use chat channels (global, local, etc) 
+  # this will override the channel id in Channels 
+  USE-CHANNELS: false
+  # [Minecraft Channel Name]: [Discord Channel ID]
+  CHANNEL-IDS:
+    NAME: ID
+  # Embed to be used if type chosen is EMBED
+  EMBED:
+    # Title of the embed
+    TITLE: New Chat log
+    # URL of the thumbnail image
+    THUMBNAIL-URL: https://mc-heads.net/avatar/%name%
+    # Description of the embed
+    DESCRIPTION: This player has sent a message
+    # Footer of the embed
+    FOOTER: ''
+    # Footer image
+    FOOTER-IMAGE-URL: ''
+    # Fields of the embed
+    # Format:
+    # TITLE: FIELD TEXT
+    FIELDS:
+      Player: '%player%'
+      Message: '%message%'
+    # RGB: Color of the embed
+    -R: 255
+    -G: 0
+    -B: 0
+  # Cooldown from Discord to Minecraft in seconds (0 to disable)
+  COOLDOWN: 2
+# Command Log Settings
+COMMAND-LOG-SETTINGS:
+  # Command log type
+  # TEXT = write commands as text
+  # WEBHOOK = use webhooks to send commands
+  # EMBED = use an embed
+  TYPE: TEXT
+  # WebHook URL
+  # Create a webhook in the Integrations tab of your server
+  # name it anything it doesnt matter and set it to the command log channel
+  # and copy the url and paste it here
+  WEBHOOK-URL: '[WEBHOOK URL]'
+  # The profile picture URL to be used for webhooks, %UID% for UUID and %name% for player name (incase of cracked servers)
+  # If youre running a cracked server use this: https://mc-heads.net/avatar/%name%
+  WEBHOOK-PROFILE-PICTURE: https://mc-heads.net/avatar/%name%
+  # Embed to be used if type chosen is EMBED
+  EMBED:
+    # Title of the embed
+    TITLE: New Command log
+    # URL of the thumbnail image
+    THUMBNAIL-URL: https://mc-heads.net/avatar/%name%
+    # Description of the embed
+    DESCRIPTION: This player has used a command
+    # Footer of the embed
+    FOOTER: ''
+    # Footer image
+    FOOTER-IMAGE-URL: ''
+    # Fields of the embed
+    # Format:
+    # TITLE: FIELD TEXT
+    FIELDS:
+      Player: '%player%'
+      Command: '%command%'
+    # RGB: Color of the embed
+    -R: 255
+    -G: 0
+    -B: 0
+# Settings for account synchronization
+SYNCHRONIZATION-SETTINGS:
+  # Change the Discord nickname for the user to their MC username
+  SYNC-NICKNAME: true
+  # Whether to give a connected role to users
+  ADD-ROLE: false
+  # ID of the role
+  ROLE-ID: '[ID]'
+  # Commands to be executed as Console when a player successfully connects their account.
+  COMMANDS:
+  - /test %p%
+  # The groups to associate with roles
+  # #
+  # GROUP: Name of the MC group
+  # #
+  # ROLE: ID of the role
+  # #
+  # Authority: Whichever takes authority on deletion (DISCORD/MINECRAFT)
+  # # If DISCORD has authority and the MC group was removed from user, they will get the group again
+  # # If MINECRAFT has authority and the role was removed from user, they will get the role again
+  GROUPS:
+  - GROUP: GROUP
+    ROLE: '1219680136979550328'
+    AUTHORITY: MINECRAFT
+  # Permissions to sync with roles
+  # #
+  # Permission: MC permission
+  # #
+  # ROLE: ID of the role
+  # #
+  # Authority: Whichever takes authority on deletion (DISCORD/MINECRAFT)
+  # # If DISCORD has authority and the permission was removed from user, they will get the permission again
+  # # If MINECRAFT has authority and the permission was removed from user, they will get the permission again
+  PERMISSIONS:
+  - PERMISSION: PERMISSION
+    ROLE: '1219680136979550328'
+    AUTHORITY: MINECRAFT
+  # Whether to resync everyone (online & offline) every x minutes
+  RE-SYNC-EVERYONE-PERIODICALLY: false
+  # Timer (in minutes) to resync everyone
+  RE-SYNC-EVERYONE-TIMER: 10.0
+# Voice Channel IDs to display different stats for your minecraft server
+# Please suggest more stats to be added!
+STATS:
+  # Player Count stat
+  PLAYER-COUNT:
+    CHANNEL-ID: '[ID]'
+    TEXT: 'Player Count: %v%'
+    ENABLED: true
+  # Unique Players stat
+  UNIQUE-PLAYERS-COUNT:
+    CHANNEL-ID: '[ID]'
+    TEXT: 'Unique playerS: %v%'
+    ENABLED: true
+# Settings for reports
+REPORTING-SETTINGS:
+  # Whether to send a title message
+  ENABLE-TITLE: true
+  # Title message header
+  TITLE-HEADER: '&c&lReport!'
+  # Title message caption
+  TITLE-CAPTION: '&7%reporter% reported %reported%'
+  # Fade in time
+  FADE-IN: 10
+  # Fade out time
+  FADE-OUT: 70
+  # Embed to be used when reports are sent to Discord
+  EMBED:
+    # Title of the embed
+    TITLE: New Report
+    # URL of the thumbnail image
+    THUMBNAIL-URL: https://mc-heads.net/avatar/%reported%
+    # Description of the embed
+    DESCRIPTION: '%reporter% has reported %reported% for: %reason%'
+    # Footer of the embed
+    FOOTER: 'Server: %server%'
+    # Fields of the embed
+    # Format:
+    # TITLE: FIELD TEXT
+    FIELDS:
+      Reason: '%reason%'
+      Reporter: '%reporter%'
+    # RGB: Color of the embed
+    -R: 255
+    -G: 0
+    -B: 0
+  # Allow to report offline players
+  ALLOW-OFFLINE-REPORTING: true
+  # Allow staff to claim, resolve, and manage reports
+  ENABLE-REPORT-MANAGEMENT: true
+  # Allow staff to teleport to the server where a report was issued
+  ENABLE-TELEPORT-TO-REPORT: true
+  # Maximum number of active reports a player can have (0 = unlimited)
+  MAX-REPORTS-PER-PLAYER: 0
+# Settings for bug reports
+BUG-REPORTING-SETTINGS:
+  # Whether to send a title message
+  ENABLE-TITLE: true
+  # Title message header
+  TITLE-HEADER: Bug report
+  # Title message caption
+  TITLE-CAPTION: '%reporter% -> %bug%'
+  # Fade in time
+  FADE-IN: 2
+  # Fade out time
+  FADE-OUT: 5
+  # Embed to be used when bug reports are sent to Discord
+  EMBED:
+    # Title of the embed
+    TITLE: New Bug Report
+    # URL of the thumbnail image
+    THUMBNAIL-URL: https://mc-heads.net/avatar/%name%
+    # Description of the embed
+    DESCRIPTION: 'You have received a new bug report! Information:'
+    # Footer of the embed
+    FOOTER: ''
+    # Footer image
+    FOOTER-IMAGE-URL: ''
+    # Fields of the embed
+    # Format:
+    # TITLE: FIELD TEXT
+    FIELDS:
+      Bug: '%bug%'
+      Reporter: '%reporter%'
+    # RGB: Color of the embed
+    -R: 255
+    -G: 0
+    -B: 0
+# Settings for required linking
+REQUIRED-LINKING-SETTINGS:
+  # List of required roles to be able to play
+  REQUIRED-ROLES:
+  - '{ID}'
+  # Requirement type of roles (ALL, ANY, NONE)
+  # ALL = you need all above roles to play
+  # ANY = you need at least one
+  REQUIREMENT-TYPE: ANY
+  # List of blacklisted roles
+  BLACK-LISTED-ROLES:
+  - '{ID}'
+# Settings for authorization
+AUTHORIZATION-SETTINGS:
+  # Whether to deny a player from joining if a player with the same name is already online.
+  DENY-JOIN-IF-ALREADY-ON: true
+  # Whether to apply potion effects to unauthorized players
+  APPLY-EFFECTS: true
+  # List of effects to apply to players, list found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+  POTION-EFFECTS:
+  - BLINDNESS
+# MySQL settings
+MY-S-Q-L-SETTINGS:
+  # Use MySQL? If not, plugin will use SqlLite
+  ENABLED: false
+  USERNAME: ''
+  PASSWORD: ''
+  IP: 0.0.0.0
+  PORT: 0000
+  # Name of the database
+  DB-NAME: db
+# (BUNGEECORD) [Actual Server Name]: [Nickname]
+SERVER-NICKNAMES:
+  lobby: Cool Lobby
+# (BUNGEECORD) Blacklisted servers for chat sync & command log
+BLACKLISTED-SERVERS:
+- servername1
+# (BUNGEECORD) Commands to be executed as the admin when they click a report, in order
+REPORT-COMMANDS:
+- /tp %reported%
+- /server %server%
+# Debug log settings
+LOGGING-SETTINGS:
+  # Whether to enable debug logs or not
+  ENABLE-LOGS: false
+  # How do you want the plugin to send logs?
+  # CONSOLE, DISCORD_TEXT, DISCORD_WEBHOOK
+  # Multiple allowed!
+  LOG-TYPES:
+  - CONSOLE
+  DISCORD-CHANNEL-ID: '1387328179584237658'
+  WEBHOOK-URL: '[URL]'
+# Characters/words to filter out in the console logger (Case sensitive)
+CONSOLE-FILTER-OUT:
+- '[XXXX]'
+# How many seconds should the cached database re-sync from SqlLite or MySQL (less than 60 is not recommended.)
+CACHED-DATABASE-SYNC-TIMER: 60
+# Whether to hide vanished players from logs (leave, join, etc)
+HIDE-VANISHED-PLAYERS: true
+# Reward system settings
+REWARD-SETTINGS:
+  # Commands to be executed when a player reaches a certain text message milestone
+  TEXT-MESSAGE-REWARDS:
+    '100': /give %p% diamond_pickaxe
+  # Commands to be executed when a player reaches a certain voice message minute milestone
+  VOICE-MESSAGE-REWARDS:
+    '60': /give %p% diamond_pickaxe
+  # The period to check for rewards in (in seconds)
+  REWARD-CHECK-PERIOD: 120
+BROADCAST-SETTINGS:
+  # Whether to send a title message
+  ENABLE-TITLE: true
+  USE-EMBED: false
+  # Embed to be used
+  EMBED:
+    # Title of the embed
+    TITLE: Broadcast
+    # URL of the thumbnail image
+    THUMBNAIL-URL: https://mc-heads.net/avatar/%name%
+    # Description of the embed
+    DESCRIPTION: '%message%'
+    # Footer of the embed
+    FOOTER: ''
+    # Footer image
+    FOOTER-IMAGE-URL: ''
+    # Fields of the embed
+    # Format:
+    # TITLE: FIELD TEXT
+    FIELDS:
+      Broadcaster: '%broadcaster%'
+    # RGB: Color of the embed
+    -R: 255
+    -G: 0
+    -B: 0
+# Whether to sync bot messages into Minecraft chat or not
+SYNC-BOT-MESSAGES: true
+# Date format to show in embeds
+EMBED-DATE-FORMAT: HH:mm:ss

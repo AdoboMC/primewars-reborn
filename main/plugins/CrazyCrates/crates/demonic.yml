@@ -1,0 +1,317 @@
+Crate:
+  # https://docs.crazycrew.us/docs/plugins/crazycrates/misc/crate-types
+
+    # Make sure to check out the wiki for anything not explained here.
+  # https://docs.crazycrew.us/docs/category/crazycrates
+
+    # See CosmicCrate.yml or CasinoCrate.yml to see how the Cosmic/Casino CrateType works.
+  CrateType: CSGO
+  # Name of the Inventory if a GUI crate.
+  CrateName: <red>Demonic Crate
+  # The name of the inventory that will be in the preview GUI.
+  Preview-Name: <red>Demonic Crate Preview
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # The amount of keys required to use the crate.
+  RequiredKeys: 0
+  # Max amount of crates that can be opened at once using /crates mass-open
+  Max-Mass-Open: 64
+  # If the crate shows in the /crates.
+  # If the type is QuickCrate/CrateOnTheGo/FireCracker, They will not work as they require a Physical Crate.
+  InGUI: true
+  # Slot the item is in the GUI.
+  Slot: 26
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: true
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><red>Demonic
+    Crate.</bold>'
+  # This section is related to commands opening when a crate is opened.
+  opening-command:
+    # If the commands should be sent or not.
+    toggle: false
+    # The commands to run when the crate opens.
+    # Supports all placeholderapi placeholders
+    # Supports %prefix which returns our prefix, %player% which uses the player name
+    commands:
+    - put your command here.
+  sound:
+    # The sound options when the animation is cycling.
+    cycle-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use.
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: block.note_block.xylophone
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when an item is clicked.
+    click-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: ui.button.click
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when a crate ends.
+    stop-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: entity.player.levelup
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+  # A default message if the prize doesn't have any Messages
+  # i.e. Messages: [] or the value isn't there.
+  Prize-Message:
+  - <gray>You have won <red>%reward% <gray>from <red>%crate%.
+  # A default command if the prize doesn't have any commands
+  # i.e. Commands: [] or the value isn't there.
+  Prize-Commands: []
+  # Item the crate is in the GUI
+  Item: ominous_trial_key
+  # The custom model data of the item, -1 is disabled.
+  Custom-Model-Data: -1
+  # If the crate in the main /crates is glowing or not.
+  Glowing: false
+  # Name of the item in the GUI.
+  Name: <bold><red>Demonic Crate</bold>
+  # The lore of the item in the GUI.
+  Lore:
+  - <gray>This crate contains strange objects.
+  - <gray>You have <gold>%keys% keys <gray>to open this crate with.
+  - '<gray>You have opened this crate: <gold>%crate_opened% times'
+  - <gray>(<yellow>!<gray>) Right click to view rewards.
+  Preview:
+    # Turn on and off the preview for this crate.
+    Toggle: true
+    # How many lines the Crate Preview should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      # Turn the glass border in the preview on and off.
+      Toggle: true
+      # The name of the border item.
+      Name: ' '
+      # The item that shows in the border. Can be glass or any other item.
+      Item: gray_stained_glass_pane
+      # The custom model data of the item, -1 is disabled.
+      Custom-Model-Data: -1
+  PhysicalKey:
+    # Name of the Key.
+    Name: <bold><red>Demonic Crate Key</bold>
+    # Lore of the Key.
+    Lore:
+    - <gray>A special Key
+    - <gray>For a special Crate.
+    # The item the key is.
+    Item: blue_dye
+    # The custom model data of the item, -1 is disabled.
+    Custom-Model-Data: -1
+    # Makes the key look enchanted.
+    Glowing: true
+    # Settings for the holograms.
+    # Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The distance the hologram can be seen.
+    Range: 8
+    # How often should the hologram update? -1 is disabled.
+    Update-Interval: -1
+    # The background color of the hologram. It uses hex colors. This only works with CMI/FancyHolograms
+    # Set the color to transparent if you don't want any color.
+    Color: transparent
+    # The message that will be displayed above the crate.
+    # Note: MiniMessage or Color Codes being supported is depending on the 'holograms' plugin.
+    Message:
+    - <bold><green>Basic Crate</bold>
+  # All the prizes that can be obtained in the Crate.
+  # These prizes do not require any extra configuration
+  # They will give the prizes based on what's already below.
+  # See the AdvancedExample.yml for a more advanced crate.
+  Prizes:
+    '1':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81VXU/TUBh+cTLHDCCCRC8kzSF6ocRAEEkWY2xoA4tsI2xBySDNoT3bGtqeeXrKRwhXXpl4rXfGO66M8Y5r/Cf+Et92W7sBi4lE4y6a9jzvx/N+PGdZgBTc1KikG0z4NvcARv0MXLMtuOfaHjMFrcmcx2SDCVsyw9/nwkrBoMkDTwLAQBayJneb3GOe9LNwP3GiUgp7J0Anl1t2zcb4Axi8wfcN2zMk5460mzAEQzGcDQNm4Lo8bDKYSiLVmYfZzScYkZq7ht9kzEpDmrptEtEvA0O8yQSVYRFD1LKMPeoErFXLiOtypO/6OYuZ/BAw7UgS3+EC7QAG4f0RYQdSUJKrHpEd7lgkV6OOz2aIydGK5Mh+A+OQGWJL6thmDPOdWuCbVLLEw8fyd7Fxggf1RnwqMT6GwQiBZzHhIImOy/F2Ah//T1S+dVPpZLeo2DXo24BeZND2VMjxTGJfF/Swr+nPz6eKGk1X0ahL6yzX69yn1Lb33DzpJfz17xP++EVZ29P/hO3jhQfn6J7+E7qqZdmhOKij6AeoFJt55hWZZ2EyURGGa1BPuq2LIO2wPeb4KRhLLBCybK8eqjwFd5Lzmi2YQVHWZqjmVArGE8xvUNH0mO8jciMFo12Ii1xD1aZgIjkNvB3B6G4rzWB4LXQlMgNfctfwqMvg00V9SRF0yWtam302+1S/usA05nLPNpVyeHf+Vm3ZSwhbeD9jIYVCKV/RC2VD2yyqhfySsVpa1+FdlZyd1DBu/Dw7mVfOThYvERWCKJYeo3OLjEg45vMmfZanbb2dgdsxufBpVDbXdBgsvy6taxm41YvlNRjW9EKpiBVEFmkYjy3WNnRDUwvqsv5yonOxD8colq3D3efTVjga9uKh09PbDIyslCvrm4ZeXFpRi5UyfDgiZUnDxnaOsLLScllycRgNPo7cwY0f33GY6FDdIvHuKYtbZGaLtPdXmYu+kk1TFqKDaCHb710rrcxvkW3UzXEapuJ0qqblK/lSUV019Ddr+noe83dVPHaBF2jVbj5YRswmWqmEC362meBbD49wTtlWh6JGFuPuhJ/9OhNicVf6tb5V32RSX6WiLr3qTPJR508afgGciYrAcAgAAA==
+      Commands:
+      - mi give armor DEMONIC_SWORD %player% 1
+      Chance: 1
+    '2':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81V3W7TSBQ+JTSkWRG2S9llkUDWIO0NFVv+Wm20WhGIRSzygxyXpWora2JPEqu2J4zHsFHVB9gXWHHBBRdIuUS8QngTnoRjJ7Fj2rAXCNRcJPKcc77zfWeOvxQBcvBDlUr6lInA4T7AhaAAZxwbrniOzyxBu7LsM9lnwpHM7DPXYzIHyxYPfQkAS0UoWtwbcJ/5MijC1bSKSimcTohVHredroMNlhC9z1+ajm9Kzl3pDGAFVpJwMQIswFk5HDC4liL1mI/trZuISK0DMxgwZuchT70pifhTgBU+YILKSMUKtW3zBXVDNhFT8jyO/L2gbDOLDwHbllJ8lwvMAzgH/x4S9o8UlJR3D0mHuzYpd6kbsHViccwiZfKyjzhknTiSuo6VhHmnGwYWlSytCFD+AU5O8LDXT04l4iMMIoS+zYSLJGYlR/tp+Og0URnNU5l1t6k4MOnzkB5nMK1UyNF6mt8TdLgw9ePrN0pFeFyUs0ULJE6rbtwjWaLvvx9RxYhm6bMg+DrKp+ia333z6Rn4lk/HNZEqRTintBedLarVK7r62eyenUT4iwSqoaAdx3XksKzcvb2x+Yfy++Q3i1yEn1N3YL7Vp770JgaXd9kL5gY5WE0zMGQ7fi9yrxyspeeh3xGMHkxCy5nQQHDJrNirIt9B97qUBq0wkNwzfeoxeHV8P7JDu17d2Ny4q379glSZx33HUmqxx//vuhRPYGzjH0keLjcaLc1QG22zojdaumm0th/Vmmq7fX9tZtU/JSnRt2nsPFFhOc4uwI/ZmFaFUlVttJraQ7Om1huqUYDzSUqz0lDh1z+v29EQ2F+/uVkVeShlyaQUSrW2oe+YavNhrdI02sAPSVvSSNvsCEfQetSWXAzj4SdAs7j54T0OFAt290h6n8rWHlnfI9OdUG7FT+kmKPf2yD5u2xGuQ4Koq0+1ttZqRmIBzuTglyTUqDwzq9t65YFW14wdgLfbBVg9RgVu7GYoIPWEQHyTaXuyX4DiRHs8vFaiO3pcpDmKJXoXjjvShZucVFV3sA7vrd7SVfhvl4xHXWyQfI9Hd5TxaGvO/PEQHfLE4LzhzqVlkif+Mh5tjkdu7BfT4Nbi935/CS4mfP/W6nXzga5WHi/NL5mhqTqcjQDxdj4BwSRX2TMJAAA=
+      Commands:
+      - mi give armor DEMONIC_HELMET %player% 1
+      Chance: 3
+    '3':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81WzW7TQBCeNjS4QRSo+LuArEXi0gpKKa2IECI0Fo3UJJXtVq3aytrYm8Sq7Q3rdSGq+gC8ACcOHJByRLxCeBOehHGS2gltihACNQdH3m9m9vu+HY+dA8jAlSKVdIuJ0OUBwLVQgUnXgfu+GzBb0LrMB0w2mXAls+wmC2XLo5JlYMrmUSABYCIHOZv7LR6wQIY5uJdmUimFW4sw0+eOW3dxkwncocnfWW5gSc496bZgGqYTOBcXVOCSbLfYMIcGC5CC/QgrUvvACluMOVnIUn9AovdTYJq3mKAyVjJNHcc6pF7E+oJmfJ+jBj/MO8zmbcBtZ9L6HhcYB3AZPhwR9l4KSvK7R6TGPYfk69QL2TyxOUaRPHnXxDpknriSeq6dwLxWj0IbvUkzQpR/gO4JHjWayarE+lgGK0SBw4SHJE5SjvdT+PgiUekMUznZ3aHiwKJvI3qawSBTJcfzaXxD0PbY0B+fPqsF4XORH00aI3GQNfeUjBL99v+IqmbsZcDC8M8oL5ILe8xf/7l7Jj7lA7v6UqWIhpQ24rVxuXpB137xbvsswucSKEaC1lzPle28urS4sPxcfdz/H62cg9vpdGCB3aSB9PsDLuuxQ+aFGbiRRiDkuEEjnl4ZuJmuR0FNMHrQh6ZGoJbgktm9WRXPHZxet1LQjkLJfSugPoNPp/tj1LQHxYXlhSXt7xukyHweuLa6msz537ZM7gzWDr5QUE25XC2ZWtmwijuVQrm0aq1XdQ0+7pJup451k2u381TtdlaGBgAu4oN9Jjj80MVhi2dU6vdYt7Pc7Xi9nhmAK+PPfl+B2YRvfLXMnQ0Npgp6uaorcH0UKxVhtqiVqxUUtbqmGebGesHUFJhZM0x9x9Iqq2uFimkAPyKGpLFRJ0tIpfrGkFy0e6eZlD3Bre/f8IQwYXePpA2iruyR+T0yaDL1Se8ubS312R7Zx/Y9VuBqUhEt1+DeiwdO3Bvs5UPv9OFmYSYJ7wl9pfRfpNinCaBrWyWjVK3EogEmM3AngcqFbau4qRdel9ZL5g7Al00FbpySBHO7I1LQgkRIr71SGfEx5Poe9ugbiX/x7TjvYizx7VzBsUdZuDsq2jKrm2/WKpphvEq+I1IbzZKmw6W4ixD4CXUodyMwCQAA
+      Commands:
+      - mi give armor DEMONIC_CHESTPLATE %player% 1
+      Chance: 3
+    '4':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Wy27TQBS9pW1Ig1oe4rUAZA0SGypoebQiQkBoLBqpSSrHRVRtZU3sSWLV9oTxuBBV/QB+ADYsWCBlifiF8Cd8AZ/AnTzsmjYghEBk4chz7r0+58yda+cAJuFUkUr6nInQ5QHA6TALJ1wHrvhuwGxBGzIfMNliwpXM8liz6QbNcBKmbR4FEgAmcpCzud/mAQtkmIOrSR6VUrj1CPN87rgNFx8xgfVb/JXlBpbk3JNuG2ZgJoZzqmAWpmSnzeBaUqnJAiRg38KK1N61wjZjTgYy1B+S6P+yMMPbTFCpdMxQx7H2qBexgZw53+eowA/zDrN5B/Cxc0l9jwuMAzgJb/YJey0FJfmtfVLnnkPyDeqFbJ7YHKNInrxqYR0yT1xJPdeOYV5vRKFNJUsyQpS/i94JHjVb8arE+lgGK0SBw4SHJEYpBzsJfPA/UekepjJ6ukPFrkVfRvQog2GmRg7mk/imoJ2xoV/ff9AKwucin04aI3GYdfMOSRP9/O+IaqbyMmBh+HuUF8l/u82f/rp7Jp7yoV0DqVJEh5Q21dq4XKNg6D949+I4wj8lUIwErbueKzt57d6dhaUH2u3Bf7pyDi4m04EFdosG0h8MuIzH9piHI/BsEoGQg3NRTa9JOJ+sR0FdMLo7gKZTUFtwyez+rFJzB6fXhQS0o1By3wqoz+Dd0f5Im3a9uLC0cE//8wYpMp8Hrq2to9jwl92SO4awg28SFFIuV0umXq5Zxc1KoVxasdaqhg5vt0iv28C68bXXvav1usuHzj4u4pk+Fjx83lTY4jGVBu3V6y71ul6/XYbg8vht38nCuZivulrm5roO0wWjXDWycCaNlYowW9TL1QqKWi9UzFoW5lZrprFp6ZWVVbUAfJ/UJFUejZaQRfVZTXLR6e9hXHGEW18+475gwtY2SdpCW94m89tk2FraYv8uaSjt/jbZwaY9yMJsXBHd1uHyw+uO6gj26IaX2tIMzMWRfXlPhm9ObMwYMPTnpVqpWlFSAU5MwqUYKhdeWMUNo/C0tFYyNwE+bmTh7BE1cHMrpQLVxxr6TZUoUObnBvb1mVdi69TtONsUFls2TqtyJgOX03ots7rxbLWi12qPv42+GRLzzJJuwJRqGwS+A+udu2UaCQAA
+      Commands:
+      - mi give armor DEMONIC_PANTS %player% 1
+      Chance: 3
+    '5':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Vy27TQBS9fYUkqIEinguQNZXYtIIWSisiBEobi0ZqEuSkVau2sib2JLFie8J43BJV+QC+gA0LFkhZIn4h/AlfwCdwnYfdNA0sEFKzSOQ59x6fc+bOJAkwA9ezVNI9JjyLuwA3vDhMWyY8cCyXGYJWZdplss6EJZle4Vx6MzBncN+VADCVhKTBnSZ3mSu9JDyMmqiUwqr42ORw06payD+F5HV+qluuLjm3pdWEBCRCOBkQxmFWtpoMHkVMNebi240nyEiNhu41GTNjEKPOQETvE4cEbzJBZWAiQU1TP6G2z/peUo7DUb7jpU1m8Bbga1MRv80F1gHE4OMZYR+koCR9eEYq3DZJukptjy0Tg2MVSZPTOvKQZWJJaltGCPNK1fcMKlnU4aH9BgYnuF+rh6sS+ZEGGXzXZMJGEcOW9nEEt6+SlM55KcO3m1Q0dPrep+MKBp0KaS9H9TVBWxNLf37+omSEw0V6tGmCxUHX0iq5spl9+++ZlfHIDOLqW5XCP+e0FqxN6tUymnohu/3LBP9RQNYXtGLZlmyllbVnK+svlaf931HmJNyNjhpzjTp1pdO/LWI2O2E23icLUQVCpuXWgqtgBm5H675bEYw2+tDcCNQUXDKjd/ABrgVXwZ0INHxPckd3qcPg0/h8jIa2mF1ZX1lT/31AsszhrmUom8F9+ddpSV4i2MQ7GY3k88VcWc2X9OxBIZPPbek7RU0Ffki6nSryht/dznOl29k4d5BwEQ/IeEl/brqd9W7H7s3BANyYvJ/HcbgVCgm+9fLBOxXmMlq+qMXh5iiWy8J8Vs0XC6h2s1gsl+KQ2i6VtQNdLWxtZwrlEvAzUpI0MD9cQhXFtyXJRau3OSHjENd/fMfAseHwiET7rWwckeUjMpgZZbX3FE2K8uKIHOM0tuMwHzJijCrcf7VoBlvNXj+2R/YqBqmwsmfvza/+/wtOXAho6l6ulCsWAqsA0zNwL4TymX09u6tlNnM7ufIBwNfdOCyMuYGlwxEX6D700JuWyEEQfrIfX095IYwueJwUW4CFkU3yejGZck7VYDaYCXT1G7vGt+MaCAAA
+      Commands:
+      - mi give armor DEMONIC_BOOTS %player% 1
+      Chance: 3
+    '6':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VSXWsTQRS9bdq4WWm1or74QZiCT0WqaJEgQmgWG2w+yIZiScIymZ1thuzOhNnZflDiu7/BH+Czf0H/mHeTZrchKIJ5WDJz7znnnjPXBijA3Ro19ITrWCgJcC+2YF348CQSkjNNA1OR3Iy4FoZ7E8HG9JIXYJOpRBoAWLPBZiqaKMmliW14lsOoMVoME4RFyheBQIU1pB+pC09IzygVGjGBEpSysp0SWrBhriYcnudMZ1yiPnuJjJSNvXjCuV+EIo1uhpj9LCipCdfUpDZK1Pe9cxomfO5mO4oUGojiis+ZugKU3c75Q6WxD7Xh6zXhl0ZTUuldk6EKfVIJaBjzPcIUdpEKuRghD9kjwtBQsKyshkESM2p4jojR/hij0yo5G2W3BvmRBhkS6XMd4hALyHSQl6c2PM4H5JKNqDTRPONiyM95GBdgJ+/Aki/kGZpYL8DDW8ggEEwgHj2DvQQJlDaJ5Hi/uQRJ5FBzOp6zFdNgH+VFlsRGRZ6kEYdvq2EZndzKare2f7D/xvn/tGo8UlKwcnu+f+XqP8S3OrSPe45mGo1Wves0XK922qw26ofecavjwJ0e+fk9IAMLHmQN6dfrnrYd2Oi2WscW3F8u1Wuw5Tpdr+q164efqp8dC7ayDuR24On7XT/NgH94Ea6YsGD7yO12Tj2neXhUbXZd+HJNXENTB4srNNr66Bqlr2YpZ+yLuvfrByaHgF6f5G9dfrXfJ3t9cvPE5bez082OlF/PTvkzlw/6ZECmgymuQSbQcU7qbr3VTE3iGliws6IN73rLmjhspoj/M73Za+Vqacj23PkspE7mOj3+yXFay9z+LdbUCY78G9Zrf7HcBAAA
+      Commands:
+      - mi give TOOL SET_A_PICKAXE %player% 1
+      Chance: 2
+    '7':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VSy2rbQBS9iRNHVmna9L1pERPoKhS3tCmYUjCx2hhiu0QmNNhGjKWreIg0Y6RRHgR/QDfd9hO67i+0P9YrOZFiQqBQLcTMnLnnnnPmmgAVuNPimh9gnAglAe4lBiwLH55GQqIX80A3JOoJxkKjy8+wAqueSqUGgCUTTE9FUyVR6sSE52UJ1zoW45RKIuWLQBD7ElFP1KkrpKuVCrWYQg1qBWxmhAas6PMpwouS6Qgl9fZeESP3jt1kiuhXocqjSxH5Z0BNTTHmOrNQ477vnvAwxbmT9ShSJD5KGj566hyo7XrJH6qY7lFv+HbB8EzHnDUGF2ysQp81Ah4muMU8RbdYg51OiIdtMaF5KLwCVuMgTTyusaxIyP4xxRar9GhSnGriJxpiSKWPcUgirkpmoxKemfCkFIjSm3Cpo3nG1RBPMEwqsFHeIMgX8ohMLFfg0bXKIBCeoHryDGYFHpZQMuHxVGKSELK2QBaoWKcS6Xx1gSyV4xj58bxPNYv8cQl6aaJV5EoeIfy4GaOO02spbrbq2/W39v/n2MJISeFZzTO0mv8Q6k3BPk0+Gel0eu2+3XHc1mG32WnvuHu9fRvWBuz3z4CNDHhQXMj+bv/wiw0r/V5vz4D7i1C7BTXH7rtNt/nVNuBugRKvDc8+bPqZd/z4MlwQb8D6rtPfP3Tt7s5us9t34PsFczTPlF8dkcHeZ0er+DxPtmC+wt0/vygtKhgMWfny1uv6kG0N2eWzWu/y3eXEWG/yXTEM1vt8Xz61tT1kIzYbzWgUiob79kHbafe6mVkaBQM2bmiBT4NFDSS+UEDroj+tr3XP37DsnUVvznPJ4+sWmWTb2/LIsCKL2wLPPJH4v8OCjEMABQAA
+      Commands:
+      - mi give TOOL SET_A_AXE %player% 1
+      Chance: 2
+    '8':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VS0WoTQRS9bdq4WbVaUR8UJUzBpyJVtEgQITSLDTRZ7YZCScIymZ1thu7OhNnZ1hDiu7/gD/jsL+iPeXfT7jYWRTAPS2buPefcc+7YABW42aKGHnGdCCUB7iQWrIoAHsVCcqZpaBqSmzHXwnA/GaszHlVgnalUGgBYscFmKp4oyaVJbHhSoqgxWoxSRMUqEKFAgRVkH6tzX0jfKBUZMYEa1IqynRFasGamEw5PS6YTLlGePUdGyk79ZMJ5UIUqjS+GyH8W1NSEa2oyFzUaBP4ZjVK+MLMRxwrnj5NGwJmaAspulPyR0tiH2vBlRvgnoylp9GdkpKKANEIaJXybMIVdpEHOx8hDtokwNBKsKKtRmCaMGl4iErR/islplZ6Mi1uD/EiDDKkMuI5wiEvIfFiW5zY8LAfkko2pNPEi42rEcQlJBTbLDiwFQp6gidUK3L+CDEPBBOLRM9hLkFBpk0qO9+tLkFSONKenC7ZqFuyDssjSxKjYlzTm8PV6WEanV7Laau3s7rxy/j+tFo+VFKzu5c+v3vyH9K7PHOArRy+djtvuOR3Pbx13m532nn/gHjpwo09+fAvJ0IJ7RUP29XvHHxxY67nugQV3l0vtFtzynJ7f9L1998jBhttFA1I78PjtVpAlwN89i363YMHGvtc7PPad7t5+s9vz4POMeIZm819eoU33vWeUnuYRF+SXdf/nd4wNAf0BKRddf7EzINsDcrHf+uv8dPFA6i/zU7nj+u6ADMl8OMc3UAgcOkdtr+12M4v4BizYvKYNb/rLmjhsoYj/C718V6VaFrG9cJ5n9LFwnR3/5DirFW7/kmpmBCf+BSaADbfXBAAA
+      Commands:
+      - mi give TOOL SET_A_SHOVEL %player% 1
+      Chance: 2
+    '9':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VS22rbQBCd1IkrqzRtSm8vLWYDfQrFgTYUUwomFrUhtkpkAsE2Yi2N4iXSrlmtkobgvvcL+gl97i+0P9aRnUgxIVCoHoR2z8yZc87IBqjAgzY3/Ah1KpQEeJRacE+E8CIREgPNI9OUaKaohUF/qrACG4HKpAGANRvsQCUzJVGa1IZXZQs3RotJRi2JCkUkiH2NqKfq3BfSN0rFRsygBrUCtnNCC9bNxQzhdcl0gpJmB2+JkQenfjpDDKtQ5cmViMVjQU3NUHOTW6jxMPTPeJzh0slmkigSn6TNEAN1ATR2s+SPlaY6mg3fLxl+NZqz5vCSTVQcsmbE4xR3WKCoijXZ+ZR42A4ThsciKGA1ibI04AbLjpTsn1JsWmUn0+LWED/REEMmQ9QxibhumY9LeG7D81IgymDKpUmWGVdjPMM4rcBWWUFQKORJbqICT290RpEIBPWTZ7BXWiKlTSaR7jdWWjI50chPl2zVPNhnJRhkqVGJL3mC8ON2WEZnN7Labjf2Gu+c/0+rjYmSIqh3FNZb/xDdbcEh/d9kpNdzuwOn5/nt436r1933D9xDB+4P2e+fERtb8KQoyN/+4PiLA+sD1z2w4PEq1G1DzXMGfsvvuI4FDwuUeB14+XE7zL3jpzfxingLNjve4PDYd/r7nVZ/4MG3S+YZniu/viKD7mfPKH2xSLZgvsb9P78oLWoYjli53/puY8R2RuxqrfX3i9PVf1HfXZzK1db3RmzM5uM5rb4YcOgcdb2u28/N0eot2Lo1Gz4MV2eS2GIifRfzFlsqp+Xh2kvni4D6hev8eJfjHCvc3hVp7oLk/gVTwjyzyAQAAA==
+      Commands:
+      - mi give TOOL SET_A_HOE %player% 1
+      Chance: 2
+    '10':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41TwU7bQBAdoCDHCCiV2p5aWXvg0oBAokLKLU2iEjVOEE6RUEDWxt4kq9i7Zr0GIpr/6B9w7i/QH+s4JHbaQIUPlux58+a9ebsmwAqsV6mmZ0zFXAqArSsDlrkPmyEXzFO0p0tdKYcrsOrJRGgAWDXB9GQYScGEjk34kCOp1op3E83cUPq8x5F0CbbigbxxuXC1lIHmERSgkJVNJFwy4JUeRQw+5kx9Jpji3h4yUm/oxhFj/hqs0XAqYvIYUJARU1SnygvU991rGiRsZiCUXLMwLvnMkyPAsXOeAqkQB7AMP+8Iu9WKklLnjnRl4JNSjwYxKxJPIoqUyM0AeUiRcE0D7mVl2e0lsUc1yztitD9keqBk0h9kfzXyIw0yJMJnKkARs5bx5QLtDD2GeF7ZTExf0dGilmnTKe8P9K6HlaGlpaWYx/g1sw6seMiDwIokF3qP/G+oCe/yJTHhDajQYZrzEzmasBawaxbEK7CdNyHa56Kf5pom9DaveEmsZegKGjL48ZQ3epXQZ705qYXdk9SCRcbFF27kTCbegKmJ5zmTi6p8vASo1rZb9XbNdtzqebNs1ytuo3Vag88d8nDfwyH4frg/etmaLw14k9Glb7d9flIDs9JqOt/t8pdGzYDXfwPqVVh3vtUbDfekVW+2DdjI6qimBu93uvNr2Dma2jNg89hpn567tWbluNxsO2DfEUfT1O7sF6pvfXW0VKPJzjPiWd39/QuPLzZ0Lsg0Q+vgglzi6sYGbC/gYaOT41Kz5qOEidB8fPr53Oi0lo19xtq/4yst2y43qw50kakiw5AKvExERX2L+pjqYwa7kwxiq5/mciyFVFSNEHp7eIRii6TKAjw0pf29/SKSiFgGjJS0SvDgtKLsbs7vf3IOPnXIzkvTxwvwB/FbZHdfBQAA
+      Commands:
+      - mi give CONSUMABLE SKILL_POINT %player% 5
+      Chance: 8
+    '11':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/4VUXWvjRhS9m/3A9rbbbmnf2kUVJFBIg3ez9rKGPjiyqOVaUmvJTmQTxFgaW5JnNEYaJZFD3gqlr/0NhbyVFgqFPqb0T/SpT/0dHTvxR9hNa7CEdO8959xz76gEcB8eNxBHPZykIYsB3ksLsBX68BENY+wlaMRrU4JynLgBRv59eOixLOYAcK8EJY/RKYtxzNMSPN0oSNgoJLgAD2JEMbxjTTJCbHzGswQXoSTCU5zwEIsqgbNMK/DrDCHg4QkiGYZfcd4q94+Csn/UIl6uVcWzbZWJqUXTV1rcy4eKVtWoiDfr1Xb+eiO3wtFhhTj7raAff5MNaa/c3u8Q3Ow892j3xIhIoEdB6NiG+HsVh3bPTLtbNmbqab/RmThRK9Bf9Cd6pO0bM4MakVrpR+rLPu1F/ahbMRvazLAN6kR+4MzUl/psMnOs1uvRUfkLeLzwD+CBuf33b7//XP/n2z//+vGnHw4/hhJ8sjYJcZ6Ew4xjlzI/HIViAPeE+wE7dcPY5YwRHk6hCMVVeOkWz6cYnq2RxjjGSejtCUTkTdx0irH/CB4hejOpxa8AxbnriM+nXES+7y48vh72E0pZyDFNaz72WA6C9skan7BE5AFswffnsphRguTa4FweMuLLtREiKd6VPSay5Jp8GggceVcOOSKhtwqz4ShLPcTxuiIV7U8wDxKWjYPV2/kOCBiBkMU+TogQsSy5OF6HL8DelLJkH88lrcl5kq0hO+E44J8rIjCROJMS7GNM9+RbqIXNtfeylDPqLnbzu7eyJRjHb/Z6g6YQFFLpgDDB10AhyQXlKUp8Sb7Y3cRA+Z0Qg8rZ8W2BpbcI9MXxFcJ13dRsVbfchmPUdU1x22ZHhc8G8tXlSDCI69Vl9eqS3eHDcQE+WEHMr67tfK1CSTENq6vXD9pqAd6/naA14EOlXdd096BtKl+5PVNpqh33RQHeXSUKKSp8uoPudGPn1bzLAjxdlaiG0qwbtgVbA/G+1LTsjnONc3guWxzNnZg/iqbMLy3OknwxlVuU7h+/iP0Sif/LLPy92BS8cO3ZQN6p7vyHVWu1iqnrdaNhQSQ0KIxSFIuFlYm4pRLyxbSk6++ntH3zHZ0v1LY0Dk+w5M21DRfSnksV0VADixy5Vt4r7wqwOGUEL9fYnK7OgTiL/wIHcDMYugUAAA==
+      Commands:
+      - mi give CONSUMABLE CLAIM_BLOCKS %player% 3
+      Chance: 7
+    '12':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/7WTz0scMRTHny7KdBYsCKUHCw05KSwePM7NrXryUDx4KWV4k7zdCZNJpvnhWhaP/i/+A/4j/YvMFLu74ooU8ZJD8vL5vny/LznAAIYnGPCSnFfWAHz8lcGmkvC5VYaEw0koJsrRzLqm9AHdALaEjSYAwDCHXNi2s4ZM8B9gZ3lFW0dZKtmE+zmn6+CQFz/mvLJa8mKC2tOIC5uqeMGnDn/zEVcBtRKLU1tNohcYaHnBB6caCrWzcVovdkPCJ8qFmtaBfUuIhs1qpYnVSUyZKQuWORKkroghc2ikbZNcNJKcTg3/49/8XLD4Dfx5tW3dC5ZddJ2mt7d/hpUmydY2Npq/4tUjg4yo0YQ2pcEqa5tD/uRNOXxZkyldd9r20Wew5WvsCHLfotZllZYhbP9V9inKDbg9uoMMPi0hIvpg29JgSxv03LDg4jv79ZJd76/PTlfMHiezX4zuP2b+kb2/MssHTzMcwN4z+1srSZcyfeKUEuRrAurPctj9HquEHMemUeESdSSfwVeUV2gEyZXh8YUT/fyUhmawfXY8Pj896dEPA3jdSC4EAAA=
+      Commands:
+      - ae givercbook FABLED %player% 11
+      Chance: 5
+    '13':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/72Tz2obMRDGJzEJ2w00EAg9tFChUwKmD7DHpDkEWggJzaWUZVY79orVH1caxSkmj9V3MHmqyiW1HeJQekgvOkij3zf6vlEJMIC9j8h4TSFq7wD2vxewrVt4Y7UjFXDE1UgHmvrQ15ExDGBH+eQYAA5KKJW3E+/IcXwFr1dXjA9U5JJt+DmTdMsBZfV1JhtvWlmN0EQaSuVzlazkOOAPOZSa0Wi1PPXNKEWFTKsLkYPuibvg07hb7nLGZ8qlHncsTjOiF9NOGxJdFtNuLNiLQIr0DQkUAV3rbZZLrqVgcsN/+Hfflix5B/f/qe0rbSe5140NDWd/EXtgkFMdOrY5BdF433+Qj95SwrsNWdLtxPhF5AXsxA4nBGW0aEzd5GUPdn8rxxzhFszncyjgcAVRKbK3tUNLW1+eGsUhvZBPz9n0crribM3ck2zus1H9w5A8sI/WZvb4cWYDePvEbutbMnWbP2tOBcoNgSzOSji4SE1GnqS+13yNJlEs4D22N+gUtWvDEqugFvNSO5rC7tX554tPZwv0LyrWX4cWBAAA
+      Commands:
+      - ae givercbook SIMPLE %player% 18
+      Chance: 6
+    '14':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/7WTz0ocQRDGSxfDZMQEAiGHBGz6FGHJA8wtJh6EBEJQLxKGmp7anWa6uzb9x1UWHyuv4QN5SXqD7q64IiF46UNX1a+qv6+6BBjA9meMeEI+aHYAL38WsKlbeGO1I+VxFKuR9jRl39choh/AluLkIgDslFAqthN25GJ4Di+WJYY9FTllE37NJJ1Hj7I6ncmGTSurEZpAQ6k4Z8lKjj1eyKHUEY1Wiyg3oxQURloWhOh1T7HznMbd4jZmfKZ81+Muik8Z0Ytppw2JLjfTbiwiC0+K9BkJFB5dyza3S64lb/LAt/zLHwuWvISrR8e+IGN4+v+DH5uobU4Xa4cazh7R6YZCTnXoos1OiIa5/yDvvKeEd2v8pPOJ4bntBWyFDicEZbBoTN3kYxue/e0cso0bcP0boIDXS4hKIbKtHVraOL0vVvTpCbV6SKqn7C0OViTezxI/aNg/bPkN+/3K9u7ddW4Ab++JbrklU7f522ZvoFxjyzxWwqtvqcnI/dT3Op6gSRQK2MX2DJ2idmVlQuXVfGtqR1Mojr8cHX79eHQwh/8BvWuPnyIEAAA=
+      Commands:
+      - ae givercbook ULTIMATE %player% 13
+      Chance: 4
+    '15':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/7WTz0ocQRDGSxdlHCGCEHJIIE2fDCwePM5N45KLhOBBDEGGmu7amWZ6ujf9x1UWj3mXvEAeI++UnqC7K66IiJc+VFf9qvr7qnOAAWwfY8Azcl5ZA7DzM4N1JeFdpwwJh+NQjJWjqXVt6QO6AWwIG00AgDyHXNhuYg2Z4LfgzaJEW0dZSlmHPzNOV8EhL37MeGW15MUYtachFzZl8YLXDq/5kKuAWon5ra3G0QsMtCjwwamWQuNsrJt5NCR8opyqugnsc0K0bNooTaxJzZSpWbDMkSB1SQyZQyNtl9pFI8npNPAd/+ZizuI38Pfpsfvgi8c+oZqMRHfNVs40nD0h0y2GjGjQhC4ZwSpr231+7zk5fFhhJ11NtO1dz2DDNzghyH2HWpdVOrZh839nn1xcg18HvyGDtwuIiD7YrjTY0dr5Q62Ci68n1WNKvV5rNlrS9yjp+6hbz9jwW/be0uZ+um/bAN4/ULyzknQp05eF/guu8KS/y2H3W6wS8ii2rQpnqCP5DD6ivEQjSC7tiy+c6FemNDSFrZPRl9HX48PT7z39HzQ/2jofBAAA
+      Commands:
+      - ae givercbook LEGENDARY %player% 10
+      Chance: 5
+    '16':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81U4WrTUBQ+W7eRVtxU8I+ihEz6q4yBQ6GIUJqw1a2tNFGopVxuk9s2NMntbm6sZfQBfAHxDfpbEB+gvoMP4JN40nZpu60y8I/5EUjOOd/5vu+cezMAKbijU0nfMxG6PADYO1dg03Xgoe8GzBa0LfOh5AEj4YALJwXbNo8CCQAbGcjY3O9jLJBhBp4sCqiUwm1FkhGfO27bRewN2Au7fEDcgEjOPen2IQ3pJJyJARXYksM+g6cLpA4LmHDtA0Skdo+EfcacHdih/pzE9FEgzftMUBkLSFPHIR+pF7GZjl3f565kfph3mM2HgG13F/geF5gHsAWfLzT2SQqq5RsXWot7jpZvUy9kOc3mmKXltUEXcbSc5krquXYS5q12FNpUskVFiPJ7THYFjzrd5K9EfIRBhChwmPCQxGXJqLkIj+DrMpXL7kPmeXxwvf287PeXH6o2yi3yO4KxYG26LmhHzaq64H2VB5KrQx4JNfZJxQ/sHYRtLvwDbZXZf2TS95tMcqjoEXoe0bXCr5pEh2tTLVzM/Cx/JlWKaEnpX9ucGcdGRS/U6qsGKsvHyo7wYPkkoD6DX9eNXe22rx++ODwy/t1Znfk8cG3VtIeyy9QbjV6jeM1s58ANs+cGzVW9KXh8TS+eeeYRB+8cPLnbmRsciWPoVLlcLVlG2SR6vVIol4rkrFozoNPQJuM2ssD3ZMzivZ+M6a33Obdc/RxLX87GPBm3JmNvMbamAg8SAvGbWPW3BmyZp6WKAvdWQyUdlDeF4ukseDcJIm0Dnr3ad+LZsddZ74r52XbWm9mWgkdJVfGdaVXLpFzVjTOiF6xC7JMC95MEo1I8KVQsEzYbSDNzYlq1+qzXhwvNlDT2Pv5EmdVjU3IxnK7VCi3y8xuuCSbehh0OdbSsyyoZNUgnZi2HpjM6amjZ6WSytx9ME2/hP0Ubw1SPBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81U4WrTUBQ+W7eRVtxU8I+ihEz6q4yBQ6GIUJqw1a2tNFGopVxuk9s2NMntbm6sZfQBfAHxDfpbEB+gvoMP4JN40nZpu60y8I/5EUjOOd/5vu+cezMAKbijU0nfMxG6PADYO1dg03Xgoe8GzBa0LfOh5AEj4YALJwXbNo8CCQAbGcjY3O9jLJBhBp4sCqiUwm1FkhGfO27bRewN2Au7fEDcgEjOPen2IQ3pJJyJARXYksM+g6cLpA4LmHDtA0Skdo+EfcacHdih/pzE9FEgzftMUBkLSFPHIR+pF7GZjl3f565kfph3mM2HgG13F/geF5gHsAWfLzT2SQqq5RsXWot7jpZvUy9kOc3mmKXltUEXcbSc5krquXYS5q12FNpUskVFiPJ7THYFjzrd5K9EfIRBhChwmPCQxGXJqLkIj+DrMpXL7kPmeXxwvf287PeXH6o2yi3yO4KxYG26LmhHzaq64H2VB5KrQx4JNfZJxQ/sHYRtLvwDbZXZf2TS95tMcqjoEXoe0bXCr5pEh2tTLVzM/Cx/JlWKaEnpX9ucGcdGRS/U6qsGKsvHyo7wYPkkoD6DX9eNXe22rx++ODwy/t1Znfk8cG3VtIeyy9QbjV6jeM1s58ANs+cGzVW9KXh8TS+eeeYRB+8cPLnbmRsciWPoVLlcLVlG2SR6vVIol4rkrFozoNPQJuM2ssD3ZMzivZ+M6a33Obdc/RxLX87GPBm3JmNvMbamAg8SAvGbWPW3BmyZp6WKAvdWQyUdlDeF4ukseDcJIm0Dnr3ad+LZsddZ74r52XbWm9mWgkdJVfGdaVXLpFzVjTOiF6xC7JMC95MEo1I8KVQsEzYbSDNzYlq1+qzXhwvNlDT2Pv5EmdVjU3IxnK7VCi3y8xuuCSbehh0OdbSsyyoZNUgnZi2HpjM6amjZ6WSytx9ME2/hP0Ubw1SPBgAA
+      Chance: 5
+    '17':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41QPU/DMBC9tkKkQQIJxJ5ajBUjQyQGPheWSkhdo6tzLVYcO9hnIFT97zhEEAaQWM538nv33r0UYAIHt8i4JOeVNQBHzwmMVQkntTIkHa45Z6dQFxW1E9iTNhgGgHEKqbR1Yw0Z9lM4HODaOko6CFxshbRxFLnYOGzFXChGraTI16g9zQXTG8fPq8w3JKNI9kCt2MHlP3n31mX4zb1xyHQudiM4G8yQkU9ouI4ui41WsdoXck6VNErgdMDJ4NnWhcGa4G4rVlaXIh4eotiXFUfln04eG3w15HoP/RXpL+vLmHQKx4uwijuuQ1UpXqIO5BOYReB7Kzu+z3/0xefTpQ/7vleJ2cIH6zh2oboBAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/41QPU/DMBC9tkKkQQIJxJ5ajBUjQyQGPheWSkhdo6tzLVYcO9hnIFT97zhEEAaQWM538nv33r0UYAIHt8i4JOeVNQBHzwmMVQkntTIkHa45Z6dQFxW1E9iTNhgGgHEKqbR1Yw0Z9lM4HODaOko6CFxshbRxFLnYOGzFXChGraTI16g9zQXTG8fPq8w3JKNI9kCt2MHlP3n31mX4zb1xyHQudiM4G8yQkU9ouI4ui41WsdoXck6VNErgdMDJ4NnWhcGa4G4rVlaXIh4eotiXFUfln04eG3w15HoP/RXpL+vLmHQKx4uwijuuQ1UpXqIO5BOYReB7Kzu+z3/0xefTpQ/7vleJ2cIH6zh2oboBAAA=
+      Chance: 4
+    '18':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QvU/DMBDFry2VQpBAqsQeLMaKkSESA1CxwMDUNbo412LFH8U+I9Kq/zsOFYQBJBZ/yO+9+/nlABM4WSDjknxQzgKcvWYwVg3MjLIkPa64rHWkquloAlPpomUAOMohl85snCXL4RhOB7V2nrIkGcP1TkiXrqIUa4+dmAvFqJUU5Qp1oLlgeuf0eFuEDUmFunikTuzh5p++B+cL/Pbee2S6EvsRXA4wZOULWjaJslprlVb3Rt6rhkYZnA86GQM7U1k0BIudqJ1uRMk+pmFfKH0Lf6I8xa2zB4TDJ/Jf0pvUcw6z51inhLvYtoqXmFJDBhdJuO1k7w/lj3P1uVUtdTDV/YxULHwAK7B9eLYBAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/42QvU/DMBDFry2VQpBAqsQeLMaKkSESA1CxwMDUNbo412LFH8U+I9Kq/zsOFYQBJBZ/yO+9+/nlABM4WSDjknxQzgKcvWYwVg3MjLIkPa64rHWkquloAlPpomUAOMohl85snCXL4RhOB7V2nrIkGcP1TkiXrqIUa4+dmAvFqJUU5Qp1oLlgeuf0eFuEDUmFunikTuzh5p++B+cL/Pbee2S6EvsRXA4wZOULWjaJslprlVb3Rt6rhkYZnA86GQM7U1k0BIudqJ1uRMk+pmFfKH0Lf6I8xa2zB4TDJ/Jf0pvUcw6z51inhLvYtoqXmFJDBhdJuO1k7w/lj3P1uVUtdTDV/YxULHwAK7B9eLYBAAA=
+      Chance: 8
+    '19':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QzUsDMRDFpy3SdQVFwfsaPBaPHhY8+IEevPTU6zJNpjVsNqnJpBhL/3ejC64HBS+ZhHlv3i9TAkzg6AEZF+SDdhbg5LWAsVZw2mlL0uOKa0+qUYkmcCBdtAwA0xJK6bqNs2Q5HMLxIDbOU5ElY7jeCenyU9Ri7TGJmdCMRktRr9AEmgmmN87N2ypsSGo01TMlsYebf/oena/w23vvkelK7EdwOcCQlS9oucuUzdrofLotea8VjQo4H3QyBnZdY7EjeNqJpTNK1OxjDhtQiOyfLAsdMGHoKfp/lL8EqLzpEs7mcZln3MW21bxAEykUcJGF70l++kP94958laalBNNtn5K3Cx8i3IoTugEAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/42QzUsDMRDFpy3SdQVFwfsaPBaPHhY8+IEevPTU6zJNpjVsNqnJpBhL/3ejC64HBS+ZhHlv3i9TAkzg6AEZF+SDdhbg5LWAsVZw2mlL0uOKa0+qUYkmcCBdtAwA0xJK6bqNs2Q5HMLxIDbOU5ElY7jeCenyU9Ri7TGJmdCMRktRr9AEmgmmN87N2ypsSGo01TMlsYebf/oena/w23vvkelK7EdwOcCQlS9oucuUzdrofLotea8VjQo4H3QyBnZdY7EjeNqJpTNK1OxjDhtQiOyfLAsdMGHoKfp/lL8EqLzpEs7mcZln3MW21bxAEykUcJGF70l++kP94958laalBNNtn5K3Cx8i3IoTugEAAA==
+      Chance: 8
+    '20':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QPU8DMQyG3VaVjgOBVIn9iDpWjAwnMVA+Fhamric355bo8nEkDupR9b8TWonrAFIXx07e137iHGAE50/IuCAflLMAVx8ZDFUNE6MsSY8rLrUyVNUdjWAsXbQMAOMcculM6yxZDmdweaR2nrIkGcLdVkiXSlGKtcdOzIRi1EqKcoU60EwwbTg9PhShJalQF6/UiR3cn+h7cb7AX++jR6ZbsRvAtIchK9/RskmU1VqrFN0nea9qGmRw3etkDOxMZdEQPG/F0ulalOxjGtajENl/WeYYlDwwHH6R/9G+TovOYfIWl6nDPDaN4gXqSCGDmyT86uSPP5RHebU/qoY6uKANmlbT/iYtGL4BlMrtEb4BAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/42QPU8DMQyG3VaVjgOBVIn9iDpWjAwnMVA+Fhamric355bo8nEkDupR9b8TWonrAFIXx07e137iHGAE50/IuCAflLMAVx8ZDFUNE6MsSY8rLrUyVNUdjWAsXbQMAOMcculM6yxZDmdweaR2nrIkGcLdVkiXSlGKtcdOzIRi1EqKcoU60EwwbTg9PhShJalQF6/UiR3cn+h7cb7AX++jR6ZbsRvAtIchK9/RskmU1VqrFN0nea9qGmRw3etkDOxMZdEQPG/F0ulalOxjGtajENl/WeYYlDwwHH6R/9G+TovOYfIWl6nDPDaN4gXqSCGDmyT86uSPP5RHebU/qoY6uKANmlbT/iYtGL4BlMrtEb4BAAA=
+      Chance: 8
+    '21':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VSXWsTQRS9bWrcrDRaUV/8IEzBpyItSB+iCG2z2GDzQTYUSxKGyexsM2R3JuzOtg0hDz76G/wBPvsX9I95N2l3W4IiuA8LM+fec+45d2yAAjyoMcNORRRLrQAexhasSw+eh1IJHjHfVJUwIxFJI+hE8jG7EgW4x3WiDACs2WBzHU60EsrENrzM25gxkRwm2BZqT/oSFdaQfqQvqVTUaB0YOYESlDLYTgkt2DDTiYBXOdO5UKjP3yAj42MaT4TwilBk4fUQi8+Ckp6IiJnURol5Hr1gQSKWbsphqNFAGFc9wfUUULac8wc6wjrUhq8zIq5MxEi1NyNDHXik6rMgFjuEa6wiVXI5Qh6yQ6RhgeQZrId+EnNmRN4Ro/0xRhfp5HyU3RrkRxpkSJQnogCHuGmZD3J4bsOzfECh+IgpEy4zLgbiQgRxAbbyCoQ8qc5TEwV4cqvT9yWX2I+ewb4DxTIY4xoSPlrpStQwEmy8JCym2T7NQZ7ERodUsVDAt9W8TJTcimu7tru/+9b5/8BqItRK8kp7+QQrh/+Q4OrQHj51NNNotOpdp+HS2lnzoFE/oietjgP3e+Tnd58MLHicFaR/2j1rO7DRbbVOLHh0F6rXYNN1uvSQtutHnw4+OxZsZhXI7cCL99temoH48DpYMWFB+djtds6o0zw6Pmh2XfgyI65hqYObKzTa+ugaHU0XKWfsNzj99QOTw4Zen+Trruzt9slOn+RbruwtLq5fyvUp33Rlv08GZD6Y40vINDrOad2tt5qpT4B1C7ZW5OFd764szntbFI+Z5GJnuWAatb30v4iqk3lPj3/ynWKZ57+Fm5rBqX8Di4gKY+UEAAA=
+      Commands:
+      - mi give TOOL SET_B_PICKAXE %player% 1
+      Chance: 1
+    '22':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VUXWsTQRS9NTXdrFit3y9KmIJPRVqQCkGEtFlsoEmkG4olCctkdtIdsjsTdmb7QckP8NEnf4LP/gX9Y95N2p2GUBDMw8LMuffcc84d4gKU4EGDGnrMUy2UBHikHbgnQniZCMlZSkemJrmJeCoMD+gFL8F9pjJpAGDFBZepZKIkl0a78Nq2UGNSMcywJVGhGAlkX0HqSJ0HQgZGqdiICVSgUsBuTujAqrmccHhjmU65xNnsHTJSNg70hPOwDGWaXIuY/RyoqAlPqcktVGgYBmc0zvjcyXqSKBSf6FrImboEHLtu+WOVYh3Ohm9XhF+YlJJa74oMVRyS2ojGmm8RprCK1Mh5hDxkiwhDY8EKWA1HmWbUcNuh0f4YY0tVdhoVtwb5kQYZMhnyNEYRNy3TgYWnLrywArlkEZUmmWdcjvkZj3UJNmwFQqGQp7mJEjy71TkaCSawHz2DW4KnFtIRTSeSa43I2kKTFvEYF5SxaIkvk8OU0/F8VDlP/bkFWaaNSgJJEw4/lpM0aXYryM3G9u72e+//o2zwREnBqvULXt37h1yXBYf4+NFIq9Vpdr2WHzRO2vVWcz847Bx5sNYjv3+OyMCBJ0VB/g26J188WO12OocOPF6Emg2o+F432AvqXz0HHhYo8nrw6uNmmHvnn97GC+IdWD/wu0cngdfeP6i3uz58vyK+obnymys02PnsG5VezpItmG/w4M8vTAsben1il1/d2e6TrT6xm63uzC6u3831qXgS1Q+zs912dbdPBmQ6mOJrKGYeecdNv9lp537xX8SBjSU50OwtykD9t0XgsZCQQ1bAbJN2fL4Ad57OLMR2kUx+vCuVHCsSuSv23Bbq/wsTdi2MCQUAAA==
+      Commands:
+      - mi give TOOL SET_B_AXE %player% 1
+      Chance: 1
+    '23':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VS0WoTQRS9bWrcrFqtqA+KEqbgU5EWpA9RhLZZbKDJajYUShKGyexsd8juTNidbS0hDz76C/6Az/6C/ph3k3a3NSiC+7Awc+49555zxwaowJ0mM+xYJKnUCuB+asGq9OFpLJXgCQtMQwkTikQaQdNQn4moAre4zpQBgBUbbK7jiVZCmdSG52UXMyaRowy7Yu3LQKLACrKH+pxKRY3WkZETqEGtgO2c0II1czER8KJkOhUK5fkrZGR8TNOJEH4Vqiy+HGL+WVDTE5Ewk7uoMd+nZyzKxMLMehxrnD9OG77g+gJQdr3kj3SCdagNX6ZEfDIJI43+lIx05JNGwKJUbBGusYo0yHmIPGSLSMMiyQtYj4Is5cyIsiNF+2NMLtHZaVjcGuRHGmTIlC+SCIe4apkNS3hmw5NyQKF4yJSJFxlXI4FLSCuwUVYg5Et1mpuowKNrnUEgucR+9Az2DSiV0RjXkPFwqStTo0Sw8YKwmmf7uAR5lhodU8ViAV+X8zJJdi2uzeb27vZr5/8Da4pYK8nr3vwF1vf/IcDlmX186Oil3XZbPaft0eZJZ6/dOqBHbteB233y41tAhhY8LAryP+2dfHBgree6RxY8uAm1mnDXc3p0n3qH7rGDBfeKAqR24NnbTT9PQLx7Gf1uwYL1Q6/XPaFO5+Bwr9Pz4POUeIbl819doU33vWd0cjGPuCC/wunP7xgbNvQHpNx1fWd7QLYGpFxxfWd+cflMLk/lmuu7AzIks+EMn0Gh0XWOW17L7eQuAVYt2FiShzf9m7I473VRPBaS842VgnnQ9sL/PKmPhff8+CffOVZ4/ku2uRcc+he2X/mK4AQAAA==
+      Commands:
+      - mi give TOOL SET_B_SHOVEL %player% 1
+      Chance: 1
+    '24':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6VUTWvbQBCd1KkrqzRtSr8uLWYDPYWSQMnBLYUkFrUhtkpkAsE2y3q1ihZLu0ZaJTXGhx77C/oTeu5faP9YR3YixZhAoToIdt/Me/PeCNkAFXjYZIadiSSVWgE8Ti24J314GUsleMIC01DChCKRRtBQiwrc5zpTBgA2bLC5jidaCWVSG16XLcyYRI4ybIm1LwOJ7BtIHeorKhU1WkdGTqAGtQK2c0ILNs10IuBNyXQhFGrzd8jI+JimEyH8KlRZfD3E4rGgpiciYSa3UGO+Ty9ZlImlk6041jh8nDZ8wfUUUHar5I90gnWoDd9nRHw1CSON/oyMdOSTRsCiVOwSrrGKNMhViDxkl0jDIskLWI+CLOXMiLIjRftjjC3R2UVY3BrkRxpkyJQvkgiHuGmZD0t4bsOLckCheMiUiZcZVyNxKaK0AttlBUK+VBe5iQo8u9UZBJJL7EfPYK9AqYzGuIaMh2tdmRolgo2XhNU82+clyLPU6JgqFgv4sZ6XSbJbce009w723jv/H1hTxFpJXm9pUT/6h/TWB/bxE0cjnY7b7jkdjzbPu4ed9jE9cU8deNAnv38GZGjB06Igf9Pe+RcHNnuue2LBk1Wo3YSa5/ToEW25jgWPChR5HXj1ccfPvYtPb6OV4S3Yanm903PqdI9bh92eB99mxDMsn/zmCg26nz2jk+ki2YL5Bqd/fmFa2NAfkHLF9f29AdkdkHKz9f3FxfXXcX0qt1s/GJAhmQ/nuP1C49Q5a3ttt5v7w3+DBdtr8vChvyqL894WxWMhudhVKZhHbC/9L2LqFt7z412+c6zwfFewuRGc+C/p5TaW0QQAAA==
+      Commands:
+      - mi give TOOL SET_B_HOE %player% 1
+      Chance: 1
+    '25':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9WVzUokMRDHyx2EdhQ9iPeQ87TowUsfxScQXA/LMmSSmukw6WRIqlEZ5gH2JvgUnvbg6/gwW66tIzrQ4wcD9iVNpepfv1QqSRegA5snitRPjMkGD7CTMvhhDexV1qOOakiFsaoK3vTVJXZgXYfaEwCsdaGrQzUJHj2lDdieB7gQMWOXDO6mEi8pKln8mspBcEYWQ+US9qQO7CULaVQc90dRXcmetKSc1c8uYTCsk1aE86hE0Y6RyhjqUSkLijUbiVOwUr7cx3lqbzA6xn0Snv1+VpEz+NsK/VHextqkEqd2VJLQrDEWSgxc4JGC0BFZhC0T65yK7cC3qwIOQ0EliqQqfAB9+P9Pj0Yka3C/HfVPK+pFaQk/z9qOcvMW5bGfXrUmov+C0p0lTEU71PWq6iOEODw6OPhWO/Ydb5Ps5U2q60Sh6ns+P2u7K9vpPJ+KhZy99/d9o3lcW8dq4lx5I+RcaLkVNCKzPOfYl8XqLiiW4dcpgw0KweV0NUHYGjwm719w8k4zU/PxAli/51fnH+wExlPVBgAA
+      Commands:
+      - tools give %player% builder_wand 1 1500
+      Chance: 2
+    '26':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9WVz4oTQRDGaw0L2RH15L3pk0JGouBljosgC57EPweR0OmuZJr0dIfuGjZLyAN4EUHwHTx58HV8GCtmTBZc6OhKYOcyQ03V17/5prq6AOjB7WeK1BuMyQYPcC/14ZY1cL+xHnVUE6qMVU3wZqQW2INjHVpPAHBUQKFDMw8ePaUTuLsrcCFin1MK+L6UuKCoZPVuKcfBGVlNlEs4kDpwlqykUXE2mkZ1IQfSknJWb1PCeNImrQh3VYminSHVMbTTWlYUWw4SL8FK5X4Xr9N6g9Ex7m/h1futilzBtyz0v/J20W4p8dJOaxKaNWZCibELfKcgdEQW4cjcOqdiHvjroYDDRFCNIqkG16Dr51/0aESyBh/lUT9kUc9rS3h91jzKxz9RNv20NW0duzbIC/RTqqs8z5dDWSOEeDxciNN1v6U81+ecT90WRvT/ge11wrSHWZ8OadbT4fBGdfZNnLr9yyeObhOFZuR5zhw9P9ifLsuluJJz8Pd932mettaxmnirvBFyJ7TXeO40HryyrHB29nAjkPnqrmhVlpx+2eDiCoMNn/x9OKEQXEkXc4Q74w3w6JyBn/S6Vy3vSYDjH3yk/wQRwqLBMggAAA==
+      Commands:
+      - tools give %player% builder_wand2 1 1500
+      Chance: 2
+    '27':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9WVz0ojQRDGyw3COII57b3pk0JG9OBlwNtePKu7h0VC21NxmnS6Q3cNKiF3PSz7JuthX20fYGt0TAQD7f4h4Nym+KrqNzXdX+UAPdj+pEh9xhCNdwD9mMEHU0F/YhzqoEZURjJ63INN7RtHALCRQ679ZOodOopbsLOUWh8wY0kGP2cSbygoWX6dyUtvK1mOlI04kNqzSpayUmE8vArqVg6kIWWNXkj85aiJWhEusyIFM0aqg2+uallSaDhI3IIrFW97uE/jKgyWcZ8Lzy8WVeQcHpLQf8vbRbtW4qw2UVwrV4mI1kahrBV+JKhGob2jdq78ngb+sS5g9cilGCSIXV1jJOGD4M7TKVbFY2BvP817tybeNMm31yRPZ2oB0sb+fXDnEWOZxvmeHMx1bQj/A5AQRwcHaaD7dQGlUd6jlWTwcemKuonkJ0OnJrhxvLYfXRQzsZJz8CcHvqt2yjYlvrSGJZf5b7q6XYHdM8PWcbL3lJ/41i5nXhQsfznWfMVYK15fGWyR97ag2ylC3nrqsHXXw14Xb/gW8uL6xavpN0+ip3b0BgAA
+      Commands:
+      - tools give %player% sell_wand1 1 500
+      Chance: 2
+    '28':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9WVv2rcQBDGxzkMZxniKv2ylQ0n4wTcqHDlxoUrO0kRwrFezVnL7e2K3RG2Oa53iuCQB0mKvFoeICNbuTPEsJc/CKJOw8w3P327mskABrB9rEi9wRCNdwA7cQjPTAk7M+NQBzWhIpLR0wFsat84AoCNDDLtZ7V36ChuwfNVqvUBh5ySwbe5xGsKShbv5vLC21IWE2UjjqT2nCULWaowHV8GdSNH0pCyRi9T/MWkiVoRrqoiBTNFqoJvLitZUGg4SNyClfL1Hu7TuBKDZdyfwov3SxW5gK9J6D/l7aJdK3FemSiulCtFRGujUNYKPxFUodDeUesrv6eBv/QFrO65FIMEsasrjCR8ENy5rrHM7wN7+2ne25540ySffyV5uFNLkDb21yCnjSVTW4OhSDN9SrpzVRnCf3CcQly/3D9ME33sxyXxOmJcw6C7Hg06PDhIA33oCyiN8j8O3CG8WO0O3UTys7FTM9w46u2g83wunuQc/c6F79TOeJiLt+1Yl6v6tQZcJ7B7zpNCnJzsPQgkPrYrWuQ5pz/2NXvC15K3/BC2yHub002NkLWrZ9wuoVeDLt7wb8j7/Ttv8B8yrpTGGwgAAA==
+      Commands:
+      - tools give %player% sell_wand2 1 500
+      Chance: 2
+    '29':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9WVsWrcQBCGxzkMZwXiKv2ylQ0nYxLSqHHj5gpXdpIihGO9mrOW29sVuyNsc1zvFCEhD5IUebU8QEa2cheIYc9xEESdhpl/Pv27mskABvD0WJF6gyEa7wB24xCemBJ258ahDmpKRSSjZwPY1r5xBABbGWTaz2vv0FHcgWfrVOsDDjklg+8LiVcUlCzeLeS5t6UspspGHEntOUsWslRhNrkI6lqOpCFljV6l+PNpE7UiXFdFCmaGVAXfXFSyoNBwkLgFK+WbPdyncSUGy7i/hJfvVypyCd+S0H/L20W7VuKsMlFcKleKiNZGoawVfiqoQqG9o9ZXfk8Df+0LWN1yKQYJYk9XGEn4ILhzXWOZ3wb2D9K8Nz3xpkm+/Elyd6dWIG3s0SAnjSVTW4OhSDN9TrpzWRnCf3CcQly9ODhME33sxyXxOmLcwKBPPRr06nADfz70BZRG+R8H7hCer3eHbiL5+cSpOW4d9XbQeb4Q93KOHnLhO7VTHubibTvW5bp+owHXCeyd8aQQ4/F4/04h8bVd1TLPOf13Y7N7jC15zQ9hh7y3OV3XCFm7eybtFno56OIN/4e84H/wCv8Jsfg3MhwIAAA=
+      Commands:
+      - tools give %player% sell_wand3 1 500
+      Chance: 2
+# Only uncomment this if using HeadDatabase by Arcaniax
+# Skull: "7129"

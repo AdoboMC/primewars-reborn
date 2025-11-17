@@ -1,0 +1,163 @@
+enabled: true
+items:
+  STONE_SWORD:
+    wraps:
+      nightharrow_wendigo_sword:
+        permission: 'hmcwraps.undead_sword'
+        id: 'nexo:nightharrow_wendigo_sword'
+        name: '<gray>Undead Sword'
+        lore:
+          - '<green>Apply this wrap to make your sword look like undead sword!'
+          - 'Only Works on Stone Sword'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+  IRON_SWORD:
+    wraps:
+      starlight_sword:
+        permission: 'hmcwraps.starlight_sword'
+        id: 'nexo:starlight_sword'
+        name: '<yellow>Starlight Sword'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Sword!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+    
+      starlight_staff:
+        permission: 'hmcwraps.starlight_staff'
+        id: 'nexo:starlight_staff'
+        name: '<yellow>Starlight Staff'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Staff!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+    
+      starlight_spear:
+        permission: 'hmcwraps.starlight_spear'
+        id: 'nexo:starlight_spear'
+        name: '<yellow>Starlight Spear'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Spear!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+    
+      starlight_blade:
+        permission: 'hmcwraps.starlight_blade'
+        id: 'nexo:starlight_blade'
+        name: '<yellow>Starlight Blade'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Blade!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+    
+      starlight_battle_axe:
+        permission: 'hmcwraps.starlight_battle_axe'
+        id: 'nexo:starlight_battle_axe'
+        name: '<yellow>Starlight Battle Axe'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Battle Axe!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+      starlight_staff:
+        permission: 'hmcwraps.starlight_staff'
+        id: 'nexo:starlight_staff'
+        name: '<yellow>Starlight Staff'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Staff!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+      starlight_spear:
+        permission: 'hmcwraps.starlight_spear'
+        id: 'nexo:starlight_spear'
+        name: '<yellow>Starlight Spear'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Spear!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+      starlight_battle_axe:
+        permission: 'hmcwraps.starlight_battle_axe'
+        id: 'nexo:starlight_battle_axe'
+        name: '<yellow>Starlight Battle Axe'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Battle Axe!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+      starlight_dagger:
+        permission: 'hmcwraps.starlight_dagger'
+        id: 'nexo:starlight_dagger'
+        name: '<yellow>Starlight Dagger'
+        lore:
+          - '<green>Apply this wrap to make your sword look like Starlight Dagger!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+
+  IRON_AXE:
+    wraps:
+      starlight_axe:
+        permission: 'hmcwraps.starlight_axe'
+        id: 'nexo:starlight_axe'
+        name: '<yellow>Starlight Axe'
+        lore:
+          - '<green>Apply this wrap to make your axe look like Starlight Axe!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+
+  IRON_PICKAXE:
+    wraps:
+      starlight_pickaxe:
+        permission: 'hmcwraps.starlight_pickaxe'
+        id: 'nexo:starlight_pickaxe'
+        name: '<yellow>Starlight Pickaxe'
+        lore:
+          - '<green>Apply this wrap to make your pickaxe look like Starlight Pickaxe!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+
+  IRON_SHOVEL:
+    wraps:
+      starlight_shovel:
+        permission: 'hmcwraps.starlight_shovel'
+        id: 'nexo:starlight_shovel'
+        name: '<yellow>Starlight Shovel'
+        lore:
+          - '<green>Apply this wrap to make your shovel look like Starlight Shovel!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+
+  IRON_HOE:
+    wraps:
+      starlight_hoe:
+        permission: 'hmcwraps.starlight_hoe'
+        id: 'nexo:starlight_hoe'
+        name: '<yellow>Starlight Hoe'
+        lore:
+          - '<green>Apply this wrap to make your hoe look like Starlight Hoe!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+  BOW:
+    wraps:
+      starlight_bow:
+        permission: 'hmcwraps.starlight_bow'
+        id: 'nexo:starlight_bow'
+        name: '<yellow>Starlight Bow'
+        lore:
+          - '<green>Apply this wrap to make your Bow look like Starlight Bow!'
+          - '<gold>Shining with celestial energy from the heavens.'
+        flags:
+          - 'HIDE_ATTRIBUTES'
+
+# DON'T TOUCH THIS
+config: 1
+# DON'T TOUCH THIS

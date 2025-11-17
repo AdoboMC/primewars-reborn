@@ -1,0 +1,317 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: 'ᴊᴏʙs | ᴘᴏɪɴᴛs sʜᴏᴘ'
+size: 54
+items:
+  information:
+    material: SUNFLOWER
+    slot: 4
+    display_name: "%imc_primary-color_c%ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - "%imc_dark-color_c%ᴇᴀʀɴ %ɪᴍᴄ_ᴊᴏʙ-ᴘᴏɪɴᴛ-ꜰᴏʀᴍᴀᴛ_ᴄ_ᴘᴏɪɴᴛs %%imc_dark-color_c% ʙʏ ᴘᴇʀꜰᴏʀᴍɪɴɢ ᴘᴀɪᴅ"
+      - "%imc_dark-color_c%ᴀᴄᴛɪᴏɴs ꜰᴏʀ ʏᴏᴜʀ ᴊᴏʙ ᴏʀ ʙʏ ʟᴇᴠᴇʟɪɴɢ ᴜᴘ."
+      - ''
+      - '%imc_text-color_c%ᴘᴏɪɴᴛs: %imc_job-point-format_c_{jobsr_user_points_fixed}%'
+      - ''
+      - "%imc_darkest-color_c%ᴡʜᴀᴛ ɪs ᴛʜɪs ᴍᴏɴᴇʏ ᴜsᴇᴅ ꜰᴏʀ?"
+      - "%ɪᴍᴄ_ᴊᴏʙ-ᴘᴏɪɴᴛ-ꜰᴏʀᴍᴀᴛ_ᴄ_ᴘᴏɪɴᴛs %%imc_dark-color_c% ᴀʟʟᴏᴡ ʏᴏᴜ ᴛᴏ ᴘᴜʀᴄʜᴀsᴇ"
+      - "%imc_dark-color_c%ᴠᴀʀɪᴏᴜs ɪᴛᴇᴍs ɪɴ ᴛʜɪs sʜᴏᴘ."
+      - ''
+      - '%imc_darkest-color_c%sᴛᴀᴛɪsᴛɪᴄs:'
+      - "%imc_dark-color_c% • %imc_text-color_c%ᴘᴏɪɴᴛs ᴄᴏʟʟᴇᴄᴛᴇᴅ ᴀʟʟ-ᴛɪᴍᴇ: %imc_job-point-format_c_{jobsr_user_total_points}%"
+
+################## SHOP ITEMS
+
+##################################
+#            IRON INGOT          #
+##################################
+
+  iron_ingot_lock:
+    material: IRON_INGOT
+    slot: 19
+    amount: 48
+    priority: 0
+    display_name: "%imc_dark-color_c%x48 %imc_primary-color_c%ɪʀᴏɴ ɪɴɢᴏᴛ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_500 ᴘᴏɪɴᴛs %'
+      - ''
+      - "&c✘ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴘᴏɪɴᴛs."
+    view_requirement:
+      requirements:
+        balance:
+          type: '<'
+          input: '%jobsr_user_points_fixed%'
+          output: 500
+    click_commands:
+      - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+
+  iron_ingot_available:
+    material: IRON_INGOT
+    slot: 19
+    amount: 48
+    priority: 1
+    display_name: "%imc_dark-color_c%x48 %imc_primary-color_c%ɪʀᴏɴ ɪɴɢᴏᴛ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_500 ᴘᴏɪɴᴛs %'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%ᴄʟɪᴄᴋ:%imc_text-color_c% ᴘᴜʀᴄʜᴀsᴇ"
+    click_requirement:
+      requirements:
+        balance:
+          type: '>='
+          input: '%jobsr_user_points_fixed%'
+          output: 500
+      deny_commands:
+        - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+    click_commands:
+      - '[console] jobs editpoints take %player_name% 500'
+      - '[sound] BLOCK_DECORATED_POT_INSERT'
+      - '[console] minecraft:give %player_name% iron_ingot 48'
+      - "[message] ₱<p:prefix> ʏᴏᴜ ʜᴀᴠᴇ sᴜᴄᴄᴇsꜰᴜʟʟʏ ʙᴏᴜɢʜᴛ <p:dark-color>x48</p> <p:primary-color>ɪʀᴏɴ ɪɴɢᴏᴛ"
+      - '[refresh]'
+
+##################################
+#            DIAMOND             #
+##################################
+
+  diamond_lock:
+    material: DIAMOND
+    slot: 20
+    amount: 4
+    priority: 0
+    display_name: "%imc_dark-color_c%x4 %imc_primary-color_c%ᴅɪᴀᴍᴏɴᴅ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_400 ᴘᴏɪɴᴛs %'
+      - ''
+      - "&c✘ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴘᴏɪɴᴛs."
+    view_requirement:
+      requirements:
+        balance:
+          type: '<'
+          input: '%jobsr_user_points_fixed%'
+          output: 400
+    click_commands:
+      - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+
+  diamond_available:
+    material: DIAMOND
+    slot: 20
+    amount: 4
+    priority: 1
+    display_name: "%imc_dark-color_c%x4 %imc_primary-color_c%ᴅɪᴀᴍᴏɴᴅ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_400 ᴘᴏɪɴᴛs %'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%ᴄʟɪᴄᴋ:%imc_text-color_c% ᴘᴜʀᴄʜᴀsᴇ"
+    click_requirement:
+      requirements:
+        balance:
+          type: '>='
+          input: '%jobsr_user_points_fixed%'
+          output: 400
+      deny_commands:
+        - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+    click_commands:
+      - '[console] jobs editpoints take %player_name% 400'
+      - '[sound] BLOCK_DECORATED_POT_INSERT'
+      - '[console] minecraft:give %player_name% diamond 4'
+      - "[message] ₱<p:prefix> ʏᴏᴜ ʜᴀᴠᴇ sᴜᴄᴄᴇsꜰᴜʟʟʏ ʙᴏᴜɢʜᴛ <p:dark-color>x4</p> <p:primary-color>ᴅɪᴀᴍᴏɴᴅ"
+      - '[refresh]'
+
+##################################
+#             ELYTRA             #
+##################################
+
+  elytra_lock:
+    material: ELYTRA
+    slot: 21
+    amount: 1
+    priority: 0
+    display_name: "%imc_primary-color_c%ᴇʟʏᴛʀᴀ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_800 ᴘᴏɪɴᴛs %'
+      - ''
+      - "&c✘ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴘᴏɪɴᴛs."
+    view_requirement:
+      requirements:
+        balance:
+          type: '<'
+          input: '%jobsr_user_points_fixed%'
+          output: 800
+    click_commands:
+      - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+
+  elytra_available:
+    material: ELYTRA
+    slot: 21
+    amount: 1
+    priority: 1
+    display_name: "%imc_primary-color_c%ᴇʟʏᴛʀᴀ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_800 ᴘᴏɪɴᴛs %'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%ᴄʟɪᴄᴋ:%imc_text-color_c% ᴘᴜʀᴄʜᴀsᴇ"
+    click_requirement:
+      requirements:
+        balance:
+          type: '>='
+          input: '%jobsr_user_points_fixed%'
+          output: 800
+      deny_commands:
+        - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+    click_commands:
+      - '[console] jobs editpoints take %player_name% 800'
+      - '[sound] BLOCK_DECORATED_POT_INSERT'
+      - '[console] minecraft:give %player_name% elytra 1'
+      - "[message] ₱<p:prefix> ʏᴏᴜ ʜᴀᴠᴇ sᴜᴄᴄᴇsꜰᴜʟʟʏ ʙᴏᴜɢʜᴛ <p:primary-color>ᴇʟʏᴛʀᴀ</p>"
+      - '[refresh]'
+
+##################################
+#        FIREWORK ROCKET 3       #
+##################################
+
+  firework_rocket3_lock:
+    material: FIREWORK_ROCKET
+    slot: 22
+    amount: 16
+    priority: 0
+    display_name: "%imc_dark-color_c%x16 %imc_primary-color_c%ꜰɪʀᴇᴡᴏʀᴋ ʀᴏᴄᴋᴇᴛ %imc_dark-color_c%(ꜰʟɪɢʜᴛ ᴅᴜʀᴀᴛɪᴏɴ: 3)"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_3200 ᴘᴏɪɴᴛs %'
+      - ''
+      - "&c✘ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴘᴏɪɴᴛs."
+    view_requirement:
+      requirements:
+        balance:
+          type: '<'
+          input: '%jobsr_user_points_fixed%'
+          output: 3200
+    click_commands:
+      - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+
+  firework_rocket3_available:
+    material: FIREWORK_ROCKET
+    slot: 22
+    amount: 16
+    priority: 1
+    display_name: "%imc_dark-color_c%x16 %imc_primary-color_c%ꜰɪʀᴇᴡᴏʀᴋ ʀᴏᴄᴋᴇᴛ %imc_dark-color_c%(ꜰʟɪɢʜᴛ ᴅᴜʀᴀᴛɪᴏɴ: 3)"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_3200 ᴘᴏɪɴᴛs %'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%ᴄʟɪᴄᴋ:%imc_text-color_c% ᴘᴜʀᴄʜᴀsᴇ"
+    click_requirement:
+      requirements:
+        balance:
+          type: '>='
+          input: '%jobsr_user_points_fixed%'
+          output: 3200
+      deny_commands:
+        - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+    click_commands:
+      - '[console] jobs editpoints take %player_name% 3200'
+      - '[sound] BLOCK_DECORATED_POT_INSERT'
+      - '[console] minecraft:give %player_name% firework_rocket{Fireworks:{Flight:3}} 16'
+      - "[message] ₱<p:prefix> ʏᴏᴜ ʜᴀᴠᴇ sᴜᴄᴄᴇsꜰᴜʟʟʏ ʙᴏᴜɢʜᴛ <p:dark-color>x16</p> <p:primary-color>ꜰɪʀᴇᴡᴏʀᴋ ʀᴏᴄᴋᴇᴛ (ꜰʟɪɢʜᴛ ᴅᴜʀᴀᴛɪᴏɴ: 3)"
+      - '[refresh]'
+
+##################################
+#         FIREWORK ROCKET        #
+##################################
+
+  firework_rocket_lock:
+    material: FIREWORK_ROCKET
+    slot: 23
+    amount: 32
+    priority: 0
+    display_name: "%imc_dark-color_c%x32 %imc_primary-color_c%ꜰɪʀᴇᴡᴏʀᴋ ʀᴏᴄᴋᴇᴛ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_1200 ᴘᴏɪɴᴛs %'
+      - ''
+      - "&c✘ ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ ᴘᴏɪɴᴛs."
+    view_requirement:
+      requirements:
+        balance:
+          type: '<'
+          input: '%jobsr_user_points_fixed%'
+          output: 1200
+    click_commands:
+      - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+
+  firework_rocket_available:
+    material: FIREWORK_ROCKET
+    slot: 23
+    amount: 32
+    priority: 1
+    display_name: "%imc_dark-color_c%x32 %imc_primary-color_c%ꜰɪʀᴇᴡᴏʀᴋ ʀᴏᴄᴋᴇᴛ"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_dark-color_c%ʙᴜʏ ɪᴛᴇᴍs ᴜsɪɴɢ ʏᴏᴜʀ ᴘᴏɪɴᴛs'
+      - ''
+      - '%imc_text-color_c%ᴘʀɪᴄᴇ: %imc_job-point-format_c_1200 ᴘᴏɪɴᴛs %'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%ᴄʟɪᴄᴋ:%imc_text-color_c% ᴘᴜʀᴄʜᴀsᴇ"
+    click_requirement:
+      requirements:
+        balance:
+          type: '>='
+          input: '%jobsr_user_points_fixed%'
+          output: 1200
+      deny_commands:
+        - "[message] ₱<p:error-prefix> ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴇɴᴏᴜɢʜ <p:job-point-format:' Points'>."
+    click_commands:
+      - '[console] jobs editpoints take %player_name% 1200'
+      - '[sound] BLOCK_DECORATED_POT_INSERT'
+      - '[console] minecraft:give %player_name% firework_rocket 32'
+      - "[message] ₱<p:prefix> ʏᴏᴜ ʜᴀᴠᴇ sᴜᴄᴄᴇsꜰᴜʟʟʏ ʙᴏᴜɢʜᴛ <p:dark-color>x32</p> <p:primary-color>ꜰɪʀᴇᴡᴏʀᴋ ʀᴏᴄᴋᴇᴛ"
+      - '[refresh]'
+
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: "%imc_dark-color_c%ʙᴀᴄᴋ"
+    click_commands:
+      - '[openguimenu] jobs_main'
+      - '[sound] UI_BUTTON_CLICK'
+  previous_page:
+    material: ARROW
+    slot: 48
+    display_name: "%imc_primary-color_c%ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ"
+    click_commands:
+      - '[openguimenu] jobs_shop_1'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  background:
+    material: YELLOW_STAINED_GLASS_PANE
+    display_name: "&f&l"
+    slots: [0, 1, 7, 8, 45, 46, 52, 53]

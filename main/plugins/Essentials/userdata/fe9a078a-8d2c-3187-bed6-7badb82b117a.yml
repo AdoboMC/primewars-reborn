@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 223.25.59.6
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753943514827
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753943527435
+  login: 1753942426126
+money: '4219.3497112592354094'
+last-account-name: Lukas
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -44.81970451994711
+  y: 56.06019898247
+  z: 282.82818718675014
+  yaw: -23.16595458984375
+  pitch: -23.109943389892578
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -374.75335581117855
+  y: 92.0
+  z: -313.4359097638407
+  yaw: -160.2381591796875
+  pitch: 3.9478044509887695

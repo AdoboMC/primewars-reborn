@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 195.181.163.28
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755242264522
+  login: 1755241952965
+money: '0'
+last-account-name: Aielles
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 20.123903403987793
+  y: 67.0
+  z: 5.206192906515256
+  yaw: -76.50006103515625
+  pitch: 3.600010871887207
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -567.846137006128
+  y: 110.0
+  z: -238.57332658626436
+  yaw: -1.5087890625
+  pitch: 6.450009822845459

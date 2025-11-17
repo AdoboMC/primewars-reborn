@@ -1,0 +1,20 @@
+location: Philippines:-373.427:92.000:-410.508
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&1&lAFK Crate'
+    height: 0.3
+  - content: '&eRight-Click to Open Left-Click to Preview.'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&eObtained at &dAFK Pool'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.145.161.57
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752227655261
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752227762983
+  login: 1752223827113
+money: '5328.6190845077412481'
+last-account-name: Hidddan
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.73769239628655
+  y: 93.0
+  z: -304.6627096046357
+  yaw: -138.45001220703125
+  pitch: -3.4500083923339844
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -381.87064709083313
+  y: 87.0
+  z: -385.8293216533423
+  yaw: 17.553192138671875
+  pitch: -0.0882977545261383

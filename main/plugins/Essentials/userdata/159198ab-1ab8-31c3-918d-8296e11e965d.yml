@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.151.102.48
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754119277777
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754228754571
+  login: 1754227991947
+money: '0'
+last-account-name: Parkar
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -1962.2471525713618
+  y: 120.0003782809127
+  z: 793.360019905021
+  yaw: -148.4818878173828
+  pitch: -0.23773106932640076
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -408.39212782203504
+  y: 92.0
+  z: -300.71865954665753
+  yaw: 60.421966552734375
+  pitch: 4.804666042327881

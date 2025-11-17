@@ -1,0 +1,1024 @@
+menu_title: '&f七七七七七七七七⊹'
+open_command: nationtagsafrica1
+size: 56
+update_interval: 1
+
+items:
+
+
+  'Algeria_tag':
+    material: NAME_TAG
+    slot: 19
+    update: true
+    display_name: '&e&lAlgeria Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔟'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Algeria"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Algeria
+  'Algeria_tag_locked':
+    material: NAME_TAG
+    slot: 19
+    update: true
+    display_name: '&e&lAlgeria Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔟'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Angola_tag':
+    material: NAME_TAG
+    slot: 20
+    update: true
+    display_name: '&e&lAngola Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔠'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Angola"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Angola
+  'Angola_tag_locked':
+    material: NAME_TAG
+    slot: 20
+    update: true
+    display_name: '&e&lAngola Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔠'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+
+  'Benin_tag':
+    material: NAME_TAG
+    slot: 21
+    update: true
+    display_name: '&e&lBenin Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔨'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Benin"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Benin
+  'Benin_tag_locked':
+    material: NAME_TAG
+    slot: 21
+    update: true
+    display_name: '&e&lBenin Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔨'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Botswana_tag':
+    material: NAME_TAG
+    slot: 22
+    update: true
+    display_name: '&e&lBotswana Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔫'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Botswana"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Botswana
+  'Botswana_tag_locked':
+    material: NAME_TAG
+    slot: 22
+    update: true
+    display_name: '&e&lBotswana Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔫'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'BurkinaFaso_tag':
+    material: NAME_TAG
+    slot: 23
+    update: true
+    display_name: '&e&lBurkinaFaso Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔮'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% BurkinaFaso"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.BurkinaFaso
+  'BurkinaFaso_tag_locked':
+    material: NAME_TAG
+    slot: 23
+    update: true
+    display_name: '&e&lBurkinaFaso Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔮'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Burundi_tag':
+    material: NAME_TAG
+    slot: 24
+    update: true
+    display_name: '&e&lBurundi Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔯'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Burundi"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Burundi
+  'Burundi_tag_locked':
+    material: NAME_TAG
+    slot: 24
+    update: true
+    display_name: '&e&lBurundi Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔯'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Cameroon_tag':
+    material: NAME_TAG
+    slot: 25
+    update: true
+    display_name: '&e&lCameroon Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔱'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Cameroon"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Cameroon
+  'Cameroon_tag_locked':
+    material: NAME_TAG
+    slot: 25
+    update: true
+    display_name: '&e&lCameroon Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔱'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Capeverde_tag':
+    material: NAME_TAG
+    slot: 28
+    update: true
+    display_name: '&e&lCapeverde Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔳'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Capeverde"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Capeverde
+  'Capeverde_tag_locked':
+    material: NAME_TAG
+    slot: 28
+    update: true
+    display_name: '&e&lCapeverde Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔳'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'CentralAfricanRepublic_tag':
+    material: NAME_TAG
+    slot: 29
+    update: true
+    display_name: '&e&lCentralAfricanRepublic Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔵'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% CentralAfricanRepublic"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.CentralAfricanRepublic
+  'CentralAfricanRepublic_tag_locked':
+    material: NAME_TAG
+    slot: 29
+    update: true
+    display_name: '&e&lCentralAfricanRepublic Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔵'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Chad_tag':
+    material: NAME_TAG
+    slot: 30
+    update: true
+    display_name: '&e&lChad Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝔶'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Chad"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Chad
+  'Chad_tag_locked':
+    material: NAME_TAG
+    slot: 30
+    update: true
+    display_name: '&e&lChad Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝔶'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Comoros_tag':
+    material: NAME_TAG
+    slot: 31
+    update: true
+    display_name: '&e&lComoros Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖈'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Comoros"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Comoros
+  'Comoros_tag_locked':
+    material: NAME_TAG
+    slot: 31
+    update: true
+    display_name: '&e&lComoros Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖈'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Congo_tag':
+    material: NAME_TAG
+    slot: 32
+    update: true
+    display_name: '&e&lCongo Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖉'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Congo"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Congo
+  'Congo_tag_locked':
+    material: NAME_TAG
+    slot: 32
+    update: true
+    display_name: '&e&lCongo Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖉'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Djibouti_tag':
+    material: NAME_TAG
+    slot: 33
+    update: true
+    display_name: '&e&lDjibouti Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖎'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Djibouti"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Djibouti
+  'Djibouti_tag_locked':
+    material: NAME_TAG
+    slot: 33
+    update: true
+    display_name: '&e&lDjibouti Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖎'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'DRCongo_tag':
+    material: NAME_TAG
+    slot: 34
+    update: true
+    display_name: '&e&lDRCongo Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖐'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% DRCongo"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.DRCongo
+  'DRCongo_tag_locked':
+    material: NAME_TAG
+    slot: 34
+    update: true
+    display_name: '&e&lDRCongo Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖐'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Egypt_tag':
+    material: NAME_TAG
+    slot: 37
+    update: true
+    display_name: '&e&lEgypt Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖒'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Egypt"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Egypt
+  'Egypt_tag_locked':
+    material: NAME_TAG
+    slot: 37
+    update: true
+    display_name: '&e&lEgypt Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖒'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+
+  'EquatorialGuinea_tag':
+    material: NAME_TAG
+    slot: 38
+    update: true
+    display_name: '&e&lEquatorialGuinea Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖕'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% EquatorialGuinea"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.EquatorialGuinea
+  'EquatorialGuinea_tag_locked':
+    material: NAME_TAG
+    slot: 38
+    update: true
+    display_name: '&e&lEquatorialGuinea Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖕'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Eritrea_tag':
+    material: NAME_TAG
+    slot: 39
+    update: true
+    display_name: '&e&lEritrea Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖖'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Eritrea"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Eritrea
+  'Eritrea_tag_locked':
+    material: NAME_TAG
+    slot: 39
+    update: true
+    display_name: '&e&lEritrea Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖖'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Eswatini_tag':
+    material: NAME_TAG
+    slot: 40
+    update: true
+    display_name: '&e&lEswatini Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖘'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Eswatini"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Eswatini
+  'Eswatini_tag_locked':
+    material: NAME_TAG
+    slot: 40
+    update: true
+    display_name: '&e&lEswatini Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖘'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Ethiopia_tag':
+    material: NAME_TAG
+    slot: 41
+    update: true
+    display_name: '&e&lEthiopia Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖙'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Ethiopia"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Ethiopia
+  'Ethiopia_tag_locked':
+    material: NAME_TAG
+    slot: 41
+    update: true
+    display_name: '&e&lEthiopia Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖙'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Gabon_tag':
+    material: NAME_TAG
+    slot: 42
+    update: true
+    display_name: '&e&lGabon Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖞'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Gabon"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Gabon
+  'Gabon_tag_locked':
+    material: NAME_TAG
+    slot: 42
+    update: true
+    display_name: '&e&lGabon Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖞'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+  'Gambia_tag':
+    material: NAME_TAG
+    slot: 43
+    update: true
+    display_name: '&e&lGambia Pin'
+
+    lore:
+      - ''
+      - '&fDisplay: 𝖟'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 1
+    enchantments:
+      - mending;1
+    hide_enchantments: true
+    hide_attributes: true
+    click_commands:
+      - "[console] deluxetags:tags set %player_name% Gambia"
+    view_requirement:
+      requirements:
+        points:
+          type: has permission
+          permission: deluxetags.tag.Gambia
+  'Gambia_tag_locked':
+    material: NAME_TAG
+    slot: 43
+    update: true
+    display_name: '&e&lGambia Pin'
+    lore:
+      - ''
+      - '&fDisplay: 𝖟'
+      - '&7Display in the tab'
+      - ''
+      - '&e➥ Left-Click to select'
+    priority: 2
+    click_commands:
+      - "[message] &e&lTags &8&l→ &cYou do not own this tag!"
+
+
+
+
+
+
+
+
+
+
+
+  'page_next':
+    material: PAPER
+    model_data: 110007
+    slots:
+      - 26
+      - 35
+      - 44
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] africa_nationtags_2"
+
+
+
+
+  'page_previous_category':
+    material: PAPER
+    model_data: 110007
+    slot: 0
+    display_name: '&f&lᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] europe_nationtags_1"
+  'page_next_category':
+    material: PAPER
+    model_data: 110007
+    slot: 8
+    display_name: '&f&lɴᴇxᴛ ᴘᴀɢᴇ'
+    left_click_commands:
+      - "[openguimenu] asia_nationtags_1"
+
+
+
+
+
+
+
+
+  'page_northamerica':
+    material: PAPER
+    model_data: 4108
+    slot: 1
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&c&lNorth America'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] northamerica_nationtags_1"
+
+  'page_southamerica':
+    material: PAPER
+    model_data: 4109
+    slot: 2
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&2&lSouth America'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] southamerica_nationtags_1"
+
+  'page_europe':
+    material: PAPER
+    model_data: 4110
+    slot: 3
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&b&lEurope'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] europe_nationtags_1"
+
+  'page_africa':
+    material: PAPER
+    model_data: 4111
+    slot: 4
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&6&lAfrica'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] africa_nationtags_1"
+
+  'page_asia':
+    material: PAPER
+    model_data: 4112
+    slot: 5
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&5&lAsia'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] asia_nationtags_1"
+
+  'page_australia':
+    material: PAPER
+    model_data: 4113
+    slot: 6
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&e&lAustralia'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] australia_nationtags_1"
+
+  'page_all':
+    material: PAPER
+    model_data: 4114
+    slot: 7
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&d&lAll'
+    lore:
+      - '&7Tags Category'
+      - ''
+      - '&e➥ Left-Click to open'
+    left_click_commands:
+      - "[openguimenu] all_nationtags_1"
+
+
+
+
+  'clear_tag':
+    material: PAPER
+    model_data: 110007
+    slot: 49
+    update: true
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&e&lᴄʟᴇᴀʀ ᴛᴀɢ'
+    lore:
+      - ''
+      - '&8&l∙ &fCurrent[colon] &7%deluxetags_identifier%'
+      - '&8&l∙ &fDisplay[colon] &7%deluxetags_tag%'
+      - ''
+      - '&e➥ Left-Click to clear tag'
+    left_click_commands:
+      - "player deluxetags:tags clear %player%"
+
+
+
+
+

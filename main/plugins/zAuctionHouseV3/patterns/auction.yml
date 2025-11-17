@@ -1,0 +1,170 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_auction" # Name of the pattern
+size: 54
+items:
+
+  expireItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: expire
+    slot: 40
+    isPermanent: true
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "        #92bed8ᴇxᴘɪʀᴇᴅ ɪᴛᴇᴍs"
+        - "              #8c8c8c&m     "
+        - ""
+        - " #e6fff3ʏᴏᴜ ʜᴀᴠᴇ #ffacd5%zauctionhouse_expired_item% #e6fff3ᴇxᴘɪʀᴇᴅ ɪᴛᴇᴍs "
+        - ""
+        - "       #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+
+  buyItem:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: buying
+    slot: 43
+    isPermanent: true
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "         #92bed8ʙᴏᴜɢʜᴛ ɪᴛᴇᴍs"
+        - "              #8c8c8c&m     "
+        - ""
+        - " #e6fff3ʏᴏᴜ ʜᴀᴠᴇ #ffacd5%zauctionhouse_buying_item% #e6fff3ʙᴏᴜɢʜᴛ ɪᴛᴇᴍs "
+        - ""
+        - "       #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+
+  playerItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: items
+    slot: 8
+    isPermanent: true
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "        #92bed8ʏᴏᴜʀ ɪᴛᴇᴍs"
+        - "            #8c8c8c&m     "
+        - ""
+        - " #e6fff3ʏᴏᴜ ʜᴀᴠᴇ #ffacd5%zauctionhouse_currents_item% #e6fff3ʏᴏᴜʀ ɪᴛᴇᴍs "
+        - ""
+        - "     #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+
+  categories:
+    type: INVENTORY
+    inventory: categories
+    plugin: zAuctionHouseV3
+    slot: 0
+    isPermanent: true
+    item:
+      material: nexo:auction_empty_slot
+      name: "#cf3932← ᴄᴀᴛᴇɢᴏʀɪᴇs"
+      # lore:
+      #   - "    #92bed8ᴄᴀᴛᴇɢᴏʀɪᴇs"
+      #   - "         #8c8c8c&m     "
+      #   - ""
+      #   - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+  informations:
+    type: ZAUCTIONHOUSE_UPDATE
+    slot: 38
+    isPermanent: true
+    item:
+      material: nexo:auction_empty_slot
+      name: '&f'
+      lore:
+        - "                #92bed8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+        - "                      #8c8c8c&m     "
+        - ""
+        - "      #e6fff3ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ"
+        - " #e6fff3ɪᴛ's ᴀ ᴍᴀʀᴋᴇᴛ ᴡʜᴇʀᴇ ᴀʟʟ ᴛʜᴇ ᴘʟᴀʏᴇʀs "
+        - "          #e6fff3ᴄᴀɴ sᴇʟʟ ᴏʀ ʙᴜʏ ɪᴛᴇᴍs"
+        - ""
+        - "                 #e6fff3→ ᴜsᴀɢᴇ ←"
+        - "       #ffacd5/ᴀʜ sᴇʟʟ #8c8c8c‹&fᴘʀɪᴄᴇ#8c8c8c› #8c8c8c[‹&fᴀᴍᴏᴜɴᴛ#8c8c8c›]"
+        - ""
+        - "             #e6fff3ɴᴜᴍʙᴇʀ ᴏғ ɪᴛᴇᴍs#8c8c8c: #92bed8%zauctionhouse_counts%"
+        - "        #e6fff3sᴏʀᴛ ᴛʏᴘᴇ#8c8c8c: #92bed8%zauctionhouse_sorting%"
+        - ""
+        - "      #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ɪᴛᴇᴍs #8c8c8c•"
+        - ""
+
+  change_sort:
+    isPermanent: true
+    type: ZAUCTIONHOUSE_CHANGE_SORT
+    slot: 42
+    item:
+      material: nexo:auction_empty_slot
+      name: "&f"
+      lore:
+        - "                #92bed8sᴏʀᴛ ᴛʏᴘᴇ"
+        - "                    #8c8c8c&m     "
+        - ""
+        - "          #e6fff3➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ"
+        - "          #8c8c8c➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ"
+        - "          #8c8c8c➡ ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ"
+        - "          #8c8c8c➡ ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ"
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴏʀᴛ ᴛʏᴘᴇ #8c8c8c• "
+    placeholder: "%zauctionhouse_sorting_type%"
+    value: "DECREASING_DATE"
+    action: EQUALS_STRING
+    else:
+      type: ZAUCTIONHOUSE_CHANGE_SORT
+      item:
+        material: nexo:auction_empty_slot
+        name: "&f"
+        lore:
+          - "                #92bed8sᴏʀᴛ ᴛʏᴘᴇ"
+          - "                    #8c8c8c&m     "
+          - ""
+          - "          #8c8c8c➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ"
+          - "          #e6fff3➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ"
+          - "          #8c8c8c➡ ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ"
+          - "          #8c8c8c➡ ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ"
+          - ""
+          - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴏʀᴛ ᴛʏᴘᴇ #8c8c8c• "
+      placeholder: "%zauctionhouse_sorting_type%"
+      value: "DECREASING_PRICE"
+      action: EQUALS_STRING
+      else:
+        type: ZAUCTIONHOUSE_CHANGE_SORT
+        item:
+          material: nexo:auction_empty_slot
+          name: "&f"
+          lore:
+            - "                #92bed8sᴏʀᴛ ᴛʏᴘᴇ"
+            - "                    #8c8c8c&m     "
+            - ""
+            - "          #8c8c8c➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ"
+            - "          #8c8c8c➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ"
+            - "          #e6fff3➡ ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ"
+            - "          #8c8c8c➡ ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ"
+            - ""
+            - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴏʀᴛ ᴛʏᴘᴇ #8c8c8c• "
+        placeholder: "%zauctionhouse_sorting_type%"
+        value: "ASCENDING_DATE"
+        action: EQUALS_STRING
+        else:
+          type: ZAUCTIONHOUSE_CHANGE_SORT
+          item:
+            material: nexo:auction_empty_slot
+            name: "&f"
+            lore:
+              - "                #92bed8sᴏʀᴛ ᴛʏᴘᴇ"
+              - "                    #8c8c8c&m     "
+              - ""
+              - "          #8c8c8c➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ"
+              - "          #8c8c8c➡ ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ"
+              - "          #8c8c8c➡ ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ"
+              - "          #e6fff3➡ ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ"
+              - ""
+              - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴏʀᴛ ᴛʏᴘᴇ #8c8c8c• "

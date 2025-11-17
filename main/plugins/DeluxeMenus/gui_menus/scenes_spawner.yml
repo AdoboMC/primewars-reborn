@@ -1,0 +1,46 @@
+menu_title: "<shift:-44>&f<glyph:scenes_spawner_small>"
+open_command:
+  - scenes
+size: 9
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+open_commands:
+  - '[sound] UI_LOOM_SELECT_PATTERN'
+items:
+  npcs:
+    material: PAPER
+    model_data: 3390555
+    slot: 0
+    priority: 1
+    update: true
+    hide_attributes: true
+    display_name: 'NPCs'
+    lore:
+      - '&7Browse your NPCs'
+    left_click_commands:
+      - '[openguimenu] scenes_npcs'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  environment:
+    material: PAPER
+    model_data: 3321011
+    slot: 1
+    priority: 1
+    update: true
+    hide_attributes: true
+    display_name: 'Environment'
+    lore:
+      - '&7Browse your environment scenes'
+    left_click_commands:
+      - '[openguimenu] scenes_environment'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  
+#35dd8da810fde8cd410472122f289581
+#Y0ZZd3UmJnR1ZHbPp3TKNmN3VVWsJESNtkQUN1MjpnTsJ1aWBDOZBDTHhEMJV2NwFkSZdFN

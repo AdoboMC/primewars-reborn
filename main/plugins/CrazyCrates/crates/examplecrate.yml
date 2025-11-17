@@ -1,0 +1,388 @@
+Crate:
+  # https://docs.crazycrew.us/docs/plugins/crazycrates/misc/crate-types
+
+    # Make sure to check out the wiki for anything not explained here.
+  # https://docs.crazycrew.us/docs/category/crazycrates
+
+    # See CosmicCrate.yml or CasinoCrate.yml to see how the Cosmic/Casino CrateType works.
+  CrateType: CSGO
+  # Name of the Inventory if a GUI crate.
+  CrateName: <green>Basic Crate
+  # The name of the inventory that will be in the preview GUI.
+  Preview-Name: <green>Basic Crate Preview
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # The amount of keys required to use the crate.
+  RequiredKeys: 0
+  # Max amount of crates that can be opened at once using /crates mass-open
+  Max-Mass-Open: 10
+  # If the crate shows in the /crates.
+  # If the type is QuickCrate/CrateOnTheGo/FireCracker, They will not work as they require a Physical Crate.
+  InGUI: true
+  # Slot the item is in the GUI.
+  Slot: 12
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: true
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><green>Basic
+    Crate.</bold>'
+  # This section is related to commands opening when a crate is opened.
+  opening-command:
+    # If the commands should be sent or not.
+    toggle: false
+    # The commands to run when the crate opens.
+    # Supports all placeholderapi placeholders
+    # Supports %prefix which returns our prefix, %player% which uses the player name
+    commands:
+    - put your command here.
+  sound:
+    # The sound options when the animation is cycling.
+    cycle-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use.
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: block.note_block.xylophone
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when an item is clicked.
+    click-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: ui.button.click
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when a crate ends.
+    stop-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: entity.player.levelup
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+  # A default message if the prize doesn't have any Messages
+  # i.e. Messages: [] or the value isn't there.
+  Prize-Message:
+  - <gray>You have won <red>%reward% <gray>from <red>%crate%.
+  # A default command if the prize doesn't have any commands
+  # i.e. Commands: [] or the value isn't there.
+  Prize-Commands: []
+  # Item the crate is in the GUI
+  Item: diamond
+  # The custom model data of the item, -1 is disabled.
+  Custom-Model-Data: -1
+  # If the crate in the main /crates is glowing or not.
+  Glowing: false
+  # Name of the item in the GUI.
+  Name: <bold><green>Basic Crate</bold>
+  # The lore of the item in the GUI.
+  Lore:
+  - <gray>This crate contains strange objects.
+  - <gray>You have <gold>%keys% keys <gray>to open this crate with.
+  - '<gray>You have opened this crate: <gold>%crate_opened% times'
+  - <gray>(<yellow>!<gray>) Right click to view rewards.
+  Preview:
+    # Turn on and off the preview for this crate.
+    Toggle: true
+    # How many lines the Crate Preview should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      # Turn the glass border in the preview on and off.
+      Toggle: true
+      # The name of the border item.
+      Name: ' '
+      # The item that shows in the border. Can be glass or any other item.
+      Item: gray_stained_glass_pane
+      # The custom model data of the item, -1 is disabled.
+      Custom-Model-Data: -1
+  PhysicalKey:
+    # Name of the Key.
+    Name: <bold><green>Basic Crate Key</bold>
+    # Lore of the Key.
+    Lore:
+    - <gray>A special Key
+    - <gray>For a special Crate.
+    # The item the key is.
+    Item: lime_dye
+    # The custom model data of the item, -1 is disabled.
+    Custom-Model-Data: -1
+    # Makes the key look enchanted.
+    Glowing: true
+  # Settings for the holograms.
+  #Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The distance the hologram can be seen.
+    Range: 8
+    # How often should the hologram update? -1 is disabled.
+    Update-Interval: -1
+    # The background color of the hologram. It uses hex colors. This only works with CMI/FancyHolograms
+    # Set the color to transparent if you don't want any color.
+    Color: transparent
+    # The message that will be displayed above the crate.
+    # Note: MiniMessage or Color Codes being supported is depending on the 'holograms' plugin.
+    Message:
+    - <bold><green>Basic Crate</bold>
+  # All the prizes that can be obtained in the Crate.
+  # These prizes do not require any extra configuration
+  # They will give the prizes based on what's already below.
+  # See the AdvancedExample.yml for a more advanced crate.
+  Prizes:
+    '1':
+      # The name of the item to display in the gui.
+      DisplayName: <bold><dark_red>Warlord's Set</bold>
+      # The item to display in the gui.
+      DisplayItem: netherite_helmet
+      # Prize settings
+      Settings:
+        # The custom model data of the item, -1 is disabled.
+        Custom-Model-Data: -1
+      # The enchants on the item.
+      DisplayEnchantments:
+      - protection:5
+      - unbreaking:3
+      # https://docs.crazycrew.us/docs/plugins/crazycrates/guides/prizes/items/armor-trim
+      DisplayTrim:
+        # The list of materials to use can be found on the link above
+        Material: redstone
+        # The list of patterns to use can be found on the link above
+        Pattern: sentry
+      # The amount to display in the gui.
+      DisplayAmount: 1
+      # The lore of the item.
+      DisplayLore:
+      - <gray>Win the warlord's set.
+      - '<bold><gold>Chance: <red>40%</bold>'
+      # The max range i.e. 40/100 = 40% chance to win.
+      MaxRange: 100
+      # The chance to win i.e. 40%
+      Chance: 40
+      # A list of commands to run when they roll this prize.
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.warlord
+      # The list of items to give.
+      Items:
+      - Item:netherite_helmet, Amount:1, Damage:25, Trim-Pattern:sentry, Trim-Material:redstone,
+        Name:<bold><dark_red>Warlord's Helmet</bold>, protection:5, unbreaking:3
+      - Item:netherite_chestplate, Amount:1, Damage:25, Trim-Pattern:sentry, Trim-Material:redstone,
+        Name:<bold><dark_red>Warlord's Chestplate</bold>, protection:5, unbreaking:3
+      - Item:netherite_leggings, Amount:1, Damage:25, Trim-Pattern:sentry, Trim-Material:redstone,
+        Name:<bold><dark_red>Warlord's Leggings</bold>, protection:5, unbreaking:3
+      - Item:netherite_boots, Amount:1, Damage:25, Trim-Pattern:sentry, Trim-Material:redstone,
+        Name:<bold><dark_red>Warlord's Boots</bold>, protection:5, unbreaking:3
+      # A list of permissions, If a player has any of these permissions. they cannot win this prize again!
+      BlackListed-Permissions:
+      - crazycrates.blacklist.warlord
+      # The alternative prize.
+      Alternative-Prize:
+        # if it should be enabled.
+        Toggle: true
+        # The message to send.
+        Messages:
+        - '<reset> <dark_gray>[<blue>CrazyCrates<dark_gray>]: <gray>You have already
+          won that prize, so enjoy some gold nuggets.'
+        # A list of commands to run.
+        Commands:
+        - give %player% gold_nugget 16
+        # Alternatively, instead of commands. You can have an Items section which functions the same as the Items section above.
+        Items:
+        - Item:gold_nugget, Amount:16
+    '2':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDOzcxLTS5KTCuxSsrPzy7OSM1JY2ZgTc4vzSthYGAQYQAACSkawjwAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDOzcxLTS5KTCuxSsrPzy7OSM1JY2ZgTc4vzSthYGAQYQAACSkawjwAAAA=
+      Chance: 98
+      Tiers:
+      - common
+    '3':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41TwU7bQBAdoEWOEVAqtT21svbApQGB1CpSbmkSlahxgnCKhAKyNvYmXsXeNes1EFE+oF/Cub9Af6zjkNihgEQOluJ5896bmWcTYAXWGlTTY6YSLgXA5rkBy9yHjYgL5ik61NWBlOMVeO3JVGgAWDLB9GQUS8GETkz4WCCp1ooPUs3cSPp8yJF0CTaTQF66XLhaylDzGEpQystmRmjAKz2JGXwqmEZMMMW9XWSk3thNYsb8VVil0czE9GdAScZMUZ05L1Hfdy9omLL5AJHkmkVJ1WeenADKLswUSoU4gGX4fU3YlVaUVPvXZCBDn1SHNExYmXgSUaRKLgPkIWXCNQ25l5flYJgmHtWs6Ehw/DHTgZLpKMjfauRHGmRIhc9UiCbmLTdnRfkG/EUrc/WRopPH4rOmIz4K9I6HlbGlpaWYx/gFs/atZMzD0IolF3qXPFAx4F2xBi9NtIxcQSMGv55Sp+cpfVbdyUR2DjMRi9yUX+j5WKZewNRDVya8L1wx4QVU6CjL1xP5MWE1ZBcsTFZgq2hCtM/FKMsTIOTxkD7GHIe37W6r17Qdt3HSqdmtutvuHjXha5/c3Q7RMz7vbisv2+uZAW9zuuzp9k4Om2DWux3np1371m4a8OYhoNWANedHq912D7utTs+A9byObprwYXuwuNXtymxbBmwcOL2jE7fZqR/UOj0H7GviaJptb/4K3Xe/O1qqyfSEOfG87v79gwHFhv4pmW3L2j8lZ3gJTMXWIzys9wtcNqx5b2FqtJDP/j4nndVy2WdG+1++3rXtWqfhwACZ6jKKqMDPhah4ZFEfr3p/g53pDRJrlN3lQAqpqJog9OpLBc2WSYOFmMHq3u5eGUlEIkNGqlqlmMNunH99i/uf5uBzn2y/9PoYtX9ghzdRQQUAAA==
+      Commands:
+       - mi give CONSUMABLE SKILL_POINT %player% 1
+      Chance: 3
+      Tiers:
+      - common
+    '4':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/3VRXY8SMRS9K4jDmP0yq09qSB98Ij6ZmPC2AcKSlY8IMSGATe3cYZudacfOZd0J4Uftb/CP2YHdAaL2oUl77jk959QHKMHLliDxDW2qjAY4/enBMxXAm1hplFaE1FDWaJ4oeSvusQTPpVlqAoAjH3xp4sRo1JT68G7HEERW/VgS8tgEKlRO/AhO0xvziyvNyZiIVAJVqBawnwt6UKYsQXi/U1qgRqvkR6co5C1PE8SgAhURP5rYLA+qJkErKE9QFUHA70S0xG2Qkzg2ijBOGwFKk+XTr3f6cpmSibkWMcL1iuE9WcEa0xWTJjKWNdjCImpWZ4pEpCRrhCJKsc7ITTq0pRaLrDZ03WRsPS+u2drfLxC1vBGa4m1PlQjvMEpLcL6bCI2lpUaXpVyCiz1mGCqpHN/5hhcA/j+8B+77PHjV6w2643ZvxPOdjyfDNpTHg8EXD84OoW7LfXm305nwYbd5PfHguMD7l702HH8Qe7E8OLkajb9OeLvfvLrsj0fwfcVGJPKYT1eunkFnRMZmm+oKuSec/35IKS9zOmO7RLXPM1afscfotU8zNncdrj04/0sA3k4PiO7BgsbmHvhbixv7zcJefvyftRwrbB0Ezj24sv8Adtx+6xsDAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/3WUz07bQBDGB2iRY0QolVoubWWtRE5p1AqplXJLkwCR4gTFASkKyFrsSWKx9rr2Ghoh1HOfhHNfgb5Yxwmx+RcfLNkz881vxt9aB1iDjQZX/ASj2JMBwNZPDVY9F7Z8L0An4iNVDXmI0Rq8dmQSKABY0UF3pB/KAAMV6/AxT+VKRd55otD2peuNPFJdga14Iq9sL7CVlEJ5IRSgkIX1VFCDV2oaInzKlcYYYOQ5FVLkzoUdh4juOqxz/x5idmlQkMTGVYpe4K5rX3KR4HyCou9LT6EfV1105BSobTHXFzKiPIBV+HPN8JeKOKsOr9m5FC6rjriIscwcSVmsyq4mpMPKzFNceE4WluejJHa4wrwipvEvUE0imYwn2VtF+iRDCkngYiQIYlFyc5aHb+D4Icqi+zhFetb8vqjnjSfqs0ORC0NJI0IX0a+wR7IavMvndpJYSd8OuI/w+6V2UxRCXi1tuC+mXjA2TmTiTDAy2E35AWmEGCytHO65Z4/BdHifg2HgTHig/NRTL3hGh3WBlyjiNdjOiyjbJZzUQ0Apz+d0yds0v2l2W/2madmNQadmtup2u9trQmnI7m5HBEz3u9tvS3Z5psHbrD692/3BURP0erdjHZu1H+2mBm8eJ7QaUNxvD1qdA/uke1w/bPY02MxSiKAJOyV8ssoSTzekQfHQ6vcGdrNTP6x1+haY18xSPN3Y4hURdw8sJaPp7Mtlwou4/e8vGTFd+Sm735Dx9ZSl2yczbD/Lh81hnpfOu5Pvq2UdtWuDZmM+9Ebpe0lezoE10Oeks3lyyvRxGWEay+iWbOApZb1rmrVOw4KElOrS93lAp4eJ0EhiKtoNBZ9iNHP0rkF/A9+L01+ZEaOi0x8aGMfkKY+8WBmJqaGiBI299EQ1kCpZ9UvlS5l0g1gKZNU0TPBhdj4ffrmZaz4MWWmpV8iJ/wGpR7rtVQUAAA==
+      - Data:H4sIAAAAAAAA/21QwUoDMRAdXSs1goKooCfJUeoP7FG8ePMgvRQps8lsGzab1GRSW0p/wi82W7Bbwdwm772Z954AKOD8BRnHFKLxDuDycwjHRsNdaxypgDWX2mDrnZ4ujGpwRQUMlE+OAeBIgFC+XXhHjuMZXPQi6wMNOwp8byStOKAsJxtZeatlWaONNJLKZ5Ys5Zqs9V9yJA2jNWqP+6pOUSFTL4kcTEM8Dz7N5vtfzgfynvdATs0fXvOm5DQFm938Srcfe5rcCrjtnXYadNx2EQScWlqSjQVc94zkqkDYGDfLgU7+QFTXRpm8Yp2hAYCAmx5UKbJvpzr3K+DqLVU53HNqGsNjtInykUfUS3SK9KGJEml6MD/xLlbXZQH3/wqi9Rx3Zef3A6GdOljVAQAA
+      - Data:H4sIAAAAAAAA/3VRXY8SMRS9K4jDmP0yq09qSB98Ij6ZmPC2AcKSlY8IMSGATe3cYZudacfOZd0J4Uftb/CP2YHdAaL2oUl77jk959QHKMHLliDxDW2qjAY4/enBMxXAm1hplFaE1FDWaJ4oeSvusQTPpVlqAoAjH3xp4sRo1JT68G7HEERW/VgS8tgEKlRO/AhO0xvziyvNyZiIVAJVqBawnwt6UKYsQXi/U1qgRqvkR6co5C1PE8SgAhURP5rYLA+qJkErKE9QFUHA70S0xG2Qkzg2ijBOGwFKk+XTr3f6cpmSibkWMcL1iuE9WcEa0xWTJjKWNdjCImpWZ4pEpCRrhCJKsc7ITTq0pRaLrDZ03WRsPS+u2drfLxC1vBGa4m1PlQjvMEpLcL6bCI2lpUaXpVyCiz1mGCqpHN/5hhcA/j+8B+77PHjV6w2643ZvxPOdjyfDNpTHg8EXD84OoW7LfXm305nwYbd5PfHguMD7l702HH8Qe7E8OLkajb9OeLvfvLrsj0fwfcVGJPKYT1eunkFnRMZmm+oKuSec/35IKS9zOmO7RLXPM1afscfotU8zNncdrj04/0sA3k4PiO7BgsbmHvhbixv7zcJefvyftRwrbB0Ezj24sv8Adtx+6xsDAAA=
+      Chance: 23
+      Tiers:
+      - common
+    '5':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/21QwUoDMRAdXSs1goKooCfJUeoP7FG8ePMgvRQps8lsGzab1GRSW0p/wi82W7Bbwdwm772Z954AKOD8BRnHFKLxDuDycwjHRsNdaxypgDWX2mDrnZ4ujGpwRQUMlE+OAeBIgFC+XXhHjuMZXPQi6wMNOwp8byStOKAsJxtZeatlWaONNJLKZ5Ys5Zqs9V9yJA2jNWqP+6pOUSFTL4kcTEM8Dz7N5vtfzgfynvdATs0fXvOm5DQFm938Srcfe5rcCrjtnXYadNx2EQScWlqSjQVc94zkqkDYGDfLgU7+QFTXRpm8Yp2hAYCAmx5UKbJvpzr3K+DqLVU53HNqGsNjtInykUfUS3SK9KGJEml6MD/xLlbXZQH3/wqi9Rx3Zef3A6GdOljVAQAA
+      Items:
+      - Data:H4sIAAAAAAAA/21QwUoDMRAdXSs1goKooCfJUeoP7FG8ePMgvRQps8lsGzab1GRSW0p/wi82W7Bbwdwm772Z954AKOD8BRnHFKLxDuDycwjHRsNdaxypgDWX2mDrnZ4ujGpwRQUMlE+OAeBIgFC+XXhHjuMZXPQi6wMNOwp8byStOKAsJxtZeatlWaONNJLKZ5Ys5Zqs9V9yJA2jNWqP+6pOUSFTL4kcTEM8Dz7N5vtfzgfynvdATs0fXvOm5DQFm938Srcfe5rcCrjtnXYadNx2EQScWlqSjQVc94zkqkDYGDfLgU7+QFTXRpm8Yp2hAYCAmx5UKbJvpzr3K+DqLVU53HNqGsNjtInykUfUS3SK9KGJEml6MD/xLlbXZQH3/wqi9Rx3Zef3A6GdOljVAQAA
+      Chance: 23
+      Tiers:
+      - common
+    '6':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81WzW7bRhAeJ7ErK21SF+ipPxCIwifBoP9jAQGiSpRMwyRjiXYsGQaxIpcWJZKrkEvbtOFTT32BnotcfG1ewX2B3nrroS/RHjui/hMnsA4prAMFzs58s/N9s8NNAzyEx0XCyQENQof5AE9fp+CBY8HXnuNTMyA2z3VcEtPAaFJiPYRZk0U+BwxMQ9pkXof51OdhGhbGAgJmOy5NwSOfeBQ+r7Yj19XpOY8COg9pXO7QgDsUowBmBm4p3vMIUzB7StyIwm803hHrh03ROtxxzVjewHe9Krqa3Opsyv5B3CjIG7KH69v5jd14a8x3nZNX625tdadZ9/eihncg7q5WXLpdWTa9/dOa3l5WLpQ1ray26sW6V2/VxLqnnGv6/lm9vCfWVg5aarnUrr8qNZWLvbUa/tc8taXqSqwV5bW6bp6rxYqn6vn1eku+qMU7W/ah+BweJ9wBPPq2df3H4VJ+4adT/ubNPzuHkIbvRgQRzgOnEXFqeMxybAfJn4GnYZOdGY5vcMZc7nRgHuaHywOmeNyh8P0I6YT6NHDMJUQkZtsIO5RaczBHvL5KyS8F813GCe8qPE8sy0j47Qn9xPOYw6kX5ixqshgw7ZMRvssC9Osaf74UUJ+ACLmjS6HBXEvI2cQNaVYwGXoJOeGsiThCVnA4cR1zuMwadhSahNNRRIjltylvBiw6aQ6tXf0RBhEi36KBi5sYhFwdj5av4M/xrQyyWyRoG+R1RN7fQT8yI1xlR/4nAYk/6Pr3L79mKjTkWH04GfaBIvtxz6bIUWLMEiYL++veFrYsTpGkSvAcJ932Tn33p4dmtv4XqssBweE4DdEVmhzphL0pktksmCbLyjRyhvdWRbBvU/GdYngQjbXmGaU8Q3wrE7IoyGaanreUeUkDm5o8g5+zhuPf78aFt5+8cXX84OR6/r1SewzeKbagKYqmTrKXGr9MmBEOH89IvvjSbaV8vHEV4p+wSfj0LfAWXmkwLe5F1iWlahRral6RC8auVpHg3yPh5trGFPi8uV7N3FxvToxFND/rGpMB/TEvHIpoHZt22VuB+0MAjROHG1e7pxbNKwlOOBm+eXPN7tyt7yfuiZjAuH1RjlPw1ZCR7tPQay8lSBc0tbqv5H/clVLw5aSDXIRZJa+WtTn4ZrhSkao68mhU8/p+Ja/Lmvrih8FF44uhFxIuwWeLdqLY3JgWg/CSphVfZAaBo8RSqSQV9CqsYlPoeN3pDkWpLKlSLxdWWRzwnVsRl8SssEtPqSvklq+wwoURjlrYzqsI9OAI7entql6p9Xb1/FKoctLtnu4rAmrlKooaJ304UYDx+1s8rujYrwM772q8SF2WKjDX43fcnvSZeCQsbi7eXcRjJOI/+8SzdZILAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81WzW7bRhAeJ7ErK21SF+ipPxCIwifBoP9jAQGiSpRMwyRjiXYsGQaxIpcWJZKrkEvbtOFTT32BnotcfG1ewX2B3nrroS/RHjui/hMnsA4prAMFzs58s/N9s8NNAzyEx0XCyQENQof5AE9fp+CBY8HXnuNTMyA2z3VcEtPAaFJiPYRZk0U+BwxMQ9pkXof51OdhGhbGAgJmOy5NwSOfeBQ+r7Yj19XpOY8COg9pXO7QgDsUowBmBm4p3vMIUzB7StyIwm803hHrh03ROtxxzVjewHe9Krqa3Opsyv5B3CjIG7KH69v5jd14a8x3nZNX625tdadZ9/eihncg7q5WXLpdWTa9/dOa3l5WLpQ1ray26sW6V2/VxLqnnGv6/lm9vCfWVg5aarnUrr8qNZWLvbUa/tc8taXqSqwV5bW6bp6rxYqn6vn1eku+qMU7W/ah+BweJ9wBPPq2df3H4VJ+4adT/ubNPzuHkIbvRgQRzgOnEXFqeMxybAfJn4GnYZOdGY5vcMZc7nRgHuaHywOmeNyh8P0I6YT6NHDMJUQkZtsIO5RaczBHvL5KyS8F813GCe8qPE8sy0j47Qn9xPOYw6kX5ixqshgw7ZMRvssC9Osaf74UUJ+ACLmjS6HBXEvI2cQNaVYwGXoJOeGsiThCVnA4cR1zuMwadhSahNNRRIjltylvBiw6aQ6tXf0RBhEi36KBi5sYhFwdj5av4M/xrQyyWyRoG+R1RN7fQT8yI1xlR/4nAYk/6Pr3L79mKjTkWH04GfaBIvtxz6bIUWLMEiYL++veFrYsTpGkSvAcJ932Tn33p4dmtv4XqssBweE4DdEVmhzphL0pktksmCbLyjRyhvdWRbBvU/GdYngQjbXmGaU8Q3wrE7IoyGaanreUeUkDm5o8g5+zhuPf78aFt5+8cXX84OR6/r1SewzeKbagKYqmTrKXGr9MmBEOH89IvvjSbaV8vHEV4p+wSfj0LfAWXmkwLe5F1iWlahRral6RC8auVpHg3yPh5trGFPi8uV7N3FxvToxFND/rGpMB/TEvHIpoHZt22VuB+0MAjROHG1e7pxbNKwlOOBm+eXPN7tyt7yfuiZjAuH1RjlPw1ZCR7tPQay8lSBc0tbqv5H/clVLw5aSDXIRZJa+WtTn4ZrhSkao68mhU8/p+Ja/Lmvrih8FF44uhFxIuwWeLdqLY3JgWg/CSphVfZAaBo8RSqSQV9CqsYlPoeN3pDkWpLKlSLxdWWRzwnVsRl8SssEtPqSvklq+wwoURjlrYzqsI9OAI7entql6p9Xb1/FKoctLtnu4rAmrlKooaJ304UYDx+1s8rujYrwM772q8SF2WKjDX43fcnvSZeCQsbi7eXcRjJOI/+8SzdZILAAA=
+      Chance: 10
+      Tiers:
+      - common
+    '7':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/71Uv2/bRhR+ThyDotukbpsCGVIIHDoUhiFFlQMLKGJVYmyqIqmIlGTRCIgTebIokTyFPEahDG9diq5F526eWqBA/wL3D+jUpWPXLv0TepStH0zsAAGKcjjg7r733ve+7/h4gNuwWUUUtXEQOsQHuPeCg1uODfc9x8dWgPq0NHZRjANzgJF9G+5YJPIpAKzxwFvEGxMf+zTkYWslICB9x8UcrPvIw/CeNopcV8evaBTgDPDseowD6mAWxfLMYRy9RIQc3HmJ3AjDrziu5YyjQc4+qrlWLO2yva7lXFUajh9LfjvuVaRdyWP3h+Xdery3gi1S1Cm63UJtYPjPop7XztULTRcfNvOW13qpPHrqKV5zqAztoaFb+e7QiuVhbdCdykVDL+flqeHK1dFEmUo5tdP9QtFbrxSv7RlVcapW247RkYvyQc2Vp8rIqLamxkFrosS1vf5R7kvYnOkHsL75NeL+btSKP3+n/XHx0+ffAA8PlyIhSgOnF1FsesR2+g4zYA3uhQMyMR3fpIS41BlDBjKL67laNB5j+HSZ6QT7OHCsHZYRWSMzHGNsb8AG8q6cmn0cZBLVEU1cziDbNmcaX5p91/OIQ7EXlmxskRhY2bvL/C4JGC55Kt+eCsyjAAml41OhR1xbKPWRG+JtwSIMJZSEyYDlEbYFhyLXsRbXpNePQgtRvIwIWfsjTAcBiU4Gi9PkDbA0LEPk2zhwGYl5yNnz5fUZ/LlKZV7dRsHIRC8i9CaDq8iscLa9xJ8EKL4R+tcPP2abOKSs+zAddkOTV3GFws6jdygjIx8Jqd7W1v+X3t6hpXwxBf5PqYTZCnvrNpn4aRW41RFkRcwHz5zNiWfXqfN2/nUUnOBsonS2QZI/IF2Kv6aUzYYioyDLqqSLsmZWu0pZlipmXW2K0DkWLs77rBxbL84L2Yvzx6nXwo5nr4Cdz+x9Hch2+eLVfqX/5xvwcFFQU1tK1VQVs6IqWksWzYakP/ln/jN/sMAlqylVYatebh6IplxWymZD1SVV4eDBjdngYza1HRrvzIeHHTj+iIP3FxGsXRE++qz/hnYcbC1AolI5LCu6BreOGflP0qQqqlqvqh1lf2fOmj/U9Gb3MrV0KmgUJQYkWyaReqAx9eKZrSkW5m+/sGHBgNeQYUaevVW1tlqfq7axYmdT1HTm5Eyu/f3v6V779xYHH6Yb0LsNEfjLTOWv6iLL8S/8n2fLMgcAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/71Uv2/bRhR+ThyDotukbpsCGVIIHDoUhiFFlQMLKGJVYmyqIqmIlGTRCIgTebIokTyFPEahDG9diq5F526eWqBA/wL3D+jUpWPXLv0TepStH0zsAAGKcjjg7r733ve+7/h4gNuwWUUUtXEQOsQHuPeCg1uODfc9x8dWgPq0NHZRjANzgJF9G+5YJPIpAKzxwFvEGxMf+zTkYWslICB9x8UcrPvIw/CeNopcV8evaBTgDPDseowD6mAWxfLMYRy9RIQc3HmJ3AjDrziu5YyjQc4+qrlWLO2yva7lXFUajh9LfjvuVaRdyWP3h+Xdery3gi1S1Cm63UJtYPjPop7XztULTRcfNvOW13qpPHrqKV5zqAztoaFb+e7QiuVhbdCdykVDL+flqeHK1dFEmUo5tdP9QtFbrxSv7RlVcapW247RkYvyQc2Vp8rIqLamxkFrosS1vf5R7kvYnOkHsL75NeL+btSKP3+n/XHx0+ffAA8PlyIhSgOnF1FsesR2+g4zYA3uhQMyMR3fpIS41BlDBjKL67laNB5j+HSZ6QT7OHCsHZYRWSMzHGNsb8AG8q6cmn0cZBLVEU1cziDbNmcaX5p91/OIQ7EXlmxskRhY2bvL/C4JGC55Kt+eCsyjAAml41OhR1xbKPWRG+JtwSIMJZSEyYDlEbYFhyLXsRbXpNePQgtRvIwIWfsjTAcBiU4Gi9PkDbA0LEPk2zhwGYl5yNnz5fUZ/LlKZV7dRsHIRC8i9CaDq8iscLa9xJ8EKL4R+tcPP2abOKSs+zAddkOTV3GFws6jdygjIx8Jqd7W1v+X3t6hpXwxBf5PqYTZCnvrNpn4aRW41RFkRcwHz5zNiWfXqfN2/nUUnOBsonS2QZI/IF2Kv6aUzYYioyDLqqSLsmZWu0pZlipmXW2K0DkWLs77rBxbL84L2Yvzx6nXwo5nr4Cdz+x9Hch2+eLVfqX/5xvwcFFQU1tK1VQVs6IqWksWzYakP/ln/jN/sMAlqylVYatebh6IplxWymZD1SVV4eDBjdngYza1HRrvzIeHHTj+iIP3FxGsXRE++qz/hnYcbC1AolI5LCu6BreOGflP0qQqqlqvqh1lf2fOmj/U9Gb3MrV0KmgUJQYkWyaReqAx9eKZrSkW5m+/sGHBgNeQYUaevVW1tlqfq7axYmdT1HTm5Eyu/f3v6V779xYHH6Yb0LsNEfjLTOWv6iLL8S/8n2fLMgcAAA==
+      Chance: 50
+      Tiers:
+      - common
+    '8':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/71UTW/jVBS9nelUjgszdPiQWAyKvGCBqiqhk44mEmJMbFqH2M7ETtK4Glkv9nPjxB8Z+3kyTtUFEhvEig1rdl2BhMQvKOInsGGF2LJB4g/wnDYfnmlHGgnhxZPee+fee+45z5cFuAmbAiKog6PYDQOAO08ZuOHa8K7vBtiKkEOqYw+lODIHGNk34ZYVJgEBgDUWWCv0x2GAAxKzsLUSEIWO62EG1gPkY3hDGyWep+PnJIlwAVh6PcYRcTGNonnmMIZcIGIGbj1DXoLhZ5zWS8bhoGQf1j0rlfboXtdKnioNxw+koJP2a9Ke5NP7A36vkT5cwVYI6la83m59YASPk77fKTV2Wx4+aJUtv/1M+fhzX/FbQ2VoDw3dKveGVioP64PeVK4YOl+Wp4YnC6OJMpVKard3X9HbzxW/4xuCOFWFjmt05Yq8X/fkqTIyhPbU2G9PlLT+0DksfQKbM/0A1je/QMxfzXrlx2+0385/+OgrYOHeUiRESOT2E4JNP7Rdx6UGrMGdeBBOTDcwSRh6xB1DAQqL67laJB1j+GCZ6RgHOHKtHZoRWSMzHmNsb8AG8i+dmn0MFDLVEclcLiDbNmcaX5h92/dDl2A/rtrYClOgZW8v83thRHHZU/n6hKMeRYirHp1w/dCzuaqDvBhvc1ZIUVyVmwxoHm6bcwnyXGtxHfadJLYQwcuImLY/wmQQhcnxYHGavQGahmZIAhtHHiUxDzl9srw+hd9Xqcyr2ygamehpgl5mcBlZ5E63l/jjCKXXQv/87vtiC8eEdh/nw65p8jJut7JTfo0yMgoQl+ttbf1/6e01WipXcuD/lEpcrNG3boeTIK8CszqCrIT64JuzOfH4KnVezb+BomNczJQuNsPsD8iXYq8oZdOhSCnIsirpoqyZQk/hZalmNtSWCN0j7vzMoeXoen62Wzw/e5B7LfR49gro+czeF4F0V65c7lf6f7IB9xYFNbWtCKaqmDVV0dqyaDYl/dO/5z/zWwtctpqSAFsNvrUvmjKv8GZT1SVVYeD9a7PBO3RquyTdmQ8PO3KDEQNvLiJouyK8/aHzknYMbC1AolI74BVdgxtHlPx7eVI1VW0Iald5tDNnzR5oeqt3kVo64TSCMgOyLZVI3deoeunM1hwL85ef6LCgwCvIUCNPX6laR23MVdtYsbMlajp1cibXI/5b549f//mSgbv5BvReUwT2IhP/WUOkOf4FzMuDCjIHAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/71UTW/jVBS9nelUjgszdPiQWAyKvGCBqiqhk44mEmJMbFqH2M7ETtK4Glkv9nPjxB8Z+3kyTtUFEhvEig1rdl2BhMQvKOInsGGF2LJB4g/wnDYfnmlHGgnhxZPee+fee+45z5cFuAmbAiKog6PYDQOAO08ZuOHa8K7vBtiKkEOqYw+lODIHGNk34ZYVJgEBgDUWWCv0x2GAAxKzsLUSEIWO62EG1gPkY3hDGyWep+PnJIlwAVh6PcYRcTGNonnmMIZcIGIGbj1DXoLhZ5zWS8bhoGQf1j0rlfboXtdKnioNxw+koJP2a9Ke5NP7A36vkT5cwVYI6la83m59YASPk77fKTV2Wx4+aJUtv/1M+fhzX/FbQ2VoDw3dKveGVioP64PeVK4YOl+Wp4YnC6OJMpVKard3X9HbzxW/4xuCOFWFjmt05Yq8X/fkqTIyhPbU2G9PlLT+0DksfQKbM/0A1je/QMxfzXrlx2+0385/+OgrYOHeUiRESOT2E4JNP7Rdx6UGrMGdeBBOTDcwSRh6xB1DAQqL67laJB1j+GCZ6RgHOHKtHZoRWSMzHmNsb8AG8i+dmn0MFDLVEclcLiDbNmcaX5h92/dDl2A/rtrYClOgZW8v83thRHHZU/n6hKMeRYirHp1w/dCzuaqDvBhvc1ZIUVyVmwxoHm6bcwnyXGtxHfadJLYQwcuImLY/wmQQhcnxYHGavQGahmZIAhtHHiUxDzl9srw+hd9Xqcyr2ygamehpgl5mcBlZ5E63l/jjCKXXQv/87vtiC8eEdh/nw65p8jJut7JTfo0yMgoQl+ttbf1/6e01WipXcuD/lEpcrNG3boeTIK8CszqCrIT64JuzOfH4KnVezb+BomNczJQuNsPsD8iXYq8oZdOhSCnIsirpoqyZQk/hZalmNtSWCN0j7vzMoeXoen62Wzw/e5B7LfR49gro+czeF4F0V65c7lf6f7IB9xYFNbWtCKaqmDVV0dqyaDYl/dO/5z/zWwtctpqSAFsNvrUvmjKv8GZT1SVVYeD9a7PBO3RquyTdmQ8PO3KDEQNvLiJouyK8/aHzknYMbC1AolI74BVdgxtHlPx7eVI1VW0Iald5tDNnzR5oeqt3kVo64TSCMgOyLZVI3deoeunM1hwL85ef6LCgwCvIUCNPX6laR23MVdtYsbMlajp1cibXI/5b549f//mSgbv5BvReUwT2IhP/WUOkOf4FzMuDCjIHAAA=
+      Chance: 50
+      Tiers:
+      - common
+    '9':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/71U32/bVBQ+3brKyWBjGwOBNBRZgHioprRlnRaBICRu4xDbJXaSOtVk3dg3sZNrO7Ov15qqDzzyD/DMC+oj2xPPlP+CR8QfwJ/Aye8E2kmTEH6w5Hu+c853vu/6ZAGuw80y4aRJo9gLA4DbzwS45jlw3/cCakekywtDRlIaWS4lznW4YYdJwAFgPQtZO/SHYUADHmfhzlJCFHY9RgVYD4hP4Q19kDBm0BOeRDQDWQwPacQ9ilkAazOYwCeIWIAbzwlLKLygaTXfPnTzzmGV2am8i9+Gnmea3B8+loNm2inJu7KP8Upxt5Y+WcI+4qT1iJk7VbcdfJN0/Ga+tlNntFLfsv3Gc83YY+p201P8Rl7t7zHNaDO1r5yY21VX2VeOze26axoYK/c+Vcrmt0q5ytr7I9yeh/iB2Wr3lX7vxGw1trRyfaCVqk+6h/nP4eZYOxRn+P5Ph7++UH/57s/05c8fffIZZOHBQiDCeeR1Ek4tP3S8rofir8Ht2A2PLS+weBgy7g0hA5l5eKYUT4cUPlhU6tGARp79ECsSe2DFQ0qdDdgg/tSl8SNAZqQ44SOHM8RxrLG+E6Nv+X7ocerHBYfaYQrY9taiPgsjxI2uyfenIvoTEbFwdCp2QuaIhS5hMd0U7RBRYkE8drGOuCl6nDDPnofDTjeJbcLpIiPG8QeUu1GY9Nz56ch/LIMVksChEUMSs5Szp4vwGfy+TGXW3SHRwCLPEvJvBtPMnHi2ucD3IpJeCf3jhx9zdRpznD5eTbtiyGneVv41mlQoYdwVV2ZbW/9fZnutkVbA/ymVOFfCu+6Ex8GqCsLy+rET9MG3xjtCv0ydV/OvkahHcxOtcwfh6B9YbZa9pJmDKxFJKIomG5KiW2VTLSpyyappdQlaR+LFeRcb4vvifCd3cf545b7gMd4DPJ0a/E/gOD79XlLg6QY8mDfUtYZatjTVKmmq3lAk60A2vvhr9ju/NceN3pZchnu1Yn1fsipSsWZUrAPNkDVVgPeurAdv49b2ePpwtkCcyAsGArw5z8CBJbj/cfcS/QS4M4dJaqlSVA0drh3hAO+sEitpWq2stdQvP5ww34B354C6pBuo5pTyDCFAtqIbdXPS/utTUedkZNPoE4XU9nXUOB3bv8LU+u0lLhUEXkoYDT97pbpNrbZQ9+7qEIZ5IEF2gix+VZMQ8zfcMYzmOAcAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/71U32/bVBQ+3brKyWBjGwOBNBRZgHioprRlnRaBICRu4xDbJXaSOtVk3dg3sZNrO7Ov15qqDzzyD/DMC+oj2xPPlP+CR8QfwJ/Aye8E2kmTEH6w5Hu+c853vu/6ZAGuw80y4aRJo9gLA4DbzwS45jlw3/cCakekywtDRlIaWS4lznW4YYdJwAFgPQtZO/SHYUADHmfhzlJCFHY9RgVYD4hP4Q19kDBm0BOeRDQDWQwPacQ9ilkAazOYwCeIWIAbzwlLKLygaTXfPnTzzmGV2am8i9+Gnmea3B8+loNm2inJu7KP8Upxt5Y+WcI+4qT1iJk7VbcdfJN0/Ga+tlNntFLfsv3Gc83YY+p201P8Rl7t7zHNaDO1r5yY21VX2VeOze26axoYK/c+Vcrmt0q5ytr7I9yeh/iB2Wr3lX7vxGw1trRyfaCVqk+6h/nP4eZYOxRn+P5Ph7++UH/57s/05c8fffIZZOHBQiDCeeR1Ek4tP3S8rofir8Ht2A2PLS+weBgy7g0hA5l5eKYUT4cUPlhU6tGARp79ECsSe2DFQ0qdDdgg/tSl8SNAZqQ44SOHM8RxrLG+E6Nv+X7ocerHBYfaYQrY9taiPgsjxI2uyfenIvoTEbFwdCp2QuaIhS5hMd0U7RBRYkE8drGOuCl6nDDPnofDTjeJbcLpIiPG8QeUu1GY9Nz56ch/LIMVksChEUMSs5Szp4vwGfy+TGXW3SHRwCLPEvJvBtPMnHi2ucD3IpJeCf3jhx9zdRpznD5eTbtiyGneVv41mlQoYdwVV2ZbW/9fZnutkVbA/ymVOFfCu+6Ex8GqCsLy+rET9MG3xjtCv0ydV/OvkahHcxOtcwfh6B9YbZa9pJmDKxFJKIomG5KiW2VTLSpyyappdQlaR+LFeRcb4vvifCd3cf545b7gMd4DPJ0a/E/gOD79XlLg6QY8mDfUtYZatjTVKmmq3lAk60A2vvhr9ju/NceN3pZchnu1Yn1fsipSsWZUrAPNkDVVgPeurAdv49b2ePpwtkCcyAsGArw5z8CBJbj/cfcS/QS4M4dJaqlSVA0drh3hAO+sEitpWq2stdQvP5ww34B354C6pBuo5pTyDCFAtqIbdXPS/utTUedkZNPoE4XU9nXUOB3bv8LU+u0lLhUEXkoYDT97pbpNrbZQ9+7qEIZ5IEF2gix+VZMQ8zfcMYzmOAcAAA==
+      Chance: 50
+      Tiers:
+      - common
+    '10':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDOzcxLTS5KTCuxSqzIz8kvyYkvLkgsz4tPTU9nZmBNzi/NK2FgYGBiAAA5RWPTRAAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDOzcxLTS5KTCuxSqzIz8kvyYkvLkgsz4tPTU9nZmBNzi/NK2FgYGBiAAA5RWPTRAAAAA==
+      Chance: 66
+      Tiers:
+      - common
+    '11':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDJzcxLTS5KTCuxKsvMyUlMTy2KLy5ILM+LT01PZ2ZgTc4vzSthYGBgYgAAPQvPJkUAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDJzcxLTS5KTCuxKsvMyUlMTy2KLy5ILM+LT01PZ2ZgTc4vzSthYGBgYgAAPQvPJkUAAAA=
+      Chance: 76
+      Tiers:
+      - common
+    '12':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDOzcxLTS5KTCuxSs7ITM5OzYsvLkgsz4tPTU9nZmBNzi/NK2FgYGBiAADffbI2RAAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDOzcxLTS5KTCuxSs7ITM5OzYsvLkgsz4tPTU9nZmBNzi/NK2FgYGBiAADffbI2RAAAAA==
+      Chance: 76
+      Tiers:
+      - common
+    '13':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDMzcxLTS5KTCuxykstyUgtyixJjS8GChQwM7Am55fmlTAwMHAzAABH6k0iQgAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDMzcxLTS5KTCuxykstyUgtyixJjS8GChQwM7Am55fmlTAwMHAzAABH6k0iQgAAAA==
+      Chance: 83
+      Tiers:
+      - common
+    '14':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBMQqAMAwF0E+LIDo4exVnz+AqpY2awQTj9/6+NwAZ41pYNolX3YDp6ZG0Yb7VpEY5uJjwklDKrnY6M7rqnxFAwg9tH7a1QgAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBMQqAMAwF0E+LIDo4exVnz+AqpY2awQTj9/6+NwAZ41pYNolX3YDp6ZG0Yb7VpEY5uJjwklDKrnY6M7rqnxFAwg9tH7a1QgAAAA==
+      Chance: 33
+      Tiers:
+      - common
+    '15':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LSS2KL0hNLMphZmBNzi/NK2FgYOBgAACgCExSPgAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LSS2KL0hNLMphZmBNzi/NK2FgYOBgAACgCExSPgAAAA==
+      Chance: 33
+      Tiers:
+      - common
+    '16':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBg4GAAAGJbLwg6AAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBg4GAAAGJbLwg6AAAA
+      Chance: 33
+      Tiers:
+      - common
+    '17':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDJzcxLTS5KTCuxSs/PSYlPyslPzmZmYE3OL80rYWBg4GQAAEuBc949AAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDJzcxLTS5KTCuxSs/PSYlPyslPzmZmYE3OL80rYWBg4GQAAEuBc949AAAA
+      Chance: 33
+      Tiers:
+      - common
+    '18':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDPzcxLTS5KTCuxSslMzM3PS4lPyslPzmZmYE3OL80rYWBgYGEAAHihQUZAAAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDPzcxLTS5KTCuxSslMzM3PS4lPyslPzmZmYE3OL80rYWBgYGEAAHihQUZAAAAA
+      Chance: 30
+      Tiers:
+      - common
+    '19':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERb2jmLtDLYyrcEk/EaN+3uvAwL6WVwWLa9lAsPTorYN423UVGT3SZlOoRuP1SVeGtCk/NEBVPgB8uo6l0MAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERb2jmLtDLYyrcEk/EaN+3uvAwL6WVwWLa9lAsPTorYN423UVGT3SZlOoRuP1SVeGtCk/NEBVPgB8uo6l0MAAAA=
+      Chance: 89
+      Tiers:
+      - common
+    '20':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDMzcxLTS5KTCuxSs1LiS/KT2FmYE3OL80rYWBgYGUAAKpoes06AAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDMzcxLTS5KTCuxSs1LiS/KT2FmYE3OL80rYWBgYGUAAKpoes06AAAA
+      Chance: 89
+      Tiers:
+      - common
+    '21':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDPzcxLTS5KTCuxKijNLcjOzIsvTk1NKWZmYE3OL80rYWBg4GQAAFOMKiVAAAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDPzcxLTS5KTCuxKijNLcjOzIsvTk1NKWZmYE3OL80rYWBg4GQAAFOMKiVAAAAA
+      Chance: 89
+      Tiers:
+      - common
+    '22':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDOzcxLTS5KTCuxSq0oSC3KTM1LTo1Pyi8pyUllZmBNzi/NK2FgYHBgAAAqdtgvRAAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDOzcxLTS5KTCuxSq0oSC3KTM1LTo1Pyi8pyUllZmBNzi/NK2FgYHBgAAAqdtgvRAAAAA==
+      Chance: 89
+      Tiers:
+      - common
+    '23':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/0WOSw6CQBBEO34SgwtWXqDXnICl8QxujDHN0OjEYRpneqKEcAavLBthW1WvqjKANexPpHTmEK14gPy1g5WtIW+tZxOo0bKjjsMatkaSVwDYZJAZaTvx7DXu4LBETYoq7c1Ty/AdkD8aCMvLgJW4GsuGXOQCjTgJWGLPzskbC7RKzprZl6pJ0ZDygkQN9sn6CJLuj1nVaWDqOcqzp6km+ZqDm878ufE6Z3AE+AFPUFqL7wAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/0WOSw6CQBBEO34SgwtWXqDXnICl8QxujDHN0OjEYRpneqKEcAavLBthW1WvqjKANexPpHTmEK14gPy1g5WtIW+tZxOo0bKjjsMatkaSVwDYZJAZaTvx7DXu4LBETYoq7c1Ty/AdkD8aCMvLgJW4GsuGXOQCjTgJWGLPzskbC7RKzprZl6pJ0ZDygkQN9sn6CJLuj1nVaWDqOcqzp6km+ZqDm878ufE6Z3AE+AFPUFqL7wAAAA==
+      Chance: 89
+      Tiers:
+      - common
+    '24':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/0WOSw6CQBBEO34SgwtWXqDXnICl8QxujDHN0OjEYRpneqKEcAavLBthW1WvqjKANexPpHTmEK14gPy1g5WtIW+tZxOo0bKjjsMatkaSVwDYZJAZaTvx7DXu4LBETYoq7c1Ty/AdkD8aCMvLgJW4GsuGXOQCjTgJWGLPzskbC7RKzprZl6pJ0ZDygkQN9sn6CJLuj1nVaWDqOcqzp6km+ZqDm878ufE6Z3AE+AFPUFqL7wAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/0WOSw6CQBBEO34SgwtWXqDXnICl8QxujDHN0OjEYRpneqKEcAavLBthW1WvqjKANexPpHTmEK14gPy1g5WtIW+tZxOo0bKjjsMatkaSVwDYZJAZaTvx7DXu4LBETYoq7c1Ty/AdkD8aCMvLgJW4GsuGXOQCjTgJWGLPzskbC7RKzprZl6pJ0ZDygkQN9sn6CJLuj1nVaWDqOcqzp6km+ZqDm878ufE6Z3AE+AFPUFqL7wAAAA==
+      Chance: 89
+      Tiers:
+      - common
+# Only uncomment this if using HeadDatabase by Arcaniax
+# Skull: "7129"

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.58.115
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754225723700
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754225928327
+  login: 1754223639341
+money: '1098683.4334418691358340'
+last-account-name: Mono103
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -242.30000001192093
+  y: 20.0
+  z: 716.3000000119209
+  yaw: -167.69972229003906
+  pitch: -11.700145721435547
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -245.0669378912519
+  y: 66.0
+  z: 709.2172839344645
+  yaw: -68.84869384765625
+  pitch: 14.25

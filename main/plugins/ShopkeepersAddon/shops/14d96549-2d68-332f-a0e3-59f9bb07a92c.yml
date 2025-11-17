@@ -1,0 +1,12 @@
+player: WizKhalifaX_
+uuid: 14d96549-2d68-332f-a0e3-59f9bb07a92c
+shopName:
+- WizKhalifaX_
+location:
+  ==: org.bukkit.Location
+  world: Philippines
+  x: -432.3450975504165
+  y: 89.0
+  z: -322.51264039059083
+  pitch: -4.500016
+  yaw: 91.65007

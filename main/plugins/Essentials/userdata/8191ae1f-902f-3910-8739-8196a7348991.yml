@@ -1,0 +1,57 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 143.44.165.194
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1756551754028
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1756552233286
+  login: 1756549382078
+money: '3849750.55168180595925615'
+last-account-name: DSAReaper
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 603.6693645613593
+  y: 95.0
+  z: 555.422400308975
+  yaw: 104.94973754882812
+  pitch: 4.350040912628174
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -1766.1137420256716
+  y: 62.0
+  z: 654.5483255744012
+  yaw: -149.31982421875
+  pitch: 34.03361892700195
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2272.5183445553143
+    y: 69.0
+    z: -704.2781765061127
+    yaw: 173.3935546875
+    pitch: 18.59992027282715
+nickname: Reaper
+mail:
+- legacy: false
+  read: false
+  message: §cTo claim your §n1200 MCMMO Credits§c please create-a-ticket and tell
+    us what McMMO Credits you want..
+  sender-name: Console
+  sender-uuid: 'null'
+  timestamp: 1756551425323
+  expire: 0

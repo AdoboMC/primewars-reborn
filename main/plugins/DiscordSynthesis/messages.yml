@@ -1,0 +1,297 @@
+# # +----------------------------------------------------+ #
+# # <                 Discord Synthesis                  > #
+# # <               Full integration with                > #
+# # <                your Discord Server!                > #
+# # +----------------------------------------------------+ #
+
+# Discord Link message
+DISCORD-LINK-MESSAGE: '&7Our discord is: discord.gg/EZUHUPHK6X'
+# The messsage to show when a player hovers over the /discord message
+DISCORD-LINK-HOVER: '&aClick to go to our discord!'
+# The link to open when a user clicks the /discord message
+CLICK-DISCORD-LINK: https://discord.gg/EZUHUPHK6X
+# Server start message
+SERVER-START-MESSAGE: ':white_check_mark: Server has started!'
+# Server stop message
+SERVER-STOP-MESSAGE: ':skull_crossbones: Server has stopped!'
+# Format of messages sent from Discord to Minecraft
+DISCORD-CHAT-FORMAT: '&7[Discord] %role_color%[%role%] &6%user% &7-> %message%'
+# Format of messages sent from Minecraft to Discord
+MINECRAFT-CHAT-FORMAT: '[%rank%] %player% -> %message%'
+# Format of server switch
+PLAYER-SWITCH-SERVERS: '%player% switched from %a% to %b%'
+# Format of username for webhook
+WEBHOOK-NAME-FORMAT: '%rank% %player%'
+# Format of message for webhook
+WEBHOOK-MESSAGE-FORMAT: '%message%'
+# Format of the message sent to Discord when a player joins the MC server
+JOIN-MESSAGE: ':white_check_mark: Player %player% has joined the server!'
+# Format of the message sent to Discord when a player leaves the MC server
+LEAVE-MESSAGE: ':x: Player %player% has left the server!'
+# Format of commands logged to Discord
+COMMAND-LOG-FORMAT: '[%rank%] [%player%] -> %command%'
+# No permission format
+NO-PERMISSION: '&cYou have no permission to use this command!'
+# Message when mentioned by a user from Discord
+MENTION-NOTIFICATION: '&aYou have been @ mentioned by %name%!'
+# Discord Broadcast message format
+BROADCAST-FORMAT-DISCORD: '%message%'
+# Minecraft Broadcast message format
+BROADCAST-FORMAT-MINECRAFT: '&7[&cBroadcast&7] &6> %message%'
+BROADCAST-ENTER-MESSAGE: '&cPlease enter the message'
+INVALID-CODE: '&cInvalid code.'
+ENTER-CODE: '&cPlease enter the secret code!'
+SUCCESSFULLY-CONNECTED: '&aSuccessfully connected your Discord!'
+ALREADY-CONNECTED: '&cYou already connected your Discord account!'
+SECRET-CODE-MESSAGE: 'Hello! Here is your secret code: %code%, open the Minecraft
+  server and use the command /connect %code% in order to proceed!'
+DM-MESSAGE: Sent you a DM!
+SUCCESSFUL-BROADCAST: '&aSuccessfully broadcasted message!'
+SUCCESSFULLY-RELOADED: '&aPlugin reloaded!'
+NOT-LINKED: '&cYou are not linked to Discord! Use /connect %code% in Discord to link
+  your account to be able to play!'
+NOT-AUTHORIZED: You need to authorize your account by typing the pin using /pin or
+  clicking Allow on Discord!
+MISSING-ROLES: You are missing required roles to play on this server!
+SUCESSFULLY-AUTHORIZED: '&aSuccessfully authorized!'
+ALLOW-TEXT: Allow
+DENY-TEXT: Deny
+BOT-DONE-MESSAGE: Done!
+# Header for report notification in chat
+REPORT-CHAT-HEADER: '&8&m          I         '
+# Title for new report notification in chat
+REPORT-CHAT-TITLE: '          &6&lNew &c&lReport! &7#%id%'
+# Reporter line for report notification in chat
+REPORT-CHAT-REPORTER: '          &6Reporter: &c%reporter%          '
+# Reported player line for report notification in chat
+REPORT-CHAT-REPORTED: '          &6Reported: &c%reported%          '
+# Reason line for report notification in chat
+REPORT-CHAT-REASON: '          &6Reason: &c%reportcontent%          '
+# Server line for report notification in chat
+REPORT-CHAT-SERVER: '          &6Server: &c%server%          '
+# Message when a report has been claimed
+REPORT-CLAIMED: '&6Report &c#%id% &6has been claimed by &c%staff%'
+# Message when a report has been resolved
+REPORT-RESOLVED: '&6Report &c#%id% &6has been resolved by &c%staff%'
+# Resolution message for resolved reports
+REPORT-RESOLUTION-MESSAGE: '&6Resolution: &c%resolution%'
+# Message when a report has been rejected
+REPORT-REJECTED: '&cReport #%id% has been rejected by %staff%.'
+# Rejection reason message for rejected reports
+REPORT-REJECTION-REASON: '&7Reason: &f%reason%'
+# Message when a report has been unclaimed
+REPORT-UNCLAIMED: '&6Report &c#%id% &6has been unclaimed by &c%staff%'
+# Message when teleporting to a report server
+REPORT-TELEPORTING: '&6Teleporting you to &c%server% &6for report &c#%id%'
+# Message when already on the report server
+REPORT-ALREADY-ON-SERVER: '&6You are already on the server where this report was issued.'
+# Message when a report is not found
+REPORT-NOT-FOUND: '&cReport #%id% not found.'
+# Message when a player hasn't claimed any reports
+NO-CLAIMED-REPORTS: '&cYou haven''t claimed any reports.'
+# Message when there are no reports
+NO-REPORTS: '&cThere are no reports.'
+# Message when there are no reports with specific status
+NO-REPORTS-WITH-STATUS: '&cThere are no %status% reports.'
+# Message when claiming report via proxy
+CLAIMING-REPORT-PROXY: '&6Claiming report #%id%...'
+# Message when unclaiming report via proxy
+UNCLAIMING-REPORT-PROXY: '&6Unclaiming report #%id%...'
+# Message when teleporting to report server via proxy
+TELEPORTING-REPORT-PROXY: '&6Teleporting to server for report #%id%...'
+# Message when player can only unclaim their own reports
+CAN-ONLY-UNCLAIM-OWN-REPORTS: '&cYou can only unclaim reports that you have claimed!'
+# Input prompt for report resolution
+ENTER-REPORT-RESOLUTION: '&6Type the resolution message in chat:'
+# Input prompt for report rejection
+ENTER-REPORT-REJECTION: '&6Type the reason for rejecting this report in chat:'
+# Report notification to reporter when claimed
+REPORT-CLAIMED-NOTIFICATION: '&6Your report against &c%reported% &6(#%id%) has been
+  claimed by &c%staff%&6.'
+# Report notification to reporter when resolved
+REPORT-RESOLVED-NOTIFICATION: '&6Your report against &c%reported% &6(#%id%) has been
+  resolved by &c%staff%&6.'
+# Report notification to reporter when rejected
+REPORT-REJECTED-NOTIFICATION: '&cYour report against %reported% (#%id%) has been rejected
+  by a staff member.'
+# Title for main reports inventory
+REPORTS-GUI-TITLE: '&8Reports - Page %page%/%total%'
+# Title for reports by status inventory
+REPORTS-BY-STATUS-GUI-TITLE: '&8Reports - %status% - Page %page%/%total%'
+# Title for claimed reports inventory
+CLAIMED-REPORTS-GUI-TITLE: '&8My Claimed Reports - Page %page%/%total%'
+# Title for report details inventory
+REPORT-DETAILS-GUI-TITLE: '&8Report #%id% Details'
+# Previous page button text
+PREVIOUS-PAGE-BUTTON-TEXT: '&aPrevious Page'
+# Next page button text
+NEXT-PAGE-BUTTON-TEXT: '&aNext Page'
+# All reports button text
+ALL-REPORTS-BUTTON-TEXT: '&aAll Reports'
+# Open reports button text
+OPEN-REPORTS-BUTTON-TEXT: '&cOpen Reports'
+# Claimed reports button text
+CLAIMED-REPORTS-BUTTON-TEXT: '&eYour Claimed Reports'
+# Resolved reports button text
+RESOLVED-REPORTS-BUTTON-TEXT: '&aResolved Reports'
+# Back to reports button text
+BACK-TO-REPORTS-BUTTON-TEXT: '&cBack to All Reports'
+# Back button text
+BACK-BUTTON-TEXT: '&cBack to Reports'
+# Claim report button text
+CLAIM-REPORT-BUTTON-TEXT: '&6Claim Report'
+# Unclaim report button text
+UNCLAIM-REPORT-BUTTON-TEXT: '&eUnclaim Report'
+# Resolve report button text
+RESOLVE-REPORT-BUTTON-TEXT: '&aResolve Report'
+# Reject report button text
+REJECT-REPORT-BUTTON-TEXT: '&cReject Report'
+# Teleport button text
+TELEPORT-BUTTON-TEXT: '&bTeleport to Server'
+# Delete button text
+DELETE-BUTTON-TEXT: '&c&lDelete Report'
+# Report item format for report list
+REPORT-ITEM-FORMAT: '&e#%id%: %reported%'
+# Open report item format
+OPEN-REPORT-ITEM-FORMAT: '&c#%id%: %reported%'
+# Claimed report item format
+CLAIMED-REPORT-ITEM-FORMAT: '&e#%id%: %reported%'
+# Resolved report item format
+RESOLVED-REPORT-ITEM-FORMAT: '&a#%id%: %reported%'
+# Rejected report item format
+REJECTED-REPORT-ITEM-FORMAT: '&7#%id%: %reported%'
+# Report item lore - Reporter line
+REPORT-ITEM-LORE-REPORTER: '&eReporter: &f%reporter%'
+# Report item lore - Reported player line
+REPORT-ITEM-LORE-REPORTED: '&eReported: &f%reported%'
+# Report item lore - Server line
+REPORT-ITEM-LORE-SERVER: '&eServer: &f%server%'
+# Report item lore - Status open
+REPORT-ITEM-LORE-STATUS-OPEN: '&eStatus: &cOPEN'
+# Report item lore - Status claimed
+REPORT-ITEM-LORE-STATUS-CLAIMED: '&eStatus: &6CLAIMED by %staff%'
+# Report item lore - Status resolved
+REPORT-ITEM-LORE-STATUS-RESOLVED: '&eStatus: &aRESOLVED by %staff%'
+# Report item lore - Status rejected
+REPORT-ITEM-LORE-STATUS-REJECTED: '&eStatus: &7REJECTED by %staff%'
+# Report item lore - Reason line
+REPORT-ITEM-LORE-REASON: '&eReason: &f%reason%'
+# Report item lore - Click instruction
+REPORT-ITEM-LORE-CLICK-INSTRUCTION: '&7Click to view details'
+# Report info item name
+REPORT-INFO-ITEM-NAME: '&bReport #%id%'
+# Report status item name - Open
+REPORT-STATUS-ITEM-NAME-OPEN: '&eStatus: &cOPEN'
+# Report status item name - Claimed
+REPORT-STATUS-ITEM-NAME-CLAIMED: '&eStatus: &6CLAIMED'
+# Report status item name - Resolved
+REPORT-STATUS-ITEM-NAME-RESOLVED: '&eStatus: &aRESOLVED'
+# Report status item name - Rejected
+REPORT-STATUS-ITEM-NAME-REJECTED: '&eStatus: &7REJECTED'
+# Report status item lore - Handled by
+REPORT-STATUS-ITEM-LORE-HANDLED-BY: '&eHandled by: &f%staff%'
+# Report status item lore - Resolution
+REPORT-STATUS-ITEM-LORE-RESOLUTION: '&eResolution: &f%resolution%'
+# Report status item lore - Rejection reason
+REPORT-STATUS-ITEM-LORE-REJECTION: '&eReason: &f%reason%'
+# Discord report embed title
+DISCORD-REPORT-EMBED-TITLE: 'Report #%id%'
+# Discord report embed description format
+DISCORD-REPORT-EMBED-DESCRIPTION: |-
+  **Reported Player:** %reported%
+  **Reported By:** %reporter%
+  **Server:** %server%
+# Discord report embed reason field name
+DISCORD-REPORT-EMBED-REASON-FIELD-NAME: Reason
+# Discord report embed status field name
+DISCORD-REPORT-EMBED-STATUS-FIELD-NAME: Status
+# Discord report embed status open value
+DISCORD-REPORT-EMBED-STATUS-OPEN: '**OPEN**'
+# Discord report embed status claimed value
+DISCORD-REPORT-EMBED-STATUS-CLAIMED: '**CLAIMED**'
+# Discord report embed status resolved value
+DISCORD-REPORT-EMBED-STATUS-RESOLVED: '**RESOLVED**'
+# Discord report embed status rejected value
+DISCORD-REPORT-EMBED-STATUS-REJECTED: '**REJECTED**'
+# Discord report embed claimed by field name
+DISCORD-REPORT-EMBED-CLAIMED-BY-FIELD-NAME: Claimed By
+# Discord report embed resolved by field name
+DISCORD-REPORT-EMBED-RESOLVED-BY-FIELD-NAME: Resolved By
+# Discord report embed rejected by field name
+DISCORD-REPORT-EMBED-REJECTED-BY-FIELD-NAME: Rejected By
+# Discord report embed resolution field name
+DISCORD-REPORT-EMBED-RESOLUTION-FIELD-NAME: Resolution
+# Discord report embed rejection reason field name
+DISCORD-REPORT-EMBED-REJECTION-FIELD-NAME: Reason
+# Discord report embed footer format
+DISCORD-REPORT-EMBED-FOOTER: 'Report #%id%'
+# GUI status display - Open
+GUI-STATUS-OPEN: '&cOPEN'
+# GUI status display - Claimed
+GUI-STATUS-CLAIMED: '&6CLAIMED'
+# GUI status display - Resolved
+GUI-STATUS-RESOLVED: '&aRESOLVED'
+# GUI status display - Rejected
+GUI-STATUS-REJECTED: '&7REJECTED'
+# Report command usage for claim
+REPORT-COMMAND-USAGE-CLAIM: '&cUsage: /reports claim <reportId>'
+# Report command usage for resolve
+REPORT-COMMAND-USAGE-RESOLVE: '&cUsage: /reports resolve <reportId> <resolution>'
+# Report command usage for reject
+REPORT-COMMAND-USAGE-REJECT: '&cUsage: /reports reject <reportId> <reason>'
+# Report command usage for teleport
+REPORT-COMMAND-USAGE-TELEPORT: '&cUsage: /reports teleport <reportId>'
+# Report command usage for info
+REPORT-COMMAND-USAGE-INFO: '&cUsage: /reports info <reportId>'
+# Invalid report ID message
+REPORT-INVALID-ID: '&cInvalid report ID. Please enter a valid number.'
+# Proxy messaging error
+REPORT-PROXY-MESSAGING-ERROR: '&cError: Proxy messaging is not available.'
+# Report command help header
+REPORT-COMMAND-HELP-HEADER: '&6===== &eReport Management Commands &6====='
+# Report command help - basic command
+REPORT-COMMAND-HELP-BASIC: '&e/reports &7- Open the reports GUI'
+# Report command help - gui command
+REPORT-COMMAND-HELP-GUI: '&e/reports gui &7- Open the reports GUI'
+# Report command help - list command
+REPORT-COMMAND-HELP-LIST: '&e/reports list &7- List all reports'
+# Report command help - info command
+REPORT-COMMAND-HELP-INFO: '&e/reports info <id> &7- Show details of a report'
+# Report command help - claim command
+REPORT-COMMAND-HELP-CLAIM: '&e/reports claim <id> &7- Claim a report'
+# Report command help - resolve command
+REPORT-COMMAND-HELP-RESOLVE: '&e/reports resolve <id> <resolution> &7- Resolve a report'
+# Report command help - reject command
+REPORT-COMMAND-HELP-REJECT: '&e/reports reject <id> <reason> &7- Reject a report'
+# Report command help - teleport command
+REPORT-COMMAND-HELP-TELEPORT: '&e/reports teleport <id> &7- Teleport to the server
+  where the report was issued'
+# Report command help - claimed command
+REPORT-COMMAND-HELP-CLAIMED: '&e/reports claimed &7- View your claimed reports'
+# Report command help - open command
+REPORT-COMMAND-HELP-OPEN: '&e/reports open &7- View open reports'
+# Report command help - resolved command
+REPORT-COMMAND-HELP-RESOLVED: '&e/reports resolved &7- View resolved reports'
+# Report command list header
+REPORT-COMMAND-LIST-HEADER: '&6===== &eReports &6===== &7(Use GUI for better experience)'
+# Report command list item format
+REPORT-COMMAND-LIST-ITEM: '&6#%id% - %status_color%%status% &7- &eReporter: &f%reporter%
+  &7- &eReported: &f%reported% &7- &eServer: &f%server%'
+# Report command list more message
+REPORT-COMMAND-LIST-MORE: '&7... and %count% more. Use ''/reports gui'' to see all
+  reports.'
+# Format of the message sent when a report is deleted
+REPORT-DELETED: '&aReport #%id% has been deleted by %staff%.'
+# Message when a player tries to report themselves
+CANNOT-REPORT-SELF: '&cYou cannot report yourself!'
+# Message when a player has reached maximum allowed reports
+MAX-REPORTS-REACHED: '&cYou have reached the maximum number of active reports (%max%).'
+BLACK-LISTED-MESSAGE: You are blacklisted from joining this server!
+AUTHORIZATION-DISCORD-MESSAGE: User tried to log in to your account at %date%, what
+  would you like to do? You may also use /pin %code% to connect.
+ALREADY-LOGGED-IN: A player with the same name is already logged in!
+REPORT-MISSING-PARAMETERS: '&cPlease enter the player username and report message'
+PLAYER-NOT-ONLINE: '&cThat player is not online!'
+PLAYER-NOT-REPORTABLE: '&cThis player cannot be reported!'
+SUCCESSFULLY-REPORTED: '&aSuccessfully reported!'
+ADVANCEMENT-FORMAT: 'Player %p% has achieved advancement: %advancement%'

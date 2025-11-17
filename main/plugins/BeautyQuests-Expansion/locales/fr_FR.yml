@@ -1,0 +1,79 @@
+## Credits to @Aternos_
+expansion:
+  label: '§d§l§oFonctionnalité de l''extension !'
+features:
+  header: '§fFonctionnalités de l''extension ({features_amount}) :'
+  unloaded: '(non chargé)'
+timelimit:
+  name: Limite de temps
+  description: >-
+    Limite de temps pour la quête. Les joueurs ne seront en mesure de terminer la quête que dans la durée paramétrée après le début de la quête.
+  left: '§8> Temps restant : §7{time_left}'
+  editor: Écrivez la durée maximale qu'un joueur peut prendre pour accomplir cette quête.
+stage:
+  statistic:
+    name: Étape de statistique
+    description: >-
+      Nécessite que le joueur corresponde à une valeur statistique spécifique, telle que "distance parcourue" ou "coffres ouverts".
+    advancement: 'Atteindre {remaining_value} de la statistique {statistic_type_name}'
+    gui:
+      stat: '§dStatistique cible'
+      limit: '§cLimite cible'
+      relative: 'Limite relative'
+      relativeDescription: >-
+        Si cette option est activée, la limite ne sera pas absolue. Au lieu de cela, elle sera la différence entre la statistique du joueur quand il commence la quête et celle-ci à tout moment.
+      stats:
+        name: 'Choisir la statistique'
+        block: 'Paramètre "bloc"'
+        item: 'Paramètre "item"'
+        entity: 'Paramètre "entité"'
+    editor:
+      limit: 'Écrivez la limite cible pour la statistique sélectionnée :'
+tracking:
+  name: Traqueurs d'objectif
+  description: >-
+    Objets configurables utiles pour faciliter la recherche des objectifs. {trackers_amount} traqueurs disponibles.
+  trackers: '{trackers_amount} traqueurs'
+  gui:
+    name: '§aTraqueurs d''objectif'
+  particles:
+    name: '§dParticules'
+    description: Affiche un effet de particules spécifié sur les cibles de cette étape.
+  outlineBlock:
+    name: '§dContour des blocs'
+    description: Affiche des particules sur les bords des blocs cibles de cette étape.
+  outlineRegion:
+    name: '§dContour de la région'
+    description: Affiche des particules sur les bords de la région cible.
+  beacon:
+    name: '§dRayon de balise'
+    description: Affiche un rayon de balise dans la direction de la cible.
+  glowing:
+    name: '§dBrillant'
+    description: Fait briller les blocs ou les entités ciblés.
+  gps:
+    name: '§dGps'
+    description: Affiche une flèche vers l'emplacement ciblé.
+points:
+  name: Points de quête
+  description: >-
+    Chaque joueur a son propre nombre de points, qui peuvent être donnés comme récompenses et utilisés dans les conditions de quêtes.
+  amount: '{quest_points_amount} points de quête'
+  reward:
+    description: Donne un certain nombre de points de quête au joueur
+    tooltip: '{quest_points_range} points de quête'
+    editor:
+      min: 'Entrez le nombre de points minimum que le joueur obtiendra :'
+      max: 'Entrez le nombre de points maximum que le joueur obtiendra :'
+  requirement:
+    description: Nécessite que le joueur ait un certain nombre de points de quête
+    message: Votre nombre de points de quête doit être {long_quest_points} !
+    tooltip: '{short_quest_points} points de quête'
+    editor:
+      target: 'Entrez le nombre de points de quête voulu :'
+  command:
+    balance: '§aVous avez §l{quest_points_balance}§a points de quête !'
+    balancePlayer: '§a{target_name} a {quest_points_balance} points de quête.'
+    added: '{quest_points_balance} points de quête ajoutés à {target_name}.'
+
+# License Number: bb957377-30d5-41e9-8eff-5312a333acfb

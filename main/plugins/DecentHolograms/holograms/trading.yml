@@ -1,0 +1,12 @@
+location: Philippines:-431.475:91.869:-308.639
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&b&LTrading Hall'
+    height: 0.3
+  actions: {}

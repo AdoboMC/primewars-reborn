@@ -1,0 +1,44 @@
+location: Philippines:-435.526:94.188:-299.779
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&lMaze'
+    height: 0.3
+  - content: Honorarymanx47
+    height: 0.3
+  - content: Seigo
+    height: 0.3
+  - content: coookies
+    height: 0.3
+  - content: SageeMode
+    height: 0.3
+  - content: Xenzu
+    height: 0.3
+  - content: GTXgamerBOY
+    height: 0.3
+  - content: HejMoona
+    height: 0.3
+  - content: Piedrops
+    height: 0.3
+  - content: Otanon
+    height: 0.3
+  - content: JBMz
+    height: 0.3
+  - content: DSAReaper
+    height: 0.3
+  - content: RubySoul
+    height: 0.3
+  - content: TheLightHunter
+    height: 0.3
+  - content: okey_woman
+    height: 0.3
+  - content: okey_woman
+    height: 0.3
+  - content: SageeMode
+    height: 0.3
+  actions: {}

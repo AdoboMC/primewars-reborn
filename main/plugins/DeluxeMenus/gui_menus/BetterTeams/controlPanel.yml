@@ -1,0 +1,380 @@
+menu_title: "›› Control Panel"
+size: 54
+open_command: []
+items:
+  "Misc | Filler 1":
+     material: BLACK_STAINED_GLASS_PANE
+     slots:
+     - 0
+     - 8
+     - 9
+     - 17
+     - 18
+     - 26
+     - 27
+     - 35
+     - 36
+     - 44
+     - 45
+     - 53
+     priority: 10
+     display_name: "&r"
+  "Misc | Filler 2":
+     material: GRAY_STAINED_GLASS_PANE
+     slots:
+     - 1-7
+     - 46-52
+     priority: 10
+     display_name: "&r"
+  "Misc | Close":
+    material: BARRIER
+    slot: 49
+    display_name: " "
+    lore:
+    - "      &c&lCLOSE  "
+    - ""
+    - "  &7Click to close  "
+    - ""
+    priority: 9
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[close]"
+  "Misc | Back":
+    material: ARROW
+    slot: 48
+    display_name: " "
+    lore:
+    - "      &e&lGO BACK  "
+    - ""
+    - "  &7Click to go back  "
+    - ""
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] BetterTeamsMain"
+  
+
+  "OWNER | Toggle Accessibility":
+    material: IRON_DOOR
+    slot: 4
+    display_name: " "
+    lore:
+    - "  &f&lJOIN ACCESSIBILITY  "
+    - ""
+    - "  &a%changeoutput_equals_input:{betterTeams_open}_matcher:true_ifmatch:  &a✔ &7Open to everyone_else:      &c✘ &7Invite only%  "
+    - ""
+    - "        &7Click to toggle  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team open"
+    - "[refresh]"
+  "ADMIN | Accessibility":
+    material: IRON_DOOR
+    slot: 4
+    display_name: " "
+    priority: 2
+    lore:
+    - "  %changeoutput_equals_input:{betterTeams_open}_matcher:true_ifmatch: &f&lJOIN ACCESSIBILITY_else: &f&lJOIN ACCESSIBILITY%  "
+    - ""
+    - "  &a%changeoutput_equals_input:{betterTeams_open}_matcher:true_ifmatch:   &a✔ &7Open to everyone_else:      &c✘ &7Invite only%  "
+    - ""
+  "OWNER | Change Team Name":
+    material: WRITABLE_BOOK
+    slot: 20
+    display_name: " "
+    lore:
+    - "  &b&lCHANGE TEAM NAME  "
+    - ""
+    - "  &8• &7Current name &f%betterTeams_name%  "
+    - ""
+    - "       &7Click to start  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[meta] set betterTeamsConfirmAction STRING name change"
+    - "[meta] set betterTeamsConfirmActionBack STRING BetterTeamsControlPanel"
+    - "[openguimenu] BetterTeamsConfirmAction"
+  "ADMIN | Team Name":
+    material: WRITABLE_BOOK
+    slot: 20
+    display_name: " "
+    lore:
+    - "     &b&lTEAM NAME  "
+    - ""
+    - "  &8• &7Current name &f%betterTeams_name%  "
+    - ""
+    priority: 2
+
+  "OWNER | Change Color":
+    material: MAGMA_CREAM
+    slot: 24
+    display_name: " "
+    lore:
+    - "     &6&lCHANGE COLOR  "
+    - ""
+    - "  &8• &7Current color %betterTeamsExtra_color%&r  "
+    - ""
+    - "  &f&lAVAILABLE COLORS  "
+    - ""
+    - "  &8• &fWhite  "
+    - "  &8• &7Gray  "
+    - "  &8• &8Dark_Gray  "
+    - "  &8• &0Black &8(&7Black&8) "
+    - "  &8• &4Dark_Red  "
+    - "  &8• &cRed  "
+    - "  &8• &6Gold  "
+    - "  &8• &eYellow  "
+    - "  &8• &aGreen  "
+    - "  &8• &2Dark_Green  "
+    - "  &8• &3Dark_Aqua  "
+    - "  &8• &bAqua  "
+    - "  &8• &9Blue  "
+    - "  &8• &1Dark_Blue  "
+    - "  &8• &5Dark_Purple  "
+    - "  &8• &dLight_Purple  "
+    - "  &8• &7&mStrikethrough&r  "
+    - ""
+    - "      &7Click to change  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team color <-a Enter a color...>"
+    - "[close]"
+  "ADMIN | Color":
+    material: MAGMA_CREAM
+    slot: 24
+    display_name: " "
+    priority: 2
+    lore:
+    - "          &6&lCOLOR  "
+    - ""
+    - "  &8• &7Current color %betterTeamsExtra_color%&r  "
+    - ""
+  "OWNER | Change Description":
+    material: BOOK
+    slot: 30
+    display_name: " "
+    lore:
+    - "   &2&lCHANGE DESCRIPTION  "
+    - ""
+    - "  %changeoutput_equals_input:{betterTeams_description}_matcher:_ifmatch:   &c✘ &7No description set_else:&8• &7Current description  \n   &f{betterTeams_description}%  "
+    - ""
+    - "        &7Click to change  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team description <-a Enter description...>"
+    - "[message] &b&lTEAMS &8•&7 Write a team discription. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "ADMIN | Description":
+    material: BOOK
+    slot: 30
+    display_name: " "
+    priority: 2
+    lore:
+    - "      &2&lDESCRIPTION  "
+    - ""
+    - "  %changeoutput_equals_input:{betterTeams_description}_matcher:_ifmatch:&c✘ &7No description set_else:&8• &7Current description  \n   &f{betterTeams_description}%  "
+    - ""
+  "OWNER | Change Title":
+    material: OAK_SIGN
+    slot: 31
+    display_name: " "
+    lore:
+    - "  &a&lCHANGE TITLE  "
+    - ""
+    - "  %changeoutput_equals_input:{betterTeams_title}_matcher:_ifmatch:  &c✘ &7No title set_else:&8• &7Current title &f{betterTeams_title}%  "
+    - ""
+    - "   &7Click to change  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team title <-a Enter title...>"
+    - "[message] &b&lTEAMS &8•&7 Write a new team title. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "ADMIN | Title":
+    material: OAK_SIGN
+    slot: 31
+    display_name: " "
+    priority: 2
+    lore:
+    - "  %changeoutput_equals_input:{betterTeams_title}_matcher:_ifmatch:    &a&lTITLE_else:      &a&lTITLE%  "
+    - ""
+    - "  %changeoutput_equals_input:{betterTeams_title}_matcher:_ifmatch:&c✘ &7No title set_else:&8• &7Current title &f{betterTeams_title}%  "
+    - ""
+  "OWNER | Change Tag":
+    material: NAME_TAG
+    slot: 32
+    display_name: " "
+    lore:
+    - "    &e&lCHANGE TAG  "
+    - ""
+    - "  &8• &7Current tag &f%betterTeams_tag%  "
+    - ""
+    - "   &7Click to change  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team title <-a Enter title...>"
+    - "[message] &b&lTEAMS &8•&7 Write a new tag for the team. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "ADMIN | Tag":
+    material: NAME_TAG
+    slot: 32
+    display_name: " "
+    priority: 2
+    lore:
+    - "          &e&lTAG  "
+    - ""
+    - "  &8• &7Current tag &f%betterTeams_tag%  "
+    - ""
+
+  "ADMIN | Set Warp":
+    material: ENDER_PEARL
+    slot: 21
+    display_name: " "
+    lore:
+    - "        &9&lSET A WARP  "
+    - ""
+    - "  &7Click to set a new warp  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        noWarpsSet:
+          type: string equals
+          input: '%betterTeamsExtra_hasWarps%'
+          output: 'no'
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team setwarp <-a Enter warp...>"
+    - "[message] &b&lTEAMS &8•&7 Type the warpname. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "ADMIN | Set/Delete Warp":
+    material: ENDER_PEARL
+    slot: 21
+    display_name: " "
+    lore:
+    - "         &9&lTEAM WARP LIST  "
+    - ""
+    - "%betterTeamsExtra_warplist%"
+    - ""
+    - "   &7Left-click to &aset &7a new warp  "
+    - "   &7Right-click to &cdelete &7a warp  "
+    - ""
+    priority: 2
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team setwarp <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the warpname. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+    right_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team delwarp <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the warpname. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "ADMIN | Toggle PvP":
+    material: DIAMOND_SWORD
+    slot: 22
+    display_name: " "
+    hide_attributes: true
+    lore:
+    - "   &c&lTOGGLE PVP  "
+    - ""
+    - "  &a%changeoutput_equals_input:{betterTeamsExtra_isPvP}_matcher:yes_ifmatch:  &a✔ &7PvP is &aON_else:  &c✘ &7PvP is &cOFF%  "
+    - ""
+    - "   &7Click to toggle  "
+    - ""
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team pvp"
+    - "[refresh]"
+  
+  "ADMIN | Set Home":
+    material: RED_BED
+    slot: 23
+    display_name: " "
+    lore:
+    - "      &d&lSET TEAM HOME  "
+    - ""
+    - "  &7Click to set a new home  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        noWarpsSet:
+          type: string equals
+          input: '%betterTeamsExtra_hasHome%'
+          output: 'no'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team sethome"
+    - "[close]"
+  "ADMIN | Set/Delete Home":
+    material: RED_BED
+    slot: 23
+    display_name: " "
+    lore:
+    - "            &d&lTEAM HOME  "
+    - ""
+    - "  &8• &7World: &f%betterTeamsExtra_homeLocation_world%"
+    - "  &8• &7X: &f%betterTeamsExtra_homeLocation_x%"
+    - "  &8• &7Y: &f%betterTeamsExtra_homeLocation_y%"
+    - "  &8• &7Z: &f%betterTeamsExtra_homeLocation_z%"
+    - ""
+    - "  &7Left-click to &aset &7a new home  "
+    - "   &7Right-click to &cdelete &7home  "
+    - ""
+    priority: 2
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team sethome"
+    - "[close]"
+    right_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[meta] set BetterTeamsConfirmAction STRING home deletion"
+    - "[meta] set betterTeamsConfirmActionBack STRING BetterTeamsControlPanel"
+    - "[openguimenu] BetterTeamsConfirmAction"
+    - "[close]"

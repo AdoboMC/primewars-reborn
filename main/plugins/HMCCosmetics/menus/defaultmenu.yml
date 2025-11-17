@@ -1,0 +1,403 @@
+title: "<white><shift:-8><glyph:cosmetics_gui><shift:8>"
+rows: 6
+items:
+  beanie:
+    slots:
+      - 0
+    item:
+      material: hmccosmetics:beanie
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_beanie%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_beanie%"
+    type: cosmetic
+    cosmetic: beanie
+  backpack:
+    slots:
+      - 1
+    item:
+      material: hmccosmetics:backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_backpack%"
+    type: cosmetic
+    cosmetic: backpack
+  future_wings:
+    slots:
+      - 2
+    item:
+      material: hmccosmetics:future_wings
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_future_wings%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_future_wings%"
+    type: cosmetic
+    cosmetic: future_wings
+  lantern_cosmetic:
+    slots:
+      - 3
+    item:
+      material: hmccosmetics:lantern_cosmetic
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_lantern_cosmetic%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_lantern_cosmetic%"
+    type: cosmetic
+    cosmetic: lantern_cosmetic
+  baseball_hat:
+    slots:
+      - 4
+    item:
+      material: hmccosmetics:baseball_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_baseball_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_baseball_hat%"
+    type: cosmetic
+    cosmetic: baseball_hat
+  frog_hat:
+    slots:
+      - 5
+    item:
+      material: hmccosmetics:frog_hat
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_frog_hat%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_frog_hat%"  
+    type: cosmetic
+    cosmetic: frog_hat
+  jetpack:
+    slots:
+      - 6
+    item:
+      material: hmccosmetics:jetpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_jetpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_jetpack%" 
+    type: cosmetic
+    cosmetic: jetpack
+  hammer:
+    slots:
+      - 7
+    item:
+      material: hmccosmetics:hammer
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_hammer%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_hammer%" 
+    type: cosmetic
+    cosmetic: hammer
+  chestplate:
+    slots:
+      - 8
+    item:
+      material: hmccosmetics:chestplate
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_chestplate%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_chestplate%" 
+    type: cosmetic
+    cosmetic: chestplate
+  pants:
+    slots:
+      - 9
+    item:
+      material: hmccosmetics:pants
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_pants%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_pants%" 
+    type: cosmetic
+    cosmetic: pants
+  boots:
+    slots:
+      - 10
+    item:
+      material: hmccosmetics:boots
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_boots%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_boots%" 
+    type: cosmetic
+    cosmetic: boots
+  kite:
+    slots:
+      - 11
+    item:
+      material: hmccosmetics:kite
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_kite%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_kite%" 
+    type: cosmetic
+    cosmetic: kite
+  # EMOTES DO NOT WORK IN RECENT HMCCOSMETICS VERSIONS.
+  # handstand:
+  #   slots:
+  #     - 12
+  #   item:
+  #     material: PAPER
+  #     name: "<blue>Handstand Emote"
+  #   type: cosmetic
+  #   cosmetic: handstand
+  # meditate:
+  #   slots:
+  #     - 13
+  #   item:
+  #     material: PAPER
+  #     name: "<blue>Meditate Emote"
+  #   type: cosmetic
+  #   cosmetic: meditate
+  # thinking:
+  #   slots:
+  #     - 14
+  #   item:
+  #     material: PAPER
+  #     name: "<blue>Thinking Emote"
+  #   type: cosmetic
+  #   cosmetic: thinking
+  explorer_backpack:
+    slots:
+      - 12
+    item:
+      material: hmccosmetics:explorer_backpack
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_explorer_backpack%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_explorer_backpack%" 
+    type: cosmetic
+    cosmetic: explorer_backpack
+  garbage_truck_balloon:
+    slots:
+      - 13
+    item:
+      material: hmccosmetics:garbage_truck_balloon
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_garbage_truck_balloon%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_garbage_truck_balloon%" 
+    type: cosmetic
+    cosmetic: garbage_truck_balloon
+  earth_day_grabber:
+    slots:
+      - 14
+    item:
+      material: hmccosmetics:earth_day_grabber
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_earth_day_grabber%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_earth_day_grabber%" 
+    type: cosmetic
+    cosmetic: earth_day_grabber
+  hibiscus_flower:
+    slots:
+      - 15
+    item:
+      material: hmccosmetics:hibiscus_flower
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_hibiscus_flower%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_hibiscus_flower%" 
+    type: cosmetic
+    cosmetic: hibiscus_flower
+
+# ## Starlight Wings
+  starlight_cosmetics_wings1:
+    slots:
+      - 16
+    item:
+      material: hmccosmetics:starlight_cosmetics_wings1
+      lore:
+        - ""
+        - "<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_starlight_cosmetics_wings1%"
+        - "<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_starlight_cosmetics_wings1%" 
+    type: cosmetic
+    cosmetic: starlight_cosmetics_wings1
+
+# ## BlueFlame Wings
+  blueflame_cosmetics_wings:
+    slots:
+    - 17
+    item:
+      name: <white>Blueflame Wings
+      material: POTION
+      model-data: 9924667
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_blueflame_cosmetics_wings%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_blueflame_cosmetics_wings%'
+    type: cosmetic
+    cosmetic: blueflame_cosmetics_wings
+    locked-item:
+      name: <white>Blueflame Wings <red><b>(LOCK)
+      material: POTION
+      model-data: 9924667
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+
+# ## Piny BeeSet Animated Cosmetics
+  plny_beeset_cosmetics_wings_v1:
+    slots:
+    - 18
+    item:
+      name: <white>Bee Wings V1
+      material: POTION
+      model-data: 9925071
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_plny_beeset_cosmetics_wings_v1%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_plny_beeset_cosmetics_wings_v1%'
+    type: cosmetic
+    cosmetic: plny_beeset_cosmetics_wings_v1
+    locked-item:
+      name: <white>Bee Wings V1 <red><b>(LOCK)
+      material: POTION
+      model-data: 9925071
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  plny_beeset_cosmetics_wings_v2_animated:
+    slots:
+    - 19
+    item:
+      name: <white>Bee Wings V2 Animated
+      material: POTION
+      model-data: 9925075
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_plny_beeset_cosmetics_wings_v2_animated%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_plny_beeset_cosmetics_wings_v2_animated%'
+    type: cosmetic
+    cosmetic: plny_beeset_cosmetics_wings_v2_animated
+    locked-item:
+      name: <white>Bee Wings V2 Animated <red><b>(LOCK)
+      material: POTION
+      model-data: 9925075
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  plny_beeset_cosmetics_helmet:
+    slots:
+    - 20
+    item:
+      name: <white>Bee Helmet
+      material: POTION
+      model-data: 9925070
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_plny_beeset_cosmetics_helmet%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_plny_beeset_cosmetics_helmet%'
+    type: cosmetic
+    cosmetic: plny_beeset_cosmetics_helmet
+    locked-item:
+      name: <white>Bee Helmet <red><b>(LOCK)
+      material: POTION
+      model-data: 9925070
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      - HIDE_ADDITIONAL_TOOLTIP
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+
+# ## Starlight Sets
+  spartan_cosmetics_cape:
+    slots:
+    - 21
+    item:
+      name: <white>Spartan Cape
+      material: POTION
+      model-data: 9923000
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_spartan_cosmetics_cape%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_spartan_cosmetics_cape%'
+    type: cosmetic
+    cosmetic: spartan_cosmetics_cape
+    locked-item:
+      name: <white>Spartan Cape <red><b>(LOCK)
+      material: POTION
+      model-data: 9923000
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available
+  spartan_cosmetics_helmet:
+    slots:
+    - 22
+    item:
+      name: <white>Spartan Helmet
+      material: POTION
+      model-data: 9923004
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - ''
+      - '<gray>Enabled: <#6D9DC5>%HMCCosmetics_equipped_spartan_cosmetics_helmet%'
+      - '<gray>Allowed: <#6D9DC5>%HMCCosmetics_unlocked_spartan_cosmetics_helmet%'
+    type: cosmetic
+    cosmetic: spartan_cosmetics_helmet
+    locked-item:
+      name: <white>Spartan Helmet <red><b>(LOCK)
+      material: POTION
+      model-data: 9923004
+      color: '#ffffff'
+      item-flags:
+      - HIDE_ATTRIBUTES
+      - HIDE_POTION_EFFECTS
+      amount: 1
+      lore:
+      - <RED>You do not have this cosmetic available

@@ -1,0 +1,15 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_decoration_sign" # Name of the pattern
+size: 54
+items:
+  decorations:
+    isPermanent: true
+    item:
+      material: nexo:sign_auction
+      name: '&f'
+    slot: 9

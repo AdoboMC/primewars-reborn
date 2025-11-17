@@ -1,0 +1,20 @@
+location: world:452.341:68.007:-329.559
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&5&l⚔ &3&lFeatures:'
+    height: 0.3
+  - content: '&eOver 100+ unique enchantments (Lifesteal, Gears, Blast, and more!)'
+    height: 0.3
+  - content: '&eEnchantment books of various tiers: Common → Divine'
+    height: 0.3
+  - content: '&ePowerful combo effects for PvP, mining, and mob fighting'
+    height: 0.3
+  - content: '&eEarn enchantments via crates, shops, events, or /ce shop'
+    height: 0.3
+  actions: {}

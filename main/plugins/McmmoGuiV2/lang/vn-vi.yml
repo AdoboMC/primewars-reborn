@@ -1,0 +1,1645 @@
+# # Credits to @Aternos_
+ConfigVersion: 1 # DO NOT CHANGE THIS
+Messages:
+  NoTopCategory: <#e74c3c>⭘ <white>Không có danh mục top <#ff793f>%category-name%
+    <white>!
+  NoConsole: <#e74c3c>⭘ <white>Console không thể sử dụng lệnh này.
+  NoPermission: <#e74c3c>⭘ <white>Bạn không có quyền để thực hiện hành động này!
+  EnterPartyInfo: <#f1c40f>⏳ <white>Nhập tên nhóm của bạn hoặc <green><bold><click:run_command:/cancelpartycreating><hover:show_text:"<white>Hủy
+    tạo nhóm">[Nhấp vào đây]</click> <reset><white>hoặc gõ <red>cancel<white> để hủy.
+  CancelPartyCreating: <#e74c3c>⭘ <white>Bạn đã hủy việc tạo nhóm.
+  Language:
+    Set: <#2ecc71>⭘ <white>Bạn đã thay đổi ngôn ngữ của <yellow>%player% <white>thành
+      <green>%language%
+    Change: <#2ecc71>⭘ <white>Ngôn ngữ McmmoGui của bạn đã được đổi sang <#fd9644>%language%
+    LangNotExisted: <#e74c3c>⭘ <white>Ngôn ngữ <#e74c3c>%locale% <white>không tồn
+      tại.
+  Help:
+    Header: <dark_gray><st>              <reset><dark_gray><bold>[ <#ff793f><bold>Các
+      Lệnh McmmoGui <dark_gray><bold>]<dark_gray><st>              <reset>
+    Content:
+    - <dark_gray><><white> Bắt buộc, <dark_gray>[]<white> Tùy chọn,
+    - ''
+    - <dark_gray>/<#ff793f>mcmmogui <gray>-<white> Mở menu tổng quan kỹ năng.
+    - <dark_gray>/<#ff793f>mcmmogui help <gray>-<white> Xem tất cả các lệnh của plugin.
+    - <dark_gray>/<#ff793f>mcmmogui language [player] <gray>-<white> Chọn ngôn ngữ
+      của bạn.
+    - <dark_gray>/<#ff793f>mcmmogui top <category> [player] <gray>-<white> Mở menu
+      top McMMO.
+    - <dark_gray>/<#ff793f>mcmmogui skill <name> [player] <gray>-<white> Mở menu chi
+      tiết kỹ năng McMMO.
+    - <dark_gray>/<#ff793f>mcmmogui reload <gray>-<white> Tải lại tất cả cấu hình
+      của plugin.
+    Footer: '<dark_gray><st>                                                             '
+  ReloadPlugin: <#2ecc71>⇄ <white>Đã tải lại tất cả cấu hình của McmmoGui. <gray>(%latency%ms)
+  PlayerProfileLoading: <#f1c40f>⏳ <white>Hồ sơ người chơi của bạn đang được tải.
+    Vui lòng thử lại sau vài giây...
+Placeholders:
+  LoadingPlaceholderValue: N/A
+  Overall: Tổng Quan
+  LockedAbilityStat: '<dark_gray>⭘ <white>Yêu cầu cấp độ: <#ff7979>%level%'
+  LuckChanceFormat: '%chance% <dark_gray>(<#9c88ff>%lucky-chance%<dark_gray>)'
+  FishingTreasureRarity: {}
+  KnockOnWoodFormat:
+    Normal: Rương Bình Thường
+    Max: Kinh Nghiệm Bổ Sung
+  Party:
+    NoParty: <red>Không có
+    Feature:
+      Unlocked: <green> ◎ <gray>Lv<green>%feature-unlocked-level% <#dff9fb>%feature-name%
+      Locked: <dark_gray> ⭘ <gray>Lv<dark_gray>%feature-unlocked-level% <dark_gray><st>%feature-name%
+      List:
+        CHAT: Trò chuyện nhóm
+        TELEPORT: Dịch chuyển
+        ALLIANCE: Liên minh
+        ITEM_SHARE: Chia sẻ vật phẩm
+        XP_SHARE: Chia sẻ XP
+    Member:
+      Online: <green> ● <white>%name% <dark_gray>(Trực tuyến)
+      Offline: <dark_gray> ● <white>%name% <dark_gray>(Ngoại tuyến)
+  Locales:
+    default: Tiếng Anh (Mặc định)
+    en-us: Tiếng Anh (US)
+    vn-vi: Tiếng Việt
+  Ability:
+    Unlocked: ' <gray>Lv.<white>%required-level% <#dff9fb>%name%'
+    Locked: ' <gray>Lv.<#ff7979>%required-level% <#353b48><st>%name%'
+  Process:
+    DefaultFormat: <dark_gray>(<white>%current-exp%<dark_gray>/<#6ab04c>%required-exp%<dark_gray>)
+    ExpBar:
+      Format: <dark_gray>|%exp-bar%<dark_gray>|
+      Character: ■<reset>
+      Filled: <#6ab04c>
+      Empty: <dark_gray>
+      Length: 20
+
+Skill:
+  MACES:
+    Name: Maces
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Tăng sức mạnh của
+    - <#fd9644>Chùy<white>, phá vỡ giới hạn và
+    - <white>gây thêm sát thương.
+    Abilities:
+      CRIPPLE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Cripple
+        Description:
+        - <dark_gray>◘ <gray>Khi tấn công kẻ địch, có tỷ lệ
+        - <gray>làm suy yếu chúng.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Cơ hội kích hoạt: <#6ab04c>%mcmmogui_skill_maces_ability_cripple%%'
+        - ''
+        - '<dark_gray>⏳ <white>Thời gian hiệu lực <dark_gray>(ᴘᴠᴘ): <#fbc531>%mcmmogui_skill_maces_ability_cripple_pvp%
+          (s)'
+        - '<dark_gray>⏳ <white>Thời gian hiệu lực <dark_gray>(ᴘᴠᴇ): <#e84118>%mcmmogui_skill_maces_ability_cripple_pve%
+          (s)'
+      MACES_LIMIT_BREAK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Maces Master
+        Description:
+        - <white>◘ <gray>Phá vỡ giới hạn của bạn. Tăng
+        - <gray>sát thương khi sử dụng chùy
+        - <gray>chống lại đối thủ mạnh có nhiều
+        - <gray>trang bị giáp
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Thưởng sát thương tối đa: <#fbc531>%mcmmogui_skill_maces_ability_maces-limit-break%'
+      CRUSH:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Crush
+        Description:
+        - <white>◘ <gray>Thêm sát thương vào các
+        - <gray>đòn tấn công bằng chùy.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Thưởng sát thương: <#fbc531>%mcmmogui_skill_maces_ability_crush%'
+  
+  CROSSBOWS:
+    Name: Crossbows
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Tăng sức mạnh của <#fd9644>Nỏ<white>
+    - <white>phá vỡ giới hạn của bạn
+    - <white>và gây thêm sát thương.
+    Abilities:
+      POWERED_SHOT:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Powered Shot
+        Description:
+        - <white>◘ <gray>Thêm sát thương vào các
+        - <gray>đòn tấn công của bạn với crossbow.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Sát thương bổ sung: <#fbc531>%mcmmogui_skill_crossbows_ability_powered-shot%'
+      TRICK_SHOT:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Trick Shot
+        Description:
+        - <white>◘ <gray>Những mũi tên sẽ tự động
+        - <gray>nảy lại khi chạm vào bề mặt.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Thời gian nảy tối đa: <#6ab04c>%mcmmogui_skill_crossbows_ability_trick-shot%'
+      CROSSBOWS_LIMIT_BREAK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Crossbow Master
+        Description:
+        - <white>◘ <gray>Phá vỡ giới hạn của bạn. Tăng
+        - <gray>sát thương crossbow đối với
+        - <gray>đối thủ mạnh (Điểm giáp cao).
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Sát thương tối đa với Crossbow: <#fbc531>%mcmmogui_skill_crossbows_ability_crossbows-limit-break%'
+  
+  TRIDENTS:
+    Name: Tridents
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Tăng sức mạnh của <#fd9644>Đinh Ba<white>,
+    - <white>phá vỡ giới hạn của bạn và
+    - <white>gây thêm sát thương.
+    Abilities:
+      IMPALE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Impale
+        Description:
+        - <white>◘ <gray>Thêm sát thương vào các
+        - <gray>đòn tấn công với đinh ba.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Sát thương bổ sung: <#fbc531>%mcmmogui_skill_tridents_ability_impale%'
+      TRIDENTS_LIMIT_BREAK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Tridents Master
+        Description:
+        - <white>◘ <gray>Phá vỡ giới hạn của bạn. Tăng
+        - <gray>sát thương của trident đối với
+        - <gray>đối thủ mạnh (Điểm giáp cao).
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Sát thương tối đa: <#fbc531>%mcmmogui_skill_tridents_ability_tridents-limit-break%'
+  
+  SWORDS:
+    Name: Swords
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>This is a combat skill that
+    - <white>helps you master the use
+    - <white>of swords, improving your
+    - <white>precision and power in a
+    - <white>battle. <dark_gray>(Both PvP and Pve)
+    Abilities:
+      RUPTURE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Rupture
+        Description:
+        - <white>◘ <gray>Rupture causes enemies
+        - <gray>to take damage every 10
+        - <gray>ticks (0.5 second)
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_swords_ability_rupture%%'
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_swords_ability_rupture_duration%
+          second(s)'
+        - ''
+        - '<dark_gray>🗡 <white>Tick Damage <dark_gray>(ᴘᴠᴘ): <#fbc531>%mcmmogui_skill_swords_ability_rupture_damage-pvp%'
+        - '<dark_gray>🗡 <white>Tick Damage <dark_gray>(ᴘᴠᴇ): <#e84118>%mcmmogui_skill_swords_ability_rupture_damage-pve%'
+      SERRATED_STRIKES:
+        Hide: false
+        Type: ᴀᴄᴛɪᴠᴇ
+        Name: Serrated Strikes
+        Description:
+        - <gray>◘ <white>This ability allows you to deal
+        - <white>an AoE (Area of Effect) hit with
+        - <white>a bonus 25% damage and may
+        - <white>apply the Rupture effect.
+        - ''
+        - <dark_gray>Serrated Strikes is an active
+        - <dark_gray>ability. You can activate it by
+        - <dark_gray>right-clicking with a sword.
+        UnlockedStats:
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_swords_ability_serrated-strikes%
+          second(s)'
+      SWORDS_LIMIT_BREAK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Swords Limit Break
+        Description:
+        - <white>◘ <gray>Breaking your limits. Increased
+        - <gray>sword damage against strong
+        - <gray>opponents (High Armor Points).
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Max Damage Bonus: <#fbc531>%mcmmogui_skill_swords_ability_swords-limit-break%'
+      COUNTER_ATTACK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Counter Attack
+        Description:
+        - <white>◘ <gray>Gives a chance to inflict
+        - <gray>or reflect a portion of the
+        - <gray>damage done to the enemy
+        - <gray>back on you.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_swords_ability_counter-attack%'
+        - '<dark_gray>🪣 <white>Reflection Dmg: <#00a8ff>50%'
+      STAB:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Sword Stab
+        Description:
+        - <white>◘ <gray>Adds bonus damage to
+        - <gray>your sword when attacking
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Bonus Damage <dark_gray>(ᴘᴠᴘ): <#fbc531>%mcmmogui_skill_swords_ability_stab%'
+  AXES:
+    Name: Axes
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Your axe also becomes
+    - <white>a hand-held woodchipper,
+    - <white>breaking down the enemy's
+    - <white>armor with ease as your
+    - <white>level increases.
+    Abilities:
+      ARMOR_IMPACT:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Armor Impact
+        Description:
+        - <white>◘ <gray>Strike with enough force to
+        - <gray>shatter armor! Armor Impact
+        - <gray>skill has a passive chance to
+        - <gray>harm your opponent's armor.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Armor Damage Bonus: <#fbc531>%mcmmogui_skill_axes_ability_armor-impact%'
+      CRITICAL_STRIKES:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Critical Strikes
+        Description:
+        - <white>◘ <gray>'Critical Strikes' is a passive
+        - <gray>ability which gives players a
+        - <gray>chance to deal bonus damage.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_axes_ability_critical-strikes%'
+        - ' '
+        - '<dark_gray>🗡 <white>Damage Multiplier <dark_gray>(ᴘᴠᴘ): <#fbc531>x%mcmmogui_skill_axes_ability_critical-strikes_pvp%'
+        - '<dark_gray>🗡 <white>Damage Multiplier <dark_gray>(ᴘᴠᴇ): <#e84118> x%mcmmogui_skill_axes_ability_critical-strikes_pve%'
+      AXE_MASTERY:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Axe Mastery
+        Description:
+        - <gray>The Axe Mastery passive
+        - <gray>ability increases the base
+        - <gray>damage dealt with axes as
+        - <gray>the Axes skill raises.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Damage Bonus: <#fbc531>%mcmmogui_skill_axes_ability_axe-mastery%'
+      SKULL_SPLITTER:
+        Hide: false
+        Type: ᴀᴄᴛɪᴠᴇ
+        Name: Skull Splitter
+        Description:
+        - <gray>◘ <white>This ability allows you to deal
+        - <white>an AoE (Area of Effect) hit.
+        - ''
+        - <dark_gray>Skull Splitter is an active
+        - <dark_gray>ability. You can activate it by
+        - <dark_gray>right-clicking with an axe.
+        UnlockedStats:
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_axes_ability_skull-splitter%
+          second(s)'
+      AXES_LIMIT_BREAK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Axes Limit Break
+        Description:
+        - <white>◘ <gray>Breaking your limits. Increased
+        - <gray>sword damage against strong
+        - <gray>opponents (High Armor Points).
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Max Damage Bonus: <#fbc531>%mcmmogui_skill_axes_ability_axes-limit-break%'
+      GREATER_IMPACT:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Greater Impact
+        Description:
+        - <white>◘ <gray>Greater Impact strikes
+        - <gray>increase the base damage
+        - <gray>dealt to enemies & knock
+        - <gray>the enemy back with
+        - <gray>explosive force.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_axes_ability_greater-impact_chance%%'
+        - ''
+        - '<dark_gray>🗡 <white>Damage Multiplier: <#fbc531>x%mcmmogui_skill_axes_ability_greater-impact_knockback%'
+        - '<dark_gray>🗡 <white>Damage Bonus: <#fbc531>%mcmmogui_skill_axes_ability_greater-impact%'
+  ARCHERY:
+    Name: Archery
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Archery provides various
+    - <white>combat bonuses, such as a
+    - <white>damage boost that scales with
+    - <white>your level and the ability to
+    - <white>daze your opponents in PvP.
+    Abilities:
+      DAZE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Daze
+        Description:
+        - <white>◘ <gray>Daze ability can cause
+        - <gray>enemies hit by arrows
+        - <gray>nausea effect and take
+        - <gray>additional damage.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_archery_ability_daze_chance%'
+        - '<dark_gray>🗡 <white>Damage Bonus: <#fbc531>%mcmmogui_skill_archery_ability_daze%'
+      ARROW_RETRIEVAL:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Arrow Retrieval
+        Description:
+        - <white>◘ <gray>Arrow Retrieval is an archer's
+        - <gray>ability to shoot without losing
+        - <gray>your arrows.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_archery_ability_arrow-retrieval%'
+      SKILL_SHOT:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Skill Shot
+        Description:
+        - <white>◘ <gray>Skill Shot ability provides
+        - <gray>additional damage to your
+        - <gray>arrows.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Max Damage Bonus: <#fbc531>%mcmmogui_skill_archery_ability_skill-shot_max-damage%'
+        - '<dark_gray>🗡 <white>Damage Multiplier: <#fbc531>%mcmmogui_skill_archery_ability_skill-shot%'
+      ARCHERY_LIMIT_BREAK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Archery Limit Break
+        Description:
+        - <white>◘ <gray>Breaking your limits. Increased
+        - <gray>bow damage against strong
+        - <gray>opponents (High Armor Points).
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Max Damage Bonus: <#fbc531>%mcmmogui_skill_archery_ability_archery-limit-break%'
+  ACROBATICS:
+    Name: Acrobatics
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>"Acrobatics" is the art of
+    - <white>moving gracefully in mcMMO.
+    - <white>It provides combat bonuses
+    - <white>and environment damage.
+    Abilities:
+      ROLL:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Roll
+        Description:
+        - <dark_gray>◘ <gray>This skill provides a chance
+        - <gray>to negate fall damage based
+        - <gray>on the player’s Acrobatics
+        - <gray>level.
+        - ''
+        - <dark_gray>Hold [ SHIFT ] when you are
+        - <dark_gray>falling will double the chance
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_acrobatics_ability_roll%'
+      DODGE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Dodge
+        Description:
+        - <dark_gray>◘ <gray>Dodge gives you a chance
+        - <gray>to reduce incoming damage
+        - <gray>by half (50%).
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_acrobatics_ability_dodge%'
+  UNARMED:
+    Name: Unarmed
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Unarmed is a combat skill
+    - <white>which allows users to use
+    - <white>their fists as if they were
+    - <white>a proper weapon.
+    Abilities:
+      BLOCK_CRACKER:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Block Cracker
+        Description:
+        - <dark_gray>◘ <gray>Allows you to turn Stone
+        - <gray>Bricks into Cracked Stone
+        - <gray>Bricks by punching them.
+        - ''
+        - <#00a8ff>This ability only works in
+        - <#00a8ff>the Berserk mode.
+      STEEL_ARM_STYLE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Steel Arm Style
+        Description:
+        - <dark_gray>◘ <gray>Steel Arm Style increases the
+        - <gray>damage dealt when hitting mobs
+        - <gray>or players with your fists.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Max Damage Bonus: <#fbc531>%mcmmogui_skill_unarmed_ability_steel-arm-style%'
+      BERSERK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Berserk
+        Description:
+        - <dark_gray>◘ <white>While you are in the Berserk
+        - <white>mode, you deal more damage
+        - <white>and can break weak blocks
+        - <white>instantly, such as Dirt, Grass.
+        - ''
+        - <gray>Berserk is an active ability
+        - <gray>that is activated by right
+        - <gray>clicking with bare hand.
+        UnlockedStats:
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_unarmed_ability_berserk%
+          second(s)'
+        - '<dark_gray>🗡 <white>Damage Multiplier: <#fbc531>x%mcmmogui_skill_unarmed_ability_berserk_damage%'
+      UNARMED_LIMIT_BREAK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Unarmed Limit Break
+        Description:
+        - <white>◘ <gray>Breaking your limits. Increased
+        - <gray>hands damage against strong
+        - <gray>opponents (High Armor Points).
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Max Bonus Damage: <#fbc531>%mcmmogui_skill_unarmed_ability_unarmed-limit-break%'
+      ARROW_DEFLECT:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Arrow Deflect
+        Description:
+        - <dark_gray>◘ <gray>Arrow Deflect is a passive
+        - <gray>skill that gives you a chance
+        - <gray>to deflect arrows shot by
+        - <gray>Skeletons or other players.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_unarmed_ability_arrow-deflect%'
+      DISARM:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Disarm
+        Description:
+        - <dark_gray>◘ <gray>This passive ability allows
+        - <gray>players to disarm other
+        - <gray>players, causing the target's
+        - <gray>equipped item to fall to the
+        - <gray>ground.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Chance to Disarm: <#6ab04c>%mcmmogui_skill_unarmed_ability_disarm%'
+      IRON_GRIP:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Iron Grip
+        Description:
+        - <dark_gray>◘ <gray>Iron Grip is a passive ability
+        - <gray>that counters Disarm. As your
+        - <gray>unarmed level increases, the
+        - <gray>chance of preventing a disarm
+        - <gray>increases.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Chance to Prevent: <#6ab04c>%mcmmogui_skill_unarmed_ability_iron-grip%'
+  TAMING:
+    Name: Taming
+    Type: ᴄᴏᴍʙᴀᴛ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Taming grants you various
+    - <white>combat bonuses when using
+    - <white>tamed wolves or ocelots.
+    Abilities:
+      BEAST_LORE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Beast Lore
+        Description:
+        - <dark_gray>◘ <gray>Displays information about
+        - <gray>the wolf or ocelot you inspect
+        - <gray>when left-clicking while holding
+        - <gray>a bone.
+      CALL_OF_THE_WILD:
+        Hide: false
+        Type: ᴀᴄᴛɪᴠᴇ
+        Name: Call Of The Wild
+        Description:
+        - <dark_gray>◘ <white>Call of the Wild is an active
+        - <white>ability that allows you to
+        - <white>summon a wolf or ocelot to
+        - <white>your side.
+        - ''
+        - <dark_gray>Activate by sneaking and
+        - <dark_gray>left clicking while holding
+        - <dark_gray>bones or fish.
+      ENVIRONMENTALLY_AWARE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Environmentally Aware
+        Description:
+        - <dark_gray>◘ <gray>This passive ability allows wolves
+        - <gray>to teleport to you when they are
+        - <gray>near hazards like cacti or lava.
+        - ''
+        - <dark_gray>It also grants wolves immunity to
+        - <dark_gray>all damage.
+      GORE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Gore
+        Description:
+        - <dark_gray>◘ <gray>Gore has a chance to
+        - <gray>inflict a bleeding effect
+        - <gray>on the targets of your
+        - <gray>wolves.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_taming_ability_gore%'
+      FAST_FOOD_SERVICE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Fast Food Service
+        Description:
+        - <dark_gray>◘ <gray>This passive ability gives
+        - <gray>wolves a chance to heal
+        - <gray>whenever they perform
+        - <gray>an attack.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_taming_ability_fast-food-service%%'
+      PUMMEL:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Pummel
+        Description:
+        - <dark_gray>◘ <gray>Your wolves have a
+        - <gray>chance to knock back
+        - <gray>foes.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_taming_ability_pummel%%'
+      THICK_FUR:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Thick Fur
+        Description:
+        - <dark_gray>◘ <gray>Reduce the damage
+        - <gray>taken by your pets.
+        UnlockedStats:
+        - '<dark_gray>🪣 <white>Reflection Dmg: <#00a8ff>%mcmmogui_skill_taming_ability_thick-fur%%'
+      HOLY_HOUND:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Holy Hound
+        Description:
+        - <dark_gray>◘ <gray>This passive ability heals
+        - <gray>your pet when it takes Magic
+        - <gray>or Poison damage.
+        UnlockedStats:
+        - '<dark_gray>❤ <white>Healthing Amount: <#4cd137>%mcmmogui_skill_taming_ability_holy-hound%'
+      SHOCK_PROOF:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Shock Proof
+        Description:
+        - <dark_gray>◘ <gray>This passive ability reduces
+        - <gray>damage done to wolves from
+        - <gray>explosions.
+        UnlockedStats:
+        - '<dark_gray>🪣 <white>Reflection Dmg: <#00a8ff>%mcmmogui_skill_taming_ability_shock-proof%%'
+      SHARPENED_CLAWS:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Sharpened Claws
+        Description:
+        - <dark_gray>◘ <gray>Sharpened Claws provides
+        - <gray>a damage bonus to attacks
+        - <gray>by wolves.
+        UnlockedStats:
+        - '<dark_gray>🗡 <white>Bonus Damage: <#fbc531>%mcmmogui_skill_taming_ability_sharpened-claws%'
+  MINING:
+    Name: Mining
+    Type: ɢᴀᴛʜᴇʀɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Mining is a skill focused on
+    - <white>mining stones and ores. It
+    - <white>provides a bonus to material
+    - <white>drops.
+    Abilities:
+      DOUBLE_DROPS:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Double Drops
+        Description:
+        - <dark_gray>◘ <gray>This ability helps you have
+        - <gray>a chance to receive double
+        - <gray>drops when mining ores.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Double Drop Chance: <#6ab04c>%mcmmogui_skill_mining_ability_double-drops%'
+      SUPER_BREAKER:
+        Hide: false
+        Type: ᴀᴄᴛɪᴠᴇ
+        Name: Super Breaker
+        Description:
+        - <dark_gray>◘ <white>When activated, Super Breaker
+        - <white>applies a +5 Efficiency levels
+        - <white>to your currently held pickaxe.
+        - ''
+        - <gray>This also triples your chance of
+        - <gray>extra items dropping and allows
+        - <gray>for the instant breaking of mining
+        - <gray>materials.
+        UnlockedStats:
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_mining_ability_super-breaker%
+          sᴇᴄᴏɴᴅ(s)'
+        - '<dark_gray>⭘ <white>Triple Drop Chance: <#6ab04c>%mcmmogui_skill_mining_ability_super-breaker_triple-chance%'
+      BLAST_MINING:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Blast Mining
+        Description:
+        - <dark_gray>◘ <gray>With a pickaxe in hand, crouch
+        - <gray>and right-click on TNT from a
+        - <gray>distance to cause it to instantly
+        - <gray>explode.
+        UnlockedStats:
+        - '<dark_gray>⛏ <white>Ore Bonus: <#e84118>%mcmmogui_skill_mining_ability_blast-mining_bonus%'
+        - '<dark_gray>⛏ <white>Drop Multiplier: <#e84118>x%mcmmogui_skill_mining_ability_blast-mining_multiplier%'
+      BIGGER_BOMBS:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Bigger Bombs
+        Description:
+        - <gray>Unlocking Bigger Bombs extends
+        - <gray>the radius of your Blast Mining
+        - <gray>explosions.
+        UnlockedStats:
+        - '<dark_gray>⛏ <white>Blast Radius: <#e84118>+%mcmmogui_skill_mining_ability_bigger-bombs%
+          ʙʟᴏᴄᴋ(s)'
+      DEMOLITIONS_EXPERTISE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Demolitions Expertise
+        Description:
+        - <dark_gray>◘ <gray>Reduces the damage you take
+        - <gray>from TNT explosions.
+        UnlockedStats:
+        - '<dark_gray>🪣 <white>Damage Reduction: <#00a8ff>%mcmmogui_skill_mining_ability_demolitions-expertise%'
+      MOTHER_LODE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Mother Lode
+        Description:
+        - <dark_gray>◘ <gray>Gives you a chance to
+        - <gray>receive triple the materials
+        - <gray>when mining.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_mining_ability_mother-lode%'
+  WOODCUTTING:
+    Name: Woodcutting
+    Type: ɢᴀᴛʜᴇʀɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Woodcutting gives you extra
+    - <white>drop bonuses when chopping
+    - <white>trees and the ability to clear
+    - <white>leaves quickly.
+    Abilities:
+      HARVEST_LUMBER:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Harvest Lumber
+        Description:
+        - <dark_gray>◘ <gray>This passive ability gives you
+        - <gray>a chance to obtain an extra
+        - <gray>block for every log you chop.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_woodcutting_ability_harvest-lumber%'
+      TREE_FELLER:
+        Hide: false
+        Type: ᴀᴄᴛɪᴠᴇ
+        Name: Tree Feller
+        Description:
+        - <dark_gray>◘ <white>Tree Feller is an active
+        - <white>ability activated by right
+        - <white>clicking with an axe.
+        - ''
+        - <gray>This will cause the entire
+        - <gray>tree to break instantly,
+        - <gray>dropping all of its logs at
+        - <gray>once.
+        UnlockedStats:
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_woodcutting_ability_tree-feller%
+          sᴇᴄᴏɴᴅ(s)'
+      LEAF_BLOWER:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Leaf Blower
+        Description:
+        - <dark_gray>◘ <gray>Blow leaves with an axe
+      KNOCK_ON_WOOD:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Knock On Wood
+        Description:
+        - <dark_gray>◘ <gray>Find additional experiences
+        - <gray>when using Tree Feller.
+        UnlockedStats:
+        - '<dark_gray>🪓 <white>Drops: <#6ab04c>%mcmmogui_skill_woodcutting_ability_knock-on-wood%'
+      CLEAN_CUTS:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Clean Cuts
+        Description:
+        - <dark_gray>◘ <gray>When you chop wood, there
+        - <gray>is a chance to receive three
+        - <gray>times the yield.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Triple Drop Chance: <#6ab04c>%mcmmogui_skill_woodcutting_ability_clean-cuts%'
+  EXCAVATION:
+    Name: Excavation
+    Type: ɢᴀᴛʜᴇʀɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>"Excavation" involves digging
+    - <white>and requires a shovel of some
+    - <white>kind.
+    Abilities:
+      ARCHAEOLOGY:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Archaeology
+        Description:
+        - <dark_gray>◘ <gray>Have a chance to obtain
+        - <gray>random treasures & gain
+        - <gray>experience while digging.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_excavation_ability_archaeology%%'
+        - '<dark_gray>◎ <white>Experiences: <#2ecc71>%mcmmogui_skill_excavation_ability_archaeology_amount%'
+      GIGA_DRILL_BREAKER:
+        Hide: false
+        Type: ᴀᴄᴛɪᴠᴇ
+        Name: Giga Drill Breaker
+        Description:
+        - <dark_gray>◘ <white>When activated, this ability will
+        - <white>applies a +5 Efficiency levels
+        - <white>to your currently held shovel.
+        - ''
+        - <gray>This also triples your chance of
+        - <gray>extra items dropping & experience
+        UnlockedStats:
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_excavation_ability_giga-drill-breaker%
+          sᴇᴄᴏɴᴅ(s)'
+  HERBALISM:
+    Name: Herbalism
+    Type: ɢᴀᴛʜᴇʀɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>The Herbalism skill offers
+    - <white>extra drops and automatic
+    - <white>crop replanting, saving time
+    - <white>and effort.
+    Abilities:
+      HYLIAN_LUCK:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Hylian Luck
+        Description:
+        - <dark_gray>◘ <gray>This passive ability gives
+        - <gray>you a chance to find rare
+        - <gray>items when certain blocks
+        - <gray>are broken with a hoe.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_herbalism_ability_hylian-luck%'
+      SHROOM_THUMB:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Shroom Thumb
+        Description:
+        - <dark_gray>◘ <gray>Provides a chance to
+        - <gray>turn dirt into mycelium
+        - <gray>by clicking on it with a
+        - <#ff7675>red <gray>or <#A52A2A>brown <gray>mushroom.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Success Chance: <#6ab04c>%mcmmogui_skill_herbalism_ability_shroom-thumb%'
+      DOUBLE_DROPS:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Double Drops
+        Description:
+        - <dark_gray>◘ <gray>This will increases harvesting
+        - <gray>precision, granting double drops
+        - <gray>upon harvesting crops.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Double Drop Chance: <#6ab04c>%mcmmogui_skill_herbalism_ability_double-drops%'
+      GREEN_TERRA:
+        Hide: false
+        Type: ᴀᴄᴛɪᴠᴇ
+        Name: Green Terra
+        Description:
+        - <dark_gray>◘ <white>Green Terra grants a chance to get
+        - <white>triple drops from harvesting plants.
+        - ''
+        - <gray>Green Terra is an active ability. You
+        - <gray>can right-click while holding a hoe to
+        - <gray>activate it.
+        UnlockedStats:
+        - '<dark_gray>⏳ <white>Duration: <#6ab04c>%mcmmogui_skill_herbalism_ability_green-terra%
+          sᴇᴄᴏɴᴅ(s)'
+      FARMERS_DIET:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Farmer's Diet
+        Description:
+        - <dark_gray>◘ <gray>Increases the amount of
+        - <gray>hunger restored by grown
+        - <gray>plant foods.
+        UnlockedStats:
+        - '<dark_gray>🍖 <white>Hunger Points: <#27ae60>%mcmmogui_skill_herbalism_ability_farmers-diet%'
+      GREEN_THUMB:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Green Thumb
+        Description:
+        - <dark_gray>◘ <gray>Provides a chance to
+        - <gray>replant crops upon
+        - <gray>harvesting them.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Replant Chance: <#6ab04c>%mcmmogui_skill_herbalism_ability_green-thumb%'
+      VERDANT_BOUNTY:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Verdant Bounty
+        Description:
+        - <dark_gray>◘ <gray>When you harvest, there is
+        - <gray>a chance to receive three
+        - <gray>times the yield.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Triple Drop Chance: <#6ab04c>%mcmmogui_skill_herbalism_ability_verdant-bounty%'
+  FISHING:
+    Name: Fishing
+    Type: ɢᴀᴛʜᴇʀɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>The Fishing skill allows you
+    - <white>to fish faster & catch unique
+    - <white>treasures, mob drops.
+    Abilities:
+      MASTER_ANGLER:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Master Angler
+        Description:
+        - <dark_gray>◘ <gray>This passive skill increases
+        - <gray>the bite chance while fishing
+        - <gray>in a boat.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Triple Drop Chance: <#6ab04c>%mcmmogui_skill_fishing_ability_master-angler%'
+        - ''
+        - '<dark_gray>⏳ <white>Min Wait Time: <#6ab04c>-%mcmmogui_skill_fishing_ability_master-angler_min-wait-length%
+          sᴇᴄᴏɴᴅ(s)'
+        - '<dark_gray>⏳ <white>Max Wait Time: <#6ab04c>-%mcmmogui_skill_fishing_ability_master-angler_max-wait-length%
+          sᴇᴄᴏɴᴅ(s)'
+      TREASURE_HUNTER:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Treasure Hunter
+        Description:
+        - <dark_gray>◘ <gray>Treasure Hunter allows
+        - <gray>you to find unique treasures
+        - <gray>while fishing.
+        UnlockedStats:
+        - <dark_gray>⭘ <gray>ᴄᴏᴍᴍᴏɴ:<white> %mcmmogui_skill_fishing_ability_treasure-hunter_common%%
+        - <dark_gray>⭘ <green>ᴜɴᴄᴏᴍᴍᴏɴ:<white> %mcmmogui_skill_fishing_ability_treasure-hunter_uncommon%%
+        - <dark_gray>⭘ <blue>ʀᴀʀᴇ:<white> %mcmmogui_skill_fishing_ability_treasure-hunter_rare%%
+        - <dark_gray>⭘ <light_purple>ᴇᴘɪᴄ:<white> %mcmmogui_skill_fishing_ability_treasure-hunter_epic%%
+        - <dark_gray>⭘ <gold>ʟᴇɢᴇɴᴅᴀʀʏ:<white> %mcmmogui_skill_fishing_ability_treasure-hunter_legendary%%
+        - <dark_gray>⭘ <aqua>ᴍʏᴛʜɪᴄ:<white> %mcmmogui_skill_fishing_ability_treasure-hunter_mythic%%
+      ICE_FISHING:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Ice Fishing
+        Description:
+        - <dark_gray>◘ <gray>Allow you to fish
+        - <gray>in ice biomes.
+      SHAKE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Shake
+        Description:
+        - <dark_gray>◘ <gray>This active ability allows you
+        - <gray>to shake items loose from mobs
+        - <gray>by hooking them with the fishing
+        - <gray>rod.
+        - ''
+        - <dark_gray>Mobs will drop items they would
+        - <dark_gray>normally drop on death.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Shake Drop Chance: <#6ab04c>%mcmmogui_skill_fishing_ability_shake%'
+      FISHERMANS_DIET:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Fisherman's Diet
+        Description:
+        - <dark_gray>◘ <gray>This passive ability increases
+        - <gray>the amount of hunger points
+        - <gray>restored from eating fish.
+        UnlockedStats:
+        - '<dark_gray>🍖 <white>Hunger Points: <#27ae60>%mcmmogui_skill_fishing_ability_fishermans-diet%'
+      MAGIC_HUNTER:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Magic Hunter
+        Description:
+        - <dark_gray>◘ <gray>Find enchanted items
+        - <gray>while fishing.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Action Chance: <#6ab04c>%mcmmogui_skill_fishing_ability_magic-hunter%'
+  ALCHEMY:
+    Name: Alchemy
+    Type: ᴄʀᴀꜰᴛɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>It provides a speed rise
+    - <white>in potion brew time, as well
+    - <white>as the extra new potions.
+    Abilities:
+      CATALYSIS:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Catalysis
+        Description:
+        - <dark_gray>◘ <gray>Catalysis speeds up the
+        - <gray>brewing process with a max
+        - <gray>speed of 4x at level 1000.
+        UnlockedStats:
+        - '<dark_gray>⚗ <white>Brewing Speed: <#e67e22>x%mcmmogui_skill_alchemy_ability_catalysis%'
+      CONCOCTIONS:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Concoctions
+        Description:
+        - <dark_gray>◘ <gray>Concoctions allows brewing
+        - <gray>of more potions with custom
+        - <gray>ingredients.
+        - ''
+        - <dark_gray>Take a look on Mcmmo wiki to
+        - <dark_gray>view all the recipes.
+        UnlockedStats: []
+  # - <green>+ <white>sᴋɪʟʟ ʀᴀɴᴋ:<green> %mcmmogui_skill_alchemy_ability_concoctions%
+  REPAIR:
+    Name: Repair
+    Type: ᴄʀᴀꜰᴛɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Repair allows you to use
+    - <white>an Iron Block as an Anvil
+    - <white>to repair armor and tools.
+    Abilities:
+      REPAIR_MASTERY:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Repair Mastery
+        Description:
+        - <dark_gray>◘ <gray>Repair Mastery increases
+        - <gray>the repair amount.
+        UnlockedStats:
+        - '<dark_gray>⚓ <white>Durability Restored: <#7ed6df>%mcmmogui_skill_repair_ability_repair-mastery%'
+      ARCANE_FORGING:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Arcane Forging
+        Description:
+        - <dark_gray>◘ <gray>Arcane Forging allows you
+        - <gray>to repair items with a chance
+        - <gray>of maintaining their enchants
+        - ''
+        - <dark_gray>The enchantments may be kept
+        - <dark_gray>at their levels, downgraded
+        - <dark_gray>to a lower level, or lost.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Success Chance: <#6ab04c>%mcmmogui_skill_repair_ability_arcane-forging_success%%'
+        - '<dark_gray>⭘ <white>Failure Chance: <#eb4d4b>%mcmmogui_skill_repair_ability_arcane-forging_failure%%'
+      SUPER_REPAIR:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Super Repair
+        Description:
+        - <dark_gray>◘ <gray>Super Repair is a passive
+        - <gray>ability that grants players
+        - <gray>a chance to repair with
+        - <gray>double effectiveness.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Success Chance: <#6ab04c>%mcmmogui_skill_repair_ability_super-repair%'
+  SALVAGE:
+    Name: Salvage
+    Type: ᴄʀᴀꜰᴛɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Salvage is a child skill that
+    - <white>allows you to get materials
+    - '<white>from tools or armor, you '
+    - <white>salvage with it.
+    - ''
+    - <#f1c40f>⚠ <gray>This is a child-skill, it will
+    - <gray>gains average levels from
+    - '<gray>parent skills:'
+    - ''
+    - <dark_gray>+ <#f1c40f><bold>Fishing  <reset><gray>Level.<white>%mcmmogui_skill_fishing_level%
+    - <dark_gray>+ <#f1c40f><bold>Repair   <reset><gray>Level.<white>%mcmmogui_skill_repair_level%
+    Abilities:
+      SCRAP_COLLECTOR:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Scrap Collector
+        Description:
+        - <dark_gray>◘ <gray>Unlocks at skill level 35
+        - <gray>by default When unlocked,
+        - <gray>this ability allows you to
+        - '<gray>salvage damaged items. '
+        - ''
+        - <dark_gray>The yield percentage rises
+        - '<dark_gray>as you level up. A higher '
+        - <dark_gray>yield means that you can
+        - <dark_gray>get more materials back
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Max Amount: <#6ab04c>%mcmmogui_skill_salvage_ability_scrap-collector%
+          ɪᴛᴇᴍ(s)'
+      ARCANE_SALVAGE:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Arcane Salvage
+        Description:
+        - <dark_gray>◘ <gray>Unlocks at Salvage Lv 2 by
+        - <gray>default This ability allows you
+        - '<gray>to get enchanted books when '
+        - '<gray>salvaging enchanted items. '
+        - ''
+        - '<dark_gray>Depending on your level the '
+        - '<dark_gray>chance of successfully '
+        - <dark_gray>extracting a full or partial
+        - <dark_gray>enchantment varies. When
+        - <dark_gray>an enchantment is partially
+        - '<dark_gray>extracted, the enchantment '
+        - <dark_gray>book will have a lower level
+        - <dark_gray>enchantment compared to
+        - <dark_gray>what it was on the item
+        UnlockedStats:
+        - '<dark_gray>☀ <white>Full Enchants: <#6ab04c>%mcmmogui_skill_salvage_ability_arcane-salvage_full%%'
+        - '<dark_gray>☀ <white>Partial Enchants: <#c0392b>%mcmmogui_skill_salvage_ability_arcane-salvage_partial%%'
+  SMELTING:
+    Name: Smelting
+    Type: ᴄʀᴀꜰᴛɪɴɢ sᴋɪʟʟ
+    Description:
+    - <dark_gray>◘ <white>Smelting is a child skill that
+    - <white>helps you reduce smelting time
+    - <white>and increase the output of
+    - <white>finished products.
+    - ''
+    - <#f1c40f>⚠ <gray>This is a child-skill, it will
+    - <gray>gains average levels from
+    - '<gray>parent skills:'
+    - ''
+    - <dark_gray>+ <#f1c40f><bold>Mining   <reset><gray>Level.<white>%mcmmogui_skill_mining_level%
+    - <dark_gray>+ <#f1c40f><bold>Repair   <reset><gray>Level.<white>%mcmmogui_skill_repair_level%
+    Abilities:
+      SECOND_SMELT:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Second Smelt
+        Description:
+        - <dark_gray>◘ <gray>Double the resources
+        - <gray>gained from smelting.
+        UnlockedStats:
+        - '<dark_gray>⭘ <white>Active Chance: <#6ab04c>%mcmmogui_skill_smelting_ability_second-smelt%'
+      FUEL_EFFICIENCY:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Fuel Efficiency
+        Description:
+        - <gray>Increase the burn time of
+        - <gray>fuel used in furnaces when
+        - <gray>smelting.
+        UnlockedStats:
+        - '<dark_gray>⚡ <white>Efficiency Multiplier: <#6ab04c>x%mcmmogui_skill_smelting_ability_fuel-efficiency%'
+      UNDERSTANDING_THE_ART:
+        Hide: false
+        Type: ᴘᴀssɪᴠᴇ
+        Name: Understanding The Art
+        Description:
+        - <dark_gray>◘ <gray>Maybe you're spending a bit too
+        - <gray>much time smelting. You will recieve
+        - <gray>more experiences.
+        UnlockedStats:
+        - '<dark_gray>⚡ <white>Experience Multiplier: <#6ab04c>x%mcmmogui_skill_smelting_ability_understanding-the-art%'
+
+Gui:
+  PlayerRanking:
+    Title: '     ᴍᴄᴍᴍᴏ ᴘʟᴀʏᴇʀ ʀᴀɴᴋɪɴɢ'
+    FeatureButtons:
+      DefaultTop:
+        Name: <yellow>#%position%. <#ff793f><bold>%name%
+        Lore:
+        - '<gray>Level: <white>%level%'
+      EmptyTop:
+        Name: <dark_gray>Empty
+        Lore: []
+      ChangeSkill:
+        Name: <white>Change Leaderboard
+        CategoryFormat:
+          Normal: ' <gray>⭘ %name% '
+          Active: ' <yellow>◎ %name%'
+        Lore:
+        - ''
+        - <dark_gray>⇄ Left / Right to switch
+        - <dark_gray>current leaderboard.
+        - ''
+        - '%categories%'
+        - ''
+    
+    DecorationButtons:
+      Back:
+        Name: Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  LanguageSelector:
+    Title: '    ᴍᴄᴍᴍᴏ ʟᴀɴɢᴜᴀɢᴇ sᴇʟᴇᴄᴛᴏʀ'
+    FeatureButtons:
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+      LanguageDefaultFormat:
+        Name: '<white>Language: <#ff793f>%name%'
+        Lore:
+        - <dark_gray>→ Click to change
+      Language_English:
+        Name: '<white>Language: <#ff793f>%name%'
+        Lore:
+        - <dark_gray>→ Click to change
+      Language_Vietnamese:
+        Name: '<white>Language: <#ff793f>%name%'
+        Lore:
+        - <dark_gray>→ Click to change
+      LanguageSelector:
+        Name: <red>Notice:<white> This will only change
+        Lore:
+        - <white>the language of the Gui, not the
+        - <white>entire mcmmo (chat, bossbar, ...)
+        - ''
+        - '<dark_gray>⚑ <white>Current: <#ff793f>%name%'
+    DecorationButtons:
+      Back:
+        Name: Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  SkillOverview:
+    Title: '      ᴍᴄᴍᴍᴏ sᴋɪʟʟ ᴏᴠᴇʀᴠɪᴇᴡ'
+    FeatureButtons:
+      PlayerTop:
+        Name: <white>Skills Leaderboard
+        Lore:
+        - ''
+        - <gray>Player:<#ff793f> %player%
+        - '<gray>Overall Position: <#fd9644>#<bold>%mcmmogui_top_overall%'
+        - ''
+        - <dark_gray>[ᴄᴏᴍʙᴀᴛ sᴋɪʟʟs]
+        - ' <dark_gray>#<white>%mcmmogui_top_acrobatics% <#e67e22>Acrobatics'
+        - ' <dark_gray>#<white>%mcmmogui_top_archery% <#e67e22>Archery'
+        - ' <dark_gray>#<white>%mcmmogui_top_unarmed% <#e67e22>Unarmed'
+        - ' <dark_gray>#<white>%mcmmogui_top_swords% <#e67e22>Swords'
+        - ' <dark_gray>#<white>%mcmmogui_top_taming% <#e67e22>Taming'
+        - ' <dark_gray>#<white>%mcmmogui_top_axes% <#e67e22>Axes'
+        - ''
+        - <dark_gray>[ɢᴀᴛʜᴇʀɪɴɢ sᴋɪʟʟs]
+        - ' <dark_gray>#<white>%mcmmogui_top_woodcutting% <#2ecc71>Woodcutting'
+        - ' <dark_gray>#<white>%mcmmogui_top_excavation% <#2ecc71>Excavation'
+        - ' <dark_gray>#<white>%mcmmogui_top_herbalism% <#2ecc71>Herbalism'
+        - ' <dark_gray>#<white>%mcmmogui_top_fishing% <#2ecc71>Fishing'
+        - ' <dark_gray>#<white>%mcmmogui_top_mining% <#2ecc71>Mining'
+        - ''
+        - <dark_gray>[ᴄʀᴀꜰᴛɪɴɢ sᴋɪʟʟs]
+        - ' <dark_gray>#<white>%mcmmogui_top_alchemy% <#3498db>Alchemy'
+        - ' <dark_gray>#<white>%mcmmogui_top_repair% <#3498db>Repair'
+        - ''
+        - <dark_gray>→ Click to view detail
+      DefaultSkillFormat: # skill format
+        Name: <#ff793f><bold>%name%<reset> <dark_gray>- <gray>Level.<white>%level%<dark_gray>
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - <dark_gray>[ᴘʀᴏɢʀᴇssɪᴏɴ] %skill-process%
+        - ' <white>%skill-process-bar%'
+        - ''
+        - <dark_gray>[sᴋɪʟʟ ᴀʙɪʟɪᴛɪᴇs]
+        - '%abilities%'
+        - ''
+        - <dark_gray>→ Click to view all abilities
+      HasParty:
+        Name: <white>Party Information
+        Lore:
+        - ''
+        - '<gray>Name: <white>%mcmmogui_party_name%'
+        - '<gray>Owner: <#ff793f>@%mcmmogui_party_leader%'
+        - ''
+        - '<dark_gray>◘ <white>ʟᴇᴠᴇʟ: <gray>Lv.<white>%mcmmogui_party_level% <dark_gray>(<yellow>%mcmmogui_party_xp-percent%<dark_gray>)'
+        - '<dark_gray>◘ <white>ᴇxᴘs: <dark_gray>(<gray>%mcmmogui_party_xp%<dark_gray>/<white>%mcmmogui_party_xp-next%<dark_gray>)'
+        - '<dark_gray>◘ <white>ᴏɴʟɪɴᴇ: <white>%mcmmogui_party_online%<gray>/<red>%mcmmogui_party_size%'
+        - ''
+        - <dark_gray>[ᴘᴀʀᴛʏ ꜰᴇᴀᴛᴜʀᴇs]
+        - '%features%'
+        - ''
+        - <dark_gray>[ᴘᴀʀᴛʏ ᴍᴇᴍʙᴇʀs]
+        - '%members%'
+      NoParty:
+        Name: <red>You dont have any party
+        Lore:
+        - '<red>join one or click here to '
+        - <red>create your own party!
+      Player:
+        Name: <white>Player's Information
+        Lore:
+        - ''
+        - <gray>Player:<#ff793f> %player%
+        - <gray>Power Level:<#ff793f> %mcmmogui_power-level%
+        - ''
+        - <dark_gray>[ᴄᴏᴍʙᴀᴛ sᴋɪʟʟs]
+        - ' <#e67e22>Acrobatics <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_acrobatics_level%'
+        - ' <#e67e22>Archery <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_archery_level%'
+        - ' <#e67e22>Unarmed <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_unarmed_level%'
+        - ' <#e67e22>Swords <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_swords_level%'
+        - ' <#e67e22>Taming <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_taming_level%'
+        - ' <#e67e22>Axes <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_axes_level%'
+        - ''
+        - <dark_gray>[ɢᴀᴛʜᴇʀɪɴɢ sᴋɪʟʟs]
+        - ' <#2ecc71>Woodcutting <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_woodcutting_level%'
+        - ' <#2ecc71>Excavation <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_excavation_level%'
+        - ' <#2ecc71>Herbalism <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_herbalism_level%'
+        - ' <#2ecc71>Fishing <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_fishing_level%'
+        - ' <#2ecc71>Mining <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_mining_level%'
+        - ''
+        - <dark_gray>[ᴄʀᴀꜰᴛɪɴɢ sᴋɪʟʟs]
+        - ' <#3498db>Alchemy <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_alchemy_level%'
+        - ' <#3498db>Salvage <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_salvage_level%'
+        - ' <#3498db>Smelting <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_smelting_level%'
+        - ' <#3498db>Repair <dark_gray>- <gray>ʟᴠ.<white>%mcmmogui_skill_repair_level%'
+    
+    DecorationButtons:
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Swords:
+    Title: '         sᴡᴏʀᴅs ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Swords)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Axes:
+    Title: '         ᴀxᴇs ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Axes)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Archery:
+    Title: '         ᴀʀᴄʜᴇʀʏ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Achery)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Acrobatics:
+    Title: '         ᴀᴄʀᴏʙᴀᴛɪᴄs ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Acrobatics)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Unarmed:
+    Title: '         ᴜɴᴀʀᴍᴇᴅ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Unarmed)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Taming:
+    Title: '         ᴛᴀᴍɪɴɢ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Taming)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Mining:
+    Title: '         ᴍɪɴɪɴɢ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Mining)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Woodcutting:
+    Title: '      ᴡᴏᴏᴅᴄᴜᴛᴛɪɴɢ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Woodcutting)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Excavation:
+    Title: '         ᴇxᴄᴀᴠᴀᴛɪᴏɴ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Excavation)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Herbalism:
+    Title: '       ʜᴇʀʙᴀʟɪsᴍ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Herbalism)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Fishing:
+    Title: '         ғɪsʜɪɴɢ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Fishing)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Alchemy:
+    Title: '         ᴀʟᴄʜᴇᴍʏ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Alchemy)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Repair:
+    Title: '         ʀᴇᴘᴀɪʀ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Repair)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Salvage:
+    Title: '         sᴀʟᴠᴀɢᴇ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Salvage)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Smelting:
+    Title: '         sᴍᴇʟᴛɪɴɢ ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Smelting)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Maces:
+    Title: '         ᴍᴀᴄᴇs ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Maces)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Tridents:
+    Title: '         ᴛʀɪᴅᴇɴᴛs ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Tridents)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  Crossbows:
+    Title: '        ᴄʀᴏssʙᴏᴡs ᴀʙɪʟɪᴛɪᴇs'
+    FeatureButtons:
+      DefaultAbilityFormat:
+        Name: <#dff9fb>%name% <reset><dark_gray>(Crossbows)
+        Lore:
+        - <dark_gray>%type%
+        - ''
+        - '%description%'
+        - ''
+        - '%stats%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Close:
+        Name: <white>Close Gui
+        Lore: []
+  FishingTreasure:
+    Title: '        ꜰɪsʜɪɴɢ ᴛʀᴇᴀsᴜʀᴇs'
+    FeatureButtons:
+      TreasureFormat:
+        Name: <white>%name%
+        Lore:
+        - ''
+        - '<gray>ʀᴀʀɪᴛʏ: <white>%rarity%'
+        - '<gray>ᴀᴍᴏᴜɴᴛ: <green>%amount%'
+        - '<gray>ᴇxᴘs: <green>%xp%'
+    DecorationButtons:
+      Back:
+        Name: <white>Back to Overview
+        Lore: []
+      Prev:
+        Name: <white>Previous Page
+        Lore: []
+      Next:
+        Name: <white>Next Page
+        Lore: []
+
+# License Number: 7a1a72bc-04bc-4db2-820c-4ed1adac5044

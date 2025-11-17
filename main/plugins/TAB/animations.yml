@@ -1,0 +1,23 @@
+logo:
+  change-interval: 50
+  texts:
+  - "&#FFAC72&lᴘʀ&#FFB17Cɪᴍ&#FFAC72ᴇᴡ&#FFA767ᴀʀ&#FFA25Dѕ &#FF9C52ʀᴇ&#FF9748ʙᴏ&#FF923Dʀɴ"
+  - "&#FFA767&lᴘʀ&#FFAC72ɪᴍ&#FFB17Cᴇᴡ&#FFAC72ᴀʀ&#FFA767ѕ &#FFA25Dʀᴇ&#FF9C52ʙᴏ&#FF9748ʀɴ"
+  - "&#FFA25D&lᴘʀ&#FFA767ɪᴍ&#FFAC72ᴇᴡ&#FFB17Cᴀʀ&#FFAC72ѕ &#FFA767ʀᴇ&#FFA25Dʙᴏ&#FF9C52ʀɴ"
+  - "&#FF9C52&lᴘʀ&#FFA25Dɪᴍ&#FFA767ᴇᴡ&#FFAC72ᴀʀ&#FFB17Cѕ &#FFAC72ʀᴇ&#FFA767ʙᴏ&#FFA25Dʀɴ"
+  - "&#FF9748&lᴘʀ&#FF9C52ɪᴍ&#FFA25Dᴇᴡ&#FFA767ᴀʀ&#FFAC72ѕ &#FFB17Cʀᴇ&#FFAC72ʙᴏ&#FFA767ʀɴ"
+  - "&#FF923D&lᴘʀ&#FF9748ɪᴍ&#FF9C52ᴇᴡ&#FFA25Dᴀʀ&#FFA767ѕ &#FFAC72ʀᴇ&#FFB17Cʙᴏ&#FFAC72ʀɴ"
+  - "&#FF8D33&lᴘʀ&#FF923Dɪᴍ&#FF9748ᴇᴡ&#FF9C52ᴀʀ&#FFA25Dѕ &#FFA767ʀᴇ&#FFAC72ʙᴏ&#FFB17Cʀɴ"
+  - "&#FF923D&lᴘʀ&#FF8D33ɪᴍ&#FF923Dᴇᴡ&#FF9748ᴀʀ&#FF9C52ѕ &#FFA25Dʀᴇ&#FFA767ʙᴏ&#FFAC72ʀɴ"
+  - "&#FF9748&lᴘʀ&#FF923Dɪᴍ&#FF8D33ᴇᴡ&#FF923Dᴀʀ&#FF9748ѕ &#FF9C52ʀᴇ&#FFA25Dʙᴏ&#FFA767ʀɴ"
+  - "&#FF9C52&lᴘʀ&#FF9748ɪᴍ&#FF923Dᴇᴡ&#FF8D33ᴀʀ&#FF923Dѕ &#FF9748ʀᴇ&#FF9C52ʙᴏ&#FFA25Dʀɴ"
+  - "&#FFA25D&lᴘʀ&#FF9C52ɪᴍ&#FF9748ᴇᴡ&#FF923Dᴀʀ&#FF8D33ѕ &#FF923Dʀᴇ&#FF9748ʙᴏ&#FF9C52ʀɴ"
+  - "&#FFA767&lᴘʀ&#FFA25Dɪᴍ&#FF9C52ᴇᴡ&#FF9748ᴀʀ&#FF923Dѕ &#FF8D33ʀᴇ&#FF923Dʙᴏ&#FF9748ʀɴ"
+  - "&#FFAC72&lᴘʀ&#FFA767ɪᴍ&#FFA25Dᴇᴡ&#FF9C52ᴀʀ&#FF9748ѕ &#FF923Dʀᴇ&#FF8D33ʙᴏ&#FF923Dʀɴ"
+  - "&#FFB17C&lᴘʀ&#FFAC72ɪᴍ&#FFA767ᴇᴡ&#FFA25Dᴀʀ&#FF9C52ѕ &#FF9748ʀᴇ&#FF923Dʙᴏ&#FF8D33ʀɴ"
+
+class:
+  change-interval: 2500
+  texts:
+  - "&r%nexo_class% &7ᴄʟᴀѕѕ ѕᴛᴀᴛѕ:\n &r&7ᴄʟᴀѕѕ: <#b6d7a8>%mmocore_class%</#ffe599> &8ʟᴠ. &r%mmocore_level%%nexo_level%&8"
+  - "&r&7ѕᴋɪʟʟѕ & ᴀᴛᴛʀɪʙᴜᴛᴇ ѕᴛᴀᴛѕ:\n &r%nexo_skill_points% &7ѕᴋɪʟʟѕ: <#f1c232>%mmocore_skill_points% &7| &r%nexo_attributes_points% &7ᴘᴏɪɴᴛѕ: <#f44336>%mmocore_attribute_points%"

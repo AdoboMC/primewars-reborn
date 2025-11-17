@@ -1,0 +1,326 @@
+Crate:
+  # https://docs.crazycrew.us/docs/plugins/crazycrates/misc/crate-types
+
+    # Make sure to check out the wiki for anything not explained here.
+  # https://docs.crazycrew.us/docs/category/crazycrates
+
+    # See CosmicCrate.yml or CasinoCrate.yml to see how the Cosmic/Casino CrateType works.
+  CrateType: CSGO
+  # Name of the Inventory if a GUI crate.
+  CrateName: <red>Boss Crate
+  # The name of the inventory that will be in the preview GUI.
+  Preview-Name: <red>Boss Crate Preview
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # The amount of keys required to use the crate.
+  RequiredKeys: 0
+  # Max amount of crates that can be opened at once using /crates mass-open
+  Max-Mass-Open: 20
+  # If the crate shows in the /crates.
+  # If the type is QuickCrate/CrateOnTheGo/FireCracker, They will not work as they require a Physical Crate.
+  InGUI: true
+  # Slot the item is in the GUI.
+  Slot: 22
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: true
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><red>Boss
+    Crate.</bold>'
+  # This section is related to commands opening when a crate is opened.
+  opening-command:
+    # If the commands should be sent or not.
+    toggle: false
+    # The commands to run when the crate opens.
+    # Supports all placeholderapi placeholders
+    # Supports %prefix which returns our prefix, %player% which uses the player name
+    commands:
+    - put your command here.
+  sound:
+    # The sound options when the animation is cycling.
+    cycle-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use.
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: block.note_block.xylophone
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when an item is clicked.
+    click-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: ui.button.click
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when a crate ends.
+    stop-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: entity.player.levelup
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+  # A default message if the prize doesn't have any Messages
+  # i.e. Messages: [] or the value isn't there.
+  Prize-Message:
+  - <gray>You have won <red>%reward% <gray>from <red>%crate%.
+  # A default command if the prize doesn't have any commands
+  # i.e. Commands: [] or the value isn't there.
+  Prize-Commands: []
+  # Item the crate is in the GUI
+  Item: redstone
+  # The custom model data of the item, -1 is disabled.
+  Custom-Model-Data: -1
+  # If the crate in the main /crates is glowing or not.
+  Glowing: false
+  # Name of the item in the GUI.
+  Name: <bold><green>Visayas Crate</bold>
+  # The lore of the item in the GUI.
+  Lore:
+  - <gray>This crate contains strange objects.
+  - <gray>You have <gold>%keys% keys <gray>to open this crate with.
+  - '<gray>You have opened this crate: <gold>%crate_opened% times'
+  - <gray>(<yellow>!<gray>) Right click to view rewards.
+  Preview:
+    # Turn on and off the preview for this crate.
+    Toggle: true
+    # How many lines the Crate Preview should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      # Turn the glass border in the preview on and off.
+      Toggle: true
+      # The name of the border item.
+      Name: ' '
+      # The item that shows in the border. Can be glass or any other item.
+      Item: gray_stained_glass_pane
+      # The custom model data of the item, -1 is disabled.
+      Custom-Model-Data: -1
+  PhysicalKey:
+    # Name of the Key.
+    Name: <bold><red>Boss Crate Key</bold>
+    # Lore of the Key.
+    Lore:
+    - <gray>A special Key
+    - <gray>For a special Crate.
+    # The item the key is.
+    Item: trial_key
+    # The custom model data of the item, -1 is disabled.
+    Custom-Model-Data: -1
+    # Makes the key look enchanted.
+    Glowing: true
+    # Settings for the holograms.
+    # Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The distance the hologram can be seen.
+    Range: 8
+    # How often should the hologram update? -1 is disabled.
+    Update-Interval: -1
+    # The background color of the hologram. It uses hex colors. This only works with CMI/FancyHolograms
+    # Set the color to transparent if you don't want any color.
+    Color: transparent
+    # The message that will be displayed above the crate.
+    # Note: MiniMessage or Color Codes being supported is depending on the 'holograms' plugin.
+    Message:
+    - <bold><red>Boss Crate</bold>
+  # All the prizes that can be obtained in the Crate.
+  # These prizes do not require any extra configuration
+  # They will give the prizes based on what's already below.
+  # See the AdvancedExample.yml for a more advanced crate.
+  Prizes:
+    '1':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22QTU7DMBCFByLUKCyQ+Nt0g7zuCbKsegBW3SAUTexJY8WxwR6LoqrH4HYchokEAYlKXr038/nNqwAKuNwg45ZissEDXL2WcG4N3I3Wk47YcZ04eGrSW4imgAsdsmcAOKug0mF8Ec9zKv8u6CwrY+NxJPg4KNpzRFU/HVQbnFE1x0wrpYMLUdVqN2krZRmd1aru0CVxQ9vlpJHJzFLiaAfiPoa862eVhS6UDY6Y5N+HtUNDwsveUHQS6QdwfJ6H1bGA5b+4YzDkGiNlACw+qxMHTV4F14+5lajrPAyWt+gyyfULT/tQS2+3mJI865t2StKk3vp3gBJufnGW6bude3VqXAF8AVp/68aaAQAA
+      Items:
+      - Data:H4sIAAAAAAAA/22QTU7DMBCFByLUKCyQ+Nt0g7zuCbKsegBW3SAUTexJY8WxwR6LoqrH4HYchokEAYlKXr038/nNqwAKuNwg45ZissEDXL2WcG4N3I3Wk47YcZ04eGrSW4imgAsdsmcAOKug0mF8Ec9zKv8u6CwrY+NxJPg4KNpzRFU/HVQbnFE1x0wrpYMLUdVqN2krZRmd1aru0CVxQ9vlpJHJzFLiaAfiPoa862eVhS6UDY6Y5N+HtUNDwsveUHQS6QdwfJ6H1bGA5b+4YzDkGiNlACw+qxMHTV4F14+5lajrPAyWt+gyyfULT/tQS2+3mJI865t2StKk3vp3gBJufnGW6bude3VqXAF8AVp/68aaAQAA
+      Chance: 35
+      Tiers:
+      - common
+    '2':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor DRAGON_HELMET %player% 1
+      Chance: 55
+    '3':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor DRAGON_CHESTPLATE %player% 1
+      Chance: 55
+    '4':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor DRAGON_LEGGINGS %player% 1
+      Chance: 55
+    '6':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor DRAGON_BOOTS %player% 1
+      Chance: 55
+    '7':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor UNDEAD_SLAYER_HELMET %player% 1
+      Chance: 1
+    '8':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor UNDEAD_SLAYER_CHESTPLATE %player% 1
+      Chance: 1
+    '9':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor UNDEAD_SLAYER_LEGGINGS %player% 1
+      Chance: 1
+    '10':
+      MaxRange: 100
+      DisplayData: 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
+      Commands:
+      - mi give armor UNDEAD_SLAYER_BOOTS %player% 1
+      Chance: 1
+    '11':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81YX2/bVBS/XSBKUzHGysYkGLtYTDysKu1Gt5EHFrexGmv5N9vtVtrKurFvEqv+k9k366Kq0iTEA18AAQ+ItwoNCcET4mnqnvga+wyIZ44T23HcuGyTNuqHRM4595zfOfec3z03eYQyaKZEGFmnrmc4NkJvezl0ytDRWcuwqeaSFisYrmOr5CHNoDc1p2czhNBUHuU1x+o6NrWZl0cXR9qEMddo9hhVLUc3WgYYngKrHWdXNWyVOY7JjC6aRtOROO8bzKE3WL9L0YcjS21qU9fQ5sEi0XZUr0upnkVZYgUgBk8OTTtd6hLmo58muq4+IGaPDoM4bVmOwajlFXSqOX2E8ujcyH7PbrqU7JCmSScgBIinR7qm44JNhGbRN3scfchcwhU297imY+pcoUVMj85xmgNaXIHb7YBPbo4zGDENLRI7zVbP0wijoxUepGqHso7r9Nqd6FcG9sEMWOjZOnVNABEu2d8eiffRnTiU0Hufmqaze9R9sEyi93uGSz1ceWDixYUFbtzkCYru10nR6cTdUcn9HkkNEHP7cyP9tkv6qarPfvwD84PiwiVikTYtjC9OCTVYvbTE/Y+AZb8bXgjv4vxnCcC/vHrA3/6El01oV9xwdqn7Qnivv/70Rmgl4BO7/UJwbyxdTgD+/bUArpK2ob1M/V5ZvD5/NYn559eCec0DAhpb0gTOTq/cBYjSJgmoj08i1KtYZgSOjSTYE8SrX73EqfHsu6+fP234yuLSwmWsdAZAgtI8ufn4clI+ji0hqAnMOhR3fU7DTmvw4jHHtT5KhElfItcNk/Q9TLDWA5MW9mDa0fFuh9p4OAgBMSXd3J3kpu1Saqd6uWuYJrYdhnXX6WLHxjolrJM0fIK26c9X3u6KEZ1Qw1CZ24tFOvDV7bldM739qxtKWVzhK4k03pu8P8dgKfVc0jRMg/UL+OYCPPjT4fe45Tw6P5pRqa11iM2s4UieNekDanoZNDvS8DrE7drU82CSzWTis3ALZkKVwIit+ZN1xp+rY9JhKao2seh4LJPydOx2KB3H/cTDZWJZ1E3GctSjDleTLDpfrdZFRajKKq8o/MpttcRX+VWhePtRcAWYjRRWhaoqK/WaICO8xwlWl/Vl02EeoAVfq3AVYHBnGbzuZ9C70TpJWBdlsV5TxZIffw7ly7Iibag1viogcY8DVvdR+q8QW31Vhm7vD1IQmfBl6tPfoMxB8fCgeXhgJqPdn0LvR/olUeaXK4JaEnilrJakemMqg96LIbqzJkpCSa0I60IFQMHd51wkXa6s1RRV4hWxtlqUngzykEUfRHK5vlYrqRBPkLGGqNz663v/+SFuBtIoroTpXPii8Lh45u8ceiuSK6IgoVxY1fGVgV25IQilW/+0Bk8uJi9tQD7AdqUuCadmNiEhLUgcfB4e0CN3kLm4+Bo+PLgxYTQHIYzcKUrBOAwyf8wdU0qOoCC6nqIRjn0g88e5pNL4qAWyYIRK6g1mhsODz8O5JU0+GhbGEkDhtAXNycfomGbzuJMotPZc50mgTNKOhaM7NGTLw4MlqPOI9gKFG+n0tZ2Ndd2wihv1u4JUvBDe589EYv/Tb8gZpVyX1DJfrQpSvDoHzTk7odXifVTl76mlNYlfFiuisoGmbj7KoXciqVBbKfM1RUaXNrmIHfE1CCTGiPAOsC+NuqIMzSVIQd+oDUFaEWpKsfkkiODseATKRkNA2RD+hbQeRReBuCFj86bR7jAbtkUFemXzbFgAU2hmLfaHRTbmpcrXeHWlLivFj8Mknh7SVxQeiSgs/CmNxkJ5RGWbW/HMbHFzW+O52eK2fWo7jn3W65Vi8H9NnENkBSgihI6O7n+4Z6c2t+Pb7lMKMnxK+c/6f/7iT638bQD1L2eDswooEwAA
+      Commands:
+      - mi give hammer THOR_HAMMER %player% 1
+      Chance: 1
+    '12':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9VWz2/jRBR+3dIozYruLqsFDrAYSz1tFLXqLi25bE1itWbzC9vdVVUVM7EnjVXbk47H7UZVkTjAkSNwQlxQxZEbPySQigT8FyD+jb3w7LRO0japetjV1odY8fvmvfd9b+bNywFMwvUyEeQx5aHLAoAbO1m45jpwy3cDanPSEkXBXYcGYhKmbBYFAgAmcpCzmd9hAX4Pc/B2H0wEwpuRoJbPHLflot8JuBG22Z7lBpZgzBNuB6ZhOjXnYodZeEV0OxTu9j1t0YBy1y6gR2JvW2GHUicDGeIfJ5E8WZhmHcqJiJOfJo5j7RIvoj0OM77PXEH9sOhQm3UBw870/XuMIw5gBr7Zl+lTwYlc3NiXm8xz5GKLeCHNyzZDlFyU99roR87LriCea6dm1mxFoU0E7a8Ikf42FW3Ooq12+lWgf3SDHqLAodzDJE6WHGyecXuCPoCPBzM7SaZLPY/tnc3meJlOdyKX01Cq7HrSA3ms/5eX+e/nMXcI37bITkRGkpfkg3wfv8VJdyT0v29/kpRkb0ll4pMtWhxePIL58eqlwtJ4aX97kQSM+HBcKv/5wuL4/P98/vl/9Z1U4q6QjGTnSKU2CezLVeHee4X52ZeNR4PtUX45GvP3CwsX8PjlhfBYC7FxDC1pYjsdueQ+cibYUslVbTP+eapucUqD0TJ9/YWk+h3RldaCZAV1pBXqSwazMa+rKoR3vhBjtosi4ZVMuOQTh0otxiXbYyGVcC5oElG4qjr89dyPmemm3aHHXPBogHgSa6yDtVqpXq3Wa2MlzsKd/qhjR6FgvhUQn8KHly600Sa8E18xhCch0xi5c2I4OExm4HXMTzPVqmEppqmUHlllpaqsqMvvfib9+ulbn2ThZgqIfy2tDNeNVUVvWEZDVfQM3DntAL+r5YfPFpInC6+m9ppSVWHm6HBxIM0s3E7tK+jeMOs11YB7+3JycA2PiRD5y+kBlpEWnmFkENDYson63UpdqLXSqlIzDbi2sTmY+lpjRVfKKtj7OHS1KKd4faEwUeDu4lxLPFT0CePbTfze35hlihuWddP/FbpLPbk4l5er5Gnv7QbJ24hsm4aYzlxhDvPJrRqmvt7jW96XsfHGVYj/Ypz6iiEY7yZFHZLG+uNHjIfAYYWwkAeT8EYK1dWP1jRdLVsV9bFawal4KgN3U2tJ10ytpFRQSF17pFqN+hNVX85/+e/n9dnvs/DacDHN9YYKU2cKaZhKVaspVqlumMs3e+N7Bt4ZGSTWvKQuv9n65+HPP/w9qLvygVbRzPVeOfoByutIWCtZlbquTngbyLiFyuDv0SE9NRTnB40LEmpzzjSIxnjKG4E6HrnQFo9SQ6ARcw0ievPKOPDx8BBje0PBaXByQx8dvt+/eofIkAuupyHw4gU9/KxMveZ1dLh0dOilfWhz8DyamqpD9sQ2aInrArNxXS6Ku4lb43+/c5mynA4AAA==
+      Commands:
+      - mi give spear SHARP_SPEAR %player% 1
+      Chance: 55
+    '13':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+VX3W7jRBQ+2eyGNGgXyk9BQiyWJZaLjSKVpVTKzdabDF2r+cP2tlRVZU3tSWLV9mTH42ajqg/ACyDBBeKul7BISFyXN+EVuOKOcZzaiZtE6kqUlfBF0vh855zvnPnmzLQEkIc365jjXcICh/oAbwVFuOXY8J7n+MRiuMurDqO+GQwps/Nwx6KhzwEgV4KSRb0B9YnPgxJ8nOIx58w5CjkxPWo7XUeEzom4fTo0Hd/klLrcGcAKrCTmUhSwCLf5aEDgfhqpR3zCHKsiImLr2AwGhNgFKGBvQmL8FGGFDgjDPOK/gm3bPMFuSOIy7nkedTjxgqpNLDoCkfZeGt+lTOAA7sK3pzJ5wRmWqwen8hF1bbnaxW5AyrJFBUquysO+iCOXZYdj17ESMz3qhoGFOUk9AlH+MeF9RsNeP3nLRXwRRkQIfZswV5C4dDk7TM1n0J6mcpl9RFyXDq+mn7hp5HnoMBJIjRNX2pRnA75Gtb2cV5uN2bGJn4d4YXmSfFZO8T2GRwuhf/74u6SM5SLVsYd7pDrrvKDUiff6emUj072fb5KyHin8eowrX2YI//bvE/7uJ6nGHC7pYzVItT72res1+uHnn/7ntDt0SNj1WK9/kaV9A/IQtDsn6FXk/HC9cqXPv94I4T2CxdHwSpw3KhtZzq/RBNuf176l7fiKsh6xpS5l0hAz5ohvl5yQ//mcNpxk78WlchZOVbrUt9ZuNtut2e7lp28sHn5h2mPpAdz+pQjvpyYrDDj1TB97BJrzqmSiJYtJc+xLenQVEidtZv1Kc9LY4mol0gu6qoGaulnfbylNtWY22hrK4QP54rwrkonPi3OSOcPL08ZH0sX55pyjTRjHR9YC2OQ4iVDimJgBLRjhAhGN5mXQydiMkNE4zEKnR9UYU5kTLzMeItx4288Uvblk51ztTiwo8cfFuTsRyGFhqvWKYSi1HVPvIFR//Pf30fNDEd5O7NGnqdahYKiG0toswt3EJNYMweoDK7P8RVhNIKhVe6q0DB1uHYis7ybvO7vIrCtNZRs9/uvR+BFCTawa2lV1td2K8gKs5uCjVCmqrjxpoMvAamtbXJBLT3VD24/5bJ/KOseR9KKfohXtbZ1TNhqLeYa6+cdLMQ4E8EoFQsBnBbifoGuaaqg1pWGKNOoOMjvtPaRtleN7dh4+TIBN5Zu4YXFt0S7LwwdTdX39TNVQ3WygXdQQvm/kpnqypzYa5hMNKTuipHdmF8DY7yC4o++1tXoB1lIXpHREm+JsW2sxoQJ8spB51LQa2oJL5FpWB5NQn13+D5GutqEiDQqxhKbfR3sWpAP5wTJdHopg/wA7nut7Vg0AAA==
+      Commands:
+      - mi give SWORD TITAN7 %player% 1 
+      Chance: 55
+    '14':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9VXX2/bVBS/XbcoDVrLGNvggWFZ/JFYV9qGqiMPUBNf0mhJGuK0W9VW1q1901ixfVP7pmlo+y0QAh4Qb31D4o0XGCrwQeAb8MA7x3biOE3jrpVWsTzYsc+fe36/c+71OSmExtErMuFkjTquwWyEpnaT6Jqho3uWYVPNITWesSmvU8fgVCX7dBzd0FjL5gihsRRKacxqMpva3E2ht/omhHPH2G6BicV0o2aA9zE05dZZWzVslTNmcqOJJtBEKE55DpPoOu80Kbrf97RDbVhbmwGPRGuobpNSPYESxOoG4f+SaII1qUO4B2GC6Lq6R8wWDZBMWhaD4C03o1ONdRAsO9n3bzIH9BC6hb45EOk+d4iY2TgQt5mpi5kaMV06LWoMtMSM2K6DH3FaNDgxDS0Us+1ay9UIp30LF+A3gDaHtXbq4VsO/sENeGjZOnVMCKJncrQ15LanfYTUaGS9YDrUNFl7OJquWYXutgyHukJhzxTmFsTYBf6/0H89C7pOnIZKdltkJHpBPJru6+84pDNS9e/vfxYkv7gEmVhkh2YGjUcg71rPp+OZvdL4FW9zXCj8uZm5+Pj/fPHxf/2DkIXTRVD8whGydWJrF0vCg/Tsu/Ew/rhyGGXWps7FUMw9OgfFL1eCoryHL7MTHiycl4STqwm/3nENjZiXwjB3HobfrgTDKpyRRL8cgvQ5CJ5dCYIi26MWtAWXOJMezr+sH6vGWdQ6YDvK5nPmCLzOXCq060wgDrXf5wKpOcTQBVaLp8G46GJQUoBkR2gbvA6rUsEH12aOqc+8rIy/+COlaoTHeICcO60IcH+tONZxOZ+NZ5eehSE2JrnlkG3DNHgnI3z8aHZW+NC/xS6TQnf7TS+1NfjKcivo2xMm3aOmO45u9zXcOnGaNnVdaI1vjKOpiMSCVCNvcIC2+07/vdZyObNUm1h0LDVcMM9LW7RkApsuhMPDw9FpONfVIB3d81UxSYc6l0luXJR+GiK8D3Okw8CVQHeLxZV8FRcVVapWpexjVZaKUg4vLfZmmldDBe+q5mV0c7UkY0lWlYK0jisJdOe0C6WMsfzpP996v++S6HYoz4EDpbpSwgoSDkRsNXlHMRl3IUMQbQ6mIw5jnP94lEQ3Q7uSVMTo4cnxRyfH5slxw0vCybEGD4MURhUS6I3QvLy8ruSzUqGH7Z0AWyISWXkN96T5QDqO7oXSovRUlVcr0mf5Qr66jtB7y0l0K5TiUnZZKlUV9OaGGFassAD58qtUSItbURpXy7mKJGP0+EB8wpzGtrcNwpTKFI4m1gmfC96mEDOz02KR7Ad3w/bvSkvTYB34PzMLZKWWlWplPWBKOxAVTrzMe48Qx0pO4czp+BthgFT1959gPVC8ELdQW0fRyunWQ5e/D4b5q+AvVvMVLKsFvIYLIJxKoPuhNFvJV/30AIL8Y6yWV57gytJ8rwBfGyzA6noZo3HpKU6iyQBzyP9GiLv3ahT2njzEv7EZTd2mOL3ZS96muBXgfXtkwJ6vLF76ZHjL9Crm2gaUQH+fyOtAfj6rFlYqeOzfDWC/BpHC9eSYnh6Zp6PSNORh8YxZEYQwA45Q6jY/IPMGrQGlEVMPaPjTTJxud7TwVL2R4bRqtH/3dBbOcDfUJPvOzlA81Yn6aulhtdPtHkihjRsgUDun2empxbYpwykJvs/BHvG/tV3h4qiP5FYierysrOEiLlWDg/PZV1/+lfvx9YPoAVjN4wq67nmOvvXKB+W88nkeWPGYtqBy/wMLCY8oiRMAAA==
+      Commands:
+      - mi give AXE UNDEAD_SLAYER %player% 1
+      Chance: 1
+    '15':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9VX32/bVBS+XUeUBuhKNYZAYniWpj1QyuiPdcsLcROvsZYfxXFaolJZN85NYtX2be3rdlHVdx54RkhIiLc8IYF4QUxCKEjwzBPvk/gD+A84dhI7SRN3mVjF8uCqPt895zuf7z3n3ARCs+jVDGZ4h9iOTi2Erh3F0RW9hhZN3SKajessqdvUUvFjMote0ahrMYTQTAIlNGoeUotYzEmgd0M0ZszWqy4jqklrel0HxzPomtOkJ6puqYxSg+mHaA7NBeaE5zCOrrLWIUE3Q08NYhFb15bBI9YOVOeQkFoMxbDZI+H/4miOHhIbM4/9HK7V1GNsuKSbxLxpUp0R00nWiEZbCMLOh/4NagMOoUX01SlPHjMb88m9U75KjRqfrGPDIUu8RgHFJ/mTJvjhl3idYUPXAjOt1l1Hw4yEKxxI/4Cwpk3dRjN4y8A/uAEPrlUjtgEk+kvO9s+57aPPkDrIrE+mRQyDnpxn01smkyNXt4nD5Y4NbmWdjwzw/03913Gp17B9oOIjF0/MnuPPlkJ8w8atidCn3/zECf7m4jLYxA2SHF48IfPe6tWV5Y1obf948Rl8+S2XtnXGlXzpuXQTW9p0abz/0d3lB7ejE/n90hPZpifEni6PldXljQvyeHIpeWwaUJ+eI4MLTuovl0hehnpqNaZif3/9AvF/vhT+ZQcK39CSKrSDiUvWYMNhaAk4kvvM3xO5jyc0UgmZ7YbuPuj9fJLditu19/2OlyOyuHL/pTOxXicac0YKtuc2DDLSIyKkCBiOq//P4e9ZpO0rPG3LuZwjtk1sE3uD0zTHqwQdn5N2XtZmro1TNjpjgTsmdotrEnwMT2yaxF6OTt8cFyTyc1Soy2HDpA7jNGzdYZxJj8kSB+Mrp7M7TnS43anDnVCbNcHzrZf1M774A6LoQdccV84a3ruJg68gi9HKkqk/Wca1cVU3dNZKcqv31u9yH/p/IsPE0ZvhLUNzHUZN1cImGd4xY9OLopL1T0LWPwl+/CBgYkzAGtzqYuhGPl+UFDFfUgVFEdKP1IyQF7bEVOqzj2/8eeu7GLoeADZz5YKibhd3RTl1vX+5WgjM3lOVMui1rCjsVNSskM+Lchy9HgAKQl5Ei532RqdtDFKdRW8FmLzwqZopy8KmlJOUCkLzm3H0RmAVC+msUFBK6MrefhwlsiVFrnTdZk956NNest6/oFBxq8So3fKFHGKg/vYDbHkAnicCmp0NkpHFT8qSLGbUnLgj5iDdt+HDBdZtUc6r4sOHYhoIJSB+rrjLJ9fOYuhmgEnLkiKlhZwKTKVHYk+8je8//+udf3KxAWddbWVBkQpbqXKqJ+7isLhKZVtEsa6wg4tLipCXCoKaLpaU1EL3y8TQexNZeCKmxdTtJ2vlL378ejCnTAUkktJqriiLVxb2QKM6aAnPTpuM3hqXBq2rHMg55roERv8aNASbcCcBRO+uEYXujc0euDvQj4KHpmswrU9A9EdYsHmj6SjInxM77QfhANhD3O+0zf4A0WlXYQ8BzOrNRGDmBuzhnDHsPOzw8L7fuYcErY/tbj3jxkVtqY8L+8n5r9UtpJ32PcjAL4z9RZMq2v7gYVYkUUZXvXWDb719g4r+vpnI/5nIDzDfh938L7DnP8+IEgAA
+      Commands:
+      - mi give HAMMER HEAVY_HAMMER %player% 1
+      Chance: 9
+    '16':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81X3W/bVBQ/oSOkGW0ZbEN8Wxbry6qKtWWFiId6ideaOh84XkOVVdatfZNYtX1T+7pdW/XfQHtCvPUNiTfEC6PAG/sj4C/h2okdN19VK4hmKZHi8zvnnt855977SxZgCm4WEEVb2PVM4gDM7WfgNdOAOdt0sO6iBs151NT3puB1nfgOBYBUFrI6sdvEwQ71svBRD4oodc1dn2LNJobZMFnUFMx5LXKomY5GCbGo2YZpmI7N2SBgBm7QozaGj3uRmtjBrqkvsohI39O8NsZGGtLI7iYRPhmYJm3sIhqkPo0MQztAlo87DGZtm5gU217OwDo5ArbsbC++RVyGA5iB5yc8fkZdxOfqJ/wusQw+10CWhxd4nTAUn+MPWywOv8CbFFmmHpvJbsP3dERxz8Nj9PcwbbnEb7bit5TFZ2FYBN8xsGuxJCKX052BsBH6FLRkZlEyR9iyyOFgNl03Be/7pos9Tj6wuIef8WMXeHWpvxhG3UDunob2fTSSPcefLvTwTRcdjYT+8/3PnBAOF1dANmri3EXnEcy73kvLiw/G1/aP/5/Bdz9w1T3Tsri8a1Iu30KOfjUW95dW7o1n8eekWVTIIXavSIL14hIav06ERuVAvM4s3V9+uPj5JQTOJ0KghhE71a/HYfVSDr9NhEMRNU39ehRWLqXwy4QoPGMfB111G4zP/eUktzK76Q1y6HAKNnw9uJ7/8y396t5dzWGFdpnvKJ/wzGv4FqcjG3MNl9icgXGbtryxJcjC3Z6ewY7Ozn9qB5JsiOTKQtrCB9jypuBWz4mhDdNpBhIsEFN3ehbd9yixNYclBPXBSlPXTxR6l2mukeSqFDUaHGlwNfP4GLlGSCnBYXBRg+nRNNwtFsuSKharmqCqQn5TKwhFYV1cW33zL/a8TMOtGFAUvmWfkrC2+saPt4//3sjAW7Et+NakAtwMnLWaUCosraTgw9hekKrCI1nUpJIqKkJelcolJkdnYntJKIpwe/7LebmfSCaRgVjKbwgltQozdb5bVO4Bv5OGd2JIZUuMKDxaC9VrCj4YSKMbSCqtp9LwaWyubkqyrOUVSZXygqxVVUXaFLVKuSYqUUFS8N5AtGpRUjeCWBnIbjCn7Q6dr0+CrgQNCH6yzpXXq5S4R2GDLzDXfv+J7Q0GHFYA1snTYavmFeFxl8G9SxgEZPPi2hcdOZ9OFCRfLsuFcq2kKWLhSdiWiOgUvBujFPGbJxJDaLK4JcosxFcpeH8gIUWsCJLSqcPbFydD3a6IcCMYi+H1E2W14zfbqV/c6GJcw+jVqDpG9riW9ae9GXnK73TK+MnA4t2xrwjVqrQlppI7oiYKlXIpHqcX3erdSeyIdSkf2YXHjeDJJOyFbdZdhpDLiph6XufPzxosffZ9fob7/0EsJK3L3PnZ6hDpzIyhJL4AG65PGSDUnWOgXREYIsOboB+bVFoBqqOg+lF9ciYErg4DXtQMIW5lOC66mDupjeIw5Pbr4xJ56mPO/p3kORR0Crg6Pz/Wg43Bv0ei1hfUDwAA
+      Items:
+      - Data:H4sIAAAAAAAA/81X3W/bVBQ/oSOkGW0ZbEN8Wxbry6qKtWWFiId6ideaOh84XkOVVdatfZNYtX1T+7pdW/XfQHtCvPUNiTfEC6PAG/sj4C/h2okdN19VK4hmKZHi8zvnnt855977SxZgCm4WEEVb2PVM4gDM7WfgNdOAOdt0sO6iBs151NT3puB1nfgOBYBUFrI6sdvEwQ71svBRD4oodc1dn2LNJobZMFnUFMx5LXKomY5GCbGo2YZpmI7N2SBgBm7QozaGj3uRmtjBrqkvsohI39O8NsZGGtLI7iYRPhmYJm3sIhqkPo0MQztAlo87DGZtm5gU217OwDo5ArbsbC++RVyGA5iB5yc8fkZdxOfqJ/wusQw+10CWhxd4nTAUn+MPWywOv8CbFFmmHpvJbsP3dERxz8Nj9PcwbbnEb7bit5TFZ2FYBN8xsGuxJCKX052BsBH6FLRkZlEyR9iyyOFgNl03Be/7pos9Tj6wuIef8WMXeHWpvxhG3UDunob2fTSSPcefLvTwTRcdjYT+8/3PnBAOF1dANmri3EXnEcy73kvLiw/G1/aP/5/Bdz9w1T3Tsri8a1Iu30KOfjUW95dW7o1n8eekWVTIIXavSIL14hIav06ERuVAvM4s3V9+uPj5JQTOJ0KghhE71a/HYfVSDr9NhEMRNU39ehRWLqXwy4QoPGMfB111G4zP/eUktzK76Q1y6HAKNnw9uJ7/8y396t5dzWGFdpnvKJ/wzGv4FqcjG3MNl9icgXGbtryxJcjC3Z6ewY7Ozn9qB5JsiOTKQtrCB9jypuBWz4mhDdNpBhIsEFN3ehbd9yixNYclBPXBSlPXTxR6l2mukeSqFDUaHGlwNfP4GLlGSCnBYXBRg+nRNNwtFsuSKharmqCqQn5TKwhFYV1cW33zL/a8TMOtGFAUvmWfkrC2+saPt4//3sjAW7Et+NakAtwMnLWaUCosraTgw9hekKrCI1nUpJIqKkJelcolJkdnYntJKIpwe/7LebmfSCaRgVjKbwgltQozdb5bVO4Bv5OGd2JIZUuMKDxaC9VrCj4YSKMbSCqtp9LwaWyubkqyrOUVSZXygqxVVUXaFLVKuSYqUUFS8N5AtGpRUjeCWBnIbjCn7Q6dr0+CrgQNCH6yzpXXq5S4R2GDLzDXfv+J7Q0GHFYA1snTYavmFeFxl8G9SxgEZPPi2hcdOZ9OFCRfLsuFcq2kKWLhSdiWiOgUvBujFPGbJxJDaLK4JcosxFcpeH8gIUWsCJLSqcPbFydD3a6IcCMYi+H1E2W14zfbqV/c6GJcw+jVqDpG9riW9ae9GXnK73TK+MnA4t2xrwjVqrQlppI7oiYKlXIpHqcX3erdSeyIdSkf2YXHjeDJJOyFbdZdhpDLiph6XufPzxosffZ9fob7/0EsJK3L3PnZ6hDpzIyhJL4AG65PGSDUnWOgXREYIsOboB+bVFoBqqOg+lF9ciYErg4DXtQMIW5lOC66mDupjeIw5Pbr4xJ56mPO/p3kORR0Crg6Pz/Wg43Bv0ei1hfUDwAA
+      Chance: 5
+    '17':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81XW2/jRBQ+oUuUBrVlgV3uYFksL1sh0WoXKdJKNc7QWs0N29tQdYM1tSeJVduT2uN2q6pP/AfgCSHx0GfeQOIidd/4A7zzSxgnseOsc1EriDaSLSXnO8ff950Zz0kRYAleKWOG94gf2NQDWDsuwEu2BWuu7RHTx21WCphtHi3ByyYNPQYAuSIUTer2qEc8FhTh/REUM+bbhyEjhkstu23zqjlYC7r01LA9g1HqMLsHy7CchItRwQLcYmc9Ah+MKnWIR3zb/IRXxOaREfQIsfKQx+6QRP9TgGXaIz5mEfVlbFnGCXZCMlCw6rrUZsQNShYx6Rnwx66O6jvU5ziAFfj+XCRPmY/F0sG5eEgdSyy1sROQddGkHCWWxNMuryOuizbDjm0mYXrYDgMTMzLKCLj8I8K6Pg073eRXxuvzMrxC6FnEdziJOOWilSkboy/g6zSzmMwZcRx6mmUzTFPJcWj7JBAqJ46wKc6s/+Iq/32Scgv7RwY+DvFU8YJ4sT7Cd3x8NhX6zw+/CFJ/bQll7OIOKY0nT1E+zN6Ybeyz/5/+tz8K2pHtOILs20yQu9gzryfh/ua92SKuFi2iQU+Jfz0NG3M0/LYQDY0TdJNFdP/BHPZ/LoR9k2D+Kr+RgIdzBPyxEAFV3LHNG/GftwV+XRD/p/zy8DWX/mzqfy1y9/Jz3aKnnqASKzSjw/i/3cUv7jnVmeSyz3On5fTfce3QEUzsEqHtU1ewCOmxbjDTgiLcHY0uxDP565650fQ1YboqQt4hJ8QJluD2KImjLdvrRNNWNDfdGUXMMGDUNTxOCL5blNM6pazb43Ol0MSeNc33lP4sYYuPrXm4W63WFR1VNUPSdUneNcpSVdpGW9Duf/JwOwFUpa/4VZO24FHvp7+LjwrwahKL7oZShmKUbDSlWnkzB+8l4bKiSZ9XkKHUdKRKsq7Ua3xoXUniNamKYHVcVCH1aFSTd6SarsHKgTjshPCp2MrD6wmksYdi7m8MptscvJshMCyk1LZzefgoCWu7SqViyKqiK7JUMTRdVXaR0ag3kRo7kYO3M9W0qqLvRLUKUNzhSfsDIeVzUWM4cj76yptT39YY9c/6q2JMs/HsZ97mbD8vWheTnier0hdD7vfmcI9kymirMLAin7JCrtcr5XqzZqio/LjfiljiEryZoFT05WOFI4wK2kMVXmIpB+9kCKmoISnqwIHXxheDvt9AcCtaCZOdQxV9kLc6cC5pcTVxL/5pmoNxPHHx4MlodTwRWwMbP8w8fLjSG5KmKXsol94ETSQ16rV4Ib0Vu3cntQm2FTmOFwa+FVLx8j7vK0dU6irKfXMgXl22OX1+v7okz/23WE8HN4Wry88mDNU8uDGOmTy5ckB0HM9ADsfDCLiRBaZnsAjyIAt5btCJUA+zqPFpYgqt0ZHdpzON9oRzMU0/TjNnnAqt9GsmagoIB+LHMzN4x/8FFPxCsNkPAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81XW2/jRBQ+oUuUBrVlgV3uYFksL1sh0WoXKdJKNc7QWs0N29tQdYM1tSeJVduT2uN2q6pP/AfgCSHx0GfeQOIidd/4A7zzSxgnseOsc1EriDaSLSXnO8ff950Zz0kRYAleKWOG94gf2NQDWDsuwEu2BWuu7RHTx21WCphtHi3ByyYNPQYAuSIUTer2qEc8FhTh/REUM+bbhyEjhkstu23zqjlYC7r01LA9g1HqMLsHy7CchItRwQLcYmc9Ah+MKnWIR3zb/IRXxOaREfQIsfKQx+6QRP9TgGXaIz5mEfVlbFnGCXZCMlCw6rrUZsQNShYx6Rnwx66O6jvU5ziAFfj+XCRPmY/F0sG5eEgdSyy1sROQddGkHCWWxNMuryOuizbDjm0mYXrYDgMTMzLKCLj8I8K6Pg073eRXxuvzMrxC6FnEdziJOOWilSkboy/g6zSzmMwZcRx6mmUzTFPJcWj7JBAqJ46wKc6s/+Iq/32Scgv7RwY+DvFU8YJ4sT7Cd3x8NhX6zw+/CFJ/bQll7OIOKY0nT1E+zN6Ybeyz/5/+tz8K2pHtOILs20yQu9gzryfh/ua92SKuFi2iQU+Jfz0NG3M0/LYQDY0TdJNFdP/BHPZ/LoR9k2D+Kr+RgIdzBPyxEAFV3LHNG/GftwV+XRD/p/zy8DWX/mzqfy1y9/Jz3aKnnqASKzSjw/i/3cUv7jnVmeSyz3On5fTfce3QEUzsEqHtU1ewCOmxbjDTgiLcHY0uxDP565650fQ1YboqQt4hJ8QJluD2KImjLdvrRNNWNDfdGUXMMGDUNTxOCL5blNM6pazb43Ol0MSeNc33lP4sYYuPrXm4W63WFR1VNUPSdUneNcpSVdpGW9Duf/JwOwFUpa/4VZO24FHvp7+LjwrwahKL7oZShmKUbDSlWnkzB+8l4bKiSZ9XkKHUdKRKsq7Ua3xoXUniNamKYHVcVCH1aFSTd6SarsHKgTjshPCp2MrD6wmksYdi7m8MptscvJshMCyk1LZzefgoCWu7SqViyKqiK7JUMTRdVXaR0ag3kRo7kYO3M9W0qqLvRLUKUNzhSfsDIeVzUWM4cj76yptT39YY9c/6q2JMs/HsZ97mbD8vWheTnier0hdD7vfmcI9kymirMLAin7JCrtcr5XqzZqio/LjfiljiEryZoFT05WOFI4wK2kMVXmIpB+9kCKmoISnqwIHXxheDvt9AcCtaCZOdQxV9kLc6cC5pcTVxL/5pmoNxPHHx4MlodTwRWwMbP8w8fLjSG5KmKXsol94ETSQ16rV4Ib0Vu3cntQm2FTmOFwa+FVLx8j7vK0dU6irKfXMgXl22OX1+v7okz/23WE8HN4Wry88mDNU8uDGOmTy5ckB0HM9ADsfDCLiRBaZnsAjyIAt5btCJUA+zqPFpYgqt0ZHdpzON9oRzMU0/TjNnnAqt9GsmagoIB+LHMzN4x/8FFPxCsNkPAAA=
+      Chance: 55
+    '18':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/2WOQQrCMBRER4tYIlJQ3OhGPEaXIq4FwW2J6S8NJvna/IhH9hhWEVy4njczTwEZJjst+kRdtByA4pZjaGssvQ1kOt1IGUha6qxQFVu+k8swMpyCABgoKMP+yoGCxAyrX8ukKOwrzzW5qu4v+q+nwuKPeGcKs0M6O2u26XKxctIuUcwxDvTgsreZNtxRlK8AkGP+2+nNfBW0JxSb/YdbHz/cBngB5uA+3uIAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/2WOQQrCMBRER4tYIlJQ3OhGPEaXIq4FwW2J6S8NJvna/IhH9hhWEVy4njczTwEZJjst+kRdtByA4pZjaGssvQ1kOt1IGUha6qxQFVu+k8swMpyCABgoKMP+yoGCxAyrX8ukKOwrzzW5qu4v+q+nwuKPeGcKs0M6O2u26XKxctIuUcwxDvTgsreZNtxRlK8AkGP+2+nNfBW0JxSb/YdbHz/cBngB5uA+3uIAAAA=
+      Chance: 55
+    '19':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/31UzW7iVhQ+ZH4ETDvTjNRF2+kIWZpIVTORJwxUg9QFMS4YYXtimxBAqWXsCzjYvtS+DmGirLqZR+i6m6wr9QGq9Bm6rfoMfYCqx0AgI8iwsPD9zvnOd75zrrMA9+BRxWLWEQkjlwYAT35Kw5brwOe+GxA7tPqsNPasKQnNIbGce/DApnHAACCVhaxN/TENSMCiLGzfSghp3/VIGu4Hlk/gE30Ue55BzlkckgxkER6TkLkEs5DnJizN5hFRGh6cWV5M4HcyrfOd4yHvHNc9eyoV8d3QeU+VTsffScHRtCdIRclHvFYuNqZvbsUWmNUqeO18fdgJDuOef8Q38ppHator22+eKZVDXmmJBaVyMJRPR/l2q/larR5OO6fNc6Ul8aoxyKtGZ9Sp2K/wLC8bylDZF/H/4J1y2px0DHEiV5uFjtHm1Wp7X35X9xW3/qZ/zH8Pj2b+Adzf/vdX9fwv9e/3//z3x8HPP34LWfh6ZZLFWOj2YkZMnzpu38UBpOBJNKQT0w1MRqnH3DFkILOEb9xi0zGB5yumAQlI6Np7yGjZIzMaE+I8hIeWv5jU7JeGTOK6xZIpZyzHMWcez4f92Pepy4gflRxi0ylg2ccrfo+GGAewBb9ccDij0OJK3QuuRz2HK/UtLyK7nE0xiitxkyHycLucyyzPtZcw7fXjyLYYWWVE2P6IsGFI48FweZrsANIgQxw4JPRQxE3K5cka7U30Jdi3ld2IGSQKV0ksjFc5mjsYspcCAqMco7mQOIT4e9zHiqRvXwo7jhj1zdnmvt9U3EsKmOM4HHsbDFmQyjY6n9MnNHRyAmpwWY673F2R4NGdud39An8yE7xUmN2g0MHbjcplWZUMUdbNSlspy5JgNlRNhG+63PVVH0vg8/qqeH1F7/DlJA2fLSmSpylV8GK3VK2im7KAUAqerWpIevmgIZqSYohaWTAkVcHF/XSJowIRnu04G9rfsWd9peCrNTZREWplxZCUKpJtL+HFsQ5bXVSZremG1p5X0C44nVmJNckrdqlWdUbD6WxOH4gx//wN9xEDP6YJvb5MwZdrujTxbVnSElkp+GINFbTyD2uaBVWWy0pFh2NUIlDftwJccw6vpUfOiBflXiw+usl+vcjNfc6hCGyiQhDiSvwev4upQURxvxa7rY6Xd2WTFF2WjNpcytMPh2m034qQFVRFb8pJ6OZssbFoZDXJ2RY973I7xZ07Vwc/Hf8DN3Hgh2kGAAA=
+      Commands:
+      - mi give CONSUMABLE SWORDS_MCMMO %player% 1
+      Chance: 50
+    '20':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41TwU7bQBAdSIscI6BUantqZa0ElwYEhwoptzSJStQ4QThFQgFZG3uTrGLvmvUaGtH8R/+Ac3+B/ljHIbHTBip8WMk7M2/emzdrAhRgvUY1PWMq5lIAbF0ZsMp92Ay5YJ6ifV3uSTkqwEtPJkIDwKoJpifDSAomdGzC+zyTaq14L9HMDaXP+xxBV2ArHsoblwtXSxloHkERilnYRMAVA17occTgQ440YIIp7u0jIvVGbhwx5q/BGg1nJKafAUUZMUV1yrxIfd+9pkHC5gJCyTUL47LPPDkGbLugKZAK81AM/Lwl7LtWlJS7t6QnA5+U+zSIWYl4ErNImdwMEYeUCNc04F4Wlr1+EntUs7wiRvkjpodKJoNhdqsRH2EQIRE+UwGSmJdMLpdg59kTiBeZzckMFB0vc5kVnfLBUO95GBlZWlqKeYxfM+vQikc8CKxIcqH3yf+amvA2HxIT3pAKHaY+P+KjCWsBu2ZBXIDtvAizfS4Gqa+pQ2/yiJfEWoauoCGDH49po1cJfVKbk0rYO0klWGRSeuZEzmTiDZmaal4QuczKx0eAbG273ejUbcetnbcqdqPqNtundfjUJfd3fWyC5/3d0fPGfGnA6wwuPd3O+UkdzGq75XyzK5+bdQNe/Z3QqMG687XRbLon7UarY8BGFkc2dXi321scw+7RTJ4Bm8dO5/Tcrbeqx5VWxwH7ljiapnLnV8i+/cXRUo2nM8+A53H39y9cXyzoXpCZh9bhBbnE0U0M2F7Kh41unpeKNR8oTInm7dPfp1qnsaztE9L+bV9t23alVXOAIlJVhiEV+JiIigYW9dHVBw/2ph7E1iD1ZScK6Jip6eLtINcSqTG8IeWD/YMSYohYBoyUtUpwb9pR9jQXxz9dg49dsvtc83H//wBfHUHTXgUAAA==
+      Commands:
+      - mi give CONSUMABLE SKILL_POINT %player% 2
+      Chance: 55
+    '21':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/4VUXWvjRhS9m/3A9rbbbmnf2kUVJFBIg3ez9rKGPjiyqOVaUmvJTmQTxFgaW5JnNEYaJZFD3gqlr/0NhbyVFgqFPqb0T/SpT/0dHTvxR9hNa7CEdO8959xz76gEcB8eNxBHPZykIYsB3ksLsBX68BENY+wlaMRrU4JynLgBRv59eOixLOYAcK8EJY/RKYtxzNMSPN0oSNgoJLgAD2JEMbxjTTJCbHzGswQXoSTCU5zwEIsqgbNMK/DrDCHg4QkiGYZfcd4q94+Csn/UIl6uVcWzbZWJqUXTV1rcy4eKVtWoiDfr1Xb+eiO3wtFhhTj7raAff5MNaa/c3u8Q3Ow892j3xIhIoEdB6NiG+HsVh3bPTLtbNmbqab/RmThRK9Bf9Cd6pO0bM4MakVrpR+rLPu1F/ahbMRvazLAN6kR+4MzUl/psMnOs1uvRUfkLeLzwD+CBuf33b7//XP/n2z//+vGnHw4/hhJ8sjYJcZ6Ew4xjlzI/HIViAPeE+wE7dcPY5YwRHk6hCMVVeOkWz6cYnq2RxjjGSejtCUTkTdx0irH/CB4hejOpxa8AxbnriM+nXES+7y48vh72E0pZyDFNaz72WA6C9skan7BE5AFswffnsphRguTa4FweMuLLtREiKd6VPSay5Jp8GggceVcOOSKhtwqz4ShLPcTxuiIV7U8wDxKWjYPV2/kOCBiBkMU+TogQsSy5OF6HL8DelLJkH88lrcl5kq0hO+E44J8rIjCROJMS7GNM9+RbqIXNtfeylDPqLnbzu7eyJRjHb/Z6g6YQFFLpgDDB10AhyQXlKUp8Sb7Y3cRA+Z0Qg8rZ8W2BpbcI9MXxFcJ13dRsVbfchmPUdU1x22ZHhc8G8tXlSDCI69Vl9eqS3eHDcQE+WEHMr67tfK1CSTENq6vXD9pqAd6/naA14EOlXdd096BtKl+5PVNpqh33RQHeXSUKKSp8uoPudGPn1bzLAjxdlaiG0qwbtgVbA/G+1LTsjnONc3guWxzNnZg/iqbMLy3OknwxlVuU7h+/iP0Sif/LLPy92BS8cO3ZQN6p7vyHVWu1iqnrdaNhQSQ0KIxSFIuFlYm4pRLyxbSk6++ntH3zHZ0v1LY0Dk+w5M21DRfSnksV0VADixy5Vt4r7wqwOGUEL9fYnK7OgTiL/wIHcDMYugUAAA==
+      Commands:
+      - mi give CONSUMABLE CLAIM_BLOCKS %player% 5
+      Chance: 50
+    '22':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41RPU/DMBC9tEIKqQQSiD1YjBUjQyQGPsQCA2LoGl3ta7Hi2JE/EKHqf+eaCsIAEovPPr/n9+65AJjC7B4jLsgH7SzAcchhohWcttqS9LiKVfQaTd1QP4UD6ZKNAJAVUEjXds6SjeEQjka4cZ5yhkzgaiOk46OoxNpjL+ZCRzRaimqFJtBcRHqPfHlTho4ki5SP1IstXP+T9+B8id/cO4+RLsU2g4vRDFn5ija27LJeG82reyPvtaIsh7MRJ1OIrq0ttgRPG7F0RgkePLHYlxWFvqm75DtDfzp6Qatcu7eyH6b4RUVx4AWcPKclP3GbmkbHBZpEHP05Az96ueOH6se+HsruE2DmB5GhwTHDJ6vAwqjFAQAA
+      Commands:
+      - crates give p randomcrate 1 %player%
+      Chance: 25
+    '23':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9VXS2/jVBS+nTJRGkTnpRFsAMuLbijVTAstilg0bdzWTB4d25lRFUXm1r5JrNq+6fX1lKjqElZICBYwIBbdoKwRiB0CZf4DEtuRWM5/4DgP22mdkA4MmnoRtT6v73w+99xzMgjNolfzmOMHhHkWdRG6dphGVywTve1YLjEYrvPskcWbhOneAbEJpy784dv2LLpqUN/lCKGZDMoY1GlRl7jcy6A3I1PMObP2fU50h5pW3YIoM+ia16RHuuXqnFKbWy00h+ZCcSZwmEav8HaLoLciTw3iEmYZS+ARGwe61yLETKEUdgYgek8azdEWYZgHqcxh09QfYdsn/YzmHYdanDhe1iQGbSMIOx/5tykDPYRuosfHIvmEMyxmq8fiPrVNMVvHtkcWRYOClpgVj5rgR1wULY5tywjFdL/uewbmJLLwIP0DwpuM+o1m+JaDf3ADHnzXJMwGEEOTk9o5t0PtE/RxHNkQTJvYNj06j2ZgppBD32LEEwqPbOHunTvixAgvb+6/JOVuYnag40Mfj01fEE8WI/0Gw+2xqk+/PxVyzKEsO2o0JuOB1Tsrkxn9/f/DLWgB0y7xvItlsHxZa+KLJG4Z2I6zeXb667Off5ieWuH9laX3hC04P0Ke1InrkclUffUcB/Tp408vAGh1DQBpzR5PU2Ga+WtsASZHOvOJOPMjd+8Onh7gfin05UO/yTU98asL/6UzqV4nBvfOVFLgNgpypngnUBEiTCrM5/A3DbVDhi96Fp68+D7z9amwS5iDg2v+Ig0mt+9R1gruZEG+rK2mkURvgxHijufrm88EyWnxtqAQU9gmjqBSAxBNpqD5bwJtwLAzdaSXl+zPkzmYUJvbDMPoKWChlVygjSC9ccb/cP99mYhmksMmwQzQTH+0cHRCvKZFbHPpsn663154G9JgS8iOvzQmXf+Vkny/Ik2kNo1uRzuB4XucOrqLHYKUC9fkps88OPgPe9uToAZLUy90GCuTEMuEXSyF3igWy7ImFVU9pxTLiq6VK9s7JUlV18NF53qoEvzqch7d2qwoqpTXH8rajqTo6r1KoZBGr4V6pVxRQrcX1hJwpdGtUG0bvKlaGaIhoLjXV1Sbwp2arcIyEZAbdBkREoFGA5hh3gRR7SSF5kdRr6eHWG+EAqm0uZMraSq6Uq2lUWZH1ZS9PrB7x6LKcUBM8C9EKW+rnLJ2j++RHPQnP0LNgmJiKkDxSZxAbadSygMdeWlLKqnS+u6f38Lz3Sx6PVRRpPsVWQHmCtIDqQCITaiCULorKUVd2tqSNgH29WMxt6GWlV1NLpfE7F2ol5ujH0Lb25XQ1R4BszFW8xUltyEXZG2vv99G/vN7kJS8qRfKijTzR1XsduqQPfx2O+Tc8rYYF68I3c5abGuBl7CNJArjq0GgtjzqyegPxmCRMPEOwcCgGigkTqADnQ+6HWc4wXQ7+92ODdHcwVAGYiEmjwadGN6REQPej4wOI5Dx2Ov1vMLZa3HE0VrC3dHtrC4P5auDbg6aCW36/Afp9yfgFLIfNJxaKva9t6DUwmr86KeV4IkfU02WFJTqW8bfB/WBPqxC1ScAXujhXRhiXUiCWoPK+xvE6aw+8REAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/9VXS2/jVBS+nTJRGkTnpRFsAMuLbijVTAstilg0bdzWTB4d25lRFUXm1r5JrNq+6fX1lKjqElZICBYwIBbdoKwRiB0CZf4DEtuRWM5/4DgP22mdkA4MmnoRtT6v73w+99xzMgjNolfzmOMHhHkWdRG6dphGVywTve1YLjEYrvPskcWbhOneAbEJpy784dv2LLpqUN/lCKGZDMoY1GlRl7jcy6A3I1PMObP2fU50h5pW3YIoM+ia16RHuuXqnFKbWy00h+ZCcSZwmEav8HaLoLciTw3iEmYZS+ARGwe61yLETKEUdgYgek8azdEWYZgHqcxh09QfYdsn/YzmHYdanDhe1iQGbSMIOx/5tykDPYRuosfHIvmEMyxmq8fiPrVNMVvHtkcWRYOClpgVj5rgR1wULY5tywjFdL/uewbmJLLwIP0DwpuM+o1m+JaDf3ADHnzXJMwGEEOTk9o5t0PtE/RxHNkQTJvYNj06j2ZgppBD32LEEwqPbOHunTvixAgvb+6/JOVuYnag40Mfj01fEE8WI/0Gw+2xqk+/PxVyzKEsO2o0JuOB1Tsrkxn9/f/DLWgB0y7xvItlsHxZa+KLJG4Z2I6zeXb667Off5ieWuH9laX3hC04P0Ke1InrkclUffUcB/Tp408vAGh1DQBpzR5PU2Ga+WtsASZHOvOJOPMjd+8Onh7gfin05UO/yTU98asL/6UzqV4nBvfOVFLgNgpypngnUBEiTCrM5/A3DbVDhi96Fp68+D7z9amwS5iDg2v+Ig0mt+9R1gruZEG+rK2mkURvgxHijufrm88EyWnxtqAQU9gmjqBSAxBNpqD5bwJtwLAzdaSXl+zPkzmYUJvbDMPoKWChlVygjSC9ccb/cP99mYhmksMmwQzQTH+0cHRCvKZFbHPpsn663154G9JgS8iOvzQmXf+Vkny/Ik2kNo1uRzuB4XucOrqLHYKUC9fkps88OPgPe9uToAZLUy90GCuTEMuEXSyF3igWy7ImFVU9pxTLiq6VK9s7JUlV18NF53qoEvzqch7d2qwoqpTXH8rajqTo6r1KoZBGr4V6pVxRQrcX1hJwpdGtUG0bvKlaGaIhoLjXV1Sbwp2arcIyEZAbdBkREoFGA5hh3gRR7SSF5kdRr6eHWG+EAqm0uZMraSq6Uq2lUWZH1ZS9PrB7x6LKcUBM8C9EKW+rnLJ2j++RHPQnP0LNgmJiKkDxSZxAbadSygMdeWlLKqnS+u6f38Lz3Sx6PVRRpPsVWQHmCtIDqQCITaiCULorKUVd2tqSNgH29WMxt6GWlV1NLpfE7F2ol5ujH0Lb25XQ1R4BszFW8xUltyEXZG2vv99G/vN7kJS8qRfKijTzR1XsduqQPfx2O+Tc8rYYF68I3c5abGuBl7CNJArjq0GgtjzqyegPxmCRMPEOwcCgGigkTqADnQ+6HWc4wXQ7+92ODdHcwVAGYiEmjwadGN6REQPej4wOI5Dx2Ov1vMLZa3HE0VrC3dHtrC4P5auDbg6aCW36/Afp9yfgFLIfNJxaKva9t6DUwmr86KeV4IkfU02WFJTqW8bfB/WBPqxC1ScAXujhXRhiXUiCWoPK+xvE6aw+8REAAA==
+      Chance: 44
+    '24':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UTW/TQBCdEiiOES0gAQIEsnzIKUJCSEXKBZnEpZbipMQGVIXK2tqbxtTeDet1S1T1woHfwD/omX+AyoWfxTgftqumAW7kECWemTfvvZmxClCBGy0iyTsqkpAzgPVPClwJA1iPQ0Z9QQayMSIjKipwzecpkwBwRwXV5/GIM8pkosLjIpVIKcK9VFIv5kE4CBF1BdaTIT/yQuZJziMZjqAK1TysIuCKAlfleEThSYG0TxkVof8UEYl/4CUjSoNVWCXxjMTko0CVIzciM+pVEgTeIYlSOlWwFsc8lDROGgH1+Riw7VqBH3GBeQDX4NuxTj9LQfRG/1jf41GgNwYkSmhd9zlm6Q39aIg4el0PJYlCPw/zvUGa+ETSoiJB+QdUDgVP94f5U4n4CIMIKQuoiJDEvORk9wLsPPsEPpaZzcnsCzK+yGVW1EyFoMwfa3ygySHV9tC+iKLRUVDXl/b69c+9hpyhh4EWMk0/qZeKMgsvK9oWYUyPiEjOlyzroxEWaIwfDamgGsXI0+VK/t95/ljkcUDEgUc+peRyA/7eKxdPqjHNnyqXIi0JX747XdvudpZ6q8K94oJwz4aEyTh7CSw4chVWI3qI86rA7aIIs4OQ7WdHn53v3SLip4nkscdITGFz4TIu26v3RPg8ZBP2Od0KPLqAjy8eGnkBvvIArn5RFzDIYsgMzbBc03a81k7HsK2m1+72TPja189OB0gDv89OXyy9t3lS6VDOTjfyC8DIgtWul/GfY8GL6Uzxx9lpNJvRrgK3cn7Zt2e1QHlv9Jpdq+MocDMPInUTqrWNmT8VeJiHmm8dt2t7drdltr2W4RqZIQrczhPMTnPL6LgO3Ozrs7lpz7Le9wtvLGe7beyYLc/d2Tbhuumj1nisgLrluL2dafuXx7ojSTaS7C9q6752JBfjyXTPMfV+fseLw8ScMA70ZAUelBsar9qm1+wZm67Veb2yKOjYlruVBRW4c96mCUvFNlyzZxntxbVm253Wrk015DbYuY75o8u0zOO5nv6HwsEP+m6mqjwl1zJ7sDodbvn5ZOXe9PXanxatVl6yWrFjtUUrtovX9xs1gujA+gcAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81UTW/TQBCdEiiOES0gAQIEsnzIKUJCSEXKBZnEpZbipMQGVIXK2tqbxtTeDet1S1T1woHfwD/omX+AyoWfxTgftqumAW7kECWemTfvvZmxClCBGy0iyTsqkpAzgPVPClwJA1iPQ0Z9QQayMSIjKipwzecpkwBwRwXV5/GIM8pkosLjIpVIKcK9VFIv5kE4CBF1BdaTIT/yQuZJziMZjqAK1TysIuCKAlfleEThSYG0TxkVof8UEYl/4CUjSoNVWCXxjMTko0CVIzciM+pVEgTeIYlSOlWwFsc8lDROGgH1+Riw7VqBH3GBeQDX4NuxTj9LQfRG/1jf41GgNwYkSmhd9zlm6Q39aIg4el0PJYlCPw/zvUGa+ETSoiJB+QdUDgVP94f5U4n4CIMIKQuoiJDEvORk9wLsPPsEPpaZzcnsCzK+yGVW1EyFoMwfa3ygySHV9tC+iKLRUVDXl/b69c+9hpyhh4EWMk0/qZeKMgsvK9oWYUyPiEjOlyzroxEWaIwfDamgGsXI0+VK/t95/ljkcUDEgUc+peRyA/7eKxdPqjHNnyqXIi0JX747XdvudpZ6q8K94oJwz4aEyTh7CSw4chVWI3qI86rA7aIIs4OQ7WdHn53v3SLip4nkscdITGFz4TIu26v3RPg8ZBP2Od0KPLqAjy8eGnkBvvIArn5RFzDIYsgMzbBc03a81k7HsK2m1+72TPja189OB0gDv89OXyy9t3lS6VDOTjfyC8DIgtWul/GfY8GL6Uzxx9lpNJvRrgK3cn7Zt2e1QHlv9Jpdq+MocDMPInUTqrWNmT8VeJiHmm8dt2t7drdltr2W4RqZIQrczhPMTnPL6LgO3Ozrs7lpz7Le9wtvLGe7beyYLc/d2Tbhuumj1nisgLrluL2dafuXx7ojSTaS7C9q6752JBfjyXTPMfV+fseLw8ScMA70ZAUelBsar9qm1+wZm67Veb2yKOjYlruVBRW4c96mCUvFNlyzZxntxbVm253Wrk015DbYuY75o8u0zOO5nv6HwsEP+m6mqjwl1zJ7sDodbvn5ZOXe9PXanxatVl6yWrFjtUUrtovX9xs1gujA+gcAAA==
+      Chance: 55
+    '89':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QvU/DMBDFry2VQpBAqsQeLMaKkSESA1CxwMDUNbo412LFH8U+I9Kq/zsOFYQBJBZ/yO+9+/nlABM4WSDjknxQzgKcvWYwVg3MjLIkPa64rHWkquloAlPpomUAOMohl85snCXL4RhOB7V2nrIkGcP1TkiXrqIUa4+dmAvFqJUU5Qp1oLlgeuf0eFuEDUmFunikTuzh5p++B+cL/Pbee2S6EvsRXA4wZOULWjaJslprlVb3Rt6rhkYZnA86GQM7U1k0BIudqJ1uRMk+pmFfKH0Lf6I8xa2zB4TDJ/Jf0pvUcw6z51inhLvYtoqXmFJDBhdJuO1k7w/lj3P1uVUtdTDV/YxULHwAK7B9eLYBAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/42QvU/DMBDFry2VQpBAqsQeLMaKkSESA1CxwMDUNbo412LFH8U+I9Kq/zsOFYQBJBZ/yO+9+/nlABM4WSDjknxQzgKcvWYwVg3MjLIkPa64rHWkquloAlPpomUAOMohl85snCXL4RhOB7V2nrIkGcP1TkiXrqIUa4+dmAvFqJUU5Qp1oLlgeuf0eFuEDUmFunikTuzh5p++B+cL/Pbee2S6EvsRXA4wZOULWjaJslprlVb3Rt6rhkYZnA86GQM7U1k0BIudqJ1uRMk+pmFfKH0Lf6I8xa2zB4TDJ/Jf0pvUcw6z51inhLvYtoqXmFJDBhdJuO1k7w/lj3P1uVUtdTDV/YxULHwAK7B9eLYBAAA=
+      Chance: 55
+    '25':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QvU/DMBDFry2VQpBAqsQeLMaKkSESA1CxwMDUNbo412LFH8U+I9Kq/zsOFYQBJBZ/yO+9+/nlABM4WSDjknxQzgKcvWYwVg3MjLIkPa64rHWkquloAlPpomUAOMohl85snCXL4RhOB7V2nrIkGcP1TkiXrqIUa4+dmAvFqJUU5Qp1oLlgeuf0eFuEDUmFunikTuzh5p++B+cL/Pbee2S6EvsRXA4wZOULWjaJslprlVb3Rt6rhkYZnA86GQM7U1k0BIudqJ1uRMk+pmFfKH0Lf6I8xa2zB4TDJ/Jf0pvUcw6z51inhLvYtoqXmFJDBhdJuO1k7w/lj3P1uVUtdTDV/YxULHwAK7B9eLYBAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/42QvU/DMBDFry2VQpBAqsQeLMaKkSESA1CxwMDUNbo412LFH8U+I9Kq/zsOFYQBJBZ/yO+9+/nlABM4WSDjknxQzgKcvWYwVg3MjLIkPa64rHWkquloAlPpomUAOMohl85snCXL4RhOB7V2nrIkGcP1TkiXrqIUa4+dmAvFqJUU5Qp1oLlgeuf0eFuEDUmFunikTuzh5p++B+cL/Pbee2S6EvsRXA4wZOULWjaJslprlVb3Rt6rhkYZnA86GQM7U1k0BIudqJ1uRMk+pmFfKH0Lf6I8xa2zB4TDJ/Jf0pvUcw6z51inhLvYtoqXmFJDBhdJuO1k7w/lj3P1uVUtdTDV/YxULHwAK7B9eLYBAAA=
+      Chance: 55
+    '26':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QTUsDQQyG0xZhu4IFwXsdPPYkeNmjiF4UPEivy3Q2XYedmawzGXEt/e/GXlahgpd8kDd5XlICzOD0TrNeY0yWAsDirYCpbWDhbUAT9ZarXvcYZ3BiKAcGgLKE0pDvKWDgNIezUeooYiGSKdzslCFpVaXaqAe1Upa1s0ZVW+0SrhTjB8vwkZhp+WJNh6z2cP3PtXuKy8Oq2k/gajSAwbzqwF6c1a2zEukdY7QNTgq4GHUmJyZfB+0RHnZqQ65RFccshJGPGP408IStXv42Xx4BNPLbEs6f80Zu3Oaus7zWLmMq4FKEn4MExlT9qOtDqjscYO6F4r4h8lP4AqDn4SyuAQAA
+      Items:
+      - Data:H4sIAAAAAAAA/42QTUsDQQyG0xZhu4IFwXsdPPYkeNmjiF4UPEivy3Q2XYedmawzGXEt/e/GXlahgpd8kDd5XlICzOD0TrNeY0yWAsDirYCpbWDhbUAT9ZarXvcYZ3BiKAcGgLKE0pDvKWDgNIezUeooYiGSKdzslCFpVaXaqAe1Upa1s0ZVW+0SrhTjB8vwkZhp+WJNh6z2cP3PtXuKy8Oq2k/gajSAwbzqwF6c1a2zEukdY7QNTgq4GHUmJyZfB+0RHnZqQ65RFccshJGPGP408IStXv42Xx4BNPLbEs6f80Zu3Oaus7zWLmMq4FKEn4MExlT9qOtDqjscYO6F4r4h8lP4AqDn4SyuAQAA
+      Chance: 59
+    '27':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41QTUvDQBCdtIgxgoLiPS4ei0cPAQ9+XrwUhF7DdDOtSza7dXeixtL/7tSg8aDgZXaGfW/em5cBjGH/FhlnFKLxDuDwOYWRqeC4MY50wAUXHAzasqZuDDvat44BIMkg075ZeUeO4x4cDHDrA6UCGcHFWmkvoyrUMmCnJsowWqNVsUAbaaKY3lg+r/K4Ii0i+QN1agOX/+Td+5DjN/cmINO52iRwNpghp5/QcSMuy6U1Uv0LhWAqSlI4GXC6jeyb0mFDcLdWc28rJYe3IvZlJVD1p5PHFb46Cr2H/orsl/WVJJ3B0bSdy47rtq4Nz9C2FFM4FeB7p7f8WPzoy89nmz7sxl5FsoUP+Fxa1LoBAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/41QTUvDQBCdtIgxgoLiPS4ei0cPAQ9+XrwUhF7DdDOtSza7dXeixtL/7tSg8aDgZXaGfW/em5cBjGH/FhlnFKLxDuDwOYWRqeC4MY50wAUXHAzasqZuDDvat44BIMkg075ZeUeO4x4cDHDrA6UCGcHFWmkvoyrUMmCnJsowWqNVsUAbaaKY3lg+r/K4Ii0i+QN1agOX/+Td+5DjN/cmINO52iRwNpghp5/QcSMuy6U1Uv0LhWAqSlI4GXC6jeyb0mFDcLdWc28rJYe3IvZlJVD1p5PHFb46Cr2H/orsl/WVJJ3B0bSdy47rtq4Nz9C2FFM4FeB7p7f8WPzoy89nmz7sxl5FsoUP+Fxa1LoBAAA=
+      Chance: 1
+    '29':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBwQ2AIAwF0B/RxOjBFZzDszN4JQ1UJcEWse7PexPgMO9kdHD9kgqwvCO6FLE+SThUOm1jCTeJcfSX5sjiqZTMDkPQXwxAjwb8IAU4SQAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBwQ2AIAwF0B/RxOjBFZzDszN4JQ1UJcEWse7PexPgMO9kdHD9kgqwvCO6FLE+SThUOm1jCTeJcfSX5sjiqZTMDkPQXwxAjwb8IAU4SQAAAA==
+      Chance: 88
+    '30':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDLzcxLTS5KTCuxSs/PSUnNi08sKMhJZWZgTc4vzSthYGAQYAAAykLWXj8AAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDLzcxLTS5KTCuxSs/PSUnNi08sKMhJZWZgTc4vzSthYGAQYAAAykLWXj8AAAA=
+      Chance: 88
+    '31':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYRDNzcxLTS5KTCuxykstyUgtii8uSSxiZmBNzi/NK2EAaQQAi1Pquj4AAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYRDNzcxLTS5KTCuxykstyUgtii8uSSxiZmBNzi/NK2EAaQQAi1Pquj4AAAA=
+      Chance: 55
+
+# Only uncomment this if using HeadDatabase by Arcaniax
+# Skull: "7129"

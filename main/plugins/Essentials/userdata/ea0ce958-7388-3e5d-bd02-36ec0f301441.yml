@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 178.192.68.124
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1756299242111
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1756299401825
+  login: 1756297477211
+money: '90.0'
+last-account-name: steveabi7676
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -182.4242931207029
+  y: 67.0
+  z: 389.3623621375762
+  yaw: -151.5505828857422
+  pitch: 16.20010757446289
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -3437.699999988079
+  y: 69.0
+  z: -3594.8345102702947
+  yaw: 105.72211456298828
+  pitch: 11.926620483398438

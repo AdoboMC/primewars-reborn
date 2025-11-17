@@ -1,0 +1,37 @@
+name: '&f<shift:-12> %nexo_zauction_my_items%'
+size: 45
+
+patterns:
+  # - "zauctionhouse_decoration"
+  - "zauctionhouse_pagination"
+  # - "zauctionhouse_back"
+
+items:
+  back:
+    type: BACK
+    slot: 0
+    item:
+      material: nexo:auction_empty_slot
+      name: "#cf3932← ᴀᴜᴄᴛɪᴏɴ ᴍᴇɴᴜ"
+      
+  removeall:
+    type: ZAUCTIONHOUSE_REMOVE_ALL_ITEMS
+    isPermanent: true
+    slot: 40
+    item:
+      material: nexo:auction_empty_slot
+      name: ''
+      lore:
+        - "         #92bed8ʀᴇᴍᴏᴠᴇ ᴇᴠᴇʀʏᴛʜɪɴɢ"
+        - "                  #8c8c8c&m     "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴇᴠᴇʀʏᴛʜɪɴɢ #8c8c8c• "
+
+  
+  items:
+    type: ZAUCTIONHOUSE_ITEMS
+    isPermanent: true
+    slots:
+    - 10-16
+    - 19-25
+    - 28-34

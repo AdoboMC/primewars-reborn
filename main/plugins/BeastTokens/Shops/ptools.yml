@@ -1,0 +1,144 @@
+Shop:
+  Size: 36
+  Title: '&2&lPremium Tools &cWand Shop'
+  Items:
+    Pages:
+      '1':
+        Tools:
+          Material: DIAMOND_AXE
+          CustomModelData: 0
+          Glow: true
+          Amount: 1
+          DisplayName: '&f--{ &2&lBuilder Wand &f}--'
+          Lore:
+          - '&8&m---------------------------------------'
+          - '&7 Right click a block to create a pillar'
+          - '&7 of the same to the clicked side.'
+          - ''
+          - '&2&l Uses:'
+          - '&f   10,000'
+          - ''
+          - '&8&m---------------------------------------'
+          Slot: 12
+          Buy:
+            Price: 335.294
+            Commands:
+              - '[COMMAND] tools give %player% builder_wand 1 10000'
+              - '[MESSAGE] &aThanks for buying %player%!'
+          DisplayLore:
+          - ''
+        Tools1:
+          Material: DIAMOND_AXE
+          CustomModelData: 0
+          Glow: true
+          Amount: 1
+          DisplayName: '&f--{ &2&lBuilder Wand &7(Tier II) &f}--'
+          Lore:
+          - '&8&m---------------------------------------'
+          - '&7 Right click a block to create a pillar'
+          - '&7 of the same to the clicked side.'
+          - ''
+          - '&6&lLength:'
+          - '&f   10x Blocks'
+          - '&2&l Uses:'
+          - '&f   10,000'
+          - ''
+          - '&8&m---------------------------------------'
+          Slot: 13
+          Buy:
+            Price: 352.941
+            Commands:
+              - '[COMMAND] tools give %player% builder_wand2 1 10000'
+              - '[MESSAGE] &aThanks for buying %player%!'
+          DisplayLore:
+          - ''
+        Tools2:
+          Material: STICK
+          CustomModelData: 0
+          Glow: true
+          Amount: 1
+          DisplayName: '&f--{ &6&lSell Wand &7(Tier I) &f}--'
+          Lore:
+          - '&8&m---------------------------------------'
+          - '&7 This wand sells all of the contents of'
+          - '&7 a container (chest or trapped-chest).'
+          - ''
+          - '&2&l Uses:'
+          - '&f   1,000'
+          - ''
+          - '&8&m---------------------------------------'
+          Slot: 14
+          Buy:
+            Price: 252.941
+            Commands:
+              - '[COMMAND] tools give %player% sell_wand1 1 1000'
+              - '[MESSAGE] &aThanks for buying %player%!'
+          DisplayLore:
+          - ''
+        Tools3:
+          Material: STICK
+          CustomModelData: 0
+          Glow: true
+          Amount: 1
+          DisplayName: '&f--{ &6&lSell Wand &7(Tier II) &f}--'
+          Lore:
+          - '&8&m---------------------------------------'
+          - '&7 This wand sells all of the contents of'
+          - '&7 a container (chest or trapped-chest).'
+          - ''
+          - '&6&lMultiplier:'
+          - '&f   x1.5'
+          - '&2&l Uses:'
+          - '&f   1,000'
+          - ''
+          - '&8&m---------------------------------------'
+          Slot: 15
+          Buy:
+            Price: 270.588
+            Commands:
+              - '[COMMAND] tools give %player% sell_wand2 1 1000'
+              - '[MESSAGE] &aThanks for buying %player%!'
+          DisplayLore:
+          - ''
+        Tools4:
+          Material: STICK
+          CustomModelData: 0
+          Glow: true
+          Amount: 1
+          DisplayName: '&f--{ &6&lSell Wand &7(Tier III) &f}--'
+          Lore:
+          - '&8&m---------------------------------------'
+          - '&7 This wand sells all of the contents of'
+          - '&7 a container (chest or trapped-chest).'
+          - ''
+          - '&6&lMultiplier:'
+          - '&f   x2.0'
+          - '&2&l Uses:'
+          - '&f   1,000'
+          - ''
+          - '&8&m---------------------------------------'
+          Slot: 16
+          Buy:
+            Price: 282.353
+            Commands:
+              - '[COMMAND] tools give %player% sell_wand3 1 1000'
+              - '[MESSAGE] &aThanks for buying %player%!'
+          DisplayLore:
+          - ''
+    
+  EmptySlot:
+    Enabled: true
+    Items:
+      Dummy_1:
+        Material: BLUE_STAINED_GLASS_PANE
+        DisplayName: ''
+        DisplayLore:
+        - '&e====='
+        Glow: true
+      Dummy_2:
+        Material: GRAY_STAINED_GLASS_PANE
+        DisplayName: ''
+        DisplayLore:
+        - '&e====='
+        Glow: true
+ConfigVersion: 2.3

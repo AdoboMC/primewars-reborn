@@ -1,0 +1,22 @@
+location: world:455.500:70.000:-329.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c/ce &7open menu where you can buy enchantments using EXP.'
+    height: 0.3
+  - content: '&7you can choose different types of books'
+    height: 0.3
+  - content: '&7Simple &aUnique &bElite &eUltimate &6Legendary &dFable'
+    height: 0.3
+  - content: '&7Each book has a &eSuccess % &7and &4Destroy %.'
+    height: 0.3
+  - content: '&7You can increase the &eSuccess % &7rate'
+    height: 0.3
+  - content: '&7by using &fMagic Dust'
+    height: 0.3
+  actions: {}

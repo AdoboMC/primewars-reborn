@@ -1,0 +1,94 @@
+menu_title: "<shift:-44>&f<glyph:scenes_edit>"
+open_command:
+  - scenesbackpacks
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  christmas_scarf:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 0
+    priority: 1
+    update: true
+    display_name: 'Christmas Scarf'
+    lore:
+      - '&7Click to apply this Scarf!'
+    left_click_commands:
+      - '[player] mm test cast backpack_1'
+      - '[message] &aSooo cold!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  apron:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 1
+    priority: 1
+    update: true
+    display_name: 'Blacksmith Apron'
+    lore:
+      - '&7Click to apply this apron!'
+    left_click_commands:
+      - '[player] mm test cast apron'
+      - '[message] &aWork time!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  traveler_backpack:
+    material: texture-bdfcee8306e0434a747710e2bdc2558c5a222e9b693477909f10d6cc220f6764
+    slot: 2
+    priority: 1
+    update: true
+    display_name: 'Traveler Backpack'
+    lore:
+      - '&7Click to apply this backpack!'
+    left_click_commands:
+      - '[player] mm test cast backpack_2'
+      - '[message] &aWork time!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  remove:
+    material: PAPER
+    model_data: 3350552
+    slot: 53
+    priority: 1
+    update: true
+    display_name: 'Delete'
+    lore:
+      - '&7Click to Delete this Scene'
+    left_click_commands:
+      - '[player] mm test cast deletenpc'
+      - '[message] &aScene Deleted!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  resetcosmetics:
+    material: PAPER
+    model_data: 3321010
+    slot: 52
+    priority: 1
+    update: true
+    display_name: 'Reset Cosmetics'
+    lore:
+      - '&7Click to Remove the cosmetics'
+    left_click_commands:
+      - '[player] mm test cast reset_cosmetics'
+      - '[message] &aScene Deleted!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  goback:
+    material: PAPER
+    model_data: 3390553
+    slot: 51
+    priority: 1
+    update: true
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] scene_cosmetics'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+#35dd8da810fde8cd410472122f289581

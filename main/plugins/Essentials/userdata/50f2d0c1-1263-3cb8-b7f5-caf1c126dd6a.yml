@@ -1,0 +1,71 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.146.38.184
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758387314091
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758388494375
+  login: 1758387782283
+money: '139564.4883296672697515'
+last-account-name: Crimeson
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 793.8472482600396
+  y: 107.86931187852537
+  z: 92.49304583382447
+  yaw: -4.9033203125
+  pitch: 35.78784942626953
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.2915952227731
+  y: 93.0
+  z: -304.51630222912365
+  yaw: -89.59992980957031
+  pitch: -4.200009346008301
+homes:
+  rome_arena:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -165.6592318308168
+    y: 84.0
+    z: -357.94706647165077
+    yaw: 47.77101135253906
+    pitch: 19.649944305419922
+  project:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 1933.1405397668411
+    y: 97.0
+    z: -318.8381698838488
+    yaw: -70.19253540039062
+    pitch: 55.94951629638672
+  mobalik:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 1997.57885598062
+    y: 76.0
+    z: 79.60732662692348
+    yaw: 177.26513671875
+    pitch: 18.618640899658203
+  zen:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 753.3613167982893
+    y: 85.0
+    z: 87.47336702937336
+    yaw: 141.89939880371094
+    pitch: 32.85018539428711

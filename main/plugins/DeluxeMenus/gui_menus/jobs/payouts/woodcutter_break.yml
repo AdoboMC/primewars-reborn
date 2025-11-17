@@ -1,0 +1,152 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ᴡᴏᴏᴅᴄᴜᴛᴛᴇʀ
+open_command:
+  - jobs payouts woodcutter
+register_command: true
+size: 54
+items:
+  break:
+    material: DIAMOND_AXE
+    slot: 4
+    display_name: '%imc_primary-color_c%ʙʀᴇᴀᴋ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ʙʀᴇᴀᴋ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ʙʟᴏᴄᴋs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_woodcutter_break'
+  break_oak_log:
+    material: oak_log
+    slot: 10
+    display_name: '%imc_primary-color_c%ᴏᴀᴋ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ ᴏᴀᴋ ʟᴏɢ'
+  break_spruce_log:
+    material: spruce_log
+    slot: 11
+    display_name: '%imc_primary-color_c%sᴘʀᴜᴄᴇ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ sᴘʀᴜᴄᴇ ʟᴏɢ'
+  break_birch_log:
+    material: birch_log
+    slot: 12
+    display_name: '%imc_primary-color_c%ʙɪʀᴄʜ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ ʙɪʀᴄʜ ʟᴏɢ'
+  break_jungle_log:
+    material: jungle_log
+    slot: 13
+    display_name: '%imc_primary-color_c%ᴊᴜɴɢʟᴇ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ ᴊᴜɴɢʟᴇ ʟᴏɢ'
+  break_acacia_log:
+    material: acacia_log
+    slot: 14
+    display_name: '%imc_primary-color_c%ᴀᴄᴀᴄɪᴀ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ ᴀᴄᴀᴄɪᴀ ʟᴏɢ'
+  break_dark_oak_log:
+    material: dark_oak_log
+    slot: 15
+    display_name: '%imc_primary-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ ᴅᴀʀᴋ ᴏᴀᴋ ʟᴏɢ'
+  break_warped_stem:
+    material: warped_stem
+    slot: 16
+    display_name: '%imc_primary-color_c%ᴡᴀʀᴘᴇᴅ sᴛᴇᴍ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡᴀʀᴘᴇᴅ sᴛᴇᴍ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡᴀʀᴘᴇᴅ ʜʏᴘʜᴀᴇ'
+  break_crimson_stem:
+    material: crimson_stem
+    slot: 19
+    display_name: '%imc_primary-color_c%ᴄʀɪᴍsᴏɴ sᴛᴇᴍ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀɪᴍsᴏɴ sᴛᴇᴍ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀɪᴍsᴏɴ ʜʏᴘʜᴀᴇ'
+  break_mangrove_log:
+    material: mangrove_log
+    slot: 20
+    display_name: '%imc_primary-color_c%ᴍᴀɴɢʀᴏᴠᴇ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ ᴍᴀɴɢʀᴏᴠᴇ ʟᴏɢ'
+  break_cherry_log:
+    material: cherry_log
+    slot: 21
+    display_name: '%imc_primary-color_c%ᴄʜᴇʀʀʏ ʟᴏɢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ ʟᴏɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ ᴡᴏᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛʀɪᴘᴘᴇᴅ ᴄʜᴇʀʀʏ ʟᴏɢ'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

@@ -1,0 +1,251 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ᴄᴜʟɪɴᴀʀɪᴀɴ
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 3
+    display_name: '%imc_primary-color_c%ᴄʀᴀꜰᴛ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴄʀᴀꜰᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  smelt:
+    material: BLAST_FURNACE
+    slot: 4
+    display_name: '%imc_primary-color_c%sᴍᴇʟᴛ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%sᴍᴇʟᴛ ᴛᴏ ᴏʙᴛᴀɪɴ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ'
+      - '%imc_dark-color_c%ɪᴛᴇᴍs ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_smelt'
+      - '[sound] UI_BUTTON_CLICK'
+  eat:
+    material: APPLE
+    slot: 5
+    display_name: '%imc_primary-color_c%ᴇᴀᴛ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴇᴀᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ꜰᴏᴏᴅs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_eat'
+      - '[sound] UI_BUTTON_CLICK'
+  eat_apple:
+    material: apple
+    slot: 10
+    display_name: '%imc_primary-color_c%ᴀᴘᴘʟᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴘᴘʟᴇ'
+  eat_mushroom_stew:
+    material: mushroom_stew
+    slot: 11
+    display_name: '%imc_primary-color_c%sᴛᴇᴡs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴜsʜʀᴏᴏᴍ sᴛᴇᴡ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴀʙʙɪᴛ sᴛᴇᴡ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴇᴇᴛʀᴏᴏᴛ sᴏᴜᴘ'
+  eat_bread:
+    material: bread
+    slot: 12
+    display_name: '%imc_primary-color_c%ʙʀᴇᴀᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀᴇᴀᴅ'
+  eat_cooked_porkchop:
+    material: cooked_porkchop
+    slot: 13
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋᴇᴅ ᴘᴏʀᴋᴄʜᴏᴘ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋᴇᴅ ᴘᴏʀᴋᴄʜᴏᴘ'
+  eat_golden_apple:
+    material: golden_apple
+    slot: 14
+    display_name: '%imc_primary-color_c%ɢᴏʟᴅᴇɴ ᴀᴘᴘʟᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢᴏʟᴅᴇɴ ᴀᴘᴘʟᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴇɴᴄʜᴀɴᴛᴇᴅ ɢᴏʟᴅᴇɴ ᴀᴘᴘʟᴇ'
+  eat_cooked_cod:
+    material: cooked_cod
+    slot: 15
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋᴇᴅ ᴄᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋᴇᴅ ᴄᴏᴅ'
+  eat_cooked_salmon:
+    material: cooked_salmon
+    slot: 16
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋᴇᴅ sᴀʟᴍᴏɴ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋᴇᴅ sᴀʟᴍᴏɴ'
+  eat_cake:
+    material: cake
+    slot: 19
+    display_name: '%imc_primary-color_c%ᴄᴀᴋᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴀᴋᴇ'
+  eat_cookie:
+    material: cookie
+    slot: 20
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋɪᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋɪᴇ'
+  eat_melon_slice:
+    material: melon_slice
+    slot: 21
+    display_name: '%imc_primary-color_c%ᴍᴇʟᴏɴ sʟɪᴄᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴇʟᴏɴ sʟɪᴄᴇ'
+  eat_dried_kelp:
+    material: dried_kelp
+    slot: 22
+    display_name: '%imc_primary-color_c%ᴅʀɪᴇᴅ ᴋᴇʟᴘ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅʀɪᴇᴅ ᴋᴇʟᴘ'
+  eat_cooked_beef:
+    material: cooked_beef
+    slot: 23
+    display_name: '%imc_primary-color_c%sᴛᴇᴀᴋ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛᴇᴀᴋ'
+  eat_cooked_chicken:
+    material: cooked_chicken
+    slot: 24
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋᴇᴅ ᴄʜɪᴄᴋᴇɴ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋᴇᴅ ᴄʜɪᴄᴋᴇɴ'
+  eat_baked_potato:
+    material: baked_potato
+    slot: 25
+    display_name: '%imc_primary-color_c%ʙᴀᴋᴇᴅ ᴘᴏᴛᴀᴛᴏ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀᴋᴇᴅ ᴘᴏᴛᴀᴛᴏ'
+  eat_pumpkin_pie:
+    material: pumpkin_pie
+    slot: 28
+    display_name: '%imc_primary-color_c%ᴘᴜᴍᴘᴋɪɴ ᴘɪᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴜᴍᴘᴋɪɴ ᴘɪᴇ'
+  eat_cooked_rabbit:
+    material: cooked_rabbit
+    slot: 29
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋᴇᴅ ʀᴀʙʙɪᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋᴇᴅ ʀᴀʙʙɪᴛ'
+  eat_cooked_mutton:
+    material: cooked_mutton
+    slot: 30
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋᴇᴅ ᴍᴜᴛᴛᴏɴ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋᴇᴅ ᴍᴜᴛᴛᴏɴ'
+  eat_chorus_fruit:
+    material: chorus_fruit
+    slot: 31
+    display_name: '%imc_primary-color_c%ᴄʜᴏʀᴜs ꜰʀᴜɪᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴏʀᴜs ꜰʀᴜɪᴛ'
+  eat_sweet_berries:
+    material: sweet_berries
+    slot: 32
+    display_name: '%imc_primary-color_c%sᴡᴇᴇᴛ ʙᴇʀʀɪᴇs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴡᴇᴇᴛ ʙᴇʀʀɪᴇs'
+  eat_glow_berries:
+    material: glow_berries
+    slot: 33
+    display_name: '%imc_primary-color_c%ɢʟᴏᴡ ʙᴇʀʀɪᴇs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʟᴏᴡ ʙᴇʀʀɪᴇs'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: BLUE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

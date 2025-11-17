@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.191.161.9
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755765920668
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755765932377
+  login: 1755763337517
+money: '627.5262359645951611'
+last-account-name: CitruSurge
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 604.8590680315049
+  y: 95.0
+  z: 644.0446146879611
+  yaw: -30.11614990234375
+  pitch: -9.702555656433105
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.5
+  y: 93.0
+  z: -304.5
+  yaw: -140.7000274658203
+  pitch: -2.100008010864258

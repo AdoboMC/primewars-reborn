@@ -1,0 +1,153 @@
+## Credits to @Aternos_
+Gui:
+  Rows: 6
+  SkillDetailSlots:
+    - 35
+  PlayerTopSlots:
+    - 26
+  PlayerInfoSlots:
+    - 17
+  FeatureButtons:
+    HYLIAN_LUCK:
+      Slots:
+        - 20
+      Material: APPLE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    SHROOM_THUMB:
+      Slots:
+        - 21
+      Material: MYCELIUM
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    DOUBLE_DROPS:
+      Slots:
+        - 22
+      Material: NETHERITE_HOE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    GREEN_TERRA:
+      Slots:
+        - 23
+      Material: DIAMOND_HOE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    FARMERS_DIET:
+      Slots:
+        - 29
+      Material: MUSHROOM_STEW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    GREEN_THUMB:
+      Slots:
+        - 30
+      Material: WHEAT_SEEDS
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    VERDANT_BOUNTY:
+      Slots:
+        - 31
+      Material: TORCHFLOWER_SEEDS
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+  DecorationButtons:
+    Back:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    Close:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    BorderLine:
+      Slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 18
+        - 27
+        - 36
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 16
+        - 25
+        - 34
+        - 43
+      Material: BLACK_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    InnerBorder:
+      Slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 19
+        - 24
+        - 28
+        - 33
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+      Material: ORANGE_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    Filler:
+      Slots:
+        - 23
+        - 31
+        - 32
+      Material: GRAY_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+# License Number: 43348c7b-ea5d-45d5-8f05-85b32d8b8373

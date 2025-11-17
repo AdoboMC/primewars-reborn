@@ -1,0 +1,990 @@
+# DeluxeTags version: 1.8.3-DEV-24 Main Configuration
+#
+# Create your tags using the following format:
+#
+# deluxetags:
+#   VIP: 
+#     order: 1
+#     tag: '&7[&eVIP&7]'
+#     description: 'This tag is awarded by getting VIP'
+#
+# Placeholders for your chat plugin that supports PlaceholderAPI (Including DeluxeChat)
+#
+# %deluxetags_identifier% - display the players active tag identifier
+# %deluxetags_tag% - display the players active tag
+# %deluxetags_description% - display the players active tag description
+# %deluxetags_amount% - display the amount of tags a player has access to
+#
+# Placeholders for your essentials/chat handling formats config:
+#
+# {deluxetags_identifier} - display the players active tag identifier
+# {deluxetags_tag} - display the players active tag
+# {deluxetags_description} - display the players active tag description
+# {deluxetags_amount} - display the amount of tags a player has access to
+
+force_tags: false
+check_updates: true
+legacy_hex: false
+papi_chat: true
+format_chat:
+  enabled: false
+  format: '{deluxetags_tag} <%1$s> %2$s'
+load_tag_on_join: true
+gui:
+  tag_visible_item:
+    material: NAME_TAG
+    data: 0
+    displayname: '&6Tag&f: &6%deluxetags_identifier%'
+    lore:
+    - '%deluxetags_tag%'
+    - '%deluxetags_description%'
+    - '&7You can see this tag but you can''t select it!'
+  name: '&8Available tags: %deluxetags_amount%'
+  tag_select_item:
+    material: NAME_TAG
+    data: 0
+    displayname: '&e%deluxetags_identifier% Pin'
+    lore:
+    - ''
+    - '&fDisplay: %deluxetags_tag%'
+    - '&7Display in chat and tab'
+    - ''
+    - '&e➥ Left-Click to select'
+  divider_item:
+    material: BLACK_STAINED_GLASS_PANE
+    data: 0
+    displayname: '&f'
+    lore: []
+  has_tag_item:
+    material: PLAYER_HEAD
+    data: 0
+    displayname: '&eYour Tag'
+    lore:
+    - ''
+    - '&fCurrent: %deluxetags_identifier%'
+    - '&fDisplay: %deluxetags_tag%'
+    - ''
+    - '&e➥ Left-Click to remove tag'
+  no_tag_item:
+    material: PLAYER_HEAD
+    data: 0
+    displayname: '&cYou don''t have a tag set!'
+    lore:
+    - ''
+    - '&eSelect a tag from the menu!'
+  exit_item:
+    material: IRON_DOOR
+    data: 0
+    displayname: '&c&lᴇxɪᴛ'
+    lore: []
+  next_page:
+    material: PAPER
+    data: 0
+    displayname: '&f&lɴᴇxᴛ'
+    lore: []
+  previous_page:
+    material: PAPER
+    data: 0
+    displayname: '&f&lᴘʀᴇᴠɪᴏᴜs'
+    lore: []
+deluxetags:
+  Afghanistan:
+    order: 1
+    tag: '&f𝔞'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Afghanistan
+  Algeria:
+    order: 2
+    tag: '&f𝔟'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Algeria
+  Angola:
+    order: 3
+    tag: '&f𝔠'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Angola
+  Argentina:
+    order: 4
+    tag: '&f𝔡'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Argentina
+  Armenia:
+    order: 5
+    tag: '&f𝔢'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Armenia
+  Australia:
+    order: 6
+    tag: '&f𝔣'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Australia
+  Austria:
+    order: 7
+    tag: '&f𝔤'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Austria
+  Azerbaijan:
+    order: 8
+    tag: '&f𝔥'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Azerbaijan
+  Bangladesh:
+    order: 9
+    tag: '&f𝔦'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Bangladesh
+  Belgium:
+    order: 10
+    tag: '&f𝔧'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Belgium
+  Benin:
+    order: 11
+    tag: '&f𝔨'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Benin
+  Bolivia:
+    order: 12
+    tag: '&f𝔩'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Bolivia
+  BosniaAndHerzegovina:
+    order: 13
+    tag: '&f𝔪'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Bosnia
+  Botswana:
+    order: 14
+    tag: '&f𝔫'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Botswana
+  Brazil:
+    order: 15
+    tag: '&f𝔬'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Brazil
+  Bulgaria:
+    order: 16
+    tag: '&f𝔭'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Bulgaria
+  BurkinaFaso:
+    order: 17
+    tag: '&f𝔮'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Burkinafaso
+  Burundi:
+    order: 18
+    tag: '&f𝔯'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Burundi
+  Cambodia:
+    order: 19
+    tag: '&f𝔰'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Cambodia
+  Cameroon:
+    order: 20
+    tag: '&f𝔱'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Cameroon
+  Canada:
+    order: 21
+    tag: '&f𝔲'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Canada
+  Capeverde:
+    order: 22
+    tag: '&f𝔳'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Capeverde
+  CentralAfricanRepublic:
+    order: 23
+    tag: '&f𝔵'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Centralafricanrepublic
+  Chad:
+    order: 24
+    tag: '&f𝔶'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Chad
+  Chile:
+    order: 25
+    tag: '&f𝔷'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Chile
+  China:
+    order: 26
+    tag: '&f𝖆'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.China
+  Columbia:
+    order: 27
+    tag: '&f𝖇'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Columbia
+  Comoros:
+    order: 28
+    tag: '&f𝖈'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Comoros
+  Congo:
+    order: 29
+    tag: '&f𝖉'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Congo
+  Croatia:
+    order: 30
+    tag: '&f𝖊'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Croatia
+  Cuba:
+    order: 31
+    tag: '&f𝖋'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Cuba
+  CzechRepublic:
+    order: 32
+    tag: '&f𝖌'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Czechrepublic
+  Denmark:
+    order: 33
+    tag: '&f𝖍'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Denmark
+  Djibouti:
+    order: 34
+    tag: '&f𝖎'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Djibouti
+  DominicanRepublic:
+    order: 35
+    tag: '&f𝖏'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Dominicanrep
+  DRCongo:
+    order: 36
+    tag: '&f𝖐'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Drcongo
+  Ecuador:
+    order: 37
+    tag: '&f𝖑'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Ecuador
+  Egypt:
+    order: 38
+    tag: '&f𝖒'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Egypt
+  ElSalvador:
+    order: 39
+    tag: '&f𝖓'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Elsalvador
+  England:
+    order: 40
+    tag: '&f𝖔'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.England
+  EquatorialGuinea:
+    order: 41
+    tag: '&f𝖕'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Equatorialguinea
+  Eritrea:
+    order: 42
+    tag: '&f𝖖'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Eritrea
+  Estonia:
+    order: 43
+    tag: '&f𝖗'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Estonia
+  Eswatini:
+    order: 44
+    tag: '&f𝖘'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Eswatini
+  Ethiopia:
+    order: 45
+    tag: '&f𝖙'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Ethiopia
+  FaroeIslands:
+    order: 46
+    tag: '&f𝖚'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Faroeislands
+  Finland:
+    order: 47
+    tag: '&f𝖛'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Finland
+  France:
+    order: 48
+    tag: '&f𝖝'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.France
+  Gabon:
+    order: 49
+    tag: '&f𝖞'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Gabon
+  Gambia:
+    order: 50
+    tag: '&f𝖟'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Gambia
+  Georgia:
+    order: 51
+    tag: '&f𝕒'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Georgia
+  Germany:
+    order: 52
+    tag: '&f𝕓'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Germany
+  Ghana:
+    order: 53
+    tag: '&f𝕔'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Ghana
+  Greece:
+    order: 54
+    tag: '&f𝕕'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Greece
+  Guinea:
+    order: 55
+    tag: '&f𝕖'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Guinea
+  GuineaBissau:
+    order: 56
+    tag: '&f𝕗'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Guineabissau
+  Honduras:
+    order: 57
+    tag: '&f𝕘'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Honduras
+  Hungary:
+    order: 58
+    tag: '&f𝕙'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Hungary
+  Iceland:
+    order: 59
+    tag: '&f𝕚'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Iceland
+  India:
+    order: 60
+    tag: '&f𝕛'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.India
+  Indonesia:
+    order: 61
+    tag: '&f𝕜'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Indonesia
+  Iran:
+    order: 62
+    tag: '&f𝕝'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Iran
+  Iraq:
+    order: 63
+    tag: '&f𝕞'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Iraq
+  Ireland:
+    order: 64
+    tag: '&f𝕟'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Ireland
+  Israel:
+    order: 65
+    tag: '&f𝕠'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Israel
+  Italy:
+    order: 66
+    tag: '&f𝕡'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Italy
+  IvoryCoast:
+    order: 67
+    tag: '&f𝕢'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Ivorycoast
+  Japan:
+    order: 68
+    tag: '&f𝕣'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Japan
+  Jordan:
+    order: 69
+    tag: '&f𝕤'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Jordan
+  Kazakhstan:
+    order: 70
+    tag: '&f𝕥'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Jazakhstan
+  Kenya:
+    order: 71
+    tag: '&f𝕦'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Kenya
+  Kuwait:
+    order: 72
+    tag: '&f𝕧'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Kuwait
+  Kyrgyzstan:
+    order: 73
+    tag: '&f𝕩'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Kyrgyzstan
+  Laos:
+    order: 74
+    tag: '&f𝕪'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Kaos
+  Latvia:
+    order: 75
+    tag: '&f𝕫'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Latvia
+  Lebanon:
+    order: 76
+    tag: '&f𝒂'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Lebanon
+  Lesotho:
+    order: 77
+    tag: '&f𝒃'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Lesotho
+  Liberia:
+    order: 78
+    tag: '&f𝒄'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Liberia
+  Libya:
+    order: 79
+    tag: '&f𝒅'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Libya
+  Lichtenstein:
+    order: 80
+    tag: '&f𝒆'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Lichtenstein
+  Lithuania:
+    order: 81
+    tag: '&f𝒇'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Lithuania
+  Luxembourg:
+    order: 82
+    tag: '&f𝒈'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Luxembourg
+  Madagascar:
+    order: 83
+    tag: '&f𝒉'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Madagascar
+  Malawi:
+    order: 84
+    tag: '&f𝒊'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Malawi
+  Malaysia:
+    order: 85
+    tag: '&f𝒋'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Malaysia
+  Mali:
+    order: 86
+    tag: '&f𝒌'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Mali
+  Malta:
+    order: 87
+    tag: '&f𝒍'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Malta
+  Mauritania:
+    order: 88
+    tag: '&f𝒎'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Mauritania
+  Mauritius:
+    order: 89
+    tag: '&f𝒏'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Mauritius
+  Mexico:
+    order: 90
+    tag: '&f𝒐'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Mexico
+  Moldova:
+    order: 91
+    tag: '&f𝒑'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Moldova
+  Mongolia:
+    order: 92
+    tag: '&f𝒒'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Mongolia
+  Morocco:
+    order: 93
+    tag: '&f𝒓'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Morocco
+  Mozambique:
+    order: 94
+    tag: '&f𝒔'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Mozambique
+  Myanmar:
+    order: 95
+    tag: '&f𝒕'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Myanmar
+  Namibia:
+    order: 96
+    tag: '&f𝒖'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Namibia
+  Netherlands:
+    order: 97
+    tag: '&f𝒗'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Netherlands
+  NewZealand:
+    order: 98
+    tag: '&f𝒙'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Newzealand
+  Nicaragua:
+    order: 99
+    tag: '&f𝒚'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Nicaragua
+  Niger:
+    order: 100
+    tag: '&f𝒛'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Niger
+  Nigeria:
+    order: 101
+    tag: '&f𝘢'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Nigeria
+  NorthKorea:
+    order: 102
+    tag: '&f𝘣'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Northkorea
+  NorthMacedonia:
+    order: 103
+    tag: '&f𝘤'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Northmacedonia
+  Norway:
+    order: 104
+    tag: '&f𝘥'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Norway
+  Pakistan:
+    order: 105
+    tag: '&f𝘦'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Pakistan
+  Panama:
+    order: 106
+    tag: '&f𝘧'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Panama
+  Peru:
+    order: 107
+    tag: '&f𝘨'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Peru
+  Philippines:
+    order: 108
+    tag: '&f𝘩'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Philippines
+  Poland:
+    order: 109
+    tag: '&f𝘪'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Poland
+  Portugal:
+    order: 110
+    tag: '&f𝘫'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Portugal
+  PuertoRico:
+    order: 111
+    tag: '&f𝘬'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Puertorico
+  Qatar:
+    order: 112
+    tag: '&f𝘭'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Qatar
+  Romania:
+    order: 113
+    tag: '&f𝘮'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Romania
+  Russia:
+    order: 114
+    tag: '&f𝘯'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Russia
+  Rwanda:
+    order: 115
+    tag: '&f𝘰'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Rwanda
+  SaoTome:
+    order: 116
+    tag: '&f𝘱'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Saotome
+  SaudiArabia:
+    order: 117
+    tag: '&f𝘲'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Saudiarabia
+  Scotland:
+    order: 118
+    tag: '&f𝘳'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Scotland
+  Senegal:
+    order: 119
+    tag: '&f𝘴'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Senegal
+  Seychelles:
+    order: 120
+    tag: '&f𝘵'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Seychelles
+  SierraLeone:
+    order: 121
+    tag: '&f𝘶'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Sierraleone
+  Singapore:
+    order: 122
+    tag: '&f𝘷'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Singapore
+  Somalia:
+    order: 123
+    tag: '&f𝘹'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Somalia
+  SouthAfrica:
+    order: 124
+    tag: '&f𝘺'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Southafrica
+  SouthKorea:
+    order: 125
+    tag: '&f𝘻'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Southkorea
+  SouthSudan:
+    order: 126
+    tag: '&f𝙖'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Southsudan
+  Spain:
+    order: 127
+    tag: '&f𝙗'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Spain
+  Sudan:
+    order: 128
+    tag: '&f𝙘'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Sudan
+  Suriname:
+    order: 129
+    tag: '&f𝙙'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Suriname
+  Sweden:
+    order: 130
+    tag: '&f𝙚'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Sweden
+  Switzerland:
+    order: 131
+    tag: '&f𝙛'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Switzerland
+  Syria:
+    order: 132
+    tag: '&f𝙜'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Syria
+  Taiwan:
+    order: 133
+    tag: '&f𝙝'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Saiwan
+  Tajikistan:
+    order: 134
+    tag: '&f𝙞'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Tajikistan
+  Tanzania:
+    order: 135
+    tag: '&f𝙟'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Tanzania
+  Thailand:
+    order: 136
+    tag: '&f𝙠'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Thailand
+  Togo:
+    order: 137
+    tag: '&f𝙡'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Togo
+  Tunesia:
+    order: 138
+    tag: '&f𝙢'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Tunesia
+  Turkey:
+    order: 139
+    tag: '&f𝙣'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Turkey
+  Turkmenistan:
+    order: 140
+    tag: '&f𝙤'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Turkmenistan
+  Uganda:
+    order: 141
+    tag: '&f𝙥'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Uganda
+  Ukraine:
+    order: 142
+    tag: '&f𝙦'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Ukraine
+  UnitedArabEmirates:
+    order: 143
+    tag: '&f𝙧'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Unitedarabemirates
+  Uruguay:
+    order: 144
+    tag: '&f𝙨'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Uruguay
+  Usa:
+    order: 145
+    tag: '&f𝙩'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Usa
+  Uzbekistan:
+    order: 146
+    tag: '&f𝙪'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Uzbekistan
+  Venezuela:
+    order: 147
+    tag: '&f𝙫'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Venezuela
+  Yemen:
+    order: 148
+    tag: '&f𝙭'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Yemen
+  Zambia:
+    order: 149
+    tag: '&f𝙮'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Zambia
+  Zimbabwe:
+    order: 150
+    tag: '&f𝙯'
+    description:
+    - '&cAwarded for using DeluxeTags!'
+    permission: deluxetags.tag.Zimbabwe

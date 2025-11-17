@@ -1,0 +1,12 @@
+location: Philippines:698.894:130.000:799.512
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&bEvil Sorcerer &7spawns in &f%mythic_spawner_evilSorcerer_cooldownleft%'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.191.146.230
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755529377995
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755531405009
+  login: 1755530563604
+money: '969336.2437488072402647'
+last-account-name: Zydraz
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 893.6375685943233
+  y: 74.0
+  z: 968.3000000119209
+  yaw: -77.2110595703125
+  pitch: 2.866910457611084
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 1741.8281522314087
+  y: 68.0
+  z: -26.384553080060925
+  yaw: 3.08154296875
+  pitch: 32.34510040283203
+homes:
+  home1:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -8.971215598479901
+    y: 63.0
+    z: -902.5379691398828
+    yaw: 89.71880340576172
+    pitch: 33.64045333862305
+  farm:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1991.6295046337423
+    y: 66.0
+    z: 432.69795188932903
+    yaw: -0.155303955078125
+    pitch: -11.099992752075195

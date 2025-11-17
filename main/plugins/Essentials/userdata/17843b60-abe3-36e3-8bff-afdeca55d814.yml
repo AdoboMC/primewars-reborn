@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.146.45.73
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752314298426
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752316679167
+  login: 1752316656372
+money: '1137.4573188843845064'
+last-account-name: michaeljaket
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.7707175590716
+  y: 92.0
+  z: -318.40445467623533
+  yaw: 4.80023193359375
+  pitch: 38.54999923706055
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 612.7943432473368
+  y: 95.0
+  z: 654.6546258148139
+  yaw: -65.85040283203125
+  pitch: 1.7501537799835205

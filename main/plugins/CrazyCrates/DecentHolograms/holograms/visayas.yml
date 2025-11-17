@@ -1,0 +1,14 @@
+location: Philippines:-374.484:90.019:-419.526
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&LVisayas Crate'
+    height: 0.3
+  - content: '&eRight-click &7to open &eLeft-click &7to preview.'
+    height: 0.3
+  actions: {}

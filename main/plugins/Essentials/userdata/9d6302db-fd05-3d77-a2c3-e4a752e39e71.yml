@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 47.12.171.129
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752423067758
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752423216377
+  login: 1752421631259
+money: '233.9798840917436566'
+last-account-name: NateOfMind
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -375.5318795970551
+  y: 92.0
+  z: -311.4289302290055
+  yaw: -164.10043334960938
+  pitch: 18.00002098083496
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -364.9742501060962
+  y: 87.0
+  z: -365.55567354821807
+  yaw: 13.04827880859375
+  pitch: -18.000080108642578

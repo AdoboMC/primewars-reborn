@@ -1,0 +1,54 @@
+## Credits to @Aternos_
+ConfigVersion: 1 # DO NOT CHANGE THIS
+Settings:
+  PartyCancelWord: 'cancel'
+  Sounds:
+    CancelPartyCreating:
+  MultipleLanguages:
+    Enable: false # If false, all player will use the same language in the Default below.
+    Default: en-us # Could be "en-us", "vn-vi", ...
+  Commands:
+    RootCommand:
+      Main: mcmmogui
+      Aliases:
+        - mgui
+        - mmogui
+    # This also apply to quick access abilities
+    # GUI and ranking GUI
+    ShortSkillCommand:
+      OVERALL:
+        Main: overall
+      SWORDS:
+        Main: swords
+      AXES:
+        Main: axes
+      ARCHERY:
+        Main: archery
+      ACROBATICS:
+        Main: acrobatics
+      UNARMED:
+        Main: unarmed
+      TAMING:
+        Main: taming
+      MACES:
+        Main: maces
+      TRIDENTS:
+        Main: tridents
+      CROSSBOWS:
+        Main: crossbows
+      MINING:
+        Main: mining
+      WOODCUTTING:
+        Main: woodcutting
+      EXCAVATION:
+        Main: excavation
+      HERBALISM:
+        Main: herbalism
+      FISHING:
+        Main: fishing
+      ALCHEMY:
+        Main: alchemy
+      REPAIR:
+        Main: repair
+
+# License Number: 57f0d07c-45a5-4970-9ec0-4d689633a016

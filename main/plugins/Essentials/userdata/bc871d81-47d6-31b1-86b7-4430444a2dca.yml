@@ -1,0 +1,265 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 91.243.81.94
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1757022057850
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757174557494
+  login: 1757158736576
+money: '2390949.671785793827178437'
+last-account-name: GiricDeGrey
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -1282.3798614673055
+  y: -59.371405455995955
+  z: 1238.1501480100194
+  yaw: 95.69952392578125
+  pitch: 16.650001525878906
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -1274.699999988079
+  y: 63.5625
+  z: 1242.699999988079
+  yaw: 164.5493621826172
+  pitch: 17.250041961669922
+homes:
+  jungle:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 82.84486249744236
+    y: 64.0
+    z: 59.734973719714716
+    yaw: 96.89877319335938
+    pitch: 1.7999897003173828
+  base:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1271.9917747637041
+    y: 63.0
+    z: 1240.5954810610463
+    yaw: 177.6025390625
+    pitch: 8.84998607635498
+  temple:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 1443.3998676446838
+    y: 63.0
+    z: 686.998684983569
+    yaw: 94.79859161376953
+    pitch: 2.8502063751220703
+  lush:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2067.223848655638
+    y: 72.0
+    z: 1109.560845158002
+    yaw: 136.798095703125
+    pitch: 34.04994583129883
+  ice:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -89.10851424857059
+    y: 69.0
+    z: 1582.3526897635516
+    yaw: 177.9020538330078
+    pitch: 55.950016021728516
+  village1:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2032.4534542457461
+    y: 91.0
+    z: 1782.9979001514864
+    yaw: 7.650390625
+    pitch: 18.299978256225586
+  expl:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 1482.386828636141
+    y: 64.0
+    z: -2284.8742597698206
+    yaw: -179.2458953857422
+    pitch: 45.15000534057617
+  coral:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2478.1526539375877
+    y: 68.0
+    z: -397.61760805750976
+    yaw: -0.7460859417915344
+    pitch: 17.55001449584961
+  desert:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2477.7442371773027
+    y: 70.0
+    z: -47.319203374587346
+    yaw: -0.7460859417915344
+    pitch: 17.55001449584961
+  fortress:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: -102.87492370624226
+    y: 68.0
+    z: -1139.2161165918744
+    yaw: -93.597412109375
+    pitch: 24.149921417236328
+  cr:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1271.5
+    y: -60.0
+    z: 1240.5
+    yaw: 178.94979858398438
+    pitch: 1.0499930381774902
+  bastion:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: -993.9796226885417
+    y: 36.0
+    z: 113.30545814430666
+    yaw: 56.6934814453125
+    pitch: 7.500030994415283
+  fish:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1197.300000011921
+    y: 67.0
+    z: 1122.8538362180486
+    yaw: 57.462158203125
+    pitch: 17.09986114501953
+  skyguy:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 1596.6043333293453
+    y: 69.0
+    z: -1861.4634122036
+    yaw: 97.20433807373047
+    pitch: 32.25001525878906
+  bulate:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 113.30000001192093
+    y: 63.55321338701522
+    z: 283.1062412511482
+    yaw: -131.994140625
+    pitch: 24.60003089904785
+  darkoak:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2473.263782478573
+    y: 96.0
+    z: 1123.5327813124893
+    yaw: 97.35009765625
+    pitch: 36.29999542236328
+  mangrove:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2493.0677180045795
+    y: 63.0
+    z: -1308.193261333092
+    yaw: 10.348388671875
+    pitch: 11.699999809265137
+  sealoot1:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 401.50848050213534
+    y: 63.0
+    z: 1119.471455574345
+    yaw: -70.792724609375
+    pitch: 71.99993133544922
+  sealoot2:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 806.5934811787643
+    y: 63.0
+    z: 776.6848517267581
+    yaw: -98.39208984375
+    pitch: 88.19998168945312
+  sealoot3:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2012.433432850921
+    y: 72.0
+    z: -228.97056586704082
+    yaw: -143.54150390625
+    pitch: 23.099977493286133
+  squid:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1256.2904873050782
+    y: 18.0
+    z: 1242.8210617899908
+    yaw: 3.447998046875
+    pitch: 8.399861335754395
+  afk:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1256.7482886440723
+    y: 141.0
+    z: 1256.186305551222
+    yaw: -179.24755859375
+    pitch: 8.399999618530273
+  sfarm:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1263.699999988079
+    y: 32.0
+    z: 1248.300000011921
+    yaw: -92.85014343261719
+    pitch: 14.849966049194336
+  deepdark:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 776.6999999880791
+    y: -44.0
+    z: -215.38091857730558
+    yaw: -176.09735107421875
+    pitch: 18.149961471557617
+  end:
+    world: 3ceb653b-2e14-4f71-94be-ebdeb94cf822
+    world-name: world_the_end
+    x: 1011.3798286593177
+    y: 61.0
+    z: 113.69044233141959
+    yaw: -29.2503662109375
+    pitch: 51.449867248535156
+  dripstone:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1907.300000011921
+    y: 46.0
+    z: 901.5006470900797
+    yaw: 41.107025146484375
+    pitch: 13.500079154968262
+mail:
+- legacy: false
+  read: false
+  message: I am so excited with the result hehe, it was said it can be delivered at
+    August 23, 2025 it said
+  sender-name: WizKhalifaX_
+  sender-uuid: 14d96549-2d68-332f-a0e3-59f9bb07a92c
+  timestamp: 1755532279667
+  expire: 0
+- legacy: false
+  read: false
+  message: Since you afk haha you might lost what happen, anyways so I paid almost
+    4k pesos for a server trailer and we almost like 11 players earlier and we got
+    recorded we play and many more
+  sender-name: WizKhalifaX_
+  sender-uuid: 14d96549-2d68-332f-a0e3-59f9bb07a92c
+  timestamp: 1755532253490
+  expire: 0

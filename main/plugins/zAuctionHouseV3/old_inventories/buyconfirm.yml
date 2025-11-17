@@ -1,0 +1,54 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&f<shift:-12> %nexo_zauction_purchase%'  # Title of the menu, supports color codes and placeholders
+
+size: 36  # Size of the Minecraft inventory menu, must be a multiple of 9 (3 rows in this case)
+
+items:
+  buy:
+    type: ZAUCTIONHOUSE_BUY_CONFIRM  # Type for the action of confirming a purchase
+    item:
+      material: nexo:auction_empty_slot
+      name: ''  # No name specified for the item
+      lore:
+        - "      #2bba43✔ ᴘᴜʀᴄʜᴀsᴇ"  # Lore text with color code, confirming purchase
+        - "           #8c8c8c&m      "  # Lore text for decoration
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴘᴜʀᴄʜᴀsᴇ #8c8c8c• "  # Instructions for purchase action
+    slots:
+      - 29-30  # Items occupy slots 0 through 2
+      # - 9-11  # Items occupy slots 9 through 11
+      # - 18-20  # Items occupy slots 18 through 20
+
+  deny:
+    type: BACK  # A back button for navigation
+    item:
+      material: nexo:auction_empty_slot
+      name: ""  # No name specified for the item
+      lore:
+        - "          #c42323ʙᴀᴄᴋ"  # Lore text with color code, indicating back action
+        - "          #8c8c8c&m      "  # Lore text for decoration
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ɢᴏ ʙᴀᴄᴋ #8c8c8c• "  # Instructions for going back
+    slots:
+      - 32-33  # Items occupy slots 6 through 8
+
+  # slot:
+  #   item:
+  #     material: GRAY_STAINED_GLASS_PANE  # Material used for decorative or filler items
+  #     name: '&e'  # Name of the item, supports color codes
+  #   slots:
+  #     - 3-5  # Decorative items occupy slots 3 through 5
+  #     - 12   # Decorative item occupies slot 12
+  #     - 14   # Decorative item occupies slot 14
+  #     - 21-23  # Decorative items occupy slots 21 through 23
+
+  show:
+    type: ZAUCTIONHOUSE_SHOW_BUY  # Type for showing the item being purchased
+    slot: 13  # The slot in the menu where this item will be displayed
+
+# 8Lq1ZW9aApHK/KDFozFSVFanCzwjI6d5R0zNf8KEAl3PGsLiO8OPE+xhYSpPnnBnsW1xcXCVkkGr5e9itL4M1wA+NyhdBRWa2rmZfhhV+ww=

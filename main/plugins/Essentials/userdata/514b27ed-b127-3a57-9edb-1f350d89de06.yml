@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 175.176.64.249
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752498674725
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752499231299
+  login: 1752495743074
+money: '1763.7409546821669706'
+last-account-name: Reclamation
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -398.16406994875774
+  y: 33.0
+  z: 495.8170975686438
+  yaw: 14.40045166015625
+  pitch: -5.100017070770264
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 233.48586700158532
+  y: 65.0
+  z: 111.99602682607662
+  yaw: 33.0313720703125
+  pitch: 18.11173439025879
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 237.69443127001028
+    y: 71.0
+    z: 137.55232685272233
+    yaw: -139.31796264648438
+    pitch: 34.65004348754883

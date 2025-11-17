@@ -1,0 +1,22 @@
+staff-chat:
+  profiles:
+    a044ddfb-a4e1-3b83-a2fe-330ef9d77f20:
+      toggles:
+        auto: '2025-07-11T08:04:59.669133340Z'
+        muted-sounds: false
+    2cfdd604-da49-3d39-840e-c5bd8f3ab6d4:
+      toggles:
+        auto: '2025-07-16T05:39:28.721350476Z'
+        muted-sounds: false
+    eb4203b9-9cf2-3037-b889-7bc5a3085d25:
+      toggles:
+        auto: '2025-08-18T14:39:05.321263994Z'
+        muted-sounds: false
+    c1dbb81b-9fae-3fa4-92a3-d6ac4437a5e7:
+      toggles:
+        auto: '2025-08-31T01:24:58.627364716Z'
+        muted-sounds: false
+    50f2d0c1-1263-3cb8-b7f5-caf1c126dd6a:
+      toggles:
+        auto: '2025-09-18T16:10:35.261890326Z'
+        muted-sounds: false

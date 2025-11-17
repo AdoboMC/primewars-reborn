@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 65.181.9.27
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753435095918
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753436622727
+  login: 1753430615624
+money: '8642.4315017573782724'
+last-account-name: Kazumamattata
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 672.8864051928625
+  y: 93.0
+  z: 723.3129180439486
+  yaw: -17.255767822265625
+  pitch: 4.349991321563721
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 939.4484219628984
+  y: 82.0
+  z: 911.111869951714
+  yaw: 111.90216064453125
+  pitch: 16.950031280517578
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 866.5634500752934
+    y: 115.0
+    z: -377.7711973898132
+    yaw: -68.40057373046875
+    pitch: 69.44979095458984

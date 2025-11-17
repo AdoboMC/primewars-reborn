@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 82.222.239.128
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754950108329
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754950433737
+  login: 1754950326630
+money: '0'
+last-account-name: Babejoke
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 269.14216534567737
+  y: 64.0
+  z: 102.95432165479778
+  yaw: 2.03908109664917
+  pitch: 14.168657302856445
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -383.8884804102368
+  y: 92.0
+  z: -289.76829918736325
+  yaw: 175.03570556640625
+  pitch: 9.839393615722656
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 244.0820118688182
+    y: 64.0
+    z: 103.93673077557789
+    yaw: -73.53394317626953
+    pitch: 15.545846939086914

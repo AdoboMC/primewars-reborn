@@ -1,0 +1,698 @@
+Shop:
+  Size: 36
+  Title: '&4&lPet &b&lShop'
+  Items:
+    Pages:
+      '1':
+        Pet_1:
+          Material: BRICK
+          CustomModelData: 3501
+          Glow: true
+          Amount: 1
+          DisplayName: '&eAngel'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&eHeavenly Heal: Your Angel heals you'
+          - '&ewith a beam of heavenly light.'
+          Slot: 12
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_angel true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&eHeavenly Heal: Your Angel heals you with a beam of heavenly light.'
+
+        Pet_2:
+          Material: BRICK
+          CustomModelData: 3519
+          Glow: true
+          Amount: 1
+          DisplayName: '&bThunderbird'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&bSpark Ball: Your Thunderbird fires'
+          - '&ba ball of thunder, chaining lightning.'
+          Slot: 13
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_thunderbird true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&bSpark Ball: Your Thunderbird fires a ball of thunder, chaining lightning.'
+
+        Pet_3:
+          Material: BRICK
+          CustomModelData: 3512
+          Glow: true
+          Amount: 1
+          DisplayName: '&4Phoenix'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&cBurning Path: Your Phoenix dashes'
+          - '&ctoward enemies, leaving fire behind.'
+          Slot: 14
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_phoenix true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&cBurning Path: Your Phoenix dashes toward enemies, leaving fire behind.'
+
+        Pet_4:
+          Material: BRICK
+          CustomModelData: 3504
+          Glow: true
+          Amount: 1
+          DisplayName: '&6Eagle'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&6Dash: Your Eagle dashes forward'
+          - '&6and launches enemies airborne.'
+          Slot: 15
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_eagle true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&6Dash: Your Eagle dashes forward and launches enemies airborne.'
+
+        Pet_5:
+          Material: BRICK
+          CustomModelData: 3503
+          Glow: true
+          Amount: 1
+          DisplayName: '&cDemon'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&cPower Up: Your Demon grants you'
+          - '&ca temporary strength boost.'
+          Slot: 16
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_demon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&cPower Up: Your Demon grants you a temporary strength boost.'
+      '2':
+        Pet_6:
+          Material: BRICK
+          CustomModelData: 3500
+          Glow: true
+          Amount: 1
+          DisplayName: '&6Aether Dragon'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&6Flash: Your Aether Dragon creates a flash'
+          - '&6of light, stunning nearby enemies.'
+          Slot: 12
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_aether_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&6Flash: Your Aether Dragon creates a flash of light, stunning nearby enemies.'
+        
+        Pet_7:
+          Material: BRICK
+          CustomModelData: 3505
+          Glow: true
+          Amount: 1
+          DisplayName: '&4Fire Dragon'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&4Fireball: Your Fire Dragon shoots'
+          - '&a fireball at the enemy.'
+          Slot: 13
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_fire_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&4Fireball: Your Fire Dragon shoots a fireball at the enemy.'
+        
+        Pet_8:
+          Material: BRICK
+          CustomModelData: 3508
+          Glow: true
+          Amount: 1
+          DisplayName: '&bIce Dragon'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&bIce Breath: Your Ice Dragon breathes out'
+          - '&cold air, freezing enemies.'
+          Slot: 14
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_ice_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&bIce Breath: Your Ice Dragon breathes out cold air, freezing enemies.'
+        
+        Pet_9:
+          Material: BRICK
+          CustomModelData: 3511
+          Glow: true
+          Amount: 1
+          DisplayName: '&2Nature Dragon'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&2Healing Leaves: Your Nature Dragon creates'
+          - '&a healing aura at your position.'
+          Slot: 15
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_nature_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&2Healing Leaves: Your Nature Dragon creates a healing aura at your position.'
+        
+        Pet_10:
+          Material: BRICK
+          CustomModelData: 3513
+          Glow: true
+          Amount: 1
+          DisplayName: '&5Sai Ninja'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&5Pierce Attack: Your Sai Ninja pierces'
+          - '&5the enemy with its sai.'
+          Slot: 16
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_sai_ninja true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&5Pierce Attack: Your Sai Ninja pierces the enemy with its sai.'
+      '3':
+        Pet_11:
+            Material: BRICK
+            CustomModelData: 3514
+            Glow: true
+            Amount: 1
+            DisplayName: '&4Samurai'
+            Lore:
+            - '&7Pets gain EXP when they are in combat'
+            - '&7or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration'
+            - '&7increases every level.'
+            - ''
+            - '&4Katana Slash: Your Samurai spins his'
+            - '&4katana, damaging nearby enemies.'
+            Slot: 12
+            Buy:
+              Price: 180.0
+              Commands:
+                - '[COMMAND] lp user %player% permission set mcpet.pet_samurai true'
+                - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+            DisplayLore:
+            - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration increases every level.'
+            - ''
+            - '&4Katana Slash: Your Samurai spins his katana, damaging nearby enemies.'
+          
+        Pet_12:
+            Material: BRICK
+            CustomModelData: 3515
+            Glow: true
+            Amount: 1
+            DisplayName: '&9Shadow Dragon'
+            Lore:
+            - '&7Pets gain EXP when they are in combat'
+            - '&7or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration'
+            - '&7increases every level.'
+            - ''
+            - '&9Shadow Fangs: Your Shadow Dragon bites'
+            - '&9the enemy, levitating them briefly.'
+            Slot: 13
+            Buy:
+              Price: 180.0
+              Commands:
+                - '[COMMAND] lp user %player% permission set mcpet.pet_shadow_dragon true'
+                - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+            DisplayLore:
+            - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration increases every level.'
+            - ''
+            - '&9Shadow Fangs: Your Shadow Dragon bites the enemy, levitating them briefly.'
+          
+        Pet_13:
+            Material: BRICK
+            CustomModelData: 3516
+            Glow: true
+            Amount: 1
+            DisplayName: '&9Shuriken Ninja'
+            Lore:
+            - '&7Pets gain EXP when they are in combat'
+            - '&7or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration'
+            - '&7increases every level.'
+            - ''
+            - '&9Shuriken Toss: Your Shuriken Ninja throws'
+            - '&9a shuriken at the enemy.'
+            Slot: 14
+            Buy:
+              Price: 180.0
+              Commands:
+                - '[COMMAND] lp user %player% permission set mcpet.pet_shuriken_ninja true'
+                - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+            DisplayLore:
+            - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration increases every level.'
+            - ''
+            - '&9Shuriken Toss: Your Shuriken Ninja throws a shuriken at the enemy.'
+          
+        Pet_14:
+            Material: BRICK
+            CustomModelData: 3517
+            Glow: true
+            Amount: 1
+            DisplayName: '&bSpirit Fox'
+            Lore:
+            - '&7Pets gain EXP when they are in combat'
+            - '&7or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration'
+            - '&7increases every level.'
+            - ''
+            - '&bSoul Haste: Your Spirit Fox gives you'
+            - '&ba speed buff.'
+            Slot: 15
+            Buy:
+              Price: 180.0
+              Commands:
+                - '[COMMAND] lp user %player% permission set mcpet.pet_spirit_fox true'
+                - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+            DisplayLore:
+            - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration increases every level.'
+            - ''
+            - '&bSoul Haste: Your Spirit Fox gives you a speed buff.'
+          
+        Pet_15:
+            Material: BRICK
+            CustomModelData: 3518
+            Glow: true
+            Amount: 1
+            DisplayName: '&eThunder Dragon'
+            Lore:
+            - '&7Pets gain EXP when they are in combat'
+            - '&7or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration'
+            - '&7increases every level.'
+            - ''
+            - '&eThunder Bolt: Your Thunder Dragon brings'
+            - '&edown thunder to 3 nearby enemies.'
+            Slot: 16
+            Buy:
+              Price: 180.0
+              Commands:
+                - '[COMMAND] lp user %player% permission set mcpet.pet_thunder_dragon true'
+                - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+            DisplayLore:
+            - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+            - '&7Pet stats, skill damage and duration increases every level.'
+            - ''
+            - '&eThunder Bolt: Your Thunder Dragon brings down thunder to 3 nearby enemies.'
+
+      '4':
+        Pet_16:
+        Material: BRICK
+        CustomModelData: 3520
+        Glow: true
+        Amount: 1
+        DisplayName: '&3Undead Dragon'
+        Lore:
+        - '&7Pets gain EXP when they are in combat'
+        - '&7or when they are given pet food.'
+        - '&7Pet stats, skill damage and duration'
+        - '&7increases every level.'
+        - ''
+        - '&3Poison Breath: Your Undead Dragon breathes'
+        - '&3out poison gas, poisoning enemies.'
+        Slot: 11
+        Buy:
+          Price: 180.0
+          Commands:
+            - '[COMMAND] lp user %player% permission set mcpet.pet_undead_dragon true'
+            - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+        DisplayLore:
+        - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+        - '&7Pet stats, skill damage and duration increases every level.'
+        - ''
+        - '&3Poison Breath: Your Undead Dragon breathes out poison gas, poisoning enemies.'
+
+        Pet_17:
+          Material: BRICK
+          CustomModelData: 3521
+          Glow: true
+          Amount: 1
+          DisplayName: '&fWind Dragon'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&fTornado: Your Wind Dragon fires a tornado'
+          - '&fthat pulls in nearby enemies.'
+          Slot: 12
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_wind_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&fTornado: Your Wind Dragon fires a tornado that pulls in nearby enemies.'
+        
+        Pet_18:
+          Material: BRICK
+          CustomModelData: 3502
+          Glow: true
+          Amount: 1
+          DisplayName: '&9Dark Kitsune'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&9Shadow Ball: Your Dark Kitsune fires a shadow ball'
+          - '&9that levitates enemies.'
+          Slot: 13
+          Buy:
+            Price: 180.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.pet_dark_kitsune true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&9Shadow Ball: Your Dark Kitsune fires a shadow ball that levitates enemies.'
+        
+        Pet_19:
+          Material: 'GOLDEN_HORSE_ARMOR'
+          CustomModelData: 7191281
+          Glow: true
+          Amount: 1
+          DisplayName: '&#75ccce Air Dragon Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&bVindr''s Wrath: Transform into a storm'
+          - '&bthat drags enemies as it moves.'
+          Slot: 14
+          Buy:
+            Price: 240.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-air_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&bVindr''s Wrath: Transform into a storm that drags enemies as it moves.'
+        
+        Pet_20:
+          Material: 'GOLDEN_HORSE_ARMOR'
+          CustomModelData: 7191282
+          Glow: true
+          Amount: 1
+          DisplayName: '&#ff6df8 Darkness Dragon Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&5Hades''s Lair: Pulls in nearby targets'
+          - '&5then explodes with darkness power.'
+          Slot: 15
+          Buy:
+            Price: 260.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-darkness_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&5Hades''s Lair: Pulls in nearby targets then explodes with darkness power.'
+        Pet_21:
+          Material: GOLDEN_HORSE_ARMOR
+          CustomModelData: 7191142
+          Glow: true
+          Amount: 1
+          DisplayName: '&6Earth Guard Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&6Clobbering Crash: Shatters the earth'
+          - '&6creating spikes that stun and knock up.'
+          Slot: 16
+          Buy:
+            Price: 280.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-earth_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&6Clobbering Crash: Shatters the earth creating spikes that stun and knock up.'
+      '5':
+        Pet_22:
+          Material: GOLDEN_HORSE_ARMOR
+          CustomModelData: 7191143
+          Glow: true
+          Amount: 1
+          DisplayName: '&cFire Dragon Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&cScorching Emblr: Turns into a plasma ball'
+          - '&cand explodes, damaging a wide area.'
+          Slot: 12
+          Buy:
+            Price: 300.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-fire_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&cScorching Emblr: Turns into a plasma ball and explodes, damaging a wide area.'
+        
+        Pet_23:
+          Material: GOLDEN_HORSE_ARMOR
+          CustomModelData: 7191144
+          Glow: true
+          Amount: 1
+          DisplayName: '&dGalaxy Dragon Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&dDiversion Cosmos: Hops 4 times to targets'
+          - '&dimpacting nearby enemies with extra damage.'
+          Slot: 13
+          Buy:
+            Price: 320.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-galaxy_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&dDiversion Cosmos: Hops 4 times to targets impacting nearby enemies with extra damage.'
+        
+        Pet_24:
+          Material: GOLDEN_HORSE_ARMOR
+          CustomModelData: 7191145
+          Glow: true
+          Amount: 1
+          DisplayName: '&bIce Dragon Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&bNiflheim: Freezes nearby targets'
+          - '&bdealing rapid damage and stunning them.'
+          Slot: 14
+          Buy:
+            Price: 340.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-ice_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&bNiflheim: Freezes nearby targets dealing rapid damage and stunning them.'
+        
+        Pet_25:
+          Material: GOLDEN_HORSE_ARMOR
+          CustomModelData: 7191146
+          Glow: true
+          Amount: 1
+          DisplayName: '&eLight Dragon Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&eFreyr''s Judgement: Creates a holy field'
+          - '&ethat pierces enemies with final burst.'
+          Slot: 15
+          Buy:
+            Price: 360.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-light_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&eFreyr''s Judgement: Creates a holy field that pierces enemies with final burst.'
+        
+        Pet_26:
+          Material: GOLDEN_HORSE_ARMOR
+          CustomModelData: 7191147
+          Glow: true
+          Amount: 1
+          DisplayName: '&2Nature Dragon Cubee'
+          Lore:
+          - '&7Pets gain EXP when they are in combat'
+          - '&7or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration'
+          - '&7increases every level.'
+          - ''
+          - '&2Yggdrasill''s Gift: Summons a solar flower'
+          - '&2that blasts a solar ray at the target.'
+          Slot: 16
+          Buy:
+            Price: 380.0
+            Commands:
+              - '[COMMAND] lp user %player% permission set mcpet.cubee-nature_dragon true'
+              - '[MESSAGE] &aThanks for buying %player%! feel free to type the command [/pets]'
+          DisplayLore:
+          - '&7Pets gain EXP when they are in combat or when they are given pet food.'
+          - '&7Pet stats, skill damage and duration increases every level.'
+          - ''
+          - '&2Yggdrasill''s Gift: Summons a solar flower that blasts a solar ray at the target.'
+    
+  EmptySlot:
+    Enabled: true
+    Items:
+      Dummy_1:
+        Material: BLUE_STAINED_GLASS_PANE
+        DisplayName: ''
+        DisplayLore:
+        - '&e====='
+        Glow: true
+      Dummy_2:
+        Material: GRAY_STAINED_GLASS_PANE
+        DisplayName: ''
+        DisplayLore:
+        - '&e====='
+        Glow: true
+ConfigVersion: 2.3

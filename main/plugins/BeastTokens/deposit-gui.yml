@@ -1,0 +1,32 @@
+Title: "&4&lDeposit &b&lTokens"
+Size: 27
+EmptySlot:
+  Enabled: true
+  Item: GLASS_PANE
+  Glow: true
+  Amount: 1
+  DisplayName: "&7---"
+  Lore:
+    - ""
+    - ""
+DepositSlots: [11,12,13,14,15,16,17]
+Items:
+  Confirm:
+    Item: PAPER
+    Slot: 23
+    Glow: true
+    Amount: 1
+    DisplayName: "&cConfirm"
+    Action: "CONFIRM"
+    Lore:
+      - "&7Click Here"
+  Cancel:
+    Item: BARRIER
+    Slot: 24
+    Glow: true
+    Amount: 1
+    DisplayName: "&cCancel"
+    Action: "CANCEL"
+    Lore:
+      - "&7Click Here"
+ConfigVersion: 1.0

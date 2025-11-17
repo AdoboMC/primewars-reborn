@@ -1,0 +1,207 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 175.176.67.196
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: true
+timestamps:
+  lastteleport: 1752644563827
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752644632714
+  login: 1752642059865
+money: '7947.4349054952044418'
+last-account-name: Honorarymanx47
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -380.85586687012557
+  y: 88.68287342630816
+  z: -347.8247937780272
+  yaw: 161.04774475097656
+  pitch: -36.439064025878906
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 576.1088739798203
+  y: 90.0
+  z: 621.2204813717236
+  yaw: -156.20001220703125
+  pitch: 22.34995460510254
+homes:
+  castle:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: -156.04779006767805
+    y: -50.3769305246883
+    z: 326.2480090477652
+    yaw: -101.84945678710938
+    pitch: 13.19999885559082
+  castlefinal:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: -409.2813131331204
+    y: -42.499136063301954
+    z: 301.8582035495318
+    yaw: 85.05054473876953
+    pitch: 9.150005340576172
+  dragnel:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 146.32746535376037
+    y: -60.0
+    z: 64.79109866118691
+    yaw: -11.5491943359375
+    pitch: 15.60000228881836
+  parkour1:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 31.59834110817393
+    y: -48.0
+    z: -47.38663174283774
+    yaw: 91.2000503540039
+    pitch: 15.59999942779541
+  shrine:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -442.4603001520215
+    y: 76.5
+    z: -707.444315487725
+    yaw: 176.70147705078125
+    pitch: 64.6500244140625
+  bahaybato:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 78.84748622782692
+    y: 79.2871341701727
+    z: -1040.4678316907973
+    yaw: -87.450927734375
+    pitch: 32.55002212524414
+  village1:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -23.176153773960387
+    y: 65.0
+    z: -1042.0347792242526
+    yaw: 160.072265625
+    pitch: 29.10000991821289
+  story2:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 899.8435314210174
+    y: 74.0
+    z: 1060.5049637934949
+    yaw: -6.6614460945129395
+    pitch: -0.1843988597393036
+  barn:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -148.13824046365573
+    y: 72.5187112902736
+    z: -1216.7896984537115
+    yaw: 49.37235641479492
+    pitch: 20.100004196166992
+  godvalley:
+    world: 7b9136ce-0731-4950-8f63-33f9407f6467
+    world-name: hunter_0
+    x: 4.707640388731156
+    y: -41.5
+    z: -25.154051819416264
+    yaw: -2.8053205013275146
+    pitch: 34.53558349609375
+  ash1:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: -102.37234578518138
+    y: 11.0
+    z: 87.45888908817129
+    yaw: -153.29983520507812
+    pitch: -11.550056457519531
+  ash2:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 146.9042471031442
+    y: 36.0625
+    z: 379.1952255818668
+    yaw: -47.39995574951172
+    pitch: 38.699954986572266
+  z:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: -124.52902897422265
+    y: 13.0
+    z: 132.19716126233124
+    yaw: -135.29986572265625
+    pitch: 10.799949645996094
+  cock:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -376.7162904495031
+    y: 70.0
+    z: -586.411327320496
+    yaw: 166.59515380859375
+    pitch: 43.200042724609375
+  village:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 99.0978578015291
+    y: 80.01407814596332
+    z: -646.9259622362974
+    yaw: 48.988037109375
+    pitch: 26.399988174438477
+  s1:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 10.699999988079071
+    y: -37.87690364459312
+    z: 95.30000001192093
+    yaw: -63.599998474121094
+    pitch: 14.550008773803711
+  s2:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 428.59111288390477
+    y: 10.346169031364429
+    z: 127.98271856705783
+    yaw: -81.5994873046875
+    pitch: 24.450023651123047
+  home:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 184.22309167688707
+    y: 68.0
+    z: -668.4089948631173
+    yaw: 102.68838500976562
+    pitch: 6.900028228759766
+  s3:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 724.5042053756135
+    y: -13.0
+    z: -90.81855090951605
+    yaw: 26.3756103515625
+    pitch: 20.29106330871582
+  s4:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 616.0482673996825
+    y: -35.5
+    z: -85.30000001192093
+    yaw: -24.925048828125
+    pitch: -4.308943271636963
+powertools:
+  netherite_shovel:
+  - /pos 1
+  netherite_pickaxe:
+  - /pos2
+  netherite_axe:
+  - /replacenear 3 vine air
+nickname: §fHonorarymanx47

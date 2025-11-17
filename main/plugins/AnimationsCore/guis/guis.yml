@@ -1,0 +1,13 @@
+# # Credits to @Aternos_
+animations:
+  flyaway:
+    mm-id: leave-flyaway
+    permission: animcore.leave.flyaway
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Flyaway
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+# License Number: 65389fc9-a58e-47d0-9913-2e10d6b85800

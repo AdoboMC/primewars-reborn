@@ -1,0 +1,79 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 222.127.106.220
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1757592494443
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758093379191
+  login: 1758092981403
+money: '17530.3452369777391597'
+last-account-name: Krakenistheone
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -3363.378888633548
+  y: 36.73864354940229
+  z: -1666.3276152953933
+  yaw: 9.870269775390625
+  pitch: 13.363184928894043
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 2094.764494914598
+  y: 90.0
+  z: 64.68900537343896
+  yaw: 132.69635009765625
+  pitch: 37.04106521606445
+homes:
+  test:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1994.517152730507
+    y: 70.0
+    z: 493.1629485661673
+    yaw: -120.83181762695312
+    pitch: 32.55001449584961
+  mage:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 2065.1805004198604
+    y: 75.0
+    z: -3.300000011920929
+    yaw: -24.691267013549805
+    pitch: 4.748385429382324
+  bnear:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 2062.8932874719862
+    y: 72.0
+    z: 43.05911692445049
+    yaw: 9.958740234375
+    pitch: -22.701522827148438
+  rangerswords:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 2004.154079379951
+    y: 71.4375
+    z: -137.1606769392151
+    yaw: 69.08853149414062
+    pitch: 29.440183639526367
+  bosself:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 1983.699999988079
+    y: 68.0
+    z: -81.1777804162191
+    yaw: 80.96142578125
+    pitch: 1.2217040061950684

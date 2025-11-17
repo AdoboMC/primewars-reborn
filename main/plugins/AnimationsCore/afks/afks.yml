@@ -1,0 +1,13 @@
+# # Credits to @Aternos_
+animations:
+  waiting:
+    mm-id: join-warp_pipe
+    permission: animcore.afk.warp_pipe
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Waiting
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+# License Number: 72158dae-d1d1-49f2-9f75-e80e61e1b09d

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 73.93.95.235
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1756439193734
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1756439271842
+  login: 1756438959540
+money: '2000.0'
+last-account-name: RickyDaMonkey
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 176.55026766217506
+  y: 70.0
+  z: 180.78525797006836
+  yaw: -2.235748291015625
+  pitch: 56.89956283569336
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -399.63036135377973
+  y: 88.0
+  z: -221.30840656748077
+  yaw: 35.8929443359375
+  pitch: 23.69223976135254

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.29.69.103
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752849455373
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752854175853
+  login: 1752845898306
+money: '804.0008170547834014'
+last-account-name: Sxrds
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 131.11703611376046
+  y: 102.0
+  z: 160.6727629186111
+  yaw: -60.736236572265625
+  pitch: 34.95001983642578
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 589.5255867249296
+  y: 106.0
+  z: 681.6999999880791
+  yaw: 169.95703125
+  pitch: 48.00010681152344

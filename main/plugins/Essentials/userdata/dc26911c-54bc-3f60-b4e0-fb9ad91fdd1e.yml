@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 2.127.212.240
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758334480342
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758334575456
+  login: 1758333719292
+money: '207.0086906752781441'
+last-account-name: Unleavable
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 605.7005480003843
+  y: 94.5
+  z: 554.3477225041756
+  yaw: 8.69635009765625
+  pitch: 40.66191101074219
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.0311137235643
+  y: 87.0
+  z: -431.69999998807907
+  yaw: -177.37847900390625
+  pitch: 10.535682678222656

@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 112.208.76.107
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1757128335427
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757128891239
+  login: 1757128225326
+money: '0'
+last-account-name: S2ekwark
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -465.7052337042209
+  y: 47.0
+  z: -261.0751474158416
+  yaw: -96.89845275878906
+  pitch: 17.573543548583984
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -568.3000000119209
+  y: 89.0
+  z: -1912.668031775984
+  yaw: -82.8590087890625
+  pitch: 14.298089027404785
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -615.948404929334
+    y: 83.0
+    z: -1931.3632344274058
+    yaw: -12.749359130859375
+    pitch: 15.611763000488281

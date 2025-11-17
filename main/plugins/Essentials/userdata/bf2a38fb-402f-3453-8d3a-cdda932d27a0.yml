@@ -1,0 +1,88 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.3.137
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755009790075
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755526360460
+  login: 1755525524607
+money: '3949115.346580948006561034'
+last-account-name: SageeMode
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -579.9391753925502
+  y: 74.0
+  z: -145.69999998807907
+  yaw: -176.13702392578125
+  pitch: -3.6841816902160645
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -578.6999999880791
+  y: 87.0
+  z: -166.30000001192093
+  yaw: -9.231576919555664
+  pitch: 18.685184478759766
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -389.30000001192093
+    y: -23.0
+    z: 204.39972431138568
+    yaw: 75.31893920898438
+    pitch: 0.7903704643249512
+  end:
+    world: 3ceb653b-2e14-4f71-94be-ebdeb94cf822
+    world-name: world_the_end
+    x: -266.00935100674565
+    y: 2.0
+    z: 34.69999998807907
+    yaw: 28.28839111328125
+    pitch: 64.80001831054688
+  home3:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 201.62653208103117
+    y: -21.0
+    z: 218.39267955617805
+    yaw: -75.52780151367188
+    pitch: 9.300009727478027
+  darkforest:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 698.3000000119209
+    y: 70.0
+    z: -983.5859008470151
+    yaw: 81.44854736328125
+    pitch: 22.65003204345703
+  jungle:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1247.3850243322518
+    y: 96.0
+    z: -549.3000000119209
+    yaw: -22.195220947265625
+    pitch: 28.23763656616211
+  aaaa:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1290.2518710008264
+    y: 78.0
+    z: -0.39979029555611373
+    yaw: -170.544921875
+    pitch: 3.487623929977417
+nickname: Sagee

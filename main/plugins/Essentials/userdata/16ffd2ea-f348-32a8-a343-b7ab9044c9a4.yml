@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.190.208.110
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1757026612502
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757026664910
+  login: 1757026454906
+money: '6247333.423203776422877188'
+last-account-name: Exodussx
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -433.6552638914989
+  y: 46.0
+  z: -298.7906380923814
+  yaw: 18.371261596679688
+  pitch: 5.198060512542725
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -386.9130553028597
+  y: 51.0
+  z: 2122.379933960319
+  yaw: 94.11459350585938
+  pitch: 60.44173049926758
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -398.49977912727195
+    y: 71.0
+    z: 2120.497201879738
+    yaw: -4.487030029296875
+    pitch: 89.35462188720703

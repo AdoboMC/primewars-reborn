@@ -1,0 +1,106 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.151.22.149
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1757250365354
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757250362524
+  login: 1757244826224
+  kits:
+    color: 1753366891151
+money: '127717.9643902704160862'
+last-account-name: sueena
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -385.569169645209
+  y: 92.0
+  z: -284.4814171841339
+  yaw: 177.15184020996094
+  pitch: -3.305744171142578
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 385.59369037110895
+  y: 72.875
+  z: -157.4928784600179
+  yaw: 144.97430419921875
+  pitch: 3.1963846683502197
+homes:
+  home:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -439.99109885435604
+    y: 195.5
+    z: -333.5800486894779
+    yaw: -89.65267944335938
+    pitch: 4.805140495300293
+  rollen:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -151.08251998111368
+    y: 64.0
+    z: -429.97627387052654
+    yaw: -85.6699447631836
+    pitch: 17.683984756469727
+  lowrankdungeon:
+    world: 87881be0-f4de-43ed-ab19-bf6a3359d0f0
+    world-name: dungeonworld
+    x: 84.5
+    y: 43.0
+    z: 374.5
+    yaw: -62.91756057739258
+    pitch: -1.8287757635116577
+  classweap:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 850.5217746613812
+    y: 71.9375
+    z: 1282.6841167151597
+    yaw: 42.22892379760742
+    pitch: 10.767523765563965
+  tester:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -358.6946047276784
+    y: 72.0
+    z: -1646.148616447482
+    yaw: -68.99608612060547
+    pitch: 12.87770938873291
+  serap:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -1656.5800793099286
+    y: 69.0
+    z: 1261.9022319317896
+    yaw: -96.0238037109375
+    pitch: 5.34481954574585
+  zydraz:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 81.39406644015033
+    y: 70.0
+    z: -944.3489630824613
+    yaw: 166.28125
+    pitch: 3.901656150817871
+  arena:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -396.16825244315083
+    y: 63.0
+    z: 663.8892793969975
+    yaw: -75.81796264648438
+    pitch: -20.38211441040039
+nickname: §bsueena

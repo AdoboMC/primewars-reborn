@@ -1,0 +1,792 @@
+menu_title: "<shift:-44>&f<glyph:scenes_edit>"
+open_command:
+  - scenespaths
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+
+  path1:
+    material: PAPER
+    model_data: 3321007
+    slot: 0
+    priority: 1
+    update: true
+    display_name: 'Path 1'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path1'
+      - '[message] &aYou have Sent the npc to Path 1!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path2:
+    material: PAPER
+    model_data: 3321007
+    slot: 1
+    priority: 1
+    update: true
+    display_name: 'Path 2'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path2'
+      - '[message] &aYou have Sent the npc to Path 2!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path3:
+    material: PAPER
+    model_data: 3321007
+    slot: 2
+    priority: 1
+    update: true
+    display_name: 'Path 3'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path3'
+      - '[message] &aYou have Sent the npc to Path 3!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path4:
+    material: PAPER
+    model_data: 3321007
+    slot: 3
+    priority: 1
+    update: true
+    display_name: 'Path 4'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path4'
+      - '[message] &aYou have Sent the npc to Path 4!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path5:
+    material: PAPER
+    model_data: 3321007
+    slot: 4
+    priority: 1
+    update: true
+    display_name: 'Path 5'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path5'
+      - '[message] &aYou have Sent the npc to Path 5!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path6:
+    material: PAPER
+    model_data: 3321007
+    slot: 5
+    priority: 1
+    update: true
+    display_name: 'Path 6'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path6'
+      - '[message] &aYou have Sent the npc to Path 6!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path7:
+    material: PAPER
+    model_data: 3321007
+    slot: 6
+    priority: 1
+    update: true
+    display_name: 'Path 7'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path7'
+      - '[message] &aYou have Sent the npc to Path 7!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path8:
+    material: PAPER
+    model_data: 3321007
+    slot: 7
+    priority: 1
+    update: true
+    display_name: 'Path 8'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path8'
+      - '[message] &aYou have Sent the npc to Path 8!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path9:
+    material: PAPER
+    model_data: 3321007
+    slot: 8
+    priority: 1
+    update: true
+    display_name: 'Path 9'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path9'
+      - '[message] &aYou have Sent the npc to Path 9!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path10:
+    material: PAPER
+    model_data: 3321007
+    slot: 9
+    priority: 1
+    update: true
+    display_name: 'Path 10'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path10'
+      - '[message] &aYou have Sent the npc to Path 10!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path11:
+    material: PAPER
+    model_data: 3321007
+    slot: 10
+    priority: 1
+    update: true
+    display_name: 'Path 11'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path11'
+      - '[message] &aYou have Sent the npc to Path 11!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path12:
+    material: PAPER
+    model_data: 3321007
+    slot: 11
+    priority: 1
+    update: true
+    display_name: 'Path 12'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path12'
+      - '[message] &aYou have Sent the npc to Path 12!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path13:
+    material: PAPER
+    model_data: 3321007
+    slot: 12
+    priority: 1
+    update: true
+    display_name: 'Path 13'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path13'
+      - '[message] &aYou have Sent the npc to Path 13!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path14:
+    material: PAPER
+    model_data: 3321007
+    slot: 13
+    priority: 1
+    update: true
+    display_name: 'Path 14'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path14'
+      - '[message] &aYou have Sent the npc to Path 14!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path15:
+    material: PAPER
+    model_data: 3321007
+    slot: 14
+    priority: 1
+    update: true
+    display_name: 'Path 15'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path15'
+      - '[message] &aYou have Sent the npc to Path 15!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path16:
+    material: PAPER
+    model_data: 3321007
+    slot: 15
+    priority: 1
+    update: true
+    display_name: 'Path 16'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path16'
+      - '[message] &aYou have Sent the npc to Path 16!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path17:
+    material: PAPER
+    model_data: 3321007
+    slot: 16
+    priority: 1
+    update: true
+    display_name: 'Path 17'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path17'
+      - '[message] &aYou have Sent the npc to Path 17!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path18:
+    material: PAPER
+    model_data: 3321007
+    slot: 17
+    priority: 1
+    update: true
+    display_name: 'Path 18'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path18'
+      - '[message] &aYou have Sent the npc to Path 18!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path19:
+    material: PAPER
+    model_data: 3321007
+    slot: 18
+    priority: 1
+    update: true
+    display_name: 'Path 19'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path19'
+      - '[message] &aYou have Sent the npc to Path 19!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path20:
+    material: PAPER
+    model_data: 3321007
+    slot: 19
+    priority: 1
+    update: true
+    display_name: 'Path 20'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path20'
+      - '[message] &aYou have Sent the npc to Path 20!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path21:
+    material: PAPER
+    model_data: 3321007
+    slot: 20
+    priority: 1
+    update: true
+    display_name: 'Path 21'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path21'
+      - '[message] &aYou have Sent the npc to Path 21!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path22:
+    material: PAPER
+    model_data: 3321007
+    slot: 21
+    priority: 1
+    update: true
+    display_name: 'Path 22'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path22'
+      - '[message] &aYou have Sent the npc to Path 22!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path23:
+    material: PAPER
+    model_data: 3321007
+    slot: 22
+    priority: 1
+    update: true
+    display_name: 'Path 23'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path23'
+      - '[message] &aYou have Sent the npc to Path 23!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path24:
+    material: PAPER
+    model_data: 3321007
+    slot: 23
+    priority: 1
+    update: true
+    display_name: 'Path 24'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path24'
+      - '[message] &aYou have Sent the npc to Path 24!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path25:
+    material: PAPER
+    model_data: 3321007
+    slot: 24
+    priority: 1
+    update: true
+    display_name: 'Path 25'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path25'
+      - '[message] &aYou have Sent the npc to Path 25!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path26:
+    material: PAPER
+    model_data: 3321007
+    slot: 25
+    priority: 1
+    update: true
+    display_name: 'Path 26'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path26'
+      - '[message] &aYou have Sent the npc to Path 26!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path27:
+    material: PAPER
+    model_data: 3321007
+    slot: 26
+    priority: 1
+    update: true
+    display_name: 'Path 27'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path27'
+      - '[message] &aYou have Sent the npc to Path 27!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path28:
+    material: PAPER
+    model_data: 3321007
+    slot: 27
+    priority: 1
+    update: true
+    display_name: 'Path 28'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path28'
+      - '[message] &aYou have Sent the npc to Path 28!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path29:
+    material: PAPER
+    model_data: 3321007
+    slot: 28
+    priority: 1
+    update: true
+    display_name: 'Path 29'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path29'
+      - '[message] &aYou have Sent the npc to Path 29!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path30:
+    material: PAPER
+    model_data: 3321007
+    slot: 29
+    priority: 1
+    update: true
+    display_name: 'Path 30'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path30'
+      - '[message] &aYou have Sent the npc to Path 30!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path31:
+    material: PAPER
+    model_data: 3321007
+    slot: 30
+    priority: 1
+    update: true
+    display_name: 'Path 31'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path31'
+      - '[message] &aYou have Sent the npc to Path 31!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path32:
+    material: PAPER
+    model_data: 3321007
+    slot: 31
+    priority: 1
+    update: true
+    display_name: 'Path 32'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path32'
+      - '[message] &aYou have Sent the npc to Path 32!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path33:
+    material: PAPER
+    model_data: 3321007
+    slot: 32
+    priority: 1
+    update: true
+    display_name: 'Path 33'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path33'
+      - '[message] &aYou have Sent the npc to Path 33!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path34:
+    material: PAPER
+    model_data: 3321007
+    slot: 33
+    priority: 1
+    update: true
+    display_name: 'Path 34'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path34'
+      - '[message] &aYou have Sent the npc to Path 34!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path35:
+    material: PAPER
+    model_data: 3321007
+    slot: 34
+    priority: 1
+    update: true
+    display_name: 'Path 35'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path35'
+      - '[message] &aYou have Sent the npc to Path 35!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path36:
+    material: PAPER
+    model_data: 3321007
+    slot: 35
+    priority: 1
+    update: true
+    display_name: 'Path 36'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path36'
+      - '[message] &aYou have Sent the npc to Path 36!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path37:
+    material: PAPER
+    model_data: 3321007
+    slot: 36
+    priority: 1
+    update: true
+    display_name: 'Path 37'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path37'
+      - '[message] &aYou have Sent the npc to Path 37!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path38:
+    material: PAPER
+    model_data: 3321007
+    slot: 37
+    priority: 1
+    update: true
+    display_name: 'Path 38'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path38'
+      - '[message] &aYou have Sent the npc to Path 38!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path39:
+    material: PAPER
+    model_data: 3321007
+    slot: 38
+    priority: 1
+    update: true
+    display_name: 'Path 39'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path39'
+      - '[message] &aYou have Sent the npc to Path 39!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path40:
+    material: PAPER
+    model_data: 3321007
+    slot: 39
+    priority: 1
+    update: true
+    display_name: 'Path 40'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path40'
+      - '[message] &aYou have Sent the npc to Path 40!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path41:
+    material: PAPER
+    model_data: 3321007
+    slot: 40
+    priority: 1
+    update: true
+    display_name: 'Path 41'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path41'
+      - '[message] &aYou have Sent the npc to Path 41!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path42:
+    material: PAPER
+    model_data: 3321007
+    slot: 41
+    priority: 1
+    update: true
+    display_name: 'Path 42'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path42'
+      - '[message] &aYou have Sent the npc to Path 42!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path43:
+    material: PAPER
+    model_data: 3321007
+    slot: 42
+    priority: 1
+    update: true
+    display_name: 'Path 43'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path43'
+      - '[message] &aYou have Sent the npc to Path 43!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path44:
+    material: PAPER
+    model_data: 3321007
+    slot: 43
+    priority: 1
+    update: true
+    display_name: 'Path 44'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path44'
+      - '[message] &aYou have Sent the npc to Path 44!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path45:
+    material: PAPER
+    model_data: 3321007
+    slot: 44
+    priority: 1
+    update: true
+    display_name: 'Path 45'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path45'
+      - '[message] &aYou have Sent the npc to Path 45!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path46:
+    material: PAPER
+    model_data: 3321007
+    slot: 45
+    priority: 1
+    update: true
+    display_name: 'Path 46'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path46'
+      - '[message] &aYou have Sent the npc to Path 46!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path47:
+    material: PAPER
+    model_data: 3321007
+    slot: 46
+    priority: 1
+    update: true
+    display_name: 'Path 47'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path47'
+      - '[message] &aYou have Sent the npc to Path 47!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path48:
+    material: PAPER
+    model_data: 3321007
+    slot: 47
+    priority: 1
+    update: true
+    display_name: 'Path 48'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path48'
+      - '[message] &aYou have Sent the npc to Path 48!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path49:
+    material: PAPER
+    model_data: 3321007
+    slot: 48
+    priority: 1
+    update: true
+    display_name: 'Path 49'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path49'
+      - '[message] &aYou have Sent the npc to Path 49!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  path50:
+    material: PAPER
+    model_data: 3321007
+    slot: 49
+    priority: 1
+    update: true
+    display_name: 'Path 50'
+    lore:
+      - '&7Send the NPC to this Path!'
+    left_click_commands:
+      - '[player] mm test cast path50'
+      - '[message] &aYou have Sent the npc to Path 50!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+    
+  remove:
+    material: PAPER
+    model_data: 3350552
+    slot: 53
+    priority: 1
+    update: true
+    display_name: 'Delete'
+    lore:
+      - '&7Click to Delete this Scene'
+    left_click_commands:
+      - '[player] mm test cast deletenpc'
+      - '[message] &aScene Deleted!'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  goback:
+    material: PAPER
+    model_data: 3390553
+    slot: 52
+    priority: 1
+    update: true
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] scene_edit'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+#35dd8da810fde8cd410472122f289581

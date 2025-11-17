@@ -1,0 +1,106 @@
+## Configuration for BeastTokens boosters by MrAxeTv
+
+## Custom chance booster based on percentage & multiplier!
+## To enable booster for OP/* player use /BeastTokens booster on
+ChanceBoosters:
+  ## Drop chance will be increased for percentage.
+  ## Example permission: BeastTokens.<type>.ChancePercentageBooster.<BoosterName>(BeastTokens.Mobs.ChancePercentageBooster.Goblin)
+  ## So in case drop chance is 50% (Goblin) will boost it extra 5% to 55%.
+  ## If player has permission for two or more booster in same category server will apply one with higher percentage.
+  Percentage:
+    Mobs:
+      Goblin: 10
+      Griffin: 25
+      Imp: 50
+    MythicMobs:
+      King: 5
+      Prince: 12
+      Servant: 30
+    Mining:
+      Miner: 10
+      Engineer: 25
+    Farming:
+      Farmer: 10
+      Serf: 25
+    Fishing:
+      Farmer: 10
+      Serf: 25
+  ## Drop chance will be multiplied with specific multiplier.
+  ## Example permission: BeastTokens.<type>.ChanceMultiplierBooster.<BoosterName>(BeastTokens.Mobs.ChanceMultiplierBooster.Double)
+  ## So in case drop chance is 12% (Double) will multiply to 24%. (Chance * Double)
+  ## If player has permission for two or more booster in same category server will apply one with higher multiplier.
+  Multiplier:
+    Mobs:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    MythicMobs:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    Mining:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    Farming:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    Fishing:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+## Custom token quantity booster based on percentage & multiplier!
+## To enable booster for OP/* player use /BeastTokens booster on
+QuantityBoosters:
+## Dropped tokens will be increased for percentage.
+## Example permission: BeastTokens.<type>.PercentageBooster.<BoosterName>(BeastTokens.Mobs.PercentageBooster.Goblin)
+## So in case player gets 100 tokens (Goblin) booster will give him extra 25% that will be 125 tokens dropped for that player.
+## If player has permission for two or more booster in same category server will apply one with higher percentage.
+  Percentage:
+    Mobs:
+      Goblin: 25
+      Griffin: 250
+      Imp: 500
+    MythicMobs:
+      King: 25
+      Prince: 150
+      Servant: 400
+    Mining:
+      Goblin: 25
+      Griffin: 250
+      Imp: 500
+    Farming:
+      Goblin: 25
+      Griffin: 250
+      Imp: 500
+    Fishing:
+      Goblin: 25
+      Griffin: 250
+      Imp: 500
+## Dropped tokens will be increased for percentage.
+## Example permission: BeastTokens.<type>.MultiplierBooster.<BoosterName>(BeastTokens.Mobs.MultiplierBooster.Quadruple)
+## So in case player gets 100 tokens (Quadruple) booster will multiply there tokens to 400 tokens. (Tokens * Quadruple)
+## If player has permission for two or more booster in same category server will apply one with higher percentage.
+  Multiplier:
+    Mobs:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    MythicMobs:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    Mining:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    Farming:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+    Fishing:
+      Double: 2
+      Quadruple: 4
+      CustomName: 8
+ConfigVersion: 1.0

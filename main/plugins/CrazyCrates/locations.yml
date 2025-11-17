@@ -1,0 +1,109 @@
+Locations:
+  '1':
+    Crate: CrateExample
+    World: Philippines
+    X: -395
+    Y: 89
+    Z: -420
+  '4':
+    Crate: megalotto
+    World: Philippines
+    X: -365
+    Y: 89
+    Z: -364
+  '7':
+    Crate: spawner
+    World: Philippines
+    X: -395
+    Y: 89
+    Z: -399
+  '8':
+    Crate: bosscrate
+    World: Philippines
+    X: -396
+    Y: 89
+    Z: -411
+  '3':
+    Crate: luzon
+    World: Philippines
+    X: -372
+    Y: 89
+    Z: -407
+  '6':
+    Crate: visayas
+    World: Philippines
+    X: -373
+    Y: 89
+    Z: -403
+  '2':
+    Crate: examplecrate
+    World: Philippines
+    X: -398
+    Y: 89
+    Z: -407
+  '5':
+    Crate: vote
+    World: Philippines
+    X: -385
+    Y: 88
+    Z: -408
+  '9':
+    Crate: demonic
+    World: Philippines
+    X: -385
+    Y: 87
+    Z: -399
+  '10':
+    Crate: skin
+    World: Philippines
+    X: -397
+    Y: 93
+    Z: -295
+  '11':
+    Crate: skin
+    World: Philippines
+    X: -396
+    Y: 92
+    Z: -296
+  '12':
+    Crate: skin
+    World: Philippines
+    X: -395
+    Y: 93
+    Z: -298
+  '13':
+    Crate: skin
+    World: Philippines
+    X: -396
+    Y: 87
+    Z: -392
+  '14':
+    Crate: skin
+    World: Philippines
+    X: -393
+    Y: 88
+    Z: -392
+  '15':
+    Crate: mystic
+    World: Philippines
+    X: -393
+    Y: 88
+    Z: -392
+  '16':
+    Crate: dailyr
+    World: Philippines
+    X: -377
+    Y: 88
+    Z: -392
+  '17':
+    Crate: afk
+    World: Philippines
+    X: -374
+    Y: 89
+    Z: -411
+  '18':
+    Crate: randomcrate
+    World: Philippines
+    X: -397
+    Y: 89
+    Z: -403

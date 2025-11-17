@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 160.20.107.154
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752617882717
+  login: 1752617621313
+money: '214.3281643997081447'
+last-account-name: uiefhiahifh
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 20.123903403987793
+  y: 67.0
+  z: 5.206192906515256
+  yaw: -76.50006103515625
+  pitch: 3.600010871887207
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 558.9972525145214
+  y: 92.0
+  z: 651.1790067670568
+  yaw: -86.81515502929688
+  pitch: 26.147329330444336

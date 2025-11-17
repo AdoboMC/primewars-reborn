@@ -1,0 +1,137 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ᴄᴜʟɪɴᴀʀɪᴀɴ
+open_command:
+  - jobs payouts culinarian
+register_command: true
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 3
+    display_name: '%imc_primary-color_c%ᴄʀᴀꜰᴛ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴄʀᴀꜰᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  smelt:
+    material: BLAST_FURNACE
+    slot: 4
+    display_name: '%imc_primary-color_c%sᴍᴇʟᴛ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%sᴍᴇʟᴛ ᴛᴏ ᴏʙᴛᴀɪɴ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ'
+      - '%imc_dark-color_c%ɪᴛᴇᴍs ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_smelt'
+      - '[sound] UI_BUTTON_CLICK'
+  eat:
+    material: APPLE
+    slot: 5
+    display_name: '%imc_primary-color_c%ᴇᴀᴛ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴇᴀᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ꜰᴏᴏᴅs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_eat'
+      - '[sound] UI_BUTTON_CLICK'
+  craft_bread:
+    material: bread
+    slot: 10
+    display_name: '%imc_primary-color_c%ʙʀᴇᴀᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀᴇᴀᴅ'
+  craft_cake:
+    material: cake
+    slot: 11
+    display_name: '%imc_primary-color_c%ᴄᴀᴋᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴀᴋᴇ'
+  craft_cookie:
+    material: cookie
+    slot: 12
+    display_name: '%imc_primary-color_c%ᴄᴏᴏᴋɪᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴏᴋɪᴇ'
+  craft_golden_apple:
+    material: golden_apple
+    slot: 13
+    display_name: '%imc_primary-color_c%ɢᴏʟᴅᴇɴ ᴀᴘᴘʟᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢᴏʟᴅᴇɴ ᴀᴘᴘʟᴇ'
+  craft_golden_carrot:
+    material: golden_carrot
+    slot: 14
+    display_name: '%imc_primary-color_c%ɢᴏʟᴅᴇɴ ᴄᴀʀʀᴏᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢᴏʟᴅᴇɴ ᴄᴀʀʀᴏᴛ'
+  craft_pumpkin_pie:
+    material: pumpkin_pie
+    slot: 15
+    display_name: '%imc_primary-color_c%ᴘᴜᴍᴘᴋɪɴ ᴘɪᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴜᴍᴘᴋɪɴ ᴘɪᴇ'
+  craft_mushroom_stew:
+    material: mushroom_stew
+    slot: 16
+    display_name: '%imc_primary-color_c%sᴛᴇᴡs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴜsʜʀᴏᴏᴍ sᴛᴇᴡ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴀʙʙɪᴛ sᴛᴇᴡ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴇᴇᴛʀᴏᴏᴛ sᴏᴜᴘ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴜsᴘɪᴄɪᴏᴜs sᴛᴇᴡ'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: BLUE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

@@ -1,0 +1,55 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 143.44.165.22
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758211981199
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758470524361
+  login: 1758470479716
+money: '684236.2817275241937685'
+last-account-name: JemarkBy
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 1124.6619047953257
+  y: 159.11003715591713
+  z: -734.295019927046
+  yaw: 51.678165435791016
+  pitch: 53.4383544921875
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 1546.9582368696078
+  y: 134.06576145780687
+  z: -1224.6777094707866
+  yaw: 149.6976318359375
+  pitch: 53.25039291381836
+homes:
+  home:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 1939.3223485616145
+    y: 77.0
+    z: -449.5704198278921
+    yaw: -150.15769958496094
+    pitch: 39.64415740966797
+  '2_':
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 1868.8296597996607
+    y: 71.0
+    z: 30.456511485015074
+    yaw: 10.330322265625
+    pitch: 69.74639129638672

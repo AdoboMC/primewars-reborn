@@ -1,0 +1,754 @@
+Crate:
+  # https://docs.crazycrew.us/docs/plugins/crazycrates/misc/crate-types
+
+    # Make sure to check out the wiki for anything not explained here.
+  # https://docs.crazycrew.us/docs/category/crazycrates
+
+    # See CosmicCrate.yml or CasinoCrate.yml to see how the Cosmic/Casino CrateType works.
+  CrateType: CSGO
+  # Name of the Inventory if a GUI crate.
+  CrateName: <red>Mystic Skin Crate
+  # The name of the inventory that will be in the preview GUI.
+  Preview-Name: <red>Mystic Skin Crate Preview
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # The amount of keys required to use the crate.
+  RequiredKeys: 0
+  # Max amount of crates that can be opened at once using /crates mass-open
+  Max-Mass-Open: 10
+  # If the crate shows in the /crates.
+  # If the type is QuickCrate/CrateOnTheGo/FireCracker, They will not work as they require a Physical Crate.
+  InGUI: false
+  # Slot the item is in the GUI.
+  Slot: 14
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: true
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><red>Mystic
+    Skin Crate.</bold>'
+  # This section is related to commands opening when a crate is opened.
+  opening-command:
+    # If the commands should be sent or not.
+    toggle: false
+    # The commands to run when the crate opens.
+    # Supports all placeholderapi placeholders
+    # Supports %prefix which returns our prefix, %player% which uses the player name
+    commands:
+    - put your command here.
+  sound:
+    # The sound options when the animation is cycling.
+    cycle-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use.
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: block.note_block.xylophone
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when an item is clicked.
+    click-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: ui.button.click
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when a crate ends.
+    stop-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: entity.player.levelup
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+  # A default message if the prize doesn't have any Messages
+  # i.e. Messages: [] or the value isn't there.
+  Prize-Message:
+  - <gray>You have won <red>%reward% <gray>from <red>%crate%.
+  # A default command if the prize doesn't have any commands
+  # i.e. Commands: [] or the value isn't there.
+  Prize-Commands: []
+  # Item the crate is in the GUI
+  Item: emerald
+  # The custom model data of the item, -1 is disabled.
+  Custom-Model-Data: -1
+  # If the crate in the main /crates is glowing or not.
+  Glowing: true
+  # Name of the item in the GUI.
+  Name: <bold><red>Mystic Skin Crate</bold>
+  # The lore of the item in the GUI.
+  Lore:
+  - <gray>This crate contains strange objects.
+  - <gray>You have <gold>%keys% keys <gray>to open this crate with.
+  - '<gray>You have opened this crate: <gold>%crate_opened% times'
+  - <gray>(<yellow>!<gray>) Right click to view rewards.
+  Preview:
+    # Turn on and off the preview for this crate.
+    Toggle: true
+    # How many lines the Crate Preview should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      # Turn the glass border in the preview on and off.
+      Toggle: true
+      # The name of the border item.
+      Name: ' '
+      # The item that shows in the border. Can be glass or any other item.
+      Item: gray_stained_glass_pane
+      # The custom model data of the item, -1 is disabled.
+      Custom-Model-Data: -1
+  PhysicalKey:
+    # Name of the Key.
+    Name: <bold><red>Mystic Skin Crate Key</bold>
+    # Lore of the Key.
+    Lore:
+    - <gray>Use it to open the Mystic Skin Crate.
+    - <gray>Thank you for supporting the server!
+    # The item the key is.
+    Item: paper
+    # The custom model data of the item, -1 is disabled.
+    Custom-Model-Data: 1237
+    # Makes the key look enchanted.
+    Glowing: true
+    # Settings for the holograms.
+    # Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The distance the hologram can be seen.
+    Range: 8
+    # How often should the hologram update? -1 is disabled.
+    Update-Interval: -1
+    # The background color of the hologram. It uses hex colors. This only works with CMI/FancyHolograms
+    # Set the color to transparent if you don't want any color.
+    Color: transparent
+    # The message that will be displayed above the crate.
+    # Note: MiniMessage or Color Codes being supported is depending on the 'holograms' plugin.
+    Message:
+    - <bold><green>Mystic Crate</bold>
+  # All the prizes that can be obtained in the Crate.
+  # These prizes do not require any extra configuration
+  # They will give the prizes based on what's already below.
+  # See the AdvancedExample.yml for a more advanced crate.
+  Prizes:
+    '1':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WT22rbQBCGJ3EaZJWmB5qblhahFEMh5CaUFlMKriViEx9KpBZSY5a1tLYXS7tmtaprjN+jb5DrvkL6Fn2P3ndkJ3KCkxKoLlZIM/PvP9/smgAFuO9QTb8wlXApAB4mBmzyEJ7GXLBA0b4ucyUFSSZShQW4F8hUaADYMMEMZDyWggmdmPBilU+1VryXakZiGfI+R+kN1B3KCeGCaCkjzcdQhGIeNjNBA7b0dMzg5UppwARTPDhARRqMSDJmLNyGbRpfmFg8BhTlmCmqM/9FGobkG41StmxjJ44l1yxOyiEL5BRw252VfiQV5gFswo+Zzb5rRe1yZ2b3ZBTa5T6NErZvBxKz7LI9GaKOvW9zTSMe5GHZ66dJQDVbVSTY/ojpoZLpYJj/1aiPMqiQipCpCE1clsy7a7KX2XNQV51dmhkoxsS6mYsqR9GBVbIcJceWFFpaGQEL3ygjkr5U8YH9rz0N2F0xCtJEy5gIGjP4vU5Jq/QKpD23+vHd2zf/j8nTFBENhtryeDCKmHUjt/1bZjVlUSQnt/LpeCMuugsEec8FeL7WM55PFpEQrwfekz/mDVSyGNJqNtt13216xDltVZr1Kmm0T1w47NjnZ310gev5Gb3LVLoGPMnFspX4p59c2PKO6y0DHl0P1R3Y9fzKSaN+VPOJV68eN1yyzHyQZ6IfF16932NBDwfzoRStkS2xJQ8DHudVbqtaq7R8DzY73QI8y/9XP3t+u0mabcdtEKfiVzIwBpg1zz85Xe71dZYNL4OafWL37SNPSzVdnJlrtsivn3gGMPEu7nBa86t9LQi/7tilu3HFS/4XakqHB+0EAAA=
+      Chance: 40
+      Commands:
+      - wraps give wrapper starlight_sickle %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic1 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic1
+    '2':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/2WQ30rDMBTGz9wcacW/uBtFH8EH2F1diyuundgoiEiISabBJSlJ6thz+wI2TjrEc3Euzvfx4/tODNCHvZR6+iisk0YDHDoEO5LDqZJaMEsXfiyt0cStjOV92GWm0R4AejHEzKjaaKG9i+Fi66feW/naeEGU4XIhW3Sv5b6bFZGaeGOWXtYQQdTJcQAiGPh1LeByS3oTWljJrloiZR/E1ULwIQyp+g3xMwgiUwtLfcgfUc7JJ102YlPjQCkjvVBuzAUz69D3fMtnjfNGhZhiSXj7hlb/imH0zxE0BCdFMc9xVlQkbIKf7jIYVLd5ieDor5SnMKpwcj/Lb6aYbPb1LEkzBPuds0yKLAQ66y6ThwrPC1LM02xG0gQnIQ+C486QlZNpUuIKdp5f2urfotzH/cABAAA=
+      Chance: 40
+      Commands:
+      - wraps give wrapper starlight_sword %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic2 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic2
+    '3':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WT22rbQBCGJ3EaZJWmB5qblhahgCEQclNCiykFxxKxqQ/FUluCMctaWtuLpV2zWtU1Ju/RN8h1XyF9kF73LTqyEznBSQlUFyOkmf33n292TYACPHSopl+YSrgUAI8TAzZ5CM9jLlig6ECXuZKCJFOpwgI8CGQqNABsmGAGMp5IwYROTHi1qqdaK95PNSOxDPmAo/QG6o7klHBBtJSR5hMoQjFPm5mgAVt6NmHweqU0ZIIpHhyiIg3GJJkwFm7DNo0vTSweA4pywhTVmf8iDUPyjUYpW7axE8eSaxYn5ZAFcga47c5KP5IK6wA24cfcZt+1ona5O7f7Mgrt8oBGCTuwA4lVdtmejlDHPrC5phEP8rTsD9IkoJqtViTY/pjpkZLpcJT/1aiPMqiQipCpCE1cLTnrrcleVZ+Buu7sysxQMSbWzVyuchQdWiXLUXJiSaGllRGw8I0yIhlIFR/a/9rTgN0VoyBNtIyJoDGD3+uUtEqvQdpzq8fv3h79PyZPU0Q0HGmrsYjHEQ2ZdSu8gzsGNmNRJKd3Qup6Yy56Cw554wV4udY4HlIWkRDvCF6WP+YtaLIcIms223XfbXrEOW1VmvUqabQ7Lrzp2hfnA3SB8eKc3mc0PQOe5WJZJP7pJxe2vI/1lgFPbqbqDux6fqXTqJ/UfLKM3td2xzHgUV6JflzYf7/Hgj5O50Mpuh1viS2hGPA0X+q2qrVKy/dgs9srwIv8f/Wz57ebpNl23AZxKn4lo2OAWfP8zulyQzLPxpiRzT4RQfvE01LNFqfnhjfy6yeeBiy8t0Wc29n1Dhes97t26X6E8c7/BZH64bT8BAAA
+      Chance: 40
+      Commands:
+      - wraps give wrapper starlight_blade %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic3 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic3
+    '4':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/4WS32rbMBTGT5uuOB7dv7KbjY1OhV6F3Y0OMwr5Y5qwOhm1t1JCEIp9kojIUpDlZSHkofYMe4i9wh5jcpM6hA7mC4HP+fTTp+/IBajA4xYz7BvqjCsJ8DRzYJ8ncJRyibFmI+MN1bwCj2KVSwMAey64sUpnSqI0mQtvtkJmjObD3CBNVcJH3DL3LHCi5pRLapQShs+gCtWy7RZABw7MYobwdksao0TN4/eWyOIpzWaIySEcsnRj4u5zoKpmqJkpjFdZktDvTOS49v8kTRU3mGZegrFaFOqXW36cZ0alVLIU4feS4A+jGfH6SzJUIiGe0TnWSKyE0sQjp36z8fH8A6kRbpjgMfFGTGRWoIajPIuZwaQsZTaBKZqJVvl4UlaNPcCCQsO04OOJOWmo+Ynl5TJBW5ElYFW7t7DZee9hgUKo+UMLG3I/nHI5IKtBWSGrCrx+cGEbPAqa2IHbyf9x/xFJ0XPgRRD0OpEfhLRYaXT7xYeD8HOn68Cz3VanBcdhVL+OrjqX7Yg2ejd0rTsqdd164MO7T6cYD22MF2diN4czXLuvwKtyS/NrGPUCGvRa/hVt1aN6YdeB56XA7zbb9W4Uwn5/4IDbDqPr2/VBN8si5yKC4tcm1rsMjdKLu/HueKK/ftpxWeF/rdlgV/bB/QV9EKqHLwMAAA==
+      Chance: 20
+      Commands:
+      - wraps give wrapper starlight_bow %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic4 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic4
+    '5':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WTXWrbQBDHJ3EaZJWmH7QvKS1CAZdCyEspLaYUFEskpv4okVoajFnW0tpeIu2a1aqOMb5Hb5DnXiE9Ry/RE3RkJ3KCkxKoHlZIM/Pf//xm1wQowX2XavqVqZRLAfAwNWCdR/A04YKFivZ1lSspSDqWKirBvVBmQgPAmglmKJORFEzo1IQXy3yqteK9TDOSyIj3OUqvoe5QjgkXREsZaz6CMpSLsJkLGrChJyMGL5dKAyaY4uEeKtLwhKQjxqJN2KTJhYn5Y0BZjpiiOvdfplFEvtM4Y4s2tpJEcs2StBqxUE4At91a6sdSYR7AOvyY2uxUK2pXO1O7J+PIrvZpnLJdO5SYZVft8RB17F2baxrzsAjLXj9LQ6rZsiLF9k+YHiqZDYbFX436KIMKmYiYitHEZcmsuyJ7mT0DddXZpZmBYkysmrmochUdWBXLVXJkSaGllROw8I0yIu1LlezZ/9rTgGdLRmGWapkQQRMGv1cpaZVdgbTj1fbfv3v7/5h8TRHRYKitfRx+zJxTZt2IbveWcU1YHMvxrYg6/gkX3TmFou0SPF9pG48oi0mENwSvyh/zBjB5DIE1m+164DV94h63nGa9RhrtIw/edOzzsz66wPX8jN5lMF0DnhRi+UqC488ebPif6i0DHl0P1V3Y9gPnKCCN+sFhQPadIGh4zjePLNIfFOloyoNXH3ZY2MMBfazENxGusAUXAx4XhV6rdui0Ah/WO90SbBf/a1/8oN0kzbbrNYjrBE4OyADz0A+Ojhfbdaf5HHO4+SdSaB/4WqrJ/Phcc0Z+/cTjgIl3NIiDm13tbg77dceu3A0xXvm/zj+j7fsEAAA=
+      Chance: 20
+      Commands:
+      - wraps give wrapper starlight_battle_axe %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic5 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic5
+    '6':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WT3WrbMBTHT5uuOB7rPuhuNjaMC4FB6c0oG2EMsthtw/Ixam8QQhCKLSeithRkeVkoeY+9Qa/3Ct1T7C32CDtOWqdd2lGYL2TZOuev//kdyQQowX2HavqFqZRLAfAwNWCdh7CdcMECRSNd5UoKkk6kCktwL5CZ0ACwZoIZyGQsBRM6NeHFMp5qrfgg04wkMuQRR+k11B3JCeGCaCljzcdQhnKxbOaCBmzo6ZjBy6XSkAmmeLCHijQ4IemYsXATNmlyYWL+GFCWY6aozv2XaRiSrzTO2KKMrSSRXLMkrYYskFPAbbeW+rFUGAewDt9PbfZNK2pXe6f2QMahXY1onLJdO5AYZVftyQh17F2baxrzoFiWgyhLA6rZMiPF8k+YHimZDUfFX436KIMKmQiZitHEZcqsvyJ7GT0DddXZpZmhYkysmrnIchQdWhXLUXJsSaGllROw8I0yIo2kSvbsf+1pwNMloyBLtUyIoAmDX6uUtMquQNpx6x/evtn/f0yepohoONIWzqLIuhHb7i2tmrI4lpNb8fS8Ey76cwJFySV4vlIyHk8WkxBvB16T3+YNUPI1hNVqdRq+2/KI023XWo06aXaOXXjds8/PInSB4/kZvUtT+gY8KcTykfjdTy5seB8bbQMeXV9qOLDt+bXjZuPwyCc4Ozggi8AHRSDacWHn3Q4LBtiW95X4b64VtqBhwOMiyW3Xj2pt34P1Xr8Ez4r/9c+e32mRVsdxm8Sp+bUciwHmkecfdxdbdU/zzuVI80+svXPoaamm8wNzzRX5+QMPAAbewRy2ana1qjneVz27cjeoeMH/ADMvJ3XpBAAA
+      Chance: 60
+      Commands:
+      - wraps give wrapper starlight_staff %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic6 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic6
+    '7':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WTXWrbQBDHJ3EaZJWmH9A+tLQIpRgKIS+htJhScC0Rm/qjRGogNWZZS2t7ibRrVqukxvgevUGee4X0Fr1Bb9GRHcsOTkqgelgh7cx//vObXROgAPcdqukxUwmXAuBhYsAmD+FpzAULFO3rMldSkGQoz1hUgHuBTIUGgA0TzEDGIymY0IkJL5cJVGvFe6lmJJYh73PU3kDhoTwnXBAtZaT5CIpQzLfNTNCALT0eMXi1VBowwRQP9lGRBqckGTEWbsM2ja9MzB4DinLEFNVZA0UahuSMRimb97ETx5JrFiflkAVyDFh2Z6kfSYVxAJvwY2Kz71pRu9yZ2D0ZhXa5T6OE7dmBxCi7bJ8PUcfes7mmEQ/ybdnrp0lANVtmJNj+KdNDJdPBMP+rUR9lUCEVIVMRmlikTLtrsovoKahVZwszA8WYWDdzleUoOrBKlqPkyJJCSysjYOEbZUTSlyret/9V01gdf5AmWsZE0JjB73VKWqUrkHbd6qf3797+PyZPU0Q0GGrLm50860Zue7fMasyiSJ7fyqfjnXLRnSHIey7Ai7We8XyyiIR4P/Ci/DFvoJLtIa1ms1333aZHnJNWpVmvkkb7yIWDjn150UcXuF5e0LtMpWvAk1wsW4l/8sWFLe9zvWXAo+tbdQeeeX7lyCeN+mGNeLX2sdsg89AHeSgacuH1h10W9HAyH0vRGtoSmwMx4HGe5baqtUrL92Cz0y3A8/x/9avnt5uk2XawlFPxKxkZA8ya5x+dzGt9m2TTy6hmn9h++9DTUo1nh+aaLfLrJx4CDLyLOxzXdLWvGeI3Hbt0N7B4y/8CNlgTxe8EAAA=
+      Chance: 60
+      Commands:
+      - wraps give wrapper starlight_shovel %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic7 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic7
+    '8':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41S7WrbMBS9bbrieOwTtsHGRlFZf5X9GxtmDLzENKF1EmpvrIQgFPkmEbElI8trQ8lD7Rn2GHuCvcXkJnUo2Y/ph0D3nnvuuefKBWjA/TYz7BvqQigJ8KhwYFck8DwTErlmE+MJrSTNBZ+zK2zAPa5KaQBgxwWXqyxXEqUpXHi9qWDGaDEuDdJMJWIiLPmOZZ6pSyokNUqlRuTQhGadditCB/bMIkd4s2GaokQt+DvLyPicFjlisg/7LFuLuDkONFWOmplqgiZLEvqDpSWuBnmYZUoYzAovQa4WFfrZhp+XhVEZlSxD+H1N8MpoRrzhNRmrNCGe0SUeE65SpYlHDoPWl48f3pNjIgxLBSfehKWFBajxpCw4M5jUocI6MEcz06qczuqosQ0sUWSYTsV0Zg4GK1sPLGcpE7RRWZMsj29lrKtvdSwwTdXltow1+zCaCzkiy1EdIcsGvNoa2pqPKU3s9u03+OP+w5Yq58DTMOx34yCMaHXT+GIQwF502u058PhuqtuGF1Hsn8f0rHvSoYNu69T/HtAV9kGN7flhAG8/HSIfWzs/H6XbfhzhaooGvKzLWl+juB/SsN8Ozmjbj/1KtgNPakDQa3X8XhzB7nDkgNuJ4vOLVTO7UNujsqJ6Wuf6J5FRenGz6ju66K+fdnUW+F/yrMlL+wH/AkPhZaZIAwAA
+      Chance: 80
+      Commands:
+      - wraps give wrapper starlight_pickaxe %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic8 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic8
+    '9':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42S32rbMBTGT5uuOB77S3ezsVEU6FXY3VgxY+AmpgmrkxJ7gxCCUOyTRMSWjCw3CyEPtWfYU+wx9gaTm9Sh6y7mC4HP+fTTdz7JBqjB4zbT7BuqnEsB8Cy34JDHcJJygZFiU+1wJQXNl1LFNXgUyUJoADiwwY5kmkmBQuc2vN3rmdaKTwqNNJUxn3KDPjDcuVxSLqiWMtE8gzrUq7ZdAi040qsM4d2eNEOBikfvDZFFC5pniPExHLN0Z+L2s6AuM1RMl/7rLI7pDUsK3I7xNE0l15jmToyRXJXqV3t+VORaplSwFOHXmuB3rRhxRmsykUlMHK0KbJJIJlIRhzS81sX5xw+kSbhmCY+IM2VJbgRyMi3yiGmMq1JuElignitZzOZVVZsDDCjQTCV8NtenQYZMnRpiIWI0NVEhNs07E7u9dy5WmCRy+dDEjj0KFlyMyWZcVcimBm8ejGyix4TG5ubNE/ht/yOUsmfBS9/vd0PPD2i50nB47cFR8KXbs+D5/Va3DSdB6A6uupedkAbXnjugW+GTSthzfQ8anxoYTUySn8+Sv6M4w+0ANXhdbWp9DcK+T/1+27uibTd0S8cWvKgEXq/VcXthAIejsQV2JwgHw+1Rw3UZdplC+WtC618GWqrV7R3fc0V//jB3ZoT/Yc6kuzHv7g8tcLxPPQMAAA==
+      Chance: 80
+      Commands:
+      - wraps give wrapper starlight_spear %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic9 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic9
+    '10':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WT4WoTQRDHp02Vy4lVK35RlPMKAaH0i4gSRIjJ0QSbRHqnUkJYNneTZOndbtjbs4bS9/AN+tlXqA/hM/gWziXtpSWtFrwPe9zOzH//85tbG6AEdxrc8M+oU6EkwL3UglURwUYiJIaaD01VaCXZWGEJboUqkwYAVmywQ5VMlERpUhueLrK5MVoMMoMsUZEYChJeIdWxOmRCMqNUbMQEylAuwnYuaMGamU4Qni2URihRi3CbFHl4wNIJYnQbbvPkzMTssaCsJqi5yd2XeRSxrzzOcN7EepIoYTBJqxGGagp07PpCP1aa8gBW4fuRi9+M5m61d+QOVBy51SGPU9xyQ0VZbtU9HJOOu+UKw2MRFmE1GGZpyA0uKlJq/wDNWKtsNC52DemTDClkMkIdk4nzkuP+kux59jHoi87OzYw0olw2c1bV0HzkVJyGVhNHSaOcnIBDb5KR6VDpZNv925kWPFowCrPUqIRJniD8WqZkdHYB0qZXf//m9av/x+QbTohGY+M0FTpXQtu6ZlBTjGN1eC2cnn8gZH/Wf9FwCZ4sNUw/J8YsoptBV+S3fQWSPEao2u1uK/DaPmvsd2rtVp3tdvc8eNlzT0+G5ILW0xN+k5H0LdgoxPKVBfsfPVjzP7Q6Fty/HGo14KEf1PYCttvaabJm12PzvLtFHrnx4PnbTQwHNJN3lfgy1ArOUVjwoCjxOvVmrRP4sNrrl+BxsV//5AfdNmt3G94ua9SCWs7EArvpB3v784O+HOVDy3nmn9R4d8c3Sk9n/8olT+znD5o9Jf7TGk3p+GJHM7Ivem7lZjzpZv8BMQn+2OAEAAA=
+      Chance: 80
+      Commands:
+      - wraps give wrapper starlight_hoe %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic10 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic10
+    '11':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WTX2rbQBDGJ3EaZJWmbaB9aGlRFTAUQl5KaTGloFgiNo3tEql/gjHLWlrbi6Vds1o1NiH36A3y3Cukh+gZeouO7EROcNIGqocV2pn59pvfaE2AEtx1qaafmUq5FAD3UwNWeQSbCRcsVLSvq1xJQeiEleBOKDOhAWDFBDOUyVgKJnRqwrNFNtVa8V6mGUlkxPschVdQdSiPCBdESxlrPoYylIuwmQsasKanYwbPF0oDJpji4Q4q0nBE0jFj0Tqs0+TcxOwxoCzHTFGduy/TKCLfaJyxeRMbSSK5ZklajVgop4DHbiz0Y6kwD2AVvh/bbKIVtaudY7sn48iu9mmcsm07lJhlV+2jIerY2zbXNOZhEZa9fpaGVLNFRYrtj5geKpkNhsWuRn2UQYVMREzFaOKi5KS7JHuRfQLqsrMLMwPFmFg2c17lKjqwKpar5NiSQksrJ2DhG2VE2pcq2bH/dqYBjxaMwizVMiGCJgx+LVPSKrsEacur7b598/r/MfmaIqLBUFvOhFnXQtu+YVBTFsfy6EY4HX/ERXfWf9FwCZ4uNYw/J4tJhDcDr8hv8xokeQxRNZvtRuA1feIetpxmo0b22wcevOrYZ6d9dIHr2Sm9zUi6BmwWYvlKgsOPHqz5HxotAx5cDTVceOwHzkFA9ht79YDses5Xj8xT7xWpaMiDF++2WNjDsbyvxFe5VtichgEPixKvVas7rcCH1U63BE+K/donP2g3SbPtevvEdQInx2KAWfeDg8P5QV+O87nlSPNP7L2952upprPf5Yon8vMHjh8T/2kNB3VyuaMZ3Jcdu3I7pHi5/wAXluur4wQAAA==
+      Chance: 80
+      Commands:
+      - wraps give wrapper starlight_axe %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic11 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic11
+    '12':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WT3WoTQRTHT5taNivWD9QLRVm2EhBKb0SUIELMLmkwH5JdhRrCMNmdbIbuzoTZWWMoeQ/foNe+Qn0Ln8MH8GzSblrSSsG9mGX3nPmf//mdGROgBLcdqukXplIuBcDd1IBNHsLDhAsWKDrSVa6kIOlUqrAEtwKZCQ0AGyaYgUwmUjChUxOerfKp1ooPM81IIkM+4ii9gbpjOSVcEC1lrPkEylAuwmYuaMCWnk0YPF8pRUwwxYN9VKTBEUknjIXbsE2TMxOLx4CynDBFde6/TMOQfKNxxpZt7CSJ5JolaTVkgZwBlt1Z6cdSYR7AJvw4ttl3rahd7R/bQxmHdnVE45Tt2YHELLtqT8eoY+/ZXNOYB0VYDkdZGlDNVjtSbP+I6bGSWTQu/mrURxlUyETIVIwmzrfMB2uy59lzUBednZuJFGNi3czZLkfRyKpYjpITSwotrZyAhW+UEelIqmTf/ldNAx6tGAVZqmVCBE0Y/F6npFV2AdKuW//w9s3r/8fkaYqIorG2HBpFTFlXctu7ZlYzFsdyei2fvnfExWCBoOi5BE/XesbzyWIS4vXAe/LHvIJKHkNa7Xa36bttjziHnVq7WSetbs+FV3379GSELnA9PaE3mcrAgAeFWL4S//CTC1vex2bHgHuXQ00HHnt+rUdazcaBT5xao+H2yDL1TpGKhlx48W6XBUOczPtKvIa2wpZADLhf7HI79YNax/dgsz8owZPif/2z53fbpN113BZW9Gs5GQPMA8/vHS5rfT3Op5dTzT+x/W7D01LNFofmki3y6yceAky8iTsc1/xiXwvEL/t25WZg8Zb/BTWUUKPuBAAA
+      Chance: 80
+      Commands:
+      - wraps give wrapper starlight_dagger %player% 1
+      - lp user %player% permission set crazycrates.blacklist.mystic12 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic12
+    '13':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/6WT/2rTUBTHz9Y50ohzCvqHooRMCsLYPyJKEaE2YS32hyxRmKVcbpPT9tIkt9zcOMvYe/gG+9tXmG/hG/gWnrRbutFNBuaPG5Jz7vd+z+ecawKU4K7DNf+CKhUyAbifGrAuQtiORYKB4kNdTccCo7AEdwKZJRoA1kwwAxlPZYKJTk14tszlWisxyDSyWIZiKEh2jTTH8oiJhGkpIy2mUIZyETZzQQM29GyK8HypNMIElQj2SJEHE5ZOEcNN2OTxuYn5Y0BZTlFxnXsv8zBk33iU4aKErTiWQmOcVkMM5Azo2K2lfiQV5QGsw49jG79rxe1q79geyCi0q0MepbhrB5Ky7Kp9NCYde9cWmkciKMJyMMzSgGtc7kip/AnqsZLZaFz81aRPMqSQJSGqiExcbDnpr8heZJ+AuuzswsxIISarZs53OYqPrIrlKDm1ZKKllROw6E0ySTqUKt6z/3WmAY+WjIIs1TJmCY8Rfq9S0iq7BGnHrX94++b1/2PyNCdEo7G2vPnkWddy272hVzOMInl0I5+eNxFJf46gqLkET1dqpvnEiIV0NeiO/DGvoZLHiFa73W36bttjzmGn1m7WWat74MKrnn12OiQXtJ6d8tt0pW/Aw0IsX5l/+MmFDe9js2PA9tVQ04HHnl878Fmrud9gXqPpthy2SL1XpJIhF16828FgQJ15X4lW0FZwAcSAB8Uut1Nv1Dq+B+u9fgmeFP/rnz2/22btruO2mFPzazkZA8yG5x8cLs76epx3L6eaf1L53X1PSzWbD80VW+zXTxoCSryNO2rXyeW65ohf9uzK7cDSLf8LFsW1T+oEAAA=
+      Chance: 80
+      Commands:
+      - nx give starlight_shield 1 %player%
+      - lp user %player% permission set crazycrates.blacklist.mystic13 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic13
+    '14':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42S0YrTQBSGz27rkkZ0VdgbRVlmYa+Kd6IEEWob2uKmlU10KaUM08lpO3QyE5KJayl9KJ/BdxB8Gyfbbsq6XpiLQM7555v//CcuQA0edphhXzHLhVYAx7kDhyKG40Qo5BmbGS9lKWY1eMB1oQwAHLjgcp2kWqEyuQsv91JmTCamhUGa6FjMhKUeWORCX1OhqNFaGpFCAxpV2y2BDtTNKkV4tSfNUWEm+GtLZHxJ8xQxPoIjluxM3DwONLT1xkxpvcHimH5jssDtBI+TRAuDSe7FyPWqVJ/s+bzIjU6oYgnC7zXB7yZjxBuvyVTLmHgmK7BJuJY6Ix4589sf3719Q5pEGCYFJ96MydwK9HRW5JwZjKtSbhNYollkupgvqqqxF1hQaFgmxXxhTq+EmuenllioGG1NVYhN89bE7uytixVKqa/vm9ixx+FSqAnZTKoK2dTgxb2RbfQoaWyXDlD/5f4jlLLnwLMgGPYjPwhp+abR6LMP9fBTf+DAk7utfgdOwqh1GV30u72IXvUH3ZBulY8q5aAV+HD2/gz51Eb54Vz+ncU5bieowfPqUPtLGA0DGgw7/gXttKJWadmBp5XAH7R7rUEUwuF44oDbC6PL0faq0bpMu4yh/LSpDbuh0dnqZsl3XNGfP+zSrPA/zNl4N/bH+wP90bwLOQMAAA==
+      Chance: 80
+      Commands:
+      - lp user %player% permission set hmccosmetics.starlight_cosmetics_wings
+      - lp user %player% permission set crazycrates.blacklist.mystic14 true
+      - cosmetic apply starlight_cosmetics_wings1 %player%
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic14
+    '15':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/2WRz0scMRTHn651Z1OwohZBKcjg0RXbrut2TyIePHgoCF6HN8mbnWB+DJk36iL9g/tfNFmLI5hTkpd883mfCIABfL5GxnsKrfYO4EubwbpWcGC1Ixmw4rmsUTuL2hQ1GUs8gE/Sd44BYE2AkN423pHjVsBef0stSRXSGx8GMAiLEu6Oj0HAt/4EMgdddkyF9UpXOiKMYPQ2Fyk/gw1eNgT7/bUFOQpanmKwPmzCJtoEcwmvI4ORbyggp25GqFTxiKaj16ZO+5Qf57PybEq/xmVZyfFkotQYqZqNzybff1azyYWcVtP4eGs8w0ZNqJKqw3dSupa9TeRkChUNxvpfAV8/nEg1ATu/u9JoedU9PGi+T0TR89DRs59Hru2WMRi9qPm/4tTHbh+lmWzh0BKcvOQrp/k8f6rjdn6SMz1zXN7FiKPblHF0s8rI/wjY6jOia5tBZpGjPTSw05cCqYjqaC3+fu2fCu0K9t6wbiLGsIn/RMHB1or2jTS6/gcbxeknPwIAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/2WRz0scMRTHn651Z1OwohZBKcjg0RXbrut2TyIePHgoCF6HN8mbnWB+DJk36iL9g/tfNFmLI5hTkpd883mfCIABfL5GxnsKrfYO4EubwbpWcGC1Ixmw4rmsUTuL2hQ1GUs8gE/Sd44BYE2AkN423pHjVsBef0stSRXSGx8GMAiLEu6Oj0HAt/4EMgdddkyF9UpXOiKMYPQ2Fyk/gw1eNgT7/bUFOQpanmKwPmzCJtoEcwmvI4ORbyggp25GqFTxiKaj16ZO+5Qf57PybEq/xmVZyfFkotQYqZqNzybff1azyYWcVtP4eGs8w0ZNqJKqw3dSupa9TeRkChUNxvpfAV8/nEg1ATu/u9JoedU9PGi+T0TR89DRs59Hru2WMRi9qPm/4tTHbh+lmWzh0BKcvOQrp/k8f6rjdn6SMz1zXN7FiKPblHF0s8rI/wjY6jOia5tBZpGjPTSw05cCqYjqaC3+fu2fCu0K9t6wbiLGsIn/RMHB1or2jTS6/gcbxeknPwIAAA==
+      Chance: 30
+      Commands:
+      - nx give starlight_helmet 1 %player%
+      - lp user %player% permission set crazycrates.blacklist.mystic15 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic15
+    '16':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/2WST2sbMRDFJ3WbrFVIIU1oIKSEJcc6rKFxWZ9Km2MPhUCuy1gae0X0Z9HONgmlH7jfoiMHvIHqJGlGT7/3JAUwgbc3yHhHqbcxALzrC3hlDXz0NpBOuOalbtEGj9Y1uqWeO4dME3ij4xAYAPYUKB19FwMF7hUcjyfNE5lGRxfTBCZps4Lby0tQcD52IHOyq4Gp8dHYtRWMKUx3c5X1C3jNTx3Bh/HYhgIlq68w+Zj2YR99hvl6CttRwDR2lJCzoyka0/xCN9CzsatRZb2oruuqms/qVY2zz3qhZ1jX89mXBdZk6up6jiiX9y6y2M3ec15nL5IZeo4+o5NrjMQo9b8KTv7ryDUFRz+HlbP623B/b/kuI0nYB4Ee41LAjnvG5Oym5Rc5ZzPvRznL5JuAnqD6XW6DLZflQyvb5aeS6ZFleSsyFz+yzsX3nU75R8HhqCOh+wIKL5Vk0cHRWEpkBDnQnnyFNj40NjQco2PbCcpBJw9GKcDhlnpHLKH/A0SlgzxMAgAA
+      Items:
+      - Data:H4sIAAAAAAAA/2WST2sbMRDFJ3WbrFVIIU1oIKSEJcc6rKFxWZ9Km2MPhUCuy1gae0X0Z9HONgmlH7jfoiMHvIHqJGlGT7/3JAUwgbc3yHhHqbcxALzrC3hlDXz0NpBOuOalbtEGj9Y1uqWeO4dME3ij4xAYAPYUKB19FwMF7hUcjyfNE5lGRxfTBCZps4Lby0tQcD52IHOyq4Gp8dHYtRWMKUx3c5X1C3jNTx3Bh/HYhgIlq68w+Zj2YR99hvl6CttRwDR2lJCzoyka0/xCN9CzsatRZb2oruuqms/qVY2zz3qhZ1jX89mXBdZk6up6jiiX9y6y2M3ec15nL5IZeo4+o5NrjMQo9b8KTv7ryDUFRz+HlbP623B/b/kuI0nYB4Ee41LAjnvG5Oym5Rc5ZzPvRznL5JuAnqD6XW6DLZflQyvb5aeS6ZFleSsyFz+yzsX3nU75R8HhqCOh+wIKL5Vk0cHRWEpkBDnQnnyFNj40NjQco2PbCcpBJw9GKcDhlnpHLKH/A0SlgzxMAgAA
+      Chance: 30
+      Commands:
+      - nx give starlight_chestplate 1 %player%
+      - lp user %player% permission set crazycrates.blacklist.mystic16 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic16
+    '17':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/2WSTU/bQBCGhyYNzlYCKaXiQCshK8cmaiCIkBOqeuSAhMTVWu+OnRX7Ya3HBYT4wfyLzqZVjNQ9eT2z7z7z2AJgAJ9+SZL3GFsTPMBhm8EHo+GrMx5VlBWt1UYa76SxhcW6Nr5uB/BRhc4TAOwJECq4Jnj01Ao46s/pZ9SFCjbEAQxiXcLddAoCvvUdkiiasiMsXNCmMgwxhvHuWaT8DIb03CAc98dq9BiNmsvoQhzBSLoEc30E25XBODQYJaV5xlLr4re0Hf4da96nLBdLPF+cVbMfZxflbFlpnJVLpWaXqrxYVepqdaVWfHlrA8GQJ2+TrJN3WrqWgkvkaAvNDrn+JuDLfx2pJmBy25XWqJ/dw4Oh+0TEpvc9PoU1c01aktGaekM7yWmSz32YIXSFlw5h/pJvrebr/HHDr/PvOeET8faOQ05vUsrpzb+U/FXAQZ/Cvl0GmZPEBqWFSV+KqBnX4x7/A5vwWBhfUAiWTMMg+w1/K4weDrbEO1r2/QcvaT/oRQIAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/2WSTU/bQBCGhyYNzlYCKaXiQCshK8cmaiCIkBOqeuSAhMTVWu+OnRX7Ya3HBYT4wfyLzqZVjNQ9eT2z7z7z2AJgAJ9+SZL3GFsTPMBhm8EHo+GrMx5VlBWt1UYa76SxhcW6Nr5uB/BRhc4TAOwJECq4Jnj01Ao46s/pZ9SFCjbEAQxiXcLddAoCvvUdkiiasiMsXNCmMgwxhvHuWaT8DIb03CAc98dq9BiNmsvoQhzBSLoEc30E25XBODQYJaV5xlLr4re0Hf4da96nLBdLPF+cVbMfZxflbFlpnJVLpWaXqrxYVepqdaVWfHlrA8GQJ2+TrJN3WrqWgkvkaAvNDrn+JuDLfx2pJmBy25XWqJ/dw4Oh+0TEpvc9PoU1c01aktGaekM7yWmSz32YIXSFlw5h/pJvrebr/HHDr/PvOeET8faOQ05vUsrpzb+U/FXAQZ/Cvl0GmZPEBqWFSV+KqBnX4x7/A5vwWBhfUAiWTMMg+w1/K4weDrbEO1r2/QcvaT/oRQIAAA==
+      Chance: 30
+      Commands:
+      - nx give starlight_leggings 1 %player%
+      - lp user %player% permission set crazycrates.blacklist.mystic17 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic17
+    '18':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/2WR30scMRDHx57VvRQU1CKlFGTxrT25gifLPYn00YeC4Osym8zeBZPMkp31B+If7H9h4oFbaJ6STPLNZz5RABP48gcFbyn2lgPAfl/AJ2vgm7eBdMRWlnqNNni0rm6YpZ/AZ81DEADYUqA0+44DBekVHI2XzBOZWrPjOIFJXDVwc3oKCn6MJ1Ak2mYQqj0b29pEMIXpx1zl/AK25akjOB6vrShQtPoMo+e4AzvoM8wlbEYBU+4oouRmpmhMfY9uoE1PZ2NKU1WLBlHPTFudz87NfDHDRTWfLX5XhubaaHPRpsd7xwLbLZFkU9//cTL0wj6Tk6tNEpjqrwq+/nci1xQc/B0aZ/XVcHdn5TYTJc27gR55mbj2e8Ho7GotG8O5jcMxyQr5OqAn+Plcvistl+XDOm2Xv0qhR0nLm5Rwcp0jTq5yRPmiYG+MSKZ9AYVHSe7QwcFYimQSaKCthLHmh9qGWpid2C5R7HbplygG2Htn/eBMpt8Ahd9WzDwCAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/2WR30scMRDHx57VvRQU1CKlFGTxrT25gifLPYn00YeC4Osym8zeBZPMkp31B+If7H9h4oFbaJ6STPLNZz5RABP48gcFbyn2lgPAfl/AJ2vgm7eBdMRWlnqNNni0rm6YpZ/AZ81DEADYUqA0+44DBekVHI2XzBOZWrPjOIFJXDVwc3oKCn6MJ1Ak2mYQqj0b29pEMIXpx1zl/AK25akjOB6vrShQtPoMo+e4AzvoM8wlbEYBU+4oouRmpmhMfY9uoE1PZ2NKU1WLBlHPTFudz87NfDHDRTWfLX5XhubaaHPRpsd7xwLbLZFkU9//cTL0wj6Tk6tNEpjqrwq+/nci1xQc/B0aZ/XVcHdn5TYTJc27gR55mbj2e8Ho7GotG8O5jcMxyQr5OqAn+Plcvistl+XDOm2Xv0qhR0nLm5Rwcp0jTq5yRPmiYG+MSKZ9AYVHSe7QwcFYimQSaKCthLHmh9qGWpid2C5R7HbplygG2Htn/eBMpt8Ahd9WzDwCAAA=
+      Chance: 30
+      Commands:
+      - nx give starlight_boots 1 %player%
+      - lp user %player% permission set crazycrates.blacklist.mystic18 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic18
+    '19': # Spartan Tools
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkEVE3TSJWqVq0sL6xWitJNVuysgBqUABF20iKERhN7gBH2jDUel6CIbaX+Qn8g6/5Cuu7f9AN6DcGEJpAs64Vf98yZc+bcmSJADp6WqaZnTMVcCoDncR7WuQ87IRfMU7SrS1xJQegFy8ETTyZCA8BaEYqeDCMpmNBxEd7O0VRrxc8TzUgofd7lSLyGrH05JFwQLWWgeQQFKGTlYkqYhw09ihi8mzP1mGCKe3vISL0BiSPG/E3YpOGNiMmVh4KMmKI6VV+gvk++0iBhUxNbYSi5ZmFc8pknR4DTbs35A6kQB7AB3y9NdqEVNUvtS/NcBr5Z6tIgZrumJxFllsxhH3nMXZNrGnAvK8vzbhJ7VLP5iBjtD5juK5n0+tlfjfxIgwyJ8JkKUMRsyLgzL4//Jym/b0uZza4QfGfumzFt97DqGI36ccv43Ggepa9GrdaoupWaY5jj3WUsWiVzkvenMTPaH4eKRnHH6EplnFHBg4Aa1TTJDyt4FtV0zEU73n12eooxsZSirGjPsIyykpEhhZZG2kwGPpFGxKgt3FucJA8v5/3lJbGWIRE0ZPDjbqxT1zMhPlUDssqOE1GlqTDsCzZdy3ubY8SCQA6XJ+QMuPhnYXLw5o5m3JssID4eDHhC/Cne4yqtodtZvKTcqtu16gE5bjQr8K1tXl91UUV2v77yVnbH9ZV8KHik6MzI6GOS6eRhJ9OX3onbOqnAhnNUredhe7FULcO2c2I3XbtO7C8VMgU9y0DorgKvrH0ruB2ExaYrmoPXGfLg1HEbNVJrlCvHpGy7drqEeXiRASr1g0O77jqw3kaJxUPHbbam/PVL09E0jSX9RLONT46WajTpmgUp5NdP3N0IXKYIMx7f1j/JJWqb1uocrAdjsCYpWI9LAE/Xv86eYndkBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkEVE3TSJWqVq0sL6xWitJNVuysgBqUABF20iKERhN7gBH2jDUel6CIbaX+Qn8g6/5Cuu7f9AN6DcGEJpAs64Vf98yZc+bcmSJADp6WqaZnTMVcCoDncR7WuQ87IRfMU7SrS1xJQegFy8ETTyZCA8BaEYqeDCMpmNBxEd7O0VRrxc8TzUgofd7lSLyGrH05JFwQLWWgeQQFKGTlYkqYhw09ihi8mzP1mGCKe3vISL0BiSPG/E3YpOGNiMmVh4KMmKI6VV+gvk++0iBhUxNbYSi5ZmFc8pknR4DTbs35A6kQB7AB3y9NdqEVNUvtS/NcBr5Z6tIgZrumJxFllsxhH3nMXZNrGnAvK8vzbhJ7VLP5iBjtD5juK5n0+tlfjfxIgwyJ8JkKUMRsyLgzL4//Jym/b0uZza4QfGfumzFt97DqGI36ccv43Ggepa9GrdaoupWaY5jj3WUsWiVzkvenMTPaH4eKRnHH6EplnFHBg4Aa1TTJDyt4FtV0zEU73n12eooxsZSirGjPsIyykpEhhZZG2kwGPpFGxKgt3FucJA8v5/3lJbGWIRE0ZPDjbqxT1zMhPlUDssqOE1GlqTDsCzZdy3ubY8SCQA6XJ+QMuPhnYXLw5o5m3JssID4eDHhC/Cne4yqtodtZvKTcqtu16gE5bjQr8K1tXl91UUV2v77yVnbH9ZV8KHik6MzI6GOS6eRhJ9OX3onbOqnAhnNUredhe7FULcO2c2I3XbtO7C8VMgU9y0DorgKvrH0ruB2ExaYrmoPXGfLg1HEbNVJrlCvHpGy7drqEeXiRASr1g0O77jqw3kaJxUPHbbam/PVL09E0jSX9RLONT46WajTpmgUp5NdP3N0IXKYIMx7f1j/JJWqb1uocrAdjsCYpWI9LAE/Xv86eYndkBgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic19 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic19
+    '20':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkEVE0farvoS5YXVitF6aYrdghQgxIewk5ahNBoYg8wwp6xxuMShNhW6k90m3V/IV33b/oBvYZgQh4ky3rh17333HPm3Jk8QAYelqmmx0xFXAqAx1EWNrkHLwMumKtoTxe4koKE3B3SU5aBB66MhQaAjTzkXRmEUjChozy8XVZQrRU/iTUjgfR4jyP4BiIP5IhwQbSUvuYh5CCXhvMJYBa29Dhk8G6J1GeCKe7uISJ1hyQKGfO2YZsGFyRmVxZyMmSK6kRBjnoe+Ub9mM2F7ASB5JoFUcFjrhwDtt1Z4vtSYR7AFvyYmOxUK2oWOhPzRPqeWehRP2K7pisxyyyYowHimLsm19TnbhqWJ704cqlmy4oI5Q+ZHigZ9wfpX434CIMIsfCY8pHEomTaXYan/xOVP5epLLorTL7W+6Km4+xXbaNRP2wbXxqtg+TVqNUaVadSsw1zunsbilbxEuT9UcSMzseRomHUNXpSGcdUcN+nRjVx8sManFU2XXNVjnuTnL5iTNwKUVa0b1hGWcnQkEJLIxkmA58IIyLkFuytNsnCi+V8uXGkZUAEDRj8vG7rXPWCiEfVkKyTY4dUaSqM5nwzztfzxgEZM9+Xo9tdsodcXFmcDLy+xhv3J/OJhwcEnhR/8zcoS2KoeGExKbfrxVq1RA4brQp875jnZz1kkd7Pz9y1E3J+Ju8yHyG6CzB6H3e6WXiW8kvuxGk3K7BlH1TrWXiyGqqW4bndLLacYp00q6WD4tcKmSc+ShNRYQXeWJ8s/6ohFpuvbAZepdmlI9tp1EitUa4cknLRKSZLmYWnaUKlXtov1h0bNjtINb9vO632vEdrYtqaJvYknyi68dnWUo1nE7RCh/z+hTsdE9exQr+nl3XMPAo7prXeE+tOS6yZI9b93MDT9h8M+a1leAYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkEVE0farvoS5YXVitF6aYrdghQgxIewk5ahNBoYg8wwp6xxuMShNhW6k90m3V/IV33b/oBvYZgQh4ky3rh17333HPm3Jk8QAYelqmmx0xFXAqAx1EWNrkHLwMumKtoTxe4koKE3B3SU5aBB66MhQaAjTzkXRmEUjChozy8XVZQrRU/iTUjgfR4jyP4BiIP5IhwQbSUvuYh5CCXhvMJYBa29Dhk8G6J1GeCKe7uISJ1hyQKGfO2YZsGFyRmVxZyMmSK6kRBjnoe+Ub9mM2F7ASB5JoFUcFjrhwDtt1Z4vtSYR7AFvyYmOxUK2oWOhPzRPqeWehRP2K7pisxyyyYowHimLsm19TnbhqWJ704cqlmy4oI5Q+ZHigZ9wfpX434CIMIsfCY8pHEomTaXYan/xOVP5epLLorTL7W+6Km4+xXbaNRP2wbXxqtg+TVqNUaVadSsw1zunsbilbxEuT9UcSMzseRomHUNXpSGcdUcN+nRjVx8sManFU2XXNVjnuTnL5iTNwKUVa0b1hGWcnQkEJLIxkmA58IIyLkFuytNsnCi+V8uXGkZUAEDRj8vG7rXPWCiEfVkKyTY4dUaSqM5nwzztfzxgEZM9+Xo9tdsodcXFmcDLy+xhv3J/OJhwcEnhR/8zcoS2KoeGExKbfrxVq1RA4brQp875jnZz1kkd7Pz9y1E3J+Ju8yHyG6CzB6H3e6WXiW8kvuxGk3K7BlH1TrWXiyGqqW4bndLLacYp00q6WD4tcKmSc+ShNRYQXeWJ8s/6ohFpuvbAZepdmlI9tp1EitUa4cknLRKSZLmYWnaUKlXtov1h0bNjtINb9vO632vEdrYtqaJvYknyi68dnWUo1nE7RCh/z+hTsdE9exQr+nl3XMPAo7prXeE+tOS6yZI9b93MDT9h8M+a1leAYAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic20 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic20
+    '21':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/82UzW7aQBSFb0IaAVXTP3XTqJXlhdVKUbrJih0KqKAEnGInFUJoNLEHGGHPWONxKIrYVupDdJ11XyFd9236AL2GYEJ+SJZlYQxz57vnzJmZIkAOnlaopidMxVwKgOdxHta5D29CLpinaE+XuJKCxAN5xoIcPPFkIjQArBWh6MkwkoIJHRfh3WIC1Vrx00QzEkqf9ziy1xA8kCPCBdFSBppHUIBCNlxMgXnY0OOIwfsFqc8EU9zbRSL1hiSOGPM3YZOGVyKmnzwUZMQU1amBAvV9ckaDhM18bIWh5JqFcclnnhwDtt1a8AOpsA5gA36cm+ybVtQsdc7NUxn4ZqlHg5jtmJ7EKrNkjgbIMXdMrmnAvWxYnvaS2KOaLWbEaH/I9EDJpD/I/tXIRwwSEuEzFaCI+ZRJdzE8+Z+k/LkuZd5dYfGt3ldzOm6t7hh287BtfLVbB+mr0WjYdbfacAxzsnMfRatkAflwHDOj82mkaBR3jZ5UxgkVPAioUU+T/LiCs6ymay7b8e6y01eMiXsRFUX7hmVUlIwMKbQ00s1k4DdiRIzawt3lJvnrR8dLYi1DImjI4OftWGeu50J8qoZklR0nokpTYTjTszhbzjv3x5gFgRzdH5Iz5OLG2uRg+5ZsPJ4sID5eD3hP/C3eYSwdQ8PzhEml3Sw36vvk0G5V4XvHvLzooYrseXnhrdwglxfyoewR0Z3D6GPC6ebhVaYvfRK3fVSFDeeg3szDi+WhegVeO0fllltuEqdmn1QPyazuWVaHBquwbe1ZwY04LDZb1xy8zYr3jx3XbpCGXUFSpeyW04XMw8usoNrcr5WbrgPrHRRarDluqz1r8eXcdDRNw0l/omX7s6OlGk+3z5Ia8vsXHnMsXCEKw55cdzENKOqY1upArAfzsKZxWI+LAm/af3tSkQ5zBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/82UzW7aQBSFb0IaAVXTP3XTqJXlhdVKUbrJih0KqKAEnGInFUJoNLEHGGHPWONxKIrYVupDdJ11XyFd9236AL2GYEJ+SJZlYQxz57vnzJmZIkAOnlaopidMxVwKgOdxHta5D29CLpinaE+XuJKCxAN5xoIcPPFkIjQArBWh6MkwkoIJHRfh3WIC1Vrx00QzEkqf9ziy1xA8kCPCBdFSBppHUIBCNlxMgXnY0OOIwfsFqc8EU9zbRSL1hiSOGPM3YZOGVyKmnzwUZMQU1amBAvV9ckaDhM18bIWh5JqFcclnnhwDtt1a8AOpsA5gA36cm+ybVtQsdc7NUxn4ZqlHg5jtmJ7EKrNkjgbIMXdMrmnAvWxYnvaS2KOaLWbEaH/I9EDJpD/I/tXIRwwSEuEzFaCI+ZRJdzE8+Z+k/LkuZd5dYfGt3ldzOm6t7hh287BtfLVbB+mr0WjYdbfacAxzsnMfRatkAflwHDOj82mkaBR3jZ5UxgkVPAioUU+T/LiCs6ymay7b8e6y01eMiXsRFUX7hmVUlIwMKbQ00s1k4DdiRIzawt3lJvnrR8dLYi1DImjI4OftWGeu50J8qoZklR0nokpTYTjTszhbzjv3x5gFgRzdH5Iz5OLG2uRg+5ZsPJ4sID5eD3hP/C3eYSwdQ8PzhEml3Sw36vvk0G5V4XvHvLzooYrseXnhrdwglxfyoewR0Z3D6GPC6ebhVaYvfRK3fVSFDeeg3szDi+WhegVeO0fllltuEqdmn1QPyazuWVaHBquwbe1ZwY04LDZb1xy8zYr3jx3XbpCGXUFSpeyW04XMw8usoNrcr5WbrgPrHRRarDluqz1r8eXcdDRNw0l/omX7s6OlGk+3z5Ia8vsXHnMsXCEKw55cdzENKOqY1upArAfzsKZxWI+LAm/af3tSkQ5zBgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic21 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic21
+    '22':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkEVE3TSJWqVq0sL6xWitJNVuxQQAUl4Ag7qRBCo4k9wAh7xhqPS1HEtlJ/oT+QdX8hXfdv+gG9hmBCE0iW9cKve+bMOXPuTBEgB08rVNNzpmIuBcDzOA+b3Ie9kAvmKdrTJa6kIAPJcvDEk4nQALBRhKInw0gKJnRchLcLNNVa8YtEMxJKn/c4Em8g60COCBdESxloHkEBClm5mBLmYUuPIwbvFkx9Jpji3gEyUm9I4ogxfxu2aXgjYnrloSAjpqhO1Reo75MvNEjYzMROGEquWRiXfObJMeC0Owv+QCrEAWzB90uTfdWKmqXOpXkhA98s9WgQs33Tk4gyS+ZogDzmvsk1DbiXleVFL4k9qtliRIz2h0wPlEz6g+yvRn6kQYZE+EwFKGI+ZNJdlCf/k5Tft6XMZ1cIvjP3zZiOW6s7ht08aRuf7dZx+mo0GnbdrTYcw5zsr2LRKlmQvD+LmdH5OFI0irtGTyrjnAoeBNSop0l+WMOzrKZrLtvx7rPTV4yJlRQVRfuGZVSUjAwptDTSZjLwiTQiRm3hwfIkeXi56C8vibUMiaAhgx93Y525ngvxqRqSdXaciCpNhVGTbLaW9zbHmAWBHK1OyBly8c/C5ODNHc24N1lAfDwY8IT4U7zHVVpDt/N4SaXdLDfqR+TEblXhW8e8vuqhiux+feWt7Y7rK/lQ8EjRnZPRxyTTzcNepi+9E7d9WoUt57jezMPucqlegV3ntNxyy01Ss6tkBnqWgdBdFV5Zh1ZwOwiLzVY0B68z5NGZ49oN0rAr1RNSKbvldAnz8CIDVJtHtXLTdWCzgxKLNcdttWf8zUvT0TSNJf1Es/YnR0s1nnbNkhTy6yfubgSuUoQZT27rn+YSdUxrfQ7WgzFY0xSsxyWAp+tfMx4CfWQGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkEVE3TSJWqVq0sL6xWitJNVuxQQAUl4Ag7qRBCo4k9wAh7xhqPS1HEtlJ/oT+QdX8hXfdv+gG9hmBCE0iW9cKve+bMOXPuTBEgB08rVNNzpmIuBcDzOA+b3Ie9kAvmKdrTJa6kIAPJcvDEk4nQALBRhKInw0gKJnRchLcLNNVa8YtEMxJKn/c4Em8g60COCBdESxloHkEBClm5mBLmYUuPIwbvFkx9Jpji3gEyUm9I4ogxfxu2aXgjYnrloSAjpqhO1Reo75MvNEjYzMROGEquWRiXfObJMeC0Owv+QCrEAWzB90uTfdWKmqXOpXkhA98s9WgQs33Tk4gyS+ZogDzmvsk1DbiXleVFL4k9qtliRIz2h0wPlEz6g+yvRn6kQYZE+EwFKGI+ZNJdlCf/k5Tft6XMZ1cIvjP3zZiOW6s7ht08aRuf7dZx+mo0GnbdrTYcw5zsr2LRKlmQvD+LmdH5OFI0irtGTyrjnAoeBNSop0l+WMOzrKZrLtvx7rPTV4yJlRQVRfuGZVSUjAwptDTSZjLwiTQiRm3hwfIkeXi56C8vibUMiaAhgx93Y525ngvxqRqSdXaciCpNhVGTbLaW9zbHmAWBHK1OyBly8c/C5ODNHc24N1lAfDwY8IT4U7zHVVpDt/N4SaXdLDfqR+TEblXhW8e8vuqhiux+feWt7Y7rK/lQ8EjRnZPRxyTTzcNepi+9E7d9WoUt57jezMPucqlegV3ntNxyy01Ss6tkBnqWgdBdFV5Zh1ZwOwiLzVY0B68z5NGZ49oN0rAr1RNSKbvldAnz8CIDVJtHtXLTdWCzgxKLNcdttWf8zUvT0TSNJf1Es/YnR0s1nnbNkhTy6yfubgSuUoQZT27rn+YSdUxrfQ7WgzFY0xSsxyWAp+tfMx4CfWQGAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic22 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic22
+    '23':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9QKG0tAxaiBZCuunKOxM5sUhsBUtJMcYME2lsD5ZmxGhU1wRvC/2NbrLuL6Tr/ki/oiM7luPGcbKsFnrde889Z86dKQMU4LFFFDmjMmGCAzxNirDJAngZMU59SXqq0mPJgPE+liIowCNfpFwBwEYZyr6IYsEpV0kZ3i4KiFKSnaeK4kgErMc09oYGHogRZhwrIULFYihBKQ+XM8AibKlxTOHdAqlPOZXM39OIxB/iJKY02IZtEl2TmF5FKImYSqIyASUSBPgLCVM607ETRYIpGiWVgPpiDLrtzgI/FFLnAWzB9wuDflWSGJXOhXEuwsCo9EiY0F3DFzrLqBijgcYxdg2mSMj8PCzOe2niE0UXFYmWP6RqIEXaH+R/lcbXMBoh5QGVoSYxL5l0F+HJ/0Tl900q8+5SJ9/qfV3T8eq2i5zmcRt9dlpH2StqNBzbqzVcZEx270JRMl2AvD9NKOp8HEkSJ13UExKdEc7CkCA7c/LDGpxlNl1jWY6/Sk5fUsrvhLAk6SMTWVLESHAlUDZMSD81DE80t2hvuUnx5tbx00SJCHMSUfhx29aZ6jmRgMghXifHjYlUhKOD2YZELRHM1nTlkIxpGIrR3U65Q8b/WaACvLnFXe9RGuJAnxH6sPhTXqEui2nVc5ux1W5WG/Y+PnZaNfjWMa4ue5pFfr+69NdOydWluG8ANER3DkYe4lC3CC9yftkde+2TGmy5R3azCM+WQ7YFr9yTasurNvGB7dbt5iFuORaeJT/Jk7XKGiDzkxmuMsaksxUuwOu8Yv/U9ZwGbjhW7RhbVa+aLWkRnucJteZ+vdr0XNjsaMrluuu12rM+ZxeGq0hmU/apxTuHrhJyPJ2mJUr410+963Xifcy095ObeqZ+xR3DXO+Pea895tQd82HO6NP3L7ngSmSHBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9QKG0tAxaiBZCuunKOxM5sUhsBUtJMcYME2lsD5ZmxGhU1wRvC/2NbrLuL6Tr/ki/oiM7luPGcbKsFnrde889Z86dKQMU4LFFFDmjMmGCAzxNirDJAngZMU59SXqq0mPJgPE+liIowCNfpFwBwEYZyr6IYsEpV0kZ3i4KiFKSnaeK4kgErMc09oYGHogRZhwrIULFYihBKQ+XM8AibKlxTOHdAqlPOZXM39OIxB/iJKY02IZtEl2TmF5FKImYSqIyASUSBPgLCVM607ETRYIpGiWVgPpiDLrtzgI/FFLnAWzB9wuDflWSGJXOhXEuwsCo9EiY0F3DFzrLqBijgcYxdg2mSMj8PCzOe2niE0UXFYmWP6RqIEXaH+R/lcbXMBoh5QGVoSYxL5l0F+HJ/0Tl900q8+5SJ9/qfV3T8eq2i5zmcRt9dlpH2StqNBzbqzVcZEx270JRMl2AvD9NKOp8HEkSJ13UExKdEc7CkCA7c/LDGpxlNl1jWY6/Sk5fUsrvhLAk6SMTWVLESHAlUDZMSD81DE80t2hvuUnx5tbx00SJCHMSUfhx29aZ6jmRgMghXifHjYlUhKOD2YZELRHM1nTlkIxpGIrR3U65Q8b/WaACvLnFXe9RGuJAnxH6sPhTXqEui2nVc5ux1W5WG/Y+PnZaNfjWMa4ue5pFfr+69NdOydWluG8ANER3DkYe4lC3CC9yftkde+2TGmy5R3azCM+WQ7YFr9yTasurNvGB7dbt5iFuORaeJT/Jk7XKGiDzkxmuMsaksxUuwOu8Yv/U9ZwGbjhW7RhbVa+aLWkRnucJteZ+vdr0XNjsaMrluuu12rM+ZxeGq0hmU/apxTuHrhJyPJ2mJUr410+963Xifcy095ObeqZ+xR3DXO+Pea895tQd82HO6NP3L7ngSmSHBgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic23 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic23
+    '24':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UwW7aQBR8CWlkqJq2UXtJ1crywWqlKL30xA3FqEEJEGEnFUJotbEXWGHvWut1KYq4Vuo/9J5zfyE995/6DMGEJpAcy8HYfrPzZnbeugRQgKcO1fScqYRLAfA8MWCTB/Aq4oL5ivZ0mSspSDKSKijAE1+mQgPARglKvoxiKZjQSQneLvBUa8UvUs1IJAPe40i9gbwDOSJcEC1lqHkMRSjm5VJGaMCWHscM3i2Y+kwwxf0DZKT+kCQxY8E2bNPoRsT0Z0BRxkxRnekv0iAgX2mYspmNnSiSXLMoKQfMl2PAtjsL/lAqxAFswY9Li33TilrlzqV1IcPAKvdomLB9y5eIssrWaIA81r7FNQ25n5flRS9NfKrZYkWC9odMD5RM+4P8rUZ+pEGGVARMhShivmTSXZQn/5OUP7elzLsrBN/pfbOm4x3VXLPZOGmbX5qt4+zWrNebNa9ad01rsr+KRat0QfL+LGFm5+NI0Tjpmj2pzHMqeBhSs5Yl+WENz7KarrVsx7/PTl8xJlZSOIr2Tdt0lIxNKbQ0s2Ey8R9pRILaooPlJga8XsyXnyZaRkTQiMHPu7HOXM+FBFQNyTo7bkyVpsJ0s6M42817x2PMwlCOVmfkDrn4Z2sK8OaOajydLCQBfhzwgGyX7vGV1dDvPGDitBuVeu2QnDRbVfjesa6veqgiv15f+Wvn4/pKPhQ9UnTnZPQx2XQN2M31ZVfitU+rsOUe1xoGvFgu1RzYdU8rLa/SIC7qc8gM9iyHob8q7Nmf7HA5DJvNdrUAezn28Mz1mnVSbzrVE+JUvEq2jQa8zAHVxuFRpeG5sNlBmaUj12u1Zx1OLy1X0yya7BENNz+7WqrxdHaWxJDfv/CMI3C1Jkx6ctvDNJ24Y9nr07AfDMOeZmE/Lgf8yv4FXfMGgm4GAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81UwW7aQBR8CWlkqJq2UXtJ1crywWqlKL30xA3FqEEJEGEnFUJotbEXWGHvWut1KYq4Vuo/9J5zfyE995/6DMGEJpAcy8HYfrPzZnbeugRQgKcO1fScqYRLAfA8MWCTB/Aq4oL5ivZ0mSspSDKSKijAE1+mQgPARglKvoxiKZjQSQneLvBUa8UvUs1IJAPe40i9gbwDOSJcEC1lqHkMRSjm5VJGaMCWHscM3i2Y+kwwxf0DZKT+kCQxY8E2bNPoRsT0Z0BRxkxRnekv0iAgX2mYspmNnSiSXLMoKQfMl2PAtjsL/lAqxAFswY9Li33TilrlzqV1IcPAKvdomLB9y5eIssrWaIA81r7FNQ25n5flRS9NfKrZYkWC9odMD5RM+4P8rUZ+pEGGVARMhShivmTSXZQn/5OUP7elzLsrBN/pfbOm4x3VXLPZOGmbX5qt4+zWrNebNa9ad01rsr+KRat0QfL+LGFm5+NI0Tjpmj2pzHMqeBhSs5Yl+WENz7KarrVsx7/PTl8xJlZSOIr2Tdt0lIxNKbQ0s2Ey8R9pRILaooPlJga8XsyXnyZaRkTQiMHPu7HOXM+FBFQNyTo7bkyVpsJ0s6M42817x2PMwlCOVmfkDrn4Z2sK8OaOajydLCQBfhzwgGyX7vGV1dDvPGDitBuVeu2QnDRbVfjesa6veqgiv15f+Wvn4/pKPhQ9UnTnZPQx2XQN2M31ZVfitU+rsOUe1xoGvFgu1RzYdU8rLa/SIC7qc8gM9iyHob8q7Nmf7HA5DJvNdrUAezn28Mz1mnVSbzrVE+JUvEq2jQa8zAHVxuFRpeG5sNlBmaUj12u1Zx1OLy1X0yya7BENNz+7WqrxdHaWxJDfv/CMI3C1Jkx6ctvDNJ24Y9nr07AfDMOeZmE/Lgf8yv4FXfMGgm4GAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic24 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic24
+    '25':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkFVE3TVt00amV5YbVSlG66YodiVFB4pNhJhRAaTewBRtgz1nhciiK2lfoRXWfdX0jX/ZN+RK8hmJAHybIsjOGeOfecOXemCJCDJzbV9ISpmEsB8CzOwyb3YSfkgnmK9nUpHnIW+Dl45MlEaADYKELRk2EkBRM6LsKbJZZqrfhpohkJpc/7HGk3kHMox4QLoqUMNI+gAIWsXEwJ87ClJxGDt0umARNMcW8fGak3InHEmP8YHtPwUsTsk4eCjJiiOtVeoL5PvtIgYXML22EouWZhXPKZJyeAbbeX/IFUiAPYgh9nJvumFTVL3TPzVAa+WerTIGZ7picRZZbM8RB5zD2TaxpwLyvL034Se1Sz5YoY7Y+YHiqZDIbZvxr5kQYZEuEzFaCIxZJpb1me/k9S/lyVsuiuEHyj9+WarlutOUarWe8YX1rtw/TVaDRaNbfScAxzuncXi1bJkuTdccyM7oexolHcM/pSGSdU8CCgRi1N8v0anlU1PXPVjnebnYFiTNxJYSs6MCzDVjIypNDSSIfJwG+kETFqC/dXm+Th1XK+vCTWMiSChgx+3ox17nohxKdqRNbZcSKqNBWGMzuL8+28dT4mLAjk+O6QnBEX1/YmB7s3ZOPxZAHx8WbAK+Jv8RZjaQ0NLxImdqdZbtQOSL3VrsD3rnlx3kcV2fPi3Fs7IBfn8r7skaK3IKMPCaeXhxeZvvRJ3M5RBbacw1ozDzurpZoNL52jctstN4lTrVXqNpnjnmY4NFiBXeujFVyLw2Lzfc3B6wx8cOy4rQZptOxKndhlt5xuZB6eZ4BK86BabroObHZRaLHquO3OvMXnM9PRNA0n/YmWW58cLdVkNj4rasjvX3jMEbhGFIY9vepiFlDUNa31gVj35mHN4rAeFgXetP8Au5a/fW4GAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkFVE3TVt00amV5YbVSlG66YodiVFB4pNhJhRAaTewBRtgz1nhciiK2lfoRXWfdX0jX/ZN+RK8hmJAHybIsjOGeOfecOXemCJCDJzbV9ISpmEsB8CzOwyb3YSfkgnmK9nUpHnIW+Dl45MlEaADYKELRk2EkBRM6LsKbJZZqrfhpohkJpc/7HGk3kHMox4QLoqUMNI+gAIWsXEwJ87ClJxGDt0umARNMcW8fGak3InHEmP8YHtPwUsTsk4eCjJiiOtVeoL5PvtIgYXML22EouWZhXPKZJyeAbbeX/IFUiAPYgh9nJvumFTVL3TPzVAa+WerTIGZ7picRZZbM8RB5zD2TaxpwLyvL034Se1Sz5YoY7Y+YHiqZDIbZvxr5kQYZEuEzFaCIxZJpb1me/k9S/lyVsuiuEHyj9+WarlutOUarWe8YX1rtw/TVaDRaNbfScAxzuncXi1bJkuTdccyM7oexolHcM/pSGSdU8CCgRi1N8v0anlU1PXPVjnebnYFiTNxJYSs6MCzDVjIypNDSSIfJwG+kETFqC/dXm+Th1XK+vCTWMiSChgx+3ox17nohxKdqRNbZcSKqNBWGMzuL8+28dT4mLAjk+O6QnBEX1/YmB7s3ZOPxZAHx8WbAK+Jv8RZjaQ0NLxImdqdZbtQOSL3VrsD3rnlx3kcV2fPi3Fs7IBfn8r7skaK3IKMPCaeXhxeZvvRJ3M5RBbacw1ozDzurpZoNL52jctstN4lTrVXqNpnjnmY4NFiBXeujFVyLw2Lzfc3B6wx8cOy4rQZptOxKndhlt5xuZB6eZ4BK86BabroObHZRaLHquO3OvMXnM9PRNA0n/YmWW58cLdVkNj4rasjvX3jMEbhGFIY9vepiFlDUNa31gVj35mHN4rAeFgXetP8Au5a/fW4GAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic25 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic25
+    '26':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWlkqJo2kbJplcrywmqlKN10xY4CalACjrCTCCE0GuwBLOwZazwuRRHbSv2KLrPuL6Tr/ki/otcQTCgJybJe+HXPnHvOnJkpAOTgeYUqesFk7AsO8DLWYNP3YC/0OXMl7amiK0Ucd8UoB89ckXAFABsFKLgijARnXMUFOFigqVLS7yaKkVB4fs9H4g1kHYgR8TlRQgTKjyAP+axcSAk12FLjiMHbBVOfcSZ99wgZqTskccSYtw3bNLwVMb00yIuISapS9XnqeeQLDRI2M7EThsJXLIyLHnPFGLDtzoI/EBJxAFvw/cpgX5WkRrF9ZXRF4BnFHg1idmi4AlFG0RgNkMc4NHxFA9/NyqLbS2KXKrYYEaP9IVMDKZL+IPurkB9pkCHhHpMBipgPmXQW5cn/JOX3XSnz7hLBK71vx7Sd45qtW43Tln5pNU/SV71et2pOtW7rxuTwIRYlkwXJu/OY6e0PI0mjuKP3hNQvKPeDgOq1NMn3a3iW1XSMZTvufXb6kjH+IEVF0r5u6hUpIl1wJfR0Men4RBoeo7bwaLmJBvt39k0SKxESTkMGP1ZjnbmeC/GoHJJ1duyISkW5Xr7djbMJvXeFjFkQiNHDMdlDn/8zOzl4syIcNygLiIenAx4Tfwr3WEtraHmeMam0GqV6rUxOrWYVvrWNm+seqsjuN9fu2iVycy0eSx8pOnMy+pR4OhrsZfrSO3FaZ1XYsk9qDQ1eLZdqFdi3z0pNp9Qg5aZl25+sSzJDvsiQaLEKB+ZHM1iJxGSzuc3B6wxePrcdq07qVqV6Siolp5ROpga7GaDaKB+XGo4Nm20UWzi2nWZr1sS+MmxF04DST7RtfbaVkOPpIlrSQ379xM2OwLWyMPLJXSfTmKK2Ya6PxXw0FXMaivm0QPDE/QtsZ+wAeAYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWlkqJo2kbJplcrywmqlKN10xY4CalACjrCTCCE0GuwBLOwZazwuRRHbSv2KLrPuL6Tr/ki/otcQTCgJybJe+HXPnHvOnJkpAOTgeYUqesFk7AsO8DLWYNP3YC/0OXMl7amiK0Ucd8UoB89ckXAFABsFKLgijARnXMUFOFigqVLS7yaKkVB4fs9H4g1kHYgR8TlRQgTKjyAP+axcSAk12FLjiMHbBVOfcSZ99wgZqTskccSYtw3bNLwVMb00yIuISapS9XnqeeQLDRI2M7EThsJXLIyLHnPFGLDtzoI/EBJxAFvw/cpgX5WkRrF9ZXRF4BnFHg1idmi4AlFG0RgNkMc4NHxFA9/NyqLbS2KXKrYYEaP9IVMDKZL+IPurkB9pkCHhHpMBipgPmXQW5cn/JOX3XSnz7hLBK71vx7Sd45qtW43Tln5pNU/SV71et2pOtW7rxuTwIRYlkwXJu/OY6e0PI0mjuKP3hNQvKPeDgOq1NMn3a3iW1XSMZTvufXb6kjH+IEVF0r5u6hUpIl1wJfR0Men4RBoeo7bwaLmJBvt39k0SKxESTkMGP1ZjnbmeC/GoHJJ1duyISkW5Xr7djbMJvXeFjFkQiNHDMdlDn/8zOzl4syIcNygLiIenAx4Tfwr3WEtraHmeMam0GqV6rUxOrWYVvrWNm+seqsjuN9fu2iVycy0eSx8pOnMy+pR4OhrsZfrSO3FaZ1XYsk9qDQ1eLZdqFdi3z0pNp9Qg5aZl25+sSzJDvsiQaLEKB+ZHM1iJxGSzuc3B6wxePrcdq07qVqV6Siolp5ROpga7GaDaKB+XGo4Nm20UWzi2nWZr1sS+MmxF04DST7RtfbaVkOPpIlrSQ379xM2OwLWyMPLJXSfTmKK2Ya6PxXw0FXMaivm0QPDE/QtsZ+wAeAYAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic26 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic26
+    '27':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWlkqJKmlSpVrVpZXlitFKWbrtgRQA1KwBF2EiGERoM9gIU9Y43HpShiW6m/0B/Iur+Qrvsl/YleQzChCSTLeuHXPXPmnDl3pgCQg6cVqug5k7EvOMCzWINN34Od0OfMlbSnil0xysETVyRcAcBGAQquCCPBGVdxAd4ugFQp6XcTxUgoPL/nI+cGEg7EiPicKCEC5UeQh3xWLqSEGmypccTg3YKpzziTvnuAjNQdkjhizNuGbRreiJheGuRFxCRVqfA89TzyhQYJm+nfDUPhKxbGRY+5Ygw47e6CPxAScQBb8P3SYF+VpEaxfWl0ReAZxR4NYrZvuAJRRtEYDZDH2Dd8RQPfzcqi20tilyq2GBGj/SFTAymS/iD7q5AfaZAh4R6TAYqYD5l0FuXJ/yTl920p89klgu/MfTOm7RzVbN1qnLT0C6t5nL7q9bpVc6p1Wzcm+6tYlEwWJO/PYqa3P44kjeKO3hNSP6fcDwKq19IkP6zhWVbTMZbtuPfZ6UvG+EqKiqR93dQrUkS64EroaTPp+EQaHqO28GB5Eg1eLvrLTWIlQsJpyODH3VhnrudCPCqHZJ0dO6JSUa4fitFsLe9tjjELAjFanZA99Pk/C5ODN3c0495kAfHwTMDD4U/hHldpDd3O4yWVVqNUr5XJidWswre2cX3VQxXZ/frKXdsd11fioeCRojMno49JpqPBi0xfeidO67QKW/ZxraHB3nKpVoE9+7TUdEoNcmhdkBloJwOhuyq8Mj+Zwe0gTDZb0Ry8zpDlM9ux6qRuVaonpFJySukSavA8A1Qb5aNSw7Fhs40SC0e202zN+BuXhq1oGkv6iWatz7YScjztmiUp5NdP3N0IXKUIM57c1j/NJWob5voczAdjMKcpmI9LAE/Xv1bgAMtfBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWlkqJKmlSpVrVpZXlitFKWbrtgRQA1KwBF2EiGERoM9gIU9Y43HpShiW6m/0B/Iur+Qrvsl/YleQzChCSTLeuHXPXPmnDl3pgCQg6cVqug5k7EvOMCzWINN34Od0OfMlbSnil0xysETVyRcAcBGAQquCCPBGVdxAd4ugFQp6XcTxUgoPL/nI+cGEg7EiPicKCEC5UeQh3xWLqSEGmypccTg3YKpzziTvnuAjNQdkjhizNuGbRreiJheGuRFxCRVqfA89TzyhQYJm+nfDUPhKxbGRY+5Ygw47e6CPxAScQBb8P3SYF+VpEaxfWl0ReAZxR4NYrZvuAJRRtEYDZDH2Dd8RQPfzcqi20tilyq2GBGj/SFTAymS/iD7q5AfaZAh4R6TAYqYD5l0FuXJ/yTl920p89klgu/MfTOm7RzVbN1qnLT0C6t5nL7q9bpVc6p1Wzcm+6tYlEwWJO/PYqa3P44kjeKO3hNSP6fcDwKq19IkP6zhWVbTMZbtuPfZ6UvG+EqKiqR93dQrUkS64EroaTPp+EQaHqO28GB5Eg1eLvrLTWIlQsJpyODH3VhnrudCPCqHZJ0dO6JSUa4fitFsLe9tjjELAjFanZA99Pk/C5ODN3c0495kAfHwTMDD4U/hHldpDd3O4yWVVqNUr5XJidWswre2cX3VQxXZ/frKXdsd11fioeCRojMno49JpqPBi0xfeidO67QKW/ZxraHB3nKpVoE9+7TUdEoNcmhdkBloJwOhuyq8Mj+Zwe0gTDZb0Ry8zpDlM9ux6qRuVaonpFJySukSavA8A1Qb5aNSw7Fhs40SC0e202zN+BuXhq1oGkv6iWatz7YScjztmiUp5NdP3N0IXKUIM57c1j/NJWob5voczAdjMKcpmI9LAE/Xv1bgAMtfBgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic27 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic27
+    '28':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UwW7aQBR8CWkKVE3bqL2kamX5YLVSlFx64oYCaVACRNhJhRBabew1rLB3rfW6FEVcK/Ufes+5v5Ce+099hmBCE0iO5WBsv9l5MztvXQTIwbMK1fScqZhLAfAizsM69+B1yAVzFfV1iSspSDyUysvBE1cmQgPAWhGKrgwjKZjQcRHezfFUa8UvEs1IKD3uc6ReQ96+HBIuiJYy0DyCAhSycjElzMOGHkUM3s+Zekwwxd09ZKTugMQRY94mbNLwRsTkl4eCjJiiOtVfoJ5HvtIgYVMbW2EouWZhXPKYK0eAbbfm/IFUiAPYgB+XJvumFTVLnUvzQgaeWfJpELNd05WIMkvmsI885q7JNQ24m5XlhZ/ELtVsviJG+wOm+0omvX72ViM/0iBDIjymAhQxWzLuzsvj/0nKn9tSZt0Vgu/0vlnTcY5qttFsnLSNL83WcXpr1OvNmlOt24Y53l3GolUyJ/lwFjOjsz9UNIq7hi+VcU4FDwJq1NIkP67gWVTTNRftuPfZ6SnGxFKKiqI9wzIqSkaGFFoa6TAZ+I80IkZt4d5ikzy8mc+Xm8RahkTQkMHPu7FOXc+EeFQNyCo7dkSVpsKwNfX96W7eOx4jFgRyuDwje8DFP1uTg7d3VOPpZAHx8OOAB+Rp8R5faQ39zgImlXajXK8dkJNmqwrfO+b1lY8qsuv1lbtyPq6v5EPRI0V3RkYfk003D9uZvvRKnPZpFTbs41ojDy8XS7UKbNun5ZZTbhDbKR8ekinseQZDf1XYsT5ZwWIYFpvuag52MuzBme0066TerFRPSKXslNNtzMOrDFBtHByVG44N6x2UWTyynVZ72uH00kTeNJr0EQ03P9taqtFkdhbEkN+/8IwjcLkmTHp828MknahjWqvTsB4Mw5pkYT0uB/zK/gWJDG1mbgYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81UwW7aQBR8CWkKVE3bqL2kamX5YLVSlFx64oYCaVACRNhJhRBabew1rLB3rfW6FEVcK/Ufes+5v5Ce+099hmBCE0iO5WBsv9l5MztvXQTIwbMK1fScqZhLAfAizsM69+B1yAVzFfV1iSspSDyUysvBE1cmQgPAWhGKrgwjKZjQcRHezfFUa8UvEs1IKD3uc6ReQ96+HBIuiJYy0DyCAhSycjElzMOGHkUM3s+Zekwwxd09ZKTugMQRY94mbNLwRsTkl4eCjJiiOtVfoJ5HvtIgYVMbW2EouWZhXPKYK0eAbbfm/IFUiAPYgB+XJvumFTVLnUvzQgaeWfJpELNd05WIMkvmsI885q7JNQ24m5XlhZ/ELtVsviJG+wOm+0omvX72ViM/0iBDIjymAhQxWzLuzsvj/0nKn9tSZt0Vgu/0vlnTcY5qttFsnLSNL83WcXpr1OvNmlOt24Y53l3GolUyJ/lwFjOjsz9UNIq7hi+VcU4FDwJq1NIkP67gWVTTNRftuPfZ6SnGxFKKiqI9wzIqSkaGFFoa6TAZ+I80IkZt4d5ikzy8mc+Xm8RahkTQkMHPu7FOXc+EeFQNyCo7dkSVpsKwNfX96W7eOx4jFgRyuDwje8DFP1uTg7d3VOPpZAHx8OOAB+Rp8R5faQ39zgImlXajXK8dkJNmqwrfO+b1lY8qsuv1lbtyPq6v5EPRI0V3RkYfk003D9uZvvRKnPZpFTbs41ojDy8XS7UKbNun5ZZTbhDbKR8ekinseQZDf1XYsT5ZwWIYFpvuag52MuzBme0066TerFRPSKXslNNtzMOrDFBtHByVG44N6x2UWTyynVZ72uH00kTeNJr0EQ03P9taqtFkdhbEkN+/8IwjcLkmTHp828MknahjWqvTsB4Mw5pkYT0uB/zK/gWJDG1mbgYAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic28 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic28
+    '29':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWlkqJo+lG76kuWF1UpRsumKHYpRgxIgwk4qhNBoYg8wwp6xxuNSFLGt1J/oNuv+QrruP/Uaggl5kCzLwti+Z849Z84dlwAK8NShmp4ylXApAJ4nBqzzALYjLpivaE+XuZKCJCOpggI88WUqNACslaDkyyiWggmdlOD9Ak+1Vvws1YxEMuA9jtRryDuQI8IF0VKGmsdQhGJeLmWEBmzocczgw4KpzwRT3N9FRuoPSRIzFmzCJo2uREx/BhRlzBTVmf4iDQLyjYYpm9nYiiLJNYuScsB8OQZsu7XgD6VCHMAG/Dy32HetqFXunFtnMgysco+GCduxfIkoq2yNBshj7Vhc05D7eVme9dLEp5otViRof8j0QMm0P8jfauRHGmRIRcBUiCLmSybdRXnyP0n5e13KvLtC8K3eV2s63kHNNZuNo7b5tdk6zG7Ner1Z86p117QmO/exaJUuSD6eJMzs7I0UjZOu2ZPKPKWChyE1a1mSn1bwLKvpWst2/Lvs9BVj4l4KR9G+aZuOkrEphZZmNkwm/iONSFBbtLvcxIDXi/ny00TLiAgaMfh1O9aZ67mQgKohWWXHjanSVJie4gEeutl+3jkgYxaGcnR/Su6QixubU4C3t3Tj+WQhCfDzgEfEKN3hLKuh43nExGk3KvXaPjlqtqrwo2NdXvRQRX69vPBXTsjlhXwofKTozsnoY9LpGvAq15ddidc+rsKGe1hrGPBiuVRzYNs9rrS8SoN4rZpTbXhkBnyWA9FhFd7Zn+3wZiA2m+1sAd7k6P0T12vWSb3pVI+IU/Eq2VYa8DIHVBv7B5WG58J6B6WWDlyv1Z71aJ1brqZZPNkjmm5+cbVU4+kELckhf37jSUfgKlWY9+S6j2lGcceyV2diPxiJPU3Eflwa+LX9B4ql1qN2BgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWlkqJo+lG76kuWF1UpRsumKHYpRgxIgwk4qhNBoYg8wwp6xxuNSFLGt1J/oNuv+QrruP/Uaggl5kCzLwti+Z849Z84dlwAK8NShmp4ylXApAJ4nBqzzALYjLpivaE+XuZKCJCOpggI88WUqNACslaDkyyiWggmdlOD9Ak+1Vvws1YxEMuA9jtRryDuQI8IF0VKGmsdQhGJeLmWEBmzocczgw4KpzwRT3N9FRuoPSRIzFmzCJo2uREx/BhRlzBTVmf4iDQLyjYYpm9nYiiLJNYuScsB8OQZsu7XgD6VCHMAG/Dy32HetqFXunFtnMgysco+GCduxfIkoq2yNBshj7Vhc05D7eVme9dLEp5otViRof8j0QMm0P8jfauRHGmRIRcBUiCLmSybdRXnyP0n5e13KvLtC8K3eV2s63kHNNZuNo7b5tdk6zG7Ner1Z86p117QmO/exaJUuSD6eJMzs7I0UjZOu2ZPKPKWChyE1a1mSn1bwLKvpWst2/Lvs9BVj4l4KR9G+aZuOkrEphZZmNkwm/iONSFBbtLvcxIDXi/ny00TLiAgaMfh1O9aZ67mQgKohWWXHjanSVJie4gEeutl+3jkgYxaGcnR/Su6QixubU4C3t3Tj+WQhCfDzgEfEKN3hLKuh43nExGk3KvXaPjlqtqrwo2NdXvRQRX69vPBXTsjlhXwofKTozsnoY9LpGvAq15ddidc+rsKGe1hrGPBiuVRzYNs9rrS8SoN4rZpTbXhkBnyWA9FhFd7Zn+3wZiA2m+1sAd7k6P0T12vWSb3pVI+IU/Eq2VYa8DIHVBv7B5WG58J6B6WWDlyv1Z71aJ1brqZZPNkjmm5+cbVU4+kELckhf37jSUfgKlWY9+S6j2lGcceyV2diPxiJPU3Eflwa+LX9B4ql1qN2BgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic29 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic29
+    '30':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkEVE3fm0atLC+sVorSTVfsEKCCEkOKnVQIodHEHmCEPWONx6UoYlupH9F11v2FdN1/6jUEE/IgWZaFsX3PnHvOnDsuAuTgcZVqesJUzKUAeBrnYZP78CrkgnmK9nWJKylIPJbKz8EjTyZCA8BGEYqeDCMpmNBxEd4u8VRrxU8TzUgofd7nSL2BvEM5JlwQLWWgeQQFKGTlYkqYhy09iRi8WzINmGCKe/vISL0RiSPG/G3YpuGliNkvDwUZMUV1qr9AfZ98o0HC5jZ2wlByzcK45DNPTgDb7iz5A6kQB7AFP89M9l0rapa6Z+apDHyz1KdBzPZMTyLKLJnjIfKYeybXNOBeVpan/ST2qGbLFTHaHzE9VDIZDLO3GvmRBhkS4TMVoIjFkmlvWZ7+T1L+XpWy6K4QfKP35ZquW284Rqt52DG+ttoH6a1h262GW7Mdw5zu3cWiVbIkeX8cM6P7caxoFPeMvlTGCRU8CKjRSJP8sIZnVU3PXLXj3WZnoBgTd1JUFR0YllFVMjKk0NJIh8nAf6QRMWoL91eb5OH1cr68JNYyJIKGDH7djHXueiHEp2pE1tlxIqo0FUadhiFT8+28dT4mLAjk+O6QnBEX1/YmB7s3ZOPxZAHx8euAJ6RQvMVYWkPDi4RJtdMs240KOWy1a/Cja16c91FFdr0499YOyMW5vC97pOgtyOhDwunl4UWmL70St3NUgy3noNHMw7PVUqMKL52jctstN0m9bNu1NpnjnmQ4NFiDXeuTFVyLw2Lzfc3BmwxcOXbclk3sVrV2SKplt5xuZB6eZ4Bas1IvN10HNrsotFh33HZn3uLLmelomoaTPqLl1mdHSzWZjc+KGvLnNx5zBK4RhWFPr7qYBRR1TWt9INa9eVizOKyHRYFf2n/3qeTecgYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkEVE3fm0atLC+sVorSTVfsEKCCEkOKnVQIodHEHmCEPWONx6UoYlupH9F11v2FdN1/6jUEE/IgWZaFsX3PnHvOnDsuAuTgcZVqesJUzKUAeBrnYZP78CrkgnmK9nWJKylIPJbKz8EjTyZCA8BGEYqeDCMpmNBxEd4u8VRrxU8TzUgofd7nSL2BvEM5JlwQLWWgeQQFKGTlYkqYhy09iRi8WzINmGCKe/vISL0RiSPG/G3YpuGliNkvDwUZMUV1qr9AfZ98o0HC5jZ2wlByzcK45DNPTgDb7iz5A6kQB7AFP89M9l0rapa6Z+apDHyz1KdBzPZMTyLKLJnjIfKYeybXNOBeVpan/ST2qGbLFTHaHzE9VDIZDLO3GvmRBhkS4TMVoIjFkmlvWZ7+T1L+XpWy6K4QfKP35ZquW284Rqt52DG+ttoH6a1h262GW7Mdw5zu3cWiVbIkeX8cM6P7caxoFPeMvlTGCRU8CKjRSJP8sIZnVU3PXLXj3WZnoBgTd1JUFR0YllFVMjKk0NJIh8nAf6QRMWoL91eb5OH1cr68JNYyJIKGDH7djHXueiHEp2pE1tlxIqo0FUadhiFT8+28dT4mLAjk+O6QnBEX1/YmB7s3ZOPxZAHx8euAJ6RQvMVYWkPDi4RJtdMs240KOWy1a/Cja16c91FFdr0499YOyMW5vC97pOgtyOhDwunl4UWmL70St3NUgy3noNHMw7PVUqMKL52jctstN0m9bNu1NpnjnmQ4NFiDXeuTFVyLw2Lzfc3BmwxcOXbclk3sVrV2SKplt5xuZB6eZ4Bas1IvN10HNrsotFh33HZn3uLLmelomoaTPqLl1mdHSzWZjc+KGvLnNx5zBK4RhWFPr7qYBRR1TWt9INa9eVizOKyHRYFf2n/3qeTecgYAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic30 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic30
+    '31':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UTW/aQBR8CWkErpq2UXtJ1crywWqlKL30xA0BalDCh7CTCiG02tgLrLB3rfW6FEVcK/U/9J5z/0J67n/qMwQTmkByLAdj+83Om9l5awMgB08rVNNzpmIuBcDzOA/b3IdXIRfMU7Svi1xJQeKxVH4OnngyERoAtgwwPBlGUjChYwPeLvFUa8UvEs1IKH3e50i9hbxDOSZcEC1loHkEBShkZSMlzMOOnkQM3i2ZBkwwxb0jZKTeiMQRY/4u7NLwRsTsl4eCjJiiOtVfoL5PvtIgYXMbe2EouWZhXPSZJyeAbfeW/IFUiAPYgR+XFvumFbWK3UvrQga+VezTIGaHlicRZRWt8RB5rEOLaxpwLyvLi34Se1Sz5YoY7Y+YHiqZDIbZW438SIMMifCZClDEYsm0tyxP/ycpf25LWXRXCL7T+2ZN1z2uOWazcdoxvzTbJ+mtWa83a2617pjW9HAdi1bJkuT9WczM7sexolHcM/tSmedU8CCgZi1N8sMGnlU1PWvVjnefnYFiTKylqCg6MG2zomRkSqGlmQ6Tif9II2LUFh6tNsnD6+V8eUmsZUgEDRn8vBvr3PVCiE/ViGyy40RUaSpMJ2JUzXfz3vGYsCCQ4/UZOSMu/tmaHLy5oxpPJwuIjx8HPCCGcY+vtIZ+FwGTSqdRqtfK5LTZrsL3rnV91UcV2fX6yts4H9dX8qHokaK3IKOPyaaXh/1MX3olbqdVhR3npNbIw4vVUq0C+06r1HZLDeK0qqU2mcOeZTD0V4UD+5MdrIZhs/mu5uAgw5bPHLdZJ/VmpXpKKiW3lG5jHl5mgGqjfFxquA5sd1Gmcey47c68Q+vScjRNo0kf0XDzs6OlmsxmZ0UM+f0LzzgC12vCpKe3PczSibqWvTkN+8Ew7FkW9uNywK/sXxfkx7JuBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81UTW/aQBR8CWkErpq2UXtJ1crywWqlKL30xA0BalDCh7CTCiG02tgLrLB3rfW6FEVcK/U/9J5z/0J67n/qMwQTmkByLAdj+83Om9l5awMgB08rVNNzpmIuBcDzOA/b3IdXIRfMU7Svi1xJQeKxVH4OnngyERoAtgwwPBlGUjChYwPeLvFUa8UvEs1IKH3e50i9hbxDOSZcEC1loHkEBShkZSMlzMOOnkQM3i2ZBkwwxb0jZKTeiMQRY/4u7NLwRsTsl4eCjJiiOtVfoL5PvtIgYXMbe2EouWZhXPSZJyeAbfeW/IFUiAPYgR+XFvumFbWK3UvrQga+VezTIGaHlicRZRWt8RB5rEOLaxpwLyvLi34Se1Sz5YoY7Y+YHiqZDIbZW438SIMMifCZClDEYsm0tyxP/ycpf25LWXRXCL7T+2ZN1z2uOWazcdoxvzTbJ+mtWa83a2617pjW9HAdi1bJkuT9WczM7sexolHcM/tSmedU8CCgZi1N8sMGnlU1PWvVjnefnYFiTKylqCg6MG2zomRkSqGlmQ6Tif9II2LUFh6tNsnD6+V8eUmsZUgEDRn8vBvr3PVCiE/ViGyy40RUaSpMJ2JUzXfz3vGYsCCQ4/UZOSMu/tmaHLy5oxpPJwuIjx8HPCCGcY+vtIZ+FwGTSqdRqtfK5LTZrsL3rnV91UcV2fX6yts4H9dX8qHokaK3IKOPyaaXh/1MX3olbqdVhR3npNbIw4vVUq0C+06r1HZLDeK0qqU2mcOeZTD0V4UD+5MdrIZhs/mu5uAgw5bPHLdZJ/VmpXpKKiW3lG5jHl5mgGqjfFxquA5sd1Gmcey47c68Q+vScjRNo0kf0XDzs6OlmsxmZ0UM+f0LzzgC12vCpKe3PczSibqWvTkN+8Ew7FkW9uNywK/sXxfkx7JuBgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic31 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic31
+    '32':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkERE3fm0atRl5YrRSlm67YIUAFJeAUO6kQQqOJPcAIe8Ydj0sRYl31I7rOur+Q7vtNHUOwQx4ky7Iwtu+Zc8+Zc8dFgBzsVIkip1RGTHCAJ1EeNpkHLwPGqStJX5WYFBxHYyG9HDxyRcwVAGwUoeiKIBScchUV4U2GJ0pJdhYrigPhsT7T1BuadyjGmHGshPAVC6EAhbRcTAjzsKUmIYW3GdOAciqZe6AZiTvCUUiptw3bJLgUMf/loSBCKolK9BeI5+FvxI/pwsZuEAimaBCVPOqKCei2uxm/L6TGAWzBz6lBvytJjFJ3apwJ3zNKfeJHdN9whUYZJWM81DzGvsEU8ZmblsVZP45comi2ItL2R1QNpYgHw/St0vyaRjPE3KPS1yKWS2a9rDz7n6T8vSpl2V1q8I3el2u6Tr1hI6t11EFfrPZhcouaTavh1Jo2Mmb7d7EoGWck704iirofxpKEUQ/1hUSnhDPfRwQ1kijfryFaldMzVv24t/kZSEr5nRRVSQbIRFUpQiS4EiiZJqT/NQ2PtLjgYLVJHl5lA+bGkRIB5iSg8OtmrgvbSyEekSO8zo4dEqkIR7Y7UUO62M9bB2RCfV+M707JHjF+bW9ysHdDtj6f1Mee/jzoI7JTvMVYUtOGlxHjaqdVbjYq+Mhq1+BH17g472sV6fXi3F07IRfn4t7wNUdvyUYekk4vD89TgckVO53jGmzZh41WHp6ulhpVeGEfl9tOuYXtSsep1/AC9zjFaYc12DM/mv61PEy62NgcvE7BlRPbsZq4aVVrR7hadsrJTubhWQqotSr1csuxYbOrhRbrttPuLFp8nhq2Ikk6yaO2bH2ylZCT+fysqMF/fuuDroFrROm0Z1ddzBP62jXM9YmY9wdizvMwH5aF/tj+A5TIlh91BgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkERE3fm0atRl5YrRSlm67YIUAFJeAUO6kQQqOJPcAIe8Ydj0sRYl31I7rOur+Q7vtNHUOwQx4ky7Iwtu+Zc8+Zc8dFgBzsVIkip1RGTHCAJ1EeNpkHLwPGqStJX5WYFBxHYyG9HDxyRcwVAGwUoeiKIBScchUV4U2GJ0pJdhYrigPhsT7T1BuadyjGmHGshPAVC6EAhbRcTAjzsKUmIYW3GdOAciqZe6AZiTvCUUiptw3bJLgUMf/loSBCKolK9BeI5+FvxI/pwsZuEAimaBCVPOqKCei2uxm/L6TGAWzBz6lBvytJjFJ3apwJ3zNKfeJHdN9whUYZJWM81DzGvsEU8ZmblsVZP45comi2ItL2R1QNpYgHw/St0vyaRjPE3KPS1yKWS2a9rDz7n6T8vSpl2V1q8I3el2u6Tr1hI6t11EFfrPZhcouaTavh1Jo2Mmb7d7EoGWck704iirofxpKEUQ/1hUSnhDPfRwQ1kijfryFaldMzVv24t/kZSEr5nRRVSQbIRFUpQiS4EiiZJqT/NQ2PtLjgYLVJHl5lA+bGkRIB5iSg8OtmrgvbSyEekSO8zo4dEqkIR7Y7UUO62M9bB2RCfV+M707JHjF+bW9ysHdDtj6f1Mee/jzoI7JTvMVYUtOGlxHjaqdVbjYq+Mhq1+BH17g472sV6fXi3F07IRfn4t7wNUdvyUYekk4vD89TgckVO53jGmzZh41WHp6ulhpVeGEfl9tOuYXtSsep1/AC9zjFaYc12DM/mv61PEy62NgcvE7BlRPbsZq4aVVrR7hadsrJTubhWQqotSr1csuxYbOrhRbrttPuLFp8nhq2Ikk6yaO2bH2ylZCT+fysqMF/fuuDroFrROm0Z1ddzBP62jXM9YmY9wdizvMwH5aF/tj+A5TIlh91BgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic32 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic32
+    '33':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UwW7aQBR8CWkEtE3bqL2kamX5YLVSlF564oYCbRABIuykQgitNvYaVti71npdiiKulfoPvefcX0jP/ac+QzChCSTHcjC23+y8mZ23LgLk4HGFanrGVMylAHgW52GTe/Ay5IK5ivq6xJUUJB5J5eXgkSsToQFgowhFV4aRFEzouAhvFniqteLniWYklB73OVJvIO9AjggXREsZaB5BAQpZuZgS5mFLjyMGbxdMfSaY4u4BMlJ3SOKIMW8btml4LWL6y0NBRkxRneovUM8jX2mQsJmNnTCUXLMwLnnMlWPAtjsL/kAqxAFswY8Lk33Tipql7oV5LgPPLPk0iNm+6UpEmSVzNEAec9/kmgbczcry3E9il2q2WBGj/SHTAyWT/iB7q5EfaZAhER5TAYqYL5n0FuXJ/yTlz00p8+4Kwbd6X6/pOkc122g1jzvGl1a7nt4ajUar5lQbtmFO9lexaJUsSN6dxszofhgpGsU9w5fKOKOCBwE1ammS79fwLKvpmct23Lvs9BVjYiVFRdG+YRkVJSNDCi2NdJgM/EcaEaO28GC5SR5eLebLTWItQyJoyODn7VhnrudCPKqGZJ0dO6JKU2HUBffZbDfvHI8xCwI5Wp2RPeTin63JwetbqvF0soB4+HHAA/KkeIevtIZ+5wGTSqdZbtQOyXGrXYXvXfPq0kcV2fXq0l07H1eX8r7okaI3J6MPyaaXh91MX3olTuekClt2vdbMw/PlUq0Cu/ZJue2Um6TerH2qkhnsaQZDf1XYsz5awXIYFpvtag72Muzhqe20GqTRqlSPSaXslNNtzMOLDFBtHh6Vm44Nm12UWTyynXZn1uHkwrQ1TaNJH9Fw67OtpRpPZ2dJDPn9C884AldrwqQnNz1M04m6prU+DeveMKxpFtbDcsCv7F+u63VCbgYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81UwW7aQBR8CWkEtE3bqL2kamX5YLVSlF564oYCbRABIuykQgitNvYaVti71npdiiKulfoPvefcX0jP/ac+QzChCSTHcjC23+y8mZ23LgLk4HGFanrGVMylAHgW52GTe/Ay5IK5ivq6xJUUJB5J5eXgkSsToQFgowhFV4aRFEzouAhvFniqteLniWYklB73OVJvIO9AjggXREsZaB5BAQpZuZgS5mFLjyMGbxdMfSaY4u4BMlJ3SOKIMW8btml4LWL6y0NBRkxRneovUM8jX2mQsJmNnTCUXLMwLnnMlWPAtjsL/kAqxAFswY8Lk33Tipql7oV5LgPPLPk0iNm+6UpEmSVzNEAec9/kmgbczcry3E9il2q2WBGj/SHTAyWT/iB7q5EfaZAhER5TAYqYL5n0FuXJ/yTlz00p8+4Kwbd6X6/pOkc122g1jzvGl1a7nt4ajUar5lQbtmFO9lexaJUsSN6dxszofhgpGsU9w5fKOKOCBwE1ammS79fwLKvpmct23Lvs9BVjYiVFRdG+YRkVJSNDCi2NdJgM/EcaEaO28GC5SR5eLebLTWItQyJoyODn7VhnrudCPKqGZJ0dO6JKU2HUBffZbDfvHI8xCwI5Wp2RPeTin63JwetbqvF0soB4+HHAA/KkeIevtIZ+5wGTSqdZbtQOyXGrXYXvXfPq0kcV2fXq0l07H1eX8r7okaI3J6MPyaaXh91MX3olTuekClt2vdbMw/PlUq0Cu/ZJue2Um6TerH2qkhnsaQZDf1XYsz5awXIYFpvtag72Muzhqe20GqTRqlSPSaXslNNtzMOLDFBtHh6Vm44Nm12UWTyynXZn1uHkwrQ1TaNJH9Fw67OtpRpPZ2dJDPn9C884AldrwqQnNz1M04m6prU+DeveMKxpFtbDcsCv7F+u63VCbgYAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic33 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic33
+    '34':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy07bQBS9EFolqUpbpG5atRq5UtRKCBbdRQjJEFMi8qhwoI2iaDTYk2SE7bHG44YIZVupX8K6v0DX/Rm+oNcJcQiER9VNvRg/7p1zz73nePIAGXhSYpodchUJGQA8i7KwKFxY8UXAHcU6uiiUDCg74Rl45Mg40ACwkIe8I/1QBjzQUR7eTLOZ1kocxZpTX7qiIxB4AVF7sk9FQLWUnhYh5CCXhvMJYBaW9CDk8HaK1OUBV8JZQ0TmHNMo5Nx9DI+Zf0lidGUhJ0OumE7Y55jr0m/Mi/m4iWXfl0JzPyq63JEDwLLLU3xPKswDWIIfpwY/0YoZxdapcSQ91yh2mBfxVcORmGUUjX4PcYxVQ2jmCScNy6NOHDlM8+mOCNs/5rqnZNztpV814iMMIsSBy5WHJCZbhu1pePg/Ufl9lcqkusLkG7Uv97Qau2Wb1GuVJvlS399LHkm1Wi83rKpNjOHqbShaxVOQ9wcRJ631vmJh1CYdqcghC4TnMVJOlPxwB84sm7Yx244zr52u4jy4FaKkWJcUSEnJkMhAS5KYieAdYYIIuflrs0Wy8HLqLyeOtPRpwHwOFzdlHXc9IfLuo7ll7ez8u65b6P6OhzWJecLnirx6zVjze58VbMA9T/ZvV94+FsG1gWfg9Y1Z4D/PPerigYMnz0V+zrSSGE5xYhtaatbManmbVur7FnxvGednHWSRrudnzp2uOz+T9xkKIdoTMPYQxdtZWEn5JSttND9bsGTvlWtZeD4bKpdgZatyYO1UzKpFza8WHac9TdOwPwvWN0aTLl7aYLPgzei4sT4Kb5ICH486A69SgO0Du1Gv0mq9ZFVoyWyYyWyz8CJNsGrbu2atYcNiC7nnd+3GfnNclp8atmaJXskrTqH+ydZSDUY2nWFIf/1E22HiXxJFTwyvdjvSMWwZhbt1K9wrW2GkWuFhiuEp/wcI7ntK7AYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy07bQBS9EFolqUpbpG5atRq5UtRKCBbdRQjJEFMi8qhwoI2iaDTYk2SE7bHG44YIZVupX8K6v0DX/Rm+oNcJcQiER9VNvRg/7p1zz73nePIAGXhSYpodchUJGQA8i7KwKFxY8UXAHcU6uiiUDCg74Rl45Mg40ACwkIe8I/1QBjzQUR7eTLOZ1kocxZpTX7qiIxB4AVF7sk9FQLWUnhYh5CCXhvMJYBaW9CDk8HaK1OUBV8JZQ0TmHNMo5Nx9DI+Zf0lidGUhJ0OumE7Y55jr0m/Mi/m4iWXfl0JzPyq63JEDwLLLU3xPKswDWIIfpwY/0YoZxdapcSQ91yh2mBfxVcORmGUUjX4PcYxVQ2jmCScNy6NOHDlM8+mOCNs/5rqnZNztpV814iMMIsSBy5WHJCZbhu1pePg/Ufl9lcqkusLkG7Uv97Qau2Wb1GuVJvlS399LHkm1Wi83rKpNjOHqbShaxVOQ9wcRJ631vmJh1CYdqcghC4TnMVJOlPxwB84sm7Yx244zr52u4jy4FaKkWJcUSEnJkMhAS5KYieAdYYIIuflrs0Wy8HLqLyeOtPRpwHwOFzdlHXc9IfLuo7ll7ez8u65b6P6OhzWJecLnirx6zVjze58VbMA9T/ZvV94+FsG1gWfg9Y1Z4D/PPerigYMnz0V+zrSSGE5xYhtaatbManmbVur7FnxvGednHWSRrudnzp2uOz+T9xkKIdoTMPYQxdtZWEn5JSttND9bsGTvlWtZeD4bKpdgZatyYO1UzKpFza8WHac9TdOwPwvWN0aTLl7aYLPgzei4sT4Kb5ICH486A69SgO0Du1Gv0mq9ZFVoyWyYyWyz8CJNsGrbu2atYcNiC7nnd+3GfnNclp8atmaJXskrTqH+ydZSDUY2nWFIf/1E22HiXxJFTwyvdjvSMWwZhbt1K9wrW2GkWuFhiuEp/wcI7ntK7AYAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic34 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic34
+    '35':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkEVE0fUrNo1cpyJdRKKFlkh6JIBJwGhUcUk7QIodHEHmCE7bHG4xIUsa3UL8m6v5Cu+zNddN1rCCYE8lC7KQtje+6ce849x5MGSMDjIlX0hMmACw/gaZCEZW7Duss9ZknaVjkuhUd8bvXoGUvAI0uEngKApTSkLeH6wmOeCtLwZrqDKiX5aagYcYXN2xzBlxC5K/qEe0QJ4SjuQwpS8XI6AkzCihr4DN5OkTrMY5JbG4hIrR4JfMbsVVil7hWJ0S8JKeEzSVWkIEVtm3yhTsjGQtZcV3DF3CBnM0sMANuuTfEdIbEOYAW+nevsTEmq55rn+qlwbD3Xpk7AsrolsErP6f0u4uhZnSvqcCteFqftMLCoYtMdAcrvMdWVIux047cK8REGEULPZtJBEpMtw9Z0efg/Ufl5ncqku8Tiud5Xe5r1/ZKp1arlhvapdnQQ3WqVSq1UNyqmpg+zt6EoGU5B3h8HTGtu9iX1g5bWFlI7oR53HKqVIic/3IEzy6alz8qxFsnpSMa8WyGKkna0jFaUwteEp4QWhUnDf4TxAuTmbsw2ScLLab6sMFDCJR51Gfyet3WsekLk3VZ+19jb+3dfdzH9bQd7aofjz3ah0dkb4Vqsf9a0AXMc0b/dfbPHvRtDT8DruXngd88cYuPBgyfQr/SCiUVrOMlJdEixUc1XSgVSrh0Z8LWpX160kUV8vbyw7kze5YW4L1QI0ZqA0Ye43krCi5hfdCX1xqEBK+ZBqZqEZ7NLpSKs75aPjb1yvmKQw1LhIP/ZIOPSJ3EpajRga3s07dxVHHYyzpyf25ujkh0tw8YjT8CrGKRwbNZrFVKpFY0yKebr+WjGSXgeFxjVwn6+WjdhuYka0vtm/agxbs3PdVPRyLfoEadR+2gqIQejyM6wJD++YwSx8C/IYj6G11WPPPWbeuZuDzP3WpgZOZh5mHt46v8BNCQyqAAHAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkEVE0fUrNo1cpyJdRKKFlkh6JIBJwGhUcUk7QIodHEHmCE7bHG4xIUsa3UL8m6v5Cu+zNddN1rCCYE8lC7KQtje+6ce849x5MGSMDjIlX0hMmACw/gaZCEZW7Duss9ZknaVjkuhUd8bvXoGUvAI0uEngKApTSkLeH6wmOeCtLwZrqDKiX5aagYcYXN2xzBlxC5K/qEe0QJ4SjuQwpS8XI6AkzCihr4DN5OkTrMY5JbG4hIrR4JfMbsVVil7hWJ0S8JKeEzSVWkIEVtm3yhTsjGQtZcV3DF3CBnM0sMANuuTfEdIbEOYAW+nevsTEmq55rn+qlwbD3Xpk7AsrolsErP6f0u4uhZnSvqcCteFqftMLCoYtMdAcrvMdWVIux047cK8REGEULPZtJBEpMtw9Z0efg/Ufl5ncqku8Tiud5Xe5r1/ZKp1arlhvapdnQQ3WqVSq1UNyqmpg+zt6EoGU5B3h8HTGtu9iX1g5bWFlI7oR53HKqVIic/3IEzy6alz8qxFsnpSMa8WyGKkna0jFaUwteEp4QWhUnDf4TxAuTmbsw2ScLLab6sMFDCJR51Gfyet3WsekLk3VZ+19jb+3dfdzH9bQd7aofjz3ah0dkb4Vqsf9a0AXMc0b/dfbPHvRtDT8DruXngd88cYuPBgyfQr/SCiUVrOMlJdEixUc1XSgVSrh0Z8LWpX160kUV8vbyw7kze5YW4L1QI0ZqA0Ye43krCi5hfdCX1xqEBK+ZBqZqEZ7NLpSKs75aPjb1yvmKQw1LhIP/ZIOPSJ3EpajRga3s07dxVHHYyzpyf25ujkh0tw8YjT8CrGKRwbNZrFVKpFY0yKebr+WjGSXgeFxjVwn6+WjdhuYka0vtm/agxbs3PdVPRyLfoEadR+2gqIQejyM6wJD++YwSx8C/IYj6G11WPPPWbeuZuDzP3WpgZOZh5mHt46v8BNCQyqAAHAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic35 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic35
+    '36':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UXWsaQRS9iWlRS9MPyEtLy7IFaUESaN8kBEzcVIm6JWtSRGSZ7M7qkNmdZXY2VoKvhf6SPPcvpM/9M4W+967GNSbmo/SlPqyrc+fcc+45M3mADDyqEEUOqYyYCACeRFlYZi6s+SygjiSeKjEpAjvqixPKM/DAEXGgAGApD3lH+KEIaKCiPLyabSBKSXYUK2r7wmUeQ+wlBO6Lgc0CWwnBFQshB7l0OZ8AZmFFDUMKr2dIPRpQyZx1RCTOsR2FlLoP4SHxL0iMP1nIiZBKohIBOeK69gnhMZ3oWPV9wRT1o5JLHTEEbLs6w+dCYh3ACnw71ekXJYle6pzqR4K7eskjPKJF3RFYpZf0QR9x9KLOFOHMSZfFkRdHDlF0tiNC+cdU9aWIe/30X4X4CIMIceBSyZHEdMuoO1se/U9Ufl6mMu0usfha74s9nVa1Zmlms97WPpv7e8mr1miYtZbRsDR9VLwJRcl4BvL2IKJaZ2MgSRh1NU9I7ZAEjHOi1RIn392CM8+mq8/LcRbJ6UlKgxshKpL0tIJWkSLURKCEloRJw2+ECSLk5q/PN8lePjpOHCnh2wHxKfy+butE9ZTImw/lbWN399993cb0exx7atb41C70uXglW4vlz3s2pJyLwc3mW8csuDLzDLy8Ng489pTbLl47eP/8yi8YWLKGg5wmx660m+VGbceum/sGfO3o52ceskif52fOrcE7PxN3ZQohulMwch/Tu1l4nvJLnnar/cmAFWuv1szC0/mlWgXWtusHxm693DBsq2oeGnV7Uvk4rUSJBrzfHA+7dBGGrQK/6ubmxrhiSyvQycAz8CLF2DmwWmbDbpgVbFApt8rJhLPwLC0wmjvVcrNlwXIHFeSrVmu/PencP9UtRRLXkp84C/OjpYQcjvM6R9L+8R3zh4V/zxXDMbqseWxo2NELtxtYuNO/wti+wv2swxv/Dx4xWdD7BgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81UXWsaQRS9iWlRS9MPyEtLy7IFaUESaN8kBEzcVIm6JWtSRGSZ7M7qkNmdZXY2VoKvhf6SPPcvpM/9M4W+967GNSbmo/SlPqyrc+fcc+45M3mADDyqEEUOqYyYCACeRFlYZi6s+SygjiSeKjEpAjvqixPKM/DAEXGgAGApD3lH+KEIaKCiPLyabSBKSXYUK2r7wmUeQ+wlBO6Lgc0CWwnBFQshB7l0OZ8AZmFFDUMKr2dIPRpQyZx1RCTOsR2FlLoP4SHxL0iMP1nIiZBKohIBOeK69gnhMZ3oWPV9wRT1o5JLHTEEbLs6w+dCYh3ACnw71ekXJYle6pzqR4K7eskjPKJF3RFYpZf0QR9x9KLOFOHMSZfFkRdHDlF0tiNC+cdU9aWIe/30X4X4CIMIceBSyZHEdMuoO1se/U9Ufl6mMu0usfha74s9nVa1Zmlms97WPpv7e8mr1miYtZbRsDR9VLwJRcl4BvL2IKJaZ2MgSRh1NU9I7ZAEjHOi1RIn392CM8+mq8/LcRbJ6UlKgxshKpL0tIJWkSLURKCEloRJw2+ECSLk5q/PN8lePjpOHCnh2wHxKfy+butE9ZTImw/lbWN399993cb0exx7atb41C70uXglW4vlz3s2pJyLwc3mW8csuDLzDLy8Ng489pTbLl47eP/8yi8YWLKGg5wmx660m+VGbceum/sGfO3o52ceskif52fOrcE7PxN3ZQohulMwch/Tu1l4nvJLnnar/cmAFWuv1szC0/mlWgXWtusHxm693DBsq2oeGnV7Uvk4rUSJBrzfHA+7dBGGrQK/6ubmxrhiSyvQycAz8CLF2DmwWmbDbpgVbFApt8rJhLPwLC0wmjvVcrNlwXIHFeSrVmu/PencP9UtRRLXkp84C/OjpYQcjvM6R9L+8R3zh4V/zxXDMbqseWxo2NELtxtYuNO/wti+wv2swxv/Dx4xWdD7BgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic36 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic36
+    '37':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UTWvbQBCdxGmxXZq2gV5aWhYVTAsmOfRmQsCJldrEtkrkpBhjlo20tpdIWrFa1TXB10J/Sc79C+m5fya/oCM7luN8l16qw+pjZt+8mfe0eYAMPKkwzQ65ioQMAJ5FWVgWLqz5IuCOYj1dEkoGdCB5Bh45Mg40ACzlIe9IP5QBD3SUhzfzbKa1Ekex5tSXrugJBF5C1IEcUhFQLaWnRQg5yKXhfAKYhRU9Cjm8nSP1ecCVcNYRkTnHNAo5dx/DY+ZfkJhcWcjJkCumE/Y55rr0K/NiPm1i1fel0NyPSi535Aiw7Ooc35MK8wBW4MeJwb9pxYxS58Q4kp5rlHrMi3jRcCRmGSVjOEAco2gIzTzhpGF51Isjh2k+3xFh+8dcD5SM+4P0q0Z8hEGEOHC58pDEbMu4Ow+P/ycqvy9TmVVXmHyt9sWeTqtas4nVrLfJF2t/L3kkjYZVa5kNmxjj4m0oWsVzkPcHESedjaFiYdQlPanIIQuE5zFSS5T8cAfOIpuusdiOc1M7fcV5cCtERbE+KZCKkiGRgZYkMRPBO8IEEXLz1xeLZOHl3F9OHGnp04D5HM6vyzrtekbk3cfytrm7+++6bqP7ex7WJFXJbxS5eMVYN/e+KNiIe54c3q68fSyCKwPPwOtrs8B/nnvUxQMHT57z/A3TSmI4xZltaKXdLDdqO7Ru7ZvwvWOcnfaQRbqenTp3uu7sVN5nKITozsDYQxTvZmEt5ZestNX+bMKKvVdrZuH5YqhWgbXt+oG5Wy83TFq1TDpNe5qmYX8mbGxOJl26sMFWwVvQcXNjEt4iBT4ddQZepQA7B3bLatCGVTHrtFJulZPZZuFFmmA2d6rlZsuG5Q5yz1ft1n57WpafGLZmiV7JK07B+mRrqUYTmy4wpL9+ou0w8S+JoifGl7ud6Bh2jMLduhXula0wUa3wMMXwlP8DYrmK8ewGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81UTWvbQBCdxGmxXZq2gV5aWhYVTAsmOfRmQsCJldrEtkrkpBhjlo20tpdIWrFa1TXB10J/Sc79C+m5fya/oCM7luN8l16qw+pjZt+8mfe0eYAMPKkwzQ65ioQMAJ5FWVgWLqz5IuCOYj1dEkoGdCB5Bh45Mg40ACzlIe9IP5QBD3SUhzfzbKa1Ekex5tSXrugJBF5C1IEcUhFQLaWnRQg5yKXhfAKYhRU9Cjm8nSP1ecCVcNYRkTnHNAo5dx/DY+ZfkJhcWcjJkCumE/Y55rr0K/NiPm1i1fel0NyPSi535Aiw7Ooc35MK8wBW4MeJwb9pxYxS58Q4kp5rlHrMi3jRcCRmGSVjOEAco2gIzTzhpGF51Isjh2k+3xFh+8dcD5SM+4P0q0Z8hEGEOHC58pDEbMu4Ow+P/ycqvy9TmVVXmHyt9sWeTqtas4nVrLfJF2t/L3kkjYZVa5kNmxjj4m0oWsVzkPcHESedjaFiYdQlPanIIQuE5zFSS5T8cAfOIpuusdiOc1M7fcV5cCtERbE+KZCKkiGRgZYkMRPBO8IEEXLz1xeLZOHl3F9OHGnp04D5HM6vyzrtekbk3cfytrm7+++6bqP7ex7WJFXJbxS5eMVYN/e+KNiIe54c3q68fSyCKwPPwOtrs8B/nnvUxQMHT57z/A3TSmI4xZltaKXdLDdqO7Ru7ZvwvWOcnfaQRbqenTp3uu7sVN5nKITozsDYQxTvZmEt5ZestNX+bMKKvVdrZuH5YqhWgbXt+oG5Wy83TFq1TDpNe5qmYX8mbGxOJl26sMFWwVvQcXNjEt4iBT4ddQZepQA7B3bLatCGVTHrtFJulZPZZuFFmmA2d6rlZsuG5Q5yz1ft1n57WpafGLZmiV7JK07B+mRrqUYTmy4wpL9+ou0w8S+JoifGl7ud6Bh2jMLduhXula0wUa3wMMXwlP8DYrmK8ewGAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic37 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic37
+    '38':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Vy2rbQBS9idNiuzR9QDcpLYMKpgWTLLoomBBwIjkW8aNYTooxZphII3uIpBGjUV0TvC30S7LuL6Tr/ke/oauO7FiOE+dBu6kWet075557zxkpD5CBRzqR5IiKiPEA4EmUhVXmwAufBdQWxJUll0UDFvSx4E4GHtg8DiQArOQhb3M/5AENZJSHV/MFRErBjmNJsc8d5jKFvaKAB3yIWYAl555kIeQgl4bzCWAW1uQopPB6jtSnARXM3lSIxD7BUUip8xAeEv+CxOTIQo6HVBCZNJAjjoM/Ey+m0z7WfZ8zSf2o5FCbj0CVXZ/je1yoPIA1+Haq0S9SEK3UPdWOuedoJZd4ES1qNldZWkkbDhSOVtSYJB6z0zA/duPIJpLOV0Sq/RMqB4LH/UH6Vip8BaMQ4sChwlMkZkvGvXl4/D9R+XmZyqy6UMnXal+s6barpoWajVoHfWq2DpJbVK83zbZRt5A2Lt6EIkU8B3l7GFHU3RoKEkY95HKBjkjAPI8gM1Hy3S04i2x62mI79rJ2+oLS4EYIXZA+KiBd8BDxQHKUmAmpq4IJIsXN31wskr28dew4ktzHAfEp/L4u67TrGZE378u7RqXy77ruKve7nqqJKtOti1rcWSp28YrBls9gUbgR9Tw+vNkB1gkLrgw+Ay+vzUTtfephR3171EfoV37J1JKYmubMPljvNMp1cw/Xmi0Dvna18zNXsUjP52f2re47P+N3GUtB9GZg5D7K97LwPOWXnHG789GANevAbGTh6WLI1GFjt3ZoVGrluoErplU1G/u41dTxNP1xmq76NODD9mTipQtb7BS8pbpub03SdlCBTkefgY0UaO/QajfruN7UjRrWy+1yMussPEsTjMZetdxoW7DaVb3kq1a71ZmW9081S5JEv+RRTaW5b0kuRhP7LjDFP74rO6rEvySsvDK+3P1E37CrFW7Xs3CnnIWJmoX7Kan+An8AVsmw7A8HAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Vy2rbQBS9idNiuzR9QDcpLYMKpgWTLLoomBBwIjkW8aNYTooxZphII3uIpBGjUV0TvC30S7LuL6Tr/ke/oauO7FiOE+dBu6kWet075557zxkpD5CBRzqR5IiKiPEA4EmUhVXmwAufBdQWxJUll0UDFvSx4E4GHtg8DiQArOQhb3M/5AENZJSHV/MFRErBjmNJsc8d5jKFvaKAB3yIWYAl555kIeQgl4bzCWAW1uQopPB6jtSnARXM3lSIxD7BUUip8xAeEv+CxOTIQo6HVBCZNJAjjoM/Ey+m0z7WfZ8zSf2o5FCbj0CVXZ/je1yoPIA1+Haq0S9SEK3UPdWOuedoJZd4ES1qNldZWkkbDhSOVtSYJB6z0zA/duPIJpLOV0Sq/RMqB4LH/UH6Vip8BaMQ4sChwlMkZkvGvXl4/D9R+XmZyqy6UMnXal+s6barpoWajVoHfWq2DpJbVK83zbZRt5A2Lt6EIkU8B3l7GFHU3RoKEkY95HKBjkjAPI8gM1Hy3S04i2x62mI79rJ2+oLS4EYIXZA+KiBd8BDxQHKUmAmpq4IJIsXN31wskr28dew4ktzHAfEp/L4u67TrGZE378u7RqXy77ruKve7nqqJKtOti1rcWSp28YrBls9gUbgR9Tw+vNkB1gkLrgw+Ay+vzUTtfephR3171EfoV37J1JKYmubMPljvNMp1cw/Xmi0Dvna18zNXsUjP52f2re47P+N3GUtB9GZg5D7K97LwPOWXnHG789GANevAbGTh6WLI1GFjt3ZoVGrluoErplU1G/u41dTxNP1xmq76NODD9mTipQtb7BS8pbpub03SdlCBTkefgY0UaO/QajfruN7UjRrWy+1yMussPEsTjMZetdxoW7DaVb3kq1a71ZmW9081S5JEv+RRTaW5b0kuRhP7LjDFP74rO6rEvySsvDK+3P1E37CrFW7Xs3CnnIWJmoX7Kan+An8AVsmw7A8HAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic38 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic38
+    '39':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR9kG5aWoQKpoWQULozIeBESmPiR4mcFGPMMJHG9hBpRoxGdU3wttAvybq/kK77N9101ys7luPEeZRuqoVe9865595zZvIAGXhgUU0PmYq4FACPoiwscg9WAi6Yq2hHF7mSgkR9qbwM3HNlLDQALOQh78oglIIJHeXh5TSfaq34UawZCaTHOxyhFxC3J/uEC6Kl9DUPIQe5NJxPALOwpAchg1dTpC4TTHF3DRGpe0yikDHvPtynwTmJ0ZWFnAyZojrhn6OeRz5TP2bjNpaDQHLNgqjoMVcOAMsuT/F9qTAPYAm+nZjsi1bULLZOzCPpe2axQ/2IrZquxCyzaPZ7iGOumlxTn7tpWB514silmk1XRNj+MdM9JeNuL/2rER9hECEWHlM+kpgsGban4eH/ROXnRSqT6gqTr9Q+X9Nq7JYdo16rNI1P9f295NWoVuvlhl11DHO4eh2KVvEU5M1BxIzWel/RMGobHamMQyq471OjnCj59gacWTZtc7Ydd147XcWYuBbCUrRrFAxLydCQQksjMZOBT4QREXIL1maLZOHZ1F9uHGkZEEEDBr+uyjruekLk9fvSlr2z8++6bqH7Oz7WNJxk086VefWSteZ3PyvZgPm+7F+vvXPMxaWRZ+DFlWngrmc+8fDQwdPnd37OvJIYznFiHGI1a6VqeZtU6vs2fG2ZZ6cdZJHez07dG313dipvsxRCtCdg9C6at7PwNOWX3Emj+dGGJWevXMvC49lQ2YKVrcqBvVMpVW3iIEOLjBMfponYoQ3vNkazLp5bYbPgX9JyY32UsGkU2HjcGXieQmwfOI16lVTrll0hVqlRSuabhSdpgl3b3i3VGg4stpB/ftdp7DfHhbsnpqNpolnyiZOof3C0VIORWWc4kh/f0XyY+NdU0RnDix2P1AxbZuFm9Qq3ilcYaVe4m2542v8BkM1bDfYGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR9kG5aWoQKpoWQULozIeBESmPiR4mcFGPMMJHG9hBpRoxGdU3wttAvybq/kK77N9101ys7luPEeZRuqoVe9865595zZvIAGXhgUU0PmYq4FACPoiwscg9WAi6Yq2hHF7mSgkR9qbwM3HNlLDQALOQh78oglIIJHeXh5TSfaq34UawZCaTHOxyhFxC3J/uEC6Kl9DUPIQe5NJxPALOwpAchg1dTpC4TTHF3DRGpe0yikDHvPtynwTmJ0ZWFnAyZojrhn6OeRz5TP2bjNpaDQHLNgqjoMVcOAMsuT/F9qTAPYAm+nZjsi1bULLZOzCPpe2axQ/2IrZquxCyzaPZ7iGOumlxTn7tpWB514silmk1XRNj+MdM9JeNuL/2rER9hECEWHlM+kpgsGban4eH/ROXnRSqT6gqTr9Q+X9Nq7JYdo16rNI1P9f295NWoVuvlhl11DHO4eh2KVvEU5M1BxIzWel/RMGobHamMQyq471OjnCj59gacWTZtc7Ydd147XcWYuBbCUrRrFAxLydCQQksjMZOBT4QREXIL1maLZOHZ1F9uHGkZEEEDBr+uyjruekLk9fvSlr2z8++6bqH7Oz7WNJxk086VefWSteZ3PyvZgPm+7F+vvXPMxaWRZ+DFlWngrmc+8fDQwdPnd37OvJIYznFiHGI1a6VqeZtU6vs2fG2ZZ6cdZJHez07dG313dipvsxRCtCdg9C6at7PwNOWX3Emj+dGGJWevXMvC49lQ2YKVrcqBvVMpVW3iIEOLjBMfponYoQ3vNkazLp5bYbPgX9JyY32UsGkU2HjcGXieQmwfOI16lVTrll0hVqlRSuabhSdpgl3b3i3VGg4stpB/ftdp7DfHhbsnpqNpolnyiZOof3C0VIORWWc4kh/f0XyY+NdU0RnDix2P1AxbZuFm9Qq3ilcYaVe4m2542v8BkM1bDfYGAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic39 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic39
+    '40':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9QDYtLUIF04JJoN2ZEHAipTbxo0ROijFGTKSRPWSkEaNRXRO8LfRLsu4vpOv+SPfd98qO5ThxHqWbaqHXvXPuufecmTxABh4aRJEjKiMmAoDHURaWmQtPfBZQRxJPlaI+o9zNwANHxIECgKU85B3hhyKggYry8HKWS5SS7DhW1PaFyzyGsEuI2RcDmwW2EoIrFkIOcmk4nwBmYUUNQwqvZkg9GlDJnA1EJM6JHYWUuquwSvwLEuMrCzkRUklUwj1HXNf+THhMJy2s+b5givpRyaWOGAKWXZvhcyExD2AFvp3q9IuSRC91TvVjwV295BEe0aLuCMzSS/qgjzh6UWeKcOakYXHsxZFDFJ2tiLD9E6r6UsS9fvpXIT7CIEIcuFRyJDFdMurOwqP/icrPy1Sm1SUmX6t9sabTqlQtrdmotbVPzYP95FWr15vVllm3NH1UvAlFyXgG8uYwolpncyBJGHU1T0jtiASMc6JVEyXf3oIzz6arz7fjLGqnJykNboQwJOlpBc2QItREoISWmEnDJ8IEEXLzN+aLZGF95i8njpTw7YD4FH5fl3XS9ZTI6/flHXNv79913UH3exxratZ41y7UuXjFW4vbn9dsSDkXg5vFt05YcGXmGXhxbRy47Sm3XTxx8Oj5lV8wsCSGg5w6xzbajXK9umvXmgcmfO3o52ceskjv52fOrcY7PxN3eQohulMwch/Ru1l4lvJL7nar/dGEFWu/2sjCk/lQ1YD1ndqhuVcr103bqlTNmmFPMh+lmdiiCe+2xsMuXZhhu8Cvqrm1Oc7Y1gp0MvAMPE8xdg+tVrNu15uGWbONcqucTDgLT9MEs7FbKTdaFix3sIN8xWodtCeV+6e6pUiiWvKJs2h+sJSQw7Ff50jaP76j/zDx77miOUaXex4LGnb0wu0CFu7UrzCWr3A/6fDE/wMPGzh/9gYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9QDYtLUIF04JJoN2ZEHAipTbxo0ROijFGTKSRPWSkEaNRXRO8LfRLsu4vpOv+SPfd98qO5ThxHqWbaqHXvXPuufecmTxABh4aRJEjKiMmAoDHURaWmQtPfBZQRxJPlaI+o9zNwANHxIECgKU85B3hhyKggYry8HKWS5SS7DhW1PaFyzyGsEuI2RcDmwW2EoIrFkIOcmk4nwBmYUUNQwqvZkg9GlDJnA1EJM6JHYWUuquwSvwLEuMrCzkRUklUwj1HXNf+THhMJy2s+b5givpRyaWOGAKWXZvhcyExD2AFvp3q9IuSRC91TvVjwV295BEe0aLuCMzSS/qgjzh6UWeKcOakYXHsxZFDFJ2tiLD9E6r6UsS9fvpXIT7CIEIcuFRyJDFdMurOwqP/icrPy1Sm1SUmX6t9sabTqlQtrdmotbVPzYP95FWr15vVllm3NH1UvAlFyXgG8uYwolpncyBJGHU1T0jtiASMc6JVEyXf3oIzz6arz7fjLGqnJykNboQwJOlpBc2QItREoISWmEnDJ8IEEXLzN+aLZGF95i8njpTw7YD4FH5fl3XS9ZTI6/flHXNv79913UH3exxratZ41y7UuXjFW4vbn9dsSDkXg5vFt05YcGXmGXhxbRy47Sm3XTxx8Oj5lV8wsCSGg5w6xzbajXK9umvXmgcmfO3o52ceskjv52fOrcY7PxN3eQohulMwch/Ru1l4lvJL7nar/dGEFWu/2sjCk/lQ1YD1ndqhuVcr103bqlTNmmFPMh+lmdiiCe+2xsMuXZhhu8Cvqrm1Oc7Y1gp0MvAMPE8xdg+tVrNu15uGWbONcqucTDgLT9MEs7FbKTdaFix3sIN8xWodtCeV+6e6pUiiWvKJs2h+sJSQw7Ff50jaP76j/zDx77miOUaXex4LGnb0wu0CFu7UrzCWr3A/6fDE/wMPGzh/9gYAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic40 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic40
+    '41':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27TQBS9bQpKgihQCSGBQCMjRSBF7QJWUVUpD5dGTWIUp62iKLIm9iQxtT3WeEyIqmyR+JKu+YWy5j/4A7Zc5+E0TfoQbPDCr3vn3HPvOTNpgAQ8KFFJj5kIbO4BPAqSsG5bsOXaHjMF7cqcKXgQdPggAfdMHnoSANbSkDa563OPeTJIw8t5NpVS2J1QMsPllt21EXgNUft8YNieITl3pO1DClJxOB0BJmFDDn0Gr+ZIPeYxYZvbiEjNUyPwGbPuw33qTkmMrySkuM8ElRH7FLUs4zN1QjZpYtN1uS2ZG+QsZvIhYNnNOb7DBeYBbMC3M4V9kYIqudaZ0uGOpeS61AlYVjE5Zik5ZdBHHCWr2JI6thmHeacbBiaVbL4iwPZPmewLHvb68V+J+AiDCKFnMeEgidmSUXseHv1PVH5epjKrLjB5qfZ0TatxUNaJVqs0yYlWP4xeSbWqlRtqVSfKKHsdihThHOTNUcBIa2cgqB+0SZcLckw923EoKUdKvr0BZ5FNW1lsx1zVTk8w5l0LURK0RzKkJLhPuCc5icxE8IkwXoDc3O3FIkl4emnfhIHkruFRl8HvZVknXc+IvH6XL6j7+/+uawHd33WwJilO9+1KpbNX3LV6AIuqDZnjjOGukV8/tb0rU0/Ai6WB4MZnjmHhqYPHz6/0ipFFMRzlzDtGqVnLV8tFo6LVVfjaUi7Ou8givl+cmzda7+Kc3+YqhGjPwOhdZG8nYSvmF92NRvOjChv6YbmWhMeLoXIJnhUqR+p+JV9VjWJd0/WCdmJMch/GudikCu93x+POTQ2xl3GWFd3dGefskQybDD0Bz2OU4pHe0KpGVSupFaOUb+SjKSfhSZyg1ooH+VpDh/UWdpE+0Bv15qT2pzNFlzRSLvrEeWgfdMnFcOzaBZrGj+/oQkz8G7ZokdHlvsey+i0lc7OMmVtVzIxFzNxNQDz5/wA2t+hZAAcAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27TQBS9bQpKgihQCSGBQCMjRSBF7QJWUVUpD5dGTWIUp62iKLIm9iQxtT3WeEyIqmyR+JKu+YWy5j/4A7Zc5+E0TfoQbPDCr3vn3HPvOTNpgAQ8KFFJj5kIbO4BPAqSsG5bsOXaHjMF7cqcKXgQdPggAfdMHnoSANbSkDa563OPeTJIw8t5NpVS2J1QMsPllt21EXgNUft8YNieITl3pO1DClJxOB0BJmFDDn0Gr+ZIPeYxYZvbiEjNUyPwGbPuw33qTkmMrySkuM8ElRH7FLUs4zN1QjZpYtN1uS2ZG+QsZvIhYNnNOb7DBeYBbMC3M4V9kYIqudaZ0uGOpeS61AlYVjE5Zik5ZdBHHCWr2JI6thmHeacbBiaVbL4iwPZPmewLHvb68V+J+AiDCKFnMeEgidmSUXseHv1PVH5epjKrLjB5qfZ0TatxUNaJVqs0yYlWP4xeSbWqlRtqVSfKKHsdihThHOTNUcBIa2cgqB+0SZcLckw923EoKUdKvr0BZ5FNW1lsx1zVTk8w5l0LURK0RzKkJLhPuCc5icxE8IkwXoDc3O3FIkl4emnfhIHkruFRl8HvZVknXc+IvH6XL6j7+/+uawHd33WwJilO9+1KpbNX3LV6AIuqDZnjjOGukV8/tb0rU0/Ai6WB4MZnjmHhqYPHz6/0ipFFMRzlzDtGqVnLV8tFo6LVVfjaUi7Ou8givl+cmzda7+Kc3+YqhGjPwOhdZG8nYSvmF92NRvOjChv6YbmWhMeLoXIJnhUqR+p+JV9VjWJd0/WCdmJMch/GudikCu93x+POTQ2xl3GWFd3dGefskQybDD0Bz2OU4pHe0KpGVSupFaOUb+SjKSfhSZyg1ooH+VpDh/UWdpE+0Bv15qT2pzNFlzRSLvrEeWgfdMnFcOzaBZrGj+/oQkz8G7ZokdHlvsey+i0lc7OMmVtVzIxFzNxNQDz5/wA2t+hZAAcAAA==
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic41 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic41
+    '42':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UTWvbQBCdxGmwXZK2gV5aWhYVTAsmOeRmQsCOlcbEtkrkJBhjlrW0tkUkrVit6prga6G/JOf+hfTcH9Jrf0FHdizHifNReqkOq4+ZffNm3tNmAVLwtMwUO+EydIQP8CxMw7Jjw5rn+NySrKsKHTFIwRNLRL4CgKUsZC3hBcLnvgqz8GaWyJSSTidSnHrCdroOYi4hYF8MqONTJYSrnAAykEnC2RgwDStqGHB4O0PqcZ9Lx9pERGad0TDg3F6FVeZdkRhfaciIgEumYuIZZtv0M3MjPuG/7nnCUdwLCza3xBCw7PoM3xUS8wBW4Nu5xr8oybRC61zrCNfWCl3mhjyvWQKztII26COOltccxVzHSsKi041Ciyk+2xFi+2dc9aWIev3kq0J8hEGEyLe5dJHEdMuoPQuP/icqP69TmVaXmHyr9tWeVuOgYhKjXm2SU+PoMH4ktZpRaeg1k2ij/F0oSkYzkPfHISetrYFkQdgmXSHJCfMd12WkEiv54R6ceTZtbb4da1E7Pcm5fydEWbIeyZGyFAERvhIkNhPBO8L4IXLzNueLpOHlzF9WFCrhUZ95HH7flnXS9ZTIu+1iSd/f/3ddS+j+ros1SUkMFoqcv2Gsxb3PCzbkrjuGu0N588zxbww8Ba9vzQL/ee5SG88aPHR+ZRdMK47hFKe2oeVmvVir7NGqcaTD15Z2edFFFsl6eWHd67rLC/GQoRCiPQVjj1G8nYaNhF+80kbzkw4r5mGlnobn86FKGTZK1WN9v1qs6bRknNJJ2lqShv3psLUznnThyga7OXdOx52tcXiX5Phk1Cl4lQDsHZsNo0ZrRlmv0nKxUYxnm4YXSYJe3zso1hsmLLeQe/bAbBw1J2X5uWYqFusVv+IUjI+mEnI4tukcQ/rjO9oOE/+SKHpidL3bsY5BS8vdr1vuQdlyY9Vyj1MMT/k/r51TzOcGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81UTWvbQBCdxGmwXZK2gV5aWhYVTAsmOeRmQsCOlcbEtkrkJBhjlrW0tkUkrVit6prga6G/JOf+hfTcH9Jrf0FHdizHifNReqkOq4+ZffNm3tNmAVLwtMwUO+EydIQP8CxMw7Jjw5rn+NySrKsKHTFIwRNLRL4CgKUsZC3hBcLnvgqz8GaWyJSSTidSnHrCdroOYi4hYF8MqONTJYSrnAAykEnC2RgwDStqGHB4O0PqcZ9Lx9pERGad0TDg3F6FVeZdkRhfaciIgEumYuIZZtv0M3MjPuG/7nnCUdwLCza3xBCw7PoM3xUS8wBW4Nu5xr8oybRC61zrCNfWCl3mhjyvWQKztII26COOltccxVzHSsKi041Ciyk+2xFi+2dc9aWIev3kq0J8hEGEyLe5dJHEdMuoPQuP/icqP69TmVaXmHyr9tWeVuOgYhKjXm2SU+PoMH4ktZpRaeg1k2ij/F0oSkYzkPfHISetrYFkQdgmXSHJCfMd12WkEiv54R6ceTZtbb4da1E7Pcm5fydEWbIeyZGyFAERvhIkNhPBO8L4IXLzNueLpOHlzF9WFCrhUZ95HH7flnXS9ZTIu+1iSd/f/3ddS+j+ros1SUkMFoqcv2Gsxb3PCzbkrjuGu0N588zxbww8Ba9vzQL/ee5SG88aPHR+ZRdMK47hFKe2oeVmvVir7NGqcaTD15Z2edFFFsl6eWHd67rLC/GQoRCiPQVjj1G8nYaNhF+80kbzkw4r5mGlnobn86FKGTZK1WN9v1qs6bRknNJJ2lqShv3psLUznnThyga7OXdOx52tcXiX5Phk1Cl4lQDsHZsNo0ZrRlmv0nKxUYxnm4YXSYJe3zso1hsmLLeQe/bAbBw1J2X5uWYqFusVv+IUjI+mEnI4tukcQ/rjO9oOE/+SKHpidL3bsY5BS8vdr1vuQdlyY9Vyj1MMT/k/r51TzOcGAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic42 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic42
+    '43':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR9kG5aWoQKpgWTULozIeDEcmPiR4mUFGPMMJFGtog0I0ajuiZ4W+iXZN1fSNf9m6666pUdy3HiPEo39UJ+3DPnnnvP8eQBMvCgQhU9ZDLyBAd4FGVh2XNgLfA4syV1VcmTgpNoIKSTgXu2iLkCgKU85G0RhIIzrqI8vJzhqVLSO4oVI4FwPNdD6iXk7YsB8ThRQvjKCyEHubScTwizsKKGIYNXM6Ye40x69joyUvuYRCFjzn24T4NzEeNXFnIiZJKqRH+OOg75TP2YTcZYDQLhKRZEJYfZYgjYdnXG7wuJOIAV+Haisy9KUr3UOdGPhO/oJZf6ESvqtkCUXtIHfeTRi7qnqO/ZaVkcuXFkU8VmJyIc/5ipvhRxr5/+qpAfaZAh5g6TPoqYHhl1Z+XR/yTl50Up0+4SwVd6n5/pWLs1U2s1623tU2t/L/moNRqtmmU0TE0fFa9jUTKekbw5iJjW2RhIGkZdzRVSO6Tc832q1RIn397AM6+mq8+PYy8apycZ49dSVCTtaQWtIkWoCa6EloRJw3ek4RFqC9bnm2Th2SxfdhwpERBOAwa/rto6mXoq5PX78rZRrf67r9uYftfHnpqpqOsutLl4KVqLp5+3bMh8Xwyu99489villWfgxZVt4L+e+cTBSwdvn9/5BftKarjHaXBIpd0sN2o7pN7aN+BrRz87TYZKn2en9o25OzsVt0UKKbpTMnoXz7tZeJrqS57Ean80YMXcqzWz8Hi+VKvA2nb9wKjWyw2DmFa5WiUT4MMUiBMa8G5zvOvSeRS2Cv4lLzc3xoAtrcAm687A85Ri58C0Wg3SaFWMOqmUrXKy3yw8SQFGc2e33LRMWO6g/vyuae23J417JzryJ54lX3ETrQ+mEnI4DuucRvLjO4YPgX8tFZMxujjx2M2woxdudq9wq3mFsXeFu/mGt/0fCmcL9PYGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR9kG5aWoQKpgWTULozIeDEcmPiR4mUFGPMMJFGtog0I0ajuiZ4W+iXZN1fSNf9m6666pUdy3HiPEo39UJ+3DPnnnvP8eQBMvCgQhU9ZDLyBAd4FGVh2XNgLfA4syV1VcmTgpNoIKSTgXu2iLkCgKU85G0RhIIzrqI8vJzhqVLSO4oVI4FwPNdD6iXk7YsB8ThRQvjKCyEHubScTwizsKKGIYNXM6Ye40x69joyUvuYRCFjzn24T4NzEeNXFnIiZJKqRH+OOg75TP2YTcZYDQLhKRZEJYfZYgjYdnXG7wuJOIAV+Haisy9KUr3UOdGPhO/oJZf6ESvqtkCUXtIHfeTRi7qnqO/ZaVkcuXFkU8VmJyIc/5ipvhRxr5/+qpAfaZAh5g6TPoqYHhl1Z+XR/yTl50Up0+4SwVd6n5/pWLs1U2s1623tU2t/L/moNRqtmmU0TE0fFa9jUTKekbw5iJjW2RhIGkZdzRVSO6Tc832q1RIn397AM6+mq8+PYy8apycZ49dSVCTtaQWtIkWoCa6EloRJw3ek4RFqC9bnm2Th2SxfdhwpERBOAwa/rto6mXoq5PX78rZRrf67r9uYftfHnpqpqOsutLl4KVqLp5+3bMh8Xwyu99489villWfgxZVt4L+e+cTBSwdvn9/5BftKarjHaXBIpd0sN2o7pN7aN+BrRz87TYZKn2en9o25OzsVt0UKKbpTMnoXz7tZeJrqS57Ean80YMXcqzWz8Hi+VKvA2nb9wKjWyw2DmFa5WiUT4MMUiBMa8G5zvOvSeRS2Cv4lLzc3xoAtrcAm687A85Ri58C0Wg3SaFWMOqmUrXKy3yw8SQFGc2e33LRMWO6g/vyuae23J417JzryJ54lX3ETrQ+mEnI4DuucRvLjO4YPgX8tFZMxujjx2M2woxdudq9wq3mFsXeFu/mGt/0fCmcL9PYGAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic43 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic43
+    '44':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9kG5aWoQKpoWQULozIeDESmPiR7CcFGPMMJHG9hBpRoxGdU3wttAvybq/kK77N9110ys7luPEeZRu6oX8uGfOPfee48kCpOBhkWp6xFTIpQB4HKZhkbuw6nPBHEU7Os+VFCTsS+Wm4IEjI6EBYCELWUf6gRRM6DALr6Z4qrXix5FmxJcu73CkXkDenuwTLoiW0tM8gAxkknI2JkzDkh4EDF5PmbpMMMWddWSkzgkJA8bcZVim/oWI0SsNGRkwRXWsP0Ndl3ymXsTGY6z4vuSa+WHeZY4cALZdmfJ7UiEOYAm+nZrsi1bUzLdOzWPpuWa+Q72QrZmORJSZN/s95DHXTK6px52kLI87UehQzaYnQhz/hOmeklG3l/yqkR9pkCESLlMeipgcGban5eH/JOXnZSmT7grB13pfnGk19kq2UauWm8anWn0//mhUKrVSw6rYhjlcu4lFq2hK8vYwZEZro69oELaNjlTGERXc86hRip18dwvPrJq2OTuOM2+crmJM3EhRVLRr5IyikoEhhZZGHCYD35FGhKjNX59tkobn03w5UailTwT1Gfy6but46omQNx8K29bu7r/7uo3p73jY07ADRtVcm9euRGv+9LOWDZjnyf7N3tsnXFxZeQpeXtsG/uuZR1y8dPD2+Z2ds6+4hnucBIcUm9VCpbRDyrW6BV9b5vlZB1Ukz/Mz59bcnZ/JuyKFFO0JGb2P5+00PEv0xU/SaB5YsGTvl6ppeDJbKhVhdbt8aO2WCxWL2AdWoU7GwEcJECe04P3maNf5iyhs5bwrXm5ujABbRo6N152CFwnFzqHdqFVIpVa0yqRYaBTi/abhaQKwqjt7hWrDhsUW6s/u2Y16c9y4e2ramsaexV9xE7WPtpZqMArrjEby4zuGD4F/LRWTMbw88cjNoGXmbncvd6d5uZF3ufv5hrf9HyGa0232BgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9kG5aWoQKpoWQULozIeDESmPiR7CcFGPMMJHG9hBpRoxGdU3wttAvybq/kK77N9110ys7luPEeZRu6oX8uGfOPfee48kCpOBhkWp6xFTIpQB4HKZhkbuw6nPBHEU7Os+VFCTsS+Wm4IEjI6EBYCELWUf6gRRM6DALr6Z4qrXix5FmxJcu73CkXkDenuwTLoiW0tM8gAxkknI2JkzDkh4EDF5PmbpMMMWddWSkzgkJA8bcZVim/oWI0SsNGRkwRXWsP0Ndl3ymXsTGY6z4vuSa+WHeZY4cALZdmfJ7UiEOYAm+nZrsi1bUzLdOzWPpuWa+Q72QrZmORJSZN/s95DHXTK6px52kLI87UehQzaYnQhz/hOmeklG3l/yqkR9pkCESLlMeipgcGban5eH/JOXnZSmT7grB13pfnGk19kq2UauWm8anWn0//mhUKrVSw6rYhjlcu4lFq2hK8vYwZEZro69oELaNjlTGERXc86hRip18dwvPrJq2OTuOM2+crmJM3EhRVLRr5IyikoEhhZZGHCYD35FGhKjNX59tkobn03w5UailTwT1Gfy6but46omQNx8K29bu7r/7uo3p73jY07ADRtVcm9euRGv+9LOWDZjnyf7N3tsnXFxZeQpeXtsG/uuZR1y8dPD2+Z2ds6+4hnucBIcUm9VCpbRDyrW6BV9b5vlZB1Ukz/Mz59bcnZ/JuyKFFO0JGb2P5+00PEv0xU/SaB5YsGTvl6ppeDJbKhVhdbt8aO2WCxWL2AdWoU7GwEcJECe04P3maNf5iyhs5bwrXm5ujABbRo6N152CFwnFzqHdqFVIpVa0yqRYaBTi/abhaQKwqjt7hWrDhsUW6s/u2Y16c9y4e2ramsaexV9xE7WPtpZqMArrjEby4zuGD4F/LRWTMbw88cjNoGXmbncvd6d5uZF3ufv5hrf9HyGa0232BgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic44 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic44
+    '45':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Vy27TQBS9JaVKgigPwQIQyDJSBFLVLpBYRFUlp3Fp1DxQ7RaiKBpN7UlideyxxmPSqMoWiS/pml8oaz4IiQXXSeM0bfoQbMjCedw75557zrGTB8jAvTJVdJ/JyBMBwIMoC3c8F574XsAcSTuq6EkRkKgvpJuBu46IAwUAC3nIO8IPRcACFeXh5bSfKiW9g1gx4gvX63gIvYC4PdEnXkCUEFx5IeQgl5bzCWAWFtUgZPBqitRlAZOes4qI1DkkUciYuwRL1D8jMXplISdCJqlK+Oeo65IvlMdsvMay7wtPMT8quswRA8Cxy1N8LiT2ASzCt2OdHSlJ9WLrWD8Q3NWLHcojtqI7Arv0ot7vIY6+onuKcs9Jy+KgE0cOVWx6IsL1D5nqSRF3e+mvCvERBhHiwGWSI4nJkWF7Wh7+T1R+nqcymS6x+dLsszMte7tiaY16tal9auzuJB+1Wq1Rsc2apenDlatQlIynIG/2Iqa11vqShlFb6wip7dPA45xqlcTJt9fgzLJp67PrOPPW6UrGgishypJ2tYJWliLURKCEloRJw3eECSLk5q/ODsnC02m+nDhSwicB9Rn8umzreOsJkdfvjJK5tfXvvpYw/R2OM7US3jicacYRm+v1yoV8zZdg1rcB41z0rw6AdegFF3TPwItLkuCtzzhx8cmDj6Df+TmiJTUUc5IeUm7WjVplk1QbuyZ8bemnJx1kkV5PT5xrw3d6Im7KFUK0J2D0Nsa3s/A45Zdcid38aMKitVOpZ+HhbKlShmel6p65VTVqJikZtl01ifHZJOPu+2k3rmnC+/WR4MWzUGwU+DxX19dGXRtagY2Fz8DzFGdzz7IbNVJrlM0qKRu2kSidhUdpg1nf3DbqtgV3WrhJftuyd5vj6fxYtxRN3Eu+oiaND5YScjDK7gxR8uM7ZhEb/44vBmV4fveRuWFLL1xvZuFGLwsjKwu3sxH/Af4AE46VxQoHAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Vy27TQBS9JaVKgigPwQIQyDJSBFLVLpBYRFUlp3Fp1DxQ7RaiKBpN7UlideyxxmPSqMoWiS/pml8oaz4IiQXXSeM0bfoQbMjCedw75557zrGTB8jAvTJVdJ/JyBMBwIMoC3c8F574XsAcSTuq6EkRkKgvpJuBu46IAwUAC3nIO8IPRcACFeXh5bSfKiW9g1gx4gvX63gIvYC4PdEnXkCUEFx5IeQgl5bzCWAWFtUgZPBqitRlAZOes4qI1DkkUciYuwRL1D8jMXplISdCJqlK+Oeo65IvlMdsvMay7wtPMT8quswRA8Cxy1N8LiT2ASzCt2OdHSlJ9WLrWD8Q3NWLHcojtqI7Arv0ot7vIY6+onuKcs9Jy+KgE0cOVWx6IsL1D5nqSRF3e+mvCvERBhHiwGWSI4nJkWF7Wh7+T1R+nqcymS6x+dLsszMte7tiaY16tal9auzuJB+1Wq1Rsc2apenDlatQlIynIG/2Iqa11vqShlFb6wip7dPA45xqlcTJt9fgzLJp67PrOPPW6UrGgishypJ2tYJWliLURKCEloRJw3eECSLk5q/ODsnC02m+nDhSwicB9Rn8umzreOsJkdfvjJK5tfXvvpYw/R2OM7US3jicacYRm+v1yoV8zZdg1rcB41z0rw6AdegFF3TPwItLkuCtzzhx8cmDj6Df+TmiJTUUc5IeUm7WjVplk1QbuyZ8bemnJx1kkV5PT5xrw3d6Im7KFUK0J2D0Nsa3s/A45Zdcid38aMKitVOpZ+HhbKlShmel6p65VTVqJikZtl01ifHZJOPu+2k3rmnC+/WR4MWzUGwU+DxX19dGXRtagY2Fz8DzFGdzz7IbNVJrlM0qKRu2kSidhUdpg1nf3DbqtgV3WrhJftuyd5vj6fxYtxRN3Eu+oiaND5YScjDK7gxR8uM7ZhEb/44vBmV4fveRuWFLL1xvZuFGLwsjKwu3sxH/Af4AE46VxQoHAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic45 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic45
+    '46':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR9kG5aWoQKogWTULozIWBHSmPiR4mcFGPMMJHGtshII0ajuiZ4W+iXZN1fSNf9m24LvbJjOU6cR+mmXsiPe+bcc+85njxABh6YVNFDJiNPBACPoiwsey6s+V7AHEm7quhJEZBoIKSbgXuOiAMFAEt5yDvCD0XAAhXl4eUMT5WS3lGsGPGF63U9pF5C3r4YEC8gSgiuvBBykEvL+YQwCytqGDJ4NWPqsYBJz1lHRuockyhkzL0P96l/LmL8ykJOhExSlejPUdclnymP2WSMVd8XnmJ+VHSZI4aAbVdn/FxIxAGswLcTnX1RkurF9ol+JLirF7uUR6ygOwJRelEf9JFHL+ieotxz0rI46saRQxWbnYhw/GOm+lLEvX76q0J+pEGGOHCZ5ChiemTUmZVH/5OUnxelTLtLBF/pfX6m3dyt2FqjXm1pnxr7e8lHrVZrVJpWzdb0UeE6FiXjGcmbg4hp7Y2BpGHU0bpCaoc08DinWiVx8u0NPPNqOvr8OM6icXqSseBaClPSnmZophShJgIltCRMGr4jTRChNn99vkkWns3y5cSREj4JqM/g11VbJ1NPhbx+XypbOzv/7msZ09/l2FMrc+qyhTYXLkVr8fTzlg0Z52Jwvff2sRdcWnkGXlzZBv7rGScuXjp4+/zOL9hXUsM9ToNDzFa9VKtsk2pj34Kvbf3stIsq0ufZqXNj7s5OxW2RQorOlIzexfNOFp6m+pInabY+WrBi71XqWXg8X6qYsFauHlg71VLNIuVqybTIBPgwBeKEFrzbHO+6eB6FLYNf8nJzYwzY0gw2WXcGnqcU2wd2s1EjtYZpVYlZapaS/WbhSQqw6tu7pXrThuU26s/v2s391qRx70S3FU08S77iJhofbCXkcBzWOY3kx3cMHwL/WiomY3Rx4rGbYVs3bnbPuNU8Y+ydcTff8Lb/A422ZfX2BgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR9kG5aWoQKogWTULozIWBHSmPiR4mcFGPMMJHGtshII0ajuiZ4W+iXZN1fSNf9m24LvbJjOU6cR+mmXsiPe+bcc+85njxABh6YVNFDJiNPBACPoiwsey6s+V7AHEm7quhJEZBoIKSbgXuOiAMFAEt5yDvCD0XAAhXl4eUMT5WS3lGsGPGF63U9pF5C3r4YEC8gSgiuvBBykEvL+YQwCytqGDJ4NWPqsYBJz1lHRuockyhkzL0P96l/LmL8ykJOhExSlejPUdclnymP2WSMVd8XnmJ+VHSZI4aAbVdn/FxIxAGswLcTnX1RkurF9ol+JLirF7uUR6ygOwJRelEf9JFHL+ieotxz0rI46saRQxWbnYhw/GOm+lLEvX76q0J+pEGGOHCZ5ChiemTUmZVH/5OUnxelTLtLBF/pfX6m3dyt2FqjXm1pnxr7e8lHrVZrVJpWzdb0UeE6FiXjGcmbg4hp7Y2BpGHU0bpCaoc08DinWiVx8u0NPPNqOvr8OM6icXqSseBaClPSnmZophShJgIltCRMGr4jTRChNn99vkkWns3y5cSREj4JqM/g11VbJ1NPhbx+XypbOzv/7msZ09/l2FMrc+qyhTYXLkVr8fTzlg0Z52Jwvff2sRdcWnkGXlzZBv7rGScuXjp4+/zOL9hXUsM9ToNDzFa9VKtsk2pj34Kvbf3stIsq0ufZqXNj7s5OxW2RQorOlIzexfNOFp6m+pInabY+WrBi71XqWXg8X6qYsFauHlg71VLNIuVqybTIBPgwBeKEFrzbHO+6eB6FLYNf8nJzYwzY0gw2WXcGnqcU2wd2s1EjtYZpVYlZapaS/WbhSQqw6tu7pXrThuU26s/v2s391qRx70S3FU08S77iJhofbCXkcBzWOY3kx3cMHwL/WiomY3Rx4rGbYVs3bnbPuNU8Y+ydcTff8Lb/A422ZfX2BgAA
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic46 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic46
+    '47':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR90GxaWgYVTAshgXZnQsCxlcbEjxI5KcYYMZHG9mBpRoxGdU3wttAvybq/kK77Od2WXtmxHCfOo3RTLUaPe+fcc+85mixACh6UqKZHTIVcCoBHYRqWuQvPfC6Yo2hH57mSwg4HUrkpuOfISGgAWMpC1pF+IAUTOszCy1k+1Vrx40gz25cu73CEXkLcnhzYXNhaSk/zADKQScLZGDANK3oYMHg1Q+oywRR3NhCROn07DBhz78N96p+TGF9pyMiAKapj/hnquvZn6kVs0saq70uumR/mXebIIWDZ1Rm+JxXmAazAtxODfdGKGvnWiXEsPdfId6gXsnXDkZhl5I1BD3GMdYNr6nEnCcvjThQ6VLPZjhDb7zPdUzLq9pKvGvERBhEi4TLlIYnpllF7Fh79T1R+XqQyra4w+Urt8z2txl7ZIvVapUk+1Q/240dSrdbLDbNqEWO0fh2KVtEM5M1hyEhrc6BoELZJRypyRAX3PErKsZJvb8CZZ9M25ttxFrXTVYyJayFKinZJjpSUDIgUWpLYTATvCCNC5OZvzBdJw9rMX04UaunbgvoMfl2VddL1lMjr94Udc3f333XdQfd3PKxJLO70PbZQ5/VL3lrc/rxmQ+Z5cnC9+Fafi0szT8GLK+PA3555tounDh4/v7MLBhbHcJBT59ilZq1QLRftSv3AhK8t4+y0gyyS9ezUudF4Z6fyNk8hRHsKRu8iejsNTxN+8Wo3mh9NWLH2y7U0PJ4PlUuwtlM5NHcrhappW+XifgVv48yHSSa2aMK7rfGw8+dm2M55l9Xc2hxnbJMcmww8Bc8TjOKh1ahX7Wq9ZFbsUqFRiCechidJglkr7hVqDQuWW9hBds9qHDQnlXsnhqVprFr8irOof7C0VMOxX+dI2j++o/8w8e+5ojlGF3seCxq0jNzNAuZu1S83li93N+nwxP8DRvS7pfoGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNiuzR90GxaWgYVTAshgXZnQsCxlcbEjxI5KcYYMZHG9mBpRoxGdU3wttAvybq/kK77Od2WXtmxHCfOo3RTLUaPe+fcc+85mixACh6UqKZHTIVcCoBHYRqWuQvPfC6Yo2hH57mSwg4HUrkpuOfISGgAWMpC1pF+IAUTOszCy1k+1Vrx40gz25cu73CEXkLcnhzYXNhaSk/zADKQScLZGDANK3oYMHg1Q+oywRR3NhCROn07DBhz78N96p+TGF9pyMiAKapj/hnquvZn6kVs0saq70uumR/mXebIIWDZ1Rm+JxXmAazAtxODfdGKGvnWiXEsPdfId6gXsnXDkZhl5I1BD3GMdYNr6nEnCcvjThQ6VLPZjhDb7zPdUzLq9pKvGvERBhEi4TLlIYnpllF7Fh79T1R+XqQyra4w+Urt8z2txl7ZIvVapUk+1Q/240dSrdbLDbNqEWO0fh2KVtEM5M1hyEhrc6BoELZJRypyRAX3PErKsZJvb8CZZ9M25ttxFrXTVYyJayFKinZJjpSUDIgUWpLYTATvCCNC5OZvzBdJw9rMX04UaunbgvoMfl2VddL1lMjr94Udc3f333XdQfd3PKxJLO70PbZQ5/VL3lrc/rxmQ+Z5cnC9+Fafi0szT8GLK+PA3555tounDh4/v7MLBhbHcJBT59ilZq1QLRftSv3AhK8t4+y0gyyS9ezUudF4Z6fyNk8hRHsKRu8iejsNTxN+8Wo3mh9NWLH2y7U0PJ4PlUuwtlM5NHcrhappW+XifgVv48yHSSa2aMK7rfGw8+dm2M55l9Xc2hxnbJMcmww8Bc8TjOKh1ahX7Wq9ZFbsUqFRiCechidJglkr7hVqDQuWW9hBds9qHDQnlXsnhqVprFr8irOof7C0VMOxX+dI2j++o/8w8e+5ojlGF3seCxq0jNzNAuZu1S83li93N+nwxP8DRvS7pfoGAAA=
+      Chance: 40
+      Commands:
+      - lp user %player% permission set crazycrates.blacklist.mystic47 true
+      BlackListed-Permissions:
+      - crazycrates.blacklist.mystic47
+    '48':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27TQBS9JaVKgihQwQYEGhkpolLUwgopqiqliUuj5lHVbiGKotHUniSj2jPWeEwaVdki8SVd8wtlzZ+w4wcY5+E0fUts8GL8uHfOPfee48kCpOBRmShySGXIBAd4EqbhAXNhxWecOpJ0VIFJwTE5oSl46IiIKwBYyELWEX4gOOUqzMLrWTZRSrKjSFHsC5d1mAZe0Kg90ceMYyWEp1gAGcgk4WwMmIZFNQgovJkhdSmnkjlrGpE4xzgMKHWXYIn4ExKjKw0ZEVBJVMw+Q1wXfyVeRMdNLPu+YIr6YcGljhiALrs8w/eE1HkAi/D91KAnShKj0Do1joTnGoUO8UKaNxyhs4yC0e9pHCNvMEU85iRhcdSJQocoOtsR6vaPqepJEXV7yVel8TWMRoi4S6WnSUy3DNuz8PB/ovLrIpVpdamTr9Se7GnZOxULNerVJvrc2N+NH1Gt1qjYZs1CxjB/E4qS0Qzk3UFIUWu9L0kQtlFHSHRIOPM8giqxkqu34MyzaRvz7TjXtdOVlPIbIcqSdFEOlaUIkOBKoNhMSN81DA81N39tvkgaXsz85UShEj7mxKfw+6qs466nRN5ub5c+vP/477puUYqKJ/RaefOXLHV91/NSDajnif7NmlvHjF8adQpeXZmC/tuph1191Ogz50/2mjnFMT2/qWFwuVkv1iolXG3sm/CtZZyfdTSLZD0/c2712/mZuMtKGqI9BSP30bqdhpWEX7xiu7lnwqK1W6mn4el8qFKG53vVehNvmaZl2rj4xcTjxMdJou7QhNWN0awLEwts5ryJhhvro8AmytHxmFPwMtlaOrDsRg3XGmWzistFuxjPNQ3PkgSzXtop1m0LHrQ07+yOZe83xwXxqWEpEmsVv+oJND5ZSsjByJxz3PDPH9psOvHeFLUThhc7HKkXtIzc7Wrl7hQrN9Iqdz+d9Kn+FxcTE43cBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27TQBS9JaVKgihQwQYEGhkpolLUwgopqiqliUuj5lHVbiGKotHUniSj2jPWeEwaVdki8SVd8wtlzZ+w4wcY5+E0fUts8GL8uHfOPfee48kCpOBRmShySGXIBAd4EqbhAXNhxWecOpJ0VIFJwTE5oSl46IiIKwBYyELWEX4gOOUqzMLrWTZRSrKjSFHsC5d1mAZe0Kg90ceMYyWEp1gAGcgk4WwMmIZFNQgovJkhdSmnkjlrGpE4xzgMKHWXYIn4ExKjKw0ZEVBJVMw+Q1wXfyVeRMdNLPu+YIr6YcGljhiALrs8w/eE1HkAi/D91KAnShKj0Do1joTnGoUO8UKaNxyhs4yC0e9pHCNvMEU85iRhcdSJQocoOtsR6vaPqepJEXV7yVel8TWMRoi4S6WnSUy3DNuz8PB/ovLrIpVpdamTr9Se7GnZOxULNerVJvrc2N+NH1Gt1qjYZs1CxjB/E4qS0Qzk3UFIUWu9L0kQtlFHSHRIOPM8giqxkqu34MyzaRvz7TjXtdOVlPIbIcqSdFEOlaUIkOBKoNhMSN81DA81N39tvkgaXsz85UShEj7mxKfw+6qs466nRN5ub5c+vP/477puUYqKJ/RaefOXLHV91/NSDajnif7NmlvHjF8adQpeXZmC/tuph1191Ogz50/2mjnFMT2/qWFwuVkv1iolXG3sm/CtZZyfdTSLZD0/c2712/mZuMtKGqI9BSP30bqdhpWEX7xiu7lnwqK1W6mn4el8qFKG53vVehNvmaZl2rj4xcTjxMdJou7QhNWN0awLEwts5ryJhhvro8AmytHxmFPwMtlaOrDsRg3XGmWzistFuxjPNQ3PkgSzXtop1m0LHrQ07+yOZe83xwXxqWEpEmsVv+oJND5ZSsjByJxz3PDPH9psOvHeFLUThhc7HKkXtIzc7Wrl7hQrN9Iqdz+d9Kn+FxcTE43cBgAA
+      Chance: 40
+    '49':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UXWsTQRS9bWpJItYPUERRhhWCQmz1SQilkCZbG5ovuttqCGGY7E6SIbs7y+ysaSh5FfwlffYv1Gf/i+AfcDZpNk2bfogv5mGzyb333HPvOTNpgATcLRJJDqkIGPcA7gdJWGY2PHGZRy1BOjLHBPewz6w+OaIJuGPx0JMAsJSGtMVdn3vUk0EaXswqiJSCtUNJsctt1mEKfEkh9/gAMw9Lzh3JfEhBKg6nI8AkrMihT+HlDKlLPSqYta4QidXHgU+pvQqrxD0jMf4kIcV9KoiMJkgR28ZfiBPSySBrrsuZpG6Qs6nFh6Dars3wHS5UHsAKfDvW6JEURMs1j7U2d2wt1yFOQLOaxVWWltMGPYWjZTUmicOsOMzbnTCwiKSzikCN36eyJ3jY7cX/SoWvYBRC6NlUOIrEtGTUmoVH/xOVn+epTLsLlXyp91lN09wtGahWLTfQp9r+XvSKKpVaydQrBtJG2atQpAhnIK8PAoqaGwNB/KCFOlygQ+IxxyGoFCn55hqceTYtbX4ca9E4XUGpdyVEUZAuyqCi4D7inuQoMhNS3wrGCxQ3d32+SRIez/xlhYHkLvaIS+HXZVknU0+JvNrZKbx/9+Hfdd2mFNUnB3ahxNkLtlo8+bxcQ+o4fHC17kafeRfWnYDnlzahTjx1sK2uHHX3/E4v2FUUUzucmgYXG9V8pVTA5dq+Dl+b2ulJR7GIn6cn1rWeOz3hN9lJQbSmYOQ2ereS8CjmFz2x2ajrsGLslapJeDAfKhXhab1cbeBtXTd0E9dLhb38Zx1Pku/FyWpKHd5ujvedO7PCVsY5p+Xmxji4hTJ0su4EPIvLCweGWavgSq2ol3Exb+aj/SbhYZygVwu7+appwHJT8U/vGuZ+Y9JUnQpDkkiz6KfaRO2jIbkYjo06xw//+K6MpxL/iqZyxej8pGMl/aaWuV65zI3CZca6ZW6nmbrl/wCBU+oD8AYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81UXWsTQRS9bWpJItYPUERRhhWCQmz1SQilkCZbG5ovuttqCGGY7E6SIbs7y+ysaSh5FfwlffYv1Gf/i+AfcDZpNk2bfogv5mGzyb333HPvOTNpgATcLRJJDqkIGPcA7gdJWGY2PHGZRy1BOjLHBPewz6w+OaIJuGPx0JMAsJSGtMVdn3vUk0EaXswqiJSCtUNJsctt1mEKfEkh9/gAMw9Lzh3JfEhBKg6nI8AkrMihT+HlDKlLPSqYta4QidXHgU+pvQqrxD0jMf4kIcV9KoiMJkgR28ZfiBPSySBrrsuZpG6Qs6nFh6Dars3wHS5UHsAKfDvW6JEURMs1j7U2d2wt1yFOQLOaxVWWltMGPYWjZTUmicOsOMzbnTCwiKSzikCN36eyJ3jY7cX/SoWvYBRC6NlUOIrEtGTUmoVH/xOVn+epTLsLlXyp91lN09wtGahWLTfQp9r+XvSKKpVaydQrBtJG2atQpAhnIK8PAoqaGwNB/KCFOlygQ+IxxyGoFCn55hqceTYtbX4ca9E4XUGpdyVEUZAuyqCi4D7inuQoMhNS3wrGCxQ3d32+SRIez/xlhYHkLvaIS+HXZVknU0+JvNrZKbx/9+Hfdd2mFNUnB3ahxNkLtlo8+bxcQ+o4fHC17kafeRfWnYDnlzahTjx1sK2uHHX3/E4v2FUUUzucmgYXG9V8pVTA5dq+Dl+b2ulJR7GIn6cn1rWeOz3hN9lJQbSmYOQ2ereS8CjmFz2x2ajrsGLslapJeDAfKhXhab1cbeBtXTd0E9dLhb38Zx1Pku/FyWpKHd5ujvedO7PCVsY5p+Xmxji4hTJ0su4EPIvLCweGWavgSq2ol3Exb+aj/SbhYZygVwu7+appwHJT8U/vGuZ+Y9JUnQpDkkiz6KfaRO2jIbkYjo06xw//+K6MpxL/iqZyxej8pGMl/aaWuV65zI3CZca6ZW6nmbrl/wCBU+oD8AYAAA==
+      Chance: 40
+    '50':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UXWsaQRS9iWlQS9MPKIWWlmEL0oIk6VNBQsDopkrUDdlNiogM4+6oQ3Z3ltnZWAm+FvpL8ty/kD73t/Shf6CzGteYmI/Sl/qwrt57zz3nnjuTBUjBwzKR5IiKkHEf4HGYhmXmwHOP+dQWpCsLTHAfh31+Qt0UPLB55EsAWMpC1uZewH3qyzALr2cFRErBOpGk2OMO6zKFvaSA+3yAmY8l565kAWQgk4SzMWAaVuQwoPBmhtSjPhXMXleIxD7GYUCpswqrxLsgMf6kIcMDKoiMBWSI4+AT4kZ0omPN8ziT1AsLDrX5EFTbtRm+y4XKA1iBb6ca/SIF0QqtU63DXUcrdIkb0rxmc5WlFbRBX+FoeY1J4jI7CfNONwptIumsIlTyj6nsCx71+sm/UuErGIUQ+Q4VriIxLRm1Z+HR/0Tl52Uq0+5CJV/rfVHTsipVExmNWhN9Ng724ldUrxtVS6+bSBvlb0KRIpqBvDsMKWptDAQJwjbqcoGOiM9cl6Bq7OT7W3Dm2bS1eTn2Ijk9Qal/I0RZkB7KobLgAeK+5CheJqS+FYwfKm7e+nyT9OWjY0eh5B72iUfh13VbJ6qnRN7u7pY+bH78d193KEXm+LwudDh/ZasWC593a0hdlw9utt08Zv6Vaafg1bVBqANPXeyoC0fdPL+zC0YVx9QIpzuDy81GsV4t4ZpxoMPXlnZ+1lUskuf5mX3ryp2f8bu2SUG0p2DkPna30/As4Rc/sdXc12HF3Ks20vBkPlQtw4v9WqOJd3Td1C1sVowjvYYnuY+SXCVSh/zWeNyFi0XYzrkzJ7c2xrFtlKOTYafgZVJdOjQto47rRllBl4tWMZ5uGp4mCXqjVCk2LBOWW4p9tmJaB81Jz86pZkoSOxb/VHMwPpmSi+F4S+fo4R/f1dapxL9hqVZidFnn2MagpeVuty13p2u5sWm5+xmmbvg/0e/8BesGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81UXWsaQRS9iWlQS9MPKIWWlmEL0oIk6VNBQsDopkrUDdlNiogM4+6oQ3Z3ltnZWAm+FvpL8ty/kD73t/Shf6CzGteYmI/Sl/qwrt57zz3nnjuTBUjBwzKR5IiKkHEf4HGYhmXmwHOP+dQWpCsLTHAfh31+Qt0UPLB55EsAWMpC1uZewH3qyzALr2cFRErBOpGk2OMO6zKFvaSA+3yAmY8l565kAWQgk4SzMWAaVuQwoPBmhtSjPhXMXleIxD7GYUCpswqrxLsgMf6kIcMDKoiMBWSI4+AT4kZ0omPN8ziT1AsLDrX5EFTbtRm+y4XKA1iBb6ca/SIF0QqtU63DXUcrdIkb0rxmc5WlFbRBX+FoeY1J4jI7CfNONwptIumsIlTyj6nsCx71+sm/UuErGIUQ+Q4VriIxLRm1Z+HR/0Tl52Uq0+5CJV/rfVHTsipVExmNWhN9Ng724ldUrxtVS6+bSBvlb0KRIpqBvDsMKWptDAQJwjbqcoGOiM9cl6Bq7OT7W3Dm2bS1eTn2Ijk9Qal/I0RZkB7KobLgAeK+5CheJqS+FYwfKm7e+nyT9OWjY0eh5B72iUfh13VbJ6qnRN7u7pY+bH78d193KEXm+LwudDh/ZasWC593a0hdlw9utt08Zv6Vaafg1bVBqANPXeyoC0fdPL+zC0YVx9QIpzuDy81GsV4t4ZpxoMPXlnZ+1lUskuf5mX3ryp2f8bu2SUG0p2DkPna30/As4Rc/sdXc12HF3Ks20vBkPlQtw4v9WqOJd3Td1C1sVowjvYYnuY+SXCVSh/zWeNyFi0XYzrkzJ7c2xrFtlKOTYafgZVJdOjQto47rRllBl4tWMZ5uGp4mCXqjVCk2LBOWW4p9tmJaB81Jz86pZkoSOxb/VHMwPpmSi+F4S+fo4R/f1dapxL9hqVZidFnn2MagpeVuty13p2u5sWm5+xmmbvg/0e/8BesGAAA=
+      Chance: 40
+    '51':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNguzRtQ7tpaREqmAZMkq4KJgQcW6lNbCtESooxZphIY3uINCNGo7omeFvol2TdX0jX/ZPu+gMd+SHHifOAbqrF6HHvnHvuPUeTBUjB4zKW+ISIkHIG8DRMwzJ1Yd2njDgCd2SBCs5Qj5MUPHJ4xCQALGUh63A/4IwwGWbhzSwbSynoaSQJ8rlLO1QBLynUHu8jypDk3JM0gAxkknA2BkzDihwEBN7OkLqEEUGdTYWInTMUBoS4q7CK/QmJ0ZWGDA+IwDJmn8Gui75gLyLjJtZ8n1NJ/LDgEocPQJVdm+F7XKg8gBX4fq6Tr1JgvdA610+55+qFDvZCktcdrrL0gt7vKRw9r1OJPeokYX7aiUIHSzLbEar2z4jsCR51e8lXqfAVjEKImEuEp0hMtwzbs/Dwf6Ly6yqVaXWhkm/Unuxp2ZWqpZmNWlP7bB4dxI9avW5WbaNuafowfxuKFNEM5P1xSLTWVl/gIGxrHS60E8yo52GtGiu5cQfOPJu2Pt+Os6idriCE3QpRFrir5bSy4IHGmeRabCZN3RUMCxU3f3O+SBpezvzlRKHkPmLYJ/D7pqzjrqdE3u3vlz5sf/x3XfcI0SqcLJQ3f81Si7uel2pAPI/3b9fcOqPs2qhT8PrGFNTfTjzkqqNGnTl/sgvmFMfU/KaGQeVmo1ivllDNPDLgW0u/vOgoFsl6eeHc6bfLC36flRREewqGH6J1Ow3rCb94RXbz0IAV66DaSMOz+VC1DC8Oa40m2jMMy7BRxTTQOPFJkqg6NGBjZzTrwsQCuzlvouHO1iiwq+XIeMwpeJVsLR1btllHdbNs1FC5aBfjuabheZJgNEqVYsO2YLmleGcrln3UHBdE57olcaxV/KomYH6yJBeDkTnnuKGfP5TZVOKDKSonDK92OFIvaOm5u9XK3StWbqRV7mE6qVP9Lzveiu7cBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNguzRtQ7tpaREqmAZMkq4KJgQcW6lNbCtESooxZphIY3uINCNGo7omeFvol2TdX0jX/ZPu+gMd+SHHifOAbqrF6HHvnHvuPUeTBUjB4zKW+ISIkHIG8DRMwzJ1Yd2njDgCd2SBCs5Qj5MUPHJ4xCQALGUh63A/4IwwGWbhzSwbSynoaSQJ8rlLO1QBLynUHu8jypDk3JM0gAxkknA2BkzDihwEBN7OkLqEEUGdTYWInTMUBoS4q7CK/QmJ0ZWGDA+IwDJmn8Gui75gLyLjJtZ8n1NJ/LDgEocPQJVdm+F7XKg8gBX4fq6Tr1JgvdA610+55+qFDvZCktcdrrL0gt7vKRw9r1OJPeokYX7aiUIHSzLbEar2z4jsCR51e8lXqfAVjEKImEuEp0hMtwzbs/Dwf6Ly6yqVaXWhkm/Unuxp2ZWqpZmNWlP7bB4dxI9avW5WbaNuafowfxuKFNEM5P1xSLTWVl/gIGxrHS60E8yo52GtGiu5cQfOPJu2Pt+Os6idriCE3QpRFrir5bSy4IHGmeRabCZN3RUMCxU3f3O+SBpezvzlRKHkPmLYJ/D7pqzjrqdE3u3vlz5sf/x3XfcI0SqcLJQ3f81Si7uel2pAPI/3b9fcOqPs2qhT8PrGFNTfTjzkqqNGnTl/sgvmFMfU/KaGQeVmo1ivllDNPDLgW0u/vOgoFsl6eeHc6bfLC36flRREewqGH6J1Ow3rCb94RXbz0IAV66DaSMOz+VC1DC8Oa40m2jMMy7BRxTTQOPFJkqg6NGBjZzTrwsQCuzlvouHO1iiwq+XIeMwpeJVsLR1btllHdbNs1FC5aBfjuabheZJgNEqVYsO2YLmleGcrln3UHBdE57olcaxV/KomYH6yJBeDkTnnuKGfP5TZVOKDKSonDK92OFIvaOm5u9XK3StWbqRV7mE6qVP9Lzveiu7cBgAA
+      Chance: 40
+    '52':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27aQBS9CWkEVE0fUjd9aeRKqJWipFlVQlEkgk2wAjjCTiqE0GhiD2DF9ljjcSmK2Fbql2TdX0jX/ZDu+wEdQzAhIY+qm7Iwhnvvuefcc2fyABl4qBJBjiiPXBYAPI6ysOw68Nx3A2pz0hXFrhv13aCHOXMy8MBmcSAAYCkPeZv5IQtoIKI8vJ4VECG4exwLin3muF1XYi9J4D4bYDfAgjFPuCHkIJeG8wlgFlbEMKTwZobUowHlrr0hEYl9gqOQUmcVVol/QWL8yUKOhZQTkQjIEcfBn4kX04mONd9nrqB+VHSozYYg267N8D3GZR7ACnw7VegXwYlSbJ8qx8xzlGKXeBFdV2wms5SiMuhLHGVdcQXxXDsNs+NuHNlE0FlFJOWfUNHnLO7103+FxJcwEiEOHMo9SWJaMurMwqP/icrPy1Sm3blMvtb7oqZtVXUTGY1aC30ymvvJK6rXDd3S6iZSRus3oQgez0DeHUYUtTcHnIRRB3UZR0ckcD2PID1x8v0tOPNsOsq8HHuRnB6nNLgRQuWkhwpI5SxELBAMJcuE5LeECSLJzd+Yb5K9fHTsOBLMxwHxKfy+butE9ZTI20qlvPXh47/7ukspqkwOLWoyZ6HN61dWa7H6ecuG1PPY4GbvzRM3uDLyDLy8Ng156qmHHXnryOvnV37BvJKYnON0cbDaapTqehnXjKYGX9vK+VlXskif52f2rXt3fsbuWikJ0ZmCkft43snCs5Rf8sRW60CDFXNfb2ThyXxIV+HVQa3RwruaZmoWruhmVW/s4aah4knBo7RAKtVga3s88+LFSuwUvCuebm+OE3ZQgU7GnoEXKUT50LSMOq4bqlbDaskqJXPOwtM0QWuUq6WGZcJyW+rIV02r2Zo07p0qpiCJd8lPORFjzxSMD8dLO8cR//gul1Am/jVVuSGjy4rHroZtpXC7i4U7TSyMPSzczz956/8BbBh38f8GAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27aQBS9CWkEVE0fUjd9aeRKqJWipFlVQlEkgk2wAjjCTiqE0GhiD2DF9ljjcSmK2Fbql2TdX0jX/ZDu+wEdQzAhIY+qm7Iwhnvvuefcc2fyABl4qBJBjiiPXBYAPI6ysOw68Nx3A2pz0hXFrhv13aCHOXMy8MBmcSAAYCkPeZv5IQtoIKI8vJ4VECG4exwLin3muF1XYi9J4D4bYDfAgjFPuCHkIJeG8wlgFlbEMKTwZobUowHlrr0hEYl9gqOQUmcVVol/QWL8yUKOhZQTkQjIEcfBn4kX04mONd9nrqB+VHSozYYg267N8D3GZR7ACnw7VegXwYlSbJ8qx8xzlGKXeBFdV2wms5SiMuhLHGVdcQXxXDsNs+NuHNlE0FlFJOWfUNHnLO7103+FxJcwEiEOHMo9SWJaMurMwqP/icrPy1Sm3blMvtb7oqZtVXUTGY1aC30ymvvJK6rXDd3S6iZSRus3oQgez0DeHUYUtTcHnIRRB3UZR0ckcD2PID1x8v0tOPNsOsq8HHuRnB6nNLgRQuWkhwpI5SxELBAMJcuE5LeECSLJzd+Yb5K9fHTsOBLMxwHxKfy+butE9ZTI20qlvPXh47/7ukspqkwOLWoyZ6HN61dWa7H6ecuG1PPY4GbvzRM3uDLyDLy8Ng156qmHHXnryOvnV37BvJKYnON0cbDaapTqehnXjKYGX9vK+VlXskif52f2rXt3fsbuWikJ0ZmCkft43snCs5Rf8sRW60CDFXNfb2ThyXxIV+HVQa3RwruaZmoWruhmVW/s4aah4knBo7RAKtVga3s88+LFSuwUvCuebm+OE3ZQgU7GnoEXKUT50LSMOq4bqlbDaskqJXPOwtM0QWuUq6WGZcJyW+rIV02r2Zo07p0qpiCJd8lPORFjzxSMD8dLO8cR//gul1Am/jVVuSGjy4rHroZtpXC7i4U7TSyMPSzczz956/8BbBh38f8GAAA=
+      Chance: 40
+    '53':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy27TQBS9bUrlBFEeAhYg0MhIEYiohRVSVFVKY5dGzaOq3aIoikZTe5KManus8ZgQVdki8SVd8wtlza/wCzBOGqdp0wdigxd+3TvnnnvPmckBZOCuQSQ5oCJiPAC4H2mwyFx47LOAOoJ0ZJEJHuCoz4WbgTsOjwMJAAs5yDncD3lAAxnl4MU0n0gp2GEsKfa5yzpMQS8o3B7vYxZgybknWQhZyKbhXAKowZIchBReTpG6NKCCOasKkThHOAopdZdhmfhnJEaXBlkeUkFkwj9LXBd/Jl5Mx22s+D5nkvpR0aUOH4AquzLF97hQeQBL8O1Yp1+kIHqxdawfcs/Vix3iRbSgO1xl6UW931M4ekFnknjMScP8sBNHDpF0uiJS7R9R2RM87vbSv1LhKxiFEAcuFZ4iMVkybE/Dw/+Jys/zVCbVhUq+VPtsTcverlioUa820afG3k7yimq1RsU2axbSh4WrUKSIpyCv9yOKWmt9QcKojTpcoAMSMM8jqJIo+eYanFk2bX22HWdeO11BaXAlhCFIF+WRIXiIeCA5SsyE1FPBBJHi5q/OFtHgydRfThxJ7uOA+BR+XZZ13PWEyKutrfL7dx/+XddNSpGVbNe5AhcumGp+37NiDajn8f7VqltHLLgw7Aw8vzQHtd+ph1113Khz53duzqSSmJrgxDLYaNZLtUoZVxt7Jnxt6acnHcUivZ+eONc67vSE32QmBdGegJHbqN3W4FHKL7lju7lrwpK1U6lr8GA2VDHg6W613sSbpmmZNrYURwOPU++lqapHE96uj6ZdPLPBRt5LdVxfG4U2UJ6OR52BZ+ni8r5lN2q41jDMKjZKdimZrQYP0wSzXt4u1W0LFluKe27bsvea45LkWLckSfRKPtUUGh8tycVgZNEZdvjHd2U5lfgXJJUfhue7HGkYtvT89Zrlb5QsP1Isfzu11On+B7DuumvmBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy27TQBS9bUrlBFEeAhYg0MhIEYiohRVSVFVKY5dGzaOq3aIoikZTe5KManus8ZgQVdki8SVd8wtlza/wCzBOGqdp0wdigxd+3TvnnnvPmckBZOCuQSQ5oCJiPAC4H2mwyFx47LOAOoJ0ZJEJHuCoz4WbgTsOjwMJAAs5yDncD3lAAxnl4MU0n0gp2GEsKfa5yzpMQS8o3B7vYxZgybknWQhZyKbhXAKowZIchBReTpG6NKCCOasKkThHOAopdZdhmfhnJEaXBlkeUkFkwj9LXBd/Jl5Mx22s+D5nkvpR0aUOH4AquzLF97hQeQBL8O1Yp1+kIHqxdawfcs/Vix3iRbSgO1xl6UW931M4ekFnknjMScP8sBNHDpF0uiJS7R9R2RM87vbSv1LhKxiFEAcuFZ4iMVkybE/Dw/+Jys/zVCbVhUq+VPtsTcverlioUa820afG3k7yimq1RsU2axbSh4WrUKSIpyCv9yOKWmt9QcKojTpcoAMSMM8jqJIo+eYanFk2bX22HWdeO11BaXAlhCFIF+WRIXiIeCA5SsyE1FPBBJHi5q/OFtHgydRfThxJ7uOA+BR+XZZ13PWEyKutrfL7dx/+XddNSpGVbNe5AhcumGp+37NiDajn8f7VqltHLLgw7Aw8vzQHtd+ph1113Khz53duzqSSmJrgxDLYaNZLtUoZVxt7Jnxt6acnHcUivZ+eONc67vSE32QmBdGegJHbqN3W4FHKL7lju7lrwpK1U6lr8GA2VDHg6W613sSbpmmZNrYURwOPU++lqapHE96uj6ZdPLPBRt5LdVxfG4U2UJ6OR52BZ+ni8r5lN2q41jDMKjZKdimZrQYP0wSzXt4u1W0LFluKe27bsvea45LkWLckSfRKPtUUGh8tycVgZNEZdvjHd2U5lfgXJJUfhue7HGkYtvT89Zrlb5QsP1Isfzu11On+B7DuumvmBgAA
+      Chance: 40
+    '54':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9QCm0tAwqmBZM0q4KJgQcS6lN/AiRkmKMGcbS2B4iacRoVNcEbwv9kqz7C+m6X9JFf6EjO5bivEs31UKve+fcc+85M3mADNzXiSSHVISM+wAPwywsMwceecyntiB9WQqHjLpOBu7ZPPIlACzlIW9zL+A+9WWYh5dpLpFSsF4kKfa4w/pMwS4pzCEfYeZjybkrWQA5yCXhfAyYhRU5Dii8SpEG1KeC2esKkdhHOAwodVZhlXhnJKZXFnI8oILImHuOOA7+TNyIzlpY8zzOJPXCkkNtPgZVdi3Fd7lQeQAr8O1Yo1+kIFqpc6z1uOtopT5xQ1rUbK6ytJI2GiocragxSVxmJ2He60ehTSRNV4Sq/SMqh4JHg2HyVyp8BaMQIt+hwlUk5ksm3TQ8+Z+o/DxPZV5dqORLtc/WdKxqzUStZr2NPrX2d+NX1Gi0apbRMJE2KV6HIkWUgrw5CCnqbIwECcIu6nOBDonPXJegWqzk2xtwFtl0tcV27KvaGQhK/WshdEEGqIB0wQPEfclRbCakngrGDxU3b32xSBaepv6yo1ByD/vEo/D7sqyzrudEXu/sVN6/+/Dvum5Tiszpfr1S4eIFV13d+KJaY+q6fHS97OYR8y9MOwMvLg1CbXjqYkedNerQ+ZW/YlRxTI1w7hmst5vlRq2C6619A752tNOTvmKR3E9P7Bstd3rCb3OTgujOwchd5O5m4UnCL75jq71nwIq5W2tm4dFiqKbDs716s423DcM0LGxWa0Zdx7PcB0muatKA4uZ03KUzI2wV3FTJzY1pbAsV6GzYGXierK4cmFargRst3ahjvWyV4+lm4XGSYDQr1XLTMmG5o9jnq6a1357V7B1rpiSxYvGnmkProym5GE9dukAP//iuXKcS/4alssTkfJ9TGYOOVrhZtsKtqhWmohXuJpg64f8AuQvRc+YGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNguzR9QCm0tAwqmBZM0q4KJgQcS6lN/AiRkmKMGcbS2B4iacRoVNcEbwv9kqz7C+m6X9JFf6EjO5bivEs31UKve+fcc+85M3mADNzXiSSHVISM+wAPwywsMwceecyntiB9WQqHjLpOBu7ZPPIlACzlIW9zL+A+9WWYh5dpLpFSsF4kKfa4w/pMwS4pzCEfYeZjybkrWQA5yCXhfAyYhRU5Dii8SpEG1KeC2esKkdhHOAwodVZhlXhnJKZXFnI8oILImHuOOA7+TNyIzlpY8zzOJPXCkkNtPgZVdi3Fd7lQeQAr8O1Yo1+kIFqpc6z1uOtopT5xQ1rUbK6ytJI2GiocragxSVxmJ2He60ehTSRNV4Sq/SMqh4JHg2HyVyp8BaMQIt+hwlUk5ksm3TQ8+Z+o/DxPZV5dqORLtc/WdKxqzUStZr2NPrX2d+NX1Gi0apbRMJE2KV6HIkWUgrw5CCnqbIwECcIu6nOBDonPXJegWqzk2xtwFtl0tcV27KvaGQhK/WshdEEGqIB0wQPEfclRbCakngrGDxU3b32xSBaepv6yo1ByD/vEo/D7sqyzrudEXu/sVN6/+/Dvum5Tiszpfr1S4eIFV13d+KJaY+q6fHS97OYR8y9MOwMvLg1CbXjqYkedNerQ+ZW/YlRxTI1w7hmst5vlRq2C6619A752tNOTvmKR3E9P7Bstd3rCb3OTgujOwchd5O5m4UnCL75jq71nwIq5W2tm4dFiqKbDs716s423DcM0LGxWa0Zdx7PcB0muatKA4uZ03KUzI2wV3FTJzY1pbAsV6GzYGXierK4cmFargRst3ahjvWyV4+lm4XGSYDQr1XLTMmG5o9jnq6a1357V7B1rpiSxYvGnmkProym5GE9dukAP//iuXKcS/4alssTkfJ9TGYOOVrhZtsKtqhWmohXuJpg64f8AuQvRc+YGAAA=
+      Chance: 40
+    '55':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idMguzRtA120pWVQwbRgknZVMCHg2EpjYlvBUhKMMcNYGtsikkaMRnVN8LbQL8m6v5Cu+yFd9g868kO2E+dRuqkWet075557z5nJAKTgYYkIckJ56DAf4HGowKpjw6bn+NTipCPyFmdh2Gb9FDywWOQLAFjJQMZiXsB86oswA69m2UQI7rQjQbHHbKfjSOAVidpjfez4WDDmCieANKSTcCYGVGBNDAIKr2dIXepT7lhbEpFYZzgMKLXXYZ14ExKjS4E0CygnImafJraNPxM3ouMmNjyPOYJ6Yd6mFhuALLsxw3cZl3kAa/DtXKVfBCdqvnmutplrq/kOcUOaUy0ms9S82u9JHDWnOoK4jpWEWbsThRYRdLYilO2fUdHjLOr2kr9C4ksYiRD5NuWuJDFdMmzNwsP/icrPeSrT6lwmX6s9WdM0D8oG0muVBjrV64fxK6pW9bKpVQ2kDnM3oQgezUDeHocUNbf7nARhC3UYRyfEd1yXoHKs5LtbcBbZtNTFdqxl7XQ5pf6NECVOuiiLSpwFiPmCodhMSD4ljB9Kbt7WYhEFns3tmygUzMM+8Sj8vi7ruOspkTf7+8UP7z/+u657lKLiZMcu1Th3xVfLW1/Ua0BddwR3g/DGmeNfmXcKXl4bhdzy1MW2PG/kwfMrs2RYcUwOceoaXGrUCtVyEVf0ugZfm+rlRUeySO6XF9atpru8YHf5SUK0pmDkPoK3FNhM+MV3bDaONFgzDss1BZ4shsoleH5UqTXwnqYZmomLdd0w9vRTPM5+lGTLNjXY2hkNPD8xw27WnVdzZ3sU3UVZOh54Cl4k64vHhqlXcVUvaRVcKpiFeMIKPE0StFrxoFAzDVhtyg4yB4ZZb4yr2ueqIUisWvwpZ6F/MgTjg5FXFwjiH9+l92Ti3/GUxhjO9zoSM2iq2dvFy96pXXYkXfZ+ssmT/g/4n89e8AYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idMguzRtA120pWVQwbRgknZVMCHg2EpjYlvBUhKMMcNYGtsikkaMRnVN8LbQL8m6v5Cu+yFd9g868kO2E+dRuqkWet075557z5nJAKTgYYkIckJ56DAf4HGowKpjw6bn+NTipCPyFmdh2Gb9FDywWOQLAFjJQMZiXsB86oswA69m2UQI7rQjQbHHbKfjSOAVidpjfez4WDDmCieANKSTcCYGVGBNDAIKr2dIXepT7lhbEpFYZzgMKLXXYZ14ExKjS4E0CygnImafJraNPxM3ouMmNjyPOYJ6Yd6mFhuALLsxw3cZl3kAa/DtXKVfBCdqvnmutplrq/kOcUOaUy0ms9S82u9JHDWnOoK4jpWEWbsThRYRdLYilO2fUdHjLOr2kr9C4ksYiRD5NuWuJDFdMmzNwsP/icrPeSrT6lwmX6s9WdM0D8oG0muVBjrV64fxK6pW9bKpVQ2kDnM3oQgezUDeHocUNbf7nARhC3UYRyfEd1yXoHKs5LtbcBbZtNTFdqxl7XQ5pf6NECVOuiiLSpwFiPmCodhMSD4ljB9Kbt7WYhEFns3tmygUzMM+8Sj8vi7ruOspkTf7+8UP7z/+u657lKLiZMcu1Th3xVfLW1/Ua0BddwR3g/DGmeNfmXcKXl4bhdzy1MW2PG/kwfMrs2RYcUwOceoaXGrUCtVyEVf0ugZfm+rlRUeySO6XF9atpru8YHf5SUK0pmDkPoK3FNhM+MV3bDaONFgzDss1BZ4shsoleH5UqTXwnqYZmomLdd0w9vRTPM5+lGTLNjXY2hkNPD8xw27WnVdzZ3sU3UVZOh54Cl4k64vHhqlXcVUvaRVcKpiFeMIKPE0StFrxoFAzDVhtyg4yB4ZZb4yr2ueqIUisWvwpZ6F/MgTjg5FXFwjiH9+l92Ti3/GUxhjO9zoSM2iq2dvFy96pXXYkXfZ+ssmT/g/4n89e8AYAAA==
+      Chance: 40
+    '56':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idNguyR90G5aWgYVTAMmaVcFEwJ+KI2JbYVISTDGDGNpbAtLGjEa1TXB20K/JOv+Qrruj5R+REd+SHHiPKCbajF63DvnnnvP0WQBUvC4QgQ5pTywmQfwJEjDqm3Bhmt71OSkKwodNkzBI5OFngCAlSxkTeb6zKOeCLLwJkkkQnC7EwqKXWbZXVtirkjAPhti28OCMUfYPmQgE4ezEWAa1sTIp/A2QepRj3Lb3JaIxBzgwKfUWod14s5ITK40ZJhPORER8QyxLPyFOCGd8t90XWYL6gYFi5psBLLsZoLvMC7zANbg+7lCvwpOlELrXOkwx1IKXeIENK+YTGYpBWXYlzhKXrEFcWwzDrNONwxMImiyI5DtD6jocxb2+vFXIfEljEQIPYtyR5KYbxm3k/D4f6Ly6yqVeXUuk2/Unu1pGQdVHWmNWhOdaceH0SOq17WqodZ1pIzzt6EIHiYg708Cilo7Q078oI26jKNT4tmOQ1A1UnLrDpxFNm1lsR1zWTs9Tql3K0SFkx7KoQpnPmKeYCgyE5J3CeMFkpu7vVgkDS8Tf5lhIJiLPeJS+HNT1mnXcyLv9vfLHz98+nddS5SiEhsulTd/zVLLu16UakQdZwJ3i+b6wPaujToFr29MQf7t1MGWPGXkcfM7u2ROUUzOb24YXGk2ivVqGde0YxW+tZTLi65kEa+XF+adfru8YPdZSUK052DkIVq30/A85het2GgeqbCmH1YbaXi6GKpW4MVRrdHEJVXVVQOXtDM8TdyIE2WHKmztTmZdmFlgL+fMNNzdmQT2UI5Ox5yCV/HW8oluaHVc1ypqDVeKRjGaaxqexQlqo3xQbBg6rLYk7+yBbhw3pwXxuaILEmkVvcoJaJ91wfhoYs4FbvjnD2k2mfhgitIJ46sdTtTzW0rubrVy94qVm2iVe5hO8lT/C0s1+1zXBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idNguyR90G5aWgYVTAMmaVcFEwJ+KI2JbYVISTDGDGNpbAtLGjEa1TXB20K/JOv+Qrruj5R+REd+SHHiPKCbajF63DvnnnvP0WQBUvC4QgQ5pTywmQfwJEjDqm3Bhmt71OSkKwodNkzBI5OFngCAlSxkTeb6zKOeCLLwJkkkQnC7EwqKXWbZXVtirkjAPhti28OCMUfYPmQgE4ezEWAa1sTIp/A2QepRj3Lb3JaIxBzgwKfUWod14s5ITK40ZJhPORER8QyxLPyFOCGd8t90XWYL6gYFi5psBLLsZoLvMC7zANbg+7lCvwpOlELrXOkwx1IKXeIENK+YTGYpBWXYlzhKXrEFcWwzDrNONwxMImiyI5DtD6jocxb2+vFXIfEljEQIPYtyR5KYbxm3k/D4f6Ly6yqVeXUuk2/Unu1pGQdVHWmNWhOdaceH0SOq17WqodZ1pIzzt6EIHiYg708Cilo7Q078oI26jKNT4tmOQ1A1UnLrDpxFNm1lsR1zWTs9Tql3K0SFkx7KoQpnPmKeYCgyE5J3CeMFkpu7vVgkDS8Tf5lhIJiLPeJS+HNT1mnXcyLv9vfLHz98+nddS5SiEhsulTd/zVLLu16UakQdZwJ3i+b6wPaujToFr29MQf7t1MGWPGXkcfM7u2ROUUzOb24YXGk2ivVqGde0YxW+tZTLi65kEa+XF+adfru8YPdZSUK052DkIVq30/A85het2GgeqbCmH1YbaXi6GKpW4MVRrdHEJVXVVQOXtDM8TdyIE2WHKmztTmZdmFlgL+fMNNzdmQT2UI5Ox5yCV/HW8oluaHVc1ypqDVeKRjGaaxqexQlqo3xQbBg6rLYk7+yBbhw3pwXxuaILEmkVvcoJaJ91wfhoYs4FbvjnD2k2mfhgitIJ46sdTtTzW0rubrVy94qVm2iVe5hO8lT/C0s1+1zXBgAA
+      Chance: 40
+    '57':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UXW8SQRS9LbUBjPUj6oNGM1kTopG0+mRCmiYUFkvKR9Ndawghk+nuAJPuzmxmZ0XS8GriL+mzf6E++1f8Dc5CWUpLP4wv8rAs3DvnnnPP2c0CpOBumShyQGXIBAe4H6Zhmbnw2GecOpJ0VYFJwXE4ENJNwR1HRFwBwFIWso7wA8EpV2EWXsz6iVKSHUaKYl+4rMs09JLG7YsBZhwrITzFAshAJilnY8A0rKhhQOHlDKlHOZXMWdeIxDnCYUCpuwqrxD8jMf6kISMCKomK+WeI6+IvxIvoRMaa7wumqB8WXOqIIeixazN8T0jdB7AC348N+lVJYhTax8ah8Fyj0CVeSPOGI3SXUTAGfY1j5A2miMecpCwOu1HoEEVnJ0It/4iqvhRRr5/8qzS+htEIEXep9DSJ6ZFRZ1Ye/U9Ufp2nMp0udfOl2Wdn2vZO1ULNRq2FPjf3d+NbVK83q7ZZt5Axyl+FomQ0A3n9KaSovTGQJAg7qCskOiCceR5B1djJN9fgzLPpGPNynEVyepJSfiVEWZIeyqGyFAESXAkUhwnpbw3DQ83NX58fkoYns3w5UaiEjznxKfy+bOtE9ZTIq0ql9P7dh3/3dZtSZCnS7S40OH8hVIt1z5s1pJ4nBle7bh0xfmHZKXh+aQ/6eacedvXrJn7ksgs2Fdf0BqeRweVWo1ivlnCtuW/Ct7ZxehKLSq6nJ861iTs9ETeFSUN0pmDkNm530vAo4Rdfsd3aM2HF2q020vBgvlQtw9O9WqOFt03TMm1s2cVKBU9a7yWtWqMJbzfH2y6cxWAr5yU+bm6MS1soRyerTsGz5HDpk2U367jeLJs1XC7axXi3aXiYNJiN0k6xYVuw3NbcszuWvd+ajCTHhsaP/Yp/6i00P1pKyOE4onPs8M8fOnK68S9I6jyMzqscexi0jdz1nuVutCw3dix3O7f02/0PdIt2E+YGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81UXW8SQRS9LbUBjPUj6oNGM1kTopG0+mRCmiYUFkvKR9Ndawghk+nuAJPuzmxmZ0XS8GriL+mzf6E++1f8Dc5CWUpLP4wv8rAs3DvnnnPP2c0CpOBumShyQGXIBAe4H6Zhmbnw2GecOpJ0VYFJwXE4ENJNwR1HRFwBwFIWso7wA8EpV2EWXsz6iVKSHUaKYl+4rMs09JLG7YsBZhwrITzFAshAJilnY8A0rKhhQOHlDKlHOZXMWdeIxDnCYUCpuwqrxD8jMf6kISMCKomK+WeI6+IvxIvoRMaa7wumqB8WXOqIIeixazN8T0jdB7AC348N+lVJYhTax8ah8Fyj0CVeSPOGI3SXUTAGfY1j5A2miMecpCwOu1HoEEVnJ0It/4iqvhRRr5/8qzS+htEIEXep9DSJ6ZFRZ1Ye/U9Ufp2nMp0udfOl2Wdn2vZO1ULNRq2FPjf3d+NbVK83q7ZZt5Axyl+FomQ0A3n9KaSovTGQJAg7qCskOiCceR5B1djJN9fgzLPpGPNynEVyepJSfiVEWZIeyqGyFAESXAkUhwnpbw3DQ83NX58fkoYns3w5UaiEjznxKfy+bOtE9ZTIq0ql9P7dh3/3dZtSZCnS7S40OH8hVIt1z5s1pJ4nBle7bh0xfmHZKXh+aQ/6eacedvXrJn7ksgs2Fdf0BqeRweVWo1ivlnCtuW/Ct7ZxehKLSq6nJ861iTs9ETeFSUN0pmDkNm530vAo4Rdfsd3aM2HF2q020vBgvlQtw9O9WqOFt03TMm1s2cVKBU9a7yWtWqMJbzfH2y6cxWAr5yU+bm6MS1soRyerTsGz5HDpk2U367jeLJs1XC7axXi3aXiYNJiN0k6xYVuw3NbcszuWvd+ajCTHhsaP/Yp/6i00P1pKyOE4onPs8M8fOnK68S9I6jyMzqscexi0jdz1nuVutCw3dix3O7f02/0PdIt2E+YGAAA=
+      Chance: 40
+    '58':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UW2sTQRQ+NbUkEesFBVGUZYWgEFt9EkIppNmtDc2lZLeVEMIw3Z0kQ3d3wuysMZS8Cv6SPvsX6rP/xZ/g2aTZNE1v4ov7sLdz5jvfOd83kwVIwT2DKnrAZMhFAPAgTMMd7sITnwfMkbSjClyKgIQDId0U3HVEFCgAWMpC1hF+XwQsUGEWXs7yqVKSH0aKEV+4vMMReglxe2JAeECUEJ7ifchAJglnY8A0LKthn8GrGVKXBUxyZw0RqXNEwj5j7gqsUP+MxPhKQ0b0maQq5p+hrku+UC9ikzZWfV9wxfyw4DJHDAHLrs7wPSExD2AZvh/r7KuSVC+0jvVD4bl6oUO9kOV1R2CWXtAHPcTR8zpX1ONOEhaHnSh0qGKzFSG2f8RUT4qo20v+KsRHGESIApdJD0lMl4zas/Dof6Ly6zyVaXWJyQu1z9a07J2ypdVrlab2ud7YjV+1arVets2qpemj/FUoSkYzkDf7IdNa6wNJ+2Fb6wipHdCAex7VyrGSb6/BmWfT1ufbcS5rpysZC66EMCTtajnNkKKviUAJLTaThk+ECULk5q/NF0nD05m/nChUwicB9Rn8XpR10vWUyOvt7dKH9x//XdctxjRbchc35qUS5y/Y6vLO5+UaMs8Tg6t1t454cGHcKXixMAnc8cwjLh44uOnwCFmcVRzDGU5NQ4xmrVgtl0il3jDhW0s/Pekgi+R+euJc67nTE3GTnRCiPQWjt9G7nYbHCb/4TuzmngnL1m65loaH86GyAc/2KrUm2TJNy7SJ3SgbZs0mk+T7STJ2acK7jfG8C2dW2Mx557TcWB8HN7Ucm4w7Bc+T5aV9y65XSbVumBViFO1iPN80PEoSzFppp1izLbjTQv7ZHctuNCdFcVdYisaaxZ84ifonSwk5HBt1jh/5+QONh4l/RRNdMTrf6VjJfkvPXa9c7kbhcmPdcrfTDE/5PxcVFQ7uBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81UW2sTQRQ+NbUkEesFBVGUZYWgEFt9EkIppNmtDc2lZLeVEMIw3Z0kQ3d3wuysMZS8Cv6SPvsX6rP/xZ/g2aTZNE1v4ov7sLdz5jvfOd83kwVIwT2DKnrAZMhFAPAgTMMd7sITnwfMkbSjClyKgIQDId0U3HVEFCgAWMpC1hF+XwQsUGEWXs7yqVKSH0aKEV+4vMMReglxe2JAeECUEJ7ifchAJglnY8A0LKthn8GrGVKXBUxyZw0RqXNEwj5j7gqsUP+MxPhKQ0b0maQq5p+hrku+UC9ikzZWfV9wxfyw4DJHDAHLrs7wPSExD2AZvh/r7KuSVC+0jvVD4bl6oUO9kOV1R2CWXtAHPcTR8zpX1ONOEhaHnSh0qGKzFSG2f8RUT4qo20v+KsRHGESIApdJD0lMl4zas/Dof6Ly6zyVaXWJyQu1z9a07J2ypdVrlab2ud7YjV+1arVets2qpemj/FUoSkYzkDf7IdNa6wNJ+2Fb6wipHdCAex7VyrGSb6/BmWfT1ufbcS5rpysZC66EMCTtajnNkKKviUAJLTaThk+ECULk5q/NF0nD05m/nChUwicB9Rn8XpR10vWUyOvt7dKH9x//XdctxjRbchc35qUS5y/Y6vLO5+UaMs8Tg6t1t454cGHcKXixMAnc8cwjLh44uOnwCFmcVRzDGU5NQ4xmrVgtl0il3jDhW0s/Pekgi+R+euJc67nTE3GTnRCiPQWjt9G7nYbHCb/4TuzmngnL1m65loaH86GyAc/2KrUm2TJNy7SJ3SgbZs0mk+T7STJ2acK7jfG8C2dW2Mx557TcWB8HN7Ucm4w7Bc+T5aV9y65XSbVumBViFO1iPN80PEoSzFppp1izLbjTQv7ZHctuNCdFcVdYisaaxZ84ifonSwk5HBt1jh/5+QONh4l/RRNdMTrf6VjJfkvPXa9c7kbhcmPdcrfTDE/5PxcVFQ7uBgAA
+      Chance: 40
+    '59':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9idMguzR90FJoaREqmBZM0q4KJgQcW6lNLDtYSooxZhhLY1tEmhGjUV0TvC30S7LuL6Trfkt/oSM7luLEeZRuqoVe9865595zZnIAGbhfwQIfER66jAI8DBVYdR146ruU2Bz3RdHljKJwxLiTgXs2i6gAgJUc5GzmB4wSKsIcvErzsRDc7UWCIJ85bt+V0CsSd8hGyKVIMOYJN4AsZJNwLgZUYE2MAwKvU6QBoYS79qZExPYxCgNCnHVYx/45iemlQJYFhGMR889ix0FfsBeRWRsbvs9cQfyw6BCbjUGW3UjxPcZlHsAafD/RyFfBsVbsnGg95jlasY+9kBQ0m8ksraiNhhJHK2iuwJ5rJ2HW60ehjQVJV4Sy/WMihpxFg2HyV0h8CSMRIuoQ7kkS8yWTbhqe/E9Ufl2kMq/OZfKV2udrOla1ZqrNRr2tfm629uNX1TCaNUs3TFWbFK5DETxKQd4ehkTtbI04DsKu2mdcPcLU9Tys1mIl392As8imqy22Yy9rZ8AJoddCVDgeqHm1wlmgMiqYGptJlU8JQ0PJzd9cLKLAs9RfdhQK5iOKfQK/r8o663pO5M3eXvnD+4//rusuIWoV+z7hSxUuXHLV8sYX1RoTz2Oj62U3j116adoZeHllEHLDEw858ryRe241t2RUcUyOcO4ZVGk3SkatjOrNlg7fOtrZaV+ySO5np/aNljs7Zbe5SUJ052D4LnJ3FXiS8IvvyGof6LBm7tcaCjxaDNUq8Pyg3mijXV03dQtVS4aht9As90GSK5vUobA9HXfx3Ag7eS9VcntrGttR82Q27Ay8SFaXD02raSCjWdHrqFKySvF0FXicJOiNcrXUsExY7Uj2uapptdqzmr0TzRQ4Viz+lHNofjIF4+OpSxfooZ8/pOtk4t+wlJaYXOxzKmPQ0fI3y5a/VbX8VLT83QSTJ/wf8sYPBuoGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9idMguzR90FJoaREqmBZM0q4KJgQcW6lNLDtYSooxZhhLY1tEmhGjUV0TvC30S7LuL6Trfkt/oSM7luLEeZRuqoVe9865595zZnIAGbhfwQIfER66jAI8DBVYdR146ruU2Bz3RdHljKJwxLiTgXs2i6gAgJUc5GzmB4wSKsIcvErzsRDc7UWCIJ85bt+V0CsSd8hGyKVIMOYJN4AsZJNwLgZUYE2MAwKvU6QBoYS79qZExPYxCgNCnHVYx/45iemlQJYFhGMR889ix0FfsBeRWRsbvs9cQfyw6BCbjUGW3UjxPcZlHsAafD/RyFfBsVbsnGg95jlasY+9kBQ0m8ksraiNhhJHK2iuwJ5rJ2HW60ehjQVJV4Sy/WMihpxFg2HyV0h8CSMRIuoQ7kkS8yWTbhqe/E9Ufl2kMq/OZfKV2udrOla1ZqrNRr2tfm629uNX1TCaNUs3TFWbFK5DETxKQd4ehkTtbI04DsKu2mdcPcLU9Tys1mIl392As8imqy22Yy9rZ8AJoddCVDgeqHm1wlmgMiqYGptJlU8JQ0PJzd9cLKLAs9RfdhQK5iOKfQK/r8o663pO5M3eXvnD+4//rusuIWoV+z7hSxUuXHLV8sYX1RoTz2Oj62U3j116adoZeHllEHLDEw858ryRe241t2RUcUyOcO4ZVGk3SkatjOrNlg7fOtrZaV+ySO5np/aNljs7Zbe5SUJ052D4LnJ3FXiS8IvvyGof6LBm7tcaCjxaDNUq8Pyg3mijXV03dQtVS4aht9As90GSK5vUobA9HXfx3Ag7eS9VcntrGttR82Q27Ay8SFaXD02raSCjWdHrqFKySvF0FXicJOiNcrXUsExY7Uj2uapptdqzmr0TzRQ4Viz+lHNofjIF4+OpSxfooZ8/pOtk4t+wlJaYXOxzKmPQ0fI3y5a/VbX8VLT83QSTJ/wf8sYPBuoGAAA=
+      Chance: 40
+    '60':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UW2sTQRQ+bWpJItYL6oOiDCsExdDqkxBKIU22NjSXkl0rIYRhujtJhu7OLLOzxlDyKvhL+uxfqM/+FX+Ds0mzadr0Ir64D3s7Z77znfN9M1mAFNwtE0UOqAyZ4AD3wzQsMxce+4xTR5KuKjApOA4HQropuOOIiCsAWMpC1hF+IDjlKszCi1k+UUqyw0hR7AuXdZmGXtK4fTHAjGMlhKdYABnIJOFsDJiGFTUMKLycIfUop5I56xqROEc4DCh1V2GV+GckxlcaMiKgkqiYf4a4Lv5CvIhO2ljzfcEU9cOCSx0xBF12bYbvCanzAFbg+7FBvypJjEL72DgUnmsUusQLad5whM4yCsagr3GMvMEU8ZiThMVhNwodouhsRajbP6KqL0XU6yd/lcbXMBoh4i6VniYxXTLqzMKj/4nKr/NUptWlTr5U+2xN296tWKhRr7bQ50ZzL35FtVqjYps1Cxmj/FUoSkYzkNefQoraGwNJgrCDukKiA8KZ5xFUiZV8cw3OPJuOMd+Os6idnqSUXwlRlqSHcqgsRYAEVwLFZkL6qWF4qLn56/NF0vBk5i8nCpXwMSc+hd+XZZ10PSXyamen9P7dh3/XdZtSZAWUyIUC5y+YanHf82INqeeJwdWqW0eMXxh2Cp5fmoPe79TDrj5u9JZLZRdMKo7pCU4tg8uterFWKeFqo2nCt7ZxetLVLJL76YlzreNOT8RNZtIQnSkYuY3anTQ8SvjFd2y39k1YsfYq9TQ8mA9VyvB0v1pv4W3TtEwbW/tmsYknqfeSVN2jCW83x9MunNlgK+clOm5ujENbKEcno07Bs2Rx6ZNlN2q41iibVVwu2sV4tml4mCSY9dJusW5bsNzW3LO7lt1sTUqSY8NSJNYr/tRTaHy0lJDDsUXn2OGfP7TldOJfkNR+GJ3vcqxh0DZy12uWu1Gy3Fix3O3U0qf7H+uJ+nPmBgAA
+      Items:
+      - Data:H4sIAAAAAAAA/81UW2sTQRQ+bWpJItYL6oOiDCsExdDqkxBKIU22NjSXkl0rIYRhujtJhu7OLLOzxlDyKvhL+uxfqM/+FX+Ds0mzadr0Ir64D3s7Z77znfN9M1mAFNwtE0UOqAyZ4AD3wzQsMxce+4xTR5KuKjApOA4HQropuOOIiCsAWMpC1hF+IDjlKszCi1k+UUqyw0hR7AuXdZmGXtK4fTHAjGMlhKdYABnIJOFsDJiGFTUMKLycIfUop5I56xqROEc4DCh1V2GV+GckxlcaMiKgkqiYf4a4Lv5CvIhO2ljzfcEU9cOCSx0xBF12bYbvCanzAFbg+7FBvypJjEL72DgUnmsUusQLad5whM4yCsagr3GMvMEU8ZiThMVhNwodouhsRajbP6KqL0XU6yd/lcbXMBoh4i6VniYxXTLqzMKj/4nKr/NUptWlTr5U+2xN296tWKhRr7bQ50ZzL35FtVqjYps1Cxmj/FUoSkYzkNefQoraGwNJgrCDukKiA8KZ5xFUiZV8cw3OPJuOMd+Os6idnqSUXwlRlqSHcqgsRYAEVwLFZkL6qWF4qLn56/NF0vBk5i8nCpXwMSc+hd+XZZ10PSXyamen9P7dh3/XdZtSZAWUyIUC5y+YanHf82INqeeJwdWqW0eMXxh2Cp5fmoPe79TDrj5u9JZLZRdMKo7pCU4tg8uterFWKeFqo2nCt7ZxetLVLJL76YlzreNOT8RNZtIQnSkYuY3anTQ8SvjFd2y39k1YsfYq9TQ8mA9VyvB0v1pv4W3TtEwbW/tmsYknqfeSVN2jCW83x9MunNlgK+clOm5ujENbKEcno07Bs2Rx6ZNlN2q41iibVVwu2sV4tml4mCSY9dJusW5bsNzW3LO7lt1sTUqSY8NSJNYr/tRTaHy0lJDDsUXn2OGfP7TldOJfkNR+GJ3vcqxh0DZy12uWu1Gy3Fix3O3U0qf7H+uJ+nPmBgAA
+      Chance: 40
+    '61':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81UXWsTQRS9bWpJItYPUERRhhWCQmz1SQilkCZbG5ovuttqCGGY7E6SIbs7y+ysaSh5FfwlffYv1Gf/i+AfcDZpNk2bfogv5mGzyb333HPvOTNpgATcLRJJDqkIGPcA7gdJWGY2PHGZRy1BOjLHBPewz6w+OaIJuGPx0JMAsJSGtMVdn3vUk0EaXswqiJSCtUNJsctt1mEKfEkh9/gAMw9Lzh3JfEhBKg6nI8AkrMihT+HlDKlLPSqYta4QidXHgU+pvQqrxD0jMf4kIcV9KoiMJkgR28ZfiBPSySBrrsuZpG6Qs6nFh6Dars3wHS5UHsAKfDvW6JEURMs1j7U2d2wt1yFOQLOaxVWWltMGPYWjZTUmicOsOMzbnTCwiKSzikCN36eyJ3jY7cX/SoWvYBRC6NlUOIrEtGTUmoVH/xOVn+epTLsLlXyp91lN09wtGahWLTfQp9r+XvSKKpVaydQrBtJG2atQpAhnIK8PAoqaGwNB/KCFOlygQ+IxxyGoFCn55hqceTYtbX4ca9E4XUGpdyVEUZAuyqCi4D7inuQoMhNS3wrGCxQ3d32+SRIez/xlhYHkLvaIS+HXZVknU0+JvNrZKbx/9+Hfdd2mFNUnB3ahxNkLtlo8+bxcQ+o4fHC17kafeRfWnYDnlzahTjx1sK2uHHX3/E4v2FUUUzucmgYXG9V8pVTA5dq+Dl+b2ulJR7GIn6cn1rWeOz3hN9lJQbSmYOQ2ereS8CjmFz2x2ajrsGLslapJeDAfKhXhab1cbeBtXTd0E9dLhb38Zx1Pku/FyWpKHd5ujvedO7PCVsY5p+Xmxji4hTJ0su4EPIvLCweGWavgSq2ol3Exb+aj/SbhYZygVwu7+appwHJT8U/vGuZ+Y9JUnQpDkkiz6KfaRO2jIbkYjo06xw//+K6MpxL/iqZyxej8pGMl/aaWuV65zI3CZca6ZW6nmbrl/wCBU+oD8AYAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/81UXWsTQRS9bWpJItYPUERRhhWCQmz1SQilkCZbG5ovuttqCGGY7E6SIbs7y+ysaSh5FfwlffYv1Gf/i+AfcDZpNk2bfogv5mGzyb333HPvOTNpgATcLRJJDqkIGPcA7gdJWGY2PHGZRy1BOjLHBPewz6w+OaIJuGPx0JMAsJSGtMVdn3vUk0EaXswqiJSCtUNJsctt1mEKfEkh9/gAMw9Lzh3JfEhBKg6nI8AkrMihT+HlDKlLPSqYta4QidXHgU+pvQqrxD0jMf4kIcV9KoiMJkgR28ZfiBPSySBrrsuZpG6Qs6nFh6Dars3wHS5UHsAKfDvW6JEURMs1j7U2d2wt1yFOQLOaxVWWltMGPYWjZTUmicOsOMzbnTCwiKSzikCN36eyJ3jY7cX/SoWvYBRC6NlUOIrEtGTUmoVH/xOVn+epTLsLlXyp91lN09wtGahWLTfQp9r+XvSKKpVaydQrBtJG2atQpAhnIK8PAoqaGwNB/KCFOlygQ+IxxyGoFCn55hqceTYtbX4ca9E4XUGpdyVEUZAuyqCi4D7inuQoMhNS3wrGCxQ3d32+SRIez/xlhYHkLvaIS+HXZVknU0+JvNrZKbx/9+Hfdd2mFNUnB3ahxNkLtlo8+bxcQ+o4fHC17kafeRfWnYDnlzahTjx1sK2uHHX3/E4v2FUUUzucmgYXG9V8pVTA5dq+Dl+b2ulJR7GIn6cn1rWeOz3hN9lJQbSmYOQ2ereS8CjmFz2x2ajrsGLslapJeDAfKhXhab1cbeBtXTd0E9dLhb38Zx1Pku/FyWpKHd5ujvedO7PCVsY5p+Xmxji4hTJ0su4EPIvLCweGWavgSq2ol3Exb+aj/SbhYZygVwu7+appwHJT8U/vGuZ+Y9JUnQpDkkiz6KfaRO2jIbkYjo06xw//+K6MpxL/iqZyxej8pGMl/aaWuV65zI3CZca6ZW6nmbrl/wCBU+oD8AYAAA==
+      Chance: 40
+    '62':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9id1guzR90FJoaRlUMC2YpF0VTAg4tlKb+BEiJcUYM4ylsS0izYjRqK4J3hb6JVn3F9J1v6W/0JEdS3HiPEo31UKve+fcc+85MzmAFNyvEEmOqAgczgAeBhlYdWx46jmMWoL0ZdERnOFgxIWdgnsWD5kEgJUc5Czu+ZxRJoMcvEryiZTC6YWSYo/bTt9R0CsKd8hH2GFYcu5Kx4csZONwLgLMQFqOfQqvE6QBZVQ41oZCJNYxDnxK7TVYI945iemVgSz3qSAy4p8lto2/EDekszbWPY87knpB0aYWH4Mqu57gu1yoPIA0fD/R6FcpiFbsnGg97tpasU/cgBY0i6ssraiNhgpHK2iOJK5jxWHe64eBRSRNVgSq/WMqh4KHg2H8Vyp8BaMQQmZT4SoS8yWTbhKe/E9Ufl2kMq8uVPKV2udrOma1ZqBWs95Gn1sHe9ErajRaNVNvGEibFK5DkSJMQN4eBhR1NkeC+EEX9blAR4Q5rktQLVLy3Q04i2y62mI71rJ2BoJSdi1ERZAByqOK4D7iTHIUmQmpp4JhgeLmbSwWycCzxF9WGEjuYUY8Cr+vyjrrek7kze5u+cP7j/+u6w6lyLDGckiXKly45KrljS+qNaauy0fXy24cO+zStFPw8sog1IanLrbVeaP2XDq3ZFRRTI1w7hlcaTdLjVoZ11sHOnzraGenfcUivp+dWjda7uyU3+YmBdGdg5G7yN3NwJOYX3THZntfh7SxV2tm4NFiqFaB5/v1Zhvv6Lqhm9got82qjme5D+Jc1aQOha3puIvnRtjOu4mSW5vT2DbK09mwU/AiXl0+NMxWAzdaFb2OKyWzFE03A4/jBL1ZrpaapgGrHcU+VzXMg/asZu9EMySJFIs+1RxanwzJxXjq0gV6+OcP5TqV+DcslSUmF/ucyuh3tPzNsuVvVS0/FS1/N8HUCf8H07LFauoGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9id1guzR90FJoaRlUMC2YpF0VTAg4tlKb+BEiJcUYM4ylsS0izYjRqK4J3hb6JVn3F9J1v6W/0JEdS3HiPEo31UKve+fcc+85MzmAFNyvEEmOqAgczgAeBhlYdWx46jmMWoL0ZdERnOFgxIWdgnsWD5kEgJUc5Czu+ZxRJoMcvEryiZTC6YWSYo/bTt9R0CsKd8hH2GFYcu5Kx4csZONwLgLMQFqOfQqvE6QBZVQ41oZCJNYxDnxK7TVYI945iemVgSz3qSAy4p8lto2/EDekszbWPY87knpB0aYWH4Mqu57gu1yoPIA0fD/R6FcpiFbsnGg97tpasU/cgBY0i6ssraiNhgpHK2iOJK5jxWHe64eBRSRNVgSq/WMqh4KHg2H8Vyp8BaMQQmZT4SoS8yWTbhKe/E9Ufl2kMq8uVPKV2udrOma1ZqBWs95Gn1sHe9ErajRaNVNvGEibFK5DkSJMQN4eBhR1NkeC+EEX9blAR4Q5rktQLVLy3Q04i2y62mI71rJ2BoJSdi1ERZAByqOK4D7iTHIUmQmpp4JhgeLmbSwWycCzxF9WGEjuYUY8Cr+vyjrrek7kze5u+cP7j/+u6w6lyLDGckiXKly45KrljS+qNaauy0fXy24cO+zStFPw8sog1IanLrbVeaP2XDq3ZFRRTI1w7hlcaTdLjVoZ11sHOnzraGenfcUivp+dWjda7uyU3+YmBdGdg5G7yN3NwJOYX3THZntfh7SxV2tm4NFiqFaB5/v1Zhvv6Lqhm9got82qjme5D+Jc1aQOha3puIvnRtjOu4mSW5vT2DbK09mwU/AiXl0+NMxWAzdaFb2OKyWzFE03A4/jBL1ZrpaapgGrHcU+VzXMg/asZu9EMySJFIs+1RxanwzJxXjq0gV6+OcP5TqV+DcslSUmF/ucyuh3tPzNsuVvVS0/FS1/N8HUCf8H07LFauoGAAA=
+      Chance: 40
+    '63':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/81Uy2rbQBS9iZNguzR90GxaWoQKpi0maVcFEwKOpTQmlh0iJcUYM51IY3uINCNGo7omeFvol2TdX0jX/ZT+Q0d2LMeJ84BuqoVe9865595zZvIAGXhgYImPiIgoZwCPoiwsUg+eBZQRV+COLFHBGYr6XHgZWHZ5zCQALOQh7/Ig5IwwGeXh5TQfSynocSwJCrhHO1RBLyjcHu8jypDk3Jc0hBzk0nA+AczCkhyEBF5NkbqEEUHddYWI3RMUhYR4K7CCgwsSoysLOR4SgWXCP4c9D33FfkzGbawGAaeSBFHJIy4fgCq7OsX3uVB5AEvw41Qn36TAeql1qh9z39NLHexHpKi7XGXpJb3fUzh6UacS+9RNw/y4E0culmS6IlLtnxDZEzzu9tK/UuErGIUQM48IX5GYLBm2p+Hh/0Tl92Uqk+pCJV+rfbGm5exWba1RrzW1z42DveRVs6xG1TEtW9OHxZtQpIinIG8OI6K1NvoCh1Fb63ChHWFGfR9r1UTJt7fgzLJp67PtuPPa6QpC2I0QhsBdraAZgocaZ5JriZk09VQwLFLcgvXZIllYm/rLjSPJA8RwQODPdVnHXU+IvN7ZqXx4//Hfdd0mRLOwS+bqW7ziqfltz2o1IL7P+zeLbp9QdmXWGXhxbQxquxMfeeq0UTtuOT9nUElMDXDiGGQ062WrWkG1xoEJ31v6+VlHsUjv52furYY7P+N3eUlBtCdg+D5it7PwNOWX3JHT3Ddhyd6r1rPweDZUNWBtv1Zvom3TtE0HWeWKicaZD9NM1aIJ7zZHwy5dmGCr4E9U3NwYRba0AhkPOgPP07WVQ9tpWMhqGGYNGWWnnEw2C0/SBLNe2S3XHRsWW4p5ftd2Dprjil9OdVviRK3kU82g8cmWXAxG/pwhh379VH5TiffnqMwwvNzjSMCwpRduF6xwp16FkVyF+0mlTva/zDOwieIGAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/81Uy2rbQBS9iZNguzR90GxaWoQKpi0maVcFEwKOpTQmlh0iJcUYM51IY3uINCNGo7omeFvol2TdX0jX/ZT+Q0d2LMeJ84BuqoVe9865595zZvIAGXhgYImPiIgoZwCPoiwsUg+eBZQRV+COLFHBGYr6XHgZWHZ5zCQALOQh7/Ig5IwwGeXh5TQfSynocSwJCrhHO1RBLyjcHu8jypDk3Jc0hBzk0nA+AczCkhyEBF5NkbqEEUHddYWI3RMUhYR4K7CCgwsSoysLOR4SgWXCP4c9D33FfkzGbawGAaeSBFHJIy4fgCq7OsX3uVB5AEvw41Qn36TAeql1qh9z39NLHexHpKi7XGXpJb3fUzh6UacS+9RNw/y4E0culmS6IlLtnxDZEzzu9tK/UuErGIUQM48IX5GYLBm2p+Hh/0Tl92Uqk+pCJV+rfbGm5exWba1RrzW1z42DveRVs6xG1TEtW9OHxZtQpIinIG8OI6K1NvoCh1Fb63ChHWFGfR9r1UTJt7fgzLJp67PtuPPa6QpC2I0QhsBdraAZgocaZ5JriZk09VQwLFLcgvXZIllYm/rLjSPJA8RwQODPdVnHXU+IvN7ZqXx4//Hfdd0mRLOwS+bqW7ziqfltz2o1IL7P+zeLbp9QdmXWGXhxbQxquxMfeeq0UTtuOT9nUElMDXDiGGQ062WrWkG1xoEJ31v6+VlHsUjv52furYY7P+N3eUlBtCdg+D5it7PwNOWX3JHT3Ddhyd6r1rPweDZUNWBtv1Zvom3TtE0HWeWKicaZD9NM1aIJ7zZHwy5dmGCr4E9U3NwYRba0AhkPOgPP07WVQ9tpWMhqGGYNGWWnnEw2C0/SBLNe2S3XHRsWW4p5ftd2Dprjil9OdVviRK3kU82g8cmWXAxG/pwhh379VH5TiffnqMwwvNzjSMCwpRduF6xwp16FkVyF+0mlTva/zDOwieIGAAA=
+      Chance: 40
+    '64':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22RSUvEQBCFS2fUTIRRBBEUQXKeEZeMS04iHjx68hpqOhXT2EvoVFwQ/7S/wIpbBO1TQ/HeV/VeDDCA1StkvKXQaO8A1poIFnUB21Y7UgFLzlSF2lnUJq/IWOIBLCnfOgaAhRhi5W3tHTluYtjtVcgc9Lxlyq0vdKkFMILRzz/u1BEM+bkm2Opld+QoaLWPwfqwDMtoO9QFfL4IRr6mgNztOsKiyB/QtPS58n7vktIpKTU7mtJxSdP08Ph0epaeHEzTtJgdleqkPD8sBd4YzzCsCIvOevPXyW3D3uYOLUH2kihvfEiy5LHSTMkk0YxGqyQr0TQ0SZieWKaXsklpRLJ3/ZFT8jqAnT+ekgCZvJDMJfy3+B9qN4th46adC+Syvb/XfNtdKc2sOHrymdy6Pv+GfZUCEMO4t5LsbQSRRZY00cBGPwpUCMbRgnRd+cdcu5y9N6xryWCllt4oOBh/kH4okv07yFBXXy0CAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/22RSUvEQBCFS2fUTIRRBBEUQXKeEZeMS04iHjx68hpqOhXT2EvoVFwQ/7S/wIpbBO1TQ/HeV/VeDDCA1StkvKXQaO8A1poIFnUB21Y7UgFLzlSF2lnUJq/IWOIBLCnfOgaAhRhi5W3tHTluYtjtVcgc9Lxlyq0vdKkFMILRzz/u1BEM+bkm2Opld+QoaLWPwfqwDMtoO9QFfL4IRr6mgNztOsKiyB/QtPS58n7vktIpKTU7mtJxSdP08Ph0epaeHEzTtJgdleqkPD8sBd4YzzCsCIvOevPXyW3D3uYOLUH2kihvfEiy5LHSTMkk0YxGqyQr0TQ0SZieWKaXsklpRLJ3/ZFT8jqAnT+ekgCZvJDMJfy3+B9qN4th46adC+Syvb/XfNtdKc2sOHrymdy6Pv+GfZUCEMO4t5LsbQSRRZY00cBGPwpUCMbRgnRd+cdcu5y9N6xryWCllt4oOBh/kH4okv07yFBXXy0CAAA=
+      Chance: 20
+    '65':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22RW0vDQBCFR6s1jVBBFAVRJM9WehNrH0SqP8CnvobJZmoX9xI2Ey+Iv9o/4KRiW9B9Wjic+ebMiQEasPuAjFMKpfYOYK+MYFPncGa1IxVwxmM1R+0sapOqOZVcGGRqwLbylWMA2IghVt4W3pHjMobTlROZg84qptT6XM+0QFrQWv7j2h3BFr8XBEcr2xM5ClpdYrA+NKGJtkbdHcPiRdDyBQXket8W5nn6gqain7Uv1+Dd0U2/Oxx2+qPhVWdImepkeb/XGfQGhNejXq/bvRZ4aTxLmDpZPftwLXdVsrepQ0tw+5Eob3xIxsnrXDMlF4lmNFol4xmaki4SpjcWdSKrzIxYzu+Xx0o+G3DyZ66cgUyay/Glha/4H3KtxbD/WGUCmlTPz5qndVSpaMfRmx9L4IPsF7jWDkAM7dU4KcFGEFlRgkYD+yspUC4oRxtS/Ny/ptql7L1hXcgtdgopkIKD9oK2JEkJ3y0B60I6AgAA
+      Items:
+      - Data:H4sIAAAAAAAA/22RW0vDQBCFR6s1jVBBFAVRJM9WehNrH0SqP8CnvobJZmoX9xI2Ey+Iv9o/4KRiW9B9Wjic+ebMiQEasPuAjFMKpfYOYK+MYFPncGa1IxVwxmM1R+0sapOqOZVcGGRqwLbylWMA2IghVt4W3pHjMobTlROZg84qptT6XM+0QFrQWv7j2h3BFr8XBEcr2xM5ClpdYrA+NKGJtkbdHcPiRdDyBQXket8W5nn6gqain7Uv1+Dd0U2/Oxx2+qPhVWdImepkeb/XGfQGhNejXq/bvRZ4aTxLmDpZPftwLXdVsrepQ0tw+5Eob3xIxsnrXDMlF4lmNFol4xmaki4SpjcWdSKrzIxYzu+Xx0o+G3DyZ66cgUyay/Glha/4H3KtxbD/WGUCmlTPz5qndVSpaMfRmx9L4IPsF7jWDkAM7dU4KcFGEFlRgkYD+yspUC4oRxtS/Ny/ptql7L1hXcgtdgopkIKD9oK2JEkJ3y0B60I6AgAA
+      Chance: 20
+    '66':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22RS0vDUBCFR6s1jaBQFBcqSNZtqdYaW1yIuHThym2YJJP24n2Em4kPxF/tH3BStRX0ri4MZ74z54QALdi+RcYH8pVyFmC3CmBd5XBklKXMY8HTbI7KGlQ60TSbKTurWrCZudoyAKyFEGbOlM6S5SqE45UOmb1Ka6bEuFwVShAd6Cz/YaMOYINfS4KDlWxGlrzKBuiN821oo2lQ13uweAF0XEkeuXHbwTxPnlDX9GV68Mt0MRqfntFlH+Nx3D/H8WU/jUfUH8bDIU0mWXxBqcAr7Rg25K6qWb3/S19X7Exi0RBcvUWZ085H0+h5rpiiXqQYtcqiaYG6ol7E9MIyvREnhRbJyd13UtF7Cw7/bJUMSCe55C4FfIT/cJtZCN37OhXMTf34qPihuVPa2bL04qZybTf9wS2LAQhhZ7VM8jcBBAZZEkUN3dXIUy4gS2vS+Nw9J8om7JxmVUoOW6V0R97CzoK15Ej+n7xe2t0zAgAA
+      Items:
+      - Data:H4sIAAAAAAAA/22RS0vDUBCFR6s1jaBQFBcqSNZtqdYaW1yIuHThym2YJJP24n2Em4kPxF/tH3BStRX0ri4MZ74z54QALdi+RcYH8pVyFmC3CmBd5XBklKXMY8HTbI7KGlQ60TSbKTurWrCZudoyAKyFEGbOlM6S5SqE45UOmb1Ka6bEuFwVShAd6Cz/YaMOYINfS4KDlWxGlrzKBuiN821oo2lQ13uweAF0XEkeuXHbwTxPnlDX9GV68Mt0MRqfntFlH+Nx3D/H8WU/jUfUH8bDIU0mWXxBqcAr7Rg25K6qWb3/S19X7Exi0RBcvUWZ085H0+h5rpiiXqQYtcqiaYG6ol7E9MIyvREnhRbJyd13UtF7Cw7/bJUMSCe55C4FfIT/cJtZCN37OhXMTf34qPihuVPa2bL04qZybTf9wS2LAQhhZ7VM8jcBBAZZEkUN3dXIUy4gS2vS+Nw9J8om7JxmVUoOW6V0R97CzoK15Ej+n7xe2t0zAgAA
+      Chance: 20
+    '67':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22S0UrkQBBFyx1XM1lQEGURESTPjohkM5N5ksEP2CdfQyWpOI3dXaFTWWdZ/By/0B+w4rBmwe2nhuLeU31vxwAT+HaHgvcUOsMe4LCL4Iup4dQZT1XARpbVGo13aGxRMks3ga8V914AYCeGuGLXsicvXQznowhFgil7ocJxbRqj/lOYftzjQR3BrvxuCb6PsgfyFEx1hcFx2IM9dAPqFrYngim3FFCGVadY18UvtD1tN74aXfKsztKbNJvV1/NqluLixyxf3KSzebrIaJ7l+XVeKryzLLDbEMmQw/God7gpanT4QAp9ieDknzD6TtgVHh1B/iep2HJIlsnT2ggll4kRtKZKlg3aji4ToY3odKVLNlYlF6shweR5AmefLDUbsooV1G1e4/9Ah1kMRz/7Uhmr/vHRyP3wfq1s39OGl5rCYfmXtW0LIIaD0UlLcRFEDkVjRgtH4yhQrRRPO/oH1vxUGF8IsxXTau77rRZKwcPBO+gDovm8AXRcZ81FAgAA
+      Items:
+      - Data:H4sIAAAAAAAA/22S0UrkQBBFyx1XM1lQEGURESTPjohkM5N5ksEP2CdfQyWpOI3dXaFTWWdZ/By/0B+w4rBmwe2nhuLeU31vxwAT+HaHgvcUOsMe4LCL4Iup4dQZT1XARpbVGo13aGxRMks3ga8V914AYCeGuGLXsicvXQznowhFgil7ocJxbRqj/lOYftzjQR3BrvxuCb6PsgfyFEx1hcFx2IM9dAPqFrYngim3FFCGVadY18UvtD1tN74aXfKsztKbNJvV1/NqluLixyxf3KSzebrIaJ7l+XVeKryzLLDbEMmQw/God7gpanT4QAp9ieDknzD6TtgVHh1B/iep2HJIlsnT2ggll4kRtKZKlg3aji4ToY3odKVLNlYlF6shweR5AmefLDUbsooV1G1e4/9Ah1kMRz/7Uhmr/vHRyP3wfq1s39OGl5rCYfmXtW0LIIaD0UlLcRFEDkVjRgtH4yhQrRRPO/oH1vxUGF8IsxXTau77rRZKwcPBO+gDovm8AXRcZ81FAgAA
+      Chance: 20
+    '68':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22RT0vDQBDFR6s1jWCxIIIiSM6ttLQ0pScpHjx66jVMshOzuH/CZmJbxE/tF3BjxQi6p4Vh3m/eeyFAB04fkHFNrpLWAPSrAA6lgCstDWUOc15mBUqjUaqkIKWJO3Cc2dowAByEEGZWl9aQ4SqEm3YLmZ1Ma6ZEWyFz6QE96P38w2Y7gCPelQSX7dozGXIyu0OnretCF3WDuof9C6BnS3LIza09FCJ5RVXT/uS7ViWeopiKfDyifCpGs3gSj9I8nY/isaB4MSGxwLmHV8oyHBWEopG++GW5rtjqxKAmmL1FmVXWRctoU0imaBhJRiWzaJmjqmgYMW3ZT1dEt49fCUXvHbj+o+a9k0qET9vH/hH+w2tmIQye6tTLr+qXF8nrxp/v5MTQ1i69y/NSmV1KVBF/9wEQwlmr5WPXAQQa2QeJCgbtyJHwHEMHvubCbhJpErZWsSy9/ZPSV0bOQP8L1WJ87p9rH7RXKQIAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/22RT0vDQBDFR6s1jWCxIIIiSM6ttLQ0pScpHjx66jVMshOzuH/CZmJbxE/tF3BjxQi6p4Vh3m/eeyFAB04fkHFNrpLWAPSrAA6lgCstDWUOc15mBUqjUaqkIKWJO3Cc2dowAByEEGZWl9aQ4SqEm3YLmZ1Ma6ZEWyFz6QE96P38w2Y7gCPelQSX7dozGXIyu0OnretCF3WDuof9C6BnS3LIza09FCJ5RVXT/uS7ViWeopiKfDyifCpGs3gSj9I8nY/isaB4MSGxwLmHV8oyHBWEopG++GW5rtjqxKAmmL1FmVXWRctoU0imaBhJRiWzaJmjqmgYMW3ZT1dEt49fCUXvHbj+o+a9k0qET9vH/hH+w2tmIQye6tTLr+qXF8nrxp/v5MTQ1i69y/NSmV1KVBF/9wEQwlmr5WPXAQQa2QeJCgbtyJHwHEMHvubCbhJpErZWsSy9/ZPSV0bOQP8L1WJ87p9rH7RXKQIAAA==
+      Chance: 20
+    '69':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22RQU/CQBCFR0Fs64GEaDwYE9MzJYIQoCdDPHj0xLWZdqewobvbbKcKMf4cf59/wa0k9qB72uTte9/M2wCgAxdPyLgmW0mjAfqVB6dSQF9JTZnFnOMSS7IdOMtMrRkATgIIMqNKo0lzFcBt+xSZrUxrpkQZIXPpUn3wf+9B4/agy4eS4Lq1bUiTldkIrTK2Bz1UDeoRjscD37gJkJsBfRQiecWipuOcozZlNl8uH/LJLFrgOI2m47mIlhPMo1zk93k6EQshMgevCsPQ3RKKZvvL1q9wnwhUuCEH/fTgqpWyumKjEo2KYPoeZqYwNozDt61kCoehZCxkFsY5FhUNQ6Y9O3VFdPdMhSIOPzpw8yfN1UKFIzICdL+Cf3iNFsDgpU5d/Kre7SSvm9XdH51r2pvYFTAoC31IUqKKONn+4JrSvgGfvLCy2wEAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/22RQU/CQBCFR0Fs64GEaDwYE9MzJYIQoCdDPHj0xLWZdqewobvbbKcKMf4cf59/wa0k9qB72uTte9/M2wCgAxdPyLgmW0mjAfqVB6dSQF9JTZnFnOMSS7IdOMtMrRkATgIIMqNKo0lzFcBt+xSZrUxrpkQZIXPpUn3wf+9B4/agy4eS4Lq1bUiTldkIrTK2Bz1UDeoRjscD37gJkJsBfRQiecWipuOcozZlNl8uH/LJLFrgOI2m47mIlhPMo1zk93k6EQshMgevCsPQ3RKKZvvL1q9wnwhUuCEH/fTgqpWyumKjEo2KYPoeZqYwNozDt61kCoehZCxkFsY5FhUNQ6Y9O3VFdPdMhSIOPzpw8yfN1UKFIzICdL+Cf3iNFsDgpU5d/Kre7SSvm9XdH51r2pvYFTAoC31IUqKKONn+4JrSvgGfvLCy2wEAAA==
+      Chance: 20
+    '70':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22R3UrDQBCFR6ttGkGhIAqiSK5taVoV2yupPoBXvQ3TzdQu7k/YTLQivrUP4KSCKeheLRxmvjnnxAAtOHhExjmFUnsHcFRGsKtzuLDakQq45KlaoXYWtcnUikouDDK1YF/5yjEA7MQQK28L78hxGcN5M4nMQS8qpsz6XC+1QLrQ/f3H9XQEe/xeEJw0Y8/kKGg1wGB9aEMbbY26P4XNi6DrCwrI9b1dzPPsFU1FP2cPtuB36Xio8rw/Gd2M+tdpiv1JOlF9davGo2F6c4vXI4GXxrOYqZ3Vu4+3fFcle5s5tAR3H4nyxodkmrytNFNylWhGo1UyXaIp6SphWrOoM6LLh9+Yks8WnP3ZKAGQyXKJXfL/iv9h1loMvadqIYhZ9fKieV6blHI6jtZ+KlaPC+PeF0Ql8VYxADEcNvskfxtBZEUJGg30GilQLixHO9L5yr9l2mXsvWFdSAydQrqj4OBog2tQUsA3zk4IGjYCAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/22R3UrDQBCFR6ttGkGhIAqiSK5taVoV2yupPoBXvQ3TzdQu7k/YTLQivrUP4KSCKeheLRxmvjnnxAAtOHhExjmFUnsHcFRGsKtzuLDakQq45KlaoXYWtcnUikouDDK1YF/5yjEA7MQQK28L78hxGcN5M4nMQS8qpsz6XC+1QLrQ/f3H9XQEe/xeEJw0Y8/kKGg1wGB9aEMbbY26P4XNi6DrCwrI9b1dzPPsFU1FP2cPtuB36Xio8rw/Gd2M+tdpiv1JOlF9davGo2F6c4vXI4GXxrOYqZ3Vu4+3fFcle5s5tAR3H4nyxodkmrytNFNylWhGo1UyXaIp6SphWrOoM6LLh9+Yks8WnP3ZKAGQyXKJXfL/iv9h1loMvadqIYhZ9fKieV6blHI6jtZ+KlaPC+PeF0Ql8VYxADEcNvskfxtBZEUJGg30GilQLixHO9L5yr9l2mXsvWFdSAydQrqj4OBog2tQUsA3zk4IGjYCAAA=
+      Chance: 20
+    '71':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22RzUvDQBDFR6ttGkHBDzyoIDlbaaUpticpHj148ho2m2m7dD/C7sRWxP/aP8BJlUbQPS0M837z3osBWnDwKEi8oA/KWYCjEMGuKuDSKIvSixlN5EIoa4TSmcb5XNl5aMG+dJUlANiJIZbOlM6ipRDDVbMniLzKK8LMuELNFCO60N3+43o7gj16KxHOm7U5WvRK3gpvnG9DW5ga9XAKmxdB15XoBdXXdkVRZK9CV/h99G2jMk4LKe/TWW/QH9z1huNhv5ff59hLx+l4NJCDvJ+OGB60I9hjX6GWPvtlugrkTGaFQRi9J9Jp55NJsloowuQmUSS0kslkJnTAm4RwTTydIl4//WSUfLTg4o8eu0edFZw4R/8Z/0OsZzEcP1c5A6bVcqnopXbIvXQsrt2EfZ6U2r7liAFp2wlADIeNGkdvIoiMIA5TaDhuRh4LJlnc4bIXbpUpm5FzmlTJEXRKrg29haMNrAFx9l+LYV67LwIAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/22RzUvDQBDFR6ttGkHBDzyoIDlbaaUpticpHj148ho2m2m7dD/C7sRWxP/aP8BJlUbQPS0M837z3osBWnDwKEi8oA/KWYCjEMGuKuDSKIvSixlN5EIoa4TSmcb5XNl5aMG+dJUlANiJIZbOlM6ipRDDVbMniLzKK8LMuELNFCO60N3+43o7gj16KxHOm7U5WvRK3gpvnG9DW5ga9XAKmxdB15XoBdXXdkVRZK9CV/h99G2jMk4LKe/TWW/QH9z1huNhv5ff59hLx+l4NJCDvJ+OGB60I9hjX6GWPvtlugrkTGaFQRi9J9Jp55NJsloowuQmUSS0kslkJnTAm4RwTTydIl4//WSUfLTg4o8eu0edFZw4R/8Z/0OsZzEcP1c5A6bVcqnopXbIvXQsrt2EfZ6U2r7liAFp2wlADIeNGkdvIoiMIA5TaDhuRh4LJlnc4bIXbpUpm5FzmlTJEXRKrg29haMNrAFx9l+LYV67LwIAAA==
+      Chance: 20
+    '72':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/22R3UojQRCFy40/kxF0kV1ERJC5NiExumtytQQfwCtvh0pPjWns7hp6akyC7OPsG+4DWGNgZ0H7qqE456s6JwXoweE9Cj5SrC0HgOM6gS+2gDNvA5mIpczMEm3waF2+YJa6B3uGmyAAsJNCathXHChIncJFJ0KRaBeNUO65sKVV/z70//3TVp3ArmwqgtNO9kSBojVDjJ7jPuyjb1G/YPsS6HNFEaVdtY9Fkb+ga2i78bBzuaURXZdoBqPp9Ofgxkwmg7vi5m5QjEdT/HE9KcmMFV47FtgtiaTN4Vun97jOC/T4RAr9k8D3/8JoamGfB/QEk9fMsOOYzbLV0gplV5kVdNZksxJdTVeZ0Fp0Oie6nLfZZb97cP7BTFMhp0BB3eNv+gmunaVw8tAs1H3ePD9beWwv17IOAq15pvd/rVzYLIhqkm1RACkcdVbah08g8SiaMDo46UaRCsUE2tH6l7zKbciF2YmtNPKDSrukGOD4ndRRNJs3qayZfUECAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/22R3UojQRCFy40/kxF0kV1ERJC5NiExumtytQQfwCtvh0pPjWns7hp6akyC7OPsG+4DWGNgZ0H7qqE456s6JwXoweE9Cj5SrC0HgOM6gS+2gDNvA5mIpczMEm3waF2+YJa6B3uGmyAAsJNCathXHChIncJFJ0KRaBeNUO65sKVV/z70//3TVp3ArmwqgtNO9kSBojVDjJ7jPuyjb1G/YPsS6HNFEaVdtY9Fkb+ga2i78bBzuaURXZdoBqPp9Ofgxkwmg7vi5m5QjEdT/HE9KcmMFV47FtgtiaTN4Vun97jOC/T4RAr9k8D3/8JoamGfB/QEk9fMsOOYzbLV0gplV5kVdNZksxJdTVeZ0Fp0Oie6nLfZZb97cP7BTFMhp0BB3eNv+gmunaVw8tAs1H3ePD9beWwv17IOAq15pvd/rVzYLIhqkm1RACkcdVbah08g8SiaMDo46UaRCsUE2tH6l7zKbciF2YmtNPKDSrukGOD4ndRRNJs3qayZfUECAAA=
+      Chance: 20
+# Only uncomment this if using HeadDatabase by Arcaniax
+# Skull: "7129"

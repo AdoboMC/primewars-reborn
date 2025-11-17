@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.191.150.232
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753422888968
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753424095674
+  login: 1753420074917
+money: '132436.38608844140802641'
+last-account-name: TheBreaking
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 605.6238319159584
+  y: 94.5
+  z: 555.2170524611429
+  yaw: 42.72740936279297
+  pitch: -14.735220909118652
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 386.37994359558496
+  y: 70.875
+  z: -143.63852095090414
+  yaw: -49.004852294921875
+  pitch: 9.570280075073242

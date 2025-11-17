@@ -1,0 +1,43 @@
+location: Philippines:448.423:83.000:-1171.445
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&5&l:🌋 &f&lWelcome to God Valley &5&l🌋'
+    height: 0.3
+  - content: '&bDeep within the heart of the Primewars realm lies God Valley — a sacred
+      and deadly battleground where only'
+    height: 0.3
+  - content: '&bthe strongest survive. Here, players will face relentless challenges,
+      slay powerful bosses, and conquer brutal'
+    height: 0.3
+  - content: '&barena floors to &clevel up &band &crank up &bin one unified, glorious
+      ascent.'
+    height: 0.3
+  - content: '&e&L\/'
+    height: 0.3
+  - content: '&e&L\/'
+    height: 0.3
+  - content: '&e&l|'
+    height: 0.3
+  - content: '&d⚔ &7&oFight Epic Bosses: Each floor houses a unique boss with special
+      abilities, deadly attacks, and rare loot.'
+    height: 0.3
+  - content: '&a📈 &7&oLevel Up Instantly: Clearing a boss grants you experience and
+      levels tailored to your class.'
+    height: 0.3
+  - content: '&e🏆 &7&oAutomatic Rank Up: Defeating the boss of a floor not only boosts
+      your level but also advances your player rank, unlocking new perks, gear access,
+      and areas.'
+    height: 0.3
+  - content: '&4&l🎁 &7&oIncredible Drops: Gain access to powerful weapons, armor,
+      and rare materials after each victory.'
+    height: 0.3
+  - content: '&0&l🔓 &7&oProgressive Challenge: The deeper you go, the stronger the
+      enemies—and the greater the rewards.'
+    height: 0.3
+  actions: {}

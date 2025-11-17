@@ -1,0 +1,16 @@
+# # Credits to @Aternos_
+animations:
+  wave:
+    mm-id: wave-emote
+    duration: 60
+    traversal: true
+    loop: false
+    permission: animcore.emote.wave
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Wave
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+# License Number: 7e8cb57e-3ad5-46e9-8f05-514e3f124cd1

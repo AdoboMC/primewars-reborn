@@ -1,0 +1,29 @@
+LastUpdated: 1763288199912
+VotingPlugin:
+  VoteShopConverted: true
+  AutoCachePlaceholders:
+  - total_alltime
+  - top_daily_position
+  - top_week_position
+  - top_month_position
+  AutoCacheUpdated: true
+  Version: '1.21.1-2329-803bf62 (MC: 1.21.1)'
+  ServiceSites:
+  - Empty
+  - Minecraft-MP.com
+  - TopMinecraftServers
+  - MCSL
+  - Minecraft.Buzz
+  - Minelist.net
+  VoteParty:
+    Total: 1
+    Voted:
+    - bec2c86d-c953-3f41-8618-dad95ff9351c
+  LastVoteParty: 258
+  DisabledReminders: []
+PluginVersions:
+  VotingPlugin: 6.18.7
+Month: NOVEMBER
+PrevWeek: 47
+PrevDay: 16
+IgnoreTime: false

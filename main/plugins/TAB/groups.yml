@@ -1,0 +1,21 @@
+Player:
+  tabprefix: '&0&l[&7&lPlayer&0&l] %essentials_afk% &3'
+  tagprefix: '&2&lPlayer &3'
+example_group:
+  header:
+  - This is an example of per-group header/footer
+  footer:
+  - applied to a group
+_DEFAULT_:
+  tabprefix: '%luckperms-prefix%'
+  #tabprefix: '&7[&r%lands_land_name%&7]&r %luckperms-prefix%'
+  tagprefix: '&6Lvl. &l&a%mmocore_level% &e&l%mmocore_class% &f'
+  customtabname: '%player% %essentials_afk%'
+  tabsuffix: '%deluxetags_tag%'
+  #tabsuffix: '%luckperms-suffix%'
+  tagsuffix: '%luckperms-suffix%'
+per-world:
+  world1:
+    Owner:
+      tabprefix: '&0&l[&a&lOwner&0&l] &a'
+      tagprefix: '&2&lOwner &a'

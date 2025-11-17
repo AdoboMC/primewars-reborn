@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.29.111.128
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752290743259
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752291052667
+  login: 1752287491658
+money: '1249.0000837624738601'
+last-account-name: Divineeeee
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 581.5616524838642
+  y: 94.0
+  z: 785.2402542457469
+  yaw: 163.116455078125
+  pitch: 16.87139892578125
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 577.7238164439894
+  y: 95.0
+  z: 730.4262740006726
+  yaw: 0.23419189453125
+  pitch: 6.627992153167725

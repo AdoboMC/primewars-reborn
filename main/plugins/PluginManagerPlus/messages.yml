@@ -1,0 +1,24 @@
+request:
+  failed: "&cCould not complete the requested action. \nResponse: &e%s"
+  kick-reason: '&c%s has been disabled, which is a whitelisted plugin.'
+  prevent-join: '&cOne or more of whitelisted plugins has been disabled'
+plugins:
+  refreshed: '&aSuccessfully refreshed the plugins folder. '
+  enable: '&e&l%s &ahas been enabled successfully'
+  disable: '&e&l%s &ahas been disabled successfully'
+  reloaded: "&e&l%s &ahas been reloaded successfully. \nResponse: &e%s"
+  description: '&b&lDescription: '
+  disable-associated: "&aSuccessfully disabled %s out of %s plugins associated \n\
+    with this plugin."
+  whitelist-add: '&e%s has been successfully added to the whitelist'
+  whitelist-remove: '&c%s has been successfully removed from the whitelist'
+common:
+  undefined: '&e - Not defined'
+  invalid-args: '&cCould not recognize the argument pattern. '
+commands:
+  fail-register: '&cFailed to register the %s command'
+  fail-unregister: '&cFailed to unregister the %s command'
+  register: '&aSuccessfully registered the %s command'
+  unregister: '&aSuccessfully unregistered the %s command'
+user:
+  opening: '&aOpening the requested data inventory.'

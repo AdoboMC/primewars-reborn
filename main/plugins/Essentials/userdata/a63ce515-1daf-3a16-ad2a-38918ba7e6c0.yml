@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.82.16
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752896770854
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754720603561
+  login: 1754720559240
+money: '216.9368190289127282'
+last-account-name: Ex1st
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 20.123903403987793
+  y: 67.0
+  z: 5.206192906515256
+  yaw: -76.50006103515625
+  pitch: 3.600010871887207
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -359.233770840065
+  y: 92.0625
+  z: -304.1830466599448
+  yaw: -60.097381591796875
+  pitch: 8.558155059814453

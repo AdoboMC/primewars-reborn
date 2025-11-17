@@ -1,0 +1,26 @@
+location: Philippines:-394.518:92.000:-398.576
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&8&lSpawner Crate'
+    height: 0.3
+  - content: '&eRight-Click to Open Left-Click to Preview.'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&3Obtained at &9Crates Trade'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&7&lTier: Legendary'
+    height: 0.3
+  actions: {}

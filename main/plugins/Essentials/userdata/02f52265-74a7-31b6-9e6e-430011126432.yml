@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 143.44.165.120
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752984426962
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752984772882
+  login: 1752980905610
+money: '27.2984302187668991'
+last-account-name: Tinola
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.7383681922221
+  y: 93.0
+  z: -305.0224595802029
+  yaw: 137.39993286132812
+  pitch: -30.450021743774414
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 423.6958372648945
+  y: 67.0
+  z: -14.287470458528732
+  yaw: -77.30465698242188
+  pitch: 37.50013732910156

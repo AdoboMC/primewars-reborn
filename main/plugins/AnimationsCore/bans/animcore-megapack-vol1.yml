@@ -1,0 +1,44 @@
+# # Credits to @Aternos_
+animations:
+  delivery_animation:
+    mm-id: delivery_anim_ban
+    permission: animcore.ban.delivery_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Delivery Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+  drill_animation:
+    mm-id: drill_anim_ban
+    permission: animcore.ban.drill_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Drill Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+  bubble_animation:
+    mm-id: bubble_anim_ban
+    permission: animcore.ban.bubble_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Bubble Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+  paper_animation:
+    mm-id: paper_anim_ban
+    permission: animcore.ban.paper_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Paper Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+
+# License Number: 84c92cd9-03c7-4478-a2d4-0bcb3ea36df3

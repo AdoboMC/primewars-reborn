@@ -1,0 +1,174 @@
+# Download it here: https://black-minecraft.com/resources/1753/
+# Configuration for BeastTokens by MrAxeTv
+# Plugin use intended for MC 1.7 - 1.20+
+Options:
+#Update notifications on join enable/disable
+ UpdateNotifications: true
+# MySQL, File, and TokenEnchant are supported database drivers.
+# When you are changing drive restart server don t use /reload or /token reload
+ Drive: File
+# Amount of tokens that player starts with.
+ StartingAmount: 0
+#Max amount of tokens which player can have.
+ MaxAmount: 10000000000
+#Allow decimal amount(Admin will still be able to set decimal amount to player if this feature is disabled!)
+ DecimalAmount: true
+#Format for balance placeholder '#' will not show digits which are 0
+#For example if balance of player is 2000.000  it will not show zeros after "." in case balance is 2000.05 it will be shown normally!
+ BalanceFormat: ###,##0.##
+#Minimal amount to make transaction
+ MinimumPayAmount: 1.0
+# Enable token drops from Mobs/Block/Farming.
+ TokenDrops:
+#Player Token Drops
+  Player:
+   Enabled: false
+#Mobs Token Drops
+  Mobs:
+   Enabled: false
+#Mining Token Drops
+  Mining:
+   Enabled: false
+#Farming Token Drops
+  Farming:
+   Enabled: false
+#Fishing Token Drops
+  Fishing:
+   Enabled: false
+#MythicMobs Token Drops
+  MythicMobs:
+   Enabled: false
+#Disallow placing tokens into enderchest!
+ DisallowEnderChest: false
+# Main command shows player balance
+ MainCmdBalance: false
+ #MySql Connection Information
+ #To turn MySql on you need to change "Drive: MYSQL" on top of config!!!!!!
+ MySQL:
+  Host: localhost
+  Port: 3306
+  Database: DataName
+  User: UserName
+  Password: '1234'
+  Table-name: "BeastTokens"
+  UseSSL: false
+  # You can specify driver for database current default is 'com.mysql.jdbc.Driver'(5.x.x)
+  #Versions:
+  #Mysql 5.x.x - Driver: "com.mysql.jdbc.Driver"
+  #Mysql 8.x.0 - Driver: "com.mysql.cj.jdbc.Driver"
+  Driver: "com.mysql.jdbc.Driver"
+  # These settings apply to the MySQL connection pool.
+  # - The default values will be suitable for the majority of users.
+  # - Do not change these settings unless you know what you're doing!
+ Pool-settings:
+   # Sets the maximum size of the MySQL connection pool.
+   # - Basically this value will determine the maximum number of actual
+   #   connections to the database backend.
+   # - More information about determining the size of connection pools can be found here:
+   #   https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing
+  Maximum-pool-size: 8
+
+   # Sets the minimum number of idle connections that the pool will try to maintain.
+   # - For maximum performance and responsiveness to spike demands, it is recommended to not set
+   #   this value and instead allow the pool to act as a fixed size connection pool.
+   #   (set this value to the same as 'maximum-pool-size')
+  Minimum-idle: 5
+
+   # This setting controls the maximum lifetime of a connection in the pool in milliseconds.
+   # - The value should be at least 30 seconds less than any database or infrastructure imposed
+   #   connection time limit.
+  Maximum-lifetime: 1800000 # 30 minutes
+
+   # This setting controls the maximum number of milliseconds that the plugin will wait for a
+   # connection from the pool, before timing out.
+  Connection-timeout: 5000 # 5 seconds
+
+  #Auto save tokens to database on specified delay(Time unit are seconds).
+ AutoSave:
+   Enabled: true
+   BroadcastMessage: true
+   Delay: 300
+ #This will sync amount of tokens for servers which are connected to mysql in case you update amount of tokens for player which
+  # is on other server in your network.
+  #You need to install BeastTokens in Bungee plugins to!
+ ProxySync:
+  # Wont work if you are not using Mysql Drive!
+  Enabled: false
+  #Server name recommend using names from Bungee
+  Server: "Factions"
+  #Bungee Ip address
+  Ip: 0.0.0.0
+  # Port which is set in VelocityHook bconfig.yml on Proxy server!
+  Port: 5026
+ #Commands Aliases!
+ Aliases:
+  #Player command aliases!
+   Player: [ tokens, btoken, btokens]
+  #Admin command aliases!
+   Admin: [beasttokenadmin,bta,beasttokensadmin,beasttokens]
+#Fallow all transactions with tokens.
+ DataLogs:
+  Enabled: true
+#Track token drops from mobs.
+  LogMobDrops: false
+#Track token drops from mining.
+  LogBlockDrops: false
+#Track token drops from farming.
+  LogFarmingDrops: false
+  #Track withdraws / deposits done by players.
+  LogWithdraw-Deposits: true
+#This can be intense task so keep in mind if you have a lot of players keep delay bigger.
+ BalanceTop:
+  #BalanceTop list update delay time in seconds!
+  Update: 300
+  # Update balance top when player joins server could be intense on CPU.
+  UpdateOnJoin: true
+  #Update on command /tokens baltop!
+  UpdateOnCommand: true
+WithdrawItem:
+ Item: PLAYER_HEAD
+ NBT-tag: "bTokens"
+ #Works on 1.14+
+ CustomModelData: 0
+ #Enable custom name over item when it is dropped on floor works with 1.8+ versions...
+ Hologram:
+  Enabled: true
+  Name: "&4&lPrime&b&lTokens &6&lx%tokens%"
+ #Item glow
+ Glow: true
+ #Drop to the floor if inventory is full
+ FullInventoryDropFloor: true
+ #Custom skins for head can be found at https://minecraft-heads.com
+ #This will work if item is set to PLAYER_HEAD material!
+ #You can remove 'SkullName' in that case server will take head from player which did token withdraw!
+ SkullName: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDI1MzczY2M1MjQ2YjUyYzVhYTJhYWE3YmZhYzYxYzAyMGIyYTBmYzAzOTQxNjIzNzIzYjExNDBiNzFmZTQ1YyJ9fX0="
+ Player:
+   Name: "&4&lPrime&b&lTokens &7(Right-Click)"
+   Lore:
+    - "&dValue:&r %tokens%"
+    - "&dSigner:&r %player%"
+ Server:
+   Name: "&4&lPrime&b&lTokens &7(Right-Click)"
+   Lore:
+    - "&dValue:&r %tokens%"
+    - "&dSigner:&r Beast Tokenizer"
+ Sounds:
+  Redeem:
+   Enabled: true
+   Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Withdraw:
+   Enabled: true
+   Sound: ENTITY_MAGMA_CUBE_SQUISH
+ Limits:
+   Min: 25
+   Max: 1000000
+   MaxStockSize: 64
+Sign:
+ Title: "[&4&lB&b&lT&0]"
+ Buy: "&2Buy Tokens"
+ AmountColor: "&9"
+ CostCurrency: "&5$"
+ OpenShop: "&2Click Here"
+#Config version (PLEASE DO NOT EDIT)
+ConfigVersion: 4.0
+ 

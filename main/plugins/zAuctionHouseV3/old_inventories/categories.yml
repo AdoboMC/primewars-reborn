@@ -1,0 +1,112 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&f<shift:-12> %nexo_zauction_category%'
+size: 36
+
+patterns:
+  - "zauctionhouse_decoration"
+  - "zauctionhouse_decoration_sign"
+
+
+items:
+  
+  back:
+    type: BACK
+    slot: 0
+    item:
+      material: nexo:auction_empty_slot
+      name: "#cf3932← ᴀᴜᴄᴛɪᴏɴ ᴍᴇɴᴜ"
+       lore:
+         - "          #92bed8ʙᴀᴄᴋ"
+         - "          #8c8c8c&m      "
+         - ""
+         - "                                   "
+  block:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: blocks
+    item:
+      material: nexo:auction_empty_slot
+      name: '&f'
+      lore:
+        - "                       #92bed8ʙʟᴏᴄᴋs"
+        - "                         #8c8c8c&m     "
+        - ""
+        - " #e6fff3ᴛʜᴇʀᴇ ᴀʀᴇ #ffacd5%zauctionhouse_category_item_blocks% #e6fff3ɪᴛᴇᴍs ɪɴ ᴛʜᴇ ʙʟᴏᴄᴋ ᴄᴀᴛᴇɢᴏʀʏ "
+        - ""
+        - "                  #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+    slot: 14
+  weapons:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: tools
+    item:
+      material: nexo:auction_empty_slot
+      name: '&f'
+      lore:
+        - "                      #92bed8ᴡᴇᴀᴘᴏɴs"
+        - "                         #8c8c8c&m     "
+        - ""
+        - " #e6fff3ᴛʜᴇʀᴇ ᴀʀᴇ #ffacd5%zauctionhouse_category_item_weapons% #e6fff3ɪᴛᴇᴍs ɪɴ ᴛʜᴇ ᴡᴇᴀᴘᴏɴs ᴄᴀᴛᴇɢᴏʀʏ "
+        - ""
+        - "                  #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+    slot: 15
+  tools:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: tools
+    item:
+      material: IRON_AXE
+      name: '&f'
+      lore:
+        - "                       #92bed8ᴛᴏᴏʟs"
+        - "                         #8c8c8c&m     "
+        - ""
+        - " #e6fff3ᴛʜᴇʀᴇ ᴀʀᴇ #ffacd5%zauctionhouse_category_item_tools% #e6fff3ɪᴛᴇᴍs ɪɴ ᴛʜᴇ ᴛᴏᴏʟs ᴄᴀᴛᴇɢᴏʀʏ "
+        - ""
+        - "                  #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+    slot: 22
+  food:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: food
+    item:
+      material: nexo:auction_empty_slot
+      name: '&f'
+      lore:
+        - "                       #92bed8ғᴏᴏᴅ"
+        - "                         #8c8c8c&m     "
+        - ""
+        - " #e6fff3ᴛʜᴇʀᴇ ᴀʀᴇ #ffacd5%zauctionhouse_category_item_food% #e6fff3ɪᴛᴇᴍs ɪɴ ᴛʜᴇ ғᴏᴏᴅ ᴄᴀᴛᴇɢᴏʀʏ "
+        - ""
+        - "                  #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+    slot: 11
+  potions:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: potions
+    item:
+      material: nexo:auction_empty_slot
+      name: '&f'
+      lore:
+        - "                      #92bed8ᴘᴏᴛɪᴏɴs"
+        - "                         #8c8c8c&m     "
+        - ""
+        - " #e6fff3ᴛʜᴇʀᴇ ᴀʀᴇ #ffacd5%zauctionhouse_category_item_potions% #e6fff3ɪᴛᴇᴍs ɪɴ ᴛʜᴇ ᴘᴏᴛɪᴏɴs ᴄᴀᴛᴇɢᴏʀʏ "
+        - ""
+        - "                  #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+    slot: 12
+  misc:
+    type: ZAUCTIONHOUSE_CATEGORIES
+    category: misc
+    item:
+      material: nexo:auction_empty_slot
+      name: '&f'
+      lore:
+        - "                   #92bed8ᴍɪsᴄᴇʟʟᴀɴᴇᴏᴜs"
+        - "                         #8c8c8c&m     "
+        - ""
+        - " #e6fff3ᴛʜᴇʀᴇ ᴀʀᴇ #ffacd5%zauctionhouse_category_item_misc% #e6fff3ɪᴛᴇᴍs ɪɴ ᴛʜᴇ ᴍɪsᴄᴇʟʟᴀɴᴇᴏᴜs ᴄᴀᴛᴇɢᴏʀʏ "
+        - ""
+        - "                  #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+    slot: 13
+

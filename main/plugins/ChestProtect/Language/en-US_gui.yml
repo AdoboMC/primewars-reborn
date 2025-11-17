@@ -1,0 +1,593 @@
+# Here you can edit all GUI menus.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/menus/gui-menus
+
+# # Credits to @Aternos_
+general:
+  all: '&aAll'
+  previous: '&8previous'
+  value:
+    none: '&cNone'
+    unlimited: '&aunlimited'
+  wYes: '&aYes'
+  now: '&aNow'
+  wNo: '&cNo'
+  online: '&aOnline'
+  disabled: '&cDisabled'
+  enabled: '&aEnabled'
+  others: Others
+common:
+  items:
+    default:
+      child_failure_page_previous:
+        name: '&4&lNo Previous Page'
+      child_failure_page_next:
+        name: '&4&lNo Next Page'
+      refresh_page_previous:
+        lore:
+        - '&8✖ &7Current: {current} / {pages}'
+        name: '&c&lPrevious Page'
+        material: ARROW
+        slots: 38
+      back:
+        lore:
+        - '&8✖ &7Go back to'
+        - '   &7{back}.'
+        name: '&c&lBack'
+        material: RED_STAINED_GLASS_PANE
+        slots: 37
+      refresh_page_next:
+        lore:
+        - '&8✖ &7Current: {current} / {pages}'
+        name: '&a&lNext Page'
+        material: ARROW
+        slots: 44
+      child_failure_noaccess_owner:
+        lore:
+        - '&cYou''re not allowed to do this.'
+        - '&7Only the protection owner {player}'
+        - '&7can do this.'
+        name: '&4&lNot Allowed'
+      child_failure_priority:
+        lore:
+        - '&cYou''re not allowed to edit players'
+        - '&cof this role. &7The role&4 {role}&c has a'
+        - '&7higher or equal priority than yours.'
+        name: '&4&lNot Allowed'
+      child_failure_noaccess:
+        lore:
+        - '&cYou''re not allowed to do this.'
+        - '&7The protection owner can give you'
+        - '&7permission to do so.'
+        name: '&4&lNot Allowed'
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        hide-tooltip: true
+        slots: 1-45
+  size: 45
+  entries: 10-36
+  auto-correct: true
+additional:
+  lands_flag_open:
+    lore:
+    - '&7Allow members of this role to open'
+    - '&7locked containers etc. in this area?'
+    name: Open Protections
+    material: CHEST
+  lands_flag_lock:
+    lore:
+    - '&7Allow members of this role to lock'
+    - '&7lock containers etc. in this area?'
+    name: Lock Objects
+    material: IRON_BARS
+gui:
+  list_protection_flags:
+    title: '&8Flags'
+    items:
+      default:
+        entry_public_insert:
+          lore:
+          - '&8✖ &7Should everyone be able to &ninsert&7 items?'
+          name: '&6&lInsert Items: {enabled}'
+          material: CHEST
+        entry_redstone:
+          lore:
+          - '&8✖ &7Should redstone signals'
+          - '   &7be allowed?'
+          name: '&6&lRedstone Signals: {enabled}'
+          material: REDSTONE
+        entry_hologram:
+          lore:
+          - '&8✖ &7Show a hologram that displays'
+          - '   &7stats about this container?'
+          name: '&6&lHologram: {enabled}'
+          material: PAPER
+        entry_public_take:
+          lore:
+          - '&8✖ &7Should everyone be able to &ntake&7 items?'
+          name: '&6&lTaking Items: {enabled}'
+          material: CHEST
+        child_failure_noaccess:
+          lore:
+          - '&7You''re not allowed to edit'
+          - '&7flags for this protection.'
+          name: '&4&lNot Allowed'
+  list_group_objects_choices:
+    title: '&8Protectables'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '&8✖ &7Add'
+          name: '&e{object}'
+          material: INHERIT
+  list_protection_players:
+    title: '&8Trusted Players'
+    items:
+      default:
+        entry_object_region:
+          lore:
+          - '&7This player is trusted through the claim'
+          - '&7that this farm is placed in. To change'
+          - '&7their role you need to trust them directly'
+          - '&7to this protection.'
+          - ''
+          - '  &8• &7Role: {role}'
+          name: '&e&l{player} &8(&7Trusted through Claim&8)'
+          material: INHERIT
+        refresh_allow-region:
+          name: '&e&lAllow Region Members'
+          lore:
+          - '&8✖ &7Should region members automatically'
+          - '   &7be trusted to this protection?'
+          - '    &8• &7Status: {status}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 41
+        trust:
+          lore:
+          - '&8✖ &7Trust a player to this protection.'
+          - '   &7Available:&3 {players} &8/&c {max}'
+          name: '&a&lTrust Player'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_object_group:
+          lore:
+          - '&7Role: {role}'
+          - '&7You can remove this player'
+          - '&7in the menu of group {group}.'
+          name: '&e{player} &8(&7from Group&8)'
+          material: INHERIT
+        child_failure_max:
+          lore:
+          - '&7You reached the maximum amount'
+          - '&7of&3 {max} &7members for this protection.'
+          name: '&4&lMax trusted Players'
+        entry_object:
+          lore:
+          - '&7Role: {role}'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7▲ Promote'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7▼ Demote'
+          name: '&e{player}'
+          material: INHERIT
+        untrust:
+          lore:
+          - '&8✖ &7Untrust a player from this protection.'
+          name: '&c&lUntrust Player'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        child_failure_group:
+          lore:
+          - '&7The player is trusted via the group'
+          - '&3{group} &7and must be edited in'
+          - '&7the group menu instead.'
+          name: '&4&lGroup'
+        child_failure_noaccess_untrust:
+          name: '&4&lNot Allowed'
+          lore:
+          - '&cYou''re not allowed to untrust players.'
+          - '&7The owner can give you permission to do so.'
+  list_settings_player:
+    title: '&8Your Settings'
+    items:
+      default:
+        child_failure_permission:
+          lore:
+          - '&cYou''re missing permission to'
+          - '&ctoggle this flag for any protection.'
+          name: '&4&lMissing Permission'
+        entry_persistent_trust:
+          lore:
+          - '&8✖ &7Keep trust, untrust and setrole'
+          - '   &7mode activated until manual deactivation?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPersistent Trust, Untrust, SetRole: {enabled}'
+          material: PLAYER_HEAD
+        entry_notifications:
+          lore:
+          - '&8✖ &7Get notifications when you'
+          - '   &7open a protection?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lNotifications: {enabled}'
+          material: PAPER
+        entry_persistent_lock:
+          lore:
+          - '&8✖ &7Click to toggle:'
+          - '   &7Keep lock and unlock mode activated'
+          - '   &7until manual deactivation?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPersistent Lock, Unlock: {enabled}'
+          material: OAK_SIGN
+        entry_auto_lock:
+          lore:
+          - '&8✖ &7Automatically lock blocks, that'
+          - '   &7can be locked, upon placement?'
+          - '   &7Unlocked: {unlocked}'
+          - '    &8• &7Automatically lock blocks, than'
+          - '      &7can be locked, upon placement?'
+          - '    &8•  &7This only works, if you have &7&cenough'
+          - '      &7&cmoney &7and you did not reach your'
+          - '      &7&cmax. amount of protections&7.'
+          name: '&6&lAuto Lock: {enabled}'
+          material: OBSERVER
+  main:
+    title: '&8Main Menu'
+    items:
+      default:
+        settings:
+          lore:
+          - '&8✖ &7Edit your personal'
+          - '   &7settings.'
+          name: '&6&lSettings'
+          material: skin:e4d49bae95c790c3b1ff5b2f01052a714d6185481d5b1c85930b3f99d2321674
+          slots: 24
+        groups:
+          lore:
+          - '&8✖ &7Manage groups to share a list of trusted'
+          - '   &7players across multiple protections.'
+          name: '&6&lGroups'
+          material: skin:fb85f99af7c50731db0f93708c248992477c90b4d2cd4d15f77457c7f49970e9
+          slots: 22
+        protections:
+          lore:
+          - '&8✖ &7View all your protected'
+          - '   &7containers and doors etc.'
+          name: '&6&lProtections'
+          material: CHEST
+          slots: 20
+        info:
+          lore:
+          - '&7Containers: &3{containers} &8/ &c{c_max}'
+          - '&7Entities: &3{entities} &8/ &c{e_max}'
+          - '&8• &7Lock objects: &e/cp lock'
+          - '  &7Unlock objects: &e/cp unlock'
+          - '&8• &7Open a protection menu:'
+          - '  &7SHIFT + LEFT CLICK at the object'
+          name: '&8> &6Information'
+          material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          slots: 26
+  protection:
+    title: '&8X: {x} Y: {y} Z: {z}'
+    items:
+      default:
+        child_failure_unlock:
+          lore:
+          - '&cYou''re not allowed to unlock'
+          - '&cthis protection. &7Only the'
+          - '&7owner&3 {owner} &7can do that.'
+          name: '&4&lNot Allowed'
+        child_failure_setting:
+          lore:
+          - '&7You''re missing permission to'
+          - '&7toggle this flag for any protection.'
+          name: '&4&lMissing Permission'
+        members:
+          lore:
+          - '&8✖ &7Manage trusted players.'
+          name: '&6&lMembers'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        flags:
+          lore:
+          - '&8✖ &7Toggle flags.'
+          - '   &7Each block type can have'
+          - '   &7different flags.'
+          name: '&6&lEdit Flags'
+          material: REDSTONE
+          slots: 15
+        name:
+          lore:
+          - '&8✖ &7Set a name for this protection.'
+          name: '&6&lName:&7 {name}'
+          material: NAME_TAG
+          slots: 17
+        delete:
+          lore:
+          - '&8✖ &7Unlock this protection.'
+          name: '&c&lUnlock'
+          material: RED_DYE
+          slots: 32
+        group:
+          lore:
+          - '&7Current: {group}'
+          - ' &8• &7Groups make player management easier'
+          - '   &7by sharing a list of trusted players'
+          - '   &7across multiple protections.'
+          - '&8✖ &3KEY Q'
+          - '   &7Remove protection from group'
+          name: '&6&lEdit Group'
+          material: skin:fb85f99af7c50731db0f93708c248992477c90b4d2cd4d15f77457c7f49970e9
+          slots: 13
+  list_group_players:
+    title: '&8{group} &7> &8Players'
+    items:
+      default:
+        trust:
+          lore:
+          - '&8✖ &7Trust a player to all protections'
+          - '   &7of this group.'
+          - '   &7Available:&3 {players} &8/&c {max}'
+          name: '&a&lTrust Player'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_max:
+          lore:
+          - '&7Your reached the maximum amount'
+          - '&7of&3 {max} &7members for this group.'
+          name: '&4&lMax trusted Players'
+        entry_object:
+          lore:
+          - '&7Role: {role}'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7▲ Promote'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7▼ Demote'
+          - '&8✖ &3KEY Q'
+          - '   &7Untrust'
+          name: '&e{player}'
+          material: INHERIT
+        untrust:
+          lore:
+          - '&8✖ &7Untrust a player from this group.'
+          - '   &7This does not untrust players from protections'
+          - '   &7that have been trusted manually to a protection.'
+          name: '&c&lUntrust Player'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+  list_group_objects:
+    title: '&8Types'
+    items:
+      default:
+        add:
+          lore:
+          - '&8✖ &7Add a protection type'
+          - '   &7to this group.'
+          name: '&a&lAdd Type'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        refresh_add_all:
+          lore:
+          - '&8✖ &7Add all protection types, that'
+          - '   &7aren''t already part of another'
+          - '   &7group.'
+          name: '&a&lAdd all unassigned Types'
+          material: skin:94c28ffb9063e63037c7c9c3a99975333254946ddfa0018996151740a5c66842
+          slots: 42
+        entry_object:
+          lore:
+          - '&8✖ &3KEY Q'
+          - '   &7Remove'
+          name: '&e{object}'
+          material: INHERIT
+        child_failure_already:
+          lore:
+          - '&cThis object is already part of'
+          - '&cthe group&4 {group}&c.'
+          - '&7Therefore it can''t be added'
+          - '&7to another group.'
+          name: '&4&lAlready in a Group'
+  action-confirm:
+    title: '&8Confirm this Action'
+    items:
+      default:
+        confirm:
+          name: '&a&lConfirm'
+          material: LIME_STAINED_GLASS_PANE
+          slots:
+          - 1-4
+          - 10-13
+          - 19-22
+          - 28-31
+          - 37-40
+        cancel:
+          name: '&c&lCancel'
+          material: RED_STAINED_GLASS_PANE
+          slots:
+          - 6-9
+          - 15-18
+          - 24-27
+          - 33-36
+          - 42-45
+        info:
+          lore:
+          - '&7Click &a&lConfirm &7to confirm or'
+          - '&c&lCancel &7to abort this action.'
+          name: '&6&lConfirm this Action'
+          material: OAK_SIGN
+          slots:
+          - 5
+          - 14
+          - 23
+          - 32
+          - 41
+  list_blocks:
+    title: '&8Protection Types'
+    items:
+      default:
+        type_shulker_box:
+          lore:
+          - '&8✖ &7View and edit all your'
+          - '   &7protected shulker boxes.'
+          name: '&6&lShulker Boxes'
+          material: SHULKER_BOX
+          slots: 24
+        type_chest:
+          lore:
+          - '&8✖ &7View and edit all'
+          - '   &7your protected chests.'
+          name: '&6&lChests'
+          material: CHEST
+          slots: 20
+        type_furnace:
+          lore:
+          - '&8✖ &7View and edit all'
+          - '   &7your protected furnaces.'
+          name: '&6&lFurnaces'
+          material: FURNACE
+          slots: 23
+        type_barrel:
+          lore:
+          - '&8✖ &7View and edit all'
+          - '   &7your protected barrels.'
+          name: '&6&lBarrels'
+          material: BARREL
+          slots: 21
+        type_door:
+          lore:
+          - '&8✖ &7View and edit all'
+          - '   &7your protected doors.'
+          name: '&6&lDoors'
+          material: OAK_DOOR
+          slots: 22
+        others:
+          lore:
+          - '&8✖ &7View and edit all the'
+          - '&7other types of protected blocks.'
+          name: '&6&lOthers'
+          material: PAPER
+          slots: 25
+  list_protection-type:
+    title: '&8Type {material}'
+    items:
+      default:
+        child_failure_unloaded:
+          lore:
+          - '&7You can''t edit entities,'
+          - '&7if their chunk isn''t loaded.'
+          name: '&4&lChunk unloaded'
+        child_failure_cost:
+          lore:
+          - '&7You need&c ${cost} &7to pay'
+          - '&7the teleportation cost.'
+          name: '&4&lNot enough Money'
+        child_failure_teleport:
+          lore:
+          - '&7You''re missing permission'
+          - '&7to do this.'
+          name: '&4&lMissing Permission'
+        entry_object:
+          lore:
+          - '&8✖ &7Edit this protection.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Teleport to this protection'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Delete this protection.'
+          - '&8• &7Chunk:'
+          - '  &7X: {chunk-x}'
+          - '  &7Z: {chunk-z}'
+          name: '&7{name}'
+          material: INHERIT
+        child_failure_bypass:
+          lore:
+          - '&cYou''re not allowed to open this'
+          - '&cmenu, &7since you''re not trusted'
+          - '&7at this protection.'
+          name: '&4&lNot Allowed'
+  list_player_groups:
+    title: '&8Groups'
+    items:
+      default:
+        child_failure_max:
+          lore:
+          - '&7You reached your maximum amount'
+          - '&7of&3 {max} &7groups.'
+          name: '&4&lMax reached'
+        child_failure_default:
+          lore:
+          - '&cThe default group can''t be deleted.'
+          name: '&4&lDefault Group'
+        entry_object:
+          lore:
+          - '&8✖ &7Edit'
+          - '&8✖ &3KEY Q'
+          - '   &7Delete'
+          name: '&6&l{group}'
+          material: PAPER
+        entry_object_default:
+          lore:
+          - '&7Protections that aren''t assigned to any group,'
+          - '&7are automatically added to this group.'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Select'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Edit'
+          name: '&a&l{group}'
+          material: PAPER
+        create:
+          lore:
+          - '&8✖ &7Create a new group.'
+          name: '&a&lCreate Group'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 41
+        entry_object_select:
+          lore:
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Select'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Edit'
+          - '&8✖ &3KEY Q'
+          - '   &7Delete'
+          name: '&6&l{group}'
+          material: PAPER
+  group:
+    title: '&8{group}'
+    items:
+      default:
+        members:
+          lore:
+          - '&8✖ &7Manage players of this group.'
+          - '   &7Players of this group will be trusted'
+          - '   &7automatically to all protections'
+          - '   &7that are part of this group.'
+          name: '&6&lPlayers'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 21
+        objects:
+          lore:
+          - '&8✖ &7Manage protection types of this group.'
+          - '   &7If you place a new protection and'
+          - '   &7the protection type is part of this group,'
+          - '   &7then the protection will be assigned'
+          - '   &7to this group automatically.'
+          - '   &8• &7You can still override this by setting'
+          - '     &7the group manually in the protection menu.'
+          name: '&6&lProtection Types'
+          material: CHEST
+          slots: 25
+physical:
+  currency:
+    name: ''
+    material: GOLD_INGOT
+common_sounds:
+  # Play a sound when the item is set in the menu.
+  set:
+    # Each item starting with [item_type]_failure_<name> will have this sound set.
+    # You can still override the "sound_set" for any item in their sections.
+    failure: entity.villager.no
+
+# License Number: a1994663-b4d8-4786-9867-d411b80d554d

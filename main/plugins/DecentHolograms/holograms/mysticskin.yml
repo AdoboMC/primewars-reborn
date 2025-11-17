@@ -1,0 +1,27 @@
+location: Philippines:-392.463:92.282:-391.512
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&5&l✨ &d&lMystic Skin Crate'
+    height: 0.3
+  - content: '&aRight-Click to Open. Left-Click to Preview.'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&cBuy a &dMystic Key &cfor only &a₱80 &cto open this crate.'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&fSupport our server by purchasing keys — every key helps keep the server
+      alive and growing!'
+    height: 0.3
+  actions: {}

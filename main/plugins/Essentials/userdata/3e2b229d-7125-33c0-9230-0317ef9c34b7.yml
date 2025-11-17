@@ -1,0 +1,58 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.151.102.48
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754322362868
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754326558686
+  login: 1754323548553
+  kits:
+    color: 1754317007592
+money: '1196206.4016716762504648'
+last-account-name: Seigo
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -389.8578792739621
+  y: 87.0
+  z: -388.84269817915197
+  yaw: -5.491177558898926
+  pitch: 10.632583618164062
+homes:
+  stoneminion:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 673.6476739978065
+    y: 93.0
+    z: 727.9941655430523
+    yaw: 149.9163818359375
+    pitch: 6.575674533843994
+  arena:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -612.9146419975126
+    y: 84.0
+    z: 170.01828466944417
+    yaw: -179.3566131591797
+    pitch: -1.1212445497512817
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 578.1618667169662
+  y: 95.0
+  z: 738.6624089217014
+  yaw: 51.524658203125
+  pitch: 2.901736259460449
+nickname: §bSeigo

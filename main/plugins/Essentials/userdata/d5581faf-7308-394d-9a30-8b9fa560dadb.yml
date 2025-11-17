@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 124.217.93.30
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1756217295279
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1756294274928
+  login: 1756294113461
+money: '70.0038043006063413'
+last-account-name: Pomelo
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 103.16868353963088
+  y: 66.0
+  z: 131.30000001192093
+  yaw: 153.75009155273438
+  pitch: -0.7500118017196655
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 593.3000000119209
+  y: 95.0
+  z: 646.3927820622267
+  yaw: -167.59979248046875
+  pitch: 10.650026321411133

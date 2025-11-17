@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 129.227.103.54
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755868612785
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755868819865
+  login: 1755868583847
+money: '0'
+last-account-name: ZeN63
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -437.79207918538543
+  y: 47.0
+  z: -295.8070607909086
+  yaw: -111.1312255859375
+  pitch: -61.95003890991211
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -571.9995493816208
+  y: 75.0
+  z: -147.1159809043566
+  yaw: -173.24273681640625
+  pitch: 6.150103569030762

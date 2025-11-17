@@ -1,0 +1,62 @@
+# === Minecraft Server Git Ignore ===
+
+# Server runtime data
+logs/
+cache/
+crash-reports/
+debug/
+usercache.json
+banned-ips.json
+banned-players.json
+ops.json
+whitelist.json
+eula.txt
+*.log
+*.log.gz
+
+# World data (optional — include only if you want a fresh world each time)
+world/
+world_nether/
+world_the_end/
+
+# Plugin data (optional — keep only configs you want to version)
+plugins/*/data/
+plugins/*/logs/
+plugins/*/backups/
+plugins/*/schematics/
+plugins/*/storage/
+plugins/*/userdata/
+plugins/*/cache/
+plugins/*/*.db
+plugins/*/*.yml.bak
+plugins/*/*.json.bak
+
+# EssentialsX specific
+plugins/Essentials/userdata/
+plugins/Essentials/backups/
+
+# Dynmap (if used)
+plugins/dynmap/web/tiles/
+plugins/dynmap/texturepacks/
+plugins/dynmap/export/
+
+# LuckPerms cache
+plugins/LuckPerms/lib/
+plugins/LuckPerms/data/
+
+# Paper/Purpur cache
+cache/
+libraries/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs/editors
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*.bak

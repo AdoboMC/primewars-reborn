@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 49.37.109.220
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753125475446
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753126144853
+  login: 1753124997195
+money: '77818.85211808698696743'
+last-account-name: Griffindyne
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 208.14217648000704
+  y: 63.0
+  z: -1073.9882924045605
+  yaw: -4.3502197265625
+  pitch: 33.900108337402344
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -375.2068866647224
+  y: 108.0
+  z: -284.86545520383294
+  yaw: 178.35052490234375
+  pitch: 36.74999237060547
+homes:
+  home:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: -260.4049714851102
+    y: 82.0
+    z: -327.0696436834304
+    yaw: 135.150390625
+    pitch: 30.599937438964844

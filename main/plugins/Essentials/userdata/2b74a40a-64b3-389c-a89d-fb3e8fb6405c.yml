@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 203.106.172.178
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1756459506635
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1756460101346
+  login: 1756457634484
+money: '805.1614093106381698'
+last-account-name: SleepyAsh436
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 251.30000001192093
+  y: -35.0
+  z: -592.7491520243046
+  yaw: 31.457763671875
+  pitch: 6.750021934509277
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 572.6557514540724
+  y: 95.0
+  z: 816.9355807942915
+  yaw: 84.251953125
+  pitch: 42.30000686645508

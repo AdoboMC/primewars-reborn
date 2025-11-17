@@ -1,0 +1,31 @@
+Discounts:
+  # #For player to use discount you will need to give them permission BeastTokens.ShopDiscount.<discount id> example: "BeastTokens.ShopDiscount.Vip"
+  Paragon:
+    # #Inside 'Shops:' category you can set in which shop will discount work 'ALL' represents all shops for specific one add their file name id
+    Shops:
+    - ALL
+    # # Type can be PERCENTAGE or FLAT(will apply specific amount off item and will have priority over PERCENTAGE discounts)
+    Type: PERCENTAGE
+    Amount: 15
+    # #In case player has access to multiple discount server will pick discount with smaller priority number!
+    Priority: 4
+  Diamond:
+    Shops:
+    - Example
+    Type: PERCENTAGE
+    Amount: 30
+    Priority: 3
+  Obsidian:
+    Shops:
+    - Example
+    Type: FLAT
+    Amount: 150
+    Priority: 2
+  Default:
+    Shops:
+    - ptools
+    Type: PERCENTAGE
+    Amount: 15
+    Priority: 1
+# #Please do not edit!
+ConfigVersion: 1.0

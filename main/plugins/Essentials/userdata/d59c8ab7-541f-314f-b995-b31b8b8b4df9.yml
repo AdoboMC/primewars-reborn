@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 122.3.167.186
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758102569784
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758102748591
+  login: 1758102550924
+money: '9694.6728091565807075'
+last-account-name: friedchicken
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -476.13619236870505
+  y: 87.0
+  z: -307.75883631670774
+  yaw: -6.643310546875
+  pitch: 17.36172866821289
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 590.050591828183
+  y: 95.0
+  z: 795.0858918261665
+  yaw: 9.849912643432617
+  pitch: 28.949975967407227
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 1.8420983728124427
+    y: 66.0
+    z: -852.1392445263895
+    yaw: 130.3800506591797
+    pitch: 20.20733642578125

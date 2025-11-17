@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 86.16.222.200
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752401505868
+  login: 1752401489118
+money: '0'
+last-account-name: reapercussions7
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 20.123903403987793
+  y: 67.0
+  z: 5.206192906515256
+  yaw: -76.50006103515625
+  pitch: 3.600010871887207
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -394.90788278348816
+  y: 92.0
+  z: -283.7139789956665
+  yaw: -69.0
+  pitch: 18.00000762939453

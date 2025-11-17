@@ -1,0 +1,34 @@
+location: world:382.427:71.200:-327.562
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&aTutorial on how to bind your &cSkills'
+    height: 0.3
+  - content: '&e1. Open the Skill menu &c/skills'
+    height: 0.3
+  - content: '&e2. Select skill &cClick on the skill you want to use'
+    height: 0.3
+  - content: '&c on the right corner you can see skill slot'
+    height: 0.3
+  - content: '&cI, II, III click the slot were you want to bind your skill'
+    height: 0.3
+  - content: '&cto &aactivate &cyour skill press &a&LF'
+    height: 0.3
+  - content: '&3&l\/'
+    height: 0.3
+  - content: '&5How to earn &6Skill-point'
+    height: 0.3
+  - content: '&cYou need to &alevel up &cby killing hostile mobs each'
+    height: 0.3
+  - content: '&alevel up &cwill give you &a1 &6Skill point'
+    height: 0.3
+  - content: '&cevery 3 level you will give you &e1 attribute-point'
+    height: 0.3
+  - content: '&a/attribute,/att &cto use your attribute-point'
+    height: 0.3
+  actions: {}

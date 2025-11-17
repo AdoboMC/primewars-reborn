@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 175.176.67.37
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752221093964
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752221260829
+  login: 1752221019701
+money: '435.5895460889381946'
+last-account-name: Bustarde
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 1135.577512001242
+  y: 79.0
+  z: -331.91568357400524
+  yaw: -33.4325065612793
+  pitch: 12.899991035461426
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -385.59493594055624
+  y: 93.0
+  z: -305.0851025486605
+  yaw: -95.84991455078125
+  pitch: 8.99998664855957
+nickname: §4§LHonoraraymanx47

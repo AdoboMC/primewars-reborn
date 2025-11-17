@@ -1,0 +1,69 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ᴇxᴘʟᴏʀᴇʀ
+open_command:
+  - jobs payouts explorer
+register_command: true
+size: 54
+items:
+  explore:
+    material: LEATHER_BOOTS
+    slot: 3
+    display_name: '%imc_primary-color_c%ᴇxᴘʟᴏʀᴇ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴅɪsᴄᴏᴠᴇʀ ᴄʜᴜɴᴋs ᴛᴏ'
+      - '%imc_dark-color_c%ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_explorer_explore'
+  trade:
+    material: EMERALD
+    slot: 5
+    display_name: '%imc_primary-color_c%ᴠɪʟʟᴀɢᴇʀ ᴛʀᴀᴅᴇ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴛʀᴀᴅᴇ ᴡɪᴛʜ ᴠɪʟʟᴀɢᴇʀs ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ'
+      - '%imc_dark-color_c%ɪᴛᴇᴍs ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_explorer_trade'
+  explore_leather_boots:
+    material: leather_boots
+    slot: 10
+    display_name: '%imc_primary-color_c%ᴅɪsᴄᴏᴠᴇʀ ᴀ ᴄʜᴜɴᴋ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ᴅɪsᴄᴏᴠᴇʀʏ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ꜰɪʀsᴛ ᴅɪsᴄᴏᴠᴇʀʏ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴇᴄᴏɴᴅ ᴅɪsᴄᴏᴠᴇʀʏ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛʜɪʀᴅ ᴅɪsᴄᴏᴠᴇʀʏ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ꜰᴏᴜʀᴛʜ ᴅɪsᴄᴏᴠᴇʀʏ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ꜰɪꜰᴛʜ ᴅɪsᴄᴏᴠᴇʀʏ'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: CYAN_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

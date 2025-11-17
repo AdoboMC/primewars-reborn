@@ -1,0 +1,12 @@
+location: Philippines:561.603:95.000:651.546
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&eSneak to enter &2Waypoint Mode'
+    height: 0.3
+  actions: {}

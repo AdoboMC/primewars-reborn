@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 160.20.107.154
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752794373464
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752794521874
+  login: 1752794131561
+money: '187.5283153020585561'
+last-account-name: HP27
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 564.4924917545779
+  y: 92.0
+  z: 645.0532456136336
+  yaw: 176.88502502441406
+  pitch: 17.447343826293945
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 208.57902230508014
+  y: 63.0
+  z: -1073.5283985212368
+  yaw: 42.424072265625
+  pitch: 6.778799057006836
+homes:
+  home:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -3462.987227443907
+    y: 68.0
+    z: -3552.2064693081343
+    yaw: 27.4222412109375
+    pitch: 20.476606369018555

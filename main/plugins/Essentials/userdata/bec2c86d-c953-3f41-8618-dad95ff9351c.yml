@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 103.171.183.61
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758097347083
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758099114844
+  login: 1758096986484
+money: '1179331.9309778690515624'
+last-account-name: SHAqyDD
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 567.3000000119209
+  y: 65.0
+  z: 343.1367692161915
+  yaw: -123.8482894897461
+  pitch: 52.149288177490234
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 812.5374621163268
+  y: 72.0
+  z: 1317.7592567655631
+  yaw: 57.17315673828125
+  pitch: 12.655396461486816
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 567.7387688337892
+    y: 65.0
+    z: 343.69999998807907
+    yaw: -16.748239517211914
+    pitch: 32.499267578125

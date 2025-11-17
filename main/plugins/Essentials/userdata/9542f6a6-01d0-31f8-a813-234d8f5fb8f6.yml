@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.3.137
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753358065105
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754037651751
+  login: 1754037551784
+money: '7.3260758135815325'
+last-account-name: TheEnderR8
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -383.072995999031
+  y: 93.0
+  z: -306.11008459492604
+  yaw: -138.45001220703125
+  pitch: -3.4500083923339844
+logoutlocation:
+  world: 3ceb653b-2e14-4f71-94be-ebdeb94cf822
+  world-name: world_the_end
+  x: -266.69999998807907
+  y: 2.0
+  z: 34.69999998807907
+  yaw: 134.33836364746094
+  pitch: 8.400010108947754

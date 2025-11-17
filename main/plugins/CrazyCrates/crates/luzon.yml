@@ -1,0 +1,279 @@
+Crate:
+  # https://docs.crazycrew.us/docs/plugins/crazycrates/misc/crate-types
+
+    # Make sure to check out the wiki for anything not explained here.
+  # https://docs.crazycrew.us/docs/category/crazycrates
+
+    # See CosmicCrate.yml or CasinoCrate.yml to see how the Cosmic/Casino CrateType works.
+  CrateType: CSGO
+  # Name of the Inventory if a GUI crate.
+  CrateName: <blue>Luzon Crate
+  # The name of the inventory that will be in the preview GUI.
+  Preview-Name: <blue>Luzon Crate Preview
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # The amount of keys required to use the crate.
+  RequiredKeys: 0
+  # Max amount of crates that can be opened at once using /crates mass-open
+  Max-Mass-Open: 10
+  # If the crate shows in the /crates.
+  # If the type is QuickCrate/CrateOnTheGo/FireCracker, They will not work as they require a Physical Crate.
+  InGUI: true
+  # Slot the item is in the GUI.
+  Slot: 14
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: true
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><blue>Luzon
+    Crate.</bold>'
+  # This section is related to commands opening when a crate is opened.
+  opening-command:
+    # If the commands should be sent or not.
+    toggle: false
+    # The commands to run when the crate opens.
+    # Supports all placeholderapi placeholders
+    # Supports %prefix which returns our prefix, %player% which uses the player name
+    commands:
+    - put your command here.
+  sound:
+    # The sound options when the animation is cycling.
+    cycle-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use.
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: block.note_block.xylophone
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when an item is clicked.
+    click-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: ui.button.click
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when a crate ends.
+    stop-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: entity.player.levelup
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+  # A default message if the prize doesn't have any Messages
+  # i.e. Messages: [] or the value isn't there.
+  Prize-Message:
+  - <gray>You have won <red>%reward% <gray>from <red>%crate%.
+  # A default command if the prize doesn't have any commands
+  # i.e. Commands: [] or the value isn't there.
+  Prize-Commands: []
+  # Item the crate is in the GUI
+  Item: emerald
+  # The custom model data of the item, -1 is disabled.
+  Custom-Model-Data: -1
+  # If the crate in the main /crates is glowing or not.
+  Glowing: false
+  # Name of the item in the GUI.
+  Name: <bold><blue>Luzon Crate</bold>
+  # The lore of the item in the GUI.
+  Lore:
+  - <gray>This crate contains strange objects.
+  - <gray>You have <gold>%keys% keys <gray>to open this crate with.
+  - '<gray>You have opened this crate: <gold>%crate_opened% times'
+  - <gray>(<yellow>!<gray>) Right click to view rewards.
+  Preview:
+    # Turn on and off the preview for this crate.
+    Toggle: true
+    # How many lines the Crate Preview should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      # Turn the glass border in the preview on and off.
+      Toggle: true
+      # The name of the border item.
+      Name: ' '
+      # The item that shows in the border. Can be glass or any other item.
+      Item: gray_stained_glass_pane
+      # The custom model data of the item, -1 is disabled.
+      Custom-Model-Data: -1
+  PhysicalKey:
+    # Name of the Key.
+    Name: <bold><blue>Luzon Crate Key</bold>
+    # Lore of the Key.
+    Lore:
+    - <gray>A special Key
+    - <gray>For a special Crate.
+    # The item the key is.
+    Item: blue_dye
+    # The custom model data of the item, -1 is disabled.
+    Custom-Model-Data: -1
+    # Makes the key look enchanted.
+    Glowing: true
+    # Settings for the holograms.
+    # Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The distance the hologram can be seen.
+    Range: 8
+    # How often should the hologram update? -1 is disabled.
+    Update-Interval: -1
+    # The background color of the hologram. It uses hex colors. This only works with CMI/FancyHolograms
+    # Set the color to transparent if you don't want any color.
+    Color: transparent
+    # The message that will be displayed above the crate.
+    # Note: MiniMessage or Color Codes being supported is depending on the 'holograms' plugin.
+    Message:
+    - <bold><green>Basic Crate</bold>
+  # All the prizes that can be obtained in the Crate.
+  # These prizes do not require any extra configuration
+  # They will give the prizes based on what's already below.
+  # See the AdvancedExample.yml for a more advanced crate.
+  Prizes:
+    '1':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDOzcxLTS5KTCuxSsrPzy7OSM1JY2ZgTc4vzSthYGAQYQAACSkawjwAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDOzcxLTS5KTCuxSsrPzy7OSM1JY2ZgTc4vzSthYGAQYQAACSkawjwAAAA=
+      Lore:
+      - '<gold>Chance: <red>60%'
+      Chance: 60
+    '17':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBwQmAMAwF0K8iiB6cxAU8O4PXEmpsAzZKmu7vezMwYDnI6WSr8iqw1gm9XNiKKEej23dlz2ziHNqXjC4OtYhn0RScy/eQ84Axvk0dQIcfCT5K4VYAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/wXBwQmAMAwF0K8iiB6cxAU8O4PXEmpsAzZKmu7vezMwYDnI6WSr8iqw1gm9XNiKKEej23dlz2ziHNqXjC4OtYhn0RScy/eQ84Axvk0dQIcfCT5K4VYAAAA=
+      Lore:
+      - '<gold>Chance: <red>55%'
+      Chance: 55
+    '2':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERYO4gbWzmDbjCom6bRMx/29NwAO40pGW9TKJQPT26PlA7NwjkHptGUvyTypFPWmLL4K28358hblSWTRoQvlywagwQ+71QlmVAAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERYO4gbWzmDbjCom6bRMx/29NwAO40pGW9TKJQPT26PlA7NwjkHptGUvyTypFPWmLL4K28358hblSWTRoQvlywagwQ+71QlmVAAAAA==
+      Lore:
+      - '<gold>Chance: <red>20%'
+      Chance: 20
+    '3':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIixcxAmsncF20oxBE53Sqft7bwACxpWctmyVtQDT26PlHbNwycno8CUpVY9kohbdWGIV9ovLGT3Lc5PngC7pVxxAgx8Z3G0RVQAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIixcxAmsncF20oxBE53Sqft7bwACxpWctmyVtQDT26PlHbNwycno8CUpVY9kohbdWGIV9ovLGT3Lc5PngC7pVxxAgx8Z3G0RVQAAAA==
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '4':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIixcxAmsncF20lA00ZnRqft7bwACxpWcNrYqOQHT26OVA7NK4t3o9KUWMY5kmi26icaq4rekKzprecg5oNvzlxxAgx+SJHKWVQAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIixcxAmsncF20lA00ZnRqft7bwACxpWcNrYqOQHT26OVA7NK4t3o9KUWMY5kmi26icaq4rekKzprecg5oNvzlxxAgx+SJHKWVQAAAA==
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '5':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0I9IhIWDuIG1M9hOGlM00Q5V9/deDzQYFgpa2V8pBoxPh1oyJhXjzWmPOX/GiVyLp3DR9KrEKXakYL0vCm7QbuWzAFDhB6nS4L1UAAAA
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0I9IhIWDuIG1M9hOGlM00Q5V9/deDzQYFgpa2V8pBoxPh1oyJhXjzWmPOX/GiVyLp3DR9KrEKXakYL0vCm7QbuWzAFDhB6nS4L1UAAAA
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '6':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERYO4gbWzmDbTKqYpNMyHXF97w2Aw7iS0Ra1csnA9PRoeccsnGNQOmz5OO2eVIp6UxZfhe3ifHqLciey6NCF8mYD0OAHDQFFeVQAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERYO4gbWzmDbTKqYpNMyHXF97w2Aw7iS0Ra1csnA9PRoeccsnGNQOmz5OO2eVIp6UxZfhe3ifHqLciey6NCF8mYD0OAHDQFFeVQAAAA=
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '7':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERYO4gbWzmDbTNpiEtMyHXF97w2Aw7iS0Za0csnA9PRoOWIWziko7bZ8pNGTSlFvyuKrsJ2cD29J7ossOXShvNkANPgBVIhz3FQAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AMBAF0E8jERYO4gbWzmDbTNpiEtMyHXF97w2Aw7iS0Za0csnA9PRoOWIWziko7bZ8pNGTSlFvyuKrsJ2cD29J7ossOXShvNkANPgBVIhz3FQAAAA=
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '8':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBsQ2DQAwF0B9OkRApMgkLpM4MtJZFHLCEfeAzBdvz3gAUvL6cPEk0rQ68jx6d/jCauszB//w08YyLOKwGZahRM81VfaEU2zdOKXjO9fQE8MANKWHm11YAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/wXBsQ2DQAwF0B9OkRApMgkLpM4MtJZFHLCEfeAzBdvz3gAUvL6cPEk0rQ68jx6d/jCauszB//w08YyLOKwGZahRM81VfaEU2zdOKXjO9fQE8MANKWHm11YAAAA=
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '9':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIizcwxGsncF20lA00RmqxPG91wAB7UhOE9stOQHdVaOUBb1K4tlo9eHlL5JptugmGm8V3yVt0VnPg5wDqjk/yQEU+AFqlspDUwAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIizcwxGsncF20lA00RmqxPG91wAB7UhOE9stOQHdVaOUBb1K4tlo9eHlL5JptugmGm8V3yVt0VnPg5wDqjk/yQEU+AFqlspDUwAAAA==
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '10':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIiwcxA2sncF20piiic7Qqft7bwACxpWcNrYqJQPT26OVhFkl8250+OKSOJJpsegmGquKX5LP6KzPTc4B3V6+7AAa/BKePDRUAAAA
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIiwcxA2sncF20piiic7Qqft7bwACxpWcNrYqJQPT26OVhFkl8250+OKSOJJpsegmGquKX5LP6KzPTc4B3V6+7AAa/BKePDRUAAAA
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '11':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIixcxAmsncF20jBooh06nft7bwACxpWctmSFswLT16PlA7Owpt3o9KVorh7JJFt0Y4lF2G/WK3qS9yFPAd2eqzqABj9e0wHQVQAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIixcxAmsncF20jBooh06nft7bwACxpWctmSFswLT16PlA7Owpt3o9KVorh7JJFt0Y4lF2G/WK3qS9yFPAd2eqzqABj9e0wHQVQAAAA==
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '12':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBwQ2DMAwF0N9GlVA5sAkDcO4MXC0rGLCEndZx9+e9N1Awfjh5lejaHJh+A566YTZ1qcF7Ll0v8SrEYS0oQ426aZ7qB6XY9+KUgldtf08AD9zjHiKBVwAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBwQ2DMAwF0N9GlVA5sAkDcO4MXC0rGLCEndZx9+e9N1Awfjh5lejaHJh+A566YTZ1qcF7Ll0v8SrEYS0oQ426aZ7qB6XY9+KUgldtf08AD9zjHiKBVwAAAA==
+      Lore:
+      - '<gold>Chance: <red>5%'
+      Chance: 5
+    '13':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0I9IhIWTuIC1M9hOmlE00ZnRqft7bwQ6TBs57WxVcgLmd0ArBxaVxNHo9LXeVNgCmWYLbqKhqvgt6QrOWh5y7tDH/CUH0OAHuSq4t1YAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0I9IhIWTuIC1M9hOmlE00ZnRqft7bwQ6TBs57WxVcgLmd0ArBxaVxNHo9LXeVNgCmWYLbqKhqvgt6QrOWh5y7tDH/CUH0OAHuSq4t1YAAAA=
+      Lore:
+      - '<gold>Chance: <red>2%'
+      Chance: 2
+    '14':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIiwcxA2sncF20jBME53Sqft7bwACxpWctmSVtQDT26PlA7NwSbvR6UvW6pFM1KIbS6zCnrlc0ZM8N3kK6Hb9igNo8AMb0sxCVAAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIiwcxA2sncF20jBME53Sqft7bwACxpWctmSVtQDT26PlA7NwSbvR6UvW6pFM1KIbS6zCnrlc0ZM8N3kK6Hb9igNo8AMb0sxCVAAAAA==
+      Lore:
+      - '<gold>Chance: <red>2%'
+      Chance: 2
+    '15':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIiycxAWsncF20oyiic7Qqft7bwACxpWcNrYqJQPT26OVHbNK5mR0+GIklS2SabHoJhqril+Sz+isz03OAV0qX3YADX4lND9pVgAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQ5AQAwF0M9EIiycxAWsncF20oyiic7Qqft7bwACxpWcNrYqJQPT26OVHbNK5mR0+GIklS2SabHoJhqril+Sz+isz03OAV0qX3YADX4lND9pVgAAAA==
+      Lore:
+      - '<gold>Chance: <red>2%'
+      Chance: 2
+    '16':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/wXBQQqDQAwF0N8OBWkXvYrrrnsGt0MYMxowGY0R8fa+9wYSPn8KGth3aQZ8tw5PGdGrGBenGr+Trio2smdybZ7DRfOuErPYlIN1XSg44VXaYQHggRvfpocYWQAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/wXBQQqDQAwF0N8OBWkXvYrrrnsGt0MYMxowGY0R8fa+9wYSPn8KGth3aQZ8tw5PGdGrGBenGr+Trio2smdybZ7DRfOuErPYlIN1XSg44VXaYQHggRvfpocYWQAAAA==
+      Lore:
+      - '<gold>Chance: <red>2%'
+      Chance: 2
+# Only uncomment this if using HeadDatabase by Arcaniax
+# Skull: "7129"

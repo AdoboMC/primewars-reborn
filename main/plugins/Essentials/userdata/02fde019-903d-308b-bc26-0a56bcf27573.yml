@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 157.51.179.181
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753127116546
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753545062105
+  login: 1753544358166
+money: '83898.433689186623758545'
+last-account-name: SkyGuy_
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 208.70985027394565
+  y: 63.0
+  z: -1077.9370897232945
+  yaw: -39.44920349121094
+  pitch: 23.69940757751465
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 207.85771447063388
+  y: 63.0
+  z: -1072.0156908041185
+  yaw: -143.99850463867188
+  pitch: 30.149368286132812
+homes:
+  home:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: -637.9246626300039
+    y: 69.0
+    z: -295.18107118988
+    yaw: -148.35336303710938
+    pitch: 9.299920082092285

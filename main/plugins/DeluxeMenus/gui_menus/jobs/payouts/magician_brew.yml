@@ -1,0 +1,206 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ᴍᴀɢɪᴄɪᴀɴ
+size: 54
+items:
+  enchant:
+    material: ENCHANTING_TABLE
+    slot: 3
+    display_name: '%imc_primary-color_c%ᴇɴᴄʜᴀɴᴛ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴇɴᴄʜᴀɴᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_magician_enchant'
+  brew:
+    material: BREWING_STAND
+    slot: 5
+    display_name: '%imc_primary-color_c%ʙʀᴇᴡ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ʙʀᴇᴡ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_magician_brew'
+  brew_nether_wart:
+    material: nether_wart
+    slot: 10
+    display_name: '%imc_primary-color_c%ɴᴇᴛʜᴇʀ ᴡᴀʀᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɴᴇᴛʜᴇʀ ᴡᴀʀᴛ'
+  brew_redstone:
+    material: redstone
+    slot: 11
+    display_name: '%imc_primary-color_c%ʀᴇᴅsᴛᴏɴᴇ ᴅᴜsᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴇᴅsᴛᴏɴᴇ ᴅᴜsᴛ'
+  brew_glowstone_dust:
+    material: glowstone_dust
+    slot: 12
+    display_name: '%imc_primary-color_c%ɢʟᴏᴡsᴛᴏɴᴇ ᴅᴜsᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʟᴏᴡsᴛᴏɴᴇ ᴅᴜsᴛ'
+  brew_fermented_spider_eye:
+    material: fermented_spider_eye
+    slot: 13
+    display_name: '%imc_primary-color_c%ꜰᴇʀᴍᴇɴᴛᴇᴅ sᴘɪᴅᴇʀ ᴇʏᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ꜰᴇʀᴍᴇɴᴛᴇᴅ sᴘɪᴅᴇʀ ᴇʏᴇ'
+  brew_gunpowder:
+    material: gunpowder
+    slot: 14
+    display_name: '%imc_primary-color_c%ɢᴜɴᴘᴏᴡᴅᴇʀ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢᴜɴᴘᴏᴡᴅᴇʀ'
+  brew_dragon_breath:
+    material: dragon_breath
+    slot: 15
+    display_name: '%imc_primary-color_c%ᴅʀᴀɢᴏɴ''s ʙʀᴇᴀᴛʜ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅʀᴀɢᴏɴ''s ʙʀᴇᴀᴛʜ'
+  brew_sugar:
+    material: sugar
+    slot: 16
+    display_name: '%imc_primary-color_c%sᴜɢᴀʀ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴜɢᴀʀ'
+  brew_rabbit_foot:
+    material: rabbit_foot
+    slot: 19
+    display_name: '%imc_primary-color_c%ʀᴀʙʙɪᴛ''s ꜰᴏᴏᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴀʙʙɪᴛ''s ꜰᴏᴏᴛ'
+  brew_glistering_melon_slice:
+    material: glistering_melon_slice
+    slot: 20
+    display_name: '%imc_primary-color_c%ɢʟɪsᴛᴇʀɪɴɢ ᴍᴇʟᴏɴ sʟɪᴄᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʟɪsᴛᴇʀɪɴɢ ᴍᴇʟᴏɴ sʟɪᴄᴇ'
+  brew_spider_eye:
+    material: spider_eye
+    slot: 21
+    display_name: '%imc_primary-color_c%sᴘɪᴅᴇʀ ᴇʏᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘɪᴅᴇʀ ᴇʏᴇ'
+  brew_pufferfish:
+    material: pufferfish
+    slot: 22
+    display_name: '%imc_primary-color_c%ᴘᴜꜰꜰᴇʀꜰɪsʜ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴜꜰꜰᴇʀꜰɪsʜ'
+  brew_magma_cream:
+    material: magma_cream
+    slot: 23
+    display_name: '%imc_primary-color_c%ᴍᴀɢᴍᴀ ᴄʀᴇᴀᴍ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɢᴍᴀ ᴄʀᴇᴀᴍ'
+  brew_golden_carrot:
+    material: golden_carrot
+    slot: 24
+    display_name: '%imc_primary-color_c%ɢᴏʟᴅᴇɴ ᴄᴀʀʀᴏᴛ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢᴏʟᴅᴇɴ ᴄᴀʀʀᴏᴛ'
+  brew_blaze_powder:
+    material: blaze_powder
+    slot: 25
+    display_name: '%imc_primary-color_c%ʙʟᴀᴢᴇ ᴘᴏᴡᴅᴇʀ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʟᴀᴢᴇ ᴘᴏᴡᴅᴇʀ'
+  brew_ghast_tear:
+    material: ghast_tear
+    slot: 28
+    display_name: '%imc_primary-color_c%ɢʜᴀsᴛ ᴛᴇᴀʀ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʜᴀsᴛ ᴛᴇᴀʀ'
+  brew_turtle_helmet:
+    material: turtle_helmet
+    slot: 29
+    display_name: '%imc_primary-color_c%ᴛᴜʀᴛʟᴇ sʜᴇʟʟ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜʀᴛʟᴇ sʜᴇʟʟ'
+  brew_phantom_membrane:
+    material: phantom_membrane
+    slot: 30
+    display_name: '%imc_primary-color_c%ᴘʜᴀɴᴛᴏᴍ ᴍᴇᴍʙʀᴀɴᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘʜᴀɴᴛᴏᴍ ᴍᴇᴍʙʀᴀɴᴇ'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: MAGENTA_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

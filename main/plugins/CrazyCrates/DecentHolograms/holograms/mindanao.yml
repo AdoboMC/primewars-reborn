@@ -1,0 +1,14 @@
+location: Philippines:-371.639:90.200:-418.365
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&lMindanao Crate'
+    height: 0.3
+  - content: '&eRight-click &7to open &eLeft-click &7to preview.'
+    height: 0.3
+  actions: {}

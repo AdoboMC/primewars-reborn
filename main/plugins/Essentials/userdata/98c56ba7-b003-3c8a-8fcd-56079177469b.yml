@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 139.135.241.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753430583120
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753435900327
+  login: 1753435887117
+money: '19403.7091536389540305'
+last-account-name: La369
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 215.40002545642355
+  y: 67.0
+  z: -886.6970066084747
+  yaw: -18.6018009185791
+  pitch: 16.34998321533203
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 704.7856025759723
+  y: 127.0
+  z: 801.5184215243781
+  yaw: 102.44792938232422
+  pitch: 7.9500226974487305
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -6.111722516940667
+    y: 64.0
+    z: -876.0961402549138
+    yaw: -151.8016357421875
+    pitch: 15.00000286102295

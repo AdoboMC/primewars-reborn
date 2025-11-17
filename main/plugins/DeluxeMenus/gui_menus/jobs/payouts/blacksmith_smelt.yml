@@ -1,0 +1,125 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ʙʟᴀᴄᴋsᴍɪᴛʜ
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 3
+    display_name: '%imc_primary-color_c%ᴄʀᴀꜰᴛ'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴄʀᴀꜰᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_blacksmith_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  smelt:
+    material: BLAST_FURNACE
+    slot: 4
+    display_name: '%imc_primary-color_c%sᴍᴇʟᴛ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%sᴍᴇʟᴛ ᴛᴏ ᴏʙᴛᴀɪɴ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ'
+      - '%imc_dark-color_c%ɪᴛᴇᴍs ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_blacksmith_smelt'
+      - '[sound] UI_BUTTON_CLICK'
+  repair:
+    material: ANVIL
+    slot: 5
+    display_name: '%imc_primary-color_c%Repair'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ʀᴇᴘᴀɪʀ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_blacksmith_repair'
+      - '[sound] UI_BUTTON_CLICK'
+  smelt_iron_ingot:
+    material: iron_ingot
+    slot: 10
+    display_name: '%imc_primary-color_c%ɪɴɢᴏᴛs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɪʀᴏɴ ɪɴɢᴏᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴘᴘᴇʀ ɪɴɢᴏᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢᴏʟᴅ ɪɴɢᴏᴛ'
+  smelt_stone:
+    material: stone
+    slot: 11
+    display_name: '%imc_primary-color_c%sᴛᴏɴᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛᴏɴᴇ'
+  smelt_green_dye:
+    material: green_dye
+    slot: 12
+    display_name: '%imc_primary-color_c%ɢʀᴇᴇɴ ᴅʏᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀᴇᴇɴ ᴅʏᴇ'
+  smelt_glass:
+    material: glass
+    slot: 13
+    display_name: '%imc_primary-color_c%ɢʟᴀss'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʟᴀss'
+  smelt_bricks:
+    material: bricks
+    slot: 14
+    display_name: '%imc_primary-color_c%ʙʀɪᴄᴋs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀɪᴄᴋs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɴᴇᴛʜᴇʀ ʙʀɪᴄᴋs'
+  smelt_netherite_scrap:
+    material: netherite_scrap
+    slot: 15
+    display_name: '%imc_primary-color_c%ɴᴇᴛʜᴇʀɪᴛᴇ sᴄʀᴀᴘ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍ:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɴᴇᴛʜᴇʀɪᴛᴇ sᴄʀᴀᴘ'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: ORANGE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

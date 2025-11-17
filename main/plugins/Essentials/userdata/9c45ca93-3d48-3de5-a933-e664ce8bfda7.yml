@@ -1,0 +1,197 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 175.176.67.89
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752677841783
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752678055796
+  login: 1752677980380
+money: '35585.2554351909574831'
+last-account-name: Minecraft
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 159.54138700901447
+  y: 67.0
+  z: 194.04849254851243
+  yaw: 31.649951934814453
+  pitch: 14.999988555908203
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -422.5054437656168
+  y: 97.71010181096723
+  z: -299.781307626892
+  yaw: -102.90011596679688
+  pitch: 17.849977493286133
+homes:
+  ash2:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 135.5
+    y: 54.0
+    z: 371.5
+    yaw: 91.65005493164062
+    pitch: 15.299951553344727
+  bahay:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 78.5
+    y: 79.0
+    z: -1040.5
+    yaw: -87.450927734375
+    pitch: 32.55002212524414
+  banditcave:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -306.69999998807907
+    y: 66.0
+    z: -1671.300000011921
+    yaw: -152.5267333984375
+    pitch: 46.64997482299805
+  boss1:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 32.5
+    y: 20.0
+    z: -222.5
+    yaw: -80.09893798828125
+    pitch: 14.40000057220459
+  dragneel:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 264.5
+    y: -60.0
+    z: 169.63648320749115
+    yaw: 170.700927734375
+    pitch: 35.54998779296875
+  howling:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: -155.5
+    y: 15.0
+    z: 134.5
+    yaw: -90.75
+    pitch: 3.5999717712402344
+  spider:
+    world: 16a1107c-a291-4a3b-abbb-6029d6309d7f
+    world-name: dungeonworld
+    x: 426.5
+    y: 53.0
+    z: -64.5
+    yaw: 116.10008239746094
+    pitch: 29.399917602539062
+  orcling:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 259.59603236118284
+    y: 104.0
+    z: 2027.6696734652057
+    yaw: -4.25030517578125
+    pitch: 23.70001983642578
+  dining:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 174.49797778812496
+    y: 69.0
+    z: -606.7449710572947
+    yaw: -17.548583984375
+    pitch: 9.299983978271484
+  vault:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 178.0386762841197
+    y: 68.76618162686148
+    z: -631.6525145688944
+    yaw: -95.098388671875
+    pitch: 31.500001907348633
+  cook:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 155.19612917739212
+    y: 69.0
+    z: -598.9947204640621
+    yaw: 98.251953125
+    pitch: 16.799997329711914
+  weaponsmith:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 165.58443140979116
+    y: 74.0
+    z: -620.2859994634839
+    yaw: -178.495849609375
+    pitch: 25.04998779296875
+  kingdom:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 170.9976718730835
+    y: 71.0
+    z: -642.082747877943
+    yaw: 49.650970458984375
+    pitch: 6.149999618530273
+  locationfishing:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -54.5
+    y: 63.0
+    z: -856.5
+    yaw: -162.7330322265625
+    pitch: 30.590408325195312
+  port:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -242.23675668470486
+    y: 66.0
+    z: -656.0524302876794
+    yaw: 36.016876220703125
+    pitch: 3.4404072761535645
+  church:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -131.49503273244642
+    y: 77.26046161590682
+    z: -1097.6760141358004
+    yaw: -112.61993408203125
+    pitch: 11.1000337600708
+  dragon:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -406.3642707120714
+    y: 100.61776025627412
+    z: -1971.3280988764477
+    yaw: 160.95008850097656
+    pitch: 25.799991607666016
+  village:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: 146.65270071945352
+    y: 68.0
+    z: -641.3680723598777
+    yaw: -162.44961547851562
+    pitch: -1.6500225067138672
+  home:
+    world: 080dab47-0061-4757-9b93-90cc9e5f524f
+    world-name: Philippines
+    x: -419.8177595074516
+    y: 89.0
+    z: -303.97950348517804
+    yaw: -105.44927978515625
+    pitch: 12.00000286102295
+powertools:
+  netherite_sword:
+  - /pos2
+  netherite_axe:
+  - /pos2
+nickname: §fMinecraft

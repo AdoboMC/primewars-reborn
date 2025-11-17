@@ -1,0 +1,42 @@
+# Clickable and hoverable text.
+website:
+  command: /website
+  type: RAW_TEXT
+  text:
+  - ' '
+  - '$OPEN_URL$ &aOpen our Webstore; &eClick for open;https://store-primewars.craftingstore.net/'
+  - ' '
+  register: true
+  tab_completer:
+  - website
+
+shortcut:
+  command: /shops
+  type: RUN_COMMAND
+  runcmd:
+  - '/shopguiplus:shopgui blocks'
+  register: true
+  permission-required: false
+
+server-compensate:
+  command: /compensate
+  type: RUN_CONSOLE
+  runcmd:
+  - '/eco give $player 1000000'
+  - '/tools give $player builder_wand 1 600'
+  - '/crates give p examplecrate 32 $player'
+  - '/crates give p bosscrate 16 $player'
+  - '/crates give p luzon 8 $player'
+  - '/crates give p visayas 8 $player'
+  - '/crates give p dailyr 5 $player'
+  - '/crates give p mystic 2 $player'
+  - '/crates give p demonic 1 $player'
+  - '/bta give $player 50'
+  - '$delay$/lp user $player permission settemp mycommand.cmd.compensate false 2w'
+  cost: 0
+  delaytimer: 3
+  delaytimer_format: SECONDS
+  register: true
+  permission-required: true
+  permission-node: mycommand.cmd.compensate
+  permission-error: "&a$player! , &2You can't use this command anymore!"

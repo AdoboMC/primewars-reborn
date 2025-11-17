@@ -1,0 +1,67 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.25.156
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758535006565
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758549299630
+  login: 1758549193016
+money: '4889207.321360301353351308'
+last-account-name: Rekshive
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2029.300000011921
+  y: 111.0
+  z: 512.5290008325929
+  yaw: 104.2559585571289
+  pitch: -12.387903213500977
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2029.5952145084188
+  y: 111.0
+  z: 512.5133587225387
+  yaw: 100.25045776367188
+  pitch: -6.957224369049072
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 356.60659404935427
+    y: 63.0
+    z: -680.9367619945463
+    yaw: 91.9049072265625
+    pitch: 10.649907112121582
+  mines:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 577.63054074911
+    y: -7.0
+    z: -539.146402391831
+    yaw: -19.95751953125
+    pitch: 15.300119400024414
+mail:
+- legacy: false
+  read: false
+  message: Hi, you have been wondering why you got the highest rank, this was suggested
+    by Seigo, and this is the Owner of Primewars, it is sad to say that I had to shutdown
+    the server temporarily due that me and Seigo is very busy at school and we can't
+    really promise to provide a new update, but no worries if there is no class we
+    will revive this again, no progress and data will be lost thanks for playing <3
+  sender-name: Console
+  sender-uuid: 'null'
+  timestamp: 1758633507523
+  expire: 0

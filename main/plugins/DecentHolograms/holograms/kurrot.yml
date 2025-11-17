@@ -1,0 +1,12 @@
+location: Philippines:-1903.370:81.000:1260.551
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&2Kur & Rot &7spawns in &f%mythic_spawner_kurrot_warmupleft%'
+    height: 0.3
+  actions: {}

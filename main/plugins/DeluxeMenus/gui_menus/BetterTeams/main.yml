@@ -1,0 +1,745 @@
+menu_title: "›› Teams %changeoutput_equals_input:{betterTeams_name}_matcher:_ifmatch:_else:• {betterTeams_Name}%"
+size: 54
+open_command:
+- team
+- teams
+items:
+  "Misc | Filler 1":
+     material: BLACK_STAINED_GLASS_PANE
+     slots:
+     - 0
+     - 8
+     - 9
+     - 17
+     - 18
+     - 26
+     - 27
+     - 35
+     - 36
+     - 44
+     - 45
+     - 53
+     priority: 10
+     display_name: "&r"
+  "Misc | Filler 2":
+     material: GRAY_STAINED_GLASS_PANE
+     slots:
+     - 1-7
+     - 46-52
+     priority: 10
+     display_name: "&r"
+  "Misc | Close":
+    material: BARRIER
+    slot: 49
+    display_name: " "
+    lore:
+    - "      &c&lCLOSE  "
+    - ""
+    - "  &7Click to close  "
+    - ""
+    priority: 9
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[close]"
+
+
+  "Main | No Teams | Create Team":
+    material: DIAMOND
+    slot: 22
+    display_name: "  "
+    lore:
+    - "            &b&lTEAM  "
+    - ""
+    - "  &7Click to &acreate &7a team  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isNotInTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'false'
+        hasNoTeams:
+          type: string equals
+          input: '%betterTeamsExtra_hasTeams%'
+          output: 'no'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team create <-a Enter a team name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the name for your team. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "Main | Teams | Create or Join Team":
+    material: DIAMOND
+    slot: 22
+    display_name: "  "
+    lore:
+    - "               &b&lTEAM  "
+    - ""
+    - "  &7Left-click to &acreate &7a team  "
+    - "   &7Right-click to &ejoin &7a team  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        isNotInTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'false'
+        hasNoTeams:
+          type: string equals
+          input: '%betterTeamsExtra_hasTeams%'
+          output: 'yes'
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team create <-a Enter a team name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the name for your team. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+    right_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team join <-a Enter team name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the name of the team you wanna join. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "Main | Disband Team":
+    material: TNT
+    slot: 4
+    display_name: " "
+    lore:
+    - "              &b&lTEAM  "
+    - ""
+    - "  &7Click to &cdisband &7this team  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[meta] set betterTeamsConfirmAction STRING disband"
+    - "[meta] set BetterTeamsConfirmActionBack STRING BetterTeamsMain"
+    - "[openguimenu] BetterTeamsConfirmAction"
+  "Main | Leave Team":
+    material: SPRUCE_DOOR
+    slot: 4
+    display_name: " "
+    lore:
+    - "            &b&lTEAM  "
+    - ""
+    - "  &7Click to &cleave &7this team  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        inTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'true'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[meta] set betterTeamsConfirmAction STRING leave"
+    - "[meta] set BetterTeamsConfirmActionBack STRING BetterTeamsMain"
+    - "[openguimenu] BetterTeamsConfirmAction"
+
+
+
+  "Quick Access | Toggle Team Chat":
+    material: REPEATER
+    slot: 9
+    display_name: " "
+    lore:
+    - "   &5&lTOGGLE TEAM CHAT  "
+    - ""
+    - "  &7You're in the &e%betterTeamsExtra_chatType% &7chat  "
+    - ""
+    - "       &7Click to toggle  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        inTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'true'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team chat"
+    - "[refresh]"
+  "Quick Access | Home":
+    material: RED_BED
+    slot: 18
+    display_name: " "
+    lore:
+    - "  &c&lTELEPORT HOME  "
+    - ""
+    - "  &8• &7World &f%betterTeamsExtra_homeLocation_world%"
+    - "  &8• &7X &f%betterTeamsExtra_homeLocation_x%"
+    - "  &8• &7Y &f%betterTeamsExtra_homeLocation_y%"
+    - "  &8• &7Z &f%betterTeamsExtra_homeLocation_z%"
+    - ""
+    - "   &7Click to teleport  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        hasHome:
+          type: string equals
+          input: '%betterTeamsExtra_hasHome%'
+          output: 'yes'
+    click_commands:
+    - "[sound] ENTITY_ENDERMAN_TELEPORT"
+    - "[player] team home"
+    - "[refresh]"
+  "Quick Access | Warp":
+    material: ENDER_PEARL
+    slot: 27
+    display_name: " "
+    lore:
+    - "  &9&lTELEPORT TO A WARP  "
+    - ""
+    - "%betterTeamsExtra_warpList%"
+    - ""
+    - "       &7Click to teleport  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        hasWarps:
+          type: string equals
+          input: '%betterTeamsExtra_hasWarps%'
+          output: 'yes'
+        hasOneWarp:
+          type: string equals
+          input: '%betterTeamsExtra_hasOneWarp%'
+          output: 'yes'
+    click_requirement:
+      requirements:
+        hasPassword:
+          type: string equals
+          input: '%betterTeamsExtra_hasPassword_0%'
+          output: 'no'
+          success_commands:
+          - "[sound] ENTITY_ENDERMAN_TELEPORT"
+          - "[player] team warp %betterTeamsExtra_warpName_0%"
+          - "[close]"
+          deny_commands:
+          - "[sound] UI_BUTTON_CLICK"
+          - "[player] team warp %betterTeamsExtra_warpName_0% <-a Enter password...>"
+          - "[message] &b&lTEAMS &8•&7 Type the warp password. Type &c'Cancel'&7 to cancel."
+          - "[close]"
+  "Quick Access | Warps":
+    material: ENDER_PEARL
+    slot: 27
+    display_name: " "
+    lore:
+    - "  &9&lTELEPORT TO A WARP  "
+    - ""
+    - "%betterTeamsExtra_warpList%"
+    - ""
+    - "       &7Click to teleport  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        hasWarps:
+          type: string equals
+          input: '%betterTeamsExtra_hasWarps%'
+          output: 'yes'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team warp <-a Enter warp name...>"
+    - "[message] &b&lTEAMS &8•&7 Enter the warp name. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+
+  "Quick Access | Toggle Ally Chat":
+    material: REPEATER
+    slot: 36
+    display_name: " "
+    lore:
+    - "   &5&lTOGGLE ALLY CHAT  "
+    - ""
+    - "  &7You're in the &e%betterTeamsExtra_chatType% &7chat "
+    - ""
+    - "       &7Click to toggle  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        hasAllies:
+          type: string equals
+          input: '%betterTeamsExtra_hasAllies%'
+          output: 'yes'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team allychat"
+    - "[refresh]"
+
+
+  "ADMIN | Manage Members":
+    material: head-%player_name%
+    slot: 20
+    display_name: " "
+    lore:
+    - "  &d&lMANAGE MEMBERS  "
+    - "    &7Promote, demote,  "
+    - "    &7kick members...  "
+    - ""
+    - "   &7Click to open menu  "
+    - ""
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Admin'
+          optional: true
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] BetterTeamsManageMembers"
+
+  "DEFAULT | Ender Chest":
+    material: ENDER_CHEST
+    slot: 21
+    display_name: " "
+    lore:
+    - "  &9&lENDER CHEST  "
+    - ""
+    - "   &7Click to &9open  "
+    - ""
+    view_requirement:
+      requirements:
+        inTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'true'
+    click_commands:
+    - "[sound] BLOCK_CHEST_OPEN"
+    - "[player] team echest"
+
+  "DEFAULT | Team Ranks ":
+    material: BOOK
+    slot: 22
+    display_name: " "
+    lore:
+    - "          &6&lTEAM RANKS  "
+    - ""
+    - "             &7&lMember"
+    - "     &7Deposit money to bank   "
+    - "     &7Visit team home/warps   "
+    - "      &7Access ender chest   "
+    - "       &7Use team/ally chat   "
+    - ""
+    - "              &e&lAdmin"
+    - "  &7Withdraw money from bank   "
+    - "    &7Set team homes/warps   "
+    - "      &7Invite new members   "
+    - "       &7Ban/kick members   "
+    - "           &7Toggle PvP   "
+    - ""
+    - "             &c&lOwner"
+    - "       &7Promote members   "
+    - "          &7Manage allies   "
+    - "         &7 & much more   "
+    - ""
+    priority: 3
+    view_requirement:
+      requirements:
+        inTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'true'
+
+  "DEFAULT | Team Bank":
+    material: SUNFLOWER
+    slot: 23
+    display_name: " "
+    lore:
+    - "         &e&lTEAM BANK  "
+    - ""
+    - "  &8• &7Current Balance &a₱%betterTeams_money%  "
+    - ""
+    - "    &7Click to deposit money  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isMember:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Default'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team deposit <-a Enter amount...>"
+    - "[message] &b&lTEAMS &8•&7 Enter an amount to deposit. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "ADMIN | Team Bank":
+    material: SUNFLOWER
+    slot: 23
+    display_name: " "
+    lore:
+    - "            &e&lTEAM BANK  "
+    - ""
+    - "  &8• &7Current Balance &a₱%betterTeams_money%  "
+    - ""
+    - "   &7Left-click to &adeposit &7money  "
+    - "  &7Right-click to &ewithdraw &7money  "
+    - ""
+    priority: 2
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Admin'
+          optional: true
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team deposit <-a Enter amount...>"
+    - "[message] &b&lTEAMS &8•&7 Enter an amount to deposit. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+    right_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team withdraw <-a Enter amount...>"
+    - "[message] &b&lTEAMS &8•&7 Enter an amount to withdraw. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+
+  "ADMIN | Control Panel":
+    material: COMPARATOR
+    slot: 24
+    display_name: " "
+    lore:
+    - "  &c&lCONTROL PANEL  "
+    - "   &7Set home, warps,  "
+    - "    &7and toggle PvP  "
+    - ""
+    - "  &7Click to open menu  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Admin'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] BetterTeamsControlPanel"
+  "OWNER | Control Panel":
+    material: COMPARATOR
+    slot: 24
+    display_name: " "
+    lore:
+    - "    &c&lCONTROL PANEL  "
+    - "  &7Change settings like  "
+    - "  &7team name, publicity,  "
+    - "   &7color, home, tag...  "
+    - ""
+    - "   &7Click to open menu  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] BetterTeamsControlPanel"
+
+
+
+
+  "OWNER | Manage Allies":
+    material: DIAMOND
+    slot: 29
+    display_name: " "
+    lore:
+    - "  &b&lMANAGE ALLIES  "
+    - ""
+    - "  &7Click to open menu  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        inTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'true'
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] BetterTeamsManageAllies"
+
+  "ADMIN | Invites | Invite a Member":
+    material: WRITABLE_BOOK
+    slot: 30
+    display_name: " "
+    lore:
+    - "    &3&lINVITE A MEMBER  "
+    - ""
+    - "    &f&lINVITED MEMBERS  "
+    - ""
+    - "%betterTeamsExtra_invitedPlayerList%"
+    - ""
+    - "  &7Click to &finvite &7a member  "
+    - ""
+    priority: 1
+    view_requirement:
+      minimum_requirements: 2
+      stop_at_success: true
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Admin'
+          optional: true
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+          optional: true
+        hasInvites:
+          type: string equals
+          input: '%betterTeamsExtra_hasInvitedPlayers%'
+          output: 'yes'
+          optional: false
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team invite <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Enter the name of the player. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "ADMIN | No Invites | Invite a Member":
+    material: WRITABLE_BOOK
+    slot: 30
+    display_name: " "
+    lore:
+    - "    &f&lINVITE A MEMBER  "
+    - ""
+    - "  &7Click to &finvite &7a member  "
+    - ""
+    priority: 2
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Admin'
+          optional: true
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team invite <-a Enter name...>"
+    - "[message] &b&lTEAMS &8•&7 Enter the name of the player. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+
+
+
+  "DEFAULT | Team Info":
+    material: OAK_SIGN
+    slot: 31
+    display_name: " "
+    lore:
+    - "    &d&lTEAM INFO  "
+    - ""
+    - "  &8• &7Name &f%betterTeams_name%  "
+    - "  &8• &7Tag &b%betterTeams_tag%  "
+    - "  &8• &7Members &9%betterTeamsExtra_memberCount%  "
+    - "  &8• &7Public &a%changeoutput_equals_input:{betterTeams_open}_matcher:true_ifmatch:&a✔_else:&c✘%  "
+    - "  &8• &7Balance &a₱%betterTeams_money%  "
+    - "  &8• &7Level &b%betterTeamsExtra_level%  "
+    - "  &8• &7Score &e%betterTeams_score%  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        inTeam:
+          type: string equals
+          input: '%betterTeams_inTeam%'
+          output: 'true'
+
+  "DEFAULT | Team Chests":
+    material: CHEST
+    slot: 32
+    display_name: " "
+    lore:
+    - "         &5&lTEAM CHESTS  "
+    - ""
+    - "%betterTeamsExtra_claimedChestList%"
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        isDefault:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Default'
+        hasClaimedChests:
+          type: string equals
+          input: '%betterTeamsExtra_hasClaimedChests%'
+          output: 'yes'
+  "ADMIN | Has Claims | Team Chests":
+    material: CHEST
+    slot: 32
+    display_name: " "
+    lore:
+    - "         &5&lTEAM CHESTS  "
+    - ""
+    - "      &e[!] &7Make sure you're  "
+    - "      &7standing on a chest!  "
+    - ""
+    - "%betterTeamsExtra_claimedChestList%"
+    - ""
+    - "   &7Left-click to &aclaim &7chest  "
+    - "  &7Right-click to &cdisclaim &7chest  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Admin'
+        hasClaimedChests:
+          type: string equals
+          input: '%betterTeamsExtra_hasClaimedChests%'
+          output: 'yes'
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team chest claim"
+    - "[close]"
+    right_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team chest remove"
+    - "[close]"
+  "ADMIN | No Claims | Team Chests":
+    material: CHEST
+    slot: 32
+    display_name: " "
+    lore:
+    - "     &5&lTEAM CHESTS  "
+    - ""
+    - "  &e[!] &7Make sure you're  "
+    - "  &7standing on a chest!  "
+    - ""
+    - "   &7Click to &aclaim &7chest  "
+    - ""
+    priority: 3
+    view_requirement:
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Admin'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team chest claim"
+    - "[close]"
+  "OWNER | Has Claims | Team Chests":
+    material: CHEST
+    slot: 32
+    display_name: " "
+    lore:
+    - "         &5&lTEAM CHESTS  "
+    - ""
+    - "      &e[!] &7Make sure you're  "
+    - "      &7standing on a chest!  "
+    - ""
+    - "%betterTeamsExtra_claimedChestList%"
+    - ""
+    - "   &7Left-click to &aclaim &7chest  "
+    - "  &7Right-click to &cdisclaim &7chest  "
+    - ""
+    - "  &7Shift-right-click to &cdisclaim  "
+    - "        &cALL &7team chests "
+    - ""
+    priority: 4
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+        hasClaimedChests:
+          type: string equals
+          input: '%betterTeamsExtra_hasClaimedChests%'
+          output: 'yes'
+    left_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team chest claim"
+    - "[close]"
+    right_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team chest remove"
+    - "[close]"
+    shift_right_click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[meta] set BetterTeamsConfirmAction STRING all chest disclaim"
+    - "[meta] set BetterTeamsConfirmActionBack STRING BetterTeamsMain"
+    - "[openguimenu] BetterTeamsConfirmAction"
+  "OWNER | No Claims | Team Chests":
+    material: CHEST
+    slot: 32
+    display_name: " "
+    lore:
+    - "      &5&lTEAM CHESTS  "
+    - ""
+    - "  &e[!] &7Make sure you're  "
+    - "  &7standing on a chest!  "
+    - ""
+    - "   &7Click to &aclaim &7chest  "
+    - ""
+    priority: 5
+    view_requirement:
+      requirements:
+        isAdmin:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team chest claim"
+    - "[close]"
+
+  "OWNER | Rankup Team":
+    material: NETHER_STAR
+    slot: 33
+    display_name: " "
+    lore:
+    - "  &3&lRANKUP TEAM  "
+    - ""
+    - "  &8• &7Level &b%betterTeamsExtra_level%  "
+    - ""
+    - "  &7Click to &3rankup  "
+    - ""
+    view_requirement:
+      requirements:
+        isOwner:
+          type: string equals
+          input: '%betterTeams_rank%'
+          output: 'Owner'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team rankup"
+    - "[close]"

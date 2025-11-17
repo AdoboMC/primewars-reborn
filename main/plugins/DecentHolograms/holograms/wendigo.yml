@@ -1,0 +1,12 @@
+location: Philippines:951.564:82.000:942.384
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&4Nightarrow Wendigo &7spawns in &f%mythic_spawner_wendigo_warmupleft%'
+    height: 0.3
+  actions: {}

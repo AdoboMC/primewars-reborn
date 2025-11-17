@@ -1,0 +1,289 @@
+Crate:
+  # https://docs.crazycrew.us/docs/plugins/crazycrates/misc/crate-types
+
+    # Make sure to check out the wiki for anything not explained here.
+  # https://docs.crazycrew.us/docs/category/crazycrates
+
+    # See CosmicCrate.yml or CasinoCrate.yml to see how the Cosmic/Casino CrateType works.
+  CrateType: CSGO
+  # Name of the Inventory if a GUI crate.
+  CrateName: <green>Visayas Crate
+  # The name of the inventory that will be in the preview GUI.
+  Preview-Name: <green>Visayas Crate Preview
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # The amount of keys required to use the crate.
+  RequiredKeys: 0
+  # Max amount of crates that can be opened at once using /crates mass-open
+  Max-Mass-Open: 10
+  # If the crate shows in the /crates.
+  # If the type is QuickCrate/CrateOnTheGo/FireCracker, They will not work as they require a Physical Crate.
+  InGUI: true
+  # Slot the item is in the GUI.
+  Slot: 13
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: true
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><green>Visayas
+    Crate.</bold>'
+  # This section is related to commands opening when a crate is opened.
+  opening-command:
+    # If the commands should be sent or not.
+    toggle: false
+    # The commands to run when the crate opens.
+    # Supports all placeholderapi placeholders
+    # Supports %prefix which returns our prefix, %player% which uses the player name
+    commands:
+    - put your command here.
+  sound:
+    # The sound options when the animation is cycling.
+    cycle-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use.
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: block.note_block.xylophone
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when an item is clicked.
+    click-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: ui.button.click
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when a crate ends.
+    stop-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: entity.player.levelup
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+  # A default message if the prize doesn't have any Messages
+  # i.e. Messages: [] or the value isn't there.
+  Prize-Message:
+  - <gray>You have won <red>%reward% <gray>from <red>%crate%.
+  # A default command if the prize doesn't have any commands
+  # i.e. Commands: [] or the value isn't there.
+  Prize-Commands: []
+  # Item the crate is in the GUI
+  Item: emerald
+  # The custom model data of the item, -1 is disabled.
+  Custom-Model-Data: -1
+  # If the crate in the main /crates is glowing or not.
+  Glowing: false
+  # Name of the item in the GUI.
+  Name: <bold><green>Visayas Crate</bold>
+  # The lore of the item in the GUI.
+  Lore:
+  - <gray>This crate contains strange objects.
+  - <gray>You have <gold>%keys% keys <gray>to open this crate with.
+  - '<gray>You have opened this crate: <gold>%crate_opened% times'
+  - <gray>(<yellow>!<gray>) Right click to view rewards.
+  Preview:
+    # Turn on and off the preview for this crate.
+    Toggle: true
+    # How many lines the Crate Preview should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      # Turn the glass border in the preview on and off.
+      Toggle: true
+      # The name of the border item.
+      Name: ' '
+      # The item that shows in the border. Can be glass or any other item.
+      Item: gray_stained_glass_pane
+      # The custom model data of the item, -1 is disabled.
+      Custom-Model-Data: -1
+  PhysicalKey:
+    # Name of the Key.
+    Name: <bold><green>Visayas Crate Key</bold>
+    # Lore of the Key.
+    Lore:
+    - <gray>A special Key
+    - <gray>For a special Crate.
+    # The item the key is.
+    Item: red_dye
+    # The custom model data of the item, -1 is disabled.
+    Custom-Model-Data: -1
+    # Makes the key look enchanted.
+    Glowing: true
+    # Settings for the holograms.
+    # Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The distance the hologram can be seen.
+    Range: 8
+    # How often should the hologram update? -1 is disabled.
+    Update-Interval: -1
+    # The background color of the hologram. It uses hex colors. This only works with CMI/FancyHolograms
+    # Set the color to transparent if you don't want any color.
+    Color: transparent
+    # The message that will be displayed above the crate.
+    # Note: MiniMessage or Color Codes being supported is depending on the 'holograms' plugin.
+    Message:
+    - <bold><green>Basic Crate</bold>
+  # All the prizes that can be obtained in the Crate.
+  # These prizes do not require any extra configuration
+  # They will give the prizes based on what's already below.
+  # See the AdvancedExample.yml for a more advanced crate.
+  Prizes:
+    '1':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDOzcxLTS5KTCuxSsrPzy7OSM1JY2ZgTc4vzSthYGAQYQAACSkawjwAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDOzcxLTS5KTCuxSsrPzy7OSM1JY2ZgTc4vzSthYGAQYQAACSkawjwAAAA=
+      Chance: 10
+      Tiers:
+      - common
+    '2':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41TwU7bQBAdoCDHCCiV2p5aWXvg0oBAokLKLU2iEjVOEE6RUEDWxt4kq9i7Zr0GIpr/6B9w7i/QH+s4JHbaQIUPlux58+a9ebsmwAqsV6mmZ0zFXAqArSsDlrkPmyEXzFO0p0tdKYcrsOrJRGgAWDXB9GQYScGEjk34kCOp1op3E83cUPq8x5F0CbbigbxxuXC1lIHmERSgkJVNJFwy4JUeRQw+5kx9Jpji3h4yUm/oxhFj/hqs0XAqYvIYUJARU1SnygvU991rGiRsZiCUXLMwLvnMkyPAsXOeAqkQB7AMP+8Iu9WKklLnjnRl4JNSjwYxKxJPIoqUyM0AeUiRcE0D7mVl2e0lsUc1yztitD9keqBk0h9kfzXyIw0yJMJnKkARs5bx5QLtDD2GeF7ZTExf0dGilmnTKe8P9K6HlaGlpaWYx/g1sw6seMiDwIokF3qP/G+oCe/yJTHhDajQYZrzEzmasBawaxbEK7CdNyHa56Kf5pom9DaveEmsZegKGjL48ZQ3epXQZ705qYXdk9SCRcbFF27kTCbegKmJ5zmTi6p8vASo1rZb9XbNdtzqebNs1ytuo3Vag88d8nDfwyH4frg/etmaLw14k9Glb7d9flIDs9JqOt/t8pdGzYDXfwPqVVh3vtUbDfekVW+2DdjI6qimBu93uvNr2Dma2jNg89hpn567tWbluNxsO2DfEUfT1O7sF6pvfXW0VKPJzjPiWd39/QuPLzZ0Lsg0Q+vgglzi6sYGbC/gYaOT41Kz5qOEidB8fPr53Oi0lo19xtq/4yst2y43qw50kakiw5AKvExERX2L+pjqYwa7kwxiq5/mciyFVFSNEHp7eIRii6TKAjw0pf29/SKSiFgGjJS0SvDgtKLsbs7vf3IOPnXIzkvTxwvwB/FbZHdfBQAA
+      Commands:
+      - mi give CONSUMABLE SKILL_POINT %player% 5
+      Chance: 8
+      Tiers:
+      - common
+    '3':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/31UwU7bQBAdoEWOUaFUqnoqslYiUqU05QRSbmniFiScVElAiiJkLfYkWcX2urvr0gjlP/oHnHroL9Af6zgQBwSpD5bsmffevJnZtQE2YKvJDT9HpYVMAHa+W7AuQtiNRYKB4kNTGyI3Y1Qb8DKQWWIAYM0GO5BxKhNMjLbh/TKZG6PEZWbQj2UohoJ412BHj+WVLxLfSBkZkUIJSkXYzgkteGGmKcLekmmECSoRVImRBxNfp4jhJmzy+L6I+WNBSaaouMmLL/Ew9H/wKMM7D9txLIXBWNdCDOQUSHZ7yR9JRXkA6/DrmuFPozirDa7ZpYxCVhvySGOFBZKyWI1djYmHVZgwPBJBEZaXw0wH3OASocn+BM1YyWw0Lv4a4icaYsiSEFVERSwgs4sntIvsGYQPK1sUM1J8+rSWe1BHjMbmY4MiE8dIR2GIGFfZ/1QseLvsSpBpI2M/4THC7+fUiXGl+KdhNHXYrLLMnmIUyauVgHOZBbRajzFRbsFPM5VGz/T8Hjk4Ci/mrgob9jM2Qlptsud57ZOe63X9Zr9V904a/mm748KHAbu9GZICvW9vDm9vjlY078KCNwVF/vZ7/W8u2I12q3vm1T+fuha8fpxw0oStL6d9/7x91jh2Oxa8KuJUgQvvysG8WWV30YJymFuyYLdIdFuN43qr14X1Af23j7u9Tv8O7V2zruG57fyTHLS/do1U0/mgHgn5f//QRlLiCj1q4eyhZqPtefVWswsZMTVkHPMkzEeSOpkm0H4a8Smq+XrsO3TwYqHze8PRaOigpQ5qTVeCoFFVczmjMnSO8oVpIiFZ7aB6UCHeREuabS0PU/FpcRQe9mk+o70BKx+WVw6Gju8/8QDDocQEAAA=
+      Commands:
+      - mi give CONSUMABLE FLY_VOUCHER %player% 1
+      Chance: 3
+      Tiers:
+      - common
+    '4':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9VXzW7bRhBeO6khM22cFnXRHFIQLOBDIQhOC8MBL61MMTZRiTQkxoVhCMSaXEmESK6yXEYVYgF5iqLH9qRzX0F9kz5BH6Gz+qMYS6wFtEGiAwHOfPP77Q5HEkL30IMK5viCsNinEUJ7Lwto2/fQXuhHxGW4xdUe7hF2D33k0iTiCKEtCUkuDXs0IhGPJfQkhWLOmX+dcOKE1PNbPnjdQntxh/YdP3I4pQH3e2gX7S7UknBYQPf5oEfQV6mnNokI890SeMRu14l7hHg7aAeHsyQmvwLapZAb5iL1Xex5ziscJGRawcMwpD4nYax6xKUDBGEfpv4DygAnhL++VsjPnGFFvXqtXNPAU9QWDmJSVFwKKEVV+h3woxQVn+PAdxdqet1KYhdzklrEUH6X8A6jSbuzkHLwD27AQxJ5hAWQxNxk2Lzldo4ebn2+nNk8GQ+zroNfJvh2QjNLWRkWU3yb4cFa6F+//JZFryl1Bn/67DCD/k9ziWUNzodH+5GS15X3mK+Td8LXKcNw7Tah7QyzUDaMDeK0KNvoXGxC84fKrr2W3dx6bzboTd1vd7isgaYr375o+WEy+AEJAtq/I/jONUzp4CxZYiPX7gSa283le/v3d8W3vJLwNVXdtd8rE8612+A0pONwI7LUDSf6em7fiy7UcdQm/2sLjg4/0JGExqtGUm5nbBKQHmXw/RjQZMWM6SWsF6zvVegHJL47dzLu40Ept7sFtJ8uZW4Scxo6EQ4JOl87bv8lR120ULZpSCaBF5GkFZE8WH130JNazTJsvdZwGtYLs+JYpqNZZuNFTXfODfv7v+fL5mcLnHg69uW5jqQpsnxS1QvoURZgVJCkmxW97piWDerHa+OgL2GV9vmgRETyIY5KfEZUAX2ysDLLgPz44CitcDmk/vy5rtkN9A30y4ZtWnz4y/Ua9KmSTFdkRX1aOiwqVfKKBIr67bBZQJ+m5qZ2VjbBfvuquYO+yFaiWVa1Yv1k/tB6M+uFdNaw65fTlGDvaXAsuixeIaB12uCUDSbUZbJ3/vwDbgAAl4sAmobLhZRPjKphX6ILsDY88RmpGuaP4FbDMa9RT1RWN07PbEerGppQ1Ob/JhRVnJXZ2FRhuIl62WSCqHDPS4fDYTOX7wurmvK9v8BVLiF7Q3OqVl3f2r9SxqMWhIXnePSdPB4di70M3iDgTLC0zBZXomdbHAjn2xkoxNol3Ew8ZA2f3Qjh8oIgZOMRuZnrxqNg+r2dWAg1SEB7LJTzbECqzjJ9CzGZsws1zMRM+OPs4BiPjiajQNhO73hz+aCKNqGvr5SDt8wOplYHCyNo8z/MyS21hA4AAA==
+      Items:
+      - Data:H4sIAAAAAAAA/9VXzW7bRhBeO6khM22cFnXRHFIQLOBDIQhOC8MBL61MMTZRiTQkxoVhCMSaXEmESK6yXEYVYgF5iqLH9qRzX0F9kz5BH6Gz+qMYS6wFtEGiAwHOfPP77Q5HEkL30IMK5viCsNinEUJ7Lwto2/fQXuhHxGW4xdUe7hF2D33k0iTiCKEtCUkuDXs0IhGPJfQkhWLOmX+dcOKE1PNbPnjdQntxh/YdP3I4pQH3e2gX7S7UknBYQPf5oEfQV6mnNokI890SeMRu14l7hHg7aAeHsyQmvwLapZAb5iL1Xex5ziscJGRawcMwpD4nYax6xKUDBGEfpv4DygAnhL++VsjPnGFFvXqtXNPAU9QWDmJSVFwKKEVV+h3woxQVn+PAdxdqet1KYhdzklrEUH6X8A6jSbuzkHLwD27AQxJ5hAWQxNxk2Lzldo4ebn2+nNk8GQ+zroNfJvh2QjNLWRkWU3yb4cFa6F+//JZFryl1Bn/67DCD/k9ziWUNzodH+5GS15X3mK+Td8LXKcNw7Tah7QyzUDaMDeK0KNvoXGxC84fKrr2W3dx6bzboTd1vd7isgaYr375o+WEy+AEJAtq/I/jONUzp4CxZYiPX7gSa283le/v3d8W3vJLwNVXdtd8rE8612+A0pONwI7LUDSf6em7fiy7UcdQm/2sLjg4/0JGExqtGUm5nbBKQHmXw/RjQZMWM6SWsF6zvVegHJL47dzLu40Ept7sFtJ8uZW4Scxo6EQ4JOl87bv8lR120ULZpSCaBF5GkFZE8WH130JNazTJsvdZwGtYLs+JYpqNZZuNFTXfODfv7v+fL5mcLnHg69uW5jqQpsnxS1QvoURZgVJCkmxW97piWDerHa+OgL2GV9vmgRETyIY5KfEZUAX2ysDLLgPz44CitcDmk/vy5rtkN9A30y4ZtWnz4y/Ua9KmSTFdkRX1aOiwqVfKKBIr67bBZQJ+m5qZ2VjbBfvuquYO+yFaiWVa1Yv1k/tB6M+uFdNaw65fTlGDvaXAsuixeIaB12uCUDSbUZbJ3/vwDbgAAl4sAmobLhZRPjKphX6ILsDY88RmpGuaP4FbDMa9RT1RWN07PbEerGppQ1Ob/JhRVnJXZ2FRhuIl62WSCqHDPS4fDYTOX7wurmvK9v8BVLiF7Q3OqVl3f2r9SxqMWhIXnePSdPB4di70M3iDgTLC0zBZXomdbHAjn2xkoxNol3Ew8ZA2f3Qjh8oIgZOMRuZnrxqNg+r2dWAg1SEB7LJTzbECqzjJ9CzGZsws1zMRM+OPs4BiPjiajQNhO73hz+aCKNqGvr5SDt8wOplYHCyNo8z/MyS21hA4AAA==
+      Chance: 5
+      Tiers:
+      - common
+    '5':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9VWy27TQBS95RHclPdrBzIj1FUbNS1t0mwgatJS0TRVHUBViKyxPU6s2p4wHlOqqn/AFglYIDaoGxYgsWDBQyofgsSeBUt2jJ3UidskAiEhcKRI9j33zDnHNzNJAhyGkQLm+A5hnkVdgFP3JThkGXDesVyiM2zynMWoq3oblBmH4ahOfZcDwFASkjp1mtQlLveScKmDx5wzS/M5UR1qWKYlqIfglNegG6rlqpxSm1tNGIbhqJwMCCU4wjebBC53mOrEJczSU4IR6+uq1yTESEACO20R4SXBMG0ShnmgfxgbhvoA2z5p2TjpONTixPFyBtHpJkASLnT4fVdjBK9jzSY9FAqJJztYmzLBCXAMnmwh8pAzjHLVLaRR20A5E9seGUM6FSiUQxsNsSYaQxbHtqVHZaqZvqdjTjodnohqnfAGo369ET3lgl/QCAbfNQizhYi9lu3aAdo99DZ86la2J8bAbF3F9318UFC7U0bbYx18neHNvtCvz9/J+fBtyAXs4DrJxZv7OG93Z1OTaKCBj3/TgBKM02/pT6dmBuv/d0fjUa9kmejt1/PtxYdvb1/+erByekKetxhpz8X/mlO1V04DjZd8vSF7DczEJnRloG2pe+/RfY9TR3WxQ2Cr16KDR1EJFvyd2V2ibl1Wgl081BiJSvYQZYgTIQEXS6XyYqVYUtR8pZKfu6UW8qX8QvGG/HD0+/NXXyQ4d1OprK7Fq/B6CykcB9yx50JXeUHhlG2GJntTq5/fGJqNctOpyalrM5nJdDqTnbyWTs9MB5JL1Ah7J7SZWVM3zXGx12vjojw7rk1o2fH0dDarmbNZbRpnfmGRqdTEdk18JDgdAYNvdbEAI/NL5eUFVblbXi1IcCKqL+dLRTg+anbClOBMrKqurBZhpIpGzfANoVo3oLg8dzO/XFHgUFU8T7biCznfR6kFt/3CChf4/EZMvAB2q0B/lk+MN5ypA56icvXenrd7qIbaCZ6NJ1hZWynC0TC9IRi53XXKRq6XyiInFrkObtGfWAgIYhozsd9ll9YTsR44V92PRbUEnI9A84uCuD35V1v/OBJwYf9oKSvFYuH6j6fB9UzqqhfWRIKLc621HlfR7o4pfIrv3Z0peXcn0+NAFcXgoOyDap9aohacRmPdhHprzxb4/ZtxDLbfrXD0E+pQK8QJCgAA
+      Items:
+      - Data:H4sIAAAAAAAA/9VWy27TQBS95RHclPdrBzIj1FUbNS1t0mwgatJS0TRVHUBViKyxPU6s2p4wHlOqqn/AFglYIDaoGxYgsWDBQyofgsSeBUt2jJ3UidskAiEhcKRI9j33zDnHNzNJAhyGkQLm+A5hnkVdgFP3JThkGXDesVyiM2zynMWoq3oblBmH4ahOfZcDwFASkjp1mtQlLveScKmDx5wzS/M5UR1qWKYlqIfglNegG6rlqpxSm1tNGIbhqJwMCCU4wjebBC53mOrEJczSU4IR6+uq1yTESEACO20R4SXBMG0ShnmgfxgbhvoA2z5p2TjpONTixPFyBtHpJkASLnT4fVdjBK9jzSY9FAqJJztYmzLBCXAMnmwh8pAzjHLVLaRR20A5E9seGUM6FSiUQxsNsSYaQxbHtqVHZaqZvqdjTjodnohqnfAGo369ET3lgl/QCAbfNQizhYi9lu3aAdo99DZ86la2J8bAbF3F9318UFC7U0bbYx18neHNvtCvz9/J+fBtyAXs4DrJxZv7OG93Z1OTaKCBj3/TgBKM02/pT6dmBuv/d0fjUa9kmejt1/PtxYdvb1/+erByekKetxhpz8X/mlO1V04DjZd8vSF7DczEJnRloG2pe+/RfY9TR3WxQ2Cr16KDR1EJFvyd2V2ibl1Wgl081BiJSvYQZYgTIQEXS6XyYqVYUtR8pZKfu6UW8qX8QvGG/HD0+/NXXyQ4d1OprK7Fq/B6CykcB9yx50JXeUHhlG2GJntTq5/fGJqNctOpyalrM5nJdDqTnbyWTs9MB5JL1Ah7J7SZWVM3zXGx12vjojw7rk1o2fH0dDarmbNZbRpnfmGRqdTEdk18JDgdAYNvdbEAI/NL5eUFVblbXi1IcCKqL+dLRTg+anbClOBMrKqurBZhpIpGzfANoVo3oLg8dzO/XFHgUFU8T7biCznfR6kFt/3CChf4/EZMvAB2q0B/lk+MN5ypA56icvXenrd7qIbaCZ6NJ1hZWynC0TC9IRi53XXKRq6XyiInFrkObtGfWAgIYhozsd9ll9YTsR44V92PRbUEnI9A84uCuD35V1v/OBJwYf9oKSvFYuH6j6fB9UzqqhfWRIKLc621HlfR7o4pfIrv3Z0peXcn0+NAFcXgoOyDap9aohacRmPdhHprzxb4/ZtxDLbfrXD0E+pQK8QJCgAA
+      Chance: 10
+      Tiers:
+      - common
+    '6':
+      MaxRange: 100
+      DisplayData: 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
+      Items:
+      - Data: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
+      Chance: 8
+      Tiers:
+      - common
+    '7':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/9VYW2/cRBSebUrYLNBAaQFxk2WBKkFYko2ai1+ou2slpntJbadNVEXWxJ7NWvHaiT1OskryB/gBiCeEeMkrSDwghFC1qL+Bdx76zE/gjHftvTvZSqnSPGzkObfvnDNzzpnJIDSB3ihgih8Rz7dcB6Hp/TS6ZpnoZt1yiOHhKhUsz3V0fEQm0GuGGzgUIZTKoIzh1vdchzjUz6BPOtyYUs/aDijR665pVS1QnELTfs091C1Hp65rU2sPTaGpmJxhCtPoOm3sEfRpR9MOcYhnGVnQiI1d3d8jxJxEk7jeBhH+pdGUu0c8TBn6KWya+gG2A9Jy4ka97lqU1H3BJIbbQGD2Rke/7XrAh9C76IdjnhxRD/PCk2N+27VNXqhi2yczvOECFy/whzXQw8/wFsW2ZcRkd7sa+AampCPhg/u7hNY8N9ipxasU9IMa0BA4JvFsABGJnG4NqI24T9F33cgiMCb2dnW8H+BBQG1Jjj+d6fDveLgxkvUx9jzL9TgZ4sQnYtGHYWkQ23YPR2pXyH5gecTnigc2NzebbODqpuHppafh3x9/58Rwo3MFXMc7ROgVHuF5W3puOZtLju2fL9MDlR3V8RxIRt+8fPTf/8Q9Jhgq2ovE/8u52Wzu86vgw1qt4VsGtl/Ii9zdc3z446X4sO5DwegR2YaSPlIkx6kUQ1nHr2h1SW2OjGpiqE7GCKti7dQolwfKbq/UBcz08J9T70/GVd5C00oH9YKubCTKSdijNdhyuyQx6RM/v6ykc0OzPsK1iwZ9KOBEuTG2RCFoTU1jZmysipIbnd6rEYOwSF5mBJaueATyMJCb7uGl7oKF5ML827Dyl2hdrO/Z4d3hMlGfM5Jc2XaCrPHj6XBwv+NoDVPOdewG5xPvAHpwFUQTTT0b21SVNSLL2ZnhsGNyFuUM7Nyh3DbpTY0Hro5SQRyjhh0Wvwvv8uyrmsu/Ln3g0uAYCQldmK2NnCpERUqOLBl7g7C2tG3ZFm0I3Pzc3Vnu6/Bfopk0ut251huBT9267uA6QZVh5pP2lnREjIB1ReLd8TnxqDVexIYyQwyZmOJJ9F6pVJE1qaTqoqaJ+Qd6QSyJK9K9+S++KvwTPE+jt2MG9qvLBTQtbUj5dU2ulCVFFzekSXS7X4m6JkmFb/5rPXWk0McxvSCr4v2ipMtlTVLEPFOSSqO3YnpZLEnoVvPMGHAojd6JuaRyflUsayq69mRrEn0Qr6+tbqpyXixGTiy3AEyg92OWkrihF9YV8b5clLVNhN4sp9BHA/DaBuTyCqDLrKqastmC9u0xD0M7Cyr7hHRUVlTqeo0wUT1e6H//CkcKGIc5A9k5TaEPB+wq0pooK8xsN2ZFerguK1JBL0qPpCI4lEkPo+aLoqqi19sPI2l0szdz2uaahCb68qVqYkkui3q+omr32k9T3ZvisSSuVcpRPD/b+uXZreOn3ZsiCuQh+C+bbCeKirb6cF18wKKTxz4tuSZhZ05eWdUAo5x/AIRS9IjGC8e8GU10Qi47OwNlIhxuhCX2YUR9XlhgnzjuoMJcdvb0dCvd5UxhEwIv5/ViRZGubTyByFfBFPw2z+a55tliz5NRm0D6X3pmBsSGPHEAMXy6GMHWfkdgXL0sg5d1ILYv4f2MAzdixspuuv2M4bWzebbcuU/2+LB0whi7L1JsDTw/iWjNM7vrXhKKMR5YBpZFxhHN3LAa4sj100OIEXWpjxrNahF9IYK2GA9EEWmuF/tiUoePeEa3Zjh6cdMFxuyQ5LbaSPNsAfCGbSHSOqqeb3WXK02WFHSdyXWvsv2HFLb/zsU/DvgtOJv/A37aatj6FgAA
+      Items:
+      - Data:H4sIAAAAAAAA/9VYW2/cRBSebUrYLNBAaQFxk2WBKkFYko2ai1+ou2slpntJbadNVEXWxJ7NWvHaiT1OskryB/gBiCeEeMkrSDwghFC1qL+Bdx76zE/gjHftvTvZSqnSPGzkObfvnDNzzpnJIDSB3ihgih8Rz7dcB6Hp/TS6ZpnoZt1yiOHhKhUsz3V0fEQm0GuGGzgUIZTKoIzh1vdchzjUz6BPOtyYUs/aDijR665pVS1QnELTfs091C1Hp65rU2sPTaGpmJxhCtPoOm3sEfRpR9MOcYhnGVnQiI1d3d8jxJxEk7jeBhH+pdGUu0c8TBn6KWya+gG2A9Jy4ka97lqU1H3BJIbbQGD2Rke/7XrAh9C76IdjnhxRD/PCk2N+27VNXqhi2yczvOECFy/whzXQw8/wFsW2ZcRkd7sa+AampCPhg/u7hNY8N9ipxasU9IMa0BA4JvFsABGJnG4NqI24T9F33cgiMCb2dnW8H+BBQG1Jjj+d6fDveLgxkvUx9jzL9TgZ4sQnYtGHYWkQ23YPR2pXyH5gecTnigc2NzebbODqpuHppafh3x9/58Rwo3MFXMc7ROgVHuF5W3puOZtLju2fL9MDlR3V8RxIRt+8fPTf/8Q9Jhgq2ovE/8u52Wzu86vgw1qt4VsGtl/Ii9zdc3z446X4sO5DwegR2YaSPlIkx6kUQ1nHr2h1SW2OjGpiqE7GCKti7dQolwfKbq/UBcz08J9T70/GVd5C00oH9YKubCTKSdijNdhyuyQx6RM/v6ykc0OzPsK1iwZ9KOBEuTG2RCFoTU1jZmysipIbnd6rEYOwSF5mBJaueATyMJCb7uGl7oKF5ML827Dyl2hdrO/Z4d3hMlGfM5Jc2XaCrPHj6XBwv+NoDVPOdewG5xPvAHpwFUQTTT0b21SVNSLL2ZnhsGNyFuUM7Nyh3DbpTY0Hro5SQRyjhh0Wvwvv8uyrmsu/Ln3g0uAYCQldmK2NnCpERUqOLBl7g7C2tG3ZFm0I3Pzc3Vnu6/Bfopk0ut251huBT9267uA6QZVh5pP2lnREjIB1ReLd8TnxqDVexIYyQwyZmOJJ9F6pVJE1qaTqoqaJ+Qd6QSyJK9K9+S++KvwTPE+jt2MG9qvLBTQtbUj5dU2ulCVFFzekSXS7X4m6JkmFb/5rPXWk0McxvSCr4v2ipMtlTVLEPFOSSqO3YnpZLEnoVvPMGHAojd6JuaRyflUsayq69mRrEn0Qr6+tbqpyXixGTiy3AEyg92OWkrihF9YV8b5clLVNhN4sp9BHA/DaBuTyCqDLrKqastmC9u0xD0M7Cyr7hHRUVlTqeo0wUT1e6H//CkcKGIc5A9k5TaEPB+wq0pooK8xsN2ZFerguK1JBL0qPpCI4lEkPo+aLoqqi19sPI2l0szdz2uaahCb68qVqYkkui3q+omr32k9T3ZvisSSuVcpRPD/b+uXZreOn3ZsiCuQh+C+bbCeKirb6cF18wKKTxz4tuSZhZ05eWdUAo5x/AIRS9IjGC8e8GU10Qi47OwNlIhxuhCX2YUR9XlhgnzjuoMJcdvb0dCvd5UxhEwIv5/ViRZGubTyByFfBFPw2z+a55tliz5NRm0D6X3pmBsSGPHEAMXy6GMHWfkdgXL0sg5d1ILYv4f2MAzdixspuuv2M4bWzebbcuU/2+LB0whi7L1JsDTw/iWjNM7vrXhKKMR5YBpZFxhHN3LAa4sj100OIEXWpjxrNahF9IYK2GA9EEWmuF/tiUoePeEa3Zjh6cdMFxuyQ5LbaSPNsAfCGbSHSOqqeb3WXK02WFHSdyXWvsv2HFLb/zsU/DvgtOJv/A37aatj6FgAA
+      Chance: 7
+      Tiers:
+      - common
+    '8':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QTUsDQQyG0xZhu4IFwXsdPPYkeNmjiF4UPEivy3Q2XYedmawzGXEt/e/GXlahgpd8kDd5XlICzOD0TrNeY0yWAsDirYCpbWDhbUAT9ZarXvcYZ3BiKAcGgKKE0pDvKWDgNIezUeooYiGSKdzslCFpVaXaqAe1Upa1s0ZVW+0SrhTjB8vwkZhp+WJNh6z2cP3PtXuKy8Oq2k/gajSAwbzqwF6c1a2zEukdY7QNTgq4GHUmJyZfB+0RHnZqQ65RFccshJGPGP408IStXv42Xx4BNPLbEs6f80Zu3Oaus7zWLmMq4FKEn4MExlT9qOtDqjscYO6F4r4h8lP4AjVmtlGuAQAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYZDOzcxLTS5KTCuxSqzIz8kvyYkvLkgsz4tPTU9nZmBNzi/NK2EAaQcAeHR4ykQAAAA=
+      Chance: 6
+      Tiers:
+      - common
+    '9':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LSS2KL0hNLMphZmBNzi/NK2FgYOBgAACgCExSPgAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LSS2KL0hNLMphZmBNzi/NK2FgYOBgAACgCExSPgAAAA==
+      Chance: 10
+      Tiers:
+      - common
+    '10':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LiU8uqiwuScxhZmBNzi/NK2FgYGBiAAB7ibCgPgAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LiU8uqiwuScxhZmBNzi/NK2FgYGBiAAB7ibCgPgAAAA==
+      Chance: 7
+      Tiers:
+      - common
+    '11':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QPU8DMQyG3VZIxxWBVIn9iDpWjAwnMVA+Fhamric355bo8nEkDupR9b8TWqnXASQWx07e137iHGAE4ydkXJAPylmAq48MhqqGiVGWpMcVl1oZquqORnAmXbQMAFkOuXSmdZYsh3O4PFE7T1mSDOFuK6RLpSjF2mMnZkIxaiVFuUIdaCaYNpweH4rQklSoi1fqxA7u/+l7cb7Ao/fRI9Ot2A1g2sOQle9o2STKaq1Viu6TvFc1DTK47nUyBnamsmgInrdi6XQtSvYxDetRiOyfLHMMSh4YDr/If2lfp0XnMHmLy9RhHptG8QJ1pJDBTRJ+dfLHH8qTvNofVUMdXNAGTatpf5MWDN89UGg3vgEAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/42QPU8DMQyG3VZIxxWBVIn9iDpWjAwnMVA+Fhamric355bo8nEkDupR9b8TWqnXASQWx07e137iHGAE4ydkXJAPylmAq48MhqqGiVGWpMcVl1oZquqORnAmXbQMAFkOuXSmdZYsh3O4PFE7T1mSDOFuK6RLpSjF2mMnZkIxaiVFuUIdaCaYNpweH4rQklSoi1fqxA7u/+l7cb7Ao/fRI9Ot2A1g2sOQle9o2STKaq1Viu6TvFc1DTK47nUyBnamsmgInrdi6XQtSvYxDetRiOyfLHMMSh4YDr/If2lfp0XnMHmLy9RhHptG8QJ1pJDBTRJ+dfLHH8qTvNofVUMdXNAGTatpf5MWDN89UGg3vgEAAA==
+      Chance: 6
+      Tiers:
+      - common
+    '12':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDKzcxLTS5KTCuxykvMTY0vSUxnZmBNzi/NK2FgYBBgAABEtIsWOwAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDKzcxLTS5KTCuxykvMTY0vSUxnZmBNzi/NK2FgYBBgAABEtIsWOwAAAA==
+      Chance: 5
+      Tiers:
+      - common
+    '13':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LSS2KT85ILS5hZmBNzi/NK2FgYGBkAAC0JDRtPgAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+RgYMpMYRDNzcxLTS5KTCuxSs1LSS2KT85ILS5hZmBNzi/NK2FgYGBkAAC0JDRtPgAAAA==
+      Chance: 4
+      Tiers:
+      - common
+    '14':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDJzcxLTS5KTCuxKs5NzMmJT8xNLcmoLC6JTypNYWZgTc4vzSthYGBQYAAAP9eI4EUAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDJzcxLTS5KTCuxKs5NzMmJT8xNLcmoLC6JTypNYWZgTc4vzSthYGBQYAAAP9eI4EUAAAA=
+      Chance: 3
+    '15':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDNzcxLTS5KTCuxyk1NySzNjU/MTS3JqCwuiU8qTWFmYE3OL80rYWBgEGAAAMpFOV1GAAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDNzcxLTS5KTCuxyk1NySzNjU/MTS3JqCwuiU8qTWFmYE3OL80rYWBgEGAAAMpFOV1GAAAA
+      Chance: 3
+    '16':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDJzcxLTS5KTCuxykksSk+NT8xNLcmoLC6JTypNYWZgTc4vzSthYGDgYAAAdn5pRUUAAAA=
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDJzcxLTS5KTCuxykksSk+NT8xNLcmoLC6JTypNYWZgTc4vzSthYGDgYAAAdn5pRUUAAAA=
+      Chance: 3
+    '17':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDIzcxLTS5KTCuxSsxNLcmoLC6JL85ILEphZmBNzi/NK2FgYGBhAAAqTTP6QQAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDIzcxLTS5KTCuxSsxNLcmoLC6JL85ILEphZmBNzi/NK2FgYGBhAAAqTTP6QQAAAA==
+      Chance: 2
+    '18':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDKzcxLTS5KTCuxSsxNLcmoLC6JT84pLS5JLWJmYE3OL80rYWBgYGIAAKrCm89DAAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDKzcxLTS5KTCuxSsxNLcmoLC6JT84pLS5JLWJmYE3OL80rYWBgYGIAAKrCm89DAAAA
+      Chance: 2
+    '19':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDIzcxLTS5KTCuxSsxNLcmoLC6JT8rJT85mZmBNzi/NK2FgYGBiAABgIR+VQQAAAA==
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDIzcxLTS5KTCuxSsxNLcmoLC6JT8rJT85mZmBNzi/NK2FgYGBiAABgIR+VQQAAAA==
+      Chance: 1
+    '20':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDKzcxLTS5KTCuxSipNScnMS49PzE0tyagsLmFmYE3OL80rYWBgYGQAAPbxI2NDAAAA
+      Items:
+      - Data:H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2DgL+ZgYMpMYZDKzcxLTS5KTCuxSipNScnMS49PzE0tyagsLmFmYE3OL80rYWBgYGQAAPbxI2NDAAAA
+      Chance: 1
+# Only uncomment this if using HeadDatabase by Arcaniax
+# Skull: "7129"

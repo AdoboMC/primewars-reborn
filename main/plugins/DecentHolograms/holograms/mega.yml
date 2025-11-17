@@ -1,0 +1,12 @@
+location: Philippines:-364.604:90.880:-363.636
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c&LMega &e&lLotto'
+    height: 0.3
+  actions: {}

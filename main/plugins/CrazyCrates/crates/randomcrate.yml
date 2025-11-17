@@ -1,0 +1,191 @@
+Crate:
+  # https://docs.crazycrew.us/docs/plugins/crazycrates/misc/crate-types
+
+    # Make sure to check out the wiki for anything not explained here.
+  # https://docs.crazycrew.us/docs/category/crazycrates
+
+    # See CosmicCrate.yml or CasinoCrate.yml to see how the Cosmic/Casino CrateType works.
+  CrateType: CSGO
+  # Name of the Inventory if a GUI crate.
+  CrateName: <dark_purple>Random Crate
+  # The name of the inventory that will be in the preview GUI.
+  Preview-Name: <dark_purple>Random Crate Preview
+  # Starting amount of keys when the player 1st joins.
+  StartingKeys: 0
+  # The amount of keys required to use the crate.
+  RequiredKeys: 0
+  # Max amount of crates that can be opened at once using /crates mass-open
+  Max-Mass-Open: 27
+  # If the crate shows in the /crates.
+  # If the type is QuickCrate/CrateOnTheGo/FireCracker, They will not work as they require a Physical Crate.
+  InGUI: false
+  # Slot the item is in the GUI.
+  Slot: 12
+  # Enables/Disables the Broadcasts message when they open a crate.
+  OpeningBroadCast: true
+  # Message that is broadcast when opening the crate.
+  BroadCast: '%prefix%<bold><gold>%player%</bold><reset> <gray>is opening a <bold><dark_purple>Random
+    Crate.</bold>'
+  # This section is related to commands opening when a crate is opened.
+  opening-command:
+    # If the commands should be sent or not.
+    toggle: false
+    # The commands to run when the crate opens.
+    # Supports all placeholderapi placeholders
+    # Supports %prefix which returns our prefix, %player% which uses the player name
+    commands:
+    - put your command here.
+  sound:
+    # The sound options when the animation is cycling.
+    cycle-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use.
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: block.note_block.xylophone
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when an item is clicked.
+    click-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: ui.button.click
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+    # The sound options when a crate ends.
+    stop-sound:
+      # If sound should be enabled or not.
+      toggle: true
+      # The type of sound to use. Custom sounds from texture packs are supported!
+      # https://minecraft.wiki/w/Sounds.json#Java_Edition_values
+      value: entity.player.levelup
+      # The volume of the pitch.
+      volume: 1.0
+      # The speed of the sound.
+      pitch: 1.0
+  # A default message if the prize doesn't have any Messages
+  # i.e. Messages: [] or the value isn't there.
+  Prize-Message:
+  # - <gray>You have won <red>%reward% <gray>from <red>%crate%.
+  # A default command if the prize doesn't have any commands
+  # i.e. Commands: [] or the value isn't there.
+  Prize-Commands: []
+  # Item the crate is in the GUI
+  Item: diamond
+  # The custom model data of the item, -1 is disabled.
+  Custom-Model-Data: -1
+  # If the crate in the main /crates is glowing or not.
+  Glowing: false
+  # Name of the item in the GUI.
+  Name: <bold><dark_purple>Random Crate</bold>
+  # The lore of the item in the GUI.
+  Lore:
+  - <gray>This crate contains strange objects.
+  - <gray>You have <gold>%keys% keys <gray>to open this crate with.
+  - '<gray>You have opened this crate: <gold>%crate_opened% times'
+  - <gray>(<yellow>!<gray>) Right click to view rewards.
+  Preview:
+    # Turn on and off the preview for this crate.
+    Toggle: true
+    # How many lines the Crate Preview should have. Including Header and Bottom (Between 3 and 6)
+    ChestLines: 6
+    Glass:
+      # Turn the glass border in the preview on and off.
+      Toggle: true
+      # The name of the border item.
+      Name: ' '
+      # The item that shows in the border. Can be glass or any other item.
+      Item: gray_stained_glass_pane
+      # The custom model data of the item, -1 is disabled.
+      Custom-Model-Data: -1
+  PhysicalKey:
+    # Name of the Key.
+    Name: <bold><dark_purple>Random Crate Key</bold>
+    # Lore of the Key.
+    Lore:
+    - <gray>A special Key
+    - <gray>For a special Crate.
+    # The item the key is.
+    Item: trial_key
+    # The custom model data of the item, -1 is disabled.
+    Custom-Model-Data: -1
+    # Makes the key look enchanted.
+    Glowing: true
+    # Settings for the holograms.
+    # Hologram:
+    # Toggle on and off the holograms for the crates.
+    Toggle: true
+    # The height of the hologram above the crate.
+    Height: 1.5
+    # The distance the hologram can be seen.
+    Range: 8
+    # How often should the hologram update? -1 is disabled.
+    Update-Interval: -1
+    # The background color of the hologram. It uses hex colors. This only works with CMI/FancyHolograms
+    # Set the color to transparent if you don't want any color.
+    Color: transparent
+    # The message that will be displayed above the crate.
+    # Note: MiniMessage or Color Codes being supported is depending on the 'holograms' plugin.
+    Message:
+    - <bold><dark_purple>Random Crate</bold>
+  # All the prizes that can be obtained in the Crate.
+  # These prizes do not require any extra configuration
+  # They will give the prizes based on what's already below.
+  # See the AdvancedExample.yml for a more advanced crate.
+  Prizes:
+    '1':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QQUsDMRCFpy3CdgULgvc1eOxJ8LJHEb0oeJBelzQ7XcMmmSWZiGvpf3fsZRUUvMxMyJv5Hq8EWMDpnWa9wZgsBYBVKmBuW1h5G9BEveN60APGBZwYyoEBoCihNOQHChg4LeFskjqKWIhkDjd7ZUieqlZd1KNaK8vaWaPqnXYJ14rxneXzkZiperGmR1YHuP7n2j3F6riqDjO4mgxgMK86sBdnTeesVHrDGG2LswIuJp3Jick3QXuEh73akmtVzTELYeIjhj8NPGGnq5/my18ArWRbwvlz3sqN29z3ljfaZZSUL0X4MUphTPW3uTm2pscRll4o7gsimcIncVBRDq4BAAA=
+      Commands:
+      - crates give p megalotto 8 %player%
+      Chance: 80  
+    '2':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QzUsDMRDFp62FdQWFgvc1eCwePSx4UIsXPXjqdZlmpzVsNinJRNyW/u9OLXY9KHjJB3nvzS8vBxjB2QwZ5xSi8Q7gImYwNDVMWuNIB1xyubCJqrqjEYy1T44B4CSHXPt27R05jqdw3qutD5SJZAi3W6W9XFWpVgE7NVWG0RqtyiXaSFPF9MHyeF/ENWmDtnimTu3g7p++Jx8KPHofAzLdqN0ArnsYcvoNHbdCWa2skdW/UwimpkEGl71Op8i+rRy2BLOtWnhbq5JDkmHfKPsW/kR5SRvvDgiHT+S/pNfScw6T17SQhIfUNIbnKKnS+JUIN53e+2P541x9bVVDHYztfoYUC590nxuvtgEAAA==
+      Commands:
+      - crates give p luzon 4 %player%
+      Chance: 50
+    '3':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QvU/DMBDFry2IECQQSOzBYqwYGSIx8CEYWJiyRlf7Wqw4dmWfK0zV/x1DJMIAEos/5Pfu/fxKgBkcPSBjQz5oZwFOQgFTreC015akxyXXnlSrEs1gX7poGQD2Siil69fOkuVwCMej2DhPRZZM4XorpMtXUYuVxyTmQjMaLUW9RBNoLpjeOD/eVmFNUqOpnimJHdz80/fofIXf3nuPTFdiN4HLEYasfEXLfaZsV0bn1W3Ie61oUsD5qJMxsOtbiz3B01YsnFGiZh9z2IhCZP9kaXTAhGGgGP5R/hKgctMlnL3ERZ5xF7tOc4MmUu78Igvfk/z0h/rHuf3a2o4SHGyGlNwufACi2NWzugEAAA==
+      Commands:
+      - crates give p visayas 4 %player%
+      Chance: 50
+    '4':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41QwUrDQBCdtghpBAXFe1w8Fo8eAh6M4sWLp17DZDOtSza7ZXcixtJ/d9Ji40HBy84O8968Ny8FmMHpEzIuKUTjHcB5TGBqarhsjSMdcMU5B4O2bKifwYn2nWMAmKaQat9uvCPHcQ5nI9z6QMkAgbut0l5alat1wF4tlGG0Rqt8hTbSQjF9sAwfsrghLSLZC/VqB/f/5D37kOGR+xiQ6VbtJnAzmiGn39BxKy7LtTXy+ncKwdQ0SeBqxOkusm9Lhy1BsVWVt7WSwzsR+7YSqP7TSeFjPBg4nJD+sruWmFO4eO0qWVB0TWN4ibYjCfxagJ+9Hvgx//Ev92WIHuaVSOxbiRa+AO4Sbqe5AQAA
+      Commands:
+      - crates give p bosscrate 2 %player%
+      Chance: 50
+    '5':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QvU/DMBDFr62QQkAgVWIPFmPFyBCJgfKxsDB1ja7OtVjxR2RfUEPV/52jlUgHkFh89vm9888vB5jA2RMyLigmEzzAZcpgbGqYOuNJR1xxaY2jqu5pAic6dJ5BXDnkOrg2ePKcTuHiSB0iZSIZw91W6SBHVap1xF7NlGG0RqtyhTbRTDFtWC4fitSSNmiLV+rVDu7/6XsJscAf72NEplu1G8HNAENev6NnJ5TV2hpZwwfFaGoaZXA16HSXOLjKoyN43qplsLUqOXby2IBC5P9kmWMy+sBw+EX+y/hags5h+tYtZcK8axrDC7QdSeTXIvzs9bc/lUf7al+qhno4pw261tK+IwHDF6ZVIHq+AQAA
+      Commands:
+      - crates give p examplecrate 3 %player%
+      Chance: 50
+    '6':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/41QTUvEMBCd7iLWCgqK9xo8Lh49FDz4efEiCHsts+nsGpomJZmqddn/7qxF60HBy2SGvDfvzcsAprB/i4xzCtF4B3AYU5iYCo4b40gHXHLBwaAta+qnsKN95xgAkgwy7ZvWO3Ic9+BghFsfKBXIBC7WSnsZVaFWAXs1U4bRGq2KJdpIM8X0xvJ5lceWtIjkD9SrDVz+k3fvQ47f3JuATOdqk8DZaIacfkbHjbgsV9ZI9S8UgqkoSeFkxOkusm9Khw3B3VotvK2UHN6J2JeVQNWfTp5afHUUBg/DFdkv6ytJOoOjx24hO667ujY8R9uRZH4qwPdeb/mx+NGXn882fdiNg4pkCx+HyTVfugEAAA==
+      Commands:
+      - crates give p spawner 1 %player%
+      Chance: 1
+    '7':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42QvU/DMBDFL60QJUggVWIPFmPFyBCJASgsLExdI8e+Fiv+qOwzIlT93zmIIAwgsdg++b27370SYArHS0lyhTGZ4AFO0wwmRsPcGY8qyjXVrc3Y6B6ncKBC9gQARQmlCm4bPHpKR3Ayqm2IOGPJBK52QgUuRS02UfZiIQxJa5So19ImXAjCV+LPmyptURlpq0fsxR6u/+l7CLGS3967KAkvxb6AixEGvXqWnhxTNhtr+AwvGKPRWMzgbNSpnCi4xkuHcL8TbbBa1BQzD/tCiaj/JFmiC96ogWHYovylveagS5g/5ZZ73OauM7SSHC5Hfs7Ct159+FP94918Xk2HPRzqYQpnC++f/3aLuQEAAA==
+      Commands:
+      - crates give p demonic 1 %player%
+      Chance: 1
+    '8':
+      MaxRange: 100
+      DisplayData: H4sIAAAAAAAA/42RwUoDMRCGp61KXcGC4MlLGjwWH2CP6kWkIqi9Lml22oZNMksyEdfSx/R9jAWpUAUvSYb5M/83/AXAAE5uFasZhmjIA4ziEPqmhpEzHnVQCy5b1WIYwKGm5BkAegUUmlxLHj3HYzjdSS0FHGZJHx7WUlMuZSmXQXVyIg0ra7QsF8pGnEjGN87Nl4jCsGAS1KIXvEIx7SIbLZ4a48VNUIxXcgPTf857XinfiI6SWFAQMbUtBTZ+uZ0cMbxiGMtNDy530Oh1/sQub1MtrcknZVUwNfaGcL7T6RSZXOWVQ7hbyznZWpYcUjb/RgtY/0m2t5a4x05uBnCxZ+GoRlvVOReAg4/iF4ivXgFnj2mena5T0xieKZswpzfOwvdOfznE8se72l5Vgx0cuS1LDgo+AfwOzl0DAgAA
+      Commands:
+      - crates give p mystic 1 %player%
+      Chance: 1
+# Only uncomment this if using HeadDatabase by Arcaniax
+# Skull: "7129"

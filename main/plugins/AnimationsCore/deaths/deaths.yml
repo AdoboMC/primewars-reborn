@@ -1,0 +1,11 @@
+animations:
+  death-spike:
+    mm-id: death-spike
+    permission: animcore.death.spike
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Death-spike
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'

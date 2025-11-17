@@ -1,0 +1,28 @@
+location: Philippines:-416.008:96.111:-295.523
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&0&lExplore the Philippines-Inspired World!'
+    height: 0.3
+  - content: '&a&l🗺 &f&lHow to Open the Dynmap'
+    height: 0.3
+  - content: '&71. &aOpen Your Browser'
+    height: 0.3
+  - content: '&f-Go to: &bhttp://sg.corehost.store:24647'
+    height: 0.3
+  - content: '&72. &aOpen the Map Menu'
+    height: 0.3
+  - content: '&f-In the middle-right corner, click the &8&l< &fsymbol to expand the
+      map options.'
+    height: 0.3
+  - content: '&73. &aSelect a World'
+    height: 0.3
+  - content: '&f-Click on "Philippines", then choose either "flat" or "surface" to
+      view the map style you prefer.'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 103.66.223.157
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754900681320
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754900688429
+  login: 1754896142683
+money: '3961.1702985829887642'
+last-account-name: ZQ14
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -967.1919902724195
+  y: 64.0
+  z: 815.7201335986106
+  yaw: 42.75531005859375
+  pitch: 19.312631607055664
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.5
+  y: 93.0
+  z: -304.5
+  yaw: -138.45001220703125
+  pitch: -3.4500083923339844

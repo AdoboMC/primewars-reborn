@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 123.26.178.115
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755224702075
+  login: 1755224604374
+money: '0'
+last-account-name: tycher
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -363.13803999220414
+  y: 92.0
+  z: -309.24527745510744
+  yaw: -157.49990844726562
+  pitch: 35.54999923706055
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 228.97245080909312
+  y: 68.0
+  z: 124.98924165015318
+  yaw: -106.65001678466797
+  pitch: 0.45000219345092773

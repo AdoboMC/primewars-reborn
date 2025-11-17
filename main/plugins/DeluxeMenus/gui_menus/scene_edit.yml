@@ -1,0 +1,106 @@
+menu_title: "<shift:-44>&f<glyph:scenes_edit_small>"
+open_command:
+  - scenesedit
+size: 9
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+open_commands:
+  - '[sound] UI_LOOM_SELECT_PATTERN'
+items:
+  skins:
+    material: PAPER
+    model_data: 3321008
+    slot: 0
+    priority: 1
+    update: true
+    display_name: 'Skins NPC 1'
+    lore:
+      - '&7Click to browse your NPC 1 skins'
+    left_click_commands:
+      - '[openguimenu] scene_skins_1'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  skins2:
+    material: PAPER
+    model_data: 3321009
+    slot: 1
+    priority: 1
+    update: true
+    display_name: 'Skins NPC 2'
+    lore:
+      - '&7Click to browse your NPC 2 skins'
+    left_click_commands:
+      - '[openguimenu] scene_skins_2_2_1'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  cosmetics:
+    material: PAPER
+    model_data: 3321001
+    slot: 2
+    priority: 1
+    update: true
+    display_name: 'Cosmetics'
+    lore:
+      - '&7Click to browse your cosmetics'
+    left_click_commands:
+      - '[openguimenu] scene_cosmetics'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  paths:
+    material: PAPER
+    model_data: 3321007
+    slot: 3
+    priority: 1
+    update: true
+    display_name: 'Paths'
+    lore:
+      - '&7Click to browse your Paths'
+    left_click_commands:
+      - '[openguimenu] scene_paths'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  rotate:
+    material: PAPER
+    model_data: 3350554
+    slot: 6
+    priority: 1
+    update: true
+    display_name: 'Rotate'
+    lore:
+      - '&7Click to rotate the scene'
+    left_click_commands:
+      - '[player] mm test cast rotatescene'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  bring:
+    material: PAPER
+    model_data: 3350553
+    slot: 7
+    priority: 1
+    update: true
+    display_name: 'Teleport here'
+    lore:
+      - '&7Click to teleport the scene to your location'
+    left_click_commands:
+      - '[player] mm test cast movescene'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+  remove:
+    material: PAPER
+    model_data: 3350552
+    slot: 8
+    priority: 1
+    update: true
+    display_name: 'Delete'
+    lore:
+      - '&7Click to Delete this Scene'
+    left_click_commands:
+      - '[player] mm test cast deletenpc'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+#35dd8da810fde8cd410472122f289581
+#Y0ZZd3UmJnR1ZHbPp3TKNmN3VVWsJESNtkQUN1MjpnTsJ1aWBDOZBDTHhEMJV2NwFkSZdFN

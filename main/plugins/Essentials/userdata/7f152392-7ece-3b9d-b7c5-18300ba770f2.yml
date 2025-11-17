@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.195.196.38
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753943552877
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754185772310
+  login: 1754185667857
+money: '4211.8578721043604036'
+last-account-name: Eury
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -393.2969566482595
+  y: 92.0
+  z: -307.50839983897595
+  yaw: -37.0499267578125
+  pitch: 29.399995803833008
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2010.9408903980002
+  y: 70.0
+  z: 516.9597766370749
+  yaw: -168.08261108398438
+  pitch: 30.149993896484375
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2260.763784857457
+    y: 68.0
+    z: -708.4237539540844
+    yaw: 48.893707275390625
+    pitch: 7.049866676330566

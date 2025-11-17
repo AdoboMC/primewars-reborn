@@ -1,0 +1,138 @@
+## Credits to @Aternos_
+Gui:
+  Rows: 6
+  SkillDetailSlots:
+    - 35
+  PlayerTopSlots:
+    - 26
+  PlayerInfoSlots:
+    - 17
+  FeatureButtons:
+    RUPTURE:
+      Slots:
+        - 20
+      Material: WEEPING_VINES
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    SERRATED_STRIKES:
+      Slots:
+        - 21
+      Material: DIAMOND_SWORD
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    SWORDS_LIMIT_BREAK:
+      Slots:
+        - 22
+      Material: NETHERITE_SWORD
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    COUNTER_ATTACK:
+      Slots:
+        - 23
+      Material: GOLDEN_SWORD
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    STAB:
+      Slots:
+        - 29
+      Material: FLINT
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+  DecorationButtons:
+    Back:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    Close:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    BorderLine:
+      Slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 18
+        - 27
+        - 36
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 16
+        - 25
+        - 34
+        - 43
+      Material: BLACK_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    InnerBorder:
+      Slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 19
+        - 24
+        - 28
+        - 33
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+      Material: ORANGE_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    Filler:
+      Slots:
+        - 30
+        - 31
+        - 32
+      Material: GRAY_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+
+# License Number: a2314ee3-6e76-4622-82df-b7dcbe82be97

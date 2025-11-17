@@ -1,0 +1,187 @@
+## Credits to @Aternos_
+Gui:
+  Rows: 6
+  Sound: UI_LOOM_SELECT_PATTERN
+  SkillDetailSlots:
+    - -1
+  PlayerTopSlots:
+    - 26
+  PlayerInfoSlots:
+    - 17
+  FeatureButtons:
+    Top1:
+      Slots: [23]
+      Material: head-%player%
+      Position: 1
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Top2:
+      Slots: [32]
+      Material: head-%player%
+      Position: 2
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+
+    Top3:
+      Slots: [12]
+      Material: head-%player%
+      Position: 3
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Top4:
+      Slots: [21]
+      Material: head-%player%
+      Position: 4
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Top5:
+      Slots: [30]
+      Material: head-%player%
+      Position: 5
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Top6:
+      Slots: [39]
+      Material: head-%player%
+      Position: 6
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+
+    Top7:
+      Slots: [10]
+      Material: head-%player%
+      Position: 7
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Top8:
+      Slots: [19]
+      Material: head-%player%
+      Position: 8
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Top9:
+      Slots: [28]
+      Material: head-%player%
+      Position: 9
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    Top10:
+      Slots: [37]
+      Material: head-%player%
+      Position: 10
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+
+    ChangeSkill:
+      Slots: [35]
+      Material: KNOWLEDGE_BOOK
+      Skills:
+        - OVERALL
+        - SWORDS
+        - AXES
+        - ARCHERY
+        - ACROBATICS
+        - UNARMED
+        - TAMING
+        - MACES
+        - TRIDENTS
+        - CROSSBOWS
+        - MINING
+        - WOODCUTTING
+        - EXCAVATION
+        - HERBALISM
+        - FISHING
+        - ALCHEMY
+        - REPAIR
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+    EmptyTop:
+      Material: RED_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags: [ "*" ]
+      Glow: false
+  DecorationButtons:
+    Back:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    Close:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    BorderLine:
+      Slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 18
+        - 27
+        - 36
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 16
+        - 25
+        - 34
+        - 43
+      Material: BLACK_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    Filler:
+      Slots:
+        - 11
+        - 20
+        - 29
+        - 38
+        - 13
+        - 22
+        - 31
+        - 40
+        - 14
+        - 15
+        - 41
+        - 42
+        - 24
+        - 33
+      Material: GRAY_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+# License Number: bc6bc792-6878-43a5-ae0b-31abf7dbb3b1

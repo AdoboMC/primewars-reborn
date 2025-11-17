@@ -1,0 +1,67 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ᴄʀᴀꜰᴛᴇʀ
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 4
+    display_name: '%imc_primary-color_c%ᴄʀᴀꜰᴛ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴄʀᴀꜰᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_crafter_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  craft_tuff:
+    material: tuff
+    slot: 10
+    display_name: '%imc_primary-color_c%ᴛᴜꜰꜰ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴏʟɪsʜᴇᴅ ᴛᴜꜰꜰ sʟᴀʙ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴏʟɪsʜᴇᴅ ᴛᴜꜰꜰ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴏʟɪsʜᴇᴅ ᴛᴜꜰꜰ ᴡᴀʟʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜꜰꜰ ʙʀɪᴄᴋs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜꜰꜰ ʙʀɪᴄᴋ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜꜰꜰ ʙʀɪᴄᴋ sʟᴀʙ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜꜰꜰ ʙʀɪᴄᴋ ᴡᴀʟʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜꜰꜰ sʟᴀʙ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜꜰꜰ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴜꜰꜰ ᴡᴀʟʟ'
+  previous-page:
+    material: ARROW
+    slot: 48
+    display_name: '%imc_primary-color_c%ᴘʀᴇᴠɪᴏᴜs ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] jobs_payouts_crafter_craft'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

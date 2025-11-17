@@ -1,0 +1,23 @@
+## Credits to @Aternos_
+# Wiki: https://github.com/IncrediblePlugins/ChestProtect/wiki/Roles
+roles:
+  owner:
+    name: '&4Owner'
+    flags: 'ALL'
+  admin:
+    name: '&cAdmin'
+    flags:
+      - HOPPER_TRANSFER
+      - OPEN
+      - PLAYER_TRUST
+      - PLAYER_UNTRUST
+      - PLAYER_SETROLE
+  member:
+    name: '&eMember'
+    flags:
+      - HOPPER_TRANSFER
+      - OPEN
+  visitor:
+    name: '&7Visitor'
+    flags: []
+# License Number: 4afc976e-2adc-4234-a2f2-a1b6732449e6

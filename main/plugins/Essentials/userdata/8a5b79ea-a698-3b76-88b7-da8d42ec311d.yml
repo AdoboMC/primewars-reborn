@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.191.161.9
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755458665895
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755762961578
+  login: 1755762956178
+money: '405.0296023448046936'
+last-account-name: Blooosh
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 129.8625616178206
+  y: 61.0
+  z: 263.0303738836295
+  yaw: -8.70318603515625
+  pitch: 7.049997806549072
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.2915952227731
+  y: 93.0
+  z: -304.51630222912365
+  yaw: -88.09992980957031
+  pitch: 2.999990940093994

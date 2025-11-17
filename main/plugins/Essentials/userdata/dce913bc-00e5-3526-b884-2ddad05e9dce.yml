@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 143.44.164.189
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753385133553
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757902490486
+  login: 1757902332477
+money: '0'
+last-account-name: YouStoleMyKFC
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -408.38613700431864
+  y: 88.0
+  z: -197.69999998807907
+  yaw: 77.02372741699219
+  pitch: 23.582393646240234
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -59.99693493103907
+  y: 63.0
+  z: 319.53327474683744
+  yaw: -155.15692138671875
+  pitch: 24.84942054748535

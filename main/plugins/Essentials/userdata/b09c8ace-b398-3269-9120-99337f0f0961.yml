@@ -1,0 +1,71 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 180.190.194.79
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752389416211
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753083102938
+  login: 1753082851172
+money: '22880.2465588776661041'
+last-account-name: JBMz
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 761.1792896967373
+  y: 13.0
+  z: -259.30000001192093
+  yaw: -70.64405059814453
+  pitch: 7.4364118576049805
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 915.0756936125579
+  y: 74.0
+  z: 967.5726088260475
+  yaw: 39.658233642578125
+  pitch: 2.648695230484009
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 760.4956985118198
+    y: 13.0
+    z: -258.9268558926577
+    yaw: -94.49920654296875
+    pitch: 17.019256591796875
+  blaze:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: 142.82119287816664
+    y: 70.0
+    z: -725.3047714529213
+    yaw: 142.88037109375
+    pitch: 34.46235275268555
+  blaze2:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: 186.30000001192093
+    y: 69.0
+    z: -723.4938130774599
+    yaw: -173.12998962402344
+    pitch: 3.959791660308838
+  top:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 760.6999999880791
+    y: 103.0
+    z: -258.6916484177846
+    yaw: 150.64642333984375
+    pitch: 21.680896759033203

@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.39.112
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754303339104
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754303439643
+  login: 1754303188562
+money: '332.1995419017036479'
+last-account-name: PrettyBerry09
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 548.1540496123081
+  y: 70.0
+  z: -174.11559346528625
+  yaw: 16.646202087402344
+  pitch: 16.650035858154297
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -376.2660653248134
+  y: 92.0625
+  z: -293.5106629331315
+  yaw: -22.19989013671875
+  pitch: 21.300004959106445
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2125.5259238485246
+    y: 157.0
+    z: 380.4780243012567
+    yaw: 89.095947265625
+    pitch: 8.999993324279785

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 47.232.62.219
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752416036574
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752503995127
+  login: 1752503920179
+money: '210.5819438003508749'
+last-account-name: LincolnTDawg
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 773.3702959012099
+  y: 89.0
+  z: 776.6277554212422
+  yaw: -62.82010269165039
+  pitch: 8.136927604675293
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 563.2209143888198
+  y: 92.8125
+  z: 649.8876190428143
+  yaw: 15.548080444335938
+  pitch: -4.702713489532471

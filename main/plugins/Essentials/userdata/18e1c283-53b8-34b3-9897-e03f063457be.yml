@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 112.198.252.102
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754801439148
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754801500019
+  login: 1754801256053
+money: '0'
+last-account-name: Sataa22
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 438.67695783504445
+  y: 66.0
+  z: 163.13412311067782
+  yaw: -90.29010009765625
+  pitch: 7.498385906219482
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -419.2534419583384
+  y: 89.0
+  z: -296.7226209925073
+  yaw: -134.769775390625
+  pitch: -4.0113606452941895

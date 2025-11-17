@@ -1,0 +1,284 @@
+# Here you can edit all chat messages.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/locale-and-config/messages
+
+# # Credits to @Aternos_
+general:
+  prefix:
+    normal: '&8[&6ChestProtect&8] '
+    help: '&8[&6ChestProtect&8] &7Usage: '
+  value:
+    unlimited: '&aunlimited'
+  role:
+    owner: '&4Owner'
+    admin: '&cAdmin'
+    member: '&eMember'
+    visitor: '&7Visitor'
+    all: '&dAll'
+  command:
+    argument:
+      optional: '&8<&e{arg}&8>'
+      required: '&8[&e{arg}&8]'
+      type:
+        cmd: cmd
+        player: player
+        name: name
+        confirm: confirm
+        menu: menu
+        world: world
+        args: arguments
+        page: page
+        database: database
+        plugin: plugin
+        boolean: true | false
+
+help:
+  help:
+    root:
+      header: '[NoPrefix][T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to
+        the previous page.[/H][C]{cmd} {previous}[/C][/T] &6ChestProtect Commands
+        &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Click here to
+        go to the next page.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &6ChestProtect Commands &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+    sub:
+      unknown: |
+        &cThe subcommand&4 {command} &cdoesn't exist.
+          [T]&7✖ View commands: &3/{cmd} &8[CLICK][H]&7Click here to get a list of available commands[/H][C]{cmd}[/C][/T]
+      header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate
+        to the previous page.[/H][C]{cmd} {previous}[/C][/T] &2Sub Commands &7Page&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go to
+        the next page.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &2Sub Commands &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+  command:
+    chestprotect:
+      lock: '[T]&e{parent} {subcmd} {args} &8- &7Lock object[H]&7Lock an object. Click
+        to execute.[/H][C]{fullcmd}[/C][/T]'
+      unlock: '[T]&e{parent} {subcmd} &8- &7Unlock object[H]&7Unlock a protection.
+        Click to execute.[/H][C]{fullcmd}[/C][/T]'
+      trust: '[T]&e{parent} {subcmd} {args} &8- &7Trust player[H]&7Trust a player
+        at a protection. Click to copy.[/H][C]{fullcmd}[/C][/T]'
+      untrust: '[T]&e{parent} {subcmd} {args} &8- &7Untrust player[H]&7Untrust a player
+        from a protection. Click to copy.[/H][C]{fullcmd}[/C][/T]'
+      menu: '[T]&e{parent} {subcmd} {args} &8- &7Open menu[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+      exit: '[T]&e{parent} {subcmd} &8- &7Exit mode[H]&7Exit lock or trust mode. Click
+        to execute.[/H][C]{fullcmd}[/C][/T]'
+      help: '[T]&e{parent} {subcmd} {args} &8- &7Get help[H]&7Get a list of commands.
+        Click to execute.[/H][C]{fullcmd}[/C][/T]'
+      view: '[T]&e{parent} {subcmd} - &7Visualize nearby protections[H]&7Visualize
+        nearby protections. Click to execute.[/H][C]{fullcmd}[/C][/T]'
+      confirmtp: '[T]&e{parent} {subcmd} &8- &7Confirm unsafe teleport destination[H]&7Click
+        to execute.[/H][C]{fullcmd}[/C][/T]'
+      admin:
+        main: '[T]&e{parent} {subcmd} - &7Admin commands[H]&7Click to execute.[/H][SC]{fullcmd}[/SC][/T]'
+        reload: '[T]&e{parent} {subcmd} &8- &7Reload configurations[H]&7Click to copy.[/H][C]{fullcmd}[/C][/T]'
+        about: '[T]&e{parent} {subcmd} &8- &7Plugin information[H]&7Click to execute.[/H][C]{fullcmd}[/C][/T]'
+        listperms: '[T]&e{parent} {subcmd} {args} &8- &7List permissions a player
+          has[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+        import: '[T]&e{parent} {subcmd} &8- &7Import protections from LWC[H]&7Click
+          to execute.[/H][C]{fullcmd}[/C][/T]'
+        player:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Special player administration[H]&7Click
+            to copy.[/H][SC]{fullcmd}[/SC][/T]'
+          menu: '[T]&e{parent} {subcmd} &8- &7Open menu of player[H]&7Click to copy.[/H][SC]{fullcmd}[/SC][/T]'
+          delete: '[T]&e{parent} {subcmd} &8- &7Delete all data of player[H]&7Click
+            to copy.[/H][SC]{fullcmd}[/SC][/T]'
+
+chestprotect:
+  command:
+    general:
+      no-permission: '&cYou don''t have permission to do this. &8You need permission
+        {permission}.'
+      money-cost: '&cYou don''t have enough to pay the cost. &7You need&c {cost}&7.'
+      player-not-exist: '&cThere''s no player with the name&4 {player}&c. &7Typo?'
+      not-protected: '&cYou can''t do that. &7This object isn''t protected.'
+      player-untrusted: '&cYou can''t do this. &7Player&3 {player} &7isn''t trusted
+        at this protection.'
+      player-self: '&cYou can''t do that with yourself.'
+      input:
+        number: '&cYour input&4 {input} &cisn''t a number. &7Argument {pos}: {expected}'
+        player: '&cThere''s no player with the name&4 {input}&c. &7Typo?'
+        offline: '&cThere''s currently no player with the name&4 {input} &conline.
+          &7Typo?'
+        world: '&cThe world&4 {input} &cdoesn''t exist. &7Argument {pos}: {expected}'
+        confirm: |
+          &7Please confirm this action &8(&e/{input}&8) &7by clicking below:
+            [T]&2✔ Confirm [H]&7Click here to confirm this action.[/H][C]{fullcmd}[/C][/T]
+    help:
+      header: '[NoPrefix][T]&7-------&e&l<<<<&7-[H]&7Click here to navigate to the
+        previous page.[/H][C]{cmd} {previous}[/C][/T] &6ChestProtect Help &7Page&3
+        {page} &8/&3 {pages} [T]&7-&e&l>>>>&7-------[H]&7Click here to go to the next
+        page.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Click on the arrows below to navigate.
+        [T]&7-------&e&l<<<<&7-[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &6ChestProtect Help &7Page&3 {page} &8/&3 {pages} [T]&7-&e&l>>>>&7-------[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+      help: |
+        &7Use &e/{cmd} help &7for help.
+          [T]&7✖ &e/{cmd} View all commands
+      sub:
+        header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate
+          to the previous page.[/H][C]{cmd} {previous}[/C][/T] &6Sub Commands &7Page&3
+          {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go
+          to the next page.[/H][C]{cmd} {next}[/C][/T]'
+        footer: |
+          [NoPrefix]
+          &7Click on the arrows below to navigate.
+          [T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {previous}[/C][/T] &6Sub Commands &7Page&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Click here to go to the next page.[/H][C]{cmd} {next}[/C][/T]
+        unknown: |
+          &cThe subcommand&4 {command} &cdoesn't exist.
+            [T]&7✖ View commands: &3/{cmd} &8[CLICK][H]&7Click here to get a list of available commands[/H][C]{cmd}[/C][/T]
+    lock:
+      activated: '#t#&6Lock-Mode[newline]&7Click to lock an object.[newline]&cType
+        &l/{cmd}&c &cto quit this mode.'
+      deactivated: '#t#&6Lock-Mode[newline]&cDeactivated'
+      position: '&cYou''re not allowed to create protections at this position. &7The
+        land owner may need to give your role permission to create protections here.'
+      already: '&cYou can''t protect this object. &7It''s already protected.'
+      success: '&7You successfully protected this object for&c {cost}&7.'
+      max:
+        blocks: '&cYou can''t create any more block protections. &7Your maximum amount
+          is&3 {max} &7block protections.'
+        entities: '&cYou can''t lock any more entities. &7Your maximum amount of locked
+          entities is&3 {max} &7entities.'
+      auto:
+        cost: '&cCouldn''t auto protect this object. &7You don''t have enough money
+          to pay the cost. Cost:&c {cost}'
+        max:
+          blocks: '&cCouldn''t auto protect this object. &7You reached your maximum
+            amount of&3 {max} &7block protections.'
+          world: '&cCouldn''t auto protect this object in this world. &7You reached
+            your maximum amount of&3 {max} &7protections in this world.'
+          entities: '&cYou can''t lock any more entities. &7Your maximum amount of
+            locked entities is&3 {max} &7entities.'
+        only-land: |
+          [T]&cCouldn't auto protect this object at this position. &7You're not allowed to create protections at your current location.[/T]
+            [T]&7✖ Claim your own land: &e/lands claim &8[CLICK][H]&7Click here to claim at your current position.[/H][C]lands claim[/C][/T]
+    unlock:
+      plugin: '&cCan''t unlock this protection, since it''s managed by another plugin.
+        &7Plugin: {plugin}'
+      activated: '#t#&6Unlock-Mode[newline]&cClick to unlock a object.[newline]&cType
+        &l/{cmd}&c &cto quit this mode.'
+      deactivated: '#t#&6Unlock-Mode[newline]&cDeactivated'
+      success: '&7Successfully unlocked this object.'
+    trust:
+      activated: '#t#&6Trust-Mode[newline]&7Click a protection to trust&3 {player}&7.[newline]&cType
+        &l/{cmd}&c &cto quit this mode.'
+      deactivated: '#t#&6Trust-Mode[newline]&cDeactivated'
+      already: '&cPlayer&4 {player} &cis already trusted at this protection.'
+      max-members: '&cYou can''t add any more members. &7The maximum for you is&c
+        {max}&7.'
+      success: '&7You successfully trusted player&3 {player} &7to this protection.'
+    untrust:
+      already: '&cPlayer&4 {player} &cisn''t trusted at this position. &7Typo?'
+      group: '&cThe player&4 {player} &cis trusted via the group&4 {group} &cand needs
+        to be untrusted in the menu of this group.'
+      activated: '#t#&6Untrust-Mode[newline]&7Click to untrust&3 {player}&7.[newline]&cType
+        &l/{cmd}&c &cto quit this mode.'
+      deactivated: '#t#&6Untrust-Mode[newline]&cDeactivated'
+      priority: '&cYou can''t untrust player&4 {player} &cof role&4 {role}&c. &7Their
+        role has a higher or equal priority than yours.'
+      success: '&7You successfully untrusted player&3 {player} &7from this protection.'
+    exit:
+      none: '&cYou don''t have a lock, unlock, trust or untrust mode enabled.'
+    view:
+      activated: '#t#&7Visualization[newline]&aNearby protections are visualized.'
+      deactivated: '#t#&7Visualization[newline]&cDeactivated'
+    confirmtp:
+      none: '&cYou have no active teleportation.'
+    admin:
+      listperms:
+        header: '[NoPrefix][T]&7----------&e&l<<<<&7-[H]&7Click here to navigate to
+          the previous page.[/H][C]{cmd} {player} {previous}[/C][/T] &2Perm List &7Page&3
+          {page} &8/&3 {pages} [T]&7-&e&l>>>>&7----------[H]&7Click here to go to
+          the next page.[/H][C]{cmd} {player} {next}[/C][/T]'
+        footer: |
+          [NoPrefix]
+          &cPlayer &4{player} &chas these permissions, because they or their wildcard (perm.*) permissions are set in your permissions plugin. &7Click on the arrows below to navigate.
+
+           &cRed = wildcard perms
+           &eYellow = numbered perms
+          [T]&7----------&e&l<<<<&7-[H]&7Click here to navigate to the previous page.[/H][C]{cmd} {player} {previous}[/C][/T] &2Perm List &7Page&3 {page} &8/&3 {pages} [T]&7-&e&l>>>>&7----------[H]&7Click here to go to the next page.[/H][C]{cmd} {player} {next}[/C][/T]
+  message:
+    world-invalid: '&cThis is deactivated in this world. &7A administrator needs to
+      add it in config. Name of world:&3 {world}'
+    object-invalid: '&cYou can''t protect this object. &7A administrator needs to
+      add it to the config. Name:&3 {object}'
+    noaccess:
+      protection: '&cYou''re not allowed to do this at this protection. &7It belongs
+        to&3 {player}&7.'
+      untrusted: '&cYou''re not trusted at this protection. &7It belongs to&3 {player}&7.'
+      management: '&cYou''re not allowed to do this at this protection. &7It belongs
+        to&3 {player}&7.'
+      action: '&cYou''re not allowed to do this at this protection. &7It belongs to&3
+        {player}&7.'
+    
+    hopper:
+      placement: '&cYou can''t place this hopper here, &7because you''re not allowed
+        to extract items from the protection above this location.'
+      removed: '&cYour hopper has been removed from a protection. &7You''re not allowed
+        to extract items from this protection. &7World: {world} X: {x} Y: {y} Z: {z}'
+    
+    event:
+      open-owner: '#a#&7This protection belongs to &3you&7.'
+      open-trusted: '#a#&7This protection belongs to&3 {player}&7.'
+      protectable: '&7You placed a protectable object. Execute &e/cp lock &7to lock
+        it.'
+    
+    chat-input:
+      general: '&7Please enter your input in the chat.'
+      player: '#t#&6Enter the Name[newline]&7of the player in chat[newline]&7Enter
+        "cancel" to abort.'
+      name: '#t#&6Enter the Name[newline]&7in chat[newline]&7Enter "cancel" to abort.'
+    
+    teleportation:
+      already: '&cYou can''t start a second teleportation. There''s already a teleportation
+        in progress. &7Please wait until it''s done.'
+      started: '&7Teleportation process started. Teleporting in&5 {sec} &7seconds.
+        Please don''t move.'
+      cmd: '&cYou can''t use any commands while being teleported. &7Please wait another&5
+        {sec} second(s) &7until the teleportation has been finished.'
+      progress: '#b#[config]color:purple,style:solid[/config]&7Wait&5 {time} &7Second(s)
+        until Teleportation.'
+      cancelled: '&cYour teleportation has been cancelled. &7Please don''t move while
+        you''re waiting&5 {sec} &7seconds for teleportation.'
+      plugin: '&cTeleportation has been cancelled by a 3rd party plugin. &7Please
+        check your other plugins. &7This is not a ChestProtect issue.'
+      unsafe: '&cTeleportation has been cancelled, because the destination is not
+        safe.'
+      corrected: '&7The original teleport destination was unsafe. &7Your final destination
+        has been corrected to a safe location.'
+    
+    group:
+      create:
+        exists: '&cYou already have a group with the name&4 {group}&c. &7Please choose
+          a different name.'
+    
+    role:
+      not-exist: '&cRole&e {role} &cdoes not exist at this protection. &7Typo?'
+      
+      delete:
+        owner: '&cYou can''t delete the owner role of your protection. &7This role
+          is required.'
+        entry: '&cYou can''t delete the entry role of your protection. &7It is required
+          for new players.'
+        visitor: '&cYou can''t delete the visitor role of your protection. &7It''s
+          required for untrusted players.'
+
+
+list:
+  hologram:
+    block:
+      container:
+      - '{name}'
+      - '{bar}'
+      - '{used}/{total} slots'
+# License Number: 56a9de35-d07e-48c5-bee2-c24893e8cd9a

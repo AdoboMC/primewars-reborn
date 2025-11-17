@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 64.224.128.184
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754225459335
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754225917379
+  login: 1754224386440
+money: '17971.1687805861585772'
+last-account-name: Aiichen
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 580.5
+  y: 102.0
+  z: 725.5
+  yaw: 67.731689453125
+  pitch: 72.9185791015625
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -572.7720663213353
+  y: 106.0
+  z: -248.82267538464282
+  yaw: -7.089111328125
+  pitch: 25.430166244506836

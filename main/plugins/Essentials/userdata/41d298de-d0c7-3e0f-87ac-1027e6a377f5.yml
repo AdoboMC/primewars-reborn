@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.8.37
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1755795363984
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1755795386552
+  login: 1755795270091
+money: '0'
+last-account-name: akiakyo
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 55.8146822673997
+  y: 65.0
+  z: 84.42648428935554
+  yaw: 39.70159912109375
+  pitch: 27.838829040527344
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -419.30371657756746
+  y: 88.0
+  z: -280.3587852844603
+  yaw: -22.81585693359375
+  pitch: 8.856966972351074

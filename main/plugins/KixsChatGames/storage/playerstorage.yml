@@ -1,0 +1,101 @@
+toggled-off-uuids: []
+sounds-toggled-off-uuids: []
+leaderboard-hidden-uuids: []
+total-server-wins: 211
+wins:
+  3cac2e41-0f4e-30b9-b05d-ea4c32948da4:
+    unscramble: 6
+    type-random: 8
+    trivia: 1
+    solve: 3
+    reverse-word-unshuffle: 2
+    type: 5
+    word-unshuffle: 2
+    unreverse: 1
+  14d96549-2d68-332f-a0e3-59f9bb07a92c:
+    type-random: 1
+    trivia: 5
+    unscramble: 1
+  50f2d0c1-1263-3cb8-b7f5-caf1c126dd6a:
+    solve: 6
+    trivia: 4
+    reverse-word-unshuffle: 4
+    fill-in: 5
+    type: 4
+    unscramble: 5
+    word-unshuffle: 1
+    unreverse: 1
+  bc871d81-47d6-31b1-86b7-4430444a2dca:
+    trivia: 2
+    type: 2
+    type-random: 1
+    reverse-word-unshuffle: 1
+  f4e4b17f-dd9c-3b27-8459-ce4d94aa8ca4:
+    trivia: 4
+    type-random: 8
+    unreverse: 8
+    fill-in: 5
+    word-unshuffle: 10
+    type: 9
+    unscramble: 3
+    solve: 10
+    reverse-word-unshuffle: 5
+  f47b7ce3-7428-379d-a505-8ed15cc53955:
+    word-unshuffle: 3
+    type: 2
+    unscramble: 3
+    solve: 6
+    trivia: 2
+    unreverse: 1
+  1b1926e9-cef7-32a0-9225-67b91071c2c9:
+    type-random: 1
+  8aaebaad-6f55-3a28-a14c-4abc178f7ada:
+    type: 1
+    solve: 1
+  e3ab647f-6b6b-39d9-88ee-3626d995b3da:
+    type: 1
+    solve: 1
+    trivia: 1
+  3c878696-439e-36e7-b80b-98b9ff63c0b4:
+    solve: 2
+  2b74a40a-64b3-389c-a89d-fb3e8fb6405c:
+    solve: 2
+    unscramble: 1
+    word-unshuffle: 1
+    reverse-word-unshuffle: 1
+    trivia: 1
+    type-random: 1
+  53dbe15d-009e-3e99-aba5-9cfd724c3f6f:
+    unscramble: 4
+    solve: 3
+    unreverse: 6
+    reverse-word-unshuffle: 2
+    type-random: 2
+    fill-in: 1
+    trivia: 1
+    type: 3
+    word-unshuffle: 1
+  ae247029-0946-37ec-964b-7a11d9d043ef:
+    solve: 2
+    word-unshuffle: 1
+    type-random: 2
+    reverse-word-unshuffle: 1
+    unscramble: 2
+  ff185652-0765-3f29-84ac-a0731bf2df13:
+    solve: 1
+    type: 1
+    trivia: 1
+    unreverse: 1
+  8191ae1f-902f-3910-8739-8196a7348991:
+    unreverse: 1
+    solve: 1
+  057c266a-1f13-3f93-98e6-32c9b29d95e8:
+    fill-in: 1
+  c1dbb81b-9fae-3fa4-92a3-d6ac4437a5e7:
+    solve: 1
+  bec2c86d-c953-3f41-8618-dad95ff9351c:
+    word-unshuffle: 2
+    unreverse: 2
+    type-random: 1
+    unscramble: 1
+    type: 1

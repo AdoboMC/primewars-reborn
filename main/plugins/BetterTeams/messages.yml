@@ -1,0 +1,658 @@
+# Any placeholders from placeholder API will work in this file
+invalidArg: '&cInvalid Arguments, help'
+inTeam: '&cYou must be in a team to do that'
+internalError: '&cSomething went wrong while executing that command, please report
+  it to your server owners'
+notInTeam: '&cYou must leave your team before doing that'
+needOwner: '&cYou must be the owner of the team to do that'
+needAdmin: '&cYou must be admin or owner of the team to do that'
+needPlayer: '&cYou must be a player to do that'
+noPlayer: '&cSpecified player not found'
+notTeam: '&cThat team does not exist try &b/team create <name>'
+needSameTeam: '&7You are not in the same team as that person'
+noPerm: '&cYou do not have permission to do that'
+prefixSyntax: '&7[{0}&7] &r{1}'
+bannedChar: '&cA character you tried to use is banned'
+noTeam: '&cThat team does not exist'
+loading: '&7Loading'
+cooldown:
+  wait: '&cYou need to wait another {0} seconds before running that!'
+cost:
+  tooPoor: '&cYou are too poor to run that command'
+  run: '&c&l-{0}'
+placeholder:
+  noTeam: ''
+  noDescription: ''
+  money: '{0}'
+  owner: Owner
+  admin: Admin
+  default: Default
+  name: '{0}'
+  tag: '{0}'
+  displayname: '{0}'
+  inteam: 'true'
+  notinteam: 'false'
+  noTitle: ''
+  hasHome: 'true'
+  noHome: 'false'
+  teamChat: Team Chat
+  globalChat: Global Chat
+  allyChat: Ally Chat
+prefix:
+  owner: ' **'
+  admin: ' *'
+  default: ' '
+create:
+  exists: '&7That team already exists'
+  success: '&7Your team has been created'
+  banned: '&cThat team name is banned'
+  maxLength: '&cThat team name is too long'
+  minLength: '&4That team name is too short'
+leave:
+  success: '&7You have left the team'
+  lastOwner: '&7You are the only owner rank within the team, Either promote someone
+    else or use &b/team disband &7to disband command. the team'
+rank:
+  noTeam: '&cTeam not found'
+  info: '&7Team position:'
+  infos: '&7Team rank: &b{0} &7({1} score needed for next rankup)'
+  infom: '&7Team rank: &b{0} &7(₱{1} needed for next rankup)'
+  infomm: '&7Team rank: &b{0} &7(You are the max rank)'
+  syntax: '&b{0}: &7{1} &7({2})'
+delhome:
+  success: '&7Your team home has been deleted'
+  noHome: '&cYour team has not set a home'
+disband:
+  success: '&7You have disbanded the team'
+  confirm: '&7Type &b/team disband &7again to confirm'
+description:
+  success: '&7You have changed the team description'
+  view: '&7Team Description: {0}'
+  noDesc: '&7No team description set'
+  noPerm: '&cYou do not have permission to edit the description'
+name:
+  success: '&7You have changed the team name'
+  view: '&7Team name: {0}'
+  exists: '&cThat team already exists'
+  noPerm: '&cYou do not have permission to change your team name'
+invite:
+  success: '&7That player has been invited'
+  invite: '&7You have been invited to join team {0} do &b/team join <team> &7 to join
+    the team'
+  inTeam: '&7That player is already in a team'
+  banned: '&7That player is banned from your team'
+  full: '&7Your team is maximum size, kick someone out before inviting more people'
+  expired: '&cThe invite from &b{0} &chas expired'
+  hover: '&6Click to join &b{0}'
+join:
+  success: '&7You have joined that team'
+  notify: '&7Welcome &b{0} &7to the team!'
+  notInvited: '&cYou have not been invited to that team'
+  banned: '&cYou are banned from that team'
+  full: '&cThat team is full'
+open:
+  successopen: '&7Your team now open to everyone'
+  successclose: '&7Your team is now invite only'
+title:
+  change: '&7Your title has been changed to &b{0}'
+  remove: '&7Your title has been removed'
+  success: '&7That title has been changed'
+  tooLong: '&cThat title is too long'
+  noFormat: '&cYou do not have permission to format titles'
+  noColor: '&cYou do not have permission to color titles'
+  reset: '&7Your title has been reset'
+  noPerm: '&cYou do not have permission to change your team title'
+info:
+  needTeam: '&7No team or player found under that name'
+  name: '&7Name: &b{0}'
+  description: '&7Description: &b{0}'
+  open: '&7Open: &b{0}'
+  level: '&7Level: &b{0}'
+  owner: '&7Owners: &b{0}'
+  admin: '&7Admins: &b{0}'
+  default: '&7Members: &b{0}'
+  tag: '&7Tag: &b{0}'
+  fail: '&7No team or player found under that name'
+  score: '&7Score: &b{0}'
+  money: '&7Balance: &b{0}'
+  ally: '&7Allies: &b{0}'
+  anchor: '&6Anchor: &b{0}'
+  online: '&a'
+  offline: '&c'
+  onlinePlayer: <green>{0}</green>
+  offlinePlayer: <red>{0}</red>
+  playerListSpace: ' '
+kick:
+  success: '&7That player has been kicked'
+  notify: '&7You have been kicked from team {0}'
+  title: '&cYou have been kicked from your team'
+  noPerm: '&7You do not have permission to kick that person'
+ban:
+  success: '&7That player has been banned'
+  notify: '&7You have been banned from team {0}'
+  title: '&cYou have been banned from your team'
+  noPerm: '&7You do not have permission to ban that person'
+  already: '&7That player is already banned'
+unban:
+  success: '&7That player has been unbanned'
+  notify: '&7You have been unbanned from team {0}'
+  noPerm: '&7You do not have permission to unban that person'
+  not: '&7That player is not banned'
+promote:
+  success: '&7That player has been promoted'
+  noPerm: '&7You do not have permissions to promote that person'
+  max: '&7That person is already promoted to the max!'
+  notify: '&7You have been promoted!'
+  maxAdmins: '&cYour team already has the maximum number of admins, demote someone
+    or level your team up'
+  maxOwners: '&cYour team already has the maximum number of owners, demote someone
+    or level your team up'
+demote:
+  success: '&7That player has been demoted'
+  noPerm: '&7You do not have permissions to demote that person'
+  min: '&7That person is already the lowest rank'
+  notify: '&7You have been demoted'
+  lastOwner: '&7You cannot demote the final owner, promote someone else first'
+  maxAdmins: '&cYour team already has the maximum number of admins, remove and admin
+    or level your team up'
+home:
+  success: '&7You have been teleported'
+  noHome: '&7Your team has not set a home'
+  world: '&cYou team home could not be found'
+sethome:
+  success: '&7Your team home has been set'
+  noPerm: '&7Your are not a high enough rank to set your team home'
+chat:
+  enabled: '&7Your messages now go to the team chat'
+  disabled: '&7Your messages now go to the global chat'
+  syntax: '&b[Team]&f{0}&f: {1}'
+color:
+  success: '&7Your team color has been changed'
+  fail: '&7That is not a recognised chat color'
+  banned: '&cYou can only use colors, not formatting codes'
+deposit:
+  tooLittle: '&cYou cannot deposit negative amounts'
+  fail: '&cThe deposit failed'
+  success: '&7Money deposited'
+  max: '&cThat would exceed your maximum allowed team balance'
+withdraw:
+  tooLittle: '&cYou cannot widthraw negative amounts'
+  fail: '&cThe withdrawal failed'
+  success: '&7Money withdrawn'
+  notEnough: '&7Your team does not have enough money'
+ally:
+  already: '&cYou are already allies'
+  success: '&7Your teams are now allies'
+  ally: '&7Your team is now allied with &b{0}'
+  requested: '&7An ally request has been sent to that team'
+  request: '&b{0} &7has sent an ally request, use &b/team ally <team> &7to accept'
+  self: '&cYou cannot ally your own team'
+  from: '&7You have ally requests from: {0}'
+  noRequests: '&cYou do not have any ally requests'
+  onJoin: '&7You have new ally requests do &b/team ally &7to view them'
+  limit: '&cThe limit on allies has been reached'
+  alreadyrequest: '&cYou have already requested to be allies with that team'
+  ally_title: '&6Your team is now allied with &b{0}'
+allychat:
+  disabled: '&7Your messages are no longer going to the ally chat'
+  enabled: '&7Your messages are now going to the ally chat'
+  syntax: '&d[{0}]&f{1}&f: {2}'
+neutral:
+  self: '&7That is your own team'
+  requestremove: '&7That ally request has been removed'
+  reject: '&cYour ally request with &b{0} &chas been rejected'
+  notAlly: '&cYou are not allied with that team'
+  success: '&cYou are no longer allied with that team'
+  remove: '&cYou are no longer allied with &b{0}'
+  remove_title: '&4You are no longer allied with &b{0}'
+list:
+  noPage: '&7That page is not found'
+  header: '&7--- &bTeam list page {0} &7---'
+  body: '&7{0}: &b{1}'
+  footer: '&7--- &7do &b/team list [page] &7to view more &7---'
+setowner:
+  use: '&7You cannot promote that player, use &b/team setowner <player> &7to promote
+    that player to owner'
+  success: '&7That player is now owner'
+  notify: '&7You are now owner of your team'
+  max: '&cThat player is already owner'
+setwarp:
+  exist: '&cThat warp already exists'
+  max: '&cYour team already has the maximum number of warps set'
+  success: '&7That warp has been created'
+  char: '&cThat warp name includes banned characters'
+warp:
+  nowarp: '&cThat warp does not exist'
+  invalidPassword: '&cInvalid password for that warp'
+  success: '&7You have been teleported'
+  world: '&cThe location of that warp could not be found'
+warps:
+  syntax: '&7Warps: &b{0}'
+  none: '&cYour team has no warps set'
+delwarp:
+  success: '&cThat warp has been deleted'
+teleport:
+  fail: '&cThe teleportation failed'
+  wait: '&7Wait &b{0} &7seconds'
+chest:
+  claim:
+    noChest: '&cYou are not standing on a chest'
+    limit: '&cYour team has claimed the maximum number of chests'
+    claimed: '&cThat chest has already been claimed'
+    success: '&7You have claimed that chest'
+  remove:
+    noChest: '&cYou are not standing on a chest'
+    notClaimed: '&cYour team has not claimed that chest'
+    success: '&cYour team no longer has a claim to that chest'
+  all:
+    success: '&7Unclaimed all chests'
+  claimed: '&cThat chest is claimed by &a{0}'
+  check:
+    self: '&6Your team has claimed that chest'
+    notClaimed: '&6That chest has not been claimed'
+    claimed: '&6That chest is claimed by &a{0}'
+echest:
+  
+  echest: Enderchest
+pvp:
+  
+  enabled: '&7PvP has been enabled for your team'
+  disabled: '&7PvP has been disabled for your team'
+rankup:
+  
+  max: '&cYou are already the max rank'
+  score: '&cYou need {0} score to rankup'
+  money: '&cYou need {0} money in the team balance to rankup'
+  success: '&7Your team has leveled up'
+tag:
+  
+  banned: '&cThat tag is banned'
+  success: '&7Your tag has successfully changed'
+  maxLength: '&cThat tag is too long'
+  noPerm: '&cYou do not have permission to change the team tag'
+admin:
+  cancel: '&cThe command was cancelled by another plugin'
+  tag:
+    success: '&7That teams tag successfully changed'
+  setrank:
+    success: '&7That teams rank has been set'
+    'no': '&cThat rank either does not exist or is not setup correctly'
+  config:
+    
+    reload: '&7BetterTeams has been reloaded (If you are having problems when using
+      this command, restart the server)'
+  holo:
+    create:
+      success: '&7Hologram created'
+    remove:
+      noHolo: '&cNo holograms found'
+      success: '&7Hologram deleted'
+  title:
+    success: '&7that players title has been changed'
+    reset: '&7That players title has been reset'
+  version: '&7Current plugin version: &b{0}'
+  versionstorage: '&7Storage Method: &b{0}'
+  versionversion: '&7Minecraft Version: &b{0}'
+  versionlanguage: '&7Language Selected: &b{0}'
+  noTeam: '&cThat is not a team'
+  home:
+    success: '&7You have been teleported to that teams home'
+    noHome: '&cThat team does not have a home set'
+  name:
+    success: '&7The team name has been changed'
+  description:
+    success: '&7That teams name has been changed'
+  open:
+    successopen: '&7That team is now open for everyone'
+    successclose: '&7That team is now invite only'
+  invite:
+    success: '&7That player has been invited to that team'
+  create:
+    success: '&7That team has been created'
+  join:
+    banned: '&cThat player is banned from that team'
+    success: '&7That player has joined the team'
+    notify: '&7You have joined the team &b{0}'
+    full: '&cThat team is full'
+  notInTeam: '&7That player cannot be in a team before doing that'
+  inTeam: '&cThat player is not in a team'
+  leave:
+    success: '&7That player has left that team'
+    notify: '&7You have left that team'
+  demote:
+    notify: '&7You have been demoted'
+    success: '&7That player has been demoted'
+    min: '&cThat player cannot be demoted any more'
+    maxAdmins: '&cThat team already has the max number of admins, remove one before
+      demoting this player'
+  promote:
+    max: '&7That player is already the maximum rank'
+    notify: '&7You have been promoted'
+    success: '&7That player has been promoted'
+    owner: '&7It is configured that teams can only have a single owner, do &b/teama
+      setowner <player> &7to set the player as the owner'
+    maxAdmins: '&cThat team already has the max number of admins, remove one before
+      promoting that player'
+    maxOwners: '&cThat team already has the max number of owners, remove one before
+      promoting that player'
+  setowner:
+    already: '&cThat player is already an owner'
+    nonotify: '&7You are no longer owner of the team'
+    success: '&7That player is the new team owner'
+    notify: '&7You are now the owner of your team'
+  warps:
+    none: '&cThat team has not set any warps'
+  setwarp:
+    success: '&7That warp has been set'
+    max: '&7That team has already set the maximum number of warps'
+  purge:
+    confirm: '&7Run that command in the next 10 seconds to confirm, &cTHIS CANNOT
+      BE UNDONE AND WILL RESET SCORES FOR ALL TEAMS'
+    success: '&7The teams have been purged'
+  score:
+    tooSmall: '&cThe score must be greater than 0'
+    success: '&7That teams score has been changed'
+  bal:
+    toSmall: '&cThe balance must be greater than 0'
+    success: '&7That teams balance has been changed'
+  update: '&cThere is a new version of better teams released update here: (https://www.spigotmc.org/resources/better-teams.17129/)'
+  disband:
+    success: '&7That team has been disbanded successfully'
+  color:
+    success: '&7That teams color has been changed'
+  chest:
+    claim:
+      success: '&7You have claimed that chest on behalf of the team'
+    remove:
+      success: '&7You have successfully removed the claim from that chest'
+      notClaimed: '&cNo team has claimed that chest'
+    all:
+      success: '&7All claims removed from that team'
+    disable:
+      already: '&cChest claims are already disabled'
+      success: '&7Chest claiming has been disabled'
+    disabled:
+      bc: '&7&lAll claimed chests are able to be opened'
+    enable:
+      already: '&cChest claims are already enabled'
+      success: '&7Chest claiming has been enabled'
+    enabled:
+      bc: '&7&lAll claimed chests are locked'
+  teleport:
+    success: '&7All online members of that team were teleported'
+    noWorld: '&4Specified world not found'
+    player:
+      success: '&6That player was teleported'
+    all:
+      success: '&6All online members of all teams were teleported'
+      home:
+        success: '&6All online members of all teams with a home were teleported'
+  versiononline: '&6Online mode: &b{0}'
+  versionplayers: '&6Player count: &b{0}'
+  versionplugins: '&6Plugin integrations: &b{0}'
+  versionconflicts: '&6Potential conflicts: &b{0}'
+  anchor:
+    enabled: '&6Forced the player to allow their respawning at their team''s home'
+    disabled: '&6Forced the player to disallow their respawning at their team''s home'
+  setanchor:
+    enabled: '&6That team''s anchor status has been enabled'
+    disabled: '&6That team''s anchor status has been disabled'
+    noHome: '&4That team must have a home set first'
+  ally:
+    same: '&4You cannot make a team an ally of itself'
+    already: '&4Those teams are already allies'
+    success: '&6Those two teams are now allies'
+  neutral:
+    same: '&4You cannot enter the same team twice'
+    not: '&4Those teams are not allies'
+    success: '&6Those teams are no longer allies'
+  import:
+    fail: '&4The messages import failed, check the console for errors'
+    success: '&6The messages have been successfully imported'
+nametag:
+  
+  syntax: '&7&l{0}&r '
+holo:
+  leaderboard: '&7Leaderboard'
+  syntax: '&7{0}: &b{1}'
+  msyntax: '&7{0}: &b₱{1}'
+top:
+  leaderboard: '&7Leaderboard'
+  syntax: '&b{0}: &7{1} &7({2})'
+  divide: '&f...'
+baltop:
+  leaderboard: '&7Leaderboard'
+  syntax: '&b{0}: &7{1} &7({2})'
+  divide: '&f...'
+spy:
+  stop: '&7You are no longer spying on team messages'
+  start: '&7You are now spying on team messages'
+  team: '&7[&b{0}&7]&f{1}&f: {2}'
+  ally: '&7[&d{0}&7]&f{1}&f: {2}'
+uclaim:
+  
+  team: '&cYou must be in a team to create a claim'
+  member: '&cYou cannot leave your teams claim'
+  kick: '&cYou cannot kick members of your own team from your claim'
+  ban: '&cYou cannot ban members of your own team from your claim'
+  dissolve: '&cYour team has been disbanded so your claim has been dissolved'
+help:
+  
+  description: View and change your team's description
+  ban: Bans the specified player from your team
+  home: Teleports you to your team's home
+  help: View this help page
+  promote: Promote the specified player within your team
+  demote: Demote the specified player within your team
+  unban: Unbans the specified player from your team
+  kick: Kick that player from your team
+  leave: Leave your current team
+  chat: Send a message only to your team
+  name: View and change your team's name
+  sethome: Sets your team's home
+  create: Create a team with the specified name
+  invite: Invite the specified player to your team
+  disband: Disband your current team
+  open: Toggle if the team is invite only
+  info: View information about the specified player / team
+  color: Change your teams color
+  deposit: Deposit money into the teams balance
+  bal: View your teams balance
+  withdraw: Withdraw money from the teams balance
+  title: Change that players title within the team
+  top: View the top teams
+  rank: View the rank of a team
+  join: Join the specified team
+  delhome: Delete your team's home
+  ally: Used to request an alliance with another team
+  neutral: Remove allies and reject ally requests
+  allychat: Send a message only to your allies
+  echest: View your teams ender chest
+  setwarp: Set a warp for the rest of your team
+  warps: View a list of your teams warps
+  rankup: Rank your team up to get more perks
+  tag: Set your teams tag
+  delwarp: Delete that warp from your team
+  chest:
+    removeall: Remove all claimed chests (useful if you lose track of a chest)
+    claim: Claim the chest you are standing on
+    remove: Removes your teams claim from the chest you are standing on
+    help: View this help page
+    check: Check if the chest you are standing on is claimed
+  pvp: Toggle if pvp is enabled for your team
+  baltop: View the richest teams
+  list: Get a list of all teams on the server
+  warp: Warp to a location set by your team
+  removeall: Remove all claimed chests (useful if you lose track of a chest)
+  claim: Claim the chest you are standing on
+  remove: Removes your teams claim from the chest you are standing on
+  teleport: Teleports the specified team to the specified location (or executor's
+    location)
+  purge: Reset the score for all teams
+  setrank: Set the level of the team specified
+  score:
+    add: Add the specified amount to that players score
+    help: View this help page
+    set: Set the specified teams score
+    remove: Remove the specified amount from that players score
+  reload: Reload the BetterTeams configs
+  chatspy: Spy on messages sent to team chats
+  version: Check the plugin version
+  money: ''
+  header: '&6---- &bBetterTeams Help &6----'
+  footer: '&6---- &bPage {0}/{1} - /{2} help <page> &6----'
+  wrong: '&4Something went wrong, inform your server admins'
+  anchor: Toggles whether you want to respawn at your team's home
+  setanchor: Sets your team home's ability to serve as a respawn point
+  teamadmin:
+    echest: View and edit that teams ender chest
+command:
+  
+  create: create
+  leave: leave
+  disband: disband
+  description: description
+  invite: invite
+  join: join
+  name: name
+  open: open
+  info: info
+  kick: kick
+  promote: promote
+  demote: demote
+  home: home
+  sethome: sethome
+  ban: ban
+  unban: unban
+  chat: chat
+  color: color
+  title: title
+  top: top
+  baltop: baltop
+  rank: rank
+  delhome: delhome
+  ally: ally
+  neutral: neutral
+  allychat: allychat
+  list: list
+  warp: warp
+  setwarp: setwarp
+  delwarp: delwarp
+  warps: warps
+  echest: echest
+  rankup: rankup
+  tag: tag
+  pvp: pvp
+  claim: claim
+  remove: remove
+  removeall: removeall
+  chest: chest
+  reload: reload
+  chatspy: chatspy
+  version: version
+  purge: purge
+  setrank: setrank
+  add: add
+  set: set
+  score: score
+  enableclaims: enableclaims
+  disableclaims: disableclaims
+  teleport: teleport
+  money: money
+  deposit: deposit
+  bal: bal
+  withdraw: withdraw
+  anchor: anchor
+  setanchor: setanchor
+  check: check
+  debug: debug
+  importmessages: importmessages
+  holo: holo
+announce:
+  join: '&3{0} &7has joined team {1}'
+  leave: '&3{0} &7has left team {1}'
+  disband: '&7Team {0} &7has been disbanded'
+anchor:
+  enabled: '&6Now you allow your respawning at team home'
+  disabled: '&6Now you do not allow your respawning at team home'
+  noHome: '&6Your team must have team home set and team anchor enabled'
+setanchor:
+  enabled: '&6Team anchor enabled'
+  disabled: '&6Team anchor disabled'
+  notifyEnable: '&6Team anchor has been enabled by {0}'
+  notifyDisable: '&6Team anchor has been disabled by {0}'
+  noHome: '&4Must set a team home first'
+  noPerm: '&4You don''t have permission to set your team''s anchor state'
+  noBool: '&4Team anchor state can only be true or false'
+helpArg:
+  delhome: ''
+  echest: ''
+  color: <color code>
+  allychat: '[message]'
+  description: '[description]'
+  setwarp: <name> [password]
+  title: '[player/me] [title]'
+  bal: ''
+  ban: <player>
+  promote: <player>
+  warps: ''
+  top: ''
+  ally: <team>
+  rankup: ''
+  leave: ''
+  sethome: ''
+  create: <name> [tag]
+  rank: '[team]'
+  join: <team>
+  tag: '[tag]'
+  disband: ''
+  info: '[team/player]'
+  delwarp: <name> [password]
+  chest:
+    removeall: ''
+    claim: ''
+    remove: ''
+    help: ''
+    check: ''
+  neutral: <team>
+  pvp: ''
+  baltop: ''
+  list: '[page]'
+  home: ''
+  help: ''
+  unban: <player>
+  demote: <player>
+  kick: <player>
+  chat: '[message]'
+  name: <name>
+  deposit: <amount>
+  invite: <player>
+  open: ''
+  warp: <name>
+  withdraw: <amount>
+  anchor: <true/false>
+  setanchor: <true/false>
+  score:
+    add: <player/team> <score>
+    help: ''
+    set: <player/team> <score>
+    remove: <player/team> <score>
+  teamadmin:
+    echest: <team>
+webhook:
+  unknownPlayer: an unknown player
+  create:
+    title: New team created - {0}
+    description: A team called **{0}** has been created by **{1}**
+  disband:
+    title: Team disbanded - {0}
+    description: A team called **{0}** has been disbanded by **{1}**
+  leave:
+    title: Team member left - {0}
+    description: A user named **{0}** has left team **{1}**
+  rename:
+    title: Team name change - {0}
+    description: A team called **{0}** had its name changed to **{1}** by **{2}**
+  chat:
+    title: 'Team Message: {0} [{1}]'
+    description: '{0}'

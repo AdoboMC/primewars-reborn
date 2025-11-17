@@ -1,0 +1,57 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: true
+timestamps:
+  lastteleport: 1757849760220
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757869535312
+  login: 1763288360619
+  kits:
+    color: 1753555028496
+money: '1000500.0'
+last-account-name: WizKhalifaX_
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -529.7792504021998
+  y: 95.53260085503636
+  z: -290.72573880623764
+  yaw: 23.549999237060547
+  pitch: 14.099987983703613
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.2915952227731
+  y: 93.0
+  z: -304.51630222912365
+  yaw: -92.29991912841797
+  pitch: 8.249991416931152
+homes:
+  odeslands:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2422.5662096469655
+    y: 64.0
+    z: -1117.5379378358548
+    yaw: 19.446319580078125
+    pitch: 5.400052070617676
+mail:
+- legacy: false
+  read: false
+  message: The Commands Work, No Need to Worry
+  sender-name: Console
+  sender-uuid: 'null'
+  timestamp: 1757026457512
+  expire: 0

@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 143.44.164.8
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1756872744143
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1756872864508
+  login: 1756872508342
+money: '4961.0'
+last-account-name: Xensu
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -407.36773031783906
+  y: 92.0625
+  z: -303.8447241224784
+  yaw: 70.60013580322266
+  pitch: -9.450020790100098
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 2242.699999988079
+  y: 73.0
+  z: 1760.4641364493655
+  yaw: -91.24996185302734
+  pitch: 30.750036239624023
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2227.168723470614
+    y: 69.0
+    z: 1752.494749960999
+    yaw: -85.54986572265625
+    pitch: -15.299958229064941

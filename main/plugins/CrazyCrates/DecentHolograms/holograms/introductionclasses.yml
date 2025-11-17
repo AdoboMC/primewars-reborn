@@ -1,0 +1,34 @@
+location: Philippines:-385.172:96.988:-325.752
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&3Rpg Class transforms your peaceful farming life into a full-blown
+      RPG adventure'
+    height: 0.3
+  - content: '&3letting you choose powerful classes, unlock unique combat and'
+    height: 0.3
+  - content: '&3utility skills, level up through farming, mining, and combat, and
+      customize your stats'
+    height: 0.3
+  - content: '&3to become a legendary hero of the land while growing your own path,'
+    height: 0.3
+  - content: '&3 alone or with friends.'
+    height: 0.3
+  - content: '&a&lBasic &4&lCommands;'
+    height: 0.3
+  - content: '&e/class &6Classes define your combat style.'
+    height: 0.3
+  - content: '&e/skills &6As you &alevel up&6, you''ll unlock active and passive skills.'
+    height: 0.3
+  - content: '&e/party &6Play and level together! Share experience and support each
+      other'
+    height: 0.3
+  - content: '&e/attributes &6Whenever you level up, you earn attribute points. Use
+      this command to customize your build'
+    height: 0.3
+  actions: {}

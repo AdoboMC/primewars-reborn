@@ -1,0 +1,268 @@
+menu_title: "<shift:-44>&f<glyph:scenes_menu>"
+open_command:
+  - snpc3
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  scene_townsfolk_check_down:
+    material: PAPER
+    model_data: 3390649
+    slot: 0
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Check Down'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_check_down'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_check_up:
+    material: PAPER
+    model_data: 3390650
+    slot: 1
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Check Up'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_check_up'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_lean_fence:
+    material: PAPER
+    model_data: 3390651
+    slot: 2
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Leaning on Fence'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_lean_fence'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_sit_ground_1:
+    material: PAPER
+    model_data: 3390648
+    slot: 3
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Sitting Ground 1'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_ground_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_sit_ground_2:
+    material: PAPER
+    model_data: 3390647
+    slot: 4
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Sitting Ground 2'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_ground_2'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  scene_townsfolk_sit_ground_3:
+    material: PAPER
+    model_data: 3390646
+    slot: 5
+    priority: 1
+    update: true
+    display_name: 'Townsfolk Sitting Ground 3'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sit_ground_3'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  target_shooting:
+    material: PAPER
+    model_data: 3390652
+    slot: 6
+    priority: 1
+    update: true
+    display_name: 'Target Shooting'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn target_shooting'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  audience_1:
+    material: PAPER
+    model_data: 3390653
+    slot: 7
+    priority: 1
+    update: true
+    display_name: 'Audience 1'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn audience_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  audience_boxing_1:
+    material: PAPER
+    model_data: 3390654
+    slot: 8
+    priority: 1
+    update: true
+    display_name: 'Audience Boxing 1'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn audience_boxing_1'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  injured_sit:
+    material: PAPER
+    model_data: 3390655
+    slot: 9
+    priority: 1
+    update: true
+    display_name: 'Injured Sitting'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn injured_sit'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  injured_ground:
+    material: PAPER
+    model_data: 3390656
+    slot: 10
+    priority: 1
+    update: true
+    display_name: 'Injured on Ground'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn injured_ground'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  injured:
+    material: PAPER
+    model_data: 3390657
+    slot: 11
+    priority: 1
+    update: true
+    display_name: 'Injured'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn injured'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  medic:
+    material: PAPER
+    model_data: 3390658
+    slot: 12
+    priority: 1
+    update: true
+    display_name: 'Medic'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn medic'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  boxing_dual:
+    material: PAPER
+    model_data: 3390659
+    slot: 13
+    priority: 1
+    update: true
+    display_name: 'Boxing Dual'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn boxing_dual'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  shields_dual:
+    material: PAPER
+    model_data: 3590660
+    slot: 14
+    priority: 1
+    update: true
+    display_name: 'Shields Dual'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn shields_dual'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  swords_dual:
+    material: PAPER
+    model_data: 3390661
+    slot: 15
+    priority: 1
+    update: true
+    display_name: 'Swords Dual'
+    lore:
+      - '&7Click to place this NPC'
+    left_click_commands:
+      - '[player] mm mobs spawn swords_dual'
+      - '[message] &aYou have placed an NPC'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+  goback:
+    material: PAPER
+    model_data: 3390553
+    slot: 51
+    priority: 1
+    update: true
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] scenes_npcs_2'
+      - '[sound] UI_BUTTON_CLICK'
+      - '[close]'
+
+#35dd8da810fde8cd410472122f289581

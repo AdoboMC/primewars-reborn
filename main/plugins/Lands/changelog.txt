@@ -1,0 +1,7 @@
+🌟 Acknowledgments: Credits to @Aternos_ for this resource! 🚀
+- Fixed: Max own lands bypass with setowner command
+# License Number: 6c5bd606-e42a-438e-8ac8-bf2ba8c3e845
+
+--> Language file (en-US.yml): 
++ Message: lands.command.accept.land.owner.max
++ Message: lands.command.accept.land.owner.success

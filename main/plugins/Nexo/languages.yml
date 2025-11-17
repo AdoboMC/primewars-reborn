@@ -1,0 +1,11 @@
+## Credits to @Aternos_
+## This file can be used to create custom translation-keys for given languages or override existing keys
+## This is the same as if you manually make the resourcepack JSON file for the given language
+## Example of a key applied to all languages (global) and overriden specifically for en_us & en_gb
+#global:
+#  chat.greeting: "Hi"
+#en_us:
+#  chat.greeting: "Hello"
+#en_gb:
+#  chat.greeting: "G'day"
+# License Number: fbd7a5db-3e7f-4ce6-ad71-7cccf650e93c

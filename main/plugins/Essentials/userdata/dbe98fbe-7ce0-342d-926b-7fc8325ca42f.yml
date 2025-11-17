@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 143.44.165.97
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754626743174
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754717194105
+  login: 1754692793089
+money: '193331.1016108680901720'
+last-account-name: Lechon
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -361.2065262869357
+  y: 92.0
+  z: -309.84301122634855
+  yaw: -24.900300979614258
+  pitch: 9.450052261352539
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2029.5952145084188
+  y: 111.0
+  z: 512.3238124028564
+  yaw: 90.399658203125
+  pitch: -7.049886703491211

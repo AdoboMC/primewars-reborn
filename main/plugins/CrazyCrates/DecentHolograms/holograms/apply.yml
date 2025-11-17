@@ -1,0 +1,28 @@
+location: world:464.500:70.000:-329.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&e&LHow to apply my Book?'
+    height: 0.3
+  - content: '&7Drag the book onto an item like a sword or armor'
+    height: 0.3
+  - content: '&7If the book has high success rate, it will apply — if not, it may'
+    height: 0.3
+  - content: '&7destroy the item'
+    height: 0.3
+  - content: '&e&lHow to level up my Book?'
+    height: 0.3
+  - content: '&7type command &c/alchem &7and combine your book'
+    height: 0.3
+  - content: '&7for example combine your two (2)'
+    height: 0.3
+  - content: '&eLUCKY I &7to make it &eLUCKY II'
+    height: 0.3
+  - content: '&cNote; &7ayou need EXP to combine your book'
+    height: 0.3
+  actions: {}

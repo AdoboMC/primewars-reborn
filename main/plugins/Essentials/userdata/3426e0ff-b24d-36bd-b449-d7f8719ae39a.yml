@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 158.62.23.220
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752510248472
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752510314460
+  login: 1752510151158
+money: '0'
+last-account-name: HonokaKyokou
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -362.4949442675732
+  y: 92.0
+  z: -306.412887809386
+  yaw: -132.1500244140625
+  pitch: 45.900001525878906
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -390.75197345564925
+  y: 87.0
+  z: -375.063397207424
+  yaw: -1.0500588417053223
+  pitch: 30.900012969970703

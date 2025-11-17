@@ -1,0 +1,451 @@
+############################
+# 
+# ITSME.TO - Configuration for Jobs
+# https://itsme.to/discord/
+#
+############################
+menu_title: Jobs Payouts | ᴄʀᴀꜰᴛᴇʀ
+open_command:
+  - jobs payouts crafter
+register_command: true
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 4
+    display_name: '%imc_primary-color_c%ᴄʀᴀꜰᴛ'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%ᴄʀᴀꜰᴛ ᴛʜᴇ ꜰᴏʟʟᴏᴡɪɴɢ ɪᴛᴇᴍs'
+      - '%imc_dark-color_c%ᴛᴏ ʀᴇᴄᴇɪᴠᴇ ʏᴏᴜʀ ᴘᴀʏᴍᴇɴᴛ.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_crafter_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  craft_oak_wood:
+    material: oak_wood
+    slot: 10
+    display_name: '%imc_primary-color_c%ᴡᴏᴏᴅs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛɪᴄᴋ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇsᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀᴀꜰᴛɪɴɢ ᴛᴀʙʟᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟᴀᴅᴅᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟᴇᴄᴛᴇʀɴ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴄᴀꜰꜰᴏʟᴅɪɴɢ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴀᴍᴘꜰɪʀᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴏᴜʟ ᴄᴀᴍᴘꜰɪʀᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴍᴘᴏsᴛᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀʀʀᴇʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴇᴇʜɪᴠᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴀʀᴛᴏɢʀᴀᴘʜʏ ᴛᴀʙʟᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ꜰʟᴇᴛᴄʜɪɴɢ ᴛᴀʙʟᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟᴏᴏᴍ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɪᴛᴇᴍ ꜰʀᴀᴍᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʟᴏᴡ ɪᴛᴇᴍ ꜰʀᴀᴍᴇ'
+  craft_redstone:
+    material: redstone
+    slot: 11
+    display_name: '%imc_primary-color_c%ʀᴇᴅsᴛᴏɴᴇ ʙʟᴏᴄᴋs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅɪsᴘᴇɴsᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɴᴏᴛᴇ ʙʟᴏᴄᴋ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛɪᴄᴋʏ ᴘɪsᴛᴏɴ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛʀᴀᴘᴘᴇᴅ ᴄʜᴇsᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟɪɢʜᴛ ᴡᴇɪɢʜᴛᴇᴅ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʜᴇᴀᴠʏ ᴡᴇɪɢʜᴛᴇᴅ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʏʟɪɢʜᴛ ᴅᴇᴛᴇᴄᴛᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅʀᴏᴘᴘᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏʙsᴇʀᴠᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴀʀɢᴇᴛ'
+  craft_rail:
+    material: rail
+    slot: 12
+    display_name: '%imc_primary-color_c%ʀᴀɪʟ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴀɪʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴏᴡᴇʀᴇᴅ ʀᴀɪʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴇᴛᴇᴄᴛᴏʀ ʀᴀɪʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴛɪᴠᴀᴛᴏʀ ʀᴀɪʟ'
+  craft_furnace:
+    material: furnace
+    slot: 13
+    display_name: '%imc_primary-color_c%ᴜᴛɪʟɪᴛʏ ʙʟᴏᴄᴋs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛɴᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ꜰᴜʀɴᴀᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜᴋᴇʙᴏx'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴇɴᴄʜᴀɴᴛɪɴɢ ᴛᴀʙʟᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴇᴀᴄᴏɴ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴇᴀ ʟᴀɴᴛᴇʀɴ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡʜɪᴛᴇ ʙᴇᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀᴇᴡɪɴɢ sᴛᴀɴᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴇɴᴅᴇʀ ᴄʜᴇsᴛ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴍᴏᴋᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʟᴀsᴛ ꜰᴜʀɴᴀᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀɪɴᴅsᴛᴏɴᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴍɪᴛʜɪɴɢ ᴛᴀʙʟᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛᴏɴᴇᴄᴜᴛᴛᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴇʟʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴇsᴘᴀᴡɴ ᴀɴᴄʜᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟᴏᴅᴇsᴛᴏɴᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟɪɢʜᴛɴɪɴɢ ʀᴏᴅ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴀɴᴅʟᴇ'
+  craft_white_stained_glass:
+    material: white_stained_glass
+    slot: 14
+    display_name: '%imc_primary-color_c%ɢʟᴀss'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡʜɪᴛᴇ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟɪɢʜᴛ ɢʀᴀʏ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀᴀʏ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʟᴀᴄᴋ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀᴏᴡɴ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴇᴅ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏʀᴀɴɢᴇ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʏᴇʟʟᴏᴡ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟɪᴍᴇ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀᴇᴇɴ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʏᴀɴ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟɪɢʜᴛ ʙʟᴜᴇ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʟᴜᴇ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴜʀᴘʟᴇ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɢᴇɴᴛᴀ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘɪɴᴋ sᴛᴀɪɴᴇᴅ ɢʟᴀss'
+  craft_cobblestone:
+    material: cobblestone
+    slot: 15
+    display_name: '%imc_primary-color_c%ᴄᴏʙʙʟᴇsᴛᴏɴᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏʙʙʟᴇsᴛᴏɴᴇ sᴛᴀɪʀs'
+  craft_acacia_planks:
+    material: acacia_planks
+    slot: 16
+    display_name: '%imc_primary-color_c%ᴀᴄᴀᴄɪᴀ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀᴄᴀᴄɪᴀ ʙᴏᴀᴛ'
+  craft_birch_planks:
+    material: birch_planks
+    slot: 19
+    display_name: '%imc_primary-color_c%ʙɪʀᴄʜ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙɪʀᴄʜ ʙᴏᴀᴛ'
+  craft_dark_oak_planks:
+    material: dark_oak_planks
+    slot: 20
+    display_name: '%imc_primary-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴏᴀᴋ ʙᴏᴀᴛ'
+  craft_jungle_planks:
+    material: jungle_planks
+    slot: 21
+    display_name: '%imc_primary-color_c%ᴊᴜɴɢʟᴇ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴊᴜɴɢʟᴇ ʙᴏᴀᴛ'
+  craft_oak_planks:
+    material: oak_planks
+    slot: 22
+    display_name: '%imc_primary-color_c%ᴏᴀᴋ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏᴀᴋ ʙᴏᴀᴛ'
+  craft_bricks:
+    material: bricks
+    slot: 23
+    display_name: '%imc_primary-color_c%ʙʀɪᴄᴋs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀɪᴄᴋ sᴛᴀɪʀs'
+  craft_prismarine:
+    material: prismarine
+    slot: 24
+    display_name: '%imc_primary-color_c%ᴘʀɪsᴍᴀʀɪɴᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘʀɪsᴍᴀʀɪɴᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘʀɪsᴍᴀʀɪɴᴇ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴘʀɪsᴍᴀʀɪɴᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴅᴀʀᴋ ᴘʀɪsᴍᴀʀɪɴᴇ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘʀɪsᴍᴀʀɪɴᴇ ʙʀɪᴄᴋs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘʀɪsᴍᴀʀɪɴᴇ ʙʀɪᴄᴋ sᴛᴀɪʀs'
+  craft_nether_bricks:
+    material: nether_bricks
+    slot: 25
+    display_name: '%imc_primary-color_c%ɴᴇᴛʜᴇʀ ʙʀɪᴄᴋs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɴᴇᴛʜᴇʀ ʙʀɪᴄᴋ sᴛᴀɪʀs'
+  craft_purpur_block:
+    material: purpur_block
+    slot: 28
+    display_name: '%imc_primary-color_c%ᴘᴜʀᴘᴜʀ ʙʟᴏᴄᴋ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴜʀᴘᴜʀ sᴛᴀɪʀs'
+  craft_quartz_block:
+    material: quartz_block
+    slot: 29
+    display_name: '%imc_primary-color_c%ɴᴇᴛʜᴇʀ ǫᴜᴀʀᴛᴢ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ǫᴜᴀʀᴛᴢ sᴛᴀɪʀs'
+  craft_sandstone:
+    material: sandstone
+    slot: 30
+    display_name: '%imc_primary-color_c%sᴀɴᴅsᴛᴏɴᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴀɴᴅsᴛᴏɴᴇ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴇᴅ sᴀɴᴅsᴛᴏɴᴇ sᴛᴀɪʀs'
+  craft_spruce_planks:
+    material: spruce_planks
+    slot: 31
+    display_name: '%imc_primary-color_c%sᴘʀᴜᴄᴇ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴘʀᴜᴄᴇ ʙᴏᴀᴛ'
+  craft_stone:
+    material: stone
+    slot: 32
+    display_name: '%imc_primary-color_c%sᴛᴏɴᴇ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛᴏɴᴇ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴛᴏɴᴇ ʙʀɪᴄᴋ sᴛᴀɪʀs'
+  craft_terracotta:
+    material: terracotta
+    slot: 33
+    display_name: '%imc_primary-color_c%ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡʜɪᴛᴇ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟɪɢʜᴛ ɢʀᴀʏ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀᴀʏ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴏʀᴀɴɢᴇ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʏᴇʟʟᴏᴡ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘɪɴᴋ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴇᴅ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀᴏᴡɴ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɢʀᴇᴇɴ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟɪɢʜᴛ ʙʟᴜᴇ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʏᴀɴ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʟᴜᴇ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴘᴜʀᴘʟᴇ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɢᴇɴᴛᴀ ᴛᴇʀʀᴀᴄᴏᴛᴛᴀ'
+  craft_iron_ingot:
+    material: iron_ingot
+    slot: 34
+    display_name: '%imc_primary-color_c%ʙʟᴏᴄᴋ ᴏꜰ ɪʀᴏɴ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ɪʀᴏɴ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴀɴᴠɪʟ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʜᴏᴘᴘᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴀᴜʟᴅʀᴏɴ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʟᴀɴᴛᴇʀɴ'
+      - '%imc_dark-color_c% • %imc_text-color_c%sᴏᴜʟ ʟᴀɴᴛᴇʀɴ'
+  craft_book:
+    material: book
+    slot: 37
+    display_name: '%imc_primary-color_c%ᴜᴛɪʟɪᴛʏ ɪᴛᴇᴍs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ɪᴛᴇᴍs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴏᴏᴋ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴍᴘᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʟᴏᴄᴋ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʀᴇᴄᴏᴠᴇʀʏ ᴄᴏᴍᴘᴀss'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙʀᴜsʜ'
+  craft_warped_planks:
+    material: warped_planks
+    slot: 38
+    display_name: '%imc_primary-color_c%ᴡᴀʀᴘᴇᴅ ᴘʟᴀɴᴋs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡᴀʀᴘᴇᴅ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡᴀʀᴘᴇᴅ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡᴀʀᴘᴇᴅ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡᴀʀᴘᴇᴅ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴡᴀʀᴘᴇᴅ ᴅᴏᴏʀ'
+  craft_crimson_planks:
+    material: crimson_planks
+    slot: 39
+    display_name: '%imc_primary-color_c%ᴄʀɪᴍsᴏɴ ᴘʟᴀɴᴋs'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀɪᴍsᴏɴ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀɪᴍsᴏɴ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀɪᴍsᴏɴ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀɪᴍsᴏɴ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʀɪᴍsᴏɴ ᴅᴏᴏʀ'
+  craft_bamboo_planks:
+    material: bamboo_planks
+    slot: 40
+    display_name: '%imc_primary-color_c%ʙᴀᴍʙᴏᴏ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀᴍʙᴏᴏ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀᴍʙᴏᴏ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀᴍʙᴏᴏ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀᴍʙᴏᴏ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀᴍʙᴏᴏ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ʙᴀᴍʙᴏᴏ ʀᴀꜰᴛ'
+  craft_cherry_planks:
+    material: cherry_planks
+    slot: 41
+    display_name: '%imc_primary-color_c%ᴄʜᴇʀʀʏ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜᴇʀʀʏ ʙᴏᴀᴛ'
+  craft_mangrove_planks:
+    material: mangrove_planks
+    slot: 42
+    display_name: '%imc_primary-color_c%ᴍᴀɴɢʀᴏᴠᴇ ᴡᴏᴏᴅ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ sᴛᴀɪʀs'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ ᴘʀᴇssᴜʀᴇ ᴘʟᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ ꜰᴇɴᴄᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ ꜰᴇɴᴄᴇ ɢᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴍᴀɴɢʀᴏᴠᴇ ʙᴏᴀᴛ'
+  craft_copper_block:
+    material: copper_block
+    slot: 43
+    display_name: '%imc_primary-color_c%ʙʟᴏᴄᴋ ᴏꜰ ᴄᴏᴘᴘᴇʀ'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%ʙʟᴏᴄᴋs:'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄʜɪsᴇʟᴇᴅ ᴄᴏᴘᴘᴇʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴘᴘᴇʀ ᴅᴏᴏʀ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴘᴘᴇʀ ɢʀᴀᴛᴇ'
+      - '%imc_dark-color_c% • %imc_text-color_c%ᴄᴏᴘᴘᴇʀ ᴛʀᴀᴘᴅᴏᴏʀ'
+  next_page:
+    material: ARROW
+    slot: 50
+    display_name: '%imc_primary-color_c%ɴᴇxᴛ ᴘᴀɢᴇ'
+    click_commands:
+      - '[openguimenu] jobs_payouts_crafter_craft_2'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%ʙᴀᴄᴋ'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.3.137
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754044253135
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754044522893
+  login: 1754043094695
+money: '831.3876360838053394'
+last-account-name: Kei
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 904.9250000119209
+  y: 74.0
+  z: 974.9341422903843
+  yaw: -28.455780029296875
+  pitch: 7.6125807762146
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -389.91399536973614
+  y: 87.0
+  z: -392.62546196268175
+  yaw: -0.451019287109375
+  pitch: 90.0

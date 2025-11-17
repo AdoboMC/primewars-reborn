@@ -1,0 +1,14 @@
+location: Philippines:-377.555:90.177:-420.635
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&9&lLuzon Crate'
+    height: 0.3
+  - content: '&eRight-click &7to open &eLeft-click &7to preview.'
+    height: 0.3
+  actions: {}

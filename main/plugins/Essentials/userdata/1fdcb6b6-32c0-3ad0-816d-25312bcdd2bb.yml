@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 97.163.196.150
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754804521247
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754867126226
+  login: 1754866984333
+money: '1039368.9785582504601688'
+last-account-name: shanpop
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -375.6267918576424
+  y: 92.0
+  z: -303.67186306145805
+  yaw: 117.00003051757812
+  pitch: -13.800018310546875
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -723.2284622943341
+  y: 68.0
+  z: -2165.4481414345487
+  yaw: -168.65771484375
+  pitch: 26.39986801147461
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -710.6999999880791
+    y: 73.0
+    z: -2164.699999988079
+    yaw: -35.2500114440918
+    pitch: 73.04996490478516

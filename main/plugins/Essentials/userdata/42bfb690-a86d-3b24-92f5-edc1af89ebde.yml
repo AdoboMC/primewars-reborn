@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 91.243.81.94
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1752244717092
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752245041456
+  login: 1752244947758
+money: '716.692499999999938'
+last-account-name: Peplauuu
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -367.58812166193667
+  y: 87.0
+  z: -329.8644656452776
+  yaw: 160.74774169921875
+  pitch: 25.107322692871094
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -375.69104754425575
+  y: 102.47995425336376
+  z: -172.7453349278651
+  yaw: -87.55194854736328
+  pitch: -42.37491989135742

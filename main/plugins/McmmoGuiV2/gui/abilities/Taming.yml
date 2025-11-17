@@ -1,0 +1,165 @@
+## Credits to @Aternos_
+Gui:
+  Rows: 6
+  SkillDetailSlots:
+    - 35
+  PlayerTopSlots:
+    - 26
+  PlayerInfoSlots:
+    - 17
+  FeatureButtons:
+    BEAST_LORE:
+      Slots:
+        - 19
+      Material: BONE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    CALL_OF_THE_WILD:
+      Slots:
+        - 20
+      Material: BONE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    ENVIRONMENTALLY_AWARE:
+      Slots:
+        - 21
+      Material: FEATHER
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    GORE:
+      Slots:
+        - 22
+      Material: WEEPING_VINES
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    FAST_FOOD_SERVICE:
+      Slots:
+        - 23
+      Material: SWEET_BERRIES
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    PUMMEL:
+      Slots:
+        - 24
+      Material: TWISTING_VINES
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    THICK_FUR:
+      Slots:
+        - 29
+      Material: MAGMA_CREAM
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    HOLY_HOUND:
+      Slots:
+        - 30
+      Material: POTION
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    SHOCK_PROOF:
+      Slots:
+        - 31
+      Material: GUNPOWDER
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    SHARPENED_CLAWS:
+      Slots:
+        - 32
+      Material: IRON_NUGGET
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+  DecorationButtons:
+    Back:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    Close:
+      Slots:
+        - 44
+      Material: ARROW
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+    BorderLine:
+      Slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 18
+        - 27
+        - 36
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 16
+        - 25
+        - 34
+        - 43
+      Material: BLACK_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+    InnerBorder:
+      Slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 28
+        - 33
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+      Material: ORANGE_STAINED_GLASS_PANE
+      ModelData: 1
+      Flags:
+        - '*'
+      Glow: false
+      Commands: []
+
+# License Number: c5c5c1b5-90cf-452e-afaf-bc564e0f0fb9

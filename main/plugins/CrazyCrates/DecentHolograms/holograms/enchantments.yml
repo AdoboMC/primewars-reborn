@@ -1,0 +1,18 @@
+location: world:447.500:70.000:-329.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&a&LCustom Enchantments - Custom Gear like Never before'
+    height: 0.3
+  - content: '&fOur custom enchantment system goes beyond vanilla — giving'
+    height: 0.3
+  - content: '&fyou access to rare enchantment books, gear'
+    height: 0.3
+  - content: '&fmodifiers, and PvP/PvE-enhancing effects.'
+    height: 0.3
+  actions: {}

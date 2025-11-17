@@ -1,0 +1,63 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 120.29.86.107
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754637145228
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754812520773
+  login: 1754812386361
+money: '367179.050357136613155204'
+last-account-name: jabberwakey
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 2119.7337065366037
+  y: 143.0
+  z: 1644.1540701448305
+  yaw: 80.54376220703125
+  pitch: 36.040462493896484
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.2915952227731
+  y: 93.0
+  z: -304.51630222912365
+  yaw: -89.59992980957031
+  pitch: -4.200009346008301
+homes:
+  cave:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 250.08763529368235
+    y: -3.0
+    z: -21.238289810137054
+    yaw: -142.8582763671875
+    pitch: 9.637182235717773
+  base:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2106.4908075641465
+    y: 142.0
+    z: 1639.3296776225598
+    yaw: 2.062819004058838
+    pitch: -0.5776183605194092
+  endtp:
+    world: 3ceb653b-2e14-4f71-94be-ebdeb94cf822
+    world-name: world_the_end
+    x: -836.3085936417941
+    y: 67.0
+    z: 1189.3906129450895
+    yaw: 73.9666748046875
+    pitch: 40.28398132324219

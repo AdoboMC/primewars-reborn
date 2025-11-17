@@ -1,0 +1,33 @@
+# === Minecraft Server .gitattributes ===
+
+# Normalize text files for cross-platform compatibility
+* text=auto
+
+# Force consistent line endings for YAML and config files
+*.yml text eol=lf
+*.yaml text eol=lf
+*.properties text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+
+# Plugin-specific config formats
+plugins/**/config.yml text eol=lf
+plugins/**/settings.yml text eol=lf
+plugins/**/messages.yml text eol=lf
+plugins/**/lang/*.yml text eol=lf
+plugins/**/translations/*.properties text eol=lf
+
+# Ignore binary files from normalization
+*.jar binary
+*.zip binary
+*.db binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+
+# Optional: enforce UTF-8 encoding for configs
+*.yml text working-tree-encoding=UTF-8
+*.properties text working-tree-encoding=UTF-8
+*.json text working-tree-encoding=UTF-8

@@ -1,0 +1,48 @@
+# # Credits to @Aternos_
+animations:
+  delivery_animation:
+    mm-id: delivery_anim_respawn
+    duration: 40
+    permission: animcore.respawn.delivery_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Delivery Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+  drill_animation:
+    mm-id: drill_anim_respawn
+    duration: 89
+    permission: animcore.respawn.drill_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Drill Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+  bubble_animation:
+    mm-id: bubble_anim_respawn
+    duration: 90
+    permission: animcore.respawn.bubble_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Bubble Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+  paper_animation:
+    mm-id: paper_anim_respawn
+    duration: 100
+    permission: animcore.respawn.paper_animation
+    GUI:
+      icon: STONE
+      ModelID: 0
+      Displayname: Paper Animation
+      Lore:
+      - '&7Automatically added'
+      - '&7please customize in GUI.yml'
+
+# License Number: 5adc0635-b228-4541-998d-3c023fab9acf

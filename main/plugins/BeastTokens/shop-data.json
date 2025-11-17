@@ -1,0 +1,22 @@
+{
+  "prpgpets": {
+    "InStockItems": {}
+  },
+  "Example": {
+    "InStockItems": {},
+    "RotateTime": 15,
+    "CurrentRotatingItems": [
+      "cutom_sword",
+      "cutom_pickaxe"
+    ]
+  },
+  "pkeys": {
+    "InStockItems": {}
+  },
+  "Menu": {
+    "InStockItems": {}
+  },
+  "ptools": {
+    "InStockItems": {}
+  }
+}

@@ -1,0 +1,22 @@
+location: Philippines:-376.704:91.000:-391.417
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&#00FFFF⁜ &#05F2FCD&#08EBFAa&#0BE4F9i&#0EDEF7l&#10D7F6y &#16CAF3R&#19C3F1e&#1BBDF0w&#1EB6EEa&#1EB6EEr&#1EB6EEd
+      &#1EB6EEC&#1EB6EEr&#1EB6EEa&#1EB6EEt&#1EB6EEe &#1EB6EE⁜'
+    height: 0.3
+  - content: '&aRight-Click to Open &8| &aLeft-Click to Preview'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&eYou can obtain &#00FFFFD&#0AE7F9a&#14CEF4i&#1EB6EEl&#1EB6EEy&#1EB6EER&e
+      Key by claiming'
+    height: 0.3
+  - content: '&ethe daily reward at spawn'
+    height: 0.3
+  actions: {}

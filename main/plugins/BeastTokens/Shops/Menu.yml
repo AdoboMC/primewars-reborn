@@ -1,0 +1,139 @@
+# # Configuration for BeastTokens by MrAxe
+
+# # Configuration of /token shop
+# #   '1': - Slot number/space in /token shop. DO NOT have same number twice!
+# #       Item: DIAMOND_SWORD - Item that is shown in the inventory slot, you can use number for item name.
+# #       Amount: 1 - Amount of item that is shown in /token shop (ex: a stack of diamonds = 64).
+# #       Price: 100 - Number of tokens needed to buy the item
+# #       DisplayName: '&b&lSuper Sword' - Name for item shown. Use ' ' to have it be the normal in-game name (ex: Diamond Sword)
+# #       Lore: '&cBest sword ever!' - Lore of the item shown. Use ' ' to have nothing.
+# #       Glow: true or false - To make item glow.
+# #       Commands: - Commands sent upon buying of an item. Can be multiple lines/commands, just follow format.
+# #           - 'give %player% 276 1 name:&b&lSuper_Sword'
+# #       rCommands: - Random Commands sent upon buying of an item. Can be multiple lines/commands, just follow format.
+# #           - 'give %player% 276 1 name:&b&lSuper_Sword'
+# #           - 'give %player% 300 1'
+# #       pCommands: - Player Commands will run command like a player to run command as OP add ;OP to end of your command.
+# #           - 'give %player% 276 1 name:&b&lSuper_Sword'
+# #           - 'give %player% 300 1;OP'
+# #       This above example and the command sent were created with the use of the plugin Essentials in mind.
+# #       You can use any type of commands from any plugins, you just have to adjust the config accordingly and follow
+# #       the proper format!
+Shop:
+  # # Number of slots in /token shop
+  # # HUGE NOTE: Number of slots must be a multiple of 9 (9/18/27/36/45/54)
+  # # Additionally, YOU MUST have an item defined in "Shop" for each slot number in "Size".
+  # # Otherwise, you will receive an error upon using /token shop <ShopName>!
+  Size: 27
+  # # This Title will display name of Inventory
+  Title: '&8Token Shop Menu'
+  Items:
+    Pages:
+      '1':
+        Item_12:
+          Data: 0
+          Amount: 1
+          DisplayName: '&a&lPremium Keys'
+          Lore:
+          - '&7All purchasable Premium Keys.'
+          - ''
+          - '&a[Click to view]'
+          Slot: 12
+          Material: TRIPWIRE_HOOK
+          Buy:
+            Price: 0.0
+          DisplayLore:
+          - '&7All purchasable Crate Keys.'
+          - ''
+          - '&a[Click to view]'
+          Commands:
+          - '[OPEN_SHOP] pkeys'
+        Item_13:
+          Amount: 1
+          DisplayName: '&c&lPets & Companions'
+          Lore:
+          - '&7Either RPG with Level System Pets or a Companion.'
+          - ''
+          - '&e[Click to view]'
+          Slot: 13
+          Material: EGG
+          Buy:
+            Price: 0.0
+          DisplayLore:
+          - '&7All purchasable RPG Pets'
+          - '&7or a Companion.'
+          - ''
+          - '&e[Click to view]'
+          Commands:
+          - '[OPEN_SHOP] prpgpets'
+        Item_14:
+          Amount: 1
+          DisplayName: '&e&lPremium Cosmetics'
+          Lore:
+          - '&7Purchased Premium Cosmetics and Skins Here'
+          - ''
+          - '&5[Click to view]'
+          Slot: 14
+          Material: MAGMA_CREAM
+          Buy:
+            Price: 0.0
+          DisplayLore:
+          - '&7All purchasable Player Cosmetics, Weapon Skins, Armor Skins, Player Wings etc..'
+          - ''
+          - '&5[Click to view]'
+          Commands:
+          - '[OPEN_SHOP] pcosmetics'
+        Item_15:
+          Amount: 1
+          DisplayName: '&b&lPerks'
+          Lore:
+          - '&7All purchasable Perks.'
+          - ''
+          - '&b[Click to view]'
+          Slot: 15
+          Material: FEATHER
+          Buy:
+            Price: 0.0
+          DisplayLore:
+          - '&7All purchasable Perks.'
+          - ''
+          - '&b[Click to view]'
+          Commands:
+          - '[OPEN_SHOP] perks'
+        Item_16:
+          Amount: 1
+          DisplayName: '&6&lPremium Custom Tools'
+          Lore:
+          - '&7All purchasable Custom Tools.'
+          - ''
+          - '&6[Click to view]'
+          Slot: 16
+          Material: EYE_OF_ENDER
+          Buy:
+            Price: 0.0
+          DisplayLore:
+          - '&7All purchasable Custom Tools.'
+          - ''
+          - '&6[Click to view]'
+          Commands:
+          - '[OPEN_SHOP] ptools'
+  RotatingItems:
+    TimerSettings:
+      Time: 0
+      Type: CYCLE
+  EmptySlot:
+    Enabled: true
+    Items:
+      Dummy_1:
+        Material: BLUE_STAINED_GLASS_PANE
+        DisplayName: '&7&l[&4&lP&b&lT&7&l]'
+        DisplayLore:
+        - '&e====='
+        Glow: true
+      Dummy_2:
+        Material: GRAY_STAINED_GLASS_PANE
+        DisplayName: '&7&l[&4&lP&b&lT&7&l]'
+        DisplayLore:
+        - '&e====='
+        Glow: true
+ConfigVersion: 2.3

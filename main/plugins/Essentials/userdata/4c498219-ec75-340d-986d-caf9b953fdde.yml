@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 136.158.11.32
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753355628703
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753355908921
+  login: 1753354973802
+money: '7688.4250967048019383'
+last-account-name: Ciphuuur
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 636.1292834414218
+  y: 100.0
+  z: 615.5256132793294
+  yaw: -88.3096923828125
+  pitch: 11.222811698913574
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 684.891663723336
+  y: 94.0
+  z: 740.92766943376
+  yaw: -6.6046142578125
+  pitch: 12.951637268066406
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -296.80989232661085
+    y: 66.0
+    z: -685.8664793896219
+    yaw: -114.67168426513672
+    pitch: 21.801301956176758

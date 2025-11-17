@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 175.176.70.30
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758544089215
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758544178876
+  login: 1758543902917
+money: '3163.6768330046260884'
+last-account-name: fearless1225
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: 601.3170717830158
+  y: 95.0
+  z: 887.2536309306819
+  yaw: 35.349830627441406
+  pitch: 90.0
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -378.83516511506735
+  y: 92.0
+  z: -295.66202771919177
+  yaw: -71.70001220703125
+  pitch: -12.900012016296387

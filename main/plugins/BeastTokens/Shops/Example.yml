@@ -1,0 +1,313 @@
+# # Configuration for BeastTokens by MrAxeTv
+
+# # Proper Item names
+# #  Older 1.8 https://helpch.at/docs/1.8/org/bukkit/Material.html
+# # Latest https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+# # Configuration of /token shop
+# #   '1': - Slot number/space in /token shop. DO NOT have same number twice!
+# #       Item: DIAMOND_SWORD - Item that is shown in the inventory slot, you can use number for item name.
+# #       Data: 0 Is not used on server version 1.13 or above
+# #       Amount: 1 - Amount of item that is shown in /token shop (ex: a stack of diamonds = 64).
+# #       Price: 100 - Number of tokens needed to buy the item
+# #       DisplayName: '&b&lSuper Sword' - Name for item shown. Use ' ' to have it be the normal in-game name (ex: Diamond Sword)
+# #       Lore: '&cBest sword ever!' - Lore of the item shown. Use ' ' to have nothing.
+# #       Glow: true or false - To make item glow.
+# #       Commands: - Commands sent upon buying of an item. Can be multiple lines/commands, just follow format.
+# #           - 'give %player% 276 1 name:&b&lSuper_Sword'
+# #       rCommands: - Random Commands sent upon buying of an item. Can be multiple lines/commands, just follow format.
+# #           - 'give %player% 276 1 name:&b&lSuper_Sword'
+# #           - 'give %player% 300 1'
+# #       pCommands: - Player Commands will run command like a player to run command as OP add ;OP to end of your command.
+# #           - 'give %player% 276 1 name:&b&lSuper_Sword'
+# #           - 'give %player% 300 1;OP'
+# #       This above example and the command sent were created with the use of the plugin Essentials in mind.
+# #       You can use any type of commands from any plugins, you just have to adjust the config accordingly and follow
+# #       the proper format!
+Shop:
+  Size: 36
+  Title: '&4&lExample &b&lShop %tokens%'
+  SoldOutItem:
+    Enabled: true
+    Item: Bone
+    Amount: 1
+    Glow: true
+    Lore:
+    - '&fWish you more luck with getting it next season'
+    - 'ItemID: %item_id%'
+    - '&f%tokens%'
+  RotatingItems:
+    Enabled: true
+    Page: 1
+    Slots:
+    - 4
+    - 6
+    Items:
+      cutom_sword:
+        Glow: false
+        Update: true
+        Amount: 1
+        DisplayName: God Sword
+        Lore:
+        - ''
+        - '&6RotateTime %rotating_timer_example%'
+        Material: diamond_sword
+        Buy:
+          Price: 5.0
+          Commands:
+          - '[COMMAND] give %player% dsword 1 name:&6CustomSword'
+          rCommands: []
+        DisplayLore:
+        - ''
+        - '&6RotateTime %rotating_timer_example%'
+      cutom_axe:
+        Glow: false
+        Update: true
+        Amount: 1
+        DisplayName: God Axe
+        Lore:
+        - ''
+        - '&6RotateTime %rotating_timer_example%'
+        Material: diamond_axe
+        Buy:
+          Price: 10.0
+          Commands:
+          - '[COMMAND] give %player% daxe 1 name:&6God_Axe'
+          rCommands: []
+        DisplayLore:
+        - ''
+        - '&6RotateTime %rotating_timer_example%'
+      cutom_pickaxe:
+        Glow: false
+        Update: true
+        Amount: 1
+        DisplayName: God PickAxe
+        Lore:
+        - ''
+        - '&6RotateTime %rotating_timer_example%'
+        Material: diamond_pickaxe
+        Buy:
+          Price: 15.0
+          Commands:
+          - '[COMMAND] give %player% dpickaxe 1 name:&6PickGod_Axe'
+          rCommands: []
+        DisplayLore:
+        - ''
+        - '&6RotateTime %rotating_timer_example%'
+    TimerSettings:
+      Time: 45
+      Type: CYCLE
+  Items:
+    Pages:
+      '1':
+        Item_1:
+          Glow: false
+          Amount: 1
+          DisplayName: '&7&l[&4&lB&b&lT&7&l]'
+          Lore:
+          - ''
+          Slot: 1
+          Material: Book
+          Buy:
+            Price: 0.0
+            Commands: []
+            rCommands: []
+          DisplayLore:
+          - ''
+        Item_9:
+          Glow: false
+          Amount: 1
+          DisplayName: '&7&l[&4&lB&b&lT&7&l]'
+          Lore:
+          - ''
+          Slot: 9
+          Material: Book
+          Buy:
+            Price: 0.0
+            Commands: []
+            rCommands: []
+          DisplayLore:
+          - ''
+        Item_12:
+          Glow: false
+          Amount: 1
+          DisplayName: '&eCan afford Item Example'
+          Lore:
+          - '&cPlaceholder!'
+          - '&cShows does player can buy item  %canafford%'
+          - '&bSelling amount: %limit%'
+          - '&bPlayer balance tokens'
+          - '&6Standard format %beasttokens_tokens%'
+          - '&6Short format %beasttokens_tokens_formated%'
+          - '&6Raw format %beasttokens_tokens_raw%'
+          - '%buy_price%'
+          Slot: 12
+          Material: DIAMOND_SWORD
+          Buy:
+            Price: 10.0
+            Commands:
+            - '[COMMAND] say %player% the placeholder is %canafford%'
+            rCommands: []
+          DisplayLore:
+          - '&cPlaceholder!'
+          - '&cShows does player can buy item  %canafford%'
+          - '&bSelling amount: %limit%'
+          - '&bPlayer balance tokens'
+          - '&6Standard format %beasttokens_tokens%'
+          - '&6Short format %beasttokens_tokens_formated%'
+          - '&6Raw format %beasttokens_tokens_raw%'
+          - '%buy_price%'
+        Item_14:
+          Glow: false
+          Amount: 1
+          DisplayName: '&aExample Item'
+          CustomModelData: 26
+          Lore:
+          - '&eThis is the &aExampleItem'
+          - '&eCost: &a%buy_price%'
+          Slot: 14
+          Material: BOOK
+          Buy:
+            Price: 25.0
+            Commands:
+            - '[COMMAND] say Hi %player%'
+            rCommands:
+            - '[COMMAND] give %player% diamond 1 name:&bShiny_Diamond'
+            - '[COMMAND] give %player% Stone 1'
+            - '[COMMAND] give %player% dirt 1'
+          Commands:
+          - '[P_COMMAND] home banana'
+          DisplayLore:
+          - '&eThis is the &aExampleItem'
+          - '&eCost: &a%buy_price%'
+        Item_15:
+          Glow: false
+          Amount: 1
+          DisplayName: '&aExample Player Head'
+          Lore:
+          - '&b==============='
+          - '&eCost: &a%buy_price%'
+          - '&b==============='
+          Slot: 15
+          Material: PLAYER_HEAD
+          Buy:
+            Price: 50.0
+            Commands:
+            - '[COMMAND] give %player% diamond 1 name:&bShiny_Diamond'
+          SkullTexture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzliNjRiMDgwYWM3MGE1YTMwMjI4ZWZjMzEyY2Y5NGNhNjFlMzRjMzNlNTZmMGU1MmM3NGFmMjYwMDU4YjY1NSJ9fX0=
+          DisplayLore:
+          - '&b==============='
+          - '&eCost: &a%buy_price%'
+          - '&b==============='
+        Item_16:
+          Glow: false
+          Amount: 1
+          DisplayName: '&dLimited Item Sale Global'
+          Lore:
+          - '&bSelling amount: %limit%'
+          Slot: 16
+          Material: GLASS
+          Buy:
+            Price: 15.0
+            StockLimit:
+              Type: SERVER
+              MaxBuy: 3
+            Commands: []
+            rCommands: []
+          DisplayLore:
+          - '&bSelling amount: %limit%'
+        Item_17:
+          Glow: false
+          Amount: 1
+          DisplayName: '&dLimited Item Sale Per Player '
+          Lore:
+          - '&bSelling amount: %limit%'
+          Slot: 17
+          Material: EGG
+          Buy:
+            Price: 15.0
+            StockLimit:
+              Type: PLAYER
+              MaxBuy: 3
+            Commands: []
+            rCommands: []
+          DisplayLore:
+          - '&bSelling amount: %limit%'
+        Item_20:
+          Data: 0
+          Glow: false
+          Amount: 1
+          DisplayName: '&7&l[&4&lB&b&lT&7&l]'
+          Lore:
+          - ''
+          Slot: 20
+          Material: Book
+          Buy:
+            Price: 0.0
+            Commands: []
+            rCommands: []
+          DisplayLore:
+          - ''
+        Item_22:
+          Glow: false
+          Amount: 1
+          DisplayName: '&6Multiple Shops'
+          Lore:
+          - '&cYou can create Multiple shops just by copying this shop file and renaming
+            it.'
+          - '&cCheck the shops list with the command /token list'
+          Slot: 22
+          Material: PAPER
+          Buy:
+            Price: 0.0
+            Commands:
+            - '[COMMAND] token list'
+            rCommands: []
+          DisplayLore:
+          - '&cYou can create Multiple shops just by copying this shop file and renaming
+            it.'
+          - '&cCheck the shops list with the command /token list'
+        Item_25:
+          Amount: 1
+          DisplayName: '&bEgg'
+          Lore:
+          - '&eMaster of mobs'
+          Slot: 25
+          Material: SKELETON_SPAWN_EGG
+          Buy:
+            Price: 10.0
+            Commands: []
+            rCommands: []
+          DisplayLore:
+          - '&eMaster of mobs'
+        Item_26:
+          Data: 0
+          Glow: false
+          Amount: 1
+          DisplayName: '&7&l[&4&lB&b&lT&7&l]'
+          Lore:
+          - ''
+          Slot: 26
+          Material: Book
+          Buy:
+            Price: 0.0
+            Commands: []
+            rCommands: []
+          DisplayLore:
+          - ''
+  EmptySlot:
+    Enabled: true
+    Items:
+      Dummy_1:
+        Material: BLUE_STAINED_GLASS_PANE
+        DisplayName: '&7&l[&4&lB&b&lT&7&l]'
+        DisplayLore:
+        - '&e====='
+        Glow: true
+      Dummy_2:
+        Material: GRAY_STAINED_GLASS_PANE
+        DisplayName: '&7&l[&4&lB&b&lT&7&l]'
+        DisplayLore:
+        - '&e====='
+        Glow: true
+ConfigVersion: 2.3

@@ -1,0 +1,210 @@
+menu_title: "›› Confirm %deluxemenus_meta_betterTeamsConfirmAction_STRING%"
+size: 9
+open_command: []
+items:
+  "Misc | Filler 1":
+     material: BLACK_STAINED_GLASS_PANE
+     slots:
+     - 0
+     - 8
+     display_name: "&r"
+  "Misc | Filler 2":
+     material: GRAY_STAINED_GLASS_PANE
+     slots:
+     - 1-2
+     - 4
+     - 6-7
+     display_name: "&r"
+  "Misc | Cancel":
+    material: RED_WOOL
+    slot: 5
+    display_name: " "
+    lore:
+    - "      &c&lCANCEL  "
+    - ""
+    - "  &7Click to cancel  "
+    - ""
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[openguimenu] %deluxemenus_meta_BetterTeamsConfirmActionBack_STRING_BetterTeamsMain%"
+
+
+
+  "Disband":
+    material: GREEN_WOOL
+    slot: 3
+    display_name: "  "
+    lore:
+    - "       &a&lCONFIRM DISBAND  "
+    - ""
+    - "  &4[!] &7This action is irreversible  "
+    - ""
+    - "      &7Click to &cdisband &7team  "
+    - ""
+    priority: 1
+    view_requirement:
+      requirements:
+        meta:
+          type: has meta
+          key: betterTeamsConfirmAction
+          meta_type: STRING
+          value: disband
+    click_commands:
+    - "[sound] ENTITY_ZOMBIE_VILLAGER_CURE"
+    - "[console] teama disband %betterTeams_name%"
+    - "[message] &b&lTEAMS &8•&7 You have disbanded the team"
+    - "[close]"
+  "Leave Private":
+    material: GREEN_WOOL
+    slot: 3
+    display_name: "  "
+    lore:
+    - "        &a&lCONFIRM LEAVE "
+    - ""
+    - "  &c[!] &7You won't be able to join  "
+    - "   &7unless you're invited again  "
+    - ""
+    - "       &7Click to &cleave &7team  "
+    - ""
+    priority: 2
+    view_requirement:
+      requirements:
+        meta:
+          type: has meta
+          key: betterTeamsConfirmAction
+          meta_type: STRING
+          value: 'leave'
+        isPrivate:
+          type: string equals
+          input: '%betterteams_open%'
+          output: 'false'
+    click_commands:
+    - "[sound] ENTITY_ZOMBIE_VILLAGER_CURE"
+    - "[console] team leave"
+    - "[close]"
+  "Leave Public":
+    material: GREEN_WOOL
+    slot: 3
+    display_name: "  "
+    lore:
+    - "      &a&lCONFIRM LEAVE  "
+    - ""
+    - "  &a[!] &7You can re-join this  "
+    - "  &7team because it's public!  "
+    - ""
+    - "     &7Click to &cleave &7team  "
+    - ""
+    priority: 3
+    view_requirement:
+      requirements:
+        meta:
+          type: has meta
+          key: betterTeamsConfirmAction
+          meta_type: STRING
+          value: 'leave'
+        isOpen:
+          type: string equals
+          input: '%betterteams_open%'
+          output: 'true'
+    click_commands:
+    - "[sound] ENTITY_ZOMBIE_VILLAGER_CURE"
+    - "[player] team leave"
+    - "[close]"
+  "Name Change":
+    material: GREEN_WOOL
+    slot: 3
+    display_name: "  "
+    lore:
+    - "  &a&lCONFIRM NAME CHANGE  "
+    - ""
+    - "     &7Click to &achange &7name  "
+    - ""
+    priority: 4
+    view_requirement:
+      requirements:
+        meta:
+          type: has meta
+          key: betterTeamsConfirmAction
+          meta_type: STRING
+          value: 'name change'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team name <-a Enter new name...>"
+    - "[message] &b&lTEAMS &8•&7 Type the new name for your team. Type &c'Cancel'&7 to cancel."
+    - "[close]"
+  "Home Deletion":
+    material: GREEN_WOOL
+    slot: 3
+    display_name: "  "
+    lore:
+    - "  &a&lCONFIRM HOME DELETION  "
+    - ""
+    - "       &7Click to &cdelete &7home  "
+    - ""
+    priority: 5
+    view_requirement:
+      requirements:
+        meta:
+          type: has meta
+          key: betterTeamsConfirmAction
+          meta_type: STRING
+          value: 'home deletion'
+    click_commands:
+    - "[sound] UI_BUTTON_CLICK"
+    - "[player] team delhome"
+    - "[close]"
+  "Alliance Termination":
+    material: GREEN_WOOL
+    slot: 3
+    display_name: "  "
+    lore:
+    - "  &a&lCONFIRM TERMINATION  "
+    - ""
+    - "     &7Click to &cend &7alliance  "
+    - ""
+    priority: 6
+    view_requirement:
+      requirements:
+        meta:
+          type: has meta
+          key: betterTeamsConfirmAction
+          meta_type: STRING
+          value: 'alliance termination'
+    click_requirement:
+      requirements:
+        hasOneAlly:
+          type: string equals
+          input: '%betterTeamsExtra_allyCount%'
+          output: '1'
+          success_commands:
+          - "[player] team neutral %betterTeamsExtra_allyName_0%"
+          - "[sound] ENTITY_ZOMBIE_VILLAGER_CURE"
+          deny_commands:
+          - "[sound] UI_BUTTON_CLICK"
+          - "[player] team neutral <-a Enter name...>"
+          - "[message] &b&lTEAMS &8•&7 Type the name of the team. Type &c'Cancel'&7 to cancel."
+    click_commands:
+    - "[close]"
+  "All Chest Disclaim":
+    material: GREEN_WOOL
+    slot: 3
+    display_name: "  "
+    lore:
+    - "  &a&lCONFIRM ALL CHEST DISCLAIM  "
+    - ""
+    - "     &4[!] &7This action is irreversible  "
+    - ""
+    - "    &7Click to &cremove &7all chest claims  "
+    - ""
+    priority: 7
+    view_requirement:
+      requirements:
+        meta:
+          type: has meta
+          key: betterTeamsConfirmAction
+          meta_type: STRING
+          value: 'all chest disclaim'
+    click_commands:
+    - "[sound] ENTITY_ZOMBIE_VILLAGER_CURE"
+    - "[player] team chest removeall"
+    - "[close]"

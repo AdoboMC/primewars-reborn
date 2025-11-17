@@ -1,0 +1,160 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 222.127.106.217
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1758113647732
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1758115888801
+  login: 1758112900683
+money: '9002609.995808579702404543'
+last-account-name: Allen_Walker03
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -393.55806746152183
+  y: 87.0
+  z: -403.1155526074565
+  yaw: 83.85015869140625
+  pitch: -4.650009632110596
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2086.5781756333927
+  y: 192.5
+  z: 568.80155371833
+  yaw: -148.40170288085938
+  pitch: 31.200029373168945
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -2001.9023137111194
+    y: 70.0
+    z: 493.6441004713663
+    yaw: -50.70457458496094
+    pitch: 9.749861717224121
+  mining:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 870.2852595879395
+    y: -48.0
+    z: -425.08164208218545
+    yaw: 155.685546875
+    pitch: 16.522672653198242
+  spawn:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 901.1251830834827
+    y: -20.0
+    z: -281.331307221164
+    yaw: -30.01519775390625
+    pitch: 32.12262725830078
+  adventure:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: -1303.7030989519642
+    y: 54.0
+    z: -1127.1172590509407
+    yaw: 93.708251953125
+    pitch: 28.733898162841797
+  trial:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 279.4024169175985
+    y: -21.0
+    z: 623.1149463516886
+    yaw: 58.0357666015625
+    pitch: 35.85007858276367
+  kahoy:
+    world: b8f242ec-fb07-4c1a-a860-491363b5434d
+    world-name: world_nether
+    x: -1137.5563650785675
+    y: 67.0
+    z: -896.4392624720327
+    yaw: -118.0904541015625
+    pitch: 26.33396339416504
+  copper:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 521.8588881859187
+    y: 30.0
+    z: 370.80025419220857
+    yaw: -85.06451416015625
+    pitch: 14.733490943908691
+  magenpc:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 919.3852173759059
+    y: 72.0
+    z: -694.8825385784805
+    yaw: 73.65011596679688
+    pitch: 22.950029373168945
+  sakura:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 909.6620272519649
+    y: 128.0
+    z: -338.72033181732115
+    yaw: 35.01024627685547
+    pitch: 58.12245559692383
+  monu:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 1825.58060072334
+    y: 63.0
+    z: 321.5190482824744
+    yaw: 139.5609588623047
+    pitch: 56.7724609375
+  jungle:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -1115.1470660260075
+    y: 115.0
+    z: -1132.6190710412388
+    yaw: -24.978759765625
+    pitch: 51.37234115600586
+  taiga:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2215.7088807551822
+    y: 134.0
+    z: 1043.6940263752267
+    yaw: -1.986053466796875
+    pitch: 35.25699996948242
+  frozen:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 2481.699999988079
+    y: 218.0
+    z: 1568.699999988079
+    yaw: 49.014007568359375
+    pitch: 20.10696029663086
+  warden:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 732.8184476838348
+    y: -16.0
+    z: -170.08385041805045
+    yaw: -96.65184783935547
+    pitch: 30.150028228759766
+  lostcity:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: 768.5841382624363
+    y: -34.0
+    z: -222.47763502546758
+    yaw: 91.59872436523438
+    pitch: 72.30000305175781
+nickname: Aren_Walker03

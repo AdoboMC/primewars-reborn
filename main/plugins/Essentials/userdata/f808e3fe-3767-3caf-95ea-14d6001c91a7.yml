@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 66.168.75.238
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1752362841863
+  login: 1752360394996
+money: '100.0'
+last-account-name: Exedor_the_Red
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -3426.6132695286665
+  y: 68.0
+  z: -3594.366625376383
+  yaw: 95.8223876953125
+  pitch: -14.623391151428223
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: -2495.637538566048
+  y: 69.0
+  z: 320.23033201049145
+  yaw: 91.16339111328125
+  pitch: 3.600005865097046

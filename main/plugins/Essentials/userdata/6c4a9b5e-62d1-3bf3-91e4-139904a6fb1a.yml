@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 90.170.229.103
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1757956305411
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1757956522718
+  login: 1757956204410
+money: '0'
+last-account-name: litjisz
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -385.69142992724113
+  y: 93.0
+  z: -307.6976903969425
+  yaw: -45.15015411376953
+  pitch: 47.91913986206055
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -388.6465801985838
+  y: 93.0
+  z: -308.4775299001038
+  yaw: -44.413177490234375
+  pitch: 14.171042442321777

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 82.222.239.128
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754949532829
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754949781736
+  login: 1754949237878
+money: '0'
+last-account-name: Babe
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -362.909801826562
+  y: 93.02442408821369
+  z: -310.3678087633374
+  yaw: -2.9820756912231445
+  pitch: 27.34418296813965
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -423.5765167234705
+  y: 89.0
+  z: -331.7004197961223
+  yaw: 102.85391235351562
+  pitch: 6.534512042999268

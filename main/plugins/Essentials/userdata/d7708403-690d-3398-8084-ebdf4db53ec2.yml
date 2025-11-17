@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 210.1.128.5
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754736342942
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754768153854
+  login: 1754766241466
+money: '164.5546017306051495'
+last-account-name: BulateAskal_
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -384.91466960546694
+  y: 93.0
+  z: -304.80747873654036
+  yaw: -126.9000473022461
+  pitch: 2.399989128112793
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -355.8926337891274
+  y: 93.0
+  z: -320.5619326258871
+  yaw: 106.19998168945312
+  pitch: 17.69999885559082

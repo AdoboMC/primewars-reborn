@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 112.200.206.142
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1753525836182
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753593240374
+  login: 1753590833272
+money: '57322.601444586551075219'
+last-account-name: okey_woman
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 261.5255380014218
+  y: 37.0
+  z: -827.8139739397113
+  yaw: 11.4000244140625
+  pitch: 46.199989318847656
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 81.34997798237829
+  y: 70.0
+  z: -925.00810280007
+  yaw: 53.2420654296875
+  pitch: 13.650009155273438

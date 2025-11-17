@@ -1,0 +1,47 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 100.12.223.125
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1754577429745
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1754577649712
+  login: 1754577171565
+money: '1067719.410386876158399423'
+last-account-name: Rollen_Dritt
+lastlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 34.5
+  y: 63.0
+  z: 224.5
+  yaw: 56.39997100830078
+  pitch: 15.599990844726562
+logoutlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -389.0967498073679
+  y: 87.0
+  z: -385.04964830054996
+  yaw: 99.89993286132812
+  pitch: 62.399925231933594
+homes:
+  home:
+    world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+    world-name: world
+    x: -706.1075267881521
+    y: 69.5
+    z: -2163.7359357207574
+    yaw: -48.34002685546875
+    pitch: 46.19999313354492

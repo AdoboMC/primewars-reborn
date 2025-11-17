@@ -1,0 +1,31 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&f<shift:-12>: %nexo__zauction_show_inventory%'
+size: 45
+
+patterns:
+  - "zauctionhouse_decoration"
+
+items:
+  back_btn:
+    isPermanent: true
+    type: BACK
+    item:
+      material: nexo:auction_empty_slot
+      name: ""
+      lore:
+        - "          #92bed8ʙᴀᴄᴋ"
+        - "          #8c8c8c&m      "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ɢᴏ ʙᴀᴄᴋ #8c8c8c• "
+    slot: 0
+  items:
+    type: ZAUCTIONHOUSE_SHOW_ITEMS
+    slots:
+    - 10-16
+    - 19-25
+    - 28-34

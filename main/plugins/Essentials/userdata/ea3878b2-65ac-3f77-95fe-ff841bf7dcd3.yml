@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 82.11.136.244
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1753350988055
+  login: 1753350942794
+money: '0'
+last-account-name: LDR49
+lastlocation:
+  world: 080dab47-0061-4757-9b93-90cc9e5f524f
+  world-name: Philippines
+  x: -361.9274554720126
+  y: 92.0
+  z: -309.8882573142171
+  yaw: 82.65139770507812
+  pitch: 15.300008773803711
+logoutlocation:
+  world: 045e87b3-3e28-4e8b-9378-4f8c17c77591
+  world-name: world
+  x: 124.69999998807907
+  y: 64.0
+  z: 146.62836165552633
+  yaw: -98.24685668945312
+  pitch: 7.200026512145996
